@@ -16,9 +16,11 @@ Following the practices described by **Çetin et al. (2024)**, the original SARD
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **31** | Derived from [CWE476_..._240796](https://samate.nist.gov/SARD/test-cases/240796/versions/2.0.0) | CWE-476 | Null Pointer | **Vulnerable** | Dereference of a NULL pointer through a C++ reference. |
 | **32** | Derived from [CWE476_..._240796](https://samate.nist.gov/SARD/test-cases/240796/versions/2.0.0) | CWE-476 | Null Pointer | **Patched (Safe)** | Explicit NULL check before dereference (Defensive coding). |
+| **33** | Derived from [CWE121_..._1971](https://samate.nist.gov/SARD/test-cases/1971/versions/1.0.0) | CWE-121 | Buffer Overflow | **Vulnerable** | Unbounded string input to fixed-size buffer. |
+| **34** | Derived from [CWE121_..._1971](https://samate.nist.gov/SARD/test-cases/1971/versions/1.0.0) | CWE-121 | Buffer Overflow | **Patched (Safe)** | Using setw to limit input length. |
 
 ## Usage for AI Evaluation
-These samples provide a balanced test case: 
+These samples provide a balanced test case, for example: 
 - **Sample 31** tests for **False Negatives** (can the AI find the bug?).
 - **Sample 32** tests for **False Positives** (does the AI incorrectly flag a secured code?). 
 
