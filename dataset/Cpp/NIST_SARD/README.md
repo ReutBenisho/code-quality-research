@@ -14,8 +14,8 @@ Following the practices described by **Çetin et al. (2024)**, the original SARD
 
 | Global ID | SARD Reference | CWE | Category | Ground Truth | Mechanism |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **31** | Derived from CWE476_..._31 | CWE-476 | Null Pointer | **Vulnerable** | Dereference of a NULL pointer through a C++ reference. |
-| **32** | Derived from CWE476_..._32 | CWE-476 | Null Pointer | **Patched (Safe)** | Explicit NULL check before dereference (Defensive coding). |
+| **31** | Derived from [CWE476_..._240796](https://samate.nist.gov/SARD/test-cases/240796/versions/2.0.0) | CWE-476 | Null Pointer | **Vulnerable** | Dereference of a NULL pointer through a C++ reference. |
+| **32** | Derived from [CWE476_..._240796](https://samate.nist.gov/SARD/test-cases/240796/versions/2.0.0) | CWE-476 | Null Pointer | **Patched (Safe)** | Explicit NULL check before dereference (Defensive coding). |
 
 ## Usage for AI Evaluation
 These samples provide a balanced test case: 
