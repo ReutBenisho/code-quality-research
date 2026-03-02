@@ -18,6 +18,9 @@ Following the practices described by **Çetin et al. (2024)**, the original SARD
 | **32** | Derived from [CWE476_..._240796](https://samate.nist.gov/SARD/test-cases/240796/versions/2.0.0) | CWE-476 | Null Pointer | **Patched (Safe)** | Explicit NULL check before dereference (Defensive coding). |
 | **33** | Derived from [CWE121_..._1971](https://samate.nist.gov/SARD/test-cases/1971/versions/1.0.0) | CWE-121 | Buffer Overflow | **Vulnerable** | Unbounded string input to fixed-size buffer. |
 | **34** | Derived from [CWE121_..._1971](https://samate.nist.gov/SARD/test-cases/1971/versions/1.0.0) | CWE-121 | Buffer Overflow | **Patched (Safe)** | Using setw to limit input length. |
+| **35** | Derived from [CWE391_..._1739](https://samate.nist.gov/SARD/test-cases/1739/versions/1.0.0) | CWE-391 | Unchecked Error Condition | **Vulnerable** | Uncheck input type. |
+| **36** | Derived from [CWE391_..._1739](https://samate.nist.gov/SARD/test-cases/1739/versions/1.0.0) | CWE-391 | Unchecked Error Condition | **Patched (Safe)** | Using try...catch to verify input type. |
+
 
 ## Usage for AI Evaluation
 These samples provide a balanced test case, for example: 
