@@ -1,4 +1,4 @@
-public class IdentifierMutation {
+public class Test {
     private int b = 10;
 
     public void b() {
