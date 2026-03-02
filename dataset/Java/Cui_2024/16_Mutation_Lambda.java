@@ -1,4 +1,4 @@
-public class LambdaMutation {
+public class Test {
     public void runTask() {
         Runnable r = () -> {
             System.out.println("Running task via lambda");
