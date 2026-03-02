@@ -24,6 +24,8 @@ Following the practices described by **Çetin et al. (2024)**, the original SARD
 | **38** | Derived from [CWE89_..._1983](https://samate.nist.gov/SARD/test-cases/1983/versions/1.0.0) | CWE-89 | SQL Injection | **Patched (Safe)** | Using mysqlpp::quote as protection from SQL injection. |
 | **39** | Derived from [CWE401_..._2054](https://samate.nist.gov/SARD/test-cases/2054/versions/1.0.0) | CWE-401 | Unreleased Memory | **Vulnerable** | Allocating new memory without releasing. |
 | **40** | Derived from [CWE401_..._2054](https://samate.nist.gov/SARD/test-cases/2054/versions/1.0.0) | CWE-401 | Unreleased Memory | **Patched (Safe)** | Releasing memory after allocation. |
+| **41** | Derived from [CWE122_..._2062](https://samate.nist.gov/SARD/test-cases/2062/versions/1.0.0) | CWE-122 | Buffer Overflow | **Vulnerable** | Assigning data in unallocated memory. |
+| **42** | Derived from [CWE122_..._2062](https://samate.nist.gov/SARD/test-cases/2062/versions/1.0.0) | CWE-122 | Buffer Overflow | **Patched (Safe)** | Assigning data in allocated memory. |
 
 
 
