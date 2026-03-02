@@ -20,6 +20,9 @@ Following the practices described by **Çetin et al. (2024)**, the original SARD
 | **34** | Derived from [CWE121_..._1971](https://samate.nist.gov/SARD/test-cases/1971/versions/1.0.0) | CWE-121 | Buffer Overflow | **Patched (Safe)** | Using setw to limit input length. |
 | **35** | Derived from [CWE391_..._1739](https://samate.nist.gov/SARD/test-cases/1739/versions/1.0.0) | CWE-391 | Unchecked Error Condition | **Vulnerable** | Uncheck input type. |
 | **36** | Derived from [CWE391_..._1739](https://samate.nist.gov/SARD/test-cases/1739/versions/1.0.0) | CWE-391 | Unchecked Error Condition | **Patched (Safe)** | Using try...catch to verify input type. |
+| **37** | Derived from [CWE89_..._1983](https://samate.nist.gov/SARD/test-cases/1983/versions/1.0.0) | CWE-89 | SQL Injection | **Vulnerable** | Using input directly i SQL query. |
+| **38** | Derived from [CWE89_..._1983](https://samate.nist.gov/SARD/test-cases/1983/versions/1.0.0) | CWE-89 | SQL Injection | **Patched (Safe)** | Using mysqlpp::quote as protection from SQL injection. |
+
 
 
 ## Usage for AI Evaluation
