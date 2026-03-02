@@ -1,4 +1,4 @@
-public class EquivalenceMutation {
+public class Test {
     private int a = 5;
 
     public void check(int j) {
