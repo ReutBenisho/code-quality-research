@@ -1,4 +1,4 @@
-public class ModifierSample {
+public class Test {
     public boolean compareStrings() {
         String s1 = "str1";
         final String s2 = "str2";
