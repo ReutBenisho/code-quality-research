@@ -1,4 +1,4 @@
-public class InitializationSample {
+public class Test {
     public int getStart() {
         int start; 
         if (true) start = 1;
