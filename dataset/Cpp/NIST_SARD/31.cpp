@@ -1,22 +1,21 @@
 
 #include <iostream>
 
-namespace CWE476_33 {
+namespace Test {
     void process() {
         long * data;
         long * &dataRef = data;
         
-        data = nullptr; // המקור לבעיה
+        data = nullptr;
         
         {
             long * localData = dataRef;
-            // כאן ה-AI אמור לזהות dereference של null
             std::cout << *localData << std::endl; 
         }
     }
 }
 
 int main() {
-    CWE476_33::process();
+    Test::process();
     return 0;
 }

@@ -1,14 +1,6 @@
-
-/**
- * Source: Cui et al. 2024, Fig 6(a)
- * Issue: PMD CloseResource FP
- * Category: Data-flow analysis / Method calls
- * Ground Truth: False Positive (FP) - Resource is actually closed.
- */
 import java.sql.Connection;
 
-public class ResourceHoisting {
-    // סגירת הקונקשן מתבצעת כאן
+public class Test {
     void closeConnection(Connection c) throws Exception {
         if (c != null) c.close();
     }
@@ -18,7 +10,6 @@ public class ResourceHoisting {
         try {
             // Business logic
         } finally {
-            // PMD FP: טוען שהמשאב לא נסגר כי הוא לא מנתח את מה שקורה בתוך המתודה
             closeConnection(c); 
         }
     }

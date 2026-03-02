@@ -1,7 +1,7 @@
 
 #include <iostream>
 
-namespace CWE476_33_Fixed {
+namespace Test {
     void process() {
         long * data;
         long * &dataRef = data;
@@ -10,7 +10,6 @@ namespace CWE476_33_Fixed {
         
         {
             long * localData = dataRef;
-            // התיקון: בדיקה לפני שימוש
             if (localData != nullptr) {
                 std::cout << *localData << std::endl;
             } else {
@@ -21,6 +20,6 @@ namespace CWE476_33_Fixed {
 }
 
 int main() {
-    CWE476_33_Fixed::process();
+    Test::process();
     return 0;
 }

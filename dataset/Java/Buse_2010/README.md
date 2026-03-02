@@ -8,9 +8,9 @@ This folder contains a representative Java snippet from the seminal study **"Lea
 The original study involved **12,000 human judgments** from 120 annotators to define what makes code "readable". Unlike complexity metrics (e.g., Cyclomatic Complexity), these snippets focus on local, line-by-line features such as indentation, identifier density, and comment placement.
 
 ## Mapping & Ground Truth
-| Global ID | Original Reference | Category | Significance |
+| Global ID | Original Reference | Category | Ground Truth |
 | :--- | :--- | :--- | :--- |
-| **30** | Figure 1 | Readability Evaluation | A "neutral" snippet used to calibrate automated metrics against human judgment. |
+| **30** | Figure 1 | Readability Evaluation | The snippet is unreadable and will be hard to maintain. |
 
 ## Usage for AI Evaluation
 This sample is ideal for testing if an AI can mimic human perception of code clarity regardless of its logical complexity.
