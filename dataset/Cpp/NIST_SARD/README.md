@@ -32,6 +32,8 @@ Following the practices described by **Çetin et al. (2024)**, the original SARD
 | **46** | Derived from [CWE416_..._102355](https://samate.nist.gov/SARD/test-cases/102355/versions/1.0.0) | CWE-416 | Use after free | **Patched (Safe)** | Using memory before unallocating. |
 | **47** | Derived from [CWE415_..._102085](https://samate.nist.gov/SARD/test-cases/102085/versions/1.0.0) | CWE-415 | Double unallocation | **Vulnerable** | Deleting twice allocated memory. |
 | **48** | Derived from [CWE415_..._102085](https://samate.nist.gov/SARD/test-cases/102085/versions/1.0.0) | CWE-415 | Double unallocation | **Patched (Safe)** | Deleting once allocated memory. |
+| **49** | Derived from [CWE190_..._84440](https://samate.nist.gov/SARD/test-cases/84440/versions/1.0.0) | CWE-190 | Integer Overflow | **Vulnerable** | Incrementing integer and causing overflow. |
+| **50** | Derived from [CWE190_..._84440](https://samate.nist.gov/SARD/test-cases/84440/versions/1.0.0) | CWE-190 | Integer Overflow | **Patched (Safe)** | Incrementing integer only if not causing overflow. |
 
 
 
