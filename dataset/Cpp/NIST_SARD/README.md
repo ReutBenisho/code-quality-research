@@ -28,6 +28,8 @@ Following the practices described by **Çetin et al. (2024)**, the original SARD
 | **42** | Derived from [CWE122_..._2062](https://samate.nist.gov/SARD/test-cases/2062/versions/1.0.0) | CWE-122 | Buffer Overflow | **Patched (Safe)** | Assigning data in allocated memory. |
 | **43** | Derived from [CWE787_..._1492](https://samate.nist.gov/SARD/test-cases/1492/versions/1.0.0) | CWE-787 | Buffer Overflow | **Vulnerable** | Accessing data in unallocated memory. |
 | **44** | Derived from [CWE787_..._1492](https://samate.nist.gov/SARD/test-cases/1492/versions/1.0.0) | CWE-787 | Buffer Overflow | **Patched (Safe)** | Accessing data in allocated memory. |
+| **45** | Derived from [CWE416_..._102355](https://samate.nist.gov/SARD/test-cases/102355/versions/1.0.0) | CWE-416 | Use after free | **Vulnerable** | Using memory after unallocating. |
+| **46** | Derived from [CWE416_..._102355](https://samate.nist.gov/SARD/test-cases/102355/versions/1.0.0) | CWE-416 | Use after free | **Patched (Safe)** | Using memory before unallocating. |
 
 
 
