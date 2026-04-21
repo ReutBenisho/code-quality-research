@@ -1,8 +1,8 @@
 
-# NIST SARD Samples (C++)
+# NIST SARD Samples (Java)
 
 ## Overview
-This folder contains C++ code samples derived from the **NIST Software Assurance Reference Dataset (SARD)**, specifically targeting **CWE-476: NULL Pointer Dereference**. These samples are designed to test an AI's ability to track data flow through C++ references and identify safety checks.
+This folder contains C++ code samples derived from the **NIST Software Assurance Reference Dataset (SARD)**, specifically targeting **CWE-190: Integer overflow**. These samples are designed to test an AI's ability to track data flow through C++ references and identify safety checks.
 
 ## Methodology
 Following the practices described by **Çetin et al. (2024)**, the original SARD templates (specifically from Data Flow Variant 33) have been refined for this research:
