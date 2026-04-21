@@ -1,5 +1,5 @@
 
-# NIST SARD Samples (C++)
+# NIST SARD Samples (Java)
 
 ## Overview
 This folder contains C++ code samples derived from the **NIST Software Assurance Reference Dataset (SARD)**, specifically targeting **CWE-190: Integer overflow**. These samples are designed to test an AI's ability to track data flow through C++ references and identify safety checks.
