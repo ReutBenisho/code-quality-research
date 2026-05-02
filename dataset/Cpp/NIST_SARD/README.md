@@ -34,8 +34,10 @@ Following the practices described by **Çetin et al. (2024)**, the original SARD
 | **48** | Derived from [CWE415_..._102085](https://samate.nist.gov/SARD/test-cases/102085/versions/1.0.0) | CWE-415 | Double unallocation | **Patched (Safe)** | Deleting once allocated memory. |
 | **49** | Derived from [CWE190_..._84440](https://samate.nist.gov/SARD/test-cases/84440/versions/1.0.0) | CWE-190 | Integer Overflow | **Vulnerable** | Incrementing integer and causing overflow. |
 | **50** | Derived from [CWE190_..._84440](https://samate.nist.gov/SARD/test-cases/84440/versions/1.0.0) | CWE-190 | Integer Overflow | **Patched (Safe)** | Incrementing integer only if not causing overflow. |
-| **53** | Derived from [CWE369_..._94718](https://samate.nist.gov/SARD/test-cases/94718/versions/1.0.0) | CWE-369 | Devide by Zero | **Vulnerable** | Deviding by a number that might be zero. |
-| **54** | Derived from [CWE369_..._94718](https://samate.nist.gov/SARD/test-cases/94718/versions/1.0.0) | CWE-369 | Devide by Zero | **Patched (Safe)** | Verifing before division whether the number is zero. |
+| **53** | Derived from [CWE369_..._94718](https://samate.nist.gov/SARD/test-cases/94718/versions/1.0.0) | CWE-369 | Divide by Zero | **Vulnerable** | Dividing by a number that might be zero. |
+| **54** | Derived from [CWE369_..._94718](https://samate.nist.gov/SARD/test-cases/94718/versions/1.0.0) | CWE-369 | Divide by Zero | **Patched (Safe)** | Verifing before division whether the number is zero. |
+| **55** | Derived from [CWE23_..._91814](https://samate.nist.gov/SARD/test-cases/91814/versions/1.0.0) | CWE-23 | Path Traversal | **Vulnerable** | Using input as path without verifing its validity. |
+| **56** | Derived from [CWE23_..._91814](https://samate.nist.gov/SARD/test-cases/91814/versions/1.0.0) | CWE-23 | Path Traversal | **Patched (Safe)** | Validating input before using it as a path. |
 
 
 
