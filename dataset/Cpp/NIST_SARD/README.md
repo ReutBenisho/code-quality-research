@@ -40,6 +40,8 @@ Following the practices described by **Çetin et al. (2024)**, the original SARD
 | **56** | Derived from [CWE23_..._91814](https://samate.nist.gov/SARD/test-cases/91814/versions/1.0.0) | CWE-23 | Path Traversal | **Patched (Safe)** | Validating input before using it as a path. |
 | **57** | Derived from [CWE563_..._105658](https://samate.nist.gov/SARD/test-cases/105658/versions/1.0.0) | CWE-563 | Unused variable | **Vulnerable** | Not using all declared variabled. |
 | **58** | Derived from [CWE563_..._105658](https://samate.nist.gov/SARD/test-cases/105658/versions/1.0.0) | CWE-563 | Unused variable | **Patched (Safe)** | Used all variables. |
+| **59** | Derived from [CWE690..._111358](https://samate.nist.gov/SARD/test-cases/111358/versions/1.0.0) | CWE-690 | Unchecked value to NULL pointer | **Vulnerable** | Not checking value to verify it's not a NULL pointer. |
+| **60** | Derived from [CWE690_..._111358](https://samate.nist.gov/SARD/test-cases/111358/versions/1.0.0) | CWE-690 | Unchecked value to NULL pointer | **Patched (Safe)** | Checking value to verify it's not a NULL pointer. |
 
 
 
