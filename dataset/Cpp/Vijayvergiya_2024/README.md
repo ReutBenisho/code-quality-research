@@ -11,6 +11,7 @@ The "Ground Truth" is based on **Google's C++ Style Guide** and the recommendati
 | Global ID | Original Reference | Category | AI Recommendation (Ground Truth) |
 | :--- | :--- | :--- | :--- |
 | **28** | Figure 3 | Style / Maintainability | Prefer a `struct` or a `tuple` over `std::pair` to provide meaningful member names. |
+| **61** | Figure 3 | Style / Maintainability | Fixed code in the example to see if the tools notice the difference. |
 
 ## Usage for AI Evaluation
 Test if the AI suggests structural improvements that enhance long-term code clarity according to industrial standards.
