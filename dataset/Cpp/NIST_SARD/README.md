@@ -38,6 +38,8 @@ Following the practices described by **Çetin et al. (2024)**, the original SARD
 | **54** | Derived from [CWE369_..._94718](https://samate.nist.gov/SARD/test-cases/94718/versions/1.0.0) | CWE-369 | Divide by Zero | **Patched (Safe)** | Verifing before division whether the number is zero. |
 | **55** | Derived from [CWE23_..._91814](https://samate.nist.gov/SARD/test-cases/91814/versions/1.0.0) | CWE-23 | Path Traversal | **Vulnerable** | Using input as path without verifing its validity. |
 | **56** | Derived from [CWE23_..._91814](https://samate.nist.gov/SARD/test-cases/91814/versions/1.0.0) | CWE-23 | Path Traversal | **Patched (Safe)** | Validating input before using it as a path. |
+| **57** | Derived from [CWE563_..._105658](https://samate.nist.gov/SARD/test-cases/105658/versions/1.0.0) | CWE-563 | Unused variable | **Vulnerable** | Not using all declared variabled. |
+| **58** | Derived from [CWE563_..._105658](https://samate.nist.gov/SARD/test-cases/105658/versions/1.0.0) | CWE-563 | Unused variable | **Patched (Safe)** | Used all variables. |
 
 
 
