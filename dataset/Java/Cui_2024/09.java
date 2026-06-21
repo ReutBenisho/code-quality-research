@@ -1,6 +1,6 @@
 public class NestedClassSample {
     public void foo() {
-        InnerClass.doSomething(); // doSomething() is used here
+        InnerClass.doSomething();
     }
 
     static class InnerClass {
