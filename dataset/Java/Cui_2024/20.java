@@ -4,7 +4,7 @@ public class Test {
 
     public static void booleanExpressionMethod() {
         if (c != 0) { 
-            System.out.println("This will never print");
+            System.out.println("Text");
         }
     }
 }

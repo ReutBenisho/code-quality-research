@@ -13,7 +13,7 @@ public:
     MinMax_s GetMinAndMaxSnippetLength(const std::vector<std::string>& snippets) {
         int min_len = 100;
         int max_len = 0;
-        // Logic to calculate lengths...
+        // ... inner logic to calculate lengths (can assume it's correct)
 		MinMax_s minMax{min_len, max_len};
         return minMax;
     }

@@ -7,6 +7,10 @@
 		"ChatGPT": { "readability_score": 82, "understandability_score": 79, "maintainability_score": 70, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Code is concise and structurally clear with standard concurrency annotations and proper volatile usage. Maintainability is moderate due to minimal implementation detail and non-static inner classes implicitly referencing the outer class. No obvious functional or security flaws are present." },
 		"Claude": {"readability_score":72,"understandability_score":45,"maintainability_score":38,"functional_classification":"Buggy","security_classification":"Safe","cwe_id":"None","reasoning":"Annotations @Immutable and @ThreadSafe are documentation-only; neither class actually enforces those contracts. Using volatile on reference fields helps visibility but doesn't make the objects themselves thread-safe or immutable. False safety guarantees create a maintenance hazard. Inner classes also hold implicit outer reference unnecessarily."}
 	},
+	"3": {
+		"ChatGPT": ,
+		"Claude": 
+	},
 	"4": {
 		"ChatGPT": { "readability_score": 72, "understandability_score": 58, "maintainability_score": 55, "functional_classification": "Partially Correct", "security_classification": "Vulnerable", "cwe_id": "CWE-374", "reasoning": "The code is simple but lacks clear intent and meaningful naming. Functionality is incomplete since it only compares array lengths and returns the original mutable array reference. Returning externally supplied mutable arrays without copying exposes internal state and can enable unintended modification." },
 		"Claude": {"readability_score":65,"understandability_score":50,"maintainability_score":40,"functional_classification":"Buggy","security_classification":"Vulnerable","cwe_id":"CWE-208","reasoning":"Looks like a flawed XOR or comparison utility — it checks lengths but returns a1 unmodified instead of processing both arrays. Returning null on mismatch risks NullPointerException at callsite. Returning a1 directly exposes mutable internal reference. If intended as constant-time comparison, it fails, enabling timing attacks (CWE-208)."}
@@ -34,9 +38,361 @@
 	"10": {
 		"ChatGPT": { "readability_score": 68, "understandability_score": 52, "maintainability_score": 40, "functional_classification": "Buggy", "security_classification": "Safe", "cwe_id": "None", "reasoning": "The code is short but confusing due to naming collisions between the method and parameter. The assignment `energy = energy(1);` is invalid because it attempts to assign a double value to a double array reference, causing a compilation error. No direct security vulnerabilities are present." },
 		"Claude": {"readability_score":45,"understandability_score":30,"maintainability_score":25,"functional_classification":"Buggy","security_classification":"Safe","cwe_id":"None","reasoning":"Type mismatch: energy(1) returns double but parameter energy is double[]. Won't compile. Name collision between method energy() and parameter energy causes severe confusion. Parameter reassignment has no effect on the caller (pass-by-value). Method energy() always returns 0.0 — a stub. Deeply misleading naming throughout."}
+	},	
+	"11": {
+		"ChatGPT": {"readability_score":90,"understandability_score":95,"maintainability_score":90,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The code is simple, well-formatted, and easy to follow. Logic is straightforward, though using 3+5 instead of 8 is a minor readability choice. No structural issues, functional defects, or security vulnerabilities are evident in the provided snippet."},
+		"Claude": {"readability_score": 90, "understandability_score": 85, "maintainability_score": 80, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Simple, syntactically valid method with a clear conditional. The magic number '3 + 5' should ideally be a named constant for clarity, slightly affecting maintainability. No security-relevant operations (no I/O, no user input handling) present, so no vulnerabilities apply."}
+	},	
+	"12": {
+		"ChatGPT": {"readability_score":92,"understandability_score":96,"maintainability_score":91,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The code is straightforward and easy to understand. The constant condition makes the else branch unreachable but does not affect correctness. Structure is simple and maintainable for this example. No security issues or exploitable vulnerabilities are present."},
+		"Claude": {"readability_score": 75, "understandability_score": 70, "maintainability_score": 55, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Logic is correct but contains dead code: the 'if (true)' condition makes the else branch unreachable, indicating leftover debug code or poor design. This hurts maintainability and signals technical debt, though there is no functional bug or security concern."}
+	},
+	"13": {
+		"ChatGPT": ,
+		"Claude": 
+	},
+	"14": {
+		"ChatGPT": ,
+		"Claude": 
+	},
+	"15": {
+		"ChatGPT": ,
+		"Claude": 
+	},
+	"16": {
+		"ChatGPT": ,
+		"Claude": 
+	},
+	"17": {
+		"ChatGPT": ,
+		"Claude": 
+	},
+	"18": {
+		"ChatGPT": ,
+		"Claude": 
+	},
+	"19": {
+		"ChatGPT": ,
+		"Claude": 
+	},
+	"20": {
+		"ChatGPT": {"readability_score":91,"understandability_score":95,"maintainability_score":89,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The code is clear and easy to understand. Since c is a constant equal to 0, the condition is always false and the print statement is unreachable, but the logic is still valid. No security issues or exploitable vulnerabilities are present."},
+		"Claude": {"readability_score": 85, "understandability_score": 75, "maintainability_score": 55, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Code is syntactically correct but the condition 'c != 0' is always false since c is a static final constant equal to 0, making the branch dead code. This indicates poor design/technical debt, though no functional bug or security vulnerability exists."}
+	},
+	"21": {
+		"ChatGPT": {"readability_score":95,"understandability_score":96,"maintainability_score":93,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The code is concise, consistent, and easy to understand. The factory method performs a defensive copy using clone(), preventing external modification of the internal buffer. Structure is maintainable, and no functional or security issues are evident in the snippet."},
+		"Claude": {"readability_score": 90, "understandability_score": 90, "maintainability_score": 75, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Class names and constructor match correctly. Factory method properly clones the input array before storing it, preventing external mutation of internal state (defensive copy). No getter is shown, but as written the code is correct and secure."}
+	},
+	"22": {
+		"ChatGPT": ,
+		"Claude": 
+	},
+	"23": {
+		"ChatGPT": ,
+		"Claude": 
+	},
+	"24": {
+		"ChatGPT": ,
+		"Claude": 
+	},
+	"25": {
+		"ChatGPT": ,
+		"Claude": 
+	},
+	"26": {
+		"ChatGPT": ,
+		"Claude": 
+	},
+	"27": {
+		"ChatGPT": ,
+		"Claude": 
+	},
+	"28": {
+		"ChatGPT": {"readability_score":96,"understandability_score":95,"maintainability_score":91,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The code is clear and well-structured. The calculation logic is omitted but explicitly assumed correct, so the function behavior is considered correct. No unsafe operations or exploitable vulnerabilities are present. Minor maintainability concerns include hardcoded initial min_len value."},
+		"Claude": {"readability_score": 80, "understandability_score": 70, "maintainability_score": 45, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Per the comment, the omitted inner logic is assumed correct, so treating the snippet as functionally correct. Structure and pair-based return are clear. No unsafe operations are performed, so there are no security concerns."}
+	},
+	"29": {
+		"ChatGPT": ,
+		"Claude": 
 	},
 	"30": {
 		"ChatGPT": { "readability_score": 42, "understandability_score": 48, "maintainability_score": 40, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Code is syntactically correct and functionally valid, but poor variable naming and compact inline operations reduce readability and maintainability. Logic is simple but side effects from post-increment/decrement operators hurt clarity. No obvious security vulnerabilities are present." },
 		"Claude": {"readability_score":18,"understandability_score":10,"maintainability_score":12,"functional_classification":"Buggy","security_classification":"Safe","cwe_id":"None","reasoning":"Cryptic names (mnr_2, a1, b3, f2) obscure intent entirely. Post-increment on b3/r means stale values are used in the return expression. No clear purpose or contract. Severe technical debt. No security risk, but logic is misleading and likely incorrect due to post-increment side effects."}
 	}
+	"31": {
+		"ChatGPT": {"readability_score":78,"understandability_score":70,"maintainability_score":65,"functional_classification":"Buggy","security_classification":"Vulnerable","cwe_id":"CWE-476","reasoning":"The code is readable but uses an unnecessary reference to a pointer. data is set to nullptr, localData receives nullptr, and dereferencing it causes undefined behavior. This null pointer dereference is a correctness defect and a security-relevant vulnerability (CWE-476)."},
+		"Claude": {"readability_score": 55, "understandability_score": 45, "maintainability_score": 30, "functional_classification": "Buggy", "security_classification": "Vulnerable", "cwe_id": "CWE-476", "reasoning": "data is set to nullptr, then localData copies this null pointer via the reference, and *localData dereferences a null pointer, causing undefined behavior/crash. Also 'data' is used before being read validly. Reference indirection adds unnecessary complexity."}
+	},
+	"32": {
+		"ChatGPT": {"readability_score":90,"understandability_score":91,"maintainability_score":88,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The null check prevents dereferencing a null pointer, eliminating the previous defect. The code is straightforward and functionally correct, though the pointer reference adds unnecessary complexity and could be simplified. No exploitable vulnerability is evident in this snippet."},
+		"Claude": {"readability_score": 65, "understandability_score": 60, "maintainability_score": 45, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Null check before dereferencing prevents the CWE-476 crash from the prior version; program now safely prints 'Data is null'. Logic is correct, though the reference indirection ('long*&dataRef') adds unnecessary complexity without clear benefit to readability or design."}
+	},
+	"33": {
+		"ChatGPT": {"readability_score":94,"understandability_score":95,"maintainability_score":89,"functional_classification":"Partially Correct","security_classification":"Vulnerable","cwe_id":"CWE-120","reasoning":"The code is simple and easy to follow, but using operator>> with a fixed-size char array performs no bounds checking. Excessively long input can overflow the buffer, leading to undefined behavior. The functionality works for valid input but is unsafe."},
+		"Claude": {"readability_score": 80, "understandability_score": 80, "maintainability_score": 40, "functional_classification": "Buggy", "security_classification": "Vulnerable", "cwe_id": "CWE-120", "reasoning": "Using std::cin >> buffer with a fixed-size char array performs no bounds checking, allowing input longer than MAXSIZE (40) to overflow the stack buffer. This is a classic buffer overflow vulnerability; should use std::cin.width() or std::string instead."}
+	},
+	"34": {
+		"ChatGPT": {"readability_score":96,"understandability_score":97,"maintainability_score":93,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The code is clear and easy to follow. Using std::setw(MAXSIZE) limits extraction to the buffer size minus the null terminator, preventing overflow with operator>>. The implementation is functionally correct and no exploitable vulnerability is evident in this snippet."},
+		"Claude": {"readability_score": 85, "understandability_score": 85, "maintainability_score": 60, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "std::setw(MAXSIZE) limits input to MAXSIZE-1 characters plus null terminator, preventing the buffer overflow present in the prior version. Logic is correct and safe, though using std::string would still be preferable for modern C++ maintainability."}
+	},
+	"35": {
+		"ChatGPT": {"readability_score":72,"understandability_score":76,"maintainability_score":60,"functional_classification":"Partially Correct","security_classification":"Vulnerable","cwe_id":"CWE-789","reasoning":"The code is readable but uses obsolete headers and lacks input validation. atoi() may produce zero or negative values, which are converted to a huge allocation size for new[], potentially causing excessive memory allocation or failure. The NULL check is also ineffective with standard throwing new."},
+		"Claude": {"readability_score": 40, "understandability_score": 45, "maintainability_score": 20, "functional_classification": "Partially Correct", "security_classification": "Vulnerable", "cwe_id": "CWE-190", "reasoning": "Uses deprecated headers (iostream.h/new.h) and unsafe C-style memory checks (new returns exceptions, not NULL, in standard C++). User input 'i' is unvalidated: negative or huge values cause integer overflow/huge allocation, risking crash or undefined behavior (CWE-190/CWE-20)."}
+	},
+	"36": {
+		"ChatGPT": {"readability_score":74,"understandability_score":78,"maintainability_score":64,"functional_classification":"Partially Correct","security_classification":"Vulnerable","cwe_id":"CWE-789","reasoning":"Adding a bad_alloc handler improves robustness, but input is still not validated. Negative or excessively large values from atoi() can trigger uncontrolled memory allocation attempts. If allocation fails, l may remain uninitialized, making the subsequent NULL check unreliable and behavior potentially undefined."},
+		"Claude": {"readability_score": 40, "understandability_score": 45, "maintainability_score": 20, "functional_classification": "Buggy", "security_classification": "Vulnerable", "cwe_id": "CWE-190", "reasoning": "No validation of 'i' allows negative/huge values causing overflow or exception; if bad_alloc is caught, 'l' remains uninitialized (not NULL), so the NULL check fails and the loop uses an invalid pointer, causing undefined behavior/crash (CWE-457/CWE-190)."}
+	},
+	"37": {
+		"ChatGPT": {"readability_score":91,"understandability_score":92,"maintainability_score":84,"functional_classification":"Partially Correct","security_classification":"Vulnerable","cwe_id":"CWE-89","reasoning":"The code is clear and straightforward, but it constructs an SQL query by concatenating untrusted user input (argv[1]), making it vulnerable to SQL injection. Parameterized queries or proper escaping should be used instead. Functionality is correct for benign input."},
+		"Claude": {"readability_score": 65, "understandability_score": 60, "maintainability_score": 30, "functional_classification": "Buggy", "security_classification": "Vulnerable", "cwe_id": "CWE-89", "reasoning": "argv[1] is concatenated directly into the SQL query string without sanitization or parameterization, allowing SQL injection. Additionally, the loop condition 'row = res.at(i)' misuses assignment/bounds checking rather than proper iteration, risking out-of-range access or logic errors."}
+	},
+	"38": {
+		"ChatGPT": {"readability_score":93,"understandability_score":94,"maintainability_score":88,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The code is clear and maintainable. Using mysqlpp::quote properly escapes and quotes the user-supplied value, mitigating SQL injection in this query. The logic is correct for the intended operation, assuming the database connection and query execution succeed."},
+		"Claude": {"readability_score": 65, "understandability_score": 60, "maintainability_score": 35, "functional_classification": "Partially Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Using mysqlpp::quote properly escapes argv[1], preventing the prior SQL injection vulnerability. However, the loop 'row = res.at(i)' still misuses assignment for bounds checking, which is fragile and may cause out-of-range access issues rather than a security flaw."}
+	},
+	"39": {
+		"ChatGPT": {"readability_score":86,"understandability_score":84,"maintainability_score":72,"functional_classification":"Buggy","security_classification":"Vulnerable","cwe_id":"CWE-401","reasoning":"The code is readable but leaks memory by never deleting the allocated array. Repeated calls in the loop can exhaust memory, causing a denial-of-service risk. Exception handling is incomplete, and printing the pointer value serves little purpose."},
+		"Claude": {"readability_score": 60, "understandability_score": 55, "maintainability_score": 30, "functional_classification": "Buggy", "security_classification": "Vulnerable", "cwe_id": "CWE-401", "reasoning": "Allocated memory 'p' is never freed (no delete[]), causing a memory leak on every call. If i==j, function() is called in an infinite loop, repeatedly leaking memory until resources are exhausted (CWE-401 combined with CWE-835 infinite loop)."}
+	},
+	"40": {
+		"ChatGPT": {"readability_score":96,"understandability_score":95,"maintainability_score":94,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The code is clear, properly handles allocation failure, frees allocated memory with delete[], and validates input. No memory leak or exploitable vulnerability is evident. The infinite loop depends on input values but appears intentional rather than a correctness defect."},
+		"Claude": {"readability_score": 80, "understandability_score": 75, "maintainability_score": 55, "functional_classification": "Partially Correct", "security_classification": "Vulnerable", "cwe_id": "CWE-835", "reasoning": "Memory leak fixed via delete[]. However, 'while (i == j)' has no internal exit condition and relies on manual Ctrl+C interruption, causing an infinite loop that can hang the program and consume CPU indefinitely (CWE-835)."}
+	},
+	"41": {
+		"ChatGPT": {"readability_score":94,"understandability_score":95,"maintainability_score":90,"functional_classification":"Buggy","security_classification":"Vulnerable","cwe_id":"CWE-787","reasoning":"The code is simple and readable, but writes to buf[33] after allocating only 32 bytes (valid indices 0-31). This out-of-bounds write causes undefined behavior and represents a memory corruption vulnerability."},
+		"Claude": {"readability_score": 70, "understandability_score": 65, "maintainability_score": 30, "functional_classification": "Buggy", "security_classification": "Vulnerable", "cwe_id": "CWE-787", "reasoning": "buf[33] writes out of bounds since buf is only BUFSIZE (32) bytes, indices 0-31 valid. This is an out-of-bounds write causing heap buffer overflow, potential memory corruption or undefined behavior (CWE-787)."}
+	},
+	"42": {
+		"ChatGPT": {"readability_score":96,"understandability_score":97,"maintainability_score":94,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The code is straightforward and uses BUFSIZE-1, which is a valid index for a 32-byte allocation. Memory is properly released with delete[]. No out-of-bounds access or other exploitable vulnerability is evident in this snippet."},
+		"Claude": {"readability_score": 80, "understandability_score": 80, "maintainability_score": 55, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "buf[BUFSIZE-1] correctly writes to the last valid index (31) of the 32-byte buffer, fixing the prior out-of-bounds write. Memory is properly allocated with exception handling and freed with delete[]. No overflow or leak present."}
+	},
+	"43": {
+		"ChatGPT": {"readability_score":93,"understandability_score":94,"maintainability_score":88,"functional_classification":"Buggy","security_classification":"Vulnerable","cwe_id":"CWE-120","reasoning":"The code is easy to follow but performs an unbounded copy into a fixed-size buffer, allowing buffer overflow if argv[1] exceeds 127 characters. It also does not verify argc before accessing argv[1], which can cause invalid memory access."},
+		"Claude": {"readability_score": 65, "understandability_score": 60, "maintainability_score": 25, "functional_classification": "Buggy", "security_classification": "Vulnerable", "cwe_id": "CWE-121", "reasoning": "No check that argc > 1 before accessing argv[1] (potential null pointer deref), and no bounds checking on 'i' against buff's size (128), allowing a stack buffer overflow if argv[1] exceeds 127 characters (CWE-121, also CWE-120).", "cwe_id": "CWE-121"}
+	},
+	"44": {
+		"ChatGPT": {"readability_score":96,"understandability_score":97,"maintainability_score":94,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The code validates argc before accessing argv[1] and bounds-checks the copy to prevent writing past the 128-byte buffer, ensuring proper null termination. It is clear, maintainable, and no exploitable vulnerability is evident in this snippet."},
+		"Claude": {"readability_score": 80, "understandability_score": 80, "maintainability_score": 55, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "argc check prevents null pointer access to argv[1], and the loop bound 'i < 127' ensures buff (size 128) is never written out of bounds, leaving room for the null terminator. This fixes the prior buffer overflow vulnerability."}
+	},
+	"45": {
+		"ChatGPT": {"readability_score":74,"understandability_score":72,"maintainability_score":66,"functional_classification":"Buggy","security_classification":"Vulnerable","cwe_id":"CWE-416","reasoning":"The code allocates memory, frees it in Function1, then Function2 uses the freed pointer via printLine(data), resulting in a use-after-free vulnerability. Missing includes/declarations also prevent compilation, but the primary issue is dereferencing freed memory."},
+		"Claude": {"readability_score": 55, "understandability_score": 45, "maintainability_score": 25, "functional_classification": "Buggy", "security_classification": "Vulnerable", "cwe_id": "CWE-416", "reasoning": "'data' is deleted inside Function1, but Function2 still calls printLine(data) afterward, causing a use-after-free (CWE-416). Also 'printLine' and memset are undeclared/missing includes (cstring), so this would not compile as-is."}
+	},
+	"46": {
+		"ChatGPT": {"readability_score":82,"understandability_score":84,"maintainability_score":78,"functional_classification":"Partially Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The code fixes the previous use-after-free by moving deletion after use and nulling the pointer. However, it lacks proper allocation failure handling and contains undeclared functions/includes, so it may not compile as shown. No exploitable memory vulnerability is evident in the intended flow."},
+		"Claude": {"readability_score": 70, "understandability_score": 65, "maintainability_score": 45, "functional_classification": "Buggy", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Use-after-free is fixed: delete now happens after printLine, and data is nulled afterward. However, code won't compile as-is since 'printLine' is undeclared and <cstring> is missing for memset, though the memory-management logic itself is now correct and safe."}
+	},
+	"47": {
+		"ChatGPT": {"readability_score":78,"understandability_score":75,"maintainability_score":68,"functional_classification":"Buggy","security_classification":"Vulnerable","cwe_id":"CWE-415","reasoning":"The code allocates and deletes data inside Function1, then Function2 deletes the same pointer again, causing a double-free vulnerability. The pointer is not reset after the first delete. The structure is understandable but has unsafe ownership management."},
+		"Claude": {"readability_score": 55, "understandability_score": 45, "maintainability_score": 25, "functional_classification": "Buggy", "security_classification": "Vulnerable", "cwe_id": "CWE-415", "reasoning": "'data' is deleted inside Function1, then deleted again in Function2, causing a double-free (CWE-415). Also missing <cstring> for memset, so the code would not compile as written despite the logical flaw being the primary issue."}
+	},
+	"48": {
+		"ChatGPT": {"readability_score":88,"understandability_score":90,"maintainability_score":82,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The code correctly manages ownership: memory is allocated in Function1 and released once in Function2. The null check prevents invalid deletion. However, raw pointers and manual memory management reduce maintainability, and allocation failure handling is missing. No exploitable vulnerability is evident in this flow."},
+		"Claude": {"readability_score": 75, "understandability_score": 70, "maintainability_score": 50, "functional_classification": "Buggy", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Double-free is fixed: memory is deleted exactly once in Function2 and pointer is nulled afterward. However, code won't compile as-is: 'memset' requires <cstring>, which is missing (only <wchar.h> is included), though the memory-management logic itself is correct and safe."}
+	},
+	"49": {
+		"ChatGPT": {"readability_score":86,"understandability_score":82,"maintainability_score":78,"functional_classification":"Buggy","security_classification":"Vulnerable","cwe_id":"CWE-190","reasoning":"The code is simple to read, but it assigns UINT_MAX to an unsigned integer and then performs data + 1, causing unsigned integer wraparound. This may lead to incorrect calculations and security issues if used in size or boundary checks. Also, badSource is undefined in the snippet."},
+		"Claude": {"readability_score": 55, "understandability_score": 45, "maintainability_score": 25, "functional_classification": "Buggy", "security_classification": "Vulnerable", "cwe_id": "CWE-190", "reasoning": "Func1 is defined but never called (Func2 calls undeclared 'badSource' instead); if data becomes UINT_MAX, 'data + 1' wraps around to 0, an integer overflow (CWE-190). Missing includes/declarations for climits, badSource, printLine mean it also wouldn't compile."}
+	},
+	"50": {
+		"ChatGPT": {"readability_score":88,"understandability_score":87,"maintainability_score":82,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The code adds a boundary check before performing data + 1, preventing unsigned wraparound when data equals UINT_MAX. Logic is clear and avoids the previous overflow issue. Minor concerns remain because badSource and printLine are undefined in the snippet."},
+		"Claude": {"readability_score": 60, "understandability_score": 55, "maintainability_score": 30, "functional_classification": "Partially Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Guard 'if (data < UINT_MAX)' prevents the integer overflow (CWE-190) from the prior version. However, 'badSource', 'printLine', and UINT_MAX's header (climits) are undeclared/missing, and Func1 remains unused, so the code would not compile as-is."}
+	},
+	"51": {
+		"ChatGPT": ,
+		"Claude": 
+	},
+	"52": {
+		"ChatGPT": ,
+		"Claude": 
+	},
+	"53": {
+		"ChatGPT": {"readability_score":92,"understandability_score":90,"maintainability_score":84,"functional_classification":"Partially Correct","security_classification":"Vulnerable","cwe_id":"CWE-369","reasoning":"The code is concise and easy to understand, but it performs division by data without checking for zero, which can cause undefined behavior or runtime errors. The C-style cast also reduces type safety. Adding validation for data and safer conversion would improve robustness."},
+		"Claude": {"readability_score": 65, "understandability_score": 55, "maintainability_score": 30, "functional_classification": "Buggy", "security_classification": "Vulnerable", "cwe_id": "CWE-369", "reasoning": "No check that data != 0 before division; if data is 0.0, this yields infinity/NaN, and casting to int is undefined behavior (division by zero, CWE-369). Also 'println' is undeclared and 'const' on a free function is invalid syntax, so it wouldn't compile as-is."}
+	},
+	"54": {
+		"ChatGPT": {"readability_score":96,"understandability_score":97,"maintainability_score":95,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The code validates near-zero input before division and checks integer range before conversion, preventing division errors and overflow-related issues. It uses clear structure and safer C++ casting. The implementation is readable, maintainable, and no exploitable vulnerability is evident."},
+		"Claude": {"readability_score": 85, "understandability_score": 80, "maintainability_score": 70, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Division-by-zero is properly guarded via epsilon comparison, and the int overflow risk from casting is checked against numeric_limits before the cast, fixing the prior CWE-369/CWE-190 issues. Class-scoped and syntactically valid, with clear error handling."}
+	},
+	"55": {
+		"ChatGPT": {"readability_score":95,"understandability_score":95,"maintainability_score":92,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The function is clear and correctly handles reopening an ifstream by closing an existing file, clearing stream state, opening the requested path, and returning success status. No direct security vulnerability is present, though callers should ensure untrusted paths are handled appropriately."},
+		"Claude": {"readability_score": 90, "understandability_score": 90, "maintainability_score": 80, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Function properly closes any previously open stream, clears error flags, opens the new path, and returns success status. Logic is straightforward and correct. No path validation is performed, but this alone doesn't constitute an exploitable vulnerability in this context."}
+	},
+	"56": {
+		"ChatGPT": {"readability_score":94,"understandability_score":95,"maintainability_score":92,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The code clearly validates that the path exists and refers to a regular file before opening it. Stream state handling is correct. The structure is clean and maintainable. Minor TOCTOU risk exists between checking and opening, but no direct exploitable vulnerability is evident in this snippet."},
+		"Claude": {"readability_score": 88, "understandability_score": 85, "maintainability_score": 78, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Adds existence and regular-file checks via std::filesystem before opening, improving robustness over the prior version (e.g., avoids trying to open directories or symlinked special files). Properly closes/clears prior state. No path traversal validation, but acceptable for a generic file-opening utility."}
+	},
+	"57": {
+		"ChatGPT": {"readability_score":96,"understandability_score":96,"maintainability_score":94,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The code is simple, clear, and uses std::string, which manages memory safely. Input is handled through operator>> without fixed-size buffer risks. The only minor issue is that data2 is read but never used, which may indicate unnecessary logic but does not affect correctness."},
+		"Claude": {"readability_score": 80, "understandability_score": 80, "maintainability_score": 45, "functional_classification": "Partially Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Using std::string with cin>> automatically manages memory, avoiding buffer overflow risks. Logic compiles and runs correctly, but data2 is read and never used, which is dead/wasteful code indicating an incomplete or unclear intent (unused variable, minor code smell)."}
+	},
+	"58": {
+		"ChatGPT": {"readability_score":98,"understandability_score":98,"maintainability_score":95,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The code is clear, simple, and correctly reads two inputs into std::string objects before printing them. Using std::string avoids fixed-buffer memory issues. The structure is maintainable, with no apparent functional defects or exploitable security vulnerabilities."},
+		"Claude": {"readability_score": 90, "understandability_score": 90, "maintainability_score": 70, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Both data1 and data2 are now used (printed), resolving the unused-variable issue from the prior version. Using std::string with cin>> safely manages memory with no fixed-size buffer, avoiding overflow risks. Logic is simple, clear, and correct."}
+	},
+	"59": {
+		"ChatGPT": {"readability_score":96,"understandability_score":92,"maintainability_score":85,"functional_classification":"Partially Correct","security_classification":"Vulnerable","cwe_id":"CWE-476","reasoning":"The code is concise and easy to read, but it assumes data is a valid non-null pointer to writable memory. Passing a null or invalid pointer causes undefined behavior. Adding input validation or using safer abstractions would improve correctness and security."},
+		"Claude": {"readability_score": 75, "understandability_score": 70, "maintainability_score": 40, "functional_classification": "Buggy", "security_classification": "Vulnerable", "cwe_id": "CWE-476", "reasoning": "No null check on 'data' before writing to data[0], risking a null pointer dereference if caller passes NULL (CWE-476). Also 'printIntLine' is undeclared, so this snippet would not compile as-is; caller is trusted without validation."}
+	},
+	"60": {
+		"ChatGPT": {"readability_score":97,"understandability_score":96,"maintainability_score":92,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The code clearly checks for a null pointer before dereferencing it, preventing the previous null pointer issue. The logic is simple and maintainable. Remaining assumptions are that the pointer references valid writable memory and that index 0 is within bounds, which are not verifiable from this snippet."},
+		"Claude": {"readability_score": 85, "understandability_score": 80, "maintainability_score": 55, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Null check on 'data' before dereferencing fixes the prior CWE-476 null pointer dereference. Logic is simple and correct given valid input. 'printIntLine' remains undeclared, so it would not compile standalone, but that is an external dependency, not a logic flaw."}
+	},
+	"61": {
+		"ChatGPT": {"readability_score":95,"understandability_score":95,"maintainability_score":92,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The code is clear and uses a named struct to make the return value more descriptive than a pair. The calculation logic is assumed correct, so functionality is valid. No security issues are present. Minor concerns include hardcoded initialization values and potential empty-input handling not shown."},
+		"Claude": {"readability_score": 82, "understandability_score": 72, "maintainability_score": 55, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Using a named struct 'MinMax_s' instead of std::pair improves readability/self-documentation over the prior version (named fields vs .first/.second). Inner logic assumed correct per comment. No unsafe operations, so no security concerns."}
+	},
+	"62": {
+		"ChatGPT": ,
+		"Claude": 
+	},
+	"63": {
+		"ChatGPT": ,
+		"Claude": 
+	},
+	"64": {
+		"ChatGPT": ,
+		"Claude": 
+	},
+	"65": {
+		"ChatGPT": ,
+		"Claude": 
+	},
+	"66": {
+		"ChatGPT": ,
+		"Claude": 
+	},
+	"67": {
+		"ChatGPT": ,
+		"Claude": 
+	},
+	"68": {
+		"ChatGPT": ,
+		"Claude": 
+	},
+	"69": {
+		"ChatGPT": ,
+		"Claude": 
+	},
+	"70": {
+		"ChatGPT": ,
+		"Claude": 
+	},
+	"71": {
+		"ChatGPT": ,
+		"Claude": 
+	},
+	"72": {
+		"ChatGPT": ,
+		"Claude": 
+	},
+	"73": {
+		"ChatGPT": ,
+		"Claude": 
+	},
+	"74": {
+		"ChatGPT": ,
+		"Claude": 
+	},
+	"75": {
+		"ChatGPT": ,
+		"Claude": 
+	},
+	"77": {
+		"ChatGPT": ,
+		"Claude": 
+	},
+	"78": {
+		"ChatGPT": ,
+		"Claude": 
+	},
+	"79": {
+		"ChatGPT": ,
+		"Claude": 
+	},
+	"80": {
+		"ChatGPT": ,
+		"Claude": 
+	},
+	"81": {
+		"ChatGPT": ,
+		"Claude": 
+	},
+	"82": {
+		"ChatGPT": ,
+		"Claude": 
+	},
+	"83": {
+		"ChatGPT": ,
+		"Claude": 
+	},
+	"84": {
+		"ChatGPT": ,
+		"Claude": 
+	},
+	"85": {
+		"ChatGPT": ,
+		"Claude": 
+	},
+	"86": {
+		"ChatGPT": ,
+		"Claude": 
+	},
+	"87": {
+		"ChatGPT": ,
+		"Claude": 
+	},
+	"88": {
+		"ChatGPT": ,
+		"Claude": 
+	},
+	"89": {
+		"ChatGPT": ,
+		"Claude": 
+	},
+	"90": {
+		"ChatGPT": ,
+		"Claude": 
+	},
+	"91": {
+		"ChatGPT": ,
+		"Claude": 
+	},
+	"92": {
+		"ChatGPT": ,
+		"Claude": 
+	},
+	"93": {
+		"ChatGPT": ,
+		"Claude": 
+	},
+	"94": {
+		"ChatGPT": ,
+		"Claude": 
+	},
+	"95": {
+		"ChatGPT": ,
+		"Claude": 
+	},
+	"96": {
+		"ChatGPT": ,
+		"Claude": 
+	},
+	"97": {
+		"ChatGPT": ,
+		"Claude": 
+	},
+	"98": {
+		"ChatGPT": ,
+		"Claude": 
+	},
+	"99": {
+		"ChatGPT": ,
+		"Claude": 
+	},
+	"100": {
+		"ChatGPT": ,
+		"Claude": 
+	},
 }
