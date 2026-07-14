@@ -3,7 +3,7 @@ public class Test {
 
     public void check(int j) {
         if (false || false) {
-            System.out.println("Unreachable");
+            System.out.println("Text");
         }
         this.bar(this.a);
         
