@@ -1,0 +1,10 @@
+- Open the cmd from the SonarQube folder and run:
+C:\Users\xreut\Documents\Masters\sonarqube-26.2.0.119303\sonarqube-26.2.0.119303\bin\windows-x86-64\StartSonar.bat
+- Wait until the final line is "SonarQube is operational"
+- Open the cmd from the local repo:
+C:\Users\xreut\Documents\Masters\code-quality-research
+and run:
+C:\Users\xreut\Documents\Masters\sonar-scanner-cli-8.0.1.6346-windows-x64\sonar-scanner-8.0.1.6346-windows-x64\bin\sonar-scanner.bat
+- Wait until the final line is "EXECUTION SUCCESS"
+- Open the URL http://localhost:9000/ and enter the username & password
+-Analyze the results
