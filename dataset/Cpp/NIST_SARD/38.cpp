@@ -1,0 +1,31 @@
+#include <iostream>
+#include <mysql++.h>
+
+using namespace std;
+
+int main(int argc, char *argv[])
+{
+	if (argc < 2) {
+		cout << "You should give an entry parameter..." << endl;
+		cout << "Usage: ./sql <parameter>" << endl;
+		return 0;
+	}
+
+	mysqlpp::Connection con(false);
+	con.connect("kikoo", "user","userpass");
+
+	mysqlpp::Query query = con.query();
+	query << "SELECT * FROM test WHERE Value = " << mysqlpp::quote << argv[1];
+	mysqlpp::Result res = query.store();
+
+	// Print the result
+	cout << "Results: " << endl;
+	if (res) {
+		mysqlpp::Row row;
+		mysqlpp::Row::size_type i;
+		for (i=0; row = res.at(i); ++i)
+			cout << "\t" << row.at(0) << endl;
+	}
+	return 0;
+}
+

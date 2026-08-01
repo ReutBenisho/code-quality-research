@@ -12,6 +12,3 @@ Strict Output Format: Your response MUST be presented ONLY in the following JSON
 { "readability_score": number, "understandability_score": number, "maintainability_score": number, "functional_classification": "string", "security_classification": "string", "cwe_id": "CWE-ID or None", "reasoning": "A concise explanation for the scores and classifications in under 400 characters" }
 
 Code to Evaluate:
-
-
-
