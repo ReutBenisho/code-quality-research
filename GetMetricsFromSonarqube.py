@@ -1,10 +1,15 @@
+import os
 import json
 import requests
+from urllib.parse import quote
 
 SONAR_URL = "http://localhost:9000"
 AUTH = ("admin", "Admin1234!@#$") 
-project_key = "code-quality-research"
-file_path = "dataset%2FPython%2FExercises_2022%2F95.py"
+PROJECT_KEY = "code-quality-research"
+TARGET_DIRECTORIES = [
+    {"path": r"dataset\Python", "ext": ".py"},
+    {"path": r"dataset\Java", "ext": ".java"}
+]
 
 
 def rating_to_score_100(rating_val):
@@ -34,23 +39,44 @@ def calculate_maintainability_100(debt_ratio, rating_val):
         except ValueError:
             pass
     return rating_to_score_100(rating_val)
-    
-    
-def get_file_metrics():
-    file_key = f"{project_key}:{file_path}"
+
+def discover_files():
+    found_files = []
+
+    for target in TARGET_DIRECTORIES:
+        base_dir = target["path"]
+        extension = target["ext"]
+
+        if not os.path.exists(base_dir):
+            print(f"Warning: Directory does not exist locally: {base_dir}")
+            continue
+
+        for root, _, files in os.walk(base_dir):
+            for file in files:
+                if file.endswith(extension):
+                    full_local_path = os.path.join(root, file)
+                    
+                    normalized_path = full_local_path.replace("\\", "/")
+                    
+                    found_files.append(normalized_path)
+
+    return found_files
+
+def get_file_metrics(file_path):
+    encoded_file_path = quote(file_path, safe='')
+    file_key = f"{PROJECT_KEY}:{encoded_file_path}"
     
     metrics_list = "sqale_rating,security_rating,cognitive_complexity,bugs,vulnerabilities"
     url = f"{SONAR_URL}/api/measures/component?component={file_key}&metricKeys={metrics_list}"
- 
+
     try:
         response = requests.get(url, auth=AUTH)
         response.raise_for_status()
         res_data = response.json()
     except requests.exceptions.RequestException as e:
-        print(f"Error while calling SonarQube API: {e}")
+        print(f"Error while calling SonarQube API for {file_path}: {e}")
         return None
 
-    print("Finished calling the WEB API")
     measures = {}
     for m in res_data.get('component', {}).get('measures', []):
         measures[m['metric']] = m.get('value')
@@ -68,7 +94,7 @@ def get_file_metrics():
             if cwe_id != "None":
                 break
     except Exception as e:
-        print(f"Warning: couldn't get tags of CWE: {e}")
+        print(f"Warning: couldn't get tags of CWE for {file_path}: {e}")
 
     readability = calculate_readability_100(measures.get("cognitive_complexity", 0))
     maintainability = calculate_maintainability_100(
@@ -93,8 +119,29 @@ def get_file_metrics():
         )[:400]  
     }
     
-    print(result_json)
-    return result_json
-    
+    return json.dumps(result_json, ensure_ascii=False)
 
-get_file_metrics()
+
+if __name__ == "__main__":
+    files_to_analyze = discover_files()
+    print(f"Found {len(files_to_analyze)} files to process.")
+
+    all_results = {}
+    
+    for path in files_to_analyze:
+        file_name = os.path.basename(path)
+        if file_name in all_results:
+            print(f"\n[WARNING] Duplicate file name detected!")
+            print(f"  --> File Name: {file_name}")
+            print(f"  --> Full Relative Path: {path}\n")
+
+        metrics = get_file_metrics(path)
+        if metrics:
+            all_results[file_name] = metrics
+            print(f"Got metrics for {file_name}")
+
+    output_filename = "sonar_results.json"
+    with open(output_filename, "w", encoding="utf-8") as f:
+        json.dump(all_results, f, indent=2, ensure_ascii=False)
+        
+    print(f"\n--- Process finished! Results saved to {output_filename} ---")

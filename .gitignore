@@ -2,3 +2,10 @@
 /.vs
 /dataset/.vs
 /dataset/CodeAnalisys/.vs
+*.vsidx
+/dataset/CodeAnalisysVisualStudioProject/.vs/CodeAnalisys.slnx/FileContentIndex/e13e1c2e-f663-480f-bb56-fdd421c13c4b.vsidx
+/dataset/CodeAnalisysVisualStudioProject/.vs/CodeAnalisys.slnx/v18/.suo
+/dataset/CodeAnalisysVisualStudioProject/.vs/CodeAnalisys.slnx/v18/Browse.VC.db
+/dataset/CodeAnalisysVisualStudioProject/.vs/CodeAnalisys.slnx/v18
+/dataset/CodeAnalisysVisualStudioProject/.vs/CodeAnalisys.slnx/v18/.suo
+/dataset/CodeAnalisysVisualStudioProject/.vs/CodeAnalisys.slnx/v18/Browse.VC.db

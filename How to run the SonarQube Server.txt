@@ -7,4 +7,4 @@ and run:
 C:\Users\xreut\Documents\Masters\sonar-scanner-cli-8.0.1.6346-windows-x64\sonar-scanner-8.0.1.6346-windows-x64\bin\sonar-scanner.bat
 - Wait until the final line is "EXECUTION SUCCESS"
 - Open the URL http://localhost:9000/ and enter the username & password
--Analyze the results
+- Analyze the results
