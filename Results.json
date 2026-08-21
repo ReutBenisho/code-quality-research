@@ -233,19 +233,44 @@
 		"GithubCopilot":,
 		"Sonarqube": 
 	},
-	"7": {
+	"7_java": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 7,
+			"language": "java",
+			"origin": "Cui_2024",
+			"external_reference_url": "Figure 5(a)"
 		},
 		"ChatGPT": { "readability_score": 84, "understandability_score": 80, "maintainability_score": 72, "functional_classification": "Partially Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "The code is concise and readable due to Lombok's @Value annotation, but extending Exception with @Value can be problematic because immutable value semantics and generated constructors may not align well with standard exception handling patterns. No direct security vulnerabilities are present." },
 		"Claude": {"readability_score":68,"understandability_score":55,"maintainability_score":35,"functional_classification":"Buggy","security_classification":"Safe","cwe_id":"None","reasoning":"@Value makes the class final and generates an all-args constructor, but Exception subclasses should be serializable with a serialVersionUID — omitting it triggers a compiler warning and risks SerializationException. @Value also suppresses standard exception constructors (message/cause), crippling usability. Poor exception design overall."},
 		"Gemini": { "readability_score": 90, "understandability_score": 85, "maintainability_score": 60, "functional_classification": "Buggy", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Lombok's `@Value` annotation makes all fields private and final, and generates an all-args constructor. However, Java's `Exception` class does not have a default constructor that hooks into Lombok's generation cleanly without explicitly calling `super()`, and it breaks standard exception serializability mechanisms since `detailMessage` is not set properly, causing compilation or runtime design issues." },
 		"GithubCopilot":{ "readability_score": 82, "understandability_score": 80, "maintainability_score": 75, "functional_classification": "Partially Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Lombok @Value creates immutable class but conflicts with Exception mutability expectations. Missing serialVersionUID for exception serialization (should be defined). @Value generates constructor requiring customValue parameter, complicating standard exception creation (new CustomException(message, cause)). Code compiles but violates exception convention. Immutability is good practice but atypical for exceptions. Functional but unconventional design."},
 		"Sonarqube": {"readability_score": 100.0, "understandability_score": 100.0, "maintainability_score": 60.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube detected Cognitive Complexity=0, Bugs=0, Vulnerabilities=0."}
+	},
+	"7_cpp": {
+		"metadata": {
+			"id": 7,
+			"language": "cpp",
+			"origin": "transFromJava",
+			"external_reference_url": "Translatetd file 7_java from java to cpp"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"7_py": {
+		"metadata": {
+			"id": 7,
+			"language": "python",
+			"origin": "transFromJava",
+			"external_reference_url": "Translatetd file 7_java from java to python"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
 	},
 	"8": {
 		"metadata": {
