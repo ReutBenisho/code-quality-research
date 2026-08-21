@@ -77,19 +77,44 @@
 		"GithubCopilot": ,
 		"Sonarqube": 
 	},
-	"3": {
+	"3_java": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 3,
+			"language": "java",
+			"origin": "Cui_2024",
+			"external_reference_url": "Figure 3(c)"
 		},
 		"ChatGPT": {"readability_score":88,"understandability_score":91,"maintainability_score":84,"functional_classification":"Partially Correct","security_classification":"Safe","cwe_id":"None","reasoning":"Code is simple and easy to follow. However, one log message defines three placeholders but is never used, suggesting incomplete or dead code. Structure is acceptable but contains unused variables. No exploitable security issues are present."},
 		"Claude": {"readability_score": 75, "understandability_score": 65, "maintainability_score": 40, "functional_classification": "Buggy", "security_classification": "Safe", "cwe_id": "None", "reasoning": "First if-block declares an unused log message with no logger call, likely a copy-paste bug; 'if (true)' blocks are dead-code smells hurting maintainability. No security vulnerabilities present, logic is otherwise harmless but incomplete/misleading."},
 		"Gemini": { "readability_score": 90, "understandability_score": 85, "maintainability_score": 70, "functional_classification": "Partially Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "The code contains dead code, as the first block declares `logMessage` inside a local block scope (`if (true)`) but never actually uses or logs it before it goes out of scope. While the syntax is valid, the conditional wrappers are redundant and clutter the logic. The logging mechanics themselves do not pose any severe security vulnerabilities." },
 		"GithubCopilot":{"readability_score": 72,"understandability_score": 68,"maintainability_score": 60,"functional_classification": "Partially Correct","security_classification": "Safe","cwe_id": "None","reasoning": "Code has structural issues: unused logMessage in first block creates dead code. Null parameter passed to logger.trace() without validation. Variable shadowing (logMessage declared twice in same scope). Logger implementation trivial/incomplete. Lacks error handling for null inputs. No security vulnerabilities but poor maintainability. Logic partially correct but contains unused code and questionable null handling patterns."},
 		"Sonarqube": {"readability_score": 90.0, "understandability_score": 90.0, "maintainability_score": 100.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube detected Cognitive Complexity=2, Bugs=0, Vulnerabilities=0."}
+	},
+	"3_cpp": {
+		"metadata": {
+			"id": 3,
+			"language": "cpp",
+			"origin": "transFromJava",
+			"external_reference_url": "Translatetd file 3_java from java to cpp"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"3_py": {
+		"metadata": {
+			"id": 3,
+			"language": "python",
+			"origin": "transFromJava",
+			"external_reference_url": "Translatetd file 3_java from java to python"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
 	},
 	"4": {
 		"metadata": {
