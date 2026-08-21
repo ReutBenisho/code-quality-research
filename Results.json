@@ -857,75 +857,200 @@
 		"GithubCopilot":,
 		"Sonarqube": 
 	},
-	"23": {
+	"23_java": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 23,
+			"language": "java",
+			"origin": "SARD",
+			"external_reference_url": "https://samate.nist.gov/SARD/test-cases/250396/versions/1.0.0"
 		},
 		"ChatGPT": ,
 		"Claude": ,
 		"Gemini": ,
 		"GithubCopilot":,
-		"Sonarqube": {"readability_score": 220.0, "understandability_score": 100.0, "maintainability_score": 40.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube detected Cognitive Complexity=0, Bugs=0, Vulnerabilities=0."}
+		"Sonarqube": 
 	},
-	"24": {
+	"23_cpp": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 23,
+			"language": "cpp",
+			"origin": "transFromJava",
+			"external_reference_url": "Translatetd file 23_java from java to cpp"
 		},
 		"ChatGPT": ,
 		"Claude": ,
 		"Gemini": ,
 		"GithubCopilot":,
-		"Sonarqube": {"readability_score": 100.0, "understandability_score": 100.0, "maintainability_score": 40.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube detected Cognitive Complexity=0, Bugs=0, Vulnerabilities=0."}
+		"Sonarqube": 
 	},
-	"25": {
+	"23_py": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 23,
+			"language": "python",
+			"origin": "transFromJava",
+			"external_reference_url": "Translatetd file 23_java from java to python"
 		},
 		"ChatGPT": ,
 		"Claude": ,
 		"Gemini": ,
 		"GithubCopilot":,
-		"Sonarqube": {"readability_score": 100.0, "understandability_score": 100.0, "maintainability_score": 60.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube detected Cognitive Complexity=0, Bugs=0, Vulnerabilities=0."}
+		"Sonarqube": 
 	},
-	"26": {
+	"24_java": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 24,
+			"language": "java",
+			"origin": "SARD",
+			"external_reference_url": "https://samate.nist.gov/SARD/test-cases/148102/versions/1.0.0"
 		},
 		"ChatGPT": ,
 		"Claude": ,
 		"Gemini": ,
 		"GithubCopilot":,
-		"Sonarqube": {"readability_score": 100.0, "understandability_score": 100.0, "maintainability_score": 100.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube detected Cognitive Complexity=0, Bugs=0, Vulnerabilities=0."}
+		"Sonarqube": 
 	},
-	"27": {
+	"24_cpp": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 24,
+			"language": "cpp",
+			"origin": "transFromJava",
+			"external_reference_url": "Translatetd file 24_java from java to cpp"
 		},
 		"ChatGPT": ,
 		"Claude": ,
 		"Gemini": ,
 		"GithubCopilot":,
-		"Sonarqube": {"readability_score": 90.0, "understandability_score": 90.0, "maintainability_score": 60.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube detected Cognitive Complexity=2, Bugs=0, Vulnerabilities=0."}
+		"Sonarqube": 
+	},
+	"24_py": {
+		"metadata": {
+			"id": 24,
+			"language": "python",
+			"origin": "transFromJava",
+			"external_reference_url": "Translatetd file 24_java from java to python"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"25_java": {
+		"metadata": {
+			"id": 25,
+			"language": "java",
+			"origin": "SARD",
+			"external_reference_url": "https://samate.nist.gov/SARD/test-cases/125602/versions/1.0.0"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"25_cpp": {
+		"metadata": {
+			"id": 25,
+			"language": "cpp",
+			"origin": "transFromJava",
+			"external_reference_url": "Translatetd file 25_java from java to cpp"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"25_py": {
+		"metadata": {
+			"id": 25,
+			"language": "python",
+			"origin": "transFromJava",
+			"external_reference_url": "Translatetd file 25_java from java to python"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"26_java": {
+		"metadata": {
+			"id": 26,
+			"language": "java",
+			"origin": "SARD",
+			"external_reference_url": "https://samate.nist.gov/SARD/test-cases/137802/versions/1.0.0"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"26_cpp": {
+		"metadata": {
+			"id": 26,
+			"language": "cpp",
+			"origin": "transFromJava",
+			"external_reference_url": "Translatetd file 26_java from java to cpp"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"26_py": {
+		"metadata": {
+			"id": 26,
+			"language": "python",
+			"origin": "transFromJava",
+			"external_reference_url": "Translatetd file 26_java from java to python"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"27_java": {
+		"metadata": {
+			"id": 27,
+			"language": "java",
+			"origin": "SARD",
+			"external_reference_url": "https://samate.nist.gov/SARD/test-cases/139402/versions/1.0.0"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"27_cpp": {
+		"metadata": {
+			"id": 27,
+			"language": "cpp",
+			"origin": "transFromJava",
+			"external_reference_url": "Translatetd file 27_java from java to cpp"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"27_py": {
+		"metadata": {
+			"id": 27,
+			"language": "python",
+			"origin": "transFromJava",
+			"external_reference_url": "Translatetd file 27_java from java to python"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
 	},
 	"28": {
 		"metadata": {
