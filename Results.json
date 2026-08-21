@@ -1,17 +1,42 @@
 {
-	"1": {
+	"1_java": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 1,
+			"language": "java",
+			"origin": "Cui_2024",
+			"external_reference_url": "Figure 3(a)"
 		},
 		"ChatGPT": { "readability_score": 78, "understandability_score": 80, "maintainability_score": 62, "functional_classification": "Correct", "security_classification": "Vulnerable", "cwe_id": "CWE-496", "reasoning": "Code is simple and easy to follow, but maintainability is reduced by duplicated getter patterns and weak encapsulation. Returning internal mutable arrays directly exposes object state, enabling external modification of private data (public data assigned to private array-typed field)." },
 		"Claude": {"readability_score":62,"understandability_score":55,"maintainability_score":40,"functional_classification":"Buggy","security_classification":"Vulnerable","cwe_id":"CWE-375","reasoning":"Both getArr() methods return direct references to internal arrays, exposing mutable state (CWE-375). Callers can modify private fields externally, breaking encapsulation. Names arr/arr2 are generic. Static inner class with duplicate method name causes confusion. Should return defensive copies instead."},
 		"Gemini": { "readability_score": 85, "understandability_score": 80, "maintainability_score": 55, "functional_classification": "Correct", "security_classification": "Vulnerable", "cwe_id": "CWE-495", "reasoning": "The code is vulnerable to CWE-495 (Private Data Structure Returned From A Public Method). By returning direct references to private mutable arrays ('arr' and 'arr2'), the class breaks encapsulation. External callers can modify internal state without the class's knowledge. While syntactically correct and readable, this design creates significant security and maintenance risks." },
 		"GithubCopilot": {"readability_score": 78,"understandability_score": 75,"maintainability_score": 70,"functional_classification": "Correct","security_classification": "Vulnerable","cwe_id": "CWE-375","reasoning": "Encapsulation vulnerability: getArr() returns mutable array references directly, allowing caller to modify internal state. Both outer and inner classes expose this flaw. No defensive copying. Clear structure and naming, but security oversight. Functional logic is correct. Methods should return defensive copies (clone() or Arrays.copyOf()). Common Java pitfall compromising object integrity and predictability."},
 		"Sonarqube": {"readability_score": 100.0, "understandability_score": 100.0, "maintainability_score": 100.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube detected Cognitive Complexity=0, Bugs=0, Vulnerabilities=0."}
+	},
+	"1_cpp": {
+		"metadata": {
+			"id": 1,
+			"language": "cpp",
+			"origin": "transFromJava",
+			"external_reference_url": "Translatetd file 1_java from java to cpp"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"1_py": {
+		"metadata": {
+			"id": 1,
+			"language": "python",
+			"origin": "transFromJava",
+			"external_reference_url": "Translatetd file 1_java from java to python"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
 	},
 	"2": {
 		"metadata": {
