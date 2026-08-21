@@ -38,19 +38,44 @@
 		"GithubCopilot": ,
 		"Sonarqube": 
 	},
-	"2": {
+	"2_java": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 2,
+			"language": "java",
+			"origin": "Cui_2024",
+			"external_reference_url": "Figure 3(b)"
 		},
 		"ChatGPT": { "readability_score": 82, "understandability_score": 79, "maintainability_score": 70, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Code is concise and structurally clear with standard concurrency annotations and proper volatile usage. Maintainability is moderate due to minimal implementation detail and non-static inner classes implicitly referencing the outer class. No obvious functional or security flaws are present." },
 		"Claude": {"readability_score":72,"understandability_score":45,"maintainability_score":38,"functional_classification":"Buggy","security_classification":"Safe","cwe_id":"None","reasoning":"Annotations @Immutable and @ThreadSafe are documentation-only; neither class actually enforces those contracts. Using volatile on reference fields helps visibility but doesn't make the objects themselves thread-safe or immutable. False safety guarantees create a maintenance hazard. Inner classes also hold implicit outer reference unnecessarily."},
 		"Gemini": { "readability_score": 95, "understandability_score": 90, "maintainability_score": 85, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "The code is syntactically valid and structurally clean. Concurrency annotations match the intent, and the nested classes are well-defined within the enclosing wrapper. Using the 'volatile' keyword ensures visibility across threads for the references, which is thread-safe as long as state transitions are atomic or independent. No memory vulnerabilities or race hazards exist." },
 		"GithubCopilot": {"readability_score": 75,"understandability_score": 72,"maintainability_score": 65,"functional_classification": "Partially Correct","security_classification": "Vulnerable","cwe_id": "CWE-362","reasoning": "Annotations misused: @Immutable and @ThreadSafe are documentation-only, not enforced by compiler. Volatile on immutable references is redundant. Inner classes accessing outer class state creates visibility issues. No actual thread-safety guarantees. Race conditions possible on field updates. Correct structure but false sense of security from annotations. Need proper synchronization mechanisms (locks, atomics). Design intent unclear."},
 		"Sonarqube": {"readability_score": 100.0, "understandability_score": 100.0, "maintainability_score": 100.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube detected Cognitive Complexity=0, Bugs=0, Vulnerabilities=0."}
+	},
+	"2_cpp": {
+		"metadata": {
+			"id": 2,
+			"language": "cpp",
+			"origin": "transFromJava",
+			"external_reference_url": "Translatetd file 2_java from java to cpp"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"2_py": {
+		"metadata": {
+			"id": 2,
+			"language": "python",
+			"origin": "transFromJava",
+			"external_reference_url": "Translatetd file 2_java from java to python"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
 	},
 	"3": {
 		"metadata": {
