@@ -116,19 +116,44 @@
 		"GithubCopilot":,
 		"Sonarqube": 
 	},
-	"4": {
+	"4_java": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 4,
+			"language": "java",
+			"origin": "Cui_2024",
+			"external_reference_url": "Figure 3(d)"
 		},
 		"ChatGPT": { "readability_score": 72, "understandability_score": 58, "maintainability_score": 55, "functional_classification": "Partially Correct", "security_classification": "Vulnerable", "cwe_id": "CWE-374", "reasoning": "The code is simple but lacks clear intent and meaningful naming. Functionality is incomplete since it only compares array lengths and returns the original mutable array reference. Returning externally supplied mutable arrays without copying exposes internal state and can enable unintended modification." },
 		"Claude": {"readability_score":65,"understandability_score":50,"maintainability_score":40,"functional_classification":"Buggy","security_classification":"Vulnerable","cwe_id":"CWE-208","reasoning":"Looks like a flawed XOR or comparison utility — it checks lengths but returns a1 unmodified instead of processing both arrays. Returning null on mismatch risks NullPointerException at callsite. Returning a1 directly exposes mutable internal reference. If intended as constant-time comparison, it fails, enabling timing attacks (CWE-208)."},
 		"Gemini": { "readability_score": 95, "understandability_score": 90, "maintainability_score": 85, "functional_classification": "Partially Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "The function checks if two byte arrays have equal length, but its behavior is logically incomplete or misleading. If lengths match, it simply returns the first array (`a1`) without performing any expected array merging, comparison, or processing, rendering the `a2` parameter completely unused. The memory operations are safe from execution or injection vulnerabilities." },
 		"GithubCopilot":{"readability_score": 82,"understandability_score": 78,"maintainability_score": 65,"functional_classification": "Buggy","security_classification": "Vulnerable","cwe_id": "CWE-476","reasoning": "Null pointer dereference risk: no null checks on a1, a2 before calling .length. Returns null on mismatch, forcing caller to handle null. Function intent unclear (why return a1?). Misleading logic: validates length equality but returns a1 regardless. Callers must defensively check for null. No input validation. Poor error handling. Functional but dangerous design with implicit contract violations."},
 		"Sonarqube": {"readability_score": 95.0, "understandability_score": 95.0, "maintainability_score": 100.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube detected Cognitive Complexity=1, Bugs=0, Vulnerabilities=0."}
+	},
+	"4_cpp": {
+		"metadata": {
+			"id": 4,
+			"language": "cpp",
+			"origin": "transFromJava",
+			"external_reference_url": "Translatetd file 4_java from java to cpp"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"4_py": {
+		"metadata": {
+			"id": 4,
+			"language": "python",
+			"origin": "transFromJava",
+			"external_reference_url": "Translatetd file 4_java from java to python"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
 	},
 	"5": {
 		"metadata": {
