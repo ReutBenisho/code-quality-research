@@ -194,19 +194,44 @@
 		"GithubCopilot":,
 		"Sonarqube": 
 	},
-	"6": {
+	"6_java": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 6,
+			"language": "java",
+			"origin": "Cui_2024",
+			"external_reference_url": "Figure 3(f)"
 		},
 		"ChatGPT": { "readability_score": 88, "understandability_score": 85, "maintainability_score": 80, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "The code is clear and easy to follow, using explicit Boolean comparisons that safely handle null values without triggering NullPointerException. Maintainability is good, though placeholder comments reduce practical usefulness. No functional or security issues are evident." },
 		"Claude": {"readability_score":70,"understandability_score":60,"maintainability_score":45,"functional_classification":"Buggy","security_classification":"Safe","cwe_id":"None","reasoning":"Using == to compare Boolean objects is an identity check, not value equality. A Boolean b=new Boolean(true) would fall through both branches silently, as would null. Should use Boolean.TRUE.equals(b) or b != null && b. The null case is also unhandled, risking silent logic failures."},
 		"Gemini": { "readability_score": 90, "understandability_score": 90, "maintainability_score": 80, "functional_classification": "Partially Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "The code safely handles the three possible states of a boxed 'Boolean' (true, false, null) without throwing a NullPointerException. However, it is functionally incomplete or fragile because a 'null' reference passes silently through both blocks without any handling or fallback logging. Standard primitives or explicit null checks are preferred." },
 		"GithubCopilot":{ "readability_score": 75, "understandability_score": 72, "maintainability_score": 68, "functional_classification": "Buggy", "security_classification": "Vulnerable", "cwe_id": "CWE-476", "reasoning": "Null pointer dereference: Boolean b can be null, but code compares using == without null check. Missing else-if for null case. Using == for Boolean comparison is unreliable; should use .booleanValue() or .equals(). If b is null, neither condition executes silently. Logic appears correct but null-unsafe. Poor defensive programming. Classic Java pitfall with autoboxing and null handling."},
-		"Sonarqube": "readability_score": 90.0, "understandability_score": 90.0, "maintainability_score": 80.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube detected Cognitive Complexity=2, Bugs=0, Vulnerabilities=0."}
+		"Sonarqube": {"readability_score": 90.0, "understandability_score": 90.0, "maintainability_score": 80.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube detected Cognitive Complexity=2, Bugs=0, Vulnerabilities=0."}
+	},
+	"6_cpp": {
+		"metadata": {
+			"id": 6,
+			"language": "cpp",
+			"origin": "transFromJava",
+			"external_reference_url": "Translatetd file 6_java from java to cpp"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"6_py": {
+		"metadata": {
+			"id": 6,
+			"language": "python",
+			"origin": "transFromJava",
+			"external_reference_url": "Translatetd file 6_java from java to python"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
 	},
 	"7": {
 		"metadata": {
