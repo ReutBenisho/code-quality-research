@@ -1052,13 +1052,12 @@
 		"GithubCopilot":,
 		"Sonarqube": 
 	},
-	"28": {
+	"28_cpp": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 28,
+			"language": "cpp",
+			"origin": "Vijayvergiya_2024",
+			"external_reference_url": "Figure 3"
 		},
 		"ChatGPT": {"readability_score":96,"understandability_score":95,"maintainability_score":91,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The code is clear and well-structured. The calculation logic is omitted but explicitly assumed correct, so the function behavior is considered correct. No unsafe operations or exploitable vulnerabilities are present. Minor maintainability concerns include hardcoded initial min_len value."},
 		"Claude": {"readability_score": 80, "understandability_score": 70, "maintainability_score": 45, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Per the comment, the omitted inner logic is assumed correct, so treating the snippet as functionally correct. Structure and pair-based return are clear. No unsafe operations are performed, so there are no security concerns."},
@@ -1066,13 +1065,38 @@
 		"GithubCopilot":{"readability_score": 88,"understandability_score": 85,"maintainability_score": 82,"functional_classification": "Correct","security_classification": "Safe","cwe_id": "None","reasoning": "Well-structured code with proper includes and modern C++ practices. Clear function signature using std::pair for dual return values. Const reference prevents unnecessary copies. Good encapsulation in class. Logic assumed correct per comment. No security vulnerabilities. Minor: magic numbers (100, 0) could be named constants; empty implementation lacks detail. Overall safe, readable, and maintainable design."},
 		"Sonarqube": {"readability_score": 100.0, "understandability_score": 100.0, "maintainability_score": 100.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube Cloud detected Cognitive Complexity=0, Bugs=0, Vulnerabilities=0."}
 	},
-	"29": {
+	"28_java": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 28,
+			"language": "java",
+			"origin": "transFromCpp",
+			"external_reference_url": "Translatetd file 28_cpp from cpp to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"28_py": {
+		"metadata": {
+			"id": 28,
+			"language": "python",
+			"origin": "transFromCpp",
+			"external_reference_url": "Translatetd file 28_cpp from cpp to python"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"29_py": {
+		"metadata": {
+			"id": 29,
+			"language": "python",
+			"origin": "Vijayvergiya_2024",
+			"external_reference_url": "Figure 1"
 		},
 		"ChatGPT": {"readability_score":95,"understandability_score":96,"maintainability_score":94,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"Clear, concise code with descriptive names and a focused unit test. Logic correctly rejects file:// URLs unless explicitly allowed. Structure is simple and maintainable. No exploitable vulnerability is present in the provided implementation."},
 		"Claude": {"readability_score": 90, "understandability_score": 90, "maintainability_score": 80, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Simple, clear guard clause with corresponding unit test. Stub function limits real-world risk assessment, but logic correctly blocks file:// URLs unless explicitly allowed. No exploitable vulnerabilities present in this snippet."},
@@ -1080,20 +1104,71 @@
 		"GithubCopilot":{"readability_score": 88,"understandability_score": 86,"maintainability_score": 84,"functional_classification": "Correct","security_classification": "Safe","cwe_id": "None","reasoning": "Well-structured Python code with proper security controls. Function validates file:// URLs and raises ValueError unless explicitly allowed. Unit test properly verifies this restriction. Clear naming and logic flow. Defensive programming prevents unintended file access. Modern unittest framework used correctly. Return of fake_data is appropriate for test. No security vulnerabilities or functional issues. Good test coverage."},
 		"Sonarqube":{"readability_score": 90.0, "understandability_score": 90.0, "maintainability_score": 100.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube detected Cognitive Complexity=2, Bugs=0, Vulnerabilities=0."}
 	},
-	"30": {
+	"29_cpp": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 29,
+			"language": "cpp",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 29_py from python to cpp"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube":
+	},
+	"29_java": {
+		"metadata": {
+			"id": 29,
+			"language": "java",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 29_py from python to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube":
+	},
+	"30_java": {
+		"metadata": {
+			"id": 30,
+			"language": "java",
+			"origin": "Buse_2010",
+			"external_reference_url": "Figure 1"
 		},
 		"ChatGPT": { "readability_score": 42, "understandability_score": 48, "maintainability_score": 40, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Code is syntactically correct and functionally valid, but poor variable naming and compact inline operations reduce readability and maintainability. Logic is simple but side effects from post-increment/decrement operators hurt clarity. No obvious security vulnerabilities are present." },
 		"Claude": {"readability_score":18,"understandability_score":10,"maintainability_score":12,"functional_classification":"Buggy","security_classification":"Safe","cwe_id":"None","reasoning":"Cryptic names (mnr_2, a1, b3, f2) obscure intent entirely. Post-increment on b3/r means stale values are used in the return expression. No clear purpose or contract. Severe technical debt. No security risk, but logic is misleading and likely incorrect due to post-increment side effects."},
 		"Gemini": { "readability_score": 40, "understandability_score": 35, "maintainability_score": 30, "functional_classification": "Buggy", "security_classification": "Safe", "cwe_id": "None", "reasoning": "The code contains a syntax error (extra closing brace '}') that will cause a compilation failure. In addition, readability and understandability are very low due to confusing, non-descriptive variable names (a1, b3, c3, f2), multiple statements squashed onto a single line, and unnecessary, hard-to-follow post-increment and post-decrement operations on variables that are immediately discarded." },
 		"GithubCopilot":{"readability_score": 42,"understandability_score": 40,"maintainability_score": 35,"functional_classification": "Correct","security_classification": "Safe","cwe_id": "None","reasoning": "Poor code quality with cryptic naming (mnr_2, a1, b3, c3, f2) obscuring intent. Confusing post-increment/decrement (b3++, r--) in return statement creates side effects. Mixed parameter updates and local calculations. Logic appears correct but unnecessarily convoluted. No security vulnerabilities. Functionally sound but severely compromised readability and maintainability. Needs refactoring with descriptive names and clearer logic flow."},
 		"Sonarqube": {"readability_score": 100.0, "understandability_score": 100.0, "maintainability_score": 100.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube detected Cognitive Complexity=0, Bugs=0, Vulnerabilities=0."}
-	}
+	},
+	"30_cpp": {
+		"metadata": {
+			"id": 30,
+			"language": "cpp",
+			"origin": "transFromJava",
+			"external_reference_url": "Translatetd file 30_cpp from java to cpp"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"30_py": {
+		"metadata": {
+			"id": 30,
+			"language": "python",
+			"origin": "transFromJava",
+			"external_reference_url": "Translatetd file 30_cpp from java to python"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
 	"31": {
 		"metadata": {
 			"id": ,
@@ -1107,7 +1182,7 @@
 		"Gemini": { "readability_score": 90, "understandability_score": 85, "maintainability_score": 75, "functional_classification": "Buggy", "security_classification": "Vulnerable", "cwe_id": "CWE-476", "reasoning": "The pointer 'data' is set to nullptr. Its reference 'dataRef' is copied to 'localData', which is then dereferenced (*localData). This triggers a null pointer dereference, causing a crash or undefined behavior."},
 		"GithubCopilot": {"readability_score": 45,"understandability_score": 40,"maintainability_score": 30,"functional_classification": "Buggy","security_classification": "Vulnerable","cwe_id": "CWE-476","reasoning": "Code dereferences a null pointer, causing undefined behavior and crash. Reference to uninitialized pointer obfuscates intent. Dangerous memory management practice. Lacks initialization, error handling, and clear logic flow. High cognitive complexity despite brevity due to reference aliasing.",
 		"Sonarqube": {"readability_score": 100.0, "understandability_score": 100.0, "maintainability_score": 100.0, "functional_classification": "Code Smell/Bug", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube Cloud detected Cognitive Complexity=0, Bugs=1, Vulnerabilities=0."}
-	}
+	},
 	"32": {
 		"metadata": {
 			"id": ,
