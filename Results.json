@@ -272,19 +272,44 @@
 		"GithubCopilot":,
 		"Sonarqube": 
 	},
-	"8": {
+	"8_java": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 8,
+			"language": "java",
+			"origin": "Cui_2024",
+			"external_reference_url": "Figure 5(b)"
 		},
 		"ChatGPT": { "readability_score": 90, "understandability_score": 92, "maintainability_score": 85, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "The code is clean, concise, and uses standard library utilities appropriately. Logic is straightforward and functionally correct for safely closing a resource when non-null. Maintainability is good, though try-with-resources could further improve robustness and clarity. No security issues are present." },
 		"Claude": {"readability_score":72,"understandability_score":65,"maintainability_score":50,"functional_classification":"Partially Correct","security_classification":"Safe","cwe_id":"None","reasoning":"Objects.nonNull() is unnecessarily verbose over a simple null check. Resource is closed but not in a try-with-resources block, so exceptions during close() can leak or suppress context. No guarantee resource was opened/used before closing. Should use try-with-resources for correct, idiomatic AutoCloseable handling."},
 		"Gemini": { "readability_score": 95, "understandability_score": 90, "maintainability_score": 65, "functional_classification": "Partially Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "The code safely checks for null before closing the resource, preventing a NullPointerException. However, it is structurally flawed and logically incomplete because it closes the resource immediately upon entry without performing any business logic or actual processing on it. A standard try-with-resources statement should be preferred to ensure proper resource management." },
 		"GithubCopilot":{ "readability_score": 85, "understandability_score": 82, "maintainability_score": 78, "functional_classification": "Partially Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Good use of Objects.nonNull() for defensive null checking. Correct AutoCloseable handling with close(). However, try-with-resources statement is better practice (automatic close on exception). Manual close() bypasses exception suppression mechanism. If close() throws, resource leak possible. Code is functionally correct but not idiomatic Java. Modern pattern: try(AutoCloseable resource = ...) { } would be superior. Safe but suboptimal design."},
 		"Sonarqube": {"readability_score": 95.0, "understandability_score": 95.0, "maintainability_score": 100.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube detected Cognitive Complexity=1, Bugs=0, Vulnerabilities=0."}
+	},
+	"8_cpp": {
+		"metadata": {
+			"id": 8,
+			"language": "cpp",
+			"origin": "transFromJava",
+			"external_reference_url": "Translatetd file 8_java from java to cpp"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"8_py": {
+		"metadata": {
+			"id": 8,
+			"language": "python",
+			"origin": "transFromJava",
+			"external_reference_url": "Translatetd file 8_java from java to python"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
 	},
 	"9": {
 		"metadata": {
