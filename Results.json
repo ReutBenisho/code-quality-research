@@ -311,19 +311,44 @@
 		"GithubCopilot":,
 		"Sonarqube": 
 	},
-	"9": {
+	"9_java": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 9,
+			"language": "java",
+			"origin": "Cui_2024",
+			"external_reference_url": "Figure 5(c)"
 		},
 		"ChatGPT": { "readability_score": 91, "understandability_score": 90, "maintainability_score": 84, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "The code is simple, well-structured, and easy to follow. Static nested class usage is appropriate and avoids unnecessary outer class references. Functionality is correct, though the placeholder method body limits practical value. No security vulnerabilities or unsafe behavior are present." },
 		"Claude": {"readability_score":75,"understandability_score":70,"maintainability_score":55,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"Syntactically correct and structurally sound. Static nested class is appropriate since it doesn't reference the outer instance. However, doSomething() is private yet called from outer class — valid in Java but conceptually odd. Method bodies are empty stubs with no logic to evaluate. Naming is generic and purpose is unclear."},
 		"Gemini": { "readability_score": 95, "understandability_score": 95, "maintainability_score": 90, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "The code is clean, well-structured, and syntactically valid. In Java, an outer class has full access to the private members (including private static methods) of its nested static inner classes, so this compiles and runs without issues. The visibility boundary is safely managed within the same top-level class file, presenting no security or architectural risks." },
 		"GithubCopilot":{ "readability_score": 85, "understandability_score": 83, "maintainability_score": 80, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Clean, correct code with proper static nested class design. Static method call is appropriate. No null pointer risks or security vulnerabilities. Clear structure and naming. Functional logic is sound. Minor: private static method in nested class limits visibility but is intentional encapsulation. Well-organized with good separation of concerns. Safe, readable, and maintainable implementation following Java conventions."},
 		"Sonarqube": {"readability_score": 100.0, "understandability_score": 100.0, "maintainability_score": 80.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube detected Cognitive Complexity=0, Bugs=0, Vulnerabilities=0."}
+	},
+	"9_cpp": {
+		"metadata": {
+			"id": 9,
+			"language": "cpp",
+			"origin": "transFromJava",
+			"external_reference_url": "Translatetd file 9_java from java to cpp"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"9_py": {
+		"metadata": {
+			"id": 9,
+			"language": "python",
+			"origin": "transFromJava",
+			"external_reference_url": "Translatetd file 9_java from java to python"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
 	},
 	"10": {
 		"metadata": {
