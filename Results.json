@@ -350,13 +350,12 @@
 		"GithubCopilot":,
 		"Sonarqube": 
 	},
-	"10": {
+	"10_java": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 10,
+			"language": "java",
+			"origin": "Cui_2024",
+			"external_reference_url": "Figure 5(d)"
 		},
 		"ChatGPT": { "readability_score": 68, "understandability_score": 52, "maintainability_score": 40, "functional_classification": "Buggy", "security_classification": "Safe", "cwe_id": "None", "reasoning": "The code is short but confusing due to naming collisions between the method and parameter. The assignment `energy = energy(1);` is invalid because it attempts to assign a double value to a double array reference, causing a compilation error. No direct security vulnerabilities are present." },
 		"Claude": {"readability_score":45,"understandability_score":30,"maintainability_score":25,"functional_classification":"Buggy","security_classification":"Safe","cwe_id":"None","reasoning":"Type mismatch: energy(1) returns double but parameter energy is double[]. Won't compile. Name collision between method energy() and parameter energy causes severe confusion. Parameter reassignment has no effect on the caller (pass-by-value). Method energy() always returns 0.0 — a stub. Deeply misleading naming throughout."},
@@ -364,6 +363,32 @@
 		"GithubCopilot":{ "readability_score": 65, "understandability_score": 60, "maintainability_score": 55, "functional_classification": "Buggy", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Critical logic error: method energy(1) returns double, but parameter energy is double[]. Assignment energy = energy(1) overwrites array reference with double primitive, causing type mismatch. Code won't compile. Variable shadowing (energy method vs parameter) creates confusion. Intent unclear: attempting to assign scalar to array reference. No security vulnerabilities but fundamentally broken. Requires type correction and logic clarification."},
 		"Sonarqube": {"readability_score": 100.0, "understandability_score": 100.0, "maintainability_score": 80.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube detected Cognitive Complexity=0, Bugs=0, Vulnerabilities=0."}
 	},	
+	"10_cpp": {
+		"metadata": {
+			"id": 10,
+			"language": "cpp",
+			"origin": "transFromJava",
+			"external_reference_url": "Translatetd file 10_java from java to cpp"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"10_py": {
+		"metadata": {
+			"id": 10,
+			"language": "python",
+			"origin": "transFromJava",
+			"external_reference_url": "Translatetd file 10_java from java to python"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
 	"11": {
 		"metadata": {
 			"id": ,
