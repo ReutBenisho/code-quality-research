@@ -155,19 +155,44 @@
 		"GithubCopilot":,
 		"Sonarqube": 
 	},
-	"5": {
+	"5_java": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 5,
+			"language": "java",
+			"origin": "Cui_2024",
+			"external_reference_url": "Figure 3(e)"
 		},
 		"ChatGPT": { "readability_score": 95, "understandability_score": 96, "maintainability_score": 88, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "The code is extremely simple, easy to read, and logically correct. Variable naming and structure are straightforward, though the method has no practical effect since the local variable is unused. No security concerns or exploitable behavior are present." },
 		"Claude": {"readability_score":80,"understandability_score":70,"maintainability_score":30,"functional_classification":"Buggy","security_classification":"Safe","cwe_id":"None","reasoning":"Code is syntactically clear and readable, but entirely purposeless — the result of a+3 is computed and immediately discarded with no return, side effect, or usage. Dead code with no functional value. Likely an incomplete stub or accidental omission of a return statement or assignment to a field."},
 		"Gemini": { "readability_score": 95, "understandability_score": 95, "maintainability_score": 80, "functional_classification": "Partially Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "The code is syntactically correct and perfectly readable, but it contains a functional defect: the calculation performs dead code operations. The local variable `a` is incremented, but its final value is never read, returned, or utilized before it goes out of scope, meaning the entire method has no side effects. The operation is free of security bugs." },
 		"GithubCopilot":{"readability_score": 88,"understandability_score": 86,"maintainability_score": 80,"functional_classification": "Correct","security_classification": "Safe","cwe_id": "None","reasoning": "Simple, clear, and correct code. Variable initialization and arithmetic are straightforward. No security vulnerabilities or null pointer risks. Good readability with standard naming. Functionally correct logic. Minor: test() method does nothing observable (no output/return); appears to be incomplete or placeholder code. No real-world utility but sound structure. Safe and maintainable baseline implementation."},
 		"Sonarqube": {"readability_score": 100.0, "understandability_score": 100.0, "maintainability_score": 80.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube detected Cognitive Complexity=0, Bugs=0, Vulnerabilities=0."}
+	},
+	"5_cpp": {
+		"metadata": {
+			"id": 5,
+			"language": "cpp",
+			"origin": "transFromJava",
+			"external_reference_url": "Translatetd file 5_java from java to cpp"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"5_py": {
+		"metadata": {
+			"id": 5,
+			"language": "python",
+			"origin": "transFromJava",
+			"external_reference_url": "Translatetd file 5_java from java to python"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
 	},
 	"6": {
 		"metadata": {
