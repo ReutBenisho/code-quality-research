@@ -8,10 +8,11 @@ SONARCLOUD_TOKEN = "69bdd4896cbf768edf05e78f3917bb581ad71a52"
 ORGANIZATION = "ReutBenisho"
 PROJECT_KEY = "ReutBenisho_code-quality-research"
 TARGET_DIRECTORIES = [
-    {"path": r"dataset\Cpp", "ext": ".cpp"}
+    {"path": r"dataset"}
 ]
 AUTH = (SONARCLOUD_TOKEN, "")
 
+RESULTS_FILE = "Results.json"
 
 def rating_to_score_100(rating_val):
     mapping = {
@@ -46,7 +47,6 @@ def discover_files():
 
     for target in TARGET_DIRECTORIES:
         base_dir = target["path"]
-        extension = target["ext"]
 
         if not os.path.exists(base_dir):
             print(f"Warning: Directory does not exist locally: {base_dir}")
@@ -54,12 +54,9 @@ def discover_files():
 
         for root, _, files in os.walk(base_dir):
             for file in files:
-                if file.endswith(extension):
-                    full_local_path = os.path.join(root, file)
-                   
-                    normalized_path = full_local_path.replace("\\", "/")
-                    
-                    found_files.append(normalized_path)
+                full_local_path = os.path.join(root, file)
+                normalized_path = full_local_path.replace("\\", "/")
+                found_files.append(normalized_path)
 
     return found_files
 
@@ -107,7 +104,7 @@ def get_file_metrics(file_path):
     bugs_count = int(measures.get("bugs", 0))
     vulnerabilities_count = int(measures.get("vulnerabilities", 0))
     
-    result_json = {
+    return {
         "readability_score": readability,
         "understandability_score": readability,  
         "maintainability_score": maintainability,
@@ -119,30 +116,39 @@ def get_file_metrics(file_path):
             f"Bugs={bugs_count}, Vulnerabilities={vulnerabilities_count}."
         )[:400]  
     }
-    
-    return json.dumps(result_json, ensure_ascii=False)
 
 
 if __name__ == "__main__":
+    if not os.path.exists(RESULTS_FILE):
+        print(f"Error: Could not find '{RESULTS_FILE}'. Please ensure the file exists in the directory.")
+        exit(1)
+
+    with open(RESULTS_FILE, "r", encoding="utf-8") as f:
+        try:
+            results_data = json.load(f)
+        except json.JSONDecodeError as e:
+            print(f"Error reading {RESULTS_FILE}: {e}")
+            exit(1)
+
     files_to_analyze = discover_files()
     print(f"Found {len(files_to_analyze)} files to process.")
 
-    all_results = {}
-    
+    updated_count = 0
     for path in files_to_analyze:
         file_name = os.path.basename(path)
-        if file_name in all_results:
-            print(f"\n[WARNING] Duplicate file name detected!")
-            print(f"  --> File Name: {file_name}")
-            print(f"  --> Full Relative Path: {path}\n")
+        entry_key, _ = os.path.splitext(file_name)
+
+        if entry_key not in results_data:
+            print(f"[WARNING] Key '{entry_key}' (from file '{file_name}') not found in {RESULTS_FILE}. Skipping...")
+            continue
 
         metrics = get_file_metrics(path)
         if metrics:
-            all_results[file_name] = metrics
-            print(f"Got metrics for {file_name}")
+            results_data[entry_key]["Sonarqube"] = metrics
+            print(f"Updated SonarQube results for: {entry_key}")
+            updated_count += 1
 
-    output_filename = "sonar_cloud_results.json"
-    with open(output_filename, "w", encoding="utf-8") as f:
-        json.dump(all_results, f, indent=2, ensure_ascii=False)
+    with open(RESULTS_FILE, "w", encoding="utf-8") as f:
+        json.dump(results_data, f, indent=4, ensure_ascii=False)
         
-    print(f"\n--- Process finished! Results saved to {output_filename} ---")
+    print(f"\n--- Process finished! Successfully updated {updated_count} entries in {RESULTS_FILE} ---")
