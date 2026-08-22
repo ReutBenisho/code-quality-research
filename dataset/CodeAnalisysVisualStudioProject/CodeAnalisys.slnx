@@ -1,8 +1,0 @@
-<Solution>
-  <Configurations>
-    <Platform Name="Any CPU" />
-    <Platform Name="x64" />
-    <Platform Name="x86" />
-  </Configurations>
-  <Project Path="CppCode/CppCode.vcxproj" Id="787a93a0-fe4b-4619-9e13-79993e2cd8a1" />
-</Solution>
