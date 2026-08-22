@@ -1148,7 +1148,7 @@
 			"id": 30,
 			"language": "cpp",
 			"origin": "transFromJava",
-			"external_reference_url": "Translatetd file 30_cpp from java to cpp"
+			"external_reference_url": "Translatetd file 30_java from java to cpp"
 		},
 		"ChatGPT": ,
 		"Claude": ,
@@ -1161,7 +1161,7 @@
 			"id": 30,
 			"language": "python",
 			"origin": "transFromJava",
-			"external_reference_url": "Translatetd file 30_cpp from java to python"
+			"external_reference_url": "Translatetd file 30_java from java to python"
 		},
 		"ChatGPT": ,
 		"Claude": ,
@@ -1169,13 +1169,12 @@
 		"GithubCopilot":,
 		"Sonarqube": 
 	},
-	"31": {
+	"31_cpp": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 31,
+			"language": "cpp",
+			"origin": "SARD",
+			"external_reference_url": "https://samate.nist.gov/SARD/test-cases/240796/versions/2.0.0"
 		},
 		"ChatGPT": {"readability_score":78,"understandability_score":70,"maintainability_score":65,"functional_classification":"Buggy","security_classification":"Vulnerable","cwe_id":"CWE-476","reasoning":"The code is readable but uses an unnecessary reference to a pointer. data is set to nullptr, localData receives nullptr, and dereferencing it causes undefined behavior. This null pointer dereference is a correctness defect and a security-relevant vulnerability (CWE-476)."},
 		"Claude": {"readability_score": 55, "understandability_score": 45, "maintainability_score": 30, "functional_classification": "Buggy", "security_classification": "Vulnerable", "cwe_id": "CWE-476", "reasoning": "data is set to nullptr, then localData copies this null pointer via the reference, and *localData dereferences a null pointer, causing undefined behavior/crash. Also 'data' is used before being read validly. Reference indirection adds unnecessary complexity."},
@@ -1183,13 +1182,38 @@
 		"GithubCopilot": {"readability_score": 45,"understandability_score": 40,"maintainability_score": 30,"functional_classification": "Buggy","security_classification": "Vulnerable","cwe_id": "CWE-476","reasoning": "Code dereferences a null pointer, causing undefined behavior and crash. Reference to uninitialized pointer obfuscates intent. Dangerous memory management practice. Lacks initialization, error handling, and clear logic flow. High cognitive complexity despite brevity due to reference aliasing.",
 		"Sonarqube": {"readability_score": 100.0, "understandability_score": 100.0, "maintainability_score": 100.0, "functional_classification": "Code Smell/Bug", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube Cloud detected Cognitive Complexity=0, Bugs=1, Vulnerabilities=0."}
 	},
-	"32": {
+	"31_java": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 31,
+			"language": "java",
+			"origin": "transFromCpp",
+			"external_reference_url": "Translatetd file 31_cpp from cpp to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"31_py": {
+		"metadata": {
+			"id": 31,
+			"language": "python",
+			"origin": "transFromCpp",
+			"external_reference_url": "Translatetd file 31_cpp from cpp to python"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"32_cpp": {
+		"metadata": {
+			"id": 32,
+			"language": "cpp",
+			"origin": "SARD",
+			"external_reference_url": "https://samate.nist.gov/SARD/test-cases/240796/versions/2.0.0"
 		},
 		"ChatGPT": {"readability_score":90,"understandability_score":91,"maintainability_score":88,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The null check prevents dereferencing a null pointer, eliminating the previous defect. The code is straightforward and functionally correct, though the pointer reference adds unnecessary complexity and could be simplified. No exploitable vulnerability is evident in this snippet."},
 		"Claude": {"readability_score": 65, "understandability_score": 60, "maintainability_score": 45, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Null check before dereferencing prevents the CWE-476 crash from the prior version; program now safely prints 'Data is null'. Logic is correct, though the reference indirection ('long*&dataRef') adds unnecessary complexity without clear benefit to readability or design."},
@@ -1197,13 +1221,38 @@
 		"GithubCopilot": {"readability_score": 70,"understandability_score": 65,"maintainability_score": 55,"functional_classification": "Correct","security_classification": "Safe","cwe_id": "None","reasoning": "Null pointer check prevents undefined behavior. Logic is correct and handles edge case properly. Readability improved with defensive programming. However, uninitialized pointer and reference aliasing reduce clarity. Code lacks purpose; poor design pattern for practical use. Consider direct pointer initialization instead."},
 		"Sonarqube": {"readability_score": 90.0, "understandability_score": 90.0, "maintainability_score": 100.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube Cloud detected Cognitive Complexity=2, Bugs=0, Vulnerabilities=0."}
 	},
-	"33": {
+	"32_java": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 32,
+			"language": "java",
+			"origin": "transFromCpp",
+			"external_reference_url": "Translatetd file 32_cpp from cpp to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"32_py": {
+		"metadata": {
+			"id": 32,
+			"language": "python",
+			"origin": "transFromCpp",
+			"external_reference_url": "Translatetd file 32_cpp from cpp to python"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"33_cpp": {
+		"metadata": {
+			"id": 33,
+			"language": "cpp",
+			"origin": "SARD",
+			"external_reference_url": "https://samate.nist.gov/SARD/test-cases/1971/versions/1.0.0"
 		},
 		"ChatGPT": {"readability_score":94,"understandability_score":95,"maintainability_score":89,"functional_classification":"Partially Correct","security_classification":"Vulnerable","cwe_id":"CWE-120","reasoning":"The code is simple and easy to follow, but using operator>> with a fixed-size char array performs no bounds checking. Excessively long input can overflow the buffer, leading to undefined behavior. The functionality works for valid input but is unsafe."},
 		"Claude": {"readability_score": 80, "understandability_score": 80, "maintainability_score": 40, "functional_classification": "Buggy", "security_classification": "Vulnerable", "cwe_id": "CWE-120", "reasoning": "Using std::cin >> buffer with a fixed-size char array performs no bounds checking, allowing input longer than MAXSIZE (40) to overflow the stack buffer. This is a classic buffer overflow vulnerability; should use std::cin.width() or std::string instead."},
@@ -1211,13 +1260,38 @@
 		"GithubCopilot": {"readability_score": 75,"understandability_score": 70,"maintainability_score": 50,"functional_classification": "Buggy","security_classification": "Vulnerable","cwe_id": "CWE-120","reasoning": "Classic buffer overflow vulnerability: unbounded input via std::cin >> without size limit on 40-byte buffer. Attacker can overflow stack. Code is readable but dangerously incorrect. Should use std::getline with size limit or std::string. Poor defensive practices and outdated macro usage."},
 		"Sonarqube": {"readability_score": 100.0, "understandability_score": 100.0, "maintainability_score": 80.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube Cloud detected Cognitive Complexity=0, Bugs=0, Vulnerabilities=0."}
 	},
-	"34": {
+	"33_java": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 33,
+			"language": "java",
+			"origin": "transFromCpp",
+			"external_reference_url": "Translatetd file 33_cpp from cpp to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"33_py": {
+		"metadata": {
+			"id": 33,
+			"language": "python",
+			"origin": "transFromCpp",
+			"external_reference_url": "Translatetd file 33_cpp from cpp to python"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"34_cpp": {
+		"metadata": {
+			"id": 34,
+			"language": "cpp",
+			"origin": "SARD",
+			"external_reference_url": "https://samate.nist.gov/SARD/test-cases/1971/versions/1.0.0"
 		},
 		"ChatGPT": {"readability_score":96,"understandability_score":97,"maintainability_score":93,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The code is clear and easy to follow. Using std::setw(MAXSIZE) limits extraction to the buffer size minus the null terminator, preventing overflow with operator>>. The implementation is functionally correct and no exploitable vulnerability is evident in this snippet."},
 		"Claude": {"readability_score": 85, "understandability_score": 85, "maintainability_score": 60, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "std::setw(MAXSIZE) limits input to MAXSIZE-1 characters plus null terminator, preventing the buffer overflow present in the prior version. Logic is correct and safe, though using std::string would still be preferable for modern C++ maintainability."},
@@ -1225,13 +1299,38 @@
 		"GithubCopilot": {"readability_score": 80,"understandability_score": 75,"maintainability_score": 70,"functional_classification": "Correct","security_classification": "Safe","cwe_id": "None", "reasoning": "std::setw(MAXSIZE) correctly bounds input to prevent buffer overflow. Code is readable with clear intent. Proper use of iomanip for safe input handling. Minor improvements: use std::string instead of char array, avoid macros for constants, consider std::getline for whitespace handling. Otherwise solid defensive coding."},
 		"Sonarqube": {"readability_score": 100.0, "understandability_score": 100.0, "maintainability_score": 80.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube Cloud detected Cognitive Complexity=0, Bugs=0, Vulnerabilities=0."}
 	},
-	"35": {
+	"34_java": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 34,
+			"language": "java",
+			"origin": "transFromCpp",
+			"external_reference_url": "Translatetd file 34_cpp from cpp to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"34_py": {
+		"metadata": {
+			"id": 34,
+			"language": "python",
+			"origin": "transFromCpp",
+			"external_reference_url": "Translatetd file 34_cpp from cpp to python"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"35_cpp": {
+		"metadata": {
+			"id": 35,
+			"language": "cpp",
+			"origin": "SARD",
+			"external_reference_url": "https://samate.nist.gov/SARD/test-cases/1739/versions/1.0.0"
 		},
 		"ChatGPT": {"readability_score":72,"understandability_score":76,"maintainability_score":60,"functional_classification":"Partially Correct","security_classification":"Vulnerable","cwe_id":"CWE-789","reasoning":"The code is readable but uses obsolete headers and lacks input validation. atoi() may produce zero or negative values, which are converted to a huge allocation size for new[], potentially causing excessive memory allocation or failure. The NULL check is also ineffective with standard throwing new."},
 		"Claude": {"readability_score": 40, "understandability_score": 45, "maintainability_score": 20, "functional_classification": "Partially Correct", "security_classification": "Vulnerable", "cwe_id": "CWE-190", "reasoning": "Uses deprecated headers (iostream.h/new.h) and unsafe C-style memory checks (new returns exceptions, not NULL, in standard C++). User input 'i' is unvalidated: negative or huge values cause integer overflow/huge allocation, risking crash or undefined behavior (CWE-190/CWE-20)."},
@@ -1239,13 +1338,38 @@
 		"GithubCopilot":{  "readability_score": 65,  "understandability_score": 70,  "maintainability_score": 45, "functional_classification": "Buggy", "security_classification": "Vulnerable", "cwe_id": "CWE-190, CWE-680", "reasoning": "Code uses deprecated headers (iostream.h), lacks input validation for atoi/atol conversions, no bounds checking on user input (i could exceed 100), missing error handling for allocation failure post-check. Integer overflow risk on array size. Memory management is correct but vulnerable to malicious input causing DoS or undefined behavior."},
 		"Sonarqube": {"readability_score": 85.0, "understandability_score": 85.0, "maintainability_score": 80.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube Cloud detected Cognitive Complexity=3, Bugs=0, Vulnerabilities=0."}
 	},
-	"36": {
+	"35_java": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 35,
+			"language": "java",
+			"origin": "transFromCpp",
+			"external_reference_url": "Translatetd file 35_cpp from cpp to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"35_py": {
+		"metadata": {
+			"id": 35,
+			"language": "python",
+			"origin": "transFromCpp",
+			"external_reference_url": "Translatetd file 35_cpp from cpp to python"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"36_cpp": {
+		"metadata": {
+			"id": 36,
+			"language": "cpp",
+			"origin": "SARD",
+			"external_reference_url": "https://samate.nist.gov/SARD/test-cases/1739/versions/1.0.0"
 		},
 		"ChatGPT": {"readability_score":74,"understandability_score":78,"maintainability_score":64,"functional_classification":"Partially Correct","security_classification":"Vulnerable","cwe_id":"CWE-789","reasoning":"Adding a bad_alloc handler improves robustness, but input is still not validated. Negative or excessively large values from atoi() can trigger uncontrolled memory allocation attempts. If allocation fails, l may remain uninitialized, making the subsequent NULL check unreliable and behavior potentially undefined."},
 		"Claude": {"readability_score": 40, "understandability_score": 45, "maintainability_score": 20, "functional_classification": "Buggy", "security_classification": "Vulnerable", "cwe_id": "CWE-190", "reasoning": "No validation of 'i' allows negative/huge values causing overflow or exception; if bad_alloc is caught, 'l' remains uninitialized (not NULL), so the NULL check fails and the loop uses an invalid pointer, causing undefined behavior/crash (CWE-457/CWE-190)."},
@@ -1253,13 +1377,38 @@
 		"GithubCopilot": { "readability_score": 60, "understandability_score": 65, "maintainability_score": 40, "functional_classification": "Buggy", "security_classification": "Vulnerable",  "cwe_id": "CWE-190, CWE-680, CWE-703",  "reasoning": "Deprecated headers and inconsistent formatting reduce readability. Try-catch for bad_alloc is ineffective (new never returns NULL in modern C++); NULL check unreachable. No input validation on atoi result allows negative/zero array sizes and integer overflow. Uninitialized pointer l used after exception. atol lacks bounds checking. High security and functional risk."},
 		"Sonarqube": {"readability_score": 80.0, "understandability_score": 80.0, "maintainability_score": 80.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube Cloud detected Cognitive Complexity=4, Bugs=0, Vulnerabilities=0."}
 	},
-	"37": {
+	"36_java": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 36,
+			"language": "java",
+			"origin": "transFromCpp",
+			"external_reference_url": "Translatetd file 36_cpp from cpp to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"36_py": {
+		"metadata": {
+			"id": 36,
+			"language": "python",
+			"origin": "transFromCpp",
+			"external_reference_url": "Translatetd file 36_cpp from cpp to python"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"37_cpp": {
+		"metadata": {
+			"id": 37,
+			"language": "cpp",
+			"origin": "SARD",
+			"external_reference_url": "https://samate.nist.gov/SARD/test-cases/1983/versions/1.0.0"
 		},
 		"ChatGPT": {"readability_score":91,"understandability_score":92,"maintainability_score":84,"functional_classification":"Partially Correct","security_classification":"Vulnerable","cwe_id":"CWE-89","reasoning":"The code is clear and straightforward, but it constructs an SQL query by concatenating untrusted user input (argv[1]), making it vulnerable to SQL injection. Parameterized queries or proper escaping should be used instead. Functionality is correct for benign input."},
 		"Claude": {"readability_score": 65, "understandability_score": 60, "maintainability_score": 30, "functional_classification": "Buggy", "security_classification": "Vulnerable", "cwe_id": "CWE-89", "reasoning": "argv[1] is concatenated directly into the SQL query string without sanitization or parameterization, allowing SQL injection. Additionally, the loop condition 'row = res.at(i)' misuses assignment/bounds checking rather than proper iteration, risking out-of-range access or logic errors."},
@@ -1267,13 +1416,38 @@
 		"GithubCopilot": {"readability_score": 75,"understandability_score": 72,"maintainability_score": 50,"functional_classification": "Buggy","security_classification": "Vulnerable","cwe_id": "CWE-89","reasoning": "Code is relatively clear but contains critical SQL injection vulnerability. Direct string concatenation of argv[1] into query without sanitization or parameterized queries. Hardcoded credentials embedded in source. No input validation or bounds checking. Loop condition (row = res.at(i)) is unsafe. Error handling absent. High security and functional risk."},
 		"Sonarqube": {"readability_score": 80.0, "understandability_score": 80.0, "maintainability_score": 100.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube Cloud detected Cognitive Complexity=4, Bugs=0, Vulnerabilities=0."}
 	},
-	"38": {
+	"37_java": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 37,
+			"language": "java",
+			"origin": "transFromCpp",
+			"external_reference_url": "Translatetd file 37_cpp from cpp to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"37_py": {
+		"metadata": {
+			"id": 37,
+			"language": "python",
+			"origin": "transFromCpp",
+			"external_reference_url": "Translatetd file 37_cpp from cpp to python"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"38_cpp": {
+		"metadata": {
+			"id": 38,
+			"language": "cpp",
+			"origin": "SARD",
+			"external_reference_url": "https://samate.nist.gov/SARD/test-cases/1983/versions/1.0.0"
 		},
 		"ChatGPT": {"readability_score":93,"understandability_score":94,"maintainability_score":88,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The code is clear and maintainable. Using mysqlpp::quote properly escapes and quotes the user-supplied value, mitigating SQL injection in this query. The logic is correct for the intended operation, assuming the database connection and query execution succeed."},
 		"Claude": {"readability_score": 65, "understandability_score": 60, "maintainability_score": 35, "functional_classification": "Partially Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Using mysqlpp::quote properly escapes argv[1], preventing the prior SQL injection vulnerability. However, the loop 'row = res.at(i)' still misuses assignment for bounds checking, which is fragile and may cause out-of-range access issues rather than a security flaw."},
@@ -1281,13 +1455,38 @@
 		"GithubCopilot":{"readability_score": 78,"understandability_score": 75,"maintainability_score": 58,"functional_classification": "Correct","security_classification": "Safe","cwe_id": "None","reasoning": "Code uses mysqlpp::quote for proper parameterization, mitigating SQL injection. Readability is good with clear logic flow. Hardcoded credentials remain a maintainability concern but not a functional bug. Loop condition assignment is unconventional but safe. No input validation on parameter length. Error handling for connection/query failures absent. Overall secure implementation with room for improvement in credential management and error handling."},
 		"Sonarqube": {"readability_score": 80.0, "understandability_score": 80.0, "maintainability_score": 100.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube Cloud detected Cognitive Complexity=4, Bugs=0, Vulnerabilities=0."}
 	},
-	"39": {
+	"38_java": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 38,
+			"language": "java",
+			"origin": "transFromCpp",
+			"external_reference_url": "Translatetd file 38_cpp from cpp to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"38_py": {
+		"metadata": {
+			"id": 38,
+			"language": "python",
+			"origin": "transFromCpp",
+			"external_reference_url": "Translatetd file 38_cpp from cpp to python"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"39_cpp": {
+		"metadata": {
+			"id": 39,
+			"language": "cpp",
+			"origin": "SARD",
+			"external_reference_url": "https://samate.nist.gov/SARD/test-cases/2054/versions/1.0.0"
 		},
 		"ChatGPT": {"readability_score":86,"understandability_score":84,"maintainability_score":72,"functional_classification":"Buggy","security_classification":"Vulnerable","cwe_id":"CWE-401","reasoning":"The code is readable but leaks memory by never deleting the allocated array. Repeated calls in the loop can exhaust memory, causing a denial-of-service risk. Exception handling is incomplete, and printing the pointer value serves little purpose."},
 		"Claude": {"readability_score": 60, "understandability_score": 55, "maintainability_score": 30, "functional_classification": "Buggy", "security_classification": "Vulnerable", "cwe_id": "CWE-401", "reasoning": "Allocated memory 'p' is never freed (no delete[]), causing a memory leak on every call. If i==j, function() is called in an infinite loop, repeatedly leaking memory until resources are exhausted (CWE-401 combined with CWE-835 infinite loop)."},
@@ -1295,13 +1494,38 @@
 		"GithubCopilot":{"readability_score": 62,"understandability_score": 58,"maintainability_score": 35,"functional_classification": "Buggy","security_classification": "Vulnerable","cwe_id": "CWE-476, CWE-401","reasoning": "Critical null pointer dereference: p used after exception without initialization check. Memory leak on exception—allocated memory not freed in catch block. Infinite loop if i==j with no exit condition. No input validation. Printing pointer value instead of dereferencing meaningfully. Poor error handling and resource management. High risk of crash and memory exhaustion."},
 		"Sonarqube": {"readability_score": 90.0, "understandability_score": 90.0, "maintainability_score": 100.0, "functional_classification": "Code Smell/Bug", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube Cloud detected Cognitive Complexity=2, Bugs=1, Vulnerabilities=0."}
 	},
-	"40": {
+	"39_java": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 39,
+			"language": "java",
+			"origin": "transFromCpp",
+			"external_reference_url": "Translatetd file 39_cpp from cpp to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"39_py": {
+		"metadata": {
+			"id": 39,
+			"language": "python",
+			"origin": "transFromCpp",
+			"external_reference_url": "Translatetd file 39_cpp from cpp to python"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"40_cpp": {
+		"metadata": {
+			"id": 40,
+			"language": "cpp",
+			"origin": "SARD",
+			"external_reference_url": "https://samate.nist.gov/SARD/test-cases/2054/versions/1.0.0"
 		},
 		"ChatGPT": {"readability_score":96,"understandability_score":95,"maintainability_score":94,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The code is clear, properly handles allocation failure, frees allocated memory with delete[], and validates input. No memory leak or exploitable vulnerability is evident. The infinite loop depends on input values but appears intentional rather than a correctness defect."},
 		"Claude": {"readability_score": 80, "understandability_score": 75, "maintainability_score": 55, "functional_classification": "Partially Correct", "security_classification": "Vulnerable", "cwe_id": "CWE-835", "reasoning": "Memory leak fixed via delete[]. However, 'while (i == j)' has no internal exit condition and relies on manual Ctrl+C interruption, causing an infinite loop that can hang the program and consume CPU indefinitely (CWE-835)."},
@@ -1309,13 +1533,38 @@
 		"GithubCopilot":{"readability_score": 85,"understandability_score": 82,"maintainability_score": 75,"functional_classification": "Correct","security_classification": "Safe","cwe_id": "None","reasoning": "Well-structured code with proper nullptr initialization, exception handling, and memory cleanup. Input validation via stream checks prevents invalid input. Infinite loop if i==j persists but is clearly documented. Uses modern C++ practices (nullptr, const references, what()). Good error messaging. Minor: loop logic could be improved with explicit exit condition instead of relying on input change. Overall secure and functionally correct."},
 		"Sonarqube": {"readability_score": 85.0, "understandability_score": 85.0, "maintainability_score": 100.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube Cloud detected Cognitive Complexity=3, Bugs=0, Vulnerabilities=0."}
 	},
-	"41": {
+	"40_java": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 40,
+			"language": "java",
+			"origin": "transFromCpp",
+			"external_reference_url": "Translatetd file 40_cpp from cpp to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"40_py": {
+		"metadata": {
+			"id": 40,
+			"language": "python",
+			"origin": "transFromCpp",
+			"external_reference_url": "Translatetd file 40_cpp from cpp to python"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"41_cpp": {
+		"metadata": {
+			"id": 41,
+			"language": "cpp",
+			"origin": "SARD",
+			"external_reference_url": "https://samate.nist.gov/SARD/test-cases/2062/versions/1.0.0"
 		},
 		"ChatGPT": {"readability_score":94,"understandability_score":95,"maintainability_score":90,"functional_classification":"Buggy","security_classification":"Vulnerable","cwe_id":"CWE-787","reasoning":"The code is simple and readable, but writes to buf[33] after allocating only 32 bytes (valid indices 0-31). This out-of-bounds write causes undefined behavior and represents a memory corruption vulnerability."},
 		"Claude": {"readability_score": 70, "understandability_score": 65, "maintainability_score": 30, "functional_classification": "Buggy", "security_classification": "Vulnerable", "cwe_id": "CWE-787", "reasoning": "buf[33] writes out of bounds since buf is only BUFSIZE (32) bytes, indices 0-31 valid. This is an out-of-bounds write causing heap buffer overflow, potential memory corruption or undefined behavior (CWE-787)."},
@@ -1323,13 +1572,38 @@
 		"GithubCopilot":{"readability_score": 70,"understandability_score": 68,"maintainability_score": 50,"functional_classification": "Buggy","security_classification": "Vulnerable","cwe_id": "CWE-680, CWE-119","reasoning": "Critical buffer overflow: BUFSIZE=32 but code writes to buf[33], accessing out-of-bounds memory. Undefined behavior and potential heap corruption. Exception handling is present but inadequate for this fatal flaw. No validation or bounds checking. Memory is cleaned up properly in success path, but overflow occurs before cleanup. High risk of crash or exploitable vulnerability."},
 		"Sonarqube": {"readability_score": 95.0, "understandability_score": 95.0, "maintainability_score": 80.0, "functional_classification": "Code Smell/Bug", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube Cloud detected Cognitive Complexity=1, Bugs=1, Vulnerabilities=0."}
 	},
-	"42": {
+	"41_java": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 41,
+			"language": "java",
+			"origin": "transFromCpp",
+			"external_reference_url": "Translatetd file 41_cpp from cpp to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"41_py": {
+		"metadata": {
+			"id": 41,
+			"language": "python",
+			"origin": "transFromCpp",
+			"external_reference_url": "Translatetd file 41_cpp from cpp to python"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"42_cpp": {
+		"metadata": {
+			"id": 42,
+			"language": "cpp",
+			"origin": "SARD",
+			"external_reference_url": "https://samate.nist.gov/SARD/test-cases/2062/versions/1.0.0"
 		},
 		"ChatGPT": {"readability_score":96,"understandability_score":97,"maintainability_score":94,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The code is straightforward and uses BUFSIZE-1, which is a valid index for a 32-byte allocation. Memory is properly released with delete[]. No out-of-bounds access or other exploitable vulnerability is evident in this snippet."},
 		"Claude": {"readability_score": 80, "understandability_score": 80, "maintainability_score": 55, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "buf[BUFSIZE-1] correctly writes to the last valid index (31) of the 32-byte buffer, fixing the prior out-of-bounds write. Memory is properly allocated with exception handling and freed with delete[]. No overflow or leak present."},
@@ -1337,13 +1611,38 @@
 		"GithubCopilot":{"readability_score": 75,"understandability_score": 73,"maintainability_score": 62,"functional_classification": "Correct","security_classification": "Safe","cwe_id": "None","reasoning": "Code correctly accesses buf[BUFSIZE-1], the last valid index in a 32-element array. Proper bounds checking prevents buffer overflow. Exception handling is present for allocation failure. Memory is correctly deallocated. Code is straightforward and safe. Minor improvements: use nullptr initialization, modern C++ practices (vector instead of raw new), and more descriptive comments. Overall functionally correct and secure."},
 		"Sonarqube": {"readability_score": 95.0, "understandability_score": 95.0, "maintainability_score": 80.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube Cloud detected Cognitive Complexity=1, Bugs=0, Vulnerabilities=0."}
 	},
-	"43": {
+	"42_java": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 42,
+			"language": "java",
+			"origin": "transFromCpp",
+			"external_reference_url": "Translatetd file 42_cpp from cpp to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"42_py": {
+		"metadata": {
+			"id": 42,
+			"language": "python",
+			"origin": "transFromCpp",
+			"external_reference_url": "Translatetd file 42_cpp from cpp to python"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"43_cpp": {
+		"metadata": {
+			"id": 43,
+			"language": "cpp",
+			"origin": "SARD",
+			"external_reference_url": "https://samate.nist.gov/SARD/test-cases/1492/versions/1.0.0"
 		},
 		"ChatGPT": {"readability_score":93,"understandability_score":94,"maintainability_score":88,"functional_classification":"Buggy","security_classification":"Vulnerable","cwe_id":"CWE-120","reasoning":"The code is easy to follow but performs an unbounded copy into a fixed-size buffer, allowing buffer overflow if argv[1] exceeds 127 characters. It also does not verify argc before accessing argv[1], which can cause invalid memory access."},
 		"Claude": {"readability_score": 65, "understandability_score": 60, "maintainability_score": 25, "functional_classification": "Buggy", "security_classification": "Vulnerable", "cwe_id": "CWE-121", "reasoning": "No check that argc > 1 before accessing argv[1] (potential null pointer deref), and no bounds checking on 'i' against buff's size (128), allowing a stack buffer overflow if argv[1] exceeds 127 characters (CWE-121, also CWE-120).", "cwe_id": "CWE-121"},
@@ -1351,13 +1650,38 @@
 		"GithubCopilot":{"readability_score": 72,"understandability_score": 70,"maintainability_score": 55,"functional_classification": "Buggy","security_classification": "Vulnerable","cwe_id": "CWE-119, CWE-476","reasoning": "Critical buffer overflow vulnerability: no bounds checking on arg1 length against buff[128]. Unchecked argv[1] access causes null pointer dereference if argc<2. String copy loop lacks size validation. Code reinvents strcpy unsafely. Missing input validation and error handling. Modern alternatives (strncpy, strlcpy) not used. High risk of crash and memory corruption."},
 		"Sonarqube": {"readability_score": 95.0, "understandability_score": 95.0, "maintainability_score": 80.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube Cloud detected Cognitive Complexity=1, Bugs=0, Vulnerabilities=0."}
 	},
-	"44": {
+	"43_java": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 43,
+			"language": "java",
+			"origin": "transFromCpp",
+			"external_reference_url": "Translatetd file 43_cpp from cpp to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"43_py": {
+		"metadata": {
+			"id": 43,
+			"language": "python",
+			"origin": "transFromCpp",
+			"external_reference_url": "Translatetd file 43_cpp from cpp to python"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"44_cpp": {
+		"metadata": {
+			"id": 44,
+			"language": "cpp",
+			"origin": "SARD",
+			"external_reference_url": "https://samate.nist.gov/SARD/test-cases/1492/versions/1.0.0"
 		},
 		"ChatGPT": {"readability_score":96,"understandability_score":97,"maintainability_score":94,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The code validates argc before accessing argv[1] and bounds-checks the copy to prevent writing past the 128-byte buffer, ensuring proper null termination. It is clear, maintainable, and no exploitable vulnerability is evident in this snippet."},
 		"Claude": {"readability_score": 80, "understandability_score": 80, "maintainability_score": 55, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "argc check prevents null pointer access to argv[1], and the loop bound 'i < 127' ensures buff (size 128) is never written out of bounds, leaving room for the null terminator. This fixes the prior buffer overflow vulnerability."},
@@ -1365,13 +1689,38 @@
 		"GithubCopilot":{"readability_score": 82,"understandability_score": 80,"maintainability_score": 75,"functional_classification": "Correct","security_classification": "Safe","cwe_id": "None", "reasoning": "Code properly validates argc before accessing argv[1], preventing null pointer dereference. Loop includes bounds check (i < 127) preventing buffer overflow into 128-byte buffer. Null terminator correctly added. String copy logic is sound. Clean, readable structure with proper error handling. Minor: could use strncpy for clarity and maintainability. Overall secure, correct, and well-structured."},
 		"Sonarqube": {"readability_score": 85.0, "understandability_score": 85.0, "maintainability_score": 100.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube Cloud detected Cognitive Complexity=3, Bugs=0, Vulnerabilities=0."}
 	},
-	"45": {
+	"44_java": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 44,
+			"language": "java",
+			"origin": "transFromCpp",
+			"external_reference_url": "Translatetd file 44_cpp from cpp to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"44_py": {
+		"metadata": {
+			"id": 44,
+			"language": "python",
+			"origin": "transFromCpp",
+			"external_reference_url": "Translatetd file 44_cpp from cpp to python"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"45_cpp": {
+		"metadata": {
+			"id": 45,
+			"language": "cpp",
+			"origin": "SARD",
+			"external_reference_url": "https://samate.nist.gov/SARD/test-cases/102355/versions/1.0.0"
 		},
 		"ChatGPT": {"readability_score":74,"understandability_score":72,"maintainability_score":66,"functional_classification":"Buggy","security_classification":"Vulnerable","cwe_id":"CWE-416","reasoning":"The code allocates memory, frees it in Function1, then Function2 uses the freed pointer via printLine(data), resulting in a use-after-free vulnerability. Missing includes/declarations also prevent compilation, but the primary issue is dereferencing freed memory."},
 		"Claude": {"readability_score": 55, "understandability_score": 45, "maintainability_score": 25, "functional_classification": "Buggy", "security_classification": "Vulnerable", "cwe_id": "CWE-416", "reasoning": "'data' is deleted inside Function1, but Function2 still calls printLine(data) afterward, causing a use-after-free (CWE-416). Also 'printLine' and memset are undeclared/missing includes (cstring), so this would not compile as-is."},
@@ -1379,13 +1728,38 @@
 		"GithubCopilot":{"readability_score": 68,"understandability_score": 65,"maintainability_score": 45,"functional_classification": "Buggy","security_classification": "Vulnerable","cwe_id": "CWE-416, CWE-672","reasoning": "Use-after-free vulnerability: Function1 deletes data before returning, then Function2 calls undefined printLine() on dangling pointer. Memory is freed inside Function1 but accessed after return. Pass-by-reference doesn't prevent this. Missing memset header. printLine() undefined. No error handling. Reference parameter creates confusion about ownership. Critical memory safety issue."},
 		"Sonarqube": {"readability_score": 100.0, "understandability_score": 100.0, "maintainability_score": 100.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube Cloud detected Cognitive Complexity=0, Bugs=0, Vulnerabilities=0."}
 	},
-	"46": {
+	"45_java": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 45,
+			"language": "java",
+			"origin": "transFromCpp",
+			"external_reference_url": "Translatetd file 45_cpp from cpp to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"45_py": {
+		"metadata": {
+			"id": 45,
+			"language": "python",
+			"origin": "transFromCpp",
+			"external_reference_url": "Translatetd file 45_cpp from cpp to python"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"46_cpp": {
+		"metadata": {
+			"id": 46,
+			"language": "cpp",
+			"origin": "SARD",
+			"external_reference_url": "https://samate.nist.gov/SARD/test-cases/102355/versions/1.0.0"
 		},
 		"ChatGPT": {"readability_score":82,"understandability_score":84,"maintainability_score":78,"functional_classification":"Partially Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The code fixes the previous use-after-free by moving deletion after use and nulling the pointer. However, it lacks proper allocation failure handling and contains undeclared functions/includes, so it may not compile as shown. No exploitable memory vulnerability is evident in the intended flow."},
 		"Claude": {"readability_score": 70, "understandability_score": 65, "maintainability_score": 45, "functional_classification": "Buggy", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Use-after-free is fixed: delete now happens after printLine, and data is nulled afterward. However, code won't compile as-is since 'printLine' is undeclared and <cstring> is missing for memset, though the memory-management logic itself is now correct and safe."},
@@ -1393,13 +1767,38 @@
 		"GithubCopilot":{"readability_score": 78,"understandability_score": 76,"maintainability_score": 68,"functional_classification": "Correct","security_classification": "Safe","cwe_id": "None","reasoning": "Use-after-free fixed: memory now deleted in Function2 after use. Proper null check prevents dangling pointer access. Memory ownership is clear. Initialization and cleanup are correct. Pass-by-reference idiom appropriately handles allocation. Minor: printLine() still undefined (likely external function). Missing memset header. Code is functionally correct and secure with clear resource management."},
 		"Sonarqube": {"readability_score": 95.0, "understandability_score": 95.0, "maintainability_score": 100.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube Cloud detected Cognitive Complexity=1, Bugs=0, Vulnerabilities=0."}
 	},
-	"47": {
+	"46_java": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 46,
+			"language": "java",
+			"origin": "transFromCpp",
+			"external_reference_url": "Translatetd file 46_cpp from cpp to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"46_py": {
+		"metadata": {
+			"id": 46,
+			"language": "python",
+			"origin": "transFromCpp",
+			"external_reference_url": "Translatetd file 46_cpp from cpp to python"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"47_cpp": {
+		"metadata": {
+			"id": 47,
+			"language": "cpp",
+			"origin": "SARD",
+			"external_reference_url": "https://samate.nist.gov/SARD/test-cases/102085/versions/1.0.0"
 		},
 		"ChatGPT": {"readability_score":78,"understandability_score":75,"maintainability_score":68,"functional_classification":"Buggy","security_classification":"Vulnerable","cwe_id":"CWE-415","reasoning":"The code allocates and deletes data inside Function1, then Function2 deletes the same pointer again, causing a double-free vulnerability. The pointer is not reset after the first delete. The structure is understandable but has unsafe ownership management."},
 		"Claude": {"readability_score": 55, "understandability_score": 45, "maintainability_score": 25, "functional_classification": "Buggy", "security_classification": "Vulnerable", "cwe_id": "CWE-415", "reasoning": "'data' is deleted inside Function1, then deleted again in Function2, causing a double-free (CWE-415). Also missing <cstring> for memset, so the code would not compile as written despite the logical flaw being the primary issue."},
@@ -1407,13 +1806,38 @@
 		"GithubCopilot":{"readability_score": 65,"understandability_score": 60,"maintainability_score": 40,"functional_classification": "Buggy","security_classification": "Vulnerable","cwe_id": "CWE-415, CWE-672","reasoning": "Double-free vulnerability: Function1 deletes data, then Function2 deletes same pointer again. Causes heap corruption and undefined behavior. Pass-by-reference creates ownership confusion. Missing memset header. No null check in Function2. Poor resource management design. Critical memory safety flaw. Code is dangerously broken despite apparent structure."},
 		"Sonarqube": {"readability_score": 100.0, "understandability_score": 100.0, "maintainability_score": 100.0, "functional_classification": "Code Smell/Bug", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube Cloud detected Cognitive Complexity=0, Bugs=1, Vulnerabilities=0."}
 	},
-	"48": {
+	"47_java": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 47,
+			"language": "java",
+			"origin": "transFromCpp",
+			"external_reference_url": "Translatetd file 47_cpp from cpp to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"47_py": {
+		"metadata": {
+			"id": 47,
+			"language": "python",
+			"origin": "transFromCpp",
+			"external_reference_url": "Translatetd file 47_cpp from cpp to python"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"48_cpp": {
+		"metadata": {
+			"id": 48,
+			"language": "cpp",
+			"origin": "SARD",
+			"external_reference_url": "https://samate.nist.gov/SARD/test-cases/102085/versions/1.0.0"
 		},
 		"ChatGPT": {"readability_score":88,"understandability_score":90,"maintainability_score":82,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The code correctly manages ownership: memory is allocated in Function1 and released once in Function2. The null check prevents invalid deletion. However, raw pointers and manual memory management reduce maintainability, and allocation failure handling is missing. No exploitable vulnerability is evident in this flow."},
 		"Claude": {"readability_score": 75, "understandability_score": 70, "maintainability_score": 50, "functional_classification": "Buggy", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Double-free is fixed: memory is deleted exactly once in Function2 and pointer is nulled afterward. However, code won't compile as-is: 'memset' requires <cstring>, which is missing (only <wchar.h> is included), though the memory-management logic itself is correct and safe."},
@@ -1421,13 +1845,38 @@
 		"GithubCopilot":{"readability_score": 82,"understandability_score": 80,"maintainability_score": 75,"functional_classification": "Correct","security_classification": "Safe","cwe_id": "None","reasoning": "Proper memory management: Function1 allocates, Function2 deallocates with null check. No double-free or use-after-free. Clear ownership semantics via pass-by-reference. Initialization and cleanup correct. Missing memset header is minor. Code is clean, readable, and secure. Functionally correct with sound resource management and error checking."},
 		"Sonarqube": {"readability_score": 95.0, "understandability_score": 95.0, "maintainability_score": 100.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube Cloud detected Cognitive Complexity=1, Bugs=0, Vulnerabilities=0."}
 	},
-	"49": {
+	"48_java": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 48,
+			"language": "java",
+			"origin": "transFromCpp",
+			"external_reference_url": "Translatetd file 48_cpp from cpp to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"48_py": {
+		"metadata": {
+			"id": 48,
+			"language": "python",
+			"origin": "transFromCpp",
+			"external_reference_url": "Translatetd file 48_cpp from cpp to python"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"49_cpp": {
+		"metadata": {
+			"id": 49,
+			"language": "cpp",
+			"origin": "SARD",
+			"external_reference_url": "https://samate.nist.gov/SARD/test-cases/84440/versions/1.0.0"
 		},
 		"ChatGPT": {"readability_score":86,"understandability_score":82,"maintainability_score":78,"functional_classification":"Buggy","security_classification":"Vulnerable","cwe_id":"CWE-190","reasoning":"The code is simple to read, but it assigns UINT_MAX to an unsigned integer and then performs data + 1, causing unsigned integer wraparound. This may lead to incorrect calculations and security issues if used in size or boundary checks. Also, badSource is undefined in the snippet."},
 		"Claude": {"readability_score": 55, "understandability_score": 45, "maintainability_score": 25, "functional_classification": "Buggy", "security_classification": "Vulnerable", "cwe_id": "CWE-190", "reasoning": "Func1 is defined but never called (Func2 calls undeclared 'badSource' instead); if data becomes UINT_MAX, 'data + 1' wraps around to 0, an integer overflow (CWE-190). Missing includes/declarations for climits, badSource, printLine mean it also wouldn't compile."},
@@ -1435,19 +1884,70 @@
 		"GithubCopilot":{"readability_score": 72,"understandability_score": 68,"maintainability_score": 55,"functional_classification": "Buggy","security_classification": "Vulnerable","cwe_id": "CWE-190", "reasoning": "Integer overflow vulnerability: if badSource() sets data to UINT_MAX, adding 1 causes wraparound to 0. No bounds checking or validation on data before arithmetic. Undefined function badSource() called without definition/documentation. No overflow detection or handling. Missing includes (climits, iostream). Result is unpredictable. High risk of logic errors and exploits."},
 		"Sonarqube": {"readability_score": 100.0, "understandability_score": 100.0, "maintainability_score": 100.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube Cloud detected Cognitive Complexity=0, Bugs=0, Vulnerabilities=0."}
 	},
-	"50": {
+	"49_java": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 49,
+			"language": "java",
+			"origin": "transFromCpp",
+			"external_reference_url": "Translatetd file 49_cpp from cpp to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"49_py": {
+		"metadata": {
+			"id": 49,
+			"language": "python",
+			"origin": "transFromCpp",
+			"external_reference_url": "Translatetd file 49_cpp from cpp to python"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"50_cpp": {
+		"metadata": {
+			"id": 50,
+			"language": "cpp",
+			"origin": "SARD",
+			"external_reference_url": "https://samate.nist.gov/SARD/test-cases/84440/versions/1.0.0"
 		},
 		"ChatGPT": {"readability_score":88,"understandability_score":87,"maintainability_score":82,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The code adds a boundary check before performing data + 1, preventing unsigned wraparound when data equals UINT_MAX. Logic is clear and avoids the previous overflow issue. Minor concerns remain because badSource and printLine are undefined in the snippet."},
 		"Claude": {"readability_score": 60, "understandability_score": 55, "maintainability_score": 30, "functional_classification": "Partially Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Guard 'if (data < UINT_MAX)' prevents the integer overflow (CWE-190) from the prior version. However, 'badSource', 'printLine', and UINT_MAX's header (climits) are undeclared/missing, and Func1 remains unused, so the code would not compile as-is."},
 		"Gemini": {"readability_score": 85,"understandability_score": 90,"maintainability_score": 60,"functional_classification": "Buggy","security_classification": "Safe","cwe_id": "None","reasoning": "The boundary check `data < UINT_MAX` successfully prevents the integer overflow (CWE-190) before performing the addition. However, the program remains functionally buggy because `badSource` and `printLine` are undeclared identifiers, resulting in immediate compilation failure. Structurally, utilizing magic global/undefined helper functions limits proper maintainability."},
 		"GithubCopilot":{"readability_score": 78,"understandability_score": 76,"maintainability_score": 68,"functional_classification": "Correct","security_classification": "Safe","cwe_id": "None","reasoning": "Integer overflow properly prevented: bounds check (data < UINT_MAX) ensures safe addition. Logic is sound and defensive. Readability improved with guard clause. Missing includes and undefined badSource() are minor documentation issues. Code safely handles edge cases and prevents wraparound. Functionally correct with good overflow protection."},
 		"Sonarqube": {"readability_score": 95.0, "understandability_score": 95.0, "maintainability_score": 100.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube Cloud detected Cognitive Complexity=1, Bugs=0, Vulnerabilities=0."}
+	},
+	"50_java": {
+		"metadata": {
+			"id": 50,
+			"language": "java",
+			"origin": "transFromCpp",
+			"external_reference_url": "Translatetd file 50_cpp from cpp to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"50_py": {
+		"metadata": {
+			"id": 50,
+			"language": "python",
+			"origin": "transFromCpp",
+			"external_reference_url": "Translatetd file 50_cpp from cpp to python"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
 	},
 	"51": {
 		"metadata": {

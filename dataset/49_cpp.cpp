@@ -8,7 +8,7 @@ void Func2()
 {
     unsigned int data;
     data = 0;
-    badSource(data);
+    Func1(data);
     unsigned int result = data + 1;
     printLine(result);
 }
