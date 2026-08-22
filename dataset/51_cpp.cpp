@@ -1,13 +1,4 @@
-package testcases.javatestcases.t51;
 
-
-public class TestClass
-{
-    private static final int PRIVATE_STATIC_FINAL_FIVE = 5;
-
-    public static void func()
-    {
-        short data;#include <iostream>
 #include <limits>
 
 class TestClass

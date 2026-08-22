@@ -1,6 +1,4 @@
-#include <utility>
-#include <string>
-#include <vector>class MinMax_s {
+class MinMax_s {
     public int min;
     public int max;
 

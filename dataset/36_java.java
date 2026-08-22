@@ -1,12 +1,4 @@
-
-
-#include <iostream.h>
-#include <new.h>
-#include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
-
-int main(){import java.util.Scanner;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
