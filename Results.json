@@ -1951,11 +1951,10 @@
 	},
 	"51": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 51,
+			"language": "java",
+			"origin": "SARD",
+			"external_reference_url": "https://samate.nist.gov/SARD/test-cases/250319/versions/1.0.0"
 		},
 		"ChatGPT": {"readability_score":93,"understandability_score":92,"maintainability_score":88,"functional_classification":"Buggy","security_classification":"Safe","cwe_id":"CWE-190","reasoning":"The code is straightforward, but incrementing Short.MAX_VALUE causes integer overflow when cast back to short, producing an incorrect wrapped value. This is an arithmetic overflow issue (CWE-190), not an exploitable security vulnerability in this context."},
 		"Claude": {"readability_score": 80, "understandability_score": 70, "maintainability_score": 55, "functional_classification": "Buggy", "security_classification": "Safe", "cwe_id": "CWE-190", "reasoning": "Incrementing Short.MAX_VALUE causes an integer overflow, wrapping to Short.MIN_VALUE (-32768) instead of a valid incremented value, likely unintended. Redundant duplicate 'if' checks reduce clarity. No exploitable security issue in this isolated snippet."},
@@ -1963,13 +1962,38 @@
 		"GithubCopilot":{ "readability_score": 75, "understandability_score": 72, "maintainability_score": 68, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Functionally correct but contains redundant logic. Constant PRIVATE_STATIC_FINAL_FIVE equals 5, so both if conditions always true (dead else branches). Pre-increment ++data on Short.MAX_VALUE causes integer overflow to Short.MIN_VALUE (-32768), then cast to short. Code compiles and runs but demonstrates poor design: unreachable code, predictable flow. No security vulnerabilities. Readable but suboptimal: simplify by removing dead branches and clarifying intent of overflow behavior."},
 		"Sonarqube": {"readability_score": 85.0, "understandability_score": 85.0, "maintainability_score": 100.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube detected Cognitive Complexity=3, Bugs=0, Vulnerabilities=0."}
 	},
-	"52": {
+	"51_cpp": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 51,
+			"language": "cpp",
+			"origin": "transFromJava",
+			"external_reference_url": "Translatetd file 51_java from java to cpp"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"51_py": {
+		"metadata": {
+			"id": 51,
+			"language": "python",
+			"origin": "transFromJava",
+			"external_reference_url": "Translatetd file 51_java from java to python"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"52_java": {
+		"metadata": {
+			"id": 52,
+			"language": "java",
+			"origin": "SARD",
+			"external_reference_url": "https://samate.nist.gov/SARD/test-cases/250319/versions/1.0.0"
 		},
 		"ChatGPT": {"readability_score":95,"understandability_score":95,"maintainability_score":92,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The code is clear and straightforward. Using int for both data and result prevents the overflow that would occur with short. Incrementing Short.MAX_VALUE yields 32768 correctly. No correctness or security issues are present."},
 		"Claude": {"readability_score": 82, "understandability_score": 72, "maintainability_score": 55, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Using int avoids the short overflow issue; incrementing Short.MAX_VALUE (32767) yields 32768 correctly with no wraparound. Redundant duplicate 'if' conditions still hurt clarity/maintainability, but logic executes as intended with no security concerns."},
@@ -1977,13 +2001,38 @@
 		"GithubCopilot":{ "readability_score": 76, "understandability_score": 73, "maintainability_score": 69, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Functionally correct: data is int (not short), so ++data on Short.MAX_VALUE (32767) yields 32768 without overflow. Both if conditions always true (constant equals 5), making else unreachable dead code. Code works but contains redundancy and unclear intent. No security vulnerabilities or null pointer risks. Readable but suboptimal design: unnecessary conditional branches, predictable control flow. Safe but needs refactoring to remove dead code and simplify logic."},
 		"Sonarqube": {"readability_score": 85.0, "understandability_score": 85.0, "maintainability_score": 100.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube detected Cognitive Complexity=3, Bugs=0, Vulnerabilities=0."}
 	},
-	"53": {
+	"52_cpp": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 52,
+			"language": "cpp",
+			"origin": "transFromJava",
+			"external_reference_url": "Translatetd file 52_java from java to cpp"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"52_py": {
+		"metadata": {
+			"id": 52,
+			"language": "python",
+			"origin": "transFromJava",
+			"external_reference_url": "Translatetd file 52_java from java to python"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"53_cpp": {
+		"metadata": {
+			"id": 53,
+			"language": "cpp",
+			"origin": "SARD",
+			"external_reference_url": "https://samate.nist.gov/SARD/test-cases/94718/versions/1.0.0" 
 		},
 		"ChatGPT": {"readability_score":92,"understandability_score":90,"maintainability_score":84,"functional_classification":"Partially Correct","security_classification":"Vulnerable","cwe_id":"CWE-369","reasoning":"The code is concise and easy to understand, but it performs division by data without checking for zero, which can cause undefined behavior or runtime errors. The C-style cast also reduces type safety. Adding validation for data and safer conversion would improve robustness."},
 		"Claude": {"readability_score": 65, "understandability_score": 55, "maintainability_score": 30, "functional_classification": "Buggy", "security_classification": "Vulnerable", "cwe_id": "CWE-369", "reasoning": "No check that data != 0 before division; if data is 0.0, this yields infinity/NaN, and casting to int is undefined behavior (division by zero, CWE-369). Also 'println' is undeclared and 'const' on a free function is invalid syntax, so it wouldn't compile as-is."},
@@ -1991,13 +2040,38 @@
 		"GithubCopilot":{"readability_score": 75,"understandability_score": 70,"maintainability_score": 65,"functional_classification": "Buggy","security_classification": "Vulnerable","cwe_id": "CWE-369","reasoning": "Division by zero vulnerability: no validation that data != 0 before division. Unsafe cast (int) hides floating-point precision issues. Const qualifier on non-member function is unusual. Missing includes and undefined println(). If data=0, causes undefined behavior/crash. High risk despite simple appearance. No error handling or input validation."},
 		"Sonarqube": {"readability_score": 100.0, "understandability_score": 100.0, "maintainability_score": 100.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube Cloud detected Cognitive Complexity=0, Bugs=0, Vulnerabilities=0."}
 	},
-	"54": {
+	"53_java": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 53,
+			"language": "java",
+			"origin": "transFromCpp",
+			"external_reference_url": "Translatetd file 53_cpp from cpp to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"53_py": {
+		"metadata": {
+			"id": 53,
+			"language": "python",
+			"origin": "transFromCpp",
+			"external_reference_url": "Translatetd file 53_cpp from cpp to python"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"54_cpp": {
+		"metadata": {
+			"id": 54,
+			"language": "cpp",
+			"origin": "SARD",
+			"external_reference_url": "https://samate.nist.gov/SARD/test-cases/94718/versions/1.0.0"
 		},
 		"ChatGPT": {"readability_score":96,"understandability_score":97,"maintainability_score":95,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The code validates near-zero input before division and checks integer range before conversion, preventing division errors and overflow-related issues. It uses clear structure and safer C++ casting. The implementation is readable, maintainable, and no exploitable vulnerability is evident."},
 		"Claude": {"readability_score": 85, "understandability_score": 80, "maintainability_score": 70, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Division-by-zero is properly guarded via epsilon comparison, and the int overflow risk from casting is checked against numeric_limits before the cast, fixing the prior CWE-369/CWE-190 issues. Class-scoped and syntactically valid, with clear error handling."},
@@ -2005,13 +2079,38 @@
 		"GithubCopilot":{"readability_score": 88,"understandability_score": 86,"maintainability_score": 85,"functional_classification": "Correct","security_classification": "Safe","cwe_id": "None","reasoning": "Excellent defensive programming: division by zero prevented with epsilon comparison, overflow/underflow checked before cast. Proper includes and modern C++ (static_cast, numeric_limits). Clear error messages. Defensive checks prevent undefined behavior. Well-structured with good readability. Member function const qualifier is appropriate. Functionally correct and secure with comprehensive validation."},
 		"Sonarqube": {"readability_score": 85.0, "understandability_score": 85.0, "maintainability_score": 100.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube Cloud detected Cognitive Complexity=3, Bugs=0, Vulnerabilities=0."}
 	},
-	"55": {
+	"54_java": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 54,
+			"language": "java",
+			"origin": "transFromCpp",
+			"external_reference_url": "Translatetd file 54_cpp from cpp to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"54_py": {
+		"metadata": {
+			"id": 54,
+			"language": "python",
+			"origin": "transFromCpp",
+			"external_reference_url": "Translatetd file 54_cpp from cpp to python"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"55_cpp": {
+		"metadata": {
+			"id": 55,
+			"language": "cpp",
+			"origin": "SARD",
+			"external_reference_url": "https://samate.nist.gov/SARD/test-cases/91814/versions/1.0.0"
 		},
 		"ChatGPT": {"readability_score":95,"understandability_score":95,"maintainability_score":92,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The function is clear and correctly handles reopening an ifstream by closing an existing file, clearing stream state, opening the requested path, and returning success status. No direct security vulnerability is present, though callers should ensure untrusted paths are handled appropriately."},
 		"Claude": {"readability_score": 90, "understandability_score": 90, "maintainability_score": 80, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Function properly closes any previously open stream, clears error flags, opens the new path, and returns success status. Logic is straightforward and correct. No path validation is performed, but this alone doesn't constitute an exploitable vulnerability in this context."},
@@ -2019,13 +2118,38 @@
 		"GithubCopilot":{"readability_score": 88,"understandability_score": 86,"maintainability_score": 82,"functional_classification": "Correct","security_classification": "Safe","cwe_id": "None","reasoning": "Clean, well-structured file handling code. Proper resource management: closes existing streams before opening new ones. Uses clear() to reset stream state. Good parameter passing (const reference). Defensive checks prevent double-open. Modern C++ with ifstream. Clear logic flow and intent. No security vulnerabilities or functional issues. Minor: could add exception handling for robustness. Overall correct, safe, and maintainable."},
 		"Sonarqube": {"readability_score": 95.0, "understandability_score": 95.0, "maintainability_score": 100.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube Cloud detected Cognitive Complexity=1, Bugs=0, Vulnerabilities=0."}
 	},
-	"56": {
+	"55_java": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 55,
+			"language": "java",
+			"origin": "transFromCpp",
+			"external_reference_url": "Translatetd file 55_cpp from cpp to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"55_py": {
+		"metadata": {
+			"id": 55,
+			"language": "python",
+			"origin": "transFromCpp",
+			"external_reference_url": "Translatetd file 55_cpp from cpp to python"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"56_cpp": {
+		"metadata": {
+			"id": 56,
+			"language": "cpp",
+			"origin": "SARD",
+			"external_reference_url": "https://samate.nist.gov/SARD/test-cases/91814/versions/1.0.0"
 		},
 		"ChatGPT": {"readability_score":94,"understandability_score":95,"maintainability_score":92,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The code clearly validates that the path exists and refers to a regular file before opening it. Stream state handling is correct. The structure is clean and maintainable. Minor TOCTOU risk exists between checking and opening, but no direct exploitable vulnerability is evident in this snippet."},
 		"Claude": {"readability_score": 88, "understandability_score": 85, "maintainability_score": 78, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Adds existence and regular-file checks via std::filesystem before opening, improving robustness over the prior version (e.g., avoids trying to open directories or symlinked special files). Properly closes/clears prior state. No path traversal validation, but acceptable for a generic file-opening utility."},
@@ -2033,13 +2157,38 @@
 		"GithubCopilot":{"readability_score": 92,"understandability_score": 90,"maintainability_score": 88,"functional_classification": "Correct","security_classification": "Safe","cwe_id": "None","reasoning": "Excellent defensive file handling with comprehensive validation. Checks file existence and ensures regular file (not directory/symlink). Proper resource management: closes existing streams before opening. Uses modern C++17 filesystem library. Clear error handling with boolean returns. No security vulnerabilities. Well-structured, readable, and maintainable. Prevents common file operation errors. Best-practice implementation."},
 		"Sonarqube": {"readability_score": 85.0, "understandability_score": 85.0, "maintainability_score": 100.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube Cloud detected Cognitive Complexity=3, Bugs=0, Vulnerabilities=0."}
 	},
-	"57": {
+	"56_java": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 56,
+			"language": "java",
+			"origin": "transFromCpp",
+			"external_reference_url": "Translatetd file 56_cpp from cpp to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"56_py": {
+		"metadata": {
+			"id": 56,
+			"language": "python",
+			"origin": "transFromCpp",
+			"external_reference_url": "Translatetd file 56_cpp from cpp to python"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"57_cpp": {
+		"metadata": {
+			"id": 57,
+			"language": "cpp",
+			"origin": "SARD",
+			"external_reference_url": "https://samate.nist.gov/SARD/test-cases/105658/versions/1.0.0"
 		},
 		"ChatGPT": {"readability_score":96,"understandability_score":96,"maintainability_score":94,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The code is simple, clear, and uses std::string, which manages memory safely. Input is handled through operator>> without fixed-size buffer risks. The only minor issue is that data2 is read but never used, which may indicate unnecessary logic but does not affect correctness."},
 		"Claude": {"readability_score": 80, "understandability_score": 80, "maintainability_score": 45, "functional_classification": "Partially Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Using std::string with cin>> automatically manages memory, avoiding buffer overflow risks. Logic compiles and runs correctly, but data2 is read and never used, which is dead/wasteful code indicating an incomplete or unclear intent (unused variable, minor code smell)."},
@@ -2047,13 +2196,38 @@
 		"GithubCopilot":{"readability_score": 80,"understandability_score": 78,"maintainability_score": 72,"functional_classification": "Correct","security_classification": "Safe","cwe_id": "None","reasoning": "Clean, straightforward code using safe C++ std::string. Input via cin >> is safe from buffer overflow. Pass-by-reference appropriately handles assignment. Logic is correct: reads two strings, prints first. Minor: unnecessary data2 (unused output). Could add input validation/error checking. Formatting inconsistent (space before endl). Overall secure, correct, and maintainable with minor style improvements possible."},
 		"Sonarqube": {"readability_score": 100.0, "understandability_score": 100.0, "maintainability_score": 100.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube Cloud detected Cognitive Complexity=0, Bugs=0, Vulnerabilities=0."}
 	},
-	"58": {
+	"57_java": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 57,
+			"language": "java",
+			"origin": "transFromCpp",
+			"external_reference_url": "Translatetd file 57_cpp from cpp to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"57_py": {
+		"metadata": {
+			"id": 57,
+			"language": "python",
+			"origin": "transFromCpp",
+			"external_reference_url": "Translatetd file 57_cpp from cpp to python"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"58_cpp": {
+		"metadata": {
+			"id": 58,
+			"language": "cpp",
+			"origin": "SARD",
+			"external_reference_url": "https://samate.nist.gov/SARD/test-cases/105658/versions/1.0.0"
 		},
 		"ChatGPT": {"readability_score":98,"understandability_score":98,"maintainability_score":95,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The code is clear, simple, and correctly reads two inputs into std::string objects before printing them. Using std::string avoids fixed-buffer memory issues. The structure is maintainable, with no apparent functional defects or exploitable security vulnerabilities."},
 		"Claude": {"readability_score": 90, "understandability_score": 90, "maintainability_score": 70, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Both data1 and data2 are now used (printed), resolving the unused-variable issue from the prior version. Using std::string with cin>> safely manages memory with no fixed-size buffer, avoiding overflow risks. Logic is simple, clear, and correct."},
@@ -2061,13 +2235,38 @@
 		"GithubCopilot":{"readability_score": 85,"understandability_score": 83,"maintainability_score": 78,"functional_classification": "Correct","security_classification": "Safe","cwe_id": "None","reasoning": "Safe, correct code using std::string preventing buffer overflow. Clear logic: reads two inputs, outputs both. Pass-by-reference appropriately handles assignment. No security vulnerabilities. Minor: inconsistent spacing before endl, assignData() wrapper is unnecessary (could call cin directly). No input validation or error handling. Overall functionally correct and secure with good structure."},
 		"Sonarqube": {"readability_score": 100.0, "understandability_score": 100.0, "maintainability_score": 100.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube Cloud detected Cognitive Complexity=0, Bugs=0, Vulnerabilities=0."}
 	},
-	"59": {
+	"58_java": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 58,
+			"language": "java",
+			"origin": "transFromCpp",
+			"external_reference_url": "Translatetd file 58_cpp from cpp to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"58_py": {
+		"metadata": {
+			"id": 58,
+			"language": "python",
+			"origin": "transFromCpp",
+			"external_reference_url": "Translatetd file 58_cpp from cpp to python"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"59_cpp": {
+		"metadata": {
+			"id": 59,
+			"language": "cpp",
+			"origin": "SARD",
+			"external_reference_url": "https://samate.nist.gov/SARD/test-cases/111358/versions/1.0.0"
 		},
 		"ChatGPT": {"readability_score":96,"understandability_score":92,"maintainability_score":85,"functional_classification":"Partially Correct","security_classification":"Vulnerable","cwe_id":"CWE-476","reasoning":"The code is concise and easy to read, but it assumes data is a valid non-null pointer to writable memory. Passing a null or invalid pointer causes undefined behavior. Adding input validation or using safer abstractions would improve correctness and security."},
 		"Claude": {"readability_score": 75, "understandability_score": 70, "maintainability_score": 40, "functional_classification": "Buggy", "security_classification": "Vulnerable", "cwe_id": "CWE-476", "reasoning": "No null check on 'data' before writing to data[0], risking a null pointer dereference if caller passes NULL (CWE-476). Also 'printIntLine' is undeclared, so this snippet would not compile as-is; caller is trusted without validation."},
@@ -2075,13 +2274,38 @@
 		"GithubCopilot":{"readability_score": 75,"understandability_score": 70,"maintainability_score": 60,"functional_classification": "Buggy","security_classification": "Vulnerable","cwe_id": "CWE-476","reasoning": "Null pointer dereference vulnerability: no validation that data pointer is non-null before dereferencing. Caller could pass nullptr, causing undefined behavior/crash. No bounds checking. Function assumes valid input without defensive checks. Missing includes. Undefined printIntLine(). Precondition not documented. High risk despite simple appearance."},
 		"Sonarqube": {"readability_score": 100.0, "understandability_score": 100.0, "maintainability_score": 100.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube Cloud detected Cognitive Complexity=0, Bugs=0, Vulnerabilities=0."}
 	},
-	"60": {
+	"59_java": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 59,
+			"language": "java",
+			"origin": "transFromCpp",
+			"external_reference_url": "Translatetd file 59_cpp from cpp to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"59_py": {
+		"metadata": {
+			"id": 59,
+			"language": "python",
+			"origin": "transFromCpp",
+			"external_reference_url": "Translatetd file 59_cpp from cpp to python"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"60_cpp": {
+		"metadata": {
+			"id": 60,
+			"language": "cpp",
+			"origin": "SARD",
+			"external_reference_url": "https://samate.nist.gov/SARD/test-cases/111358/versions/1.0.0"
 		},
 		"ChatGPT": {"readability_score":97,"understandability_score":96,"maintainability_score":92,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The code clearly checks for a null pointer before dereferencing it, preventing the previous null pointer issue. The logic is simple and maintainable. Remaining assumptions are that the pointer references valid writable memory and that index 0 is within bounds, which are not verifiable from this snippet."},
 		"Claude": {"readability_score": 85, "understandability_score": 80, "maintainability_score": 55, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Null check on 'data' before dereferencing fixes the prior CWE-476 null pointer dereference. Logic is simple and correct given valid input. 'printIntLine' remains undeclared, so it would not compile standalone, but that is an external dependency, not a logic flaw."},
@@ -2089,19 +2313,70 @@
 		"GithubCopilot":{"readability_score": 85,"understandability_score": 83,"maintainability_score": 80,"functional_classification": "Correct","security_classification": "Safe","cwe_id": "None","reasoning": "Null pointer dereference properly prevented with nullptr check. Safe pointer dereferencing. Clear defensive programming. Good readability with proper indentation. No bounds checking (assumes valid array), but null safety is addressed. Undefined printIntLine() is minor. Function is functionally correct and secure with appropriate precondition validation."},
 		"Sonarqube": {"readability_score": 95.0, "understandability_score": 95.0, "maintainability_score": 100.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube Cloud detected Cognitive Complexity=1, Bugs=0, Vulnerabilities=0."}
 	},
-	"61": {
+	"60_java": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 60,
+			"language": "java",
+			"origin": "transFromCpp",
+			"external_reference_url": "Translatetd file 60_cpp from cpp to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"60_py": {
+		"metadata": {
+			"id": 60,
+			"language": "python",
+			"origin": "transFromCpp",
+			"external_reference_url": "Translatetd file 60_cpp from cpp to python"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"61_cpp": {
+		"metadata": {
+			"id": 61,
+			"language": "cpp",
+			"origin": "Vijayvergiya_2024",
+			"external_reference_url": "Figure 3"
 		},
 		"ChatGPT": {"readability_score":95,"understandability_score":95,"maintainability_score":92,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The code is clear and uses a named struct to make the return value more descriptive than a pair. The calculation logic is assumed correct, so functionality is valid. No security issues are present. Minor concerns include hardcoded initialization values and potential empty-input handling not shown."},
 		"Claude": {"readability_score": 82, "understandability_score": 72, "maintainability_score": 55, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Using a named struct 'MinMax_s' instead of std::pair improves readability/self-documentation over the prior version (named fields vs .first/.second). Inner logic assumed correct per comment. No unsafe operations, so no security concerns."},
 		"Gemini": { "readability_score": 95, "understandability_score": 90, "maintainability_score": 85, "functional_classification": "Buggy", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Replacing the pair with a custom struct improves readability, but initializing `min_len` to an arbitrary 100 remains a logical bug. Any snippet set with length > 100 will fail to update the minimum correctly, and an empty input vector returns an incorrect range of (100, 0). The use of standard containers prevents memory-related security issues." },
 		"GithubCopilot":{"readability_score": 90,"understandability_score": 88,"maintainability_score": 88,"functional_classification": "Correct","security_classification": "Safe","cwe_id": "None","reasoning": "Excellent code structure using custom struct for semantic clarity. Named fields (min/max) improve readability over std::pair. Proper includes and modern C++ (aggregate initialization). Const reference prevents copies. Clear encapsulation. Logic assumed correct. No security vulnerabilities. Minor: magic numbers (100, 0) could be named constants; typedef/using convention preferred over _s suffix. Overall well-designed, safe, and maintainable."},
 		"Sonarqube": {"readability_score": 100.0, "understandability_score": 100.0, "maintainability_score": 100.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube Cloud detected Cognitive Complexity=0, Bugs=0, Vulnerabilities=0."}
+	},
+	"61_java": {
+		"metadata": {
+			"id": 61,
+			"language": "java",
+			"origin": "transFromCpp",
+			"external_reference_url": "Translatetd file 61_cpp from cpp to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
+	},
+	"61_py": {
+		"metadata": {
+			"id": 61,
+			"language": "python",
+			"origin": "transFromCpp",
+			"external_reference_url": "Translatetd file 61_cpp from cpp to python"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot":,
+		"Sonarqube": 
 	},
 	"62": {
 		"metadata": {
