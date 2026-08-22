@@ -5779,26 +5779,26 @@
             "origin": "transFromCpp",
             "external_reference_url": "Translatetd file 50_cpp from cpp to java"
         },
-        "ChatGPT": { "readability_score": 72, "understandability_score": 68, "maintainability_score": 62, "functional_classification": "Partially Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "The Java code is readable but mixes unrelated C++ and Java implementations. func1 clearly sets the value to MAX_VALUE, but func2's condition is always false afterward, so the increment/print is unreachable. This avoids overflow and is not a security vulnerability, but likely indicates flawed intended logic." }
+        "ChatGPT": {"readability_score":92,"understandability_score":88,"maintainability_score":80,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The code is simple, readable, and uses clear generic types. func1 mutates the Pointer as intended, setting value to Integer.MAX_VALUE; the condition then correctly prevents overflow. The Pointer wrapper is unnecessary design complexity, slightly reducing maintainability, but there are no evident security vulnerabilities."}
 ,
-        "Claude": { "readability_score": 82, "understandability_score": 78, "maintainability_score": 70, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Simple reference/wrapper pattern setting max value. The bounds check (data.value < MAX_VALUE) correctly guards against integer overflow before increment, so no overflow occurs; branch is simply never entered given the input. Code is short, clear, but somewhat contrived/dead-code-like for demonstration purposes." },
+        "Claude": {"readability_score": 82, "understandability_score": 75, "maintainability_score": 60, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "CWE-190", "reasoning": "Code runs without error. func1 always sets value to MAX_VALUE, so the overflow-prone branch (value+1) is unreachable, making the program safe as written, though the dead branch reveals latent overflow risk if logic changes."},
         "Gemini": {
-"readability_score": 75,
-"understandability_score": 70,
+"readability_score": 85,
+"understandability_score": 80,
 "maintainability_score": 60,
 "functional_classification": "Buggy",
 "security_classification": "Safe",
 "cwe_id": "None",
-"reasoning": "The code contains mixed C++ and Java syntax snippets. In Java, func1 sets data.value to Integer.MAX_VALUE. The condition in func2 checks if data.value < Integer.MAX_VALUE, which evaluates to false. Consequently, the addition and print statements are unreachable dead code, making the logic faulty/buggy despite being syntactically valid Java overall."
+"reasoning": "The code is readable, but func2 contains dead code. func1 sets data.value to Integer.MAX_VALUE, so the condition (data.value < Integer.MAX_VALUE) in func2 is always false. As a result, the increment block never executes and nothing is printed. The custom Pointer pattern is unnecessary in modern Java, lowering maintainability."
 },
         "GithubCopilot": {
-  "readability_score": 78,
-  "understandability_score": 75,
-  "maintainability_score": 70,
+  "readability_score": 85,
+  "understandability_score": 80,
+  "maintainability_score": 75,
   "functional_classification": "Partially Correct",
   "security_classification": "Safe",
   "cwe_id": "None",
-  "reasoning": "Code is readable and simple but uses unnecessary pointer-like wrapper. Logic is flawed: overflow check is unreachable since value is always MAX. No security risks present."
+  "reasoning": "Code is clear and simple, but logic is flawed: func1 sets value to MAX_VALUE, making the conditional in func2 always false. Structure is basic but maintainable. No security risks present."
 }
 ,
         "Sonarqube": {
@@ -6284,19 +6284,28 @@
             "origin": "transFromCpp",
             "external_reference_url": "Translatetd file 54_cpp from cpp to java"
         },
-        "ChatGPT": {"readability_score":20,"understandability_score":25,"maintainability_score":10,"functional_classification":"Buggy","security_classification":"Safe","cwe_id":"None","reasoning":"The snippet mixes invalid C++ and Java syntax (e.g., nested class declaration, public class, Math, System), so it cannot compile. The intended logic checks near-zero input and integer overflow before casting, but the code is structurally invalid. No clear exploitable security vulnerability is present."}
+        "ChatGPT": { "readability_score": 92, "understandability_score": 91, "maintainability_score": 88, "functional_classification": "Partially Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Clear and simple logic with good early validation. However, the zero check is overly strict for float input and can reject valid small values, while float-to-double conversion does not restore lost precision. The range check prevents integer overflow, and Java's cast is otherwise well-defined, so no exploitable security issue is evident." }
 ,
-        "Claude": {"readability_score": 20, "understandability_score": 30, "maintainability_score": 10, "functional_classification": "Buggy", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Code is malformed: mixes C++ includes/class syntax ('public:public class Test') with Java syntax (Math.abs, System.out, Integer.MAX_VALUE). This will not compile in either language, making it fundamentally broken despite reasonable division-by-zero and overflow checks in the Java-like logic."},
+        "Claude": {"readability_score": 88, "understandability_score": 90, "maintainability_score": 75, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Clear, simple method with guard clauses for div-by-zero and integer overflow before casting. Logic is sound and easy to follow. Minor maintainability concerns: no return value/exception handling, uses console output and epsilon check hardcoded, but no exploitable vulnerability present."},
         "Gemini": {
-"readability_score": 15,
-"understandability_score": 30,
-"maintainability_score": 20,
+"readability_score": 85,
+"understandability_score": 80,
+"maintainability_score": 60,
 "functional_classification": "Buggy",
 "security_classification": "Vulnerable",
 "cwe_id": "CWE-190",
-"reasoning": "Syntax is invalid due to mixed C++ includes and Java class definitions. Converting a double to int after checking Integer limits causes silent precision loss or casting issues (e.g., NaN from inputs like NaN or subtle subnormal floats). Integer cast overflow risks are improperly handled due to bounds comparisons using double representation."
+"reasoning": "Data contains zero-checks, but NaN or subnormal float issues exist. Casting raw_result to int after checking against Integer.MAX_VALUE/MIN_VALUE can still trigger integer overflow/underflow anomalies due to double floating-point precision edge cases, and logging directly to System.err/out hampers maintainability and scalability."
 },
-        "GithubCopilot": { "readability_score": 20, "understandability_score": 15, "maintainability_score": 10, "functional_classification": "Buggy", "security_classification": "Safe", "cwe_id": "CWE-398", "reasoning": "Code mixes C++ and Java syntax, contains duplicated class declarations, and cannot compile. Logic intent is clear but structurally broken. No exploitable security flaws, but severe correctness and maintainability issues." },
+        "GithubCopilot": {
+  "readability_score": 92,
+  "understandability_score": 90,
+  "maintainability_score": 88,
+  "functional_classification": "Correct",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "Clear structure, explicit checks, and simple logic make the code readable and maintainable. Division-by-zero and overflow conditions are handled. No security risks present. Overall clean and correct implementation."
+}
+,
         "Sonarqube": {
             "readability_score": 100.0,
             "understandability_score": 100.0,

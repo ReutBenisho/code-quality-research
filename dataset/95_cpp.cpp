@@ -1,11 +1,4 @@
-def factorSum(x):
-    """
-    sum all the divide prime numbers
-
-    :param x:the number from the user
-    :return:the sum
-    """
-    if x <= 1:#include <iostream>
+#include <iostream>
 #include <unordered_set>
 #include <numeric>
 

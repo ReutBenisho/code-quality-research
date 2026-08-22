@@ -1,9 +1,4 @@
-#include <iostream>
-#include <cmath>
-#include <limits>
-
-class Test {
-public:public class Test {
+public class Test {
     public void func(float data) {
         if (Math.abs(data) < 1e-9f) {
             System.err.println("Error: Division by zero");

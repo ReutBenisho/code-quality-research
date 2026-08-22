@@ -1,14 +1,4 @@
-class Course:
-  def __init__(self,str):
-    self.name = str
-    self.gread = 101
-  def setGread(self,gread):
-      """
-      :param gread: check if the gread of the gread is bewtween 0-100
-      :return: true if the value is good
-      """
-      assert gread >= 0 and gread <= 100 , "you enter wrong gread"
-      self.gread = gread#include <iostream>
+
 #include <string>
 #include <vector>
 #include <fstream>

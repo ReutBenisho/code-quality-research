@@ -1,8 +1,4 @@
 
-static void Func1(unsigned int &data)
-{
-    data = UINT_MAX;
-}
 package Test;
 
 public class Main {
