@@ -2378,13 +2378,12 @@
 		"GithubCopilot":,
 		"Sonarqube": 
 	},
-	"62": {
+	"62_py": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 62,
+			"language": "python",
+			"origin": "Exercises_2021",
+			"external_reference_url": ""
 		},
 		"ChatGPT": {"readability_score":96,"understandability_score":99,"maintainability_score":97,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"Simple, self-explanatory function implementing XNOR by returning equality of two values. Minimal complexity, easy to read and maintain. Functionally correct for boolean/equality semantics and contains no exploitable security vulnerabilities."},
 		"Claude": { "readability_score": 90, "understandability_score": 92, "maintainability_score": 75, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Simple, correct XNOR logic via equality comparison. Readable and easy to follow, though function name uses non-PEP8 CamelCase and lacks type hints/docstring, slightly hurting maintainability. No security concerns; no external input or dangerous operations involved." },
@@ -2392,13 +2391,38 @@
 		"GithubCopilot": {"readability_score": 95,"understandability_score": 95,"maintainability_score": 90,"functional_classification": "Correct","security_classification": "Safe","cwe_id": "None","reasoning": "Simple one-line function, clear intent, minimal complexity. Correct XNOR logic for booleans. No structural or security risks. Very easy to read and maintain."},
 		"Sonarqube": {"readability_score": 100.0, "understandability_score": 100.0, "maintainability_score": 60.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube detected Cognitive Complexity=0, Bugs=0, Vulnerabilities=0."}
 	},
-	"63": {
+	"62_cpp": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 62,
+			"language": "cpp",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 62_py from python to cpp"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"62_java": {
+		"metadata": {
+			"id": 62,
+			"language": "java",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 62_py from python to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"63_py": {
+		"metadata": {
+			"id": 63,
+			"language": "python",
+			"origin": "Exercises_2021",
+			"external_reference_url": ""
 		},
 		"ChatGPT": {"readability_score":98,"understandability_score":98,"maintainability_score":97,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"Clear function name, descriptive docstring, and straightforward control flow make the code easy to read and understand. The logic correctly implements XNOR for boolean inputs. No security-relevant operations or exploitable vulnerabilities are present."},
 		"Claude": { "readability_score": 92, "understandability_score": 93, "maintainability_score": 80, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Correct XNOR logic with clear docstring explaining purpose and parameters, aiding understandability. If/else is slightly verbose versus a direct 'return a == b', minor style nit. Non-PEP8 function name. No security concerns present." },
@@ -2406,13 +2430,38 @@
 		"GithubCopilot":{ "readability_score": 95, "understandability_score": 95, "maintainability_score": 90, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Clear docstring and simple boolean logic. XNOR implemented correctly. Easy to read and maintain. No security risks due to isolated boolean comparison." },
 		"Sonarqube" :{"readability_score": 90.0, "understandability_score": 90.0, "maintainability_score": 80.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube detected Cognitive Complexity=2, Bugs=0, Vulnerabilities=0."}
 	},
-	"64": {
+	"63_cpp": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 63,
+			"language": "cpp",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 63_py from python to cpp"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"63_java": {
+		"metadata": {
+			"id": 63,
+			"language": "java",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 63_py from python to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"64_py": {
+		"metadata": {
+			"id": 64,
+			"language": "python",
+			"origin": "Exercises_2021",
+			"external_reference_url": ""
 		},
 		"ChatGPT": {"readability_score":99,"understandability_score":99,"maintainability_score":99,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"Well-named parameters, clear docstring, and a concise implementation directly express XNOR via equality. The logic is correct for boolean inputs, highly maintainable due to its simplicity, and contains no exploitable security vulnerabilities."},
 		"Claude": { "readability_score": 93, "understandability_score": 94, "maintainability_score": 82, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Clean, concise XNOR implementation with clear docstring and inline comment. Direct return of equality comparison is idiomatic. Non-PEP8 function name (should be snake_case) is a minor style nit. No security concerns; simple boolean logic with no external input." },
@@ -2420,13 +2469,38 @@
 		"GithubCopilot":{ "readability_score": 95, "understandability_score": 95, "maintainability_score": 90, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Clear docstring and simple boolean comparison. XNOR logic implemented correctly. Very readable and easy to maintain. No security risks due to isolated boolean operation." },
 		"Sonarqube" :{"readability_score": 100.0, "understandability_score": 100.0, "maintainability_score": 60.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube detected Cognitive Complexity=0, Bugs=0, Vulnerabilities=0."}
 	},
-	"65": {
+	"64_cpp": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 64,
+			"language": "cpp",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 64_py from python to cpp"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"64_java": {
+		"metadata": {
+			"id": 64,
+			"language": "java",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 64_py from python to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"65_py": {
+		"metadata": {
+			"id": 65,
+			"language": "python",
+			"origin": "Exercises_2021",
+			"external_reference_url": ""
 		},
 		"ChatGPT": {"readability_score":58,"understandability_score":68,"maintainability_score":65,"functional_classification":"Buggy","security_classification":"Safe","cwe_id":"None","reasoning":"The intended XNOR logic is simple, but the snippet is syntactically invalid because the docstring is not indented within the function body. The documentation is inaccurate and inconsistent with parameter names. No exploitable security vulnerabilities are present."},
 		"Claude": { "readability_score": 55, "understandability_score": 60, "maintainability_score": 40, "functional_classification": "Buggy", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Docstring is not indented under the function definition while the if-block is, causing an IndentationError at parse time — code will not run. Docstring params also mismatch actual parameter names (num1/num2 vs a/b). No security issues, but code is non-functional as written." },
@@ -2434,13 +2508,38 @@
 		"GithubCopilot":{ "readability_score": 85, "understandability_score": 80, "maintainability_score": 75, "functional_classification": "Partially Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Docstring is inaccurate and misleading. Logic works for equality but description suggests boolean semantics. Readable but inconsistent naming and comments reduce clarity. No security risks." },
 		"Sonarqube" :{"readability_score": 100.0, "understandability_score": 100.0, "maintainability_score": 100.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube detected Cognitive Complexity=0, Bugs=0, Vulnerabilities=0."}
 	},
-	"66": {
+	"65_cpp": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 65,
+			"language": "cpp",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 65_py from python to cpp"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"65_java": {
+		"metadata": {
+			"id": 65,
+			"language": "java",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 65_py from python to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"66_py": {
+		"metadata": {
+			"id": 66,
+			"language": "python",
+			"origin": "Exercises_2021",
+			"external_reference_url": ""
 		},
 		"ChatGPT": {"readability_score":85,"understandability_score":88,"maintainability_score":80,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The implementation correctly computes XNOR for boolean inputs through explicit condition checks. Readable but verbose, with duplicated logic that could be simplified to equality. No exploitable security vulnerabilities or unsafe operations are present."},
 		"Claude": { "readability_score": 60, "understandability_score": 65, "maintainability_score": 35, "functional_classification": "Partially Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Verbose enumeration of all four boolean combinations instead of a direct equality check; works for strict True/False but returns None for other truthy/falsy values (e.g. 1, 'x'), unlike a proper XNOR. No docstring, no default/else branch, poor scalability. No security concerns." },
@@ -2448,13 +2547,38 @@
 		"GithubCopilot":{ "readability_score": 85, "understandability_score": 85, "maintainability_score": 80, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Logic is correct but overly verbose. Multiple redundant branches reduce maintainability. Readable and safe, but could be simplified to a single equality check." },
 		"Sonarqube" :{"readability_score": 60.0, "understandability_score": 60.0, "maintainability_score": 100.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube detected Cognitive Complexity=8, Bugs=0, Vulnerabilities=0."}
 	},
-	"67": {
+	"66_cpp": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 66,
+			"language": "cpp",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 66_py from python to cpp"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"66_java": {
+		"metadata": {
+			"id": 66,
+			"language": "java",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 66_py from python to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"67_py": {
+		"metadata": {
+			"id": 67,
+			"language": "python",
+			"origin": "Exercises_2021",
+			"external_reference_url": ""
 		},
 		"ChatGPT": {"readability_score":74,"understandability_score":70,"maintainability_score":68,"functional_classification":"Buggy","security_classification":"Safe","cwe_id":"None","reasoning":"Nested conditionals make the logic harder to follow, and the control flow is incorrect. For example, when a=True and b=False, execution reaches the end without returning a value (returns None), so the function is not a correct XNOR implementation. No exploitable security vulnerabilities are present."},
 		"Claude": { "readability_score": 35, "understandability_score": 30, "maintainability_score": 20, "functional_classification": "Buggy", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Convoluted nested if/else with misattached else clause. For a=False, b=True, execution falls through with no return, yielding None instead of False — an actual logic bug. Overly verbose, hard to follow, and fragile to modify. No security issues present." },
@@ -2462,13 +2586,38 @@
 		"GithubCopilot":{ "readability_score": 80, "understandability_score": 75, "maintainability_score": 70, "functional_classification": "Partially Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Logic handles True/True and False/False but the final else only applies to the second block, making mixed cases inconsistent. Structure is nested and unclear. No security risks." },
 		"Sonarqube" :{"readability_score": 65.0, "understandability_score": 65.0, "maintainability_score": 80.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube detected Cognitive Complexity=7, Bugs=0, Vulnerabilities=0."}
 	},
-	"68": {
+	"67_cpp": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 67,
+			"language": "cpp",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 67_py from python to cpp"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"67_java": {
+		"metadata": {
+			"id": 67,
+			"language": "java",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 67_py from python to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"68_py": {
+		"metadata": {
+			"id": 68,
+			"language": "python",
+			"origin": "Exercises_2021",
+			"external_reference_url": ""
 		},
 		"ChatGPT": {"readability_score":95,"understandability_score":95,"maintainability_score":94,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"Clear and concise implementation of XNOR using boolean logic. The control flow is straightforward and easy to maintain. Functionally correct for boolean inputs and contains no exploitable security vulnerabilities or unsafe operations."},
 		"Claude": { "readability_score": 65, "understandability_score": 68, "maintainability_score": 45, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Logic correctly implements XNOR via explicit boolean combination, though less idiomatic than 'a == b'. No docstring, verbose if/else instead of direct return, and parentheses/spacing style is inconsistent with PEP8. No security concerns; simple boolean logic with no external input." },
@@ -2476,13 +2625,38 @@
 		"GithubCopilot":{ "readability_score": 95, "understandability_score": 95, "maintainability_score": 90, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Clear boolean expression implementing XNOR. Readable, concise, and easy to maintain. Logic is correct and no security risks exist in this isolated comparison." },
 		"Sonarqube" :{"readability_score": 75.0, "understandability_score": 75.0, "maintainability_score": 80.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube detected Cognitive Complexity=5, Bugs=0, Vulnerabilities=0."}
 	},
-	"69": {
+	"68_cpp": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 68,
+			"language": "cpp",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 68_py from python to cpp"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"68_java": {
+		"metadata": {
+			"id": 68,
+			"language": "java",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 68_py from python to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"69_py": {
+		"metadata": {
+			"id": 69,
+			"language": "python",
+			"origin": "Exercises_2021",
+			"external_reference_url": ""
 		},
 		"ChatGPT": {"readability_score":94,"understandability_score":95,"maintainability_score":92,"functional_classification":"Partially Correct","security_classification":"Safe","cwe_id":"None","reasoning":"Clear implementation with a helpful docstring and explicit type validation. XNOR logic is correct for boolean inputs, but returning -1 for invalid types instead of raising an exception or returning a boolean makes behavior inconsistent with the function's stated contract. No security vulnerabilities."},
 		"Claude": { "readability_score": 70, "understandability_score": 72, "maintainability_score": 50, "functional_classification": "Partially Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Docstring is dense and slightly hard to parse. Type-checking restricts to bool only, and returning -1 (an int) on non-bool input breaks the boolean return contract, making it a questionable design choice rather than a clean XNOR. No security concerns; no external/untrusted input handling involved." },
@@ -2490,13 +2664,38 @@
 		"GithubCopilot":{ "readability_score": 90, "understandability_score": 90, "maintainability_score": 85, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Clear logic and type check improve robustness. Returning -1 for invalid types is unconventional but not harmful. Readable, understandable, and structurally simple with no security risks." },
 		"Sonarqube" :{"readability_score": 90.0, "understandability_score": 90.0, "maintainability_score": 60.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube detected Cognitive Complexity=2, Bugs=0, Vulnerabilities=0."}
 	},
-	"70": {
+	"69_cpp": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 69,
+			"language": "cpp",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 69_py from python to cpp"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"69_java": {
+		"metadata": {
+			"id": 69,
+			"language": "java",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 69_py from python to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"70_py": {
+		"metadata": {
+			"id": 70,
+			"language": "python",
+			"origin": "Exercises_2021",
+			"external_reference_url": ""
 		},
 		"ChatGPT": {"readability_score":89,"understandability_score":88,"maintainability_score":86,"functional_classification":"Buggy","security_classification":"Safe","cwe_id":"None","reasoning":"The code is readable and logically organized, but it removes all occurrences of the minimum digit rather than a single minimum digit. It also fails when all digits are removed (e.g., n=0 or 111), causing int("") to raise a ValueError. No exploitable security vulnerabilities are present."},
 		"Claude": { "readability_score": 55, "understandability_score": 60, "maintainability_score": 40, "functional_classification": "Buggy", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Uses filter() to remove ALL occurrences of the minimum digit rather than just one, contradicting the singular 'RemoveMinDigit' intent (e.g., 1005 → 15 instead of 105). Also crashes on negative numbers since '-' can't convert to int. Comments are inline/cramped, hurting readability. No security issues." },
@@ -2504,13 +2703,38 @@
 		"GithubCopilot":{ "readability_score": 90, "understandability_score": 90, "maintainability_score": 85, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Clear logic and straightforward list operations. Correctly removes all instances of the minimum digit. Readable and maintainable, though variable naming could improve. No security risks in this isolated numeric manipulation." },
 		"Sonarqube" :{"readability_score": 100.0, "understandability_score": 100.0, "maintainability_score": 100.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube detected Cognitive Complexity=0, Bugs=0, Vulnerabilities=0."}
 	},
-	"71": {
+	"70_cpp": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 70,
+			"language": "cpp",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 70_py from python to cpp"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"70_java": {
+		"metadata": {
+			"id": 70,
+			"language": "java",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 70_py from python to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"71_py": {
+		"metadata": {
+			"id": 71,
+			"language": "python",
+			"origin": "Exercises_2021",
+			"external_reference_url": ""
 		},
 		"ChatGPT": {"readability_score":91,"understandability_score":92,"maintainability_score":89,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"Well-structured with clear helper functions and documentation. The logic correctly finds the minimum digit and removes all its occurrences while preserving the remaining digits' order. No unsafe operations or exploitable security vulnerabilities are present."},
 		"Claude": { "readability_score": 72, "understandability_score": 68, "maintainability_score": 60, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Docstrings clearly state intent to remove all instances of the minimum digit, and the digit-manipulation logic (via modulo/floor division and positional reconstruction) correctly implements this. Slightly non-idiomatic (string conversion would be simpler), and variable names like 'a', 'i', 'n' hurt clarity. No security concerns." },
@@ -2518,13 +2742,38 @@
 		"GithubCopilot":{ "readability_score": 90, "understandability_score": 90, "maintainability_score": 85, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Clear logic using modular arithmetic. Both functions correctly identify and remove minimum digits. Structure is straightforward and safe, though variable naming could be more descriptive." },
 		"Sonarqube" :{"readability_score": 70.0, "understandability_score": 70.0, "maintainability_score": 100.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube detected Cognitive Complexity=6, Bugs=0, Vulnerabilities=0."}
 	},
-	"72": {
+	"71_cpp": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 71,
+			"language": "cpp",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 71_py from python to cpp"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"71_java": {
+		"metadata": {
+			"id": 71,
+			"language": "java",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 71_py from python to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"72_py": {
+		"metadata": {
+			"id": 72,
+			"language": "python",
+			"origin": "Exercises_2021",
+			"external_reference_url": ""
 		},
 		"ChatGPT": {"readability_score":94,"understandability_score":94,"maintainability_score":92,"functional_classification":"Partially Correct","security_classification":"Safe","cwe_id":"None","reasoning":"Readable and concise with clear documentation. Correctly removes all occurrences of the minimum digit and handles empty results, but input validation is inconsistent: 0 is treated as invalid, negative inputs only print a message and return unchanged despite the documented contract. No security vulnerabilities."},
 		"Claude": { "readability_score": 78, "understandability_score": 78, "maintainability_score": 62, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Docstring clearly states intent to remove all instances of the min digit, matching implementation via list comprehension. Handles edge case of empty result and non-positive input gracefully. Minor issues: error message says 'negative' but check is num<=0 (includes zero), and print() instead of raising/logging. No security concerns." },
@@ -2532,13 +2781,38 @@
 		"GithubCopilot":{ "readability_score": 92, "understandability_score": 92, "maintainability_score": 88, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Clear logic and list filtering make the function easy to follow. Correctly removes all minimum digits. Minor readability issues with comments and wording, but overall maintainable and safe with no security concerns." },
 		"Sonarqube" :{"readability_score": 90.0, "understandability_score": 90.0, "maintainability_score": 100.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube detected Cognitive Complexity=2, Bugs=0, Vulnerabilities=0."}
 	},
-	"73": {
+	"72_cpp": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 72,
+			"language": "cpp",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 72_py from python to cpp"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"72_java": {
+		"metadata": {
+			"id": 72,
+			"language": "java",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 72_py from python to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"73_py": {
+		"metadata": {
+			"id": 73,
+			"language": "python",
+			"origin": "Exercises_2021",
+			"external_reference_url": ""
 		},
 		"ChatGPT": {"readability_score":93,"understandability_score":93,"maintainability_score":91,"functional_classification":"Buggy","security_classification":"Safe","cwe_id":"None","reasoning":"Clear structure and documentation. Logic correctly identifies and removes all minimum digits for typical inputs, but it raises a ValueError when all digits are removed (e.g., 1, 111, 0 after replacement) by calling int(""). No exploitable security vulnerabilities are present."},
 		"Claude": { "readability_score": 78, "understandability_score": 76, "maintainability_score": 60, "functional_classification": "Buggy", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Finds min digit via string comparison (lexicographic), which matches numeric order for single digits '0'-'9', so that part works. However, if all digits are removed (e.g. num=55), int('') raises ValueError, an unhandled edge case. 'Decription' typo. No security concerns." },
@@ -2546,13 +2820,38 @@
 		"GithubCopilot":{ "readability_score": 90, "understandability_score": 90, "maintainability_score": 85, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Clear logic and simple string-based minimum digit removal. Correct behavior for positive integers. Minor readability issues in comments, but overall maintainable and safe with no security risks." },
 		"Sonarqube" :{"readability_score": 90.0, "understandability_score": 90.0, "maintainability_score": 100.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube detected Cognitive Complexity=2, Bugs=0, Vulnerabilities=0."}
 	},
-	"74": {
+	"73_cpp": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 73,
+			"language": "cpp",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 73_py from python to cpp"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"73_java": {
+		"metadata": {
+			"id": 70,
+			"language": "java",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 73_py from python to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"74_py": {
+		"metadata": {
+			"id": 74,
+			"language": "python",
+			"origin": "Exercises_2021",
+			"external_reference_url": ""
 		},
 		"ChatGPT": {"readability_score":86,"understandability_score":87,"maintainability_score":82,"functional_classification":"Buggy","security_classification":"Safe","cwe_id":"None","reasoning":"The logic is generally clear, but it shadows the built-in min function and fails when all digits are removed (e.g., 0 or 111), causing int("") to raise a ValueError. Otherwise it correctly removes all occurrences of the minimum digit. No exploitable security vulnerabilities are present."},
 		"Claude": { "readability_score": 60, "understandability_score": 58, "maintainability_score": 40, "functional_classification": "Buggy", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Shadows built-in 'min' as a variable name, hurting clarity. Crashes with ValueError if all digits equal the minimum (empty string to int) or if input is negative (str includes '-', unconvertible to int). Semicolon after min=9 is non-idiomatic Python. No security concerns present." },
@@ -2560,13 +2859,38 @@
 		"GithubCopilot":{ "readability_score": 88, "understandability_score": 88, "maintainability_score": 80, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Logic correctly removes all minimum digits. Readability is good, though variable naming (min) shadows built‑in. Maintainability slightly reduced due to manual loop for min search. No security risks." },
 		"Sonarqube" :{"readability_score": 85.0, "understandability_score": 85.0, "maintainability_score": 100.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube detected Cognitive Complexity=3, Bugs=0, Vulnerabilities=0."}
 	},
-	"75": {
+	"74_cpp": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 74,
+			"language": "cpp",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 74_py from python to cpp"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"74_java": {
+		"metadata": {
+			"id": 74,
+			"language": "java",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 74_py from python to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"75_py": {
+		"metadata": {
+			"id": 75,
+			"language": "python",
+			"origin": "Exercises_2021",
+			"external_reference_url": ""
 		},
 		"ChatGPT": {"readability_score":95,"understandability_score":95,"maintainability_score":94,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"Clear and concise implementation with meaningful variable usage. It correctly sorts the digits and verifies a constant difference between adjacent values, handling single-digit inputs appropriately. No exploitable security vulnerabilities or unsafe operations are present."},
 		"Claude": { "readability_score": 55, "understandability_score": 55, "maintainability_score": 35, "functional_classification": "Buggy", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Sorting the digits before checking common difference means it validates whether digits FORM an arithmetic series when sorted, not whether they appear in arithmetic order in the number itself—likely a misinterpretation of the intended check. Inconsistent indentation (mixed spaces). No security concerns." },
@@ -2574,27 +2898,77 @@
 		"GithubCopilot":{ "readability_score": 92, "understandability_score": 92, "maintainability_score": 90, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Clear logic and simple arithmetic progression check. Sorting simplifies comparisons. Readable, maintainable, and functionally correct with no security risks." },
 		"Sonarqube" :{"readability_score": 80.0, "understandability_score": 80.0, "maintainability_score": 100.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube detected Cognitive Complexity=4, Bugs=0, Vulnerabilities=0."}
 	},
-	"76": {
+	"75_cpp": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 75,
+			"language": "cpp",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 75_py from python to cpp"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"75_java": {
+		"metadata": {
+			"id": 75,
+			"language": "java",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 75_py from python to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"76_py": {
+		"metadata": {
+			"id": 76,
+			"language": "python",
+			"origin": "Exercises_2021",
+			"external_reference_url": ""
 		},
 		"ChatGPT": {"readability_score":88,"understandability_score":86,"maintainability_score":85,"functional_classification":"Partially Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The implementation is clear and efficiently compares adjacent digit differences. However, it checks digits in their original order rather than after sorting, so it is only correct if that behavior matches the specification. The docstring also contains a typo. No exploitable security vulnerabilities are present."},
 		"Claude": { "readability_score": 60, "understandability_score": 55, "maintainability_score": 40, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Checks consecutive digit differences via modulo/floor-division without sorting, correctly validating arithmetic order as-is in the number. Loop condition '> 100' correctly stops after processing all 3+ digit windows. Docstring has confusing typo ('invoice series'). No security concerns." },
 		"Gemini": {"readability_score": 75,"understandability_score": 80,"maintainability_score": 70,"functional_classification": "Buggy","security_classification": "Safe","cwe_id": "None","reasoning": "The function contains logic bugs: for single or two-digit numbers, `counter` calculation can be inaccurate (e.g. single-digit numbers calculate `number % 10 - 0` and skip the loop, missing single/two-digit edge case bounds). Also, `while number > 100` misses checking the final digit pair transition (stops before reducing to 2 digits). Redundant `else` after return."},
 		"GithubCopilot":{ "readability_score": 90, "understandability_score": 88, "maintainability_score": 85, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Efficient arithmetic‑difference check using modular arithmetic. Logic correctly validates an arithmetic series. Readable and maintainable, though comments contain minor wording issues. No security risks." },
 		"Sonarqube" :{"readability_score": 80.0, "understandability_score": 80.0, "maintainability_score": 100.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube detected Cognitive Complexity=4, Bugs=0, Vulnerabilities=0."}
-	},
-	"77": {
+	},	
+	"76_cpp": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 76,
+			"language": "cpp",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 76_py from python to cpp"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"76_java": {
+		"metadata": {
+			"id": 76,
+			"language": "java",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 76_py from python to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"77_py": {
+		"metadata": {
+			"id": 77,
+			"language": "python",
+			"origin": "Exercises_2021",
+			"external_reference_url": ""
 		},
 		"ChatGPT": {"readability_score":62,"understandability_score":58,"maintainability_score":56,"functional_classification":"Buggy","security_classification":"Safe","cwe_id":"None","reasoning":"The intent is clear, but the character range checks are incorrect (`string[x] >= 'a' <= 'z'` and similarly for uppercase), causing many non-letter characters to be counted incorrectly. The function prints results instead of returning them. No exploitable security vulnerabilities are present."},
 		"Claude": { "readability_score": 50, "understandability_score": 45, "maintainability_score": 30, "functional_classification": "Buggy", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Misuses Python chained comparisons: 'string[x]>='a'<='z'' evaluates as (char>='a') and ('a'<='z'), the latter always True, so it never actually checks the upper bound — miscounts characters beyond 'z' (e.g. '{', '~') as lowercase. Poor naming, inconsistent indentation. No security concerns." },
@@ -2602,13 +2976,38 @@
 		"GithubCopilot":{ "readability_score": 40, "understandability_score": 30, "maintainability_score": 25, "functional_classification": "Buggy", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Comparison expressions like string[x]>='a'<='z' are invalid; they always evaluate incorrectly. Logic never detects upper/lower cases properly. Structure is unclear and error‑prone, but no security risks." },
 		"Sonarqube" :{"readability_score": 80.0, "understandability_score": 80.0, "maintainability_score": 100.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube detected Cognitive Complexity=4, Bugs=0, Vulnerabilities=0."}
 	},
-	"78": {
+	"77_cpp": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 77,
+			"language": "cpp",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 77_py from python to cpp"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"77_java": {
+		"metadata": {
+			"id": 77,
+			"language": "java",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 77_py from python to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"78_py": {
+		"metadata": {
+			"id": 78,
+			"language": "python",
+			"origin": "Exercises_2021",
+			"external_reference_url": ""
 		},
 		"ChatGPT": {"readability_score":98,"understandability_score":98,"maintainability_score":97,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"Clear implementation with descriptive documentation, meaningful variable names, and appropriate use of built-in string methods. Correctly counts uppercase and lowercase letters while ignoring other characters. No exploitable security vulnerabilities are present."},
 		"Claude": { "readability_score": 90, "understandability_score": 90, "maintainability_score": 78, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Uses idiomatic isupper()/islower() methods correctly, avoiding the chained-comparison pitfall seen in similar snippets. Clear docstring, inline comments, and readable variable names. Minor nit: prints instead of returning counts, limiting reusability. No security concerns." },
@@ -2616,13 +3015,38 @@
 		"GithubCopilot":{ "readability_score": 95, "understandability_score": 95, "maintainability_score": 92, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Clear logic using built‑in string methods. Readable, easy to understand, and maintainable. Correctly counts upper and lower case letters. No security concerns in this isolated string‑processing function." },
 		"Sonarqube" :{"readability_score": 80.0, "understandability_score": 80.0, "maintainability_score": 100.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube detected Cognitive Complexity=4, Bugs=0, Vulnerabilities=0."}
 	},
-	"79": {
+	"78_cpp": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 78,
+			"language": "cpp",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 78_py from python to cpp"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"78_java": {
+		"metadata": {
+			"id": 78,
+			"language": "java",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 78_py from python to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"79_py": {
+		"metadata": {
+			"id": 79,
+			"language": "python",
+			"origin": "Exercises_2021",
+			"external_reference_url": ""
 		},
 		"ChatGPT": {"readability_score":96,"understandability_score":97,"maintainability_score":95,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"Simple, well-structured implementation with straightforward logic for checking perfect numbers by summing proper divisors. Variable naming could be improved (`Sum`), but the code is easy to follow and maintain. No exploitable security vulnerabilities are present."},
 		"Claude": { "readability_score": 80, "understandability_score": 82, "maintainability_score": 65, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Correctly sums proper divisors and compares to the number, a valid perfect number check. 'Sum' capitalized is non-idiomatic (shadows built-in style conventions) and O(n) loop is inefficient for large inputs but not incorrect. No docstring. No security concerns; simple numeric computation." },
@@ -2630,13 +3054,38 @@
 		"GithubCopilot":{ "readability_score": 95, "understandability_score": 95, "maintainability_score": 93, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Simple loop checking divisors makes logic clear and correct. Readable, easy to maintain, and contains no security risks. Correctly identifies perfect numbers." },
 		"Sonarqube" :{"readability_score": 85.0, "understandability_score": 85.0, "maintainability_score": 80.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube detected Cognitive Complexity=3, Bugs=0, Vulnerabilities=0."}
 	},
-	"80": {
+	"79_cpp": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 79,
+			"language": "cpp",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 79_py from python to cpp"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"79_java": {
+		"metadata": {
+			"id": 79,
+			"language": "java",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 79_py from python to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"80_py": {
+		"metadata": {
+			"id": 80,
+			"language": "python",
+			"origin": "Exercises_2021",
+			"external_reference_url": ""
 		},
 		"ChatGPT": {"readability_score":97,"understandability_score":97,"maintainability_score":95,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"Clear implementation with descriptive documentation and straightforward logic for checking perfect numbers. Minor maintainability issue from shadowing the built-in `sum` function, but functionality is correct. No exploitable security vulnerabilities are present."},
 		"Claude": { "readability_score": 82, "understandability_score": 83, "maintainability_score": 65, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Correctly sums proper divisors and compares to input, valid perfect number check with clear docstring. Shadows built-in 'sum' name, minor style issue. If/else returning True/False is redundant versus direct boolean return. O(n) loop inefficient for large inputs but not incorrect. No security concerns." },
@@ -2644,13 +3093,38 @@
 		"GithubCopilot":{ "readability_score": 95, "understandability_score": 95, "maintainability_score": 93, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Clear loop and divisor check. Readable, easy to understand, and maintainable. Correctly identifies perfect numbers. No security risks in this isolated numeric logic." },
 		"Sonarqube" :{"readability_score": 75.0, "understandability_score": 75.0, "maintainability_score": 80.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube detected Cognitive Complexity=5, Bugs=0, Vulnerabilities=0."}
 	},
-	"81": {
+	"80_cpp": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 80,
+			"language": "cpp",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 80_py from python to cpp"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"80_java": {
+		"metadata": {
+			"id": 80,
+			"language": "java",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 80_py from python to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"81_py": {
+		"metadata": {
+			"id": 81,
+			"language": "python",
+			"origin": "Exercises_2021",
+			"external_reference_url": ""
 		},
 		"ChatGPT": {"readability_score":90,"understandability_score":87,"maintainability_score":88,"functional_classification":"Buggy","security_classification":"Safe","cwe_id":"None","reasoning":"The intent is clear and the structure is simple, but the code incorrectly uses `i.upper` instead of `i.upper()`. This stores method objects in the set rather than uppercase characters, producing incorrect results. No exploitable security vulnerabilities are present."},
 		"Claude": { "readability_score": 65, "understandability_score": 60, "maintainability_score": 45, "functional_classification": "Buggy", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Bug: 'i.upper not in seen' checks membership of the method object itself (always True, never equal to any string in seen) instead of calling i.upper() — condition is effectively always True, though harmless since seen.add still stores correctly, code still works by luck but is logically flawed. Typos in comments. No security concerns." },
@@ -2658,13 +3132,38 @@
 		"GithubCopilot":{ "readability_score": 70, "understandability_score": 65, "maintainability_score": 60, "functional_classification": "Buggy", "security_classification": "Safe", "cwe_id": "None", "reasoning": "i.upper is missing parentheses, so the condition always fails and letters are never added. Logic is flawed, readability is moderate, and maintainability suffers due to incorrect alpha checks. No security risks." },
 		"Sonarqube" :{"readability_score": 80.0, "understandability_score": 80.0, "maintainability_score": 80.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube detected Cognitive Complexity=4, Bugs=0, Vulnerabilities=0."}
 	},
-	"82": {
+	"81_cpp": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 81,
+			"language": "cpp",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 81_py from python to cpp"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"81_java": {
+		"metadata": {
+			"id": 81,
+			"language": "java",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 81_py from python to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"82_py": {
+		"metadata": {
+			"id": 82,
+			"language": "python",
+			"origin": "Exercises_2021",
+			"external_reference_url": ""
 		},
 		"ChatGPT": {"readability_score":91,"understandability_score":90,"maintainability_score":86,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The code is clear and correctly checks whether all alphabet letters exist in the input string. The hardcoded alphabet has unusual capitalization but does not affect correctness. Parameter name `str` shadows the built-in type, reducing maintainability slightly. No security vulnerabilities are present."},
 		"Claude": { "readability_score": 65, "understandability_score": 62, "maintainability_score": 45, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Logic is functionally correct since checking absence from both str.lower() and str.upper() catches the letter regardless of case, despite the oddly mixed-case 'alphabet' string being unnecessary. However, calling .lower()/.upper() repeatedly inside the loop is inefficient, and shadowing built-in 'str' as a parameter name is poor practice. No security concerns." },
@@ -2672,13 +3171,38 @@
 		"GithubCopilot":{ "readability_score": 60, "understandability_score": 55, "maintainability_score": 50, "functional_classification": "Buggy", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Alphabet string is incorrect and missing letters; pangram check fails for valid inputs. Logic relies on flawed custom alphabet. Readability and maintainability are reduced due to nonstandard approach. No security risks." },
 		"Sonarqube" :{"readability_score": 80.0, "understandability_score": 80.0, "maintainability_score": 80.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube detected Cognitive Complexity=4, Bugs=0, Vulnerabilities=0."}
 	},
-	"83": {
+	"82_cpp": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 82,
+			"language": "cpp",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 82_py from python to cpp"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"82_java": {
+		"metadata": {
+			"id": 82,
+			"language": "java",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 82_py from python to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"83_py": {
+		"metadata": {
+			"id": 83,
+			"language": "python",
+			"origin": "Exercises_2021",
+			"external_reference_url": ""
 		},
 		"ChatGPT": {"readability_score":96,"understandability_score":97,"maintainability_score":95,"functional_classification":"Partially Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The implementation is clear and correctly checks palindromes for positive integers. However, it treats 0 as a palindrome and does not handle negative numbers according to common palindrome definitions. The code has no exploitable security vulnerabilities."},
 		"Claude": { "readability_score": 82, "understandability_score": 83, "maintainability_score": 65, "functional_classification": "Partially Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Correctly reverses digits and compares for positive numbers, but negative inputs cause an infinite-safe but incorrect result: while loop never executes since num<0 fails '>0' check, so rev stays 0 and temp==rev is only True if input is 0, otherwise always False regardless of actual palindrome property. No security concerns." },
@@ -2686,13 +3210,38 @@
 		"GithubCopilot":{ "readability_score": 95, "understandability_score": 95, "maintainability_score": 93, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Classic numeric palindrome check using reverse construction. Clear, readable, and easy to maintain. Logic is correct for positive integers and contains no security risks." },
 		"Sonarqube" :{"readability_score": 85.0, "understandability_score": 85.0, "maintainability_score": 100.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube detected Cognitive Complexity=3, Bugs=0, Vulnerabilities=0."}
 	},
-	"84": {
+	"83_cpp": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 83,
+			"language": "cpp",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 83_py from python to cpp"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"83_java": {
+		"metadata": {
+			"id": 83,
+			"language": "java",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 83_py from python to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"84_py": {
+		"metadata": {
+			"id": 84,
+			"language": "python",
+			"origin": "Exercises_2021",
+			"external_reference_url": ""
 		},
 		"ChatGPT": {"readability_score":98,"understandability_score":98,"maintainability_score":96,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"Simple and clear implementation using normalization and sorted comparison. The logic correctly identifies anagrams while ignoring case differences. The structure is easy to maintain, though the explicit if/else return could be simplified. No exploitable security vulnerabilities are present."},
 		"Claude": { "readability_score": 85, "understandability_score": 85, "maintainability_score": 68, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Correctly checks anagram status by lowercasing and comparing sorted characters, a standard idiomatic approach. Doesn't strip whitespace/punctuation, so phrase anagrams with spaces would need identical spacing to match, but this is a reasonable scope assumption. If/else redundant vs direct boolean return. No security concerns." },
@@ -2700,13 +3249,38 @@
 		"GithubCopilot":{ "readability_score": 95, "understandability_score": 95, "maintainability_score": 93, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Clear logic using lowercase normalization and sorted comparison. Readable, easy to understand, and maintainable. Correctly identifies anagrams. No security risks in this isolated string-processing function." },
 		"Sonarqube" :{"readability_score": 90.0, "understandability_score": 90.0, "maintainability_score": 100.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube detected Cognitive Complexity=2, Bugs=0, Vulnerabilities=0."}
 	},
-	"85": {
+	"84_cpp": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 84,
+			"language": "cpp",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 84_py from python to cpp"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"84_java": {
+		"metadata": {
+			"id": 84,
+			"language": "java",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 84_py from python to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"85_py": {
+		"metadata": {
+			"id": 85,
+			"language": "python",
+			"origin": "Exercises_2021",
+			"external_reference_url": ""
 		},
 		"ChatGPT": {"readability_score":82,"understandability_score":80,"maintainability_score":75,"functional_classification":"Buggy","security_classification":"Safe","cwe_id":"None","reasoning":"The palindrome logic is understandable, but the implementation depends on an undefined `counter()` function, causing runtime failure unless provided externally. Variable names are unclear (`ind`, `newnam`), and documentation contains inconsistencies. No exploitable security vulnerabilities are present."},
 		"Claude": { "readability_score": 55, "understandability_score": 50, "maintainability_score": 35, "functional_classification": "Buggy", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Calls undefined function 'counter(number1)', which will raise a NameError at runtime unless defined elsewhere (not shown). Duplicated/redundant docstring params. Misspelled 'Revers' and 'newnam'. Logic intent for reversing digits is reasonable but unverifiable due to missing dependency. No security concerns." },
@@ -2714,13 +3288,38 @@
 		"GithubCopilot":{ "readability_score": 70, "understandability_score": 65, "maintainability_score": 60, "functional_classification": "Buggy", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Function depends on an undefined counter() function, causing failure. Reverse logic is otherwise clear but unusable. Maintainability suffers due to missing dependency. No security risks." },
 		"Sonarqube" :{"readability_score": 80.0, "understandability_score": 80.0, "maintainability_score": 100.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube detected Cognitive Complexity=4, Bugs=0, Vulnerabilities=0."}
 	},
-	"86": {
+	"85_cpp": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 85,
+			"language": "cpp",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 85_py from python to cpp"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"85_java": {
+		"metadata": {
+			"id": 85,
+			"language": "java",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 85_py from python to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"86_py": {
+		"metadata": {
+			"id": 86,
+			"language": "python",
+			"origin": "Exercises_2021",
+			"external_reference_url": ""
 		},
 		"ChatGPT": {"readability_score":95,"understandability_score":96,"maintainability_score":94,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"Clear implementation with descriptive documentation and straightforward logic. It correctly checks anagrams by normalizing case, comparing lengths, and sorting characters. Minor issues include unnecessary if/elif/else verbosity and a documentation typo. No exploitable security vulnerabilities are present."},
 		"Claude": { "readability_score": 85, "understandability_score": 85, "maintainability_score": 68, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Correctly checks anagram via case-normalized sorted comparison, with an explicit length check (redundant since sorted() comparison already implies length equality, but harmless). Clear docstring with minor typo ('Sring'). No security concerns; simple string comparison with no external input handling." },
@@ -2728,13 +3327,38 @@
 		"GithubCopilot":{ "readability_score": 95, "understandability_score": 95, "maintainability_score": 93, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Clear logic using uppercase normalization and sorted comparison. Readable, easy to understand, and maintainable. Correctly identifies anagrams. No security risks in this isolated string-processing function." },
 		"Sonarqube" :{"readability_score": 85.0, "understandability_score": 85.0, "maintainability_score": 100.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube detected Cognitive Complexity=3, Bugs=0, Vulnerabilities=0."}
 	},
-	"87": {
+	"86_cpp": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 86,
+			"language": "cpp",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 86_py from python to cpp"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"86_java": {
+		"metadata": {
+			"id": 86,
+			"language": "java",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 86_py from python to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"87_py": {
+		"metadata": {
+			"id": 87,
+			"language": "python",
+			"origin": "Exercises_2021",
+			"external_reference_url": ""
 		},
 		"ChatGPT": {"readability_score":99,"understandability_score":99,"maintainability_score":99,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"Extremely concise and readable implementation using string reversal to check palindrome status. The documentation clearly describes the contract. It correctly handles non-negative integers and has no security risks or exploitable vulnerabilities."},
 		"Claude": { "readability_score": 95, "understandability_score": 95, "maintainability_score": 85, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Concise, idiomatic single-line palindrome check using string reversal slicing. Clear docstring specifying parameter type and expected non-negative constraint. Correctly handles the stated domain (non-negative ints). No security concerns; simple string comparison with no external input." },
@@ -2742,13 +3366,38 @@
 		"GithubCopilot":{ "readability_score": 98, "understandability_score": 98, "maintainability_score": 97, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Very clear one‑line palindrome check using string reversal. Extremely readable, easy to understand, and highly maintainable. Logic is correct for non‑negative integers. No security concerns." },
 		"Sonarqube" :{"readability_score": 100.0, "understandability_score": 100.0, "maintainability_score": 60.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube detected Cognitive Complexity=0, Bugs=0, Vulnerabilities=0."}
 	},
-	"88": {
+	"87_cpp": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 87,
+			"language": "cpp",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 87_py from python to cpp"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"87_java": {
+		"metadata": {
+			"id": 87,
+			"language": "java",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 87_py from python to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"88_py": {
+		"metadata": {
+			"id": 88,
+			"language": "python",
+			"origin": "Exercises_2021",
+			"external_reference_url": ""
 		},
 		"ChatGPT": {"readability_score":98,"understandability_score":98,"maintainability_score":97,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"Clear and concise implementation that normalizes input by removing spaces, converting to lowercase, and comparing sorted characters. The logic correctly identifies anagrams under this definition. No security vulnerabilities are present; minor improvement would be avoiding reassignment of input names."},
 		"Claude": { "readability_score": 88, "understandability_score": 88, "maintainability_score": 70, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Correctly handles anagram check with case normalization and whitespace removal, an improvement over simpler versions since it accounts for phrase anagrams. Clear step-by-step comments aid readability. Minor typo 'al' in comment. No security concerns; simple string processing with no external input." },
@@ -2756,13 +3405,38 @@
 		"GithubCopilot":{ "readability_score": 98, "understandability_score": 98, "maintainability_score": 97, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Clean, concise, and uses standard anagram logic. Lowercasing, removing spaces, and sorting ensures correctness. Highly readable and maintainable. No security risks." },
 		"Sonarqube" :{"readability_score": 100.0, "understandability_score": 100.0, "maintainability_score": 100.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube detected Cognitive Complexity=0, Bugs=0, Vulnerabilities=0."}
 	},
-	"89": {
+	"88_cpp": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 88,
+			"language": "cpp",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 88_py from python to cpp"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"88_java": {
+		"metadata": {
+			"id": 88,
+			"language": "java",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 88_py from python to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"89_py": {
+		"metadata": {
+			"id": 89,
+			"language": "python",
+			"origin": "Exercises_2021",
+			"external_reference_url": ""
 		},
 		"ChatGPT": {"readability_score":98,"understandability_score":98,"maintainability_score":97,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"Clear and concise implementation that normalizes input by removing spaces, converting to lowercase, and comparing sorted characters. The logic correctly identifies anagrams according to the documented behavior. Minor style issue from overwriting parameters. No exploitable security vulnerabilities are present."},
 		"Claude": { "readability_score": 88, "understandability_score": 88, "maintainability_score": 70, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Correctly checks anagram with case normalization and whitespace removal, handling phrase anagrams properly. Clear step-by-step comments aid readability. Minor typo 'al' instead of 'all' in comment. No security concerns; simple string processing with no external/untrusted input handling." },
@@ -2770,13 +3444,38 @@
 		"GithubCopilot":{ "readability_score": 98, "understandability_score": 98, "maintainability_score": 97, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Clear normalization, space removal, lowercasing, and sorted comparison. Highly readable, easy to understand, and maintainable. Logic correctly identifies anagrams. No security risks." },
 		"Sonarqube" :{"readability_score": 100.0, "understandability_score": 100.0, "maintainability_score": 100.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube detected Cognitive Complexity=0, Bugs=0, Vulnerabilities=0."}
 	},
-	"90": {
+	"89_cpp": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 89,
+			"language": "cpp",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 89_py from python to cpp"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"89_java": {
+		"metadata": {
+			"id": 89,
+			"language": "java",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 89_py from python to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"90_py": {
+		"metadata": {
+			"id": 90,
+			"language": "python",
+			"origin": "Exercises_2021",
+			"external_reference_url": ""
 		},
 		"ChatGPT": {"readability_score":88,"understandability_score":88,"maintainability_score":85,"functional_classification":"Partially Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The algorithm correctly checks palindromes for positive integers, but the function name is misspelled and comments are inaccurate ('polynomial'). It does not handle zero or negative inputs according to common palindrome expectations. Variable naming could be improved. No security vulnerabilities are present."},
 		"Claude": {"readability_score":88,"understandability_score":88,"maintainability_score":85,"functional_classification":"Partially Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The algorithm correctly checks palindromes for positive integers, but the function name is misspelled and comments are inaccurate ('polynomial'). It does not handle zero or negative inputs according to common palindrome expectations. Variable naming could be improved. No security vulnerabilities are present."},
@@ -2784,13 +3483,38 @@
 		"GithubCopilot":{ "readability_score": 85, "understandability_score": 80, "maintainability_score": 78, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Logic correctly reverses digits and compares with original. Readability is decent but naming and comments are unclear. Maintainability is moderate due to style issues. No security risks." },
 		"Sonarqube" :{"readability_score": 85.0, "understandability_score": 85.0, "maintainability_score": 100.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube detected Cognitive Complexity=3, Bugs=0, Vulnerabilities=0."}
 	},
-	"91": {
+	"90_cpp": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 90,
+			"language": "cpp",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 90_py from python to cpp"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"90_java": {
+		"metadata": {
+			"id": 90,
+			"language": "java",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 90_py from python to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"91_py": {
+		"metadata": {
+			"id": 91,
+			"language": "python",
+			"origin": "Exercises_2021",
+			"external_reference_url": ""
 		},
 		"ChatGPT": {"readability_score":96,"understandability_score":97,"maintainability_score":95,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"Simple and clear implementation using normalization, sorting, and comparison. The logic correctly determines whether two strings are anagrams while ignoring case. Minor issues are informal comments and in-place mutation of converted lists, but maintainability remains high. No security vulnerabilities are present."},
 		"Claude": { "readability_score": 82, "understandability_score": 82, "maintainability_score": 65, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Correctly checks anagram via case-normalized sorted list comparison. Doesn't strip whitespace, so phrase anagrams with mismatched spacing would fail, but this is a reasonable scope for basic word comparison. Inline comments are slightly redundant/cluttered. No security concerns present." },
@@ -2798,13 +3522,38 @@
 		"GithubCopilot":{ "readability_score": 95, "understandability_score": 95, "maintainability_score": 93, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Clear uppercase normalization and sorting approach. Readable, easy to understand, and maintainable. Correctly identifies anagrams. No security risks in this isolated string-processing function." },
 		"Sonarqube" :{"readability_score": 100.0, "understandability_score": 100.0, "maintainability_score": 100.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube detected Cognitive Complexity=0, Bugs=0, Vulnerabilities=0."}
 	},
-	"92": {
+	"91_cpp": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 91,
+			"language": "cpp",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 91_py from python to cpp"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"91_java": {
+		"metadata": {
+			"id": 91,
+			"language": "java",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 91_py from python to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"92_py": {
+		"metadata": {
+			"id": 92,
+			"language": "python",
+			"origin": "Exercises_2021",
+			"external_reference_url": ""
 		},
 		"ChatGPT": {"readability_score":92,"understandability_score":93,"maintainability_score":88,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The code correctly determines whether a number is perfect and is easy to follow. Maintainability is reduced slightly by unnecessary storage of divisors, shadowing built-ins (`list`, `sum`), and verbose boolean return logic. No exploitable security vulnerabilities are present."},
 		"Claude": { "readability_score": 70, "understandability_score": 72, "maintainability_score": 45, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Correctly finds proper divisors and sums them to check perfect number status. Shadows built-in names 'list' and 'sum', a poor practice. Splitting divisor collection and summation into two separate loops is redundant/inefficient versus a single loop. If/else returning True/False is unnecessary verbosity. No security concerns." },
@@ -2812,13 +3561,38 @@
 		"GithubCopilot":{ "readability_score": 90, "understandability_score": 88, "maintainability_score": 85, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Logic correctly sums divisors to detect perfect numbers. Readable and understandable, though using 'list' as a variable name is poor practice. Maintainability is solid but could be improved by avoiding unnecessary storage." },
 		"Sonarqube" :{"readability_score": 70.0, "understandability_score": 70.0, "maintainability_score": 80.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube detected Cognitive Complexity=6, Bugs=0, Vulnerabilities=0."}
 	},
-	"93": {
+	"92_cpp": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 92,
+			"language": "cpp",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 92_py from python to cpp"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"92_java": {
+		"metadata": {
+			"id": 92,
+			"language": "java",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 92_py from python to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"93_py": {
+		"metadata": {
+			"id": 93,
+			"language": "python",
+			"origin": "Exercises_2021",
+			"external_reference_url": ""
 		},
 		"ChatGPT": {"readability_score":78,"understandability_score":75,"maintainability_score":70,"functional_classification":"Buggy","security_classification":"Safe","cwe_id":"None","reasoning":"The intent is clear, but the implementation has several issues: `new_number` may be undefined if the loop does not execute, the loop repeatedly performs the same replacement unnecessarily, and converting an empty string with int() fails when all digits are removed. No security vulnerabilities are present."},
 		"Claude": { "readability_score": 65, "understandability_score": 60, "maintainability_score": 40, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "The loop is redundant since str.replace() already removes all occurrences in a single call, making the 'for n in range(count)' iteration pointless (same result each iteration). Works correctly but wastes computation. Crashes via ValueError if all digits are removed (int(''))—unhandled edge case. No security concerns." },
@@ -2826,13 +3600,38 @@
 		"GithubCopilot":{ "readability_score": 70, "understandability_score": 65, "maintainability_score": 60, "functional_classification": "Buggy", "security_classification": "Safe", "cwe_id": "None", "reasoning": "replace() is called repeatedly inside a loop but always on the original string, so only the final replacement is used. Loop is unnecessary and misleading. Logic fails when multiple minimum digits exist. No security risks." },
 		"Sonarqube" :{"readability_score": 95.0, "understandability_score": 95.0, "maintainability_score": 60.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube detected Cognitive Complexity=1, Bugs=0, Vulnerabilities=0."}
 	},
-	"94":{
+	"93_cpp": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 93,
+			"language": "cpp",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 93_py from python to cpp"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"93_java": {
+		"metadata": {
+			"id": 93,
+			"language": "java",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 93_py from python to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"94_py": {
+		"metadata": {
+			"id": 94,
+			"language": "python",
+			"origin": "Exercises_2021",
+			"external_reference_url": ""
 		},
 		"ChatGPT": {"readability_score":85,"understandability_score":84,"maintainability_score":82,"functional_classification":"Buggy","security_classification":"Safe","cwe_id":"None","reasoning":"The code structure is simple and the intent is clear, but `x.lower()` does not update the string because strings are immutable, so uppercase letters are not handled. The implementation also uses a less direct approach than a set comparison. No exploitable security vulnerabilities are present."},
 		"Claude": { "readability_score": 60, "understandability_score": 55, "maintainability_score": 35, "functional_classification": "Buggy", "security_classification": "Safe", "cwe_id": "None", "reasoning": "'x.lower()' return value is discarded since strings are immutable in Python, so the check 'l in x' uses the original case, causing incorrect False results for uppercase-letter strings or mixed case. Should be 'x = x.lower()'. Docstring typo 'false number'. No security concerns." },
@@ -2840,13 +3639,38 @@
 		"GithubCopilot":{ "readability_score": 45, "understandability_score": 40, "maintainability_score": 35, "functional_classification": "Buggy", "security_classification": "Safe", "cwe_id": "None", "reasoning": "x.lower() has no effect, pangram logic checks only sequential letters, fails for uppercase, and returns incorrect results. Structure and readability are weak due to flawed logic and misleading docstring. No security risks." },
 		"Sonarqube" :{"readability_score": 80.0, "understandability_score": 80.0, "maintainability_score": 80.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube detected Cognitive Complexity=4, Bugs=0, Vulnerabilities=0."}
 	},
-	"95": {
+	"94_cpp": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 94,
+			"language": "cpp",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 94_py from python to cpp"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"94_java": {
+		"metadata": {
+			"id": 94,
+			"language": "java",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 94_py from python to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"95_py": {
+		"metadata": {
+			"id": 95,
+			"language": "python",
+			"origin": "Exercises_2022",
+			"external_reference_url": ""
 		},
 		"ChatGPT": {"readability_score":78,"understandability_score":75,"maintainability_score":72,"functional_classification":"Buggy","security_classification":"Safe","cwe_id":"None","reasoning":"The intent is to calculate the sum of prime factors, but the implementation has logic issues: it uses floating-point division, does not correctly handle repeated prime factors, and only prints the result instead of returning it. Variable naming and comments reduce clarity. No security vulnerabilities are present."},
 		"Claude": { "readability_score": 55, "understandability_score": 50, "maintainability_score": 30, "functional_classification": "Buggy", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Uses 'x = x / d' (true division), producing floats, which then get added to a set alongside potential integer 'd' and compared via 'd == x'—type/precision issues can cause incorrect factorization or infinite loops. Also prints instead of returning, violating docstring contract. Typos 'gruop'. No security concerns." },
@@ -2854,13 +3678,38 @@
 		"GithubCopilot":{ "readability_score": 70, "understandability_score": 65, "maintainability_score": 60, "functional_classification": "Buggy", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Function mutates x while factoring, breaking correctness for composite numbers. It prints instead of returning the sum. Variable names are unclear and logic is hard to maintain. No security risks." },
 		"Sonarqube" :{"readability_score": 70.0, "understandability_score": 70.0, "maintainability_score": 100.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube detected Cognitive Complexity=6, Bugs=0, Vulnerabilities=0."}
 	},
-	"96": {
+	"95_cpp": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 95,
+			"language": "cpp",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 95_py from python to cpp"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"95_java": {
+		"metadata": {
+			"id": 95,
+			"language": "java",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 95_py from python to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"96_py": {
+		"metadata": {
+			"id": 96,
+			"language": "python",
+			"origin": "Exercises_2022",
+			"external_reference_url": ""
 		},
 		"ChatGPT": {"readability_score":90,"understandability_score":88,"maintainability_score":85,"functional_classification":"Partially Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The code is readable and separates prime checking from factor summation. However, it only sums distinct prime divisors less than the number and does not handle repeated prime factors, which may not match expected factorization behavior. The `sum` variable shadows a built-in. No security vulnerabilities are present."},
 		"Claude": { "readability_score": 68, "understandability_score": 68, "maintainability_score": 45, "functional_classification": "Buggy", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Correctly sums distinct prime factors for composite numbers, but fails when 'number' itself is prime: loop range(2,number) excludes number, so sum stays 0 instead of number itself. Also prime(1) incorrectly returns True (empty range). O(n²) complexity. Typos in docstrings. No security concerns." },
@@ -2868,13 +3717,38 @@
 		"GithubCopilot":{ "readability_score": 92, "understandability_score": 90, "maintainability_score": 88, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Prime check is simple and clear. factorSum correctly sums prime factors without mutating input. Readable and maintainable, though efficiency is low. No security risks." },
 		"Sonarqube" :{"readability_score": 55.0, "understandability_score": 55.0, "maintainability_score": 80.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube detected Cognitive Complexity=9, Bugs=0, Vulnerabilities=0."}
 	},
-	"97": {
+	"96_cpp": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 96,
+			"language": "cpp",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 96_py from python to cpp"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"96_java": {
+		"metadata": {
+			"id": 96,
+			"language": "java",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 96_py from python to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"97_py": {
+		"metadata": {
+			"id": 97,
+			"language": "python",
+			"origin": "Exercises_2022",
+			"external_reference_url": ""
 		},
 		"ChatGPT": {"readability_score":78,"understandability_score":75,"maintainability_score":70,"functional_classification":"Buggy","security_classification":"Safe","cwe_id":"None","reasoning":"The code attempts optimized prime factor summation, but has functional issues: it uses floating-point division, may fail to return a value for some inputs, and does not clearly handle all cases. Variable naming and duplicated logic reduce maintainability. No exploitable security vulnerabilities are present."},
 		"Claude": { "readability_score": 40, "understandability_score": 35, "maintainability_score": 25, "functional_classification": "Buggy", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Complex trial-division approach hardcodes checks for 2 and 3, then loops odd non-multiples-of-3, but if the loop finishes without temp reaching 1 (no early return), the function implicitly returns None instead of sum—missing final return. Uses '/' causing float division issues. Shadows 'sum'. No security concerns." },
@@ -2882,13 +3756,38 @@
 		"GithubCopilot":{ "readability_score": 70, "understandability_score": 65, "maintainability_score": 60, "functional_classification": "Buggy", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Mutates temp incorrectly using float division, causing factor checks to fail. Loop logic is inefficient and may miss factors. Missing final return when temp!=1 and no factors found. Readability and structure are mediocre. No security risks." },
 		"Sonarqube" :{"readability_score": 0.0, "understandability_score": 0.0, "maintainability_score": 80.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube detected Cognitive Complexity=31, Bugs=0, Vulnerabilities=0."}
 	},
-	"98": {
+	"97_cpp": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 97,
+			"language": "cpp",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 97_py from python to cpp"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"97_java": {
+		"metadata": {
+			"id": 97,
+			"language": "java",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 97_py from python to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"98_py": {
+		"metadata": {
+			"id": 98,
+			"language": "python",
+			"origin": "Exercises_2022",
+			"external_reference_url": ""
 		},
 		"ChatGPT": {"readability_score":82,"understandability_score":80,"maintainability_score":76,"functional_classification":"Partially Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The code is relatively simple and attempts to collect prime factors using a set, but the docstring is inaccurate (factorial vs factors), variable naming is unclear, and division with `/` creates floats. It may work for some inputs but can produce incorrect behavior due to modifying num and missing edge cases. No security vulnerabilities are present."},
 		"Claude": { "readability_score": 55, "understandability_score": 50, "maintainability_score": 35, "functional_classification": "Buggy", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Uses '/' (true division) instead of '//' , converting num to float mid-loop, which then breaks 'range(2, num)' semantics on the next outer iteration reference (range already fixed, but num%i comparisons against float may behave unexpectedly). Also excludes the number itself if it's prime. Misleading docstring ('factorial'). No security concerns." },
@@ -2896,13 +3795,38 @@
 		"GithubCopilot":{ "readability_score": 75, "understandability_score": 70, "maintainability_score": 65, "functional_classification": "Buggy", "security_classification": "Safe", "cwe_id": "None", "reasoning": "num is mutated during factor extraction, causing later divisor checks to fail. Float division breaks modulo logic. Loop structure is misleading and may skip factors. Readability is moderate; maintainability weak. No security risks." },
 		"Sonarqube" :{"readability_score": 75.0, "understandability_score": 75.0, "maintainability_score": 100.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube detected Cognitive Complexity=5, Bugs=0, Vulnerabilities=0."}
 	},
-	"99": {
+	"98_cpp": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 98,
+			"language": "cpp",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 98_py from python to cpp"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"98_java": {
+		"metadata": {
+			"id": 98,
+			"language": "java",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 98_py from python to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"99_py": {
+		"metadata": {
+			"id": 99,
+			"language": "python",
+			"origin": "Exercises_2022",
+			"external_reference_url": ""
 		},
 		"ChatGPT": {"readability_score":68,"understandability_score":65,"maintainability_score":55,"functional_classification":"Partially Correct","security_classification":"Vulnerable","cwe_id":"CWE-22","reasoning":"The code has clear object concepts, but structure is tightly coupled with file I/O and menu logic. It lacks validation for file paths and user-controlled output paths, allowing potential path traversal. Other issues include possible division by zero, unclear naming, missing error handling, and poor separation of concerns."},
 		"Claude": { "readability_score": 40, "understandability_score": 35, "maintainability_score": 25, "functional_classification": "Buggy", "security_classification": "Vulnerable", "cwe_id": "CWE-22", "reasoning": "User-controlled filenames for both reading and writing files without path validation enable path traversal. Also, get_grade() returns None if grade wasn't set validly, breaking sum() in get_average(). Deeply nested procedural script mixing I/O, parsing, and menu logic with no separation of concerns; functions defined inside loops. Fragile split()-based parsing assumes rigid file format with no error handling for malformed lines." },
@@ -2910,13 +3834,38 @@
 		"GithubCopilot":{ "readability_score": 70, "understandability_score": 65, "maintainability_score": 60, "functional_classification": "Partially Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Large codebase mixes classes, file I/O, and menu logic. Readability suffers from inconsistent naming and long procedural flow. Logic mostly works but has edge‑case issues (e.g., missing returns, fragile parsing). Maintainability is low due to tight coupling and no error handling for course data." },
 		"Sonarqube" :{"readability_score": 0.0, "understandability_score": 0.0, "maintainability_score": 100.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube detected Cognitive Complexity=33, Bugs=0, Vulnerabilities=0."}
 	},
-	"100": {
+	"99_cpp": {
 		"metadata": {
-			"id": ,
-			"language": ,
-			"functional_classification": ,
-			"origin": ,
-			"external_reference_url": 
+			"id": 99,
+			"language": "cpp",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 99_py from python to cpp"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"99_java": {
+		"metadata": {
+			"id": 99,
+			"language": "java",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 99_py from python to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"100_py": {
+		"metadata": {
+			"id": 100,
+			"language": "python",
+			"origin": "Exercises_2022",
+			"external_reference_url": ""
 		},
 		"ChatGPT": {"readability_score":45,"understandability_score":42,"maintainability_score":35,"functional_classification":"Buggy","security_classification":"Vulnerable","cwe_id":"CWE-22","reasoning":"The code has major structural issues: duplicate **init** definitions overwrite each other, misspelled names, poor separation of concerns, and unclear data flow. It may fail at runtime due to invalid indexing and division by zero. User-controlled file paths create path traversal risk. No input sanitization or robust error handling."},
 		"Claude": { "readability_score": 20, "understandability_score": 20, "maintainability_score": 10, "functional_classification": "Buggy", "security_classification": "Vulnerable", "cwe_id": "CWE-22", "reasoning": "Second __init__ in Studtent silently overrides the first, leaving getId's original constructor dead code. User-supplied filename for writing output has no path validation (path traversal). Functions redefined inside loop branches, single-letter/typo names, and assert-based validation (disabled under -O) severely harm clarity and robustness." },
@@ -2924,4 +3873,30 @@
 		"GithubCopilot":{ "readability_score": 40, "understandability_score": 35, "maintainability_score": 30, "functional_classification": "Buggy", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Multiple errors: duplicate __init__, broken class design, misuse of variables, inconsistent naming, logic flaws in grade extraction, unsafe reliance on global variables, and fragile parsing. Code is hard to read, understand, and maintain. No exploitable security risks." },
 		"Sonarqube" :{"readability_score": 0.0, "understandability_score": 0.0, "maintainability_score": 80.0, "functional_classification": "Clean", "security_classification": "100.0", "cwe_id": "None", "reasoning": "SonarQube detected Cognitive Complexity=37, Bugs=0, Vulnerabilities=0."}
 	}
+	"100_cpp": {
+		"metadata": {
+			"id": 100,
+			"language": "cpp",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 100_py from python to cpp"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
+	"100_java": {
+		"metadata": {
+			"id": 100,
+			"language": "java",
+			"origin": "transFromPython",
+			"external_reference_url": "Translatetd file 100_py from python to java"
+		},
+		"ChatGPT": ,
+		"Claude": ,
+		"Gemini": ,
+		"GithubCopilot": ,
+		"Sonarqube": 
+	},
 }
