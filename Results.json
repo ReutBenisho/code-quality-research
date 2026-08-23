@@ -7658,10 +7658,28 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 66_py from python to cpp"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": {"readability_score":78,"understandability_score":82,"maintainability_score":55,"functional_classification":"Partially Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The truth-table logic is clear but unnecessarily verbose. The function has no final return statement if future changes or unexpected input occur, which can cause undefined behavior in C++. It should simply return num1 == num2. No exploitable security vulnerability is evident."}
+,
+        "Claude": { "readability_score": 85, "understandability_score": 90, "maintainability_score": 55, "functional_classification": "Partially Correct", "security_classification": "Vulnerable", "cwe_id": "CWE-252", "reasoning": "Logic is correct for all boolean cases, but missing a final else/return causes undefined behavior if control falls through (relies on exhaustive if-chain covering all bool combos, which is fragile). Verbose compared to 'num1 == num2'; poor scalability/maintainability. Missing return path is a real compiler-flagged issue (CWE-252: unchecked return value/control path)." },
+        "Gemini": {
+  "readability_score": 85,
+  "understandability_score": 90,
+  "maintainability_score": 30,
+  "functional_classification": "Correct",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "The function correctly implements XNOR logic, but it is overly verbose. Relying on explicit if-else branches for boolean evaluation introduces unnecessary technical debt and cognitive overhead. A single boolean expression like 'return num1 == num2;' or 'return !(num1 ^ num2);' is far cleaner and more maintainable."
+},
+        "GithubCopilot": {
+  "readability_score": 70,
+  "understandability_score": 75,
+  "maintainability_score": 60,
+  "functional_classification": "Partially Correct",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "Clear but overly verbose boolean logic; missing final return causes undefined behavior. Logic matches XNOR but lacks default case. No security risks."
+}
+,
         "Sonarqube": {
             "readability_score": 60.0,
             "understandability_score": 60.0,
@@ -7679,10 +7697,28 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 66_py from python to java"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": {"readability_score":78,"understandability_score":88,"maintainability_score":70,"functional_classification":"Buggy","security_classification":"Safe","cwe_id":"None","reasoning":"The intent is clear, but the exhaustive if/else chain is redundant; XNOR can be expressed as `num1 == num2`. More importantly, Java requires a return value on every path, so the method fails compilation because no final return exists. No exploitable security vulnerability is present."}
+,
+        "Claude": { "readability_score": 65, "understandability_score": 80, "maintainability_score": 40, "functional_classification": "Buggy", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Logic is correct in intent but code will not compile in Java due to missing return statement (compiler cannot verify exhaustiveness of if-else chain). Overly verbose; equivalent to simple 'return num1 == num2;'. No security vulnerabilities present." },
+        "Gemini": {
+"readability_score": 75,
+"understandability_score": 90,
+"maintainability_score": 40,
+"functional_classification": "Buggy",
+"security_classification": "Safe",
+"cwe_id": "None",
+"reasoning": "Logic correctly implements XNOR, but the Java compiler flags an error due to a missing default return statement. Boolean checks are redundant and verbose; 'return num1 == num2;' is cleaner and avoids compile errors."
+},
+        "GithubCopilot": {
+  "readability_score": 70,
+  "understandability_score": 65,
+  "maintainability_score": 50,
+  "functional_classification": "Buggy",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "Logic is overly verbose and missing a final return, causing a compile error. Readable but repetitive. Maintainability is low due to unnecessary branches. Functionally buggy; security unaffected."
+}
+,
         "Sonarqube": {
             "readability_score": 100.0,
             "understandability_score": 100.0,
@@ -7753,10 +7789,28 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 67_py from python to cpp"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": { "readability_score": 70, "understandability_score": 65, "maintainability_score": 55, "functional_classification": "Buggy", "security_classification": "Safe", "cwe_id": "CWE-394", "reasoning": "The nested conditionals are unnecessarily verbose for XNOR logic. More importantly, when a=false and b=true, execution reaches the end of a non-void function without returning a value, causing undefined behavior. This is a correctness defect, but not an exploitable security vulnerability." }
+,
+        "Claude": { "readability_score": 35, "understandability_score": 30, "maintainability_score": 25, "functional_classification": "Buggy", "security_classification": "Vulnerable", "cwe_id": "CWE-457", "reasoning": "Misplaced else causes fall-through with no return when a=false,b=true, yielding undefined behavior (uninitialized return value). Nested ifs and dangling else make logic hard to follow; a simple 'return a == b' would be clearer and correct." },
+        "Gemini": {
+  "readability_score": 50,
+  "understandability_score": 60,
+  "maintainability_score": 20,
+  "functional_classification": "Buggy",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "The function contains a critical logic error: when 'a' is true and 'b' is false, it skips both 'if' conditions and falls off the end without returning a value (undefined behavior). Verbose branching obscures what should be a simple expression: 'return a == b;'."
+},
+        "GithubCopilot": {
+  "readability_score": 40,
+  "understandability_score": 35,
+  "maintainability_score": 30,
+  "functional_classification": "Buggy",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "Nested redundant checks reduce clarity; missing return on some paths makes logic incorrect; structure is poor. Function is logically buggy due to unreachable/undefined paths but not security‑relevant."
+}
+,
         "Sonarqube": {
             "readability_score": 65.0,
             "understandability_score": 65.0,
@@ -7774,10 +7828,28 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 67_py from python to java"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": {"readability_score":65,"understandability_score":70,"maintainability_score":60,"functional_classification":"Buggy","security_classification":"Safe","cwe_id":"None","reasoning":"The nested conditions are unnecessarily verbose. More importantly, the method can reach the end without returning a boolean when a=true and b=false, causing a compile-time error in Java. The intended XNOR logic can be expressed simply as return a == b. No exploitable security vulnerability is present."}
+,
+        "Claude": { "readability_score": 55, "understandability_score": 45, "maintainability_score": 35, "functional_classification": "Buggy", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Code fails to compile: the path where a=false, b=true falls through without a return statement, violating Java's requirement that all paths return a value. Also uses verbose == true/false comparisons and nested ifs instead of simple boolean logic (a == b)." },
+        "Gemini": {
+  "readability_score": 50,
+  "understandability_score": 60,
+  "maintainability_score": 30,
+  "functional_classification": "Buggy",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "The method fails to return a value when `a` is true and `b` is false, resulting in a compilation error. Comparison to boolean literals is redundant, and the control flow can be simplified to `return a == b;`."
+},
+        "GithubCopilot": {
+  "readability_score": 40,
+  "understandability_score": 35,
+  "maintainability_score": 30,
+  "functional_classification": "Buggy",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "Overly verbose boolean checks, misplaced else, missing final return cause logic errors. Hard to follow and maintain. Function is logically incorrect but not security‑relevant."
+}
+,
         "Sonarqube": {
             "readability_score": 100.0,
             "understandability_score": 100.0,
@@ -7848,10 +7920,28 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 68_py from python to cpp"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": { "readability_score": 95, "understandability_score": 95, "maintainability_score": 90, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "The function is simple, readable, and correctly implements logical XNOR: it returns true when both arguments are equal. The explicit if/else is slightly verbose; returning the boolean expression directly would improve maintainability. No security vulnerabilities are present." }
+,
+        "Claude": { "readability_score": 85, "understandability_score": 90, "maintainability_score": 75, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Logic correctly implements XNOR truth table. Code is clear but verbose; could be simplified to 'return arg1 == arg2;'. No security concerns as this is pure boolean logic with no external input, memory operations, or side effects." },
+        "Gemini": {
+"readability_score": 85,
+"understandability_score": 90,
+"maintainability_score": 70,
+"functional_classification": "Correct",
+"security_classification": "Safe",
+"cwe_id": "None",
+"reasoning": "The function correctly implements the XNOR logical operation. However, the explicit if-else statement is verbose; returning the condition directly (arg1 == arg2) would improve maintainability."
+},
+        "GithubCopilot": {
+  "readability_score": 85,
+  "understandability_score": 90,
+  "maintainability_score": 80,
+  "functional_classification": "Correct",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "Clear boolean logic and simple structure. Function is correct and readable, though overly verbose. No security risks present. Maintainability is good but could improve by simplifying the return expression."
+}
+,
         "Sonarqube": {
             "readability_score": 75.0,
             "understandability_score": 75.0,
@@ -7869,10 +7959,28 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 68_py from python to java"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": {"readability_score":92,"understandability_score":95,"maintainability_score":90,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The method is simple, readable, and correctly implements logical XNOR: it returns true when both booleans are equal. The explicit if/else is slightly verbose; arg1 == arg2 would be simpler. No security vulnerabilities or unsafe operations are present."}
+,
+        "Claude": { "readability_score": 85, "understandability_score": 90, "maintainability_score": 75, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Logic correctly implements XNOR truth table. Simple, readable, but verbose—could be simplified to 'return arg1 == arg2;'. No security concerns as it's pure boolean logic with no external input, I/O, or state mutation." },
+        "Gemini": {
+"readability_score": 85,
+"understandability_score": 90,
+"maintainability_score": 75,
+"functional_classification": "Correct",
+"security_classification": "Safe",
+"cwe_id": "None",
+"reasoning": "The logical XNOR operation is functionally correct and safe. However, the explicit if-else block and negated conditions add minor unnecessary cognitive overhead; it can be simplified to `return arg1 == arg2;`."
+},
+        "GithubCopilot": {
+  "readability_score": 95,
+  "understandability_score": 95,
+  "maintainability_score": 90,
+  "functional_classification": "Correct",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "Clear boolean logic, easy to read and maintain. Function is correct and has no security risks. Could be simplified but remains fully understandable."
+}
+,
         "Sonarqube": {
             "readability_score": 100.0,
             "understandability_score": 100.0,
@@ -7943,10 +8051,19 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 69_py from python to cpp"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": { "readability_score": 82, "understandability_score": 80, "maintainability_score": 65, "functional_classification": "Buggy", "security_classification": "Safe", "cwe_id": "None", "reasoning": "The intent is clear and the XNOR logic is simple. However, the auto return type is deduced from both return paths, producing a mixed-type return and making -1 inconsistent with the boolean result. Runtime typeid checks are unnecessary and restrict generic use. No exploitable security vulnerability is evident." }
+,
+        "Claude": { "readability_score": 78, "understandability_score": 75, "maintainability_score": 55, "functional_classification": "Partially Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Logic is correct for bool inputs, but using `auto` return type with mixed bool/-1 returns is a type-inconsistency code smell; type-checking via typeid at runtime instead of overloading/templates weakens design. No security vulnerabilities present." },
+        "Gemini": {
+"readability_score": 75,
+"understandability_score": 70,
+"maintainability_score": 40,
+"functional_classification": "Partially Correct",
+"security_classification": "Vulnerable",
+"cwe_id": "CWE-704",
+"reasoning": "The runtime type check using `typeid` on unconstrained C++ `auto` parameters triggers implicit template instantiation and compile-time type deductions, leading to unexpected conversion errors or type confusion. Returning `-1` (int) alongside a `bool` return type forces auto return type deduction to pick a common type or fail, breaking static typing guarantees and API predictability."
+},
+        "GithubCopilot": { "readability_score": 70, "understandability_score": 65, "maintainability_score": 55, "functional_classification": "Partially Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Readable and simple, but typeid checks are unconventional. Logic works for booleans but returns -1, causing mixed return types. Maintainability suffers due to auto parameters and weak typing. No security risks present." },
         "Sonarqube": {
             "readability_score": 100.0,
             "understandability_score": 100.0,
@@ -7964,10 +8081,19 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 69_py from python to java"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": {"readability_score":78,"understandability_score":82,"maintainability_score":65,"functional_classification":"Partially Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The XNOR logic is clear and correct for Boolean inputs, but returning Object and mixing Boolean with Integer (-1) creates an inconsistent API and weak type safety. Invalid inputs are silently encoded as -1 rather than rejected. No apparent exploitable security vulnerability exists."}
+,
+        "Claude": { "readability_score": 78, "understandability_score": 75, "maintainability_score": 45, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Logic correctly implements XNOR via boolean equality. Weak typing (Object params) and mixed return types (Boolean vs Integer -1) are poor design/maintainability practices—should use typed booleans and exceptions instead of sentinel values. No exploitable security vulnerability present." },
+        "Gemini": {
+  "readability_score": 85,
+  "understandability_score": 85,
+  "maintainability_score": 40,
+  "functional_classification": "Partially Correct",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "Code uses reference equality (==) on unboxed Boolean wrappers instead of logical equivalence or .equals(). Weak typing via Object and returning magic value -1 instead of throwing IllegalArgumentException causes dynamic type confusion, violating clean code principles."
+},
+        "GithubCopilot": { "readability_score": 78, "understandability_score": 80, "maintainability_score": 70, "functional_classification": "Partially Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Clear logic and simple structure, but returning -1 as Object is inconsistent and harms correctness. Boolean check works, yet mixed return types reduce maintainability and correctness. No security risks present." },
         "Sonarqube": {
             "readability_score": 100.0,
             "understandability_score": 100.0,
@@ -8038,10 +8164,27 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 70_py from python to cpp"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": {"readability_score":82,"understandability_score":80,"maintainability_score":72,"functional_classification":"Buggy","security_classification":"Vulnerable","cwe_id":"CWE-20","reasoning":"The code is fairly readable and its intent is clear, but it has unnecessary vectors/string conversions and unused <numeric>. Functionally, negative inputs produce an invalid digit (-), and removing the only digit can make stoi("") throw. Input validation is absent, creating robustness/security concerns."}
+,
+        "Claude": { "readability_score": 78, "understandability_score": 72, "maintainability_score": 60, "functional_classification": "Buggy", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Removes ALL occurrences of the minimum digit instead of just one instance, likely violating intended spec. Also crashes (std::invalid_argument) if all digits are removed, e.g. n=0. No memory-safety or injection vulnerabilities present; unhandled exception is a robustness issue, not exploitable." },
+        "Gemini": {
+  "readability_score": 85,
+  "understandability_score": 80,
+  "maintainability_score": 60,
+  "functional_classification": "Buggy",
+  "security_classification": "Vulnerable",
+  "cwe_id": "CWE-190",
+  "reasoning": "Fails on negative inputs (hyphen converted to digit via x-'0') and all-identical digits (e.g., 555 yields empty string causing std::stoi throw). std::stoi can throw std::out_of_range (CWE-190) or std::invalid_argument without error handling."
+},
+        "GithubCopilot": { 
+  "readability_score": 78, 
+  "understandability_score": 75, 
+  "maintainability_score": 70, 
+  "functional_classification": "Partially Correct", 
+  "security_classification": "Vulnerable", 
+  "cwe_id": "CWE-190", 
+  "reasoning": "Clear logic but overly verbose. Fails when all digits are removed or leading zeros occur. stoi may overflow or throw. No input validation. Structure is simple but not optimal." 
+},
         "Sonarqube": {
             "readability_score": 85.0,
             "understandability_score": 85.0,
@@ -8059,10 +8202,28 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 70_py from python to java"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": {"readability_score":82,"understandability_score":78,"maintainability_score":65,"functional_classification":"Buggy","security_classification":"Safe","cwe_id":"None","reasoning":"The code is readable and its intent is clear, but naming/style are inconsistent and several streams/lists are unnecessary. Functionally, it fails for inputs such as 0, negative values, or numbers where removing all minimum digits leaves an empty string; Integer.parseInt then throws NumberFormatException. No exploitable security vulnerability is evident."}
+,
+        "Claude": { "readability_score": 65, "understandability_score": 72, "maintainability_score": 50, "functional_classification": "Buggy", "security_classification": "Vulnerable", "cwe_id": "CWE-20", "reasoning": "Removes ALL occurrences of the min digit, not just one, and lacks input validation: negative numbers, single-digit numbers, or numbers where all digits equal the min cause exceptions (NumberFormatException/empty list), enabling denial-of-service on untrusted input. Naming conventions are inconsistent." },
+        "Gemini": {
+"readability_score": 75,
+"understandability_score": 70,
+"maintainability_score": 45,
+"functional_classification": "Buggy",
+"security_classification": "Safe",
+"cwe_id": "None",
+"reasoning": "The code filters *all* occurrences of the minimum digit rather than just one. It fails on negative numbers, single-digit inputs (NumberFormatException), inputs where all digits are equal, and numbers ending in zeros due to trailing string-to-int conversion limits. Java naming conventions are ignored and over-engineering stream transformations creates unnecessary overhead."
+},
+        "GithubCopilot": {
+  "readability_score": 78,
+  "understandability_score": 75,
+  "maintainability_score": 70,
+  "functional_classification": "Partially Correct",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "Readable and structured but overly verbose. Logic fails when all digits are identical, producing an empty string and exception. No security risks. Stream usage is clear but could be simplified."
+}
+,
         "Sonarqube": {
             "readability_score": 100.0,
             "understandability_score": 100.0,
@@ -8133,10 +8294,28 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 71_py from python to cpp"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": {"readability_score":82,"understandability_score":84,"maintainability_score":78,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The logic correctly finds and removes all occurrences of the minimum digit for positive integers. Naming and capitalization are inconsistent, and duplicated modulo/division logic reduces maintainability. The implementation assumes positive input as documented; no exploitable security weakness is apparent under that contract."}
+,
+        "Claude": { "readability_score": 78, "understandability_score": 75, "maintainability_score": 65, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Clear logic and naming, works correctly for positive integers by finding min digit then rebuilding number without it. No memory/security risks. Minor issues: no input validation for negative/zero edge cases, unnecessary cast, could use better variable names (a, n, i)." },
+        "Gemini": {
+"readability_score": 85,
+"understandability_score": 80,
+"maintainability_score": 75,
+"functional_classification": "Partially Correct",
+"security_classification": "Safe",
+"cwe_id": "None",
+"reasoning": "Code is clean but buggy. `findmin` returns negative modulo results if `number <= 0`. If `number` consists only of repeated digits (e.g., 555), `RemoveMinDigit` returns 0 instead of empty/error. It also risks integer overflow for `i * 10` on large numbers."
+},
+        "GithubCopilot": {
+  "readability_score": 85,
+  "understandability_score": 88,
+  "maintainability_score": 80,
+  "functional_classification": "Correct",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "Clear logic, simple loops, and no dangerous operations. Functions correctly find and remove minimum digits. Minor naming issues and lack of input validation reduce maintainability slightly."
+}
+,
         "Sonarqube": {
             "readability_score": 70.0,
             "understandability_score": 70.0,
@@ -8154,10 +8333,28 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 71_py from python to java"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": {"readability_score":78,"understandability_score":82,"maintainability_score":72,"functional_classification":"Partially Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The logic is simple and readable, but naming/style are inconsistent and comments contain unclear wording. findmin works for positive numbers, while RemoveMinDigit fails for inputs whose minimum digit is 0 because leading zeros are discarded, potentially changing the intended result. No exploitable security vulnerability is present."}
+,
+        "Claude": { "readability_score": 68, "understandability_score": 65, "maintainability_score": 55, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Simple, small methods with clear logic for finding/removing the minimum digit. Works correctly for positive numbers, but no input validation for zero/negative numbers, unclear variable names (a, n, i), and unnecessary cast reduce clarity and robustness. No security vulnerabilities present." },
+        "Gemini": {
+  "readability_score": 75,
+  "understandability_score": 80,
+  "maintainability_score": 65,
+  "functional_classification": "Partially Correct",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "The code uses clear logic but fails on edge cases like zero, negative numbers, or numbers consisting entirely of identical digits (e.g., 555 returns 0). Naming conventions are inconsistent (findmin vs RemoveMinDigit, non-descriptive variables like 'a', 'i', 'n'). No security vulnerabilities detected."
+},
+        "GithubCopilot": {
+  "readability_score": 85,
+  "understandability_score": 88,
+  "maintainability_score": 80,
+  "functional_classification": "Correct",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "Clear logic, simple loops, and descriptive comments make the code readable and understandable. Structure is straightforward but could improve with input validation. Logic for finding and removing minimum digits is correct. No external input or unsafe operations, so security risks are minimal."
+}
+,
         "Sonarqube": {
             "readability_score": 70.0,
             "understandability_score": 70.0,
@@ -8228,10 +8425,19 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 72_py from python to cpp"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": {"readability_score":88,"understandability_score":86,"maintainability_score":78,"functional_classification":"Partially Correct","security_classification":"Safe","cwe_id":"None","reasoning":"Clear and straightforward logic, with helpful naming and comments. However, it redundantly uses vector/string conversions and has misleading comments. Functional behavior is incorrect for inputs whose remaining digits form a value outside int range, and the stated positive-integer contract is only partially enforced. No exploitable security vulnerability is evident."}
+,
+        "Claude": { "readability_score": 82, "understandability_score": 80, "maintainability_score": 65, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Clear logic and naming; docstring format is unconventional for C++. Edge cases (num<=0, single-digit) handled. No memory/injection issues. Minor maintainability concerns: std::stoi could throw on overflow, and num<=0 check mislabeled as 'negative' though it also blocks 0." },
+        "Gemini": {
+"readability_score": 85,
+"understandability_score": 90,
+"maintainability_score": 70,
+"functional_classification": "Buggy",
+"security_classification": "Safe",
+"cwe_id": "None",
+"reasoning": "Clear structure, but functional logic fails on integer overflow if remaining digits exceed INT_MAX (std::stoi throws). Also, prints an error message for 0 despite the prompt stating positive integer, and uses unnecessarily heavy vector conversions instead of operating on std::string directly."
+},
+        "GithubCopilot": { "readability_score": 82, "understandability_score": 78, "maintainability_score": 74, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Clear logic and structure; minor issues include unnecessary vector copy and console output for errors. Function works correctly for intended purpose and has no evident security risks." },
         "Sonarqube": {
             "readability_score": 65.0,
             "understandability_score": 65.0,
@@ -8249,10 +8455,19 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 72_py from python to java"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": {"readability_score":84,"understandability_score":82,"maintainability_score":76,"functional_classification":"Partially Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The code is readable and its intent is clear, but naming violates Java conventions and unnecessary streams/collections add complexity. Logic correctly removes all occurrences of the minimum digit for positive integers, but rejects 0 despite the stated positive-integer contract and can overflow when the resulting digit string exceeds int range. No exploitable security issue is evident."}
+,
+        "Claude": { "readability_score": 82, "understandability_score": 80, "maintainability_score": 72, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Clean, well-commented stream-based logic correctly removes all occurrences of the minimum digit; docstring matches behavior. Minor issue: error message says 'negative' even when num=0. No injection, overflow, or exploitable paths present." },
+        "Gemini": {
+  "readability_score": 85,
+  "understandability_score": 80,
+  "maintainability_score": 60,
+  "functional_classification": "Partially Correct",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "The code fails on 0 due to the early check treating non-positive values as negative, returning 0 unhandled. Uses inefficient Stream casting for digit manipulation."
+},
+        "GithubCopilot": { "readability_score": 82, "understandability_score": 78, "maintainability_score": 74, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Clear use of streams and comments aids readability. Logic is straightforward but slightly overengineered. Maintainability is decent though stream-heavy. Function works correctly for positive ints. No security risks since input is primitive and no external interaction." },
         "Sonarqube": {
             "readability_score": 90.0,
             "understandability_score": 90.0,
@@ -8323,10 +8538,28 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 73_py from python to cpp"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": {"readability_score":88,"understandability_score":86,"maintainability_score":82,"functional_classification":"Buggy","security_classification":"Vulnerable","cwe_id":"CWE-190","reasoning":"The code is clear and reasonably structured, but it mishandles inputs where all digits equal the minimum: result becomes empty and std::stoi throws. It also risks integer overflow when the resulting value exceeds int range. CWE-190 applies to the unchecked integer conversion/overflow."}
+,
+        "Claude": {"readability_score": 82, "understandability_score": 85, "maintainability_score": 70, "functional_classification": "Partially Correct", "security_classification": "Vulnerable", "cwe_id": "CWE-248", "reasoning": "Logic is clear and mostly correct, but if all digits equal the minimum (e.g., 111), result becomes empty and std::stoi throws an uncaught std::invalid_argument, crashing the program. No input validation for this edge case."},
+        "Gemini": {
+"readability_score": 85,
+"understandability_score": 80,
+"maintainability_score": 60,
+"functional_classification": "Buggy",
+"security_classification": "Vulnerable",
+"cwe_id": "CWE-391",
+"reasoning": "Code crashes with std::invalid_argument (uncaught std::stoi exception) if all digits are identical (e.g., num=55), resulting in an empty string. Returning unhandled input on negative numbers without throwing or stopping execution masks errors."
+},
+        "GithubCopilot": {
+  "readability_score": 85,
+  "understandability_score": 82,
+  "maintainability_score": 78,
+  "functional_classification": "Partially Correct",
+  "security_classification": "Vulnerable",
+  "cwe_id": "CWE-20",
+  "reasoning": "Clear logic and readable code, but stoi() on empty string causes crash when all digits are minimal. Input validation insufficient. Structure is simple but not robust. Security risk due to lack of input sanitization and unsafe conversion."
+}
+,
         "Sonarqube": {
             "readability_score": 75.0,
             "understandability_score": 75.0,
@@ -8344,10 +8577,28 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 73_py from python to java"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": {"readability_score":85,"understandability_score":88,"maintainability_score":78,"functional_classification":"Buggy","security_classification":"Safe","cwe_id":"None","reasoning":"The code is clear and simple, with descriptive naming and straightforward logic. However, if all digits are the same (e.g., 111), replace() produces an empty string and Integer.parseInt() throws NumberFormatException. The input validation is basic but there is no evident security vulnerability."}
+,
+        "Claude": { "readability_score": 65, "understandability_score": 72, "maintainability_score": 50, "functional_classification": "Buggy", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Code is fairly readable with a docstring-style comment, but crashes with NumberFormatException if all digits equal the minimum (e.g., num=222), since numStr becomes empty before parseInt. No injection or memory-safety vulnerabilities present, but lacks exception handling and input validation robustness." },
+        "Gemini": {
+  "readability_score": 85,
+  "understandability_score": 80,
+  "maintainability_score": 60,
+  "functional_classification": "Buggy",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "Code is readable and simple. However, it is buggy: if all digits are identical (e.g., num=777), removing all minimum digits leaves an empty string, causing a NumberFormatException at Integer.parseInt. Returning original num on <=0 input via sysout is weak error handling."
+},
+        "GithubCopilot": {
+  "readability_score": 82,
+  "understandability_score": 78,
+  "maintainability_score": 70,
+  "functional_classification": "Partially Correct",
+  "security_classification": "Vulnerable",
+  "cwe_id": "CWE-20",
+  "reasoning": "Readable and simple logic, but lacks handling for cases where all digits are removed, causing parse errors. No input validation for non-decimal formats. Potential NumberFormatException makes it vulnerable. Structure is basic but maintainable."
+}
+,
         "Sonarqube": {
             "readability_score": 90.0,
             "understandability_score": 90.0,
@@ -8418,10 +8669,28 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 74_py from python to cpp"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": { "readability_score": 78, "understandability_score": 74, "maintainability_score": 65, "functional_classification": "Buggy", "security_classification": "Safe", "cwe_id": "None", "reasoning": "The code is fairly readable but duplicates digit processing and uses unclear names. It fails when all digits equal the minimum (e.g., 5), because stoi("") throws. Negative inputs are also mishandled due to the '-' character. No evident exploitable security vulnerability is present." }
+,
+        "Claude": { "readability_score": 65, "understandability_score": 60, "maintainability_score": 45, "functional_classification": "Buggy", "security_classification": "Vulnerable", "cwe_id": "CWE-248", "reasoning": "Removes ALL occurrences of the min digit, not just one — incorrect logic. Fails on negative numbers ('-' misparsed). stoi() throws unhandled exception if result string is empty (all digits equal), causing a crash/DoS." },
+        "Gemini": {
+"readability_score": 75,
+"understandability_score": 70,
+"maintainability_score": 50,
+"functional_classification": "Buggy",
+"security_classification": "Vulnerable",
+"cwe_id": "CWE-190",
+"reasoning": "Fails for negative numbers, zeroes, or all-equal digits (empty string throws std::invalid_argument in stoi). Unchecked std::stoi risks integer overflow/unhandled exception."
+},
+        "GithubCopilot": {
+  "readability_score": 70,
+  "understandability_score": 65,
+  "maintainability_score": 55,
+  "functional_classification": "Partially Correct",
+  "security_classification": "Vulnerable",
+  "cwe_id": "CWE-190",
+  "reasoning": "Logic is understandable but redundant; correctness fails when all digits are removed, causing stoi() on empty string. No input validation. Potential integer conversion issues. Structure is workable but not optimal."
+}
+,
         "Sonarqube": {
             "readability_score": 60.0,
             "understandability_score": 60.0,
@@ -8439,10 +8708,36 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 74_py from python to java"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": {"readability_score":82,"understandability_score":78,"maintainability_score":68,"functional_classification":"Partially Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The logic is fairly clear but uses unnecessary streams, a mutable input parameter, and inefficient string/list conversions. It removes all occurrences of the minimum digit rather than exactly one, and fails for inputs where removal leaves an empty string (e.g. 0 or 11). No evident exploitable security vulnerability."}
+,
+        "Claude": {
+  "readability_score": 65,
+  "understandability_score": 60,
+  "maintainability_score": 48,
+  "functional_classification": "Buggy",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "Redundant min-finding logic (list already built). Bug: filters out ALL occurrences of the min digit instead of just one, breaking on inputs with duplicate min digits. No handling for negative numbers, single-digit input, or all-digits-removed case (NumberFormatException). No exploitable security flaw, but poor input validation/robustness."
+},
+        "Gemini": {
+"readability_score": 75,
+"understandability_score": 70,
+"maintainability_score": 60,
+"functional_classification": "Buggy",
+"security_classification": "Safe",
+"cwe_id": "None",
+"reasoning": "Fails for negative numbers and zero (causes empty string to NumberFormatException or unexpected loop behavior). It removes all occurrences of the minimum digit instead of just one. Also uses non-idiomatic Java naming (RemoveMinDigit, Nlist) and redundant string-to-stream conversions when simple string manipulation or math would suffice."
+},
+        "GithubCopilot": {
+  "readability_score": 65,
+  "understandability_score": 60,
+  "maintainability_score": 55,
+  "functional_classification": "Partially Correct",
+  "security_classification": "Vulnerable",
+  "cwe_id": "CWE-20",
+  "reasoning": "Logic works but fails for numbers containing multiple minimum digits or leading zeros after removal. Readability suffers from mixed styles. Integer parsing may throw exceptions on empty strings, causing input-handling vulnerability."
+}
+,
         "Sonarqube": {
             "readability_score": 85.0,
             "understandability_score": 85.0,
@@ -8513,10 +8808,36 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 75_py from python to cpp"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": {"readability_score":90,"understandability_score":88,"maintainability_score":82,"functional_classification":"Partially Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The code is clear and simple, but unnecessary vector construction and sorting add complexity. It correctly checks whether digits form an arithmetic progression for nonnegative numbers, but negative inputs include '-' and produce invalid digit values. No exploitable security vulnerability is evident."}
+,
+        "Claude": {
+  "readability_score": 75,
+  "understandability_score": 80,
+  "maintainability_score": 70,
+  "functional_classification": "Partially Correct",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "Logic for detecting arithmetic digit sequences is clear and well-commented, but fails silently on negative numbers since '-' is included in char-to-int conversion, producing invalid values. No memory/security issues; purely a functional edge-case bug."
+},
+        "Gemini": {
+"readability_score": 85,
+"understandability_score": 75,
+"maintainability_score": 60,
+"functional_classification": "Buggy",
+"security_classification": "Safe",
+"cwe_id": "None",
+"reasoning": "Readable and clean, but logically flawed. Sorting the digits destroys their natural sequence, leading to false positives (e.g., input 132 returns true). Negative inputs are incorrectly parsed due to the '-' character. It is memory-safe but functionally buggy."
+},
+        "GithubCopilot": {
+  "readability_score": 82,
+  "understandability_score": 78,
+  "maintainability_score": 75,
+  "functional_classification": "Partially Correct",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "Clear code and simple logic, but sorting digits changes the intended sequence, making the arithmetic-series check flawed. Structure is decent and no security risks exist. Overall readable and maintainable but functionally incorrect for its likely purpose."
+}
+,
         "Sonarqube": {
             "readability_score": 75.0,
             "understandability_score": 75.0,
@@ -8534,10 +8855,28 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 75_py from python to java"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": {"readability_score":82,"understandability_score":86,"maintainability_score":78,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The code is straightforward and correctly checks whether the digits of an integer can form an arithmetic progression after sorting. Naming is somewhat unconventional, and streams/boxing add unnecessary complexity. It has no evident security vulnerability; input is bounded by Java int representation."}
+,
+        "Claude": { "readability_score": 78, "understandability_score": 75, "maintainability_score": 65, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Clean, concise logic correctly checks if digits form an arithmetic sequence after sorting. Naming is inconsistent (PascalCase method/param), lacks input validation for negative numbers, and mixes concerns (parsing+sorting+checking in one method), slightly hurting maintainability. No security vulnerabilities present." },
+        "Gemini": {
+  "readability_score": 75,
+  "understandability_score": 80,
+  "maintainability_score": 60,
+  "functional_classification": "Partially Correct",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "Violates Java naming conventions (camelCase). Converts number to string unnecessarily. Sorting digits distorts original positional sequence for checking an arithmetic series. Fails on negative inputs."
+},
+        "GithubCopilot": {
+  "readability_score": 78,
+  "understandability_score": 75,
+  "maintainability_score": 70,
+  "functional_classification": "Partially Correct",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "Readable and structured, but sorting digits changes intended order. Logic checks arithmetic progression of sorted digits, not original sequence. No security risks. Maintainability is decent but could improve clarity."
+}
+,
         "Sonarqube": {
             "readability_score": 80.0,
             "understandability_score": 80.0,
@@ -8608,10 +8947,28 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 76_py from python to cpp"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": {"readability_score":82,"understandability_score":78,"maintainability_score":70,"functional_classification":"Partially Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The code is concise and easy to follow, but naming and comments contain inconsistencies (\"invoice series\" vs arithmetic series). The loop correctly checks adjacent digit differences for numbers with 3+ digits, but numbers with 1–2 digits return true without validation, so correctness is incomplete. No exploitable security issue is apparent."}
+,
+        "Claude": { "readability_score": 62, "understandability_score": 55, "maintainability_score": 50, "functional_classification": "Partially Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Logic mostly works via digit-difference comparison, but has an off-by-one boundary bug: loop condition 'number > 100' skips validation for number=100 (digits 1,0,0, not arithmetic), incorrectly returning true. Doc comment is misleading ('invoice series'). No security vulnerabilities present." },
+        "Gemini": {
+"readability_score": 75,
+"understandability_score": 60,
+"maintainability_score": 65,
+"functional_classification": "Buggy",
+"security_classification": "Safe",
+"cwe_id": "None",
+"reasoning": "The code fails for numbers under 100 (e.g., 2-digit numbers aren't validated against the loop, and single digits access bogus math via `(number/10)%10`). Variable names like `counter` are confusing for a common difference."
+},
+        "GithubCopilot": {
+  "readability_score": 72,
+  "understandability_score": 70,
+  "maintainability_score": 65,
+  "functional_classification": "Partially Correct",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "Logic works only for numbers with ≥3 digits and assumes fixed digit count; readability is decent but intent is unclear; maintainability suffers from magic numbers; no security risks present."
+}
+,
         "Sonarqube": {
             "readability_score": 80.0,
             "understandability_score": 80.0,
@@ -8629,10 +8986,19 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 76_py from python to java"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": {"readability_score":88,"understandability_score":82,"maintainability_score":72,"functional_classification":"Partially Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The code is concise and easy to follow, but naming violates Java conventions and the Javadoc contains unclear/incorrect wording. The algorithm correctly checks adjacent digit differences for numbers with 3+ digits, but returns true for 1-2 digit inputs without explicitly validating the stated positive-number precondition. No exploitable security issue is present."}
+,
+        "Claude": { "readability_score": 65, "understandability_score": 55, "maintainability_score": 50, "functional_classification": "Buggy", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Loop condition 'number > 100' skips checking the last digit pair when number has exactly 3 digits improperly (off-by-one boundary), misclassifying some valid/invalid series. Variable naming is weak, docstring is misleading ('invoice series'), no input validation for negative numbers. No security vulnerabilities present, but logic correctness is flawed." },
+        "Gemini": {
+"readability_score": 75,
+"understandability_score": 60,
+"maintainability_score": 65,
+"functional_classification": "Buggy",
+"security_classification": "Safe",
+"cwe_id": "None",
+"reasoning": "The code fails for numbers under 100 with non-arithmetic digits (e.g. 13 returns true because the loop condition 'number > 100' never executes), single-digit numbers, negative inputs, and numbers ending in 0 (e.g. 100). Python-style docstrings used in Java."
+},
+        "GithubCopilot": { "readability_score": 70, "understandability_score": 65, "maintainability_score": 60, "functional_classification": "Partially Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Logic is simple but unclear; variable names are weak. Works only for numbers >100 and assumes positive input. Arithmetic-series check is partially correct but fails edge cases. No security risks present." },
         "Sonarqube": {
             "readability_score": 80.0,
             "understandability_score": 80.0,
@@ -8703,10 +9069,19 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 77_py from python to cpp"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": {"readability_score":72,"understandability_score":55,"maintainability_score":65,"functional_classification":"Buggy","security_classification":"Safe","cwe_id":"None","reasoning":"The code is short and structurally simple, but the conditions `string[x] >= 'a' <= 'z'` and `>= 'A' <= 'Z'` are incorrect in C++ due to chained comparisons being evaluated left-to-right. As a result, character classification is wrong. No exploitable security vulnerability is apparent."}
+,
+        "Claude": { "readability_score": 60, "understandability_score": 45, "maintainability_score": 50, "functional_classification": "Buggy", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Chained comparisons 'x >= a <= z' don't work as intended in C++; they evaluate left-to-right producing a bool compared to a char, causing all characters to be misclassified as lowercase. No memory-safety or injection vulnerabilities present, but the core classification logic is broken." },
+        "Gemini": {
+  "readability_score": 60,
+  "understandability_score": 50,
+  "maintainability_score": 40,
+  "functional_classification": "Buggy",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "The expression `string[x] >= 'a' <= 'z'` is invalid C++ chained comparison logic. It evaluates the boolean result of `>= 'a'` against `'z'`, causing every character to be incorrectly counted as lowercase. Pass-by-value causes unnecessary string copying. Magic array indices reduce clarity."
+},
+        "GithubCopilot": { "readability_score": 40, "understandability_score": 35, "maintainability_score": 30, "functional_classification": "Buggy", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Incorrect character-range checks ('a' <= 'z' logic is invalid), poor naming, misleading function name, and weak structure reduce quality. Logic is buggy but not vulnerable. Readability and maintainability are low due to unclear intent and flawed conditions." },
         "Sonarqube": {
             "readability_score": 80.0,
             "understandability_score": 80.0,
@@ -8724,10 +9099,28 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 77_py from python to java"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": { "readability_score": 78, "understandability_score": 72, "maintainability_score": 70, "functional_classification": "Buggy", "security_classification": "Safe", "cwe_id": "None", "reasoning": "The code is short and straightforward, but the character comparisons use invalid Java syntax ('a' <= 'z' chained comparison), so it will not compile. Naming and the counter array reduce clarity. No exploitable security vulnerability is present." }
+,
+        "Claude": { "readability_score": 55, "understandability_score": 50, "maintainability_score": 40, "functional_classification": "Buggy", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Code does not compile: 'a' <= 'z' is invalid chained comparison syntax in Java (comparing char to boolean). Even conceptually, the intended range check logic is malformed. Naming and structure are otherwise simple but poor (mixed case function name, magic indices). No security vulnerabilities present, just correctness failure." },
+        "Gemini": {
+  "readability_score": 50,
+  "understandability_score": 60,
+  "maintainability_score": 35,
+  "functional_classification": "Buggy",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "The code uses chained relational operators (>= 'a' <= 'z') which are invalid syntax in Java and will not compile. It also risks a NullPointerException if 'string' is null. Naming conventions, magic array indexes, and hardcoded side effects weaken maintainability."
+},
+        "GithubCopilot": {
+  "readability_score": 40,
+  "understandability_score": 35,
+  "maintainability_score": 30,
+  "functional_classification": "Buggy",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "Incorrect character range checks make logic fail; structure is minimal and unclear. Readability and maintainability suffer from poor condition syntax. No security risks present."
+}
+,
         "Sonarqube": {
             "readability_score": 80.0,
             "understandability_score": 80.0,
@@ -8798,10 +9191,28 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 78_py from python to cpp"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": {"readability_score":86,"understandability_score":91,"maintainability_score":82,"functional_classification":"Partially Correct","security_classification":"Vulnerable","cwe_id":"CWE-704","reasoning":"The logic is simple and readable, but the function name is awkward and comments are excessive. The main issue is that isupper/islower receive char values; for negative signed-char values this is undefined behavior unless cast to unsigned char. This can cause incorrect behavior or crashes."}
+,
+        "Claude": { "readability_score": 85, "understandability_score": 88, "maintainability_score": 65, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Simple, clear logic with good comments. Passes string by value (minor inefficiency) and lacks return value/testability, hurting maintainability. No security issues; isupper/islower usage is safe for typical ASCII input." },
+        "Gemini": {
+"readability_score": 75,
+"understandability_score": 90,
+"maintainability_score": 70,
+"functional_classification": "Buggy",
+"security_classification": "Vulnerable",
+"cwe_id": "CWE-128",
+"reasoning": "Standard  functions (isupper, islower) take an int and require an unsigned char representation or EOF. Passing a char signed value causes undefined behavior for negative ASCII values (e.g., extended ASCII characters). String is passed by value causing unnecessary copies, and inline comments clutter straightforward logic."
+},
+        "GithubCopilot": {
+  "readability_score": 85,
+  "understandability_score": 88,
+  "maintainability_score": 80,
+  "functional_classification": "Correct",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "Clear loop and counters, simple logic, no security risks. Minor improvements possible via const ref parameter and separating I/O from logic."
+}
+,
         "Sonarqube": {
             "readability_score": 80.0,
             "understandability_score": 80.0,
@@ -8819,10 +9230,28 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 78_py from python to java"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": {"readability_score":88,"understandability_score":90,"maintainability_score":82,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The logic is straightforward and correctly counts Unicode uppercase/lowercase characters. Naming is understandable, though Java conventions favor camelCase. The Javadoc is inaccurate for Java and the method name is awkward. toCharArray() adds minor overhead but no meaningful security risk."}
+,
+        "Claude": {"readability_score": 78, "understandability_score": 85, "maintainability_score": 60, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Logic correctly counts upper/lower case characters and handles null-safety via toCharArray. Minor issues: non-Java naming convention (snake_case), method does printing instead of returning value (poor separation of concerns), reducing maintainability/testability. No security vulnerabilities present."},
+        "Gemini": {
+"readability_score": 75,
+"understandability_score": 85,
+"maintainability_score": 60,
+"functional_classification": "Buggy",
+"security_classification": "Safe",
+"cwe_id": "None",
+"reasoning": "The code is easy to read, but throws a NullPointerException if s is null. It violates Java naming conventions (PascalCase method name), uses non-idiomatic variable naming (lower_count), includes Python-style docstrings, and lacks return values for reusability. It is functionally buggy on null input, but presents no memory safety or injection security vulnerabilities."
+},
+        "GithubCopilot": {
+  "readability_score": 85,
+  "understandability_score": 88,
+  "maintainability_score": 80,
+  "functional_classification": "Correct",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "Clear loop and counters, simple logic, well-commented. Minor naming issues but overall easy to follow, structurally simple, functionally correct, and no security risks since it only processes a string and prints counts."
+}
+,
         "Sonarqube": {
             "readability_score": 80.0,
             "understandability_score": 80.0,
@@ -8893,10 +9322,28 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 79_py from python to cpp"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": {"readability_score":82,"understandability_score":88,"maintainability_score":72,"functional_classification":"Partially Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The logic is simple and readable, but uses non-idiomatic capitalization and brute-force iteration. It correctly identifies positive perfect numbers, but returns true for 0 and can behave unexpectedly for negative inputs. Time complexity is O(number), making it inefficient for large inputs. No exploitable security vulnerability is present."}
+,
+        "Claude": { "readability_score": 85, "understandability_score": 88, "maintainability_score": 72, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Simple, clear loop correctly implements perfect number logic (sum of proper divisors). No security risks (no unchecked input causing exploitable behavior). Minor issues: 'Sum' variable violates camelCase convention, and O(n) loop is inefficient versus sqrt(n) approach, slightly hurting maintainability/scalability." },
+        "Gemini": {
+  "readability_score": 85,
+  "understandability_score": 90,
+  "maintainability_score": 60,
+  "functional_classification": "Partially Correct",
+  "security_classification": "Vulnerable",
+  "cwe_id": "CWE-190",
+  "reasoning": "Clean syntax, but fails for number <= 0 (e.g., Returns true for 0). Loops up to O(N) instead of O(sqrt(N)). Potential integer overflow on Sum for large inputs."
+},
+        "GithubCopilot": {
+  "readability_score": 92,
+  "understandability_score": 90,
+  "maintainability_score": 85,
+  "functional_classification": "Correct",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "Clear loop and logic, minimal complexity, correct perfect-number check. Variable naming could be improved but structure is simple. No external input or unsafe operations, so no security risks."
+}
+,
         "Sonarqube": {
             "readability_score": 85.0,
             "understandability_score": 85.0,
@@ -8914,10 +9361,28 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 79_py from python to java"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": {"readability_score":92,"understandability_score":95,"maintainability_score":88,"functional_classification":"Partially Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The logic is simple and readable, but naming violates Java conventions and the O(n) loop is inefficient for large inputs. It correctly identifies positive perfect numbers, but returns true for 0 and negative inputs due to Sum == number, making edge-case behavior incorrect."}
+,
+        "Claude": { "readability_score": 82, "understandability_score": 85, "maintainability_score": 75, "functional_classification": "Partially Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Logic works for positive integers >0 but incorrectly returns true for number=0 (0==0). Naming violates Java conventions (PascalCase for method/variable). No security issues; simple O(n) algorithm, could use sqrt(n) optimization." },
+        "Gemini": {
+"readability_score": 85,
+"understandability_score": 90,
+"maintainability_score": 75,
+"functional_classification": "Partially Correct",
+"security_classification": "Safe",
+"cwe_id": "None",
+"reasoning": "Clean, simple O(n) logic. Uses non-standard Java method naming (PascalCase). Fails for non-positive inputs: 0 returns true because Sum=0==0. Inefficient for large numbers; optimal bounds require loop up to sqrt(number) with O(sqrt(n)) time."
+},
+        "GithubCopilot": {
+  "readability_score": 92,
+  "understandability_score": 90,
+  "maintainability_score": 85,
+  "functional_classification": "Correct",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "Clear loop and logic, minimal complexity, correct perfect-number check. Variable naming could improve. No security risks since no external input or resources are used."
+}
+,
         "Sonarqube": {
             "readability_score": 100.0,
             "understandability_score": 100.0,
@@ -8988,10 +9453,28 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 80_py from python to cpp"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": {"readability_score":92,"understandability_score":90,"maintainability_score":78,"functional_classification":"Partially Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The code is clear and easy to follow, with simple control flow. However, it incorrectly treats 1 as a perfect number (sum=0, so it returns false) and lacks handling for non-positive inputs. The O(n) loop is inefficient for large values but not a security vulnerability."}
+,
+        "Claude": { "readability_score": 90, "understandability_score": 92, "maintainability_score": 75, "functional_classification": "Partially Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Clear, simple logic with good docstring. Edge cases (number<=0) mishandled, e.g. 0 incorrectly returns true. No security vulnerabilities present; purely arithmetic with no external input handling or memory risks." },
+        "Gemini": {
+"readability_score": 90,
+"understandability_score": 90,
+"maintainability_score": 65,
+"functional_classification": "Buggy",
+"security_classification": "Vulnerable",
+"cwe_id": "CWE-369",
+"reasoning": "Clear structure, but functionally buggy for inputs <= 0. If 'number' is 0, the loop runs with i=1 and skips, evaluating sum (0) == number (0), incorrectly returning true (0 is not perfect). If 'number' is negative, passing a negative value can trigger division by zero / mod by zero undefined behavior depending on loop limits, leading to CWE-369. Time complexity O(n) is inefficient for large n."
+},
+        "GithubCopilot": {
+  "readability_score": 85,
+  "understandability_score": 90,
+  "maintainability_score": 80,
+  "functional_classification": "Correct",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "Clear loop and logic, straightforward structure, correct perfect-number check. Minor inefficiencies but no vulnerabilities. Readable and easy to maintain."
+}
+,
         "Sonarqube": {
             "readability_score": 75.0,
             "understandability_score": 75.0,
@@ -9009,10 +9492,19 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 80_py from python to java"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": {"readability_score":91,"understandability_score":94,"maintainability_score":82,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The logic is simple and easy to follow, with clear variable names and straightforward control flow. It correctly identifies positive perfect numbers, though it is inefficient at O(n) and lacks explicit handling/documentation for zero or negative inputs. The Javadoc is awkward and method naming violates Java conventions, but there is no evident security vulnerability."}
+,
+        "Claude": { "readability_score": 90, "understandability_score": 92, "maintainability_score": 80, "functional_classification": "Partially Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Clear, simple, well-documented brute-force check. Logic correct for positive integers but mishandles edge cases (number=0 or negative returns true incorrectly). No security vulnerabilities present; purely computational with no external input handling." },
+        "Gemini": {
+"readability_score": 75,
+"understandability_score": 85,
+"maintainability_score": 60,
+"functional_classification": "Partially Correct",
+"security_classification": "Vulnerable",
+"cwe_id": "CWE-835",
+"reasoning": "The code correctly identifies positive perfect numbers like 6 or 28, but returns true for 0 (sum=0) which is incorrect. Passing negative numbers causes an infinite loop ($O(n)$ time complexity and unoptimized bound check). Follows non-standard Java naming conventions."
+},
+        "GithubCopilot": { "readability_score": 85, "understandability_score": 90, "maintainability_score": 80, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Clear loop and logic, simple structure, no vulnerabilities. Minor inefficiencies and verbose return reduce maintainability slightly." },
         "Sonarqube": {
             "readability_score": 75.0,
             "understandability_score": 75.0,
@@ -9083,10 +9575,19 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 81_py from python to cpp"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": {"readability_score":55,"understandability_score":50,"maintainability_score":40,"functional_classification":"Buggy","security_classification":"Vulnerable","cwe_id":"CWE-704","reasoning":"The intent is clear, but the code does not compile: std::unordered_set<auto> is invalid and i.upper is not a valid char member. isalpha/toupper can also have undefined behavior for negative signed chars. The intended pangram logic is reasonable, but these issues prevent correct execution."}
+,
+        "Claude": { "readability_score": 45, "understandability_score": 55, "maintainability_score": 30, "functional_classification": "Buggy", "security_classification": "Vulnerable", "cwe_id": "CWE-758", "reasoning": "Code does not compile: 'unordered_set<auto>' is invalid template syntax, and 'i.upper' is invalid (char has no member functions). Case comparison is inconsistent (checks non-uppercased char in seen but inserts uppercased). Undefined/reliance-on-undefined behavior from isalpha with signed char also present." },
+        "Gemini": {
+"readability_score": 75,
+"understandability_score": 70,
+"maintainability_score": 40,
+"functional_classification": "Buggy",
+"security_classification": "Safe",
+"cwe_id": "None",
+"reasoning": "The code fails to compile due to invalid C++ constructs: std::unordered_set cannot use auto without C++20/concepts, and i.upper is Python syntax applied to a char. The logic inside the loop also attempts seen.find(i.upper) using un-uppercased char vs stored uppercased char."
+},
+        "GithubCopilot": { "readability_score": 40, "understandability_score": 35, "maintainability_score": 30, "functional_classification": "Buggy", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Invalid use of unordered_set<auto>, incorrect i.upper, inconsistent toupper usage, and poor comments make the code unreadable, unclear, and non-functional. No exploitable security risks, but logic is broken." },
         "Sonarqube": {
             "readability_score": 80.0,
             "understandability_score": 80.0,
@@ -9104,10 +9605,19 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 81_py from python to java"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": {"readability_score":45,"understandability_score":40,"maintainability_score":50,"functional_classification":"Buggy","security_classification":"Safe","cwe_id":"None","reasoning":"The code is short but contains a compilation error: i.upper is invalid Java syntax. It should use Character.toUpperCase(i). Also, Set<Object> is unnecessarily generic, and Character.isLetter accepts non-English letters, potentially producing incorrect pangram results. No exploitable security vulnerability is evident."}
+,
+        "Claude": { "readability_score": 40, "understandability_score": 45, "maintainability_score": 30, "functional_classification": "Buggy", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Code fails to compile: 'i.upper' is invalid Java syntax (char has no such member), likely a Python artifact. Comments are typo-ridden and unhelpful. No exploitable security flaw, but the logic cannot even execute as written." },
+        "Gemini": {
+"readability_score": 60,
+"understandability_score": 65,
+"maintainability_score": 50,
+"functional_classification": "Buggy",
+"security_classification": "Safe",
+"cwe_id": "None",
+"reasoning": "The code will not compile due to syntax errors: `i.upper` does not exist on primitive char, and `seen.contains()` checks for uppercase while the lower character was requested. Using raw `Set<Object>` degrades type safety. While free of security vulnerabilities, the syntax errors make it functionally broken."
+},
+        "GithubCopilot": { "readability_score": 45, "understandability_score": 40, "maintainability_score": 35, "functional_classification": "Buggy", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Code has typos (i.upper), wrong Set<Object> type, inconsistent letter handling, reducing clarity and correctness. Logic fails due to invalid property access. No security risks present but structure and readability are weak." },
         "Sonarqube": {
             "readability_score": 80.0,
             "understandability_score": 80.0,
@@ -9178,10 +9688,28 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 82_py from python to cpp"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": {"readability_score":82,"understandability_score":78,"maintainability_score":72,"functional_classification":"Buggy","security_classification":"Vulnerable","cwe_id":"CWE-704","reasoning":"The intent is clear, but the alphabet string has mixed case and the loop checks lowercase/uppercase inconsistently, so several letters are not reliably detected. Passing by value is unnecessary. More importantly, ::tolower/::toupper with potentially negative signed char values causes undefined behavior (CWE-704)."}
+,
+        "Claude": { "readability_score": 65, "understandability_score": 60, "maintainability_score": 58, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Logic works: checking both fully-lowercased and fully-uppercased copies against each alphabet char covers all cases despite the odd mixed-case alphabet string, which is confusing but not a bug. Redundant transforms/passing string by value hurt efficiency and clarity. No memory or injection risks present." },
+        "Gemini": {
+"readability_score": 85,
+"understandability_score": 75,
+"maintainability_score": 50,
+"functional_classification": "Buggy",
+"security_classification": "Safe",
+"cwe_id": "None",
+"reasoning": "The code is readable but buggy. `alphabet` contains duplicate case variants ('A' and 'A' via uppercase, 'J', 'X'), but the core flaw is checking if lowercase/uppercase versions of input contain arbitrary case characters from `alphabet`. For example, lowercase string search for 'A' fails because 'A' in `alphabet` is uppercase. It returns false for valid pangrams."
+},
+        "GithubCopilot": {
+  "readability_score": 70,
+  "understandability_score": 65,
+  "maintainability_score": 55,
+  "functional_classification": "Partially Correct",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "Alphabet string is incorrect and inconsistent in casing; redundant transforms reduce clarity; logic partly works but fails for missing letters; no security risks present."
+}
+,
         "Sonarqube": {
             "readability_score": 80.0,
             "understandability_score": 80.0,
@@ -9199,10 +9727,28 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 82_py from python to java"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": {"readability_score":78,"understandability_score":75,"maintainability_score":72,"functional_classification":"Partially Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The code is short and easy to follow, but naming and redundant case conversions reduce clarity. The pangram check works for basic English letters, but the alphabet string has unusual casing and the implementation is inefficient due to repeated contains() calls. It also throws NullPointerException for null input. No exploitable security vulnerability is evident."}
+,
+        "Claude": { "readability_score": 65, "understandability_score": 58, "maintainability_score": 50, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Logic works but is redundant: toLowerCase/toUpperCase called repeatedly per char instead of once. Non-standard method naming (IsPangrams), hardcoded alphabet string as magic value, no input null-check. No exploitable security issues present." },
+        "Gemini": {
+"readability_score": 75,
+"understandability_score": 80,
+"maintainability_score": 50,
+"functional_classification": "Buggy",
+"security_classification": "Safe",
+"cwe_id": "None",
+"reasoning": "The code uses mixed-case string checking logic that contains subtle bugs: using lowercased and uppercased target checks against mixed-case characters in 'alphabet' fails on input null checks or unexpected characters. Naming conventions break standard Java practices (IsPangrams)."
+},
+        "GithubCopilot": {
+  "readability_score": 70,
+  "understandability_score": 65,
+  "maintainability_score": 55,
+  "functional_classification": "Partially Correct",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "Logic mostly clear but flawed: alphabet string is incorrect and case-checking redundant. Maintainability suffers due to hardcoded mixed-case alphabet. Function is safe but not fully correct."
+}
+,
         "Sonarqube": {
             "readability_score": 80.0,
             "understandability_score": 80.0,
@@ -9273,10 +9819,28 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 83_py from python to cpp"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": { "readability_score": 92, "understandability_score": 94, "maintainability_score": 88, "functional_classification": "Partially Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "The code is clear and uses a standard palindrome algorithm. However, it mishandles negative numbers and can overflow int when reversing sufficiently large values, producing incorrect results. The explicit if/else is slightly verbose but maintainable. No exploitable security vulnerability is evident." }
+,
+        "Claude": { "readability_score": 85, "understandability_score": 85, "maintainability_score": 70, "functional_classification": "Partially Correct", "security_classification": "Vulnerable", "cwe_id": "CWE-190", "reasoning": "Logic is clear and correct for typical inputs, but reversing large ints can overflow (undefined behavior in C/C++), causing incorrect results or exploitable UB for near-INT_MAX values. No input validation for negative numbers, though behavior there is incidentally acceptable." },
+        "Gemini": {
+  "readability_score": 85,
+  "understandability_score": 90,
+  "maintainability_score": 75,
+  "functional_classification": "Partially Correct",
+  "security_classification": "Vulnerable",
+  "cwe_id": "CWE-190",
+  "reasoning": "The code is clear and readable, but contains critical flaws. It fails for single-digit numbers under certain conditions and doesn't handle negative numbers. Secutity-wise, integer reversing without bounds checking allows potential integer overflow during the calculation `rev * 10 + dig` when reversing large numbers."
+},
+        "GithubCopilot": {
+  "readability_score": 90,
+  "understandability_score": 92,
+  "maintainability_score": 85,
+  "functional_classification": "Correct",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "Clear logic, simple structure, and correct palindrome check. No security risks since no external input handling or unsafe operations. Minor improvements possible in naming and early return style."
+}
+,
         "Sonarqube": {
             "readability_score": 85.0,
             "understandability_score": 85.0,
@@ -9294,10 +9858,28 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 83_py from python to java"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": { "readability_score": 92, "understandability_score": 90, "maintainability_score": 88, "functional_classification": "Partially Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "The code is simple, readable, and logically clear. However, it fails for negative integers because the loop is skipped and negative values are never treated as palindromes. Integer overflow can also occur while building rev, potentially producing incorrect results. No exploitable security vulnerability is evident." }
+,
+        "Claude": { "readability_score": 90, "understandability_score": 92, "maintainability_score": 80, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Clear, simple logic correctly reverses digits and compares to original. No overflow risk for int range in practice, negative numbers just return false (reasonable). Minor style nit: if/else could be replaced by direct boolean return. No security concerns." },
+        "Gemini": {
+"readability_score": 85,
+"understandability_score": 90,
+"maintainability_score": 75,
+"functional_classification": "Partially Correct",
+"security_classification": "Safe",
+"cwe_id": "None",
+"reasoning": "The code cleanly implements standard digit-reversal logic. However, it fails for single-digit negative numbers (which are technically not palindromes due to the sign, but returning false for -5 via a skipped loop is unintentional side effect behavior) and can overflow `rev` for large integers. Redundant if-else returning boolean reduces maintainability slightly."
+},
+        "GithubCopilot": {
+  "readability_score": 85,
+  "understandability_score": 90,
+  "maintainability_score": 80,
+  "functional_classification": "Correct",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "Clear logic and simple structure make the code easy to read and maintain. Functionality is correct for positive integers. No security risks present. Minor improvements could streamline readability and structure."
+}
+,
         "Sonarqube": {
             "readability_score": 85.0,
             "understandability_score": 85.0,
@@ -9368,10 +9950,28 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 84_py from python to cpp"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": {"readability_score":85,"understandability_score":90,"maintainability_score":82,"functional_classification":"Partially Correct","security_classification":"Vulnerable","cwe_id":"CWE-704","reasoning":"The logic is simple and well structured, but parameters are unnecessarily copied and the final if/else can be simplified. Functionally, ::tolower is undefined for negative signed char values unless cast to unsigned char, so non-ASCII/negative-byte input can cause undefined behavior. This is also a security concern when processing untrusted input."}
+,
+        "Claude": { "readability_score": 90, "understandability_score": 92, "maintainability_score": 85, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Clear, straightforward logic using standard library functions. Case-insensitive anagram check via sorting is correct. Minor style nit: if/else could be a direct return, but no functional or security issues. No unsafe memory operations or untrusted input handling concerns." },
+        "Gemini": {
+  "readability_score": 90,
+  "understandability_score": 95,
+  "maintainability_score": 60,
+  "functional_classification": "Partially Correct",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "Clear logic, but inefficient copy-and-sort approach O(N log N). Fails on non-ASCII characters as ::tolower with std::transform on UTF-8 leads to undefined or incorrect behavior. Pass by const ref is preferred."
+},
+        "GithubCopilot": {
+  "readability_score": 92,
+  "understandability_score": 90,
+  "maintainability_score": 85,
+  "functional_classification": "Correct",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "Clear logic, simple flow, and standard library usage make the code readable, understandable, and maintainable. Functionality is correct for case-insensitive anagram checks. No external input risks or unsafe operations present."
+}
+,
         "Sonarqube": {
             "readability_score": 90.0,
             "understandability_score": 90.0,
@@ -9389,10 +9989,28 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 84_py from python to java"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": { "readability_score": 90, "understandability_score": 92, "maintainability_score": 88, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "The code is clear and straightforward, with simple control flow and standard Java APIs. Sorting both strings correctly detects anagrams case-insensitively. Minor maintainability issues include snake_case naming and redundant if/else logic. No evident exploitable security vulnerability." }
+,
+        "Claude": { "readability_score": 90, "understandability_score": 92, "maintainability_score": 78, "functional_classification": "Partially Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Clean, simple logic using sort-and-compare. Doesn't handle null inputs, strip whitespace, or differing lengths edge cases explicitly (relies on sort/equals), and doesn't account for spaces/punctuation affecting anagram checks. Redundant if/else for boolean return reduces maintainability slightly. No security issues; no external input handling or injection risk." },
+        "Gemini": {
+"readability_score": 85,
+"understandability_score": 90,
+"maintainability_score": 75,
+"functional_classification": "Buggy",
+"security_classification": "Vulnerable",
+"cwe_id": "CWE-476",
+"reasoning": "Readable but uses camelCase naming violations in Java. It fails with NullPointerException if s1 or s2 is null, causing unhandled crashing (CWE-476). Logic is valid for basic anagrams, but sorting is O(N log N) rather than optimal O(N) frequency counting."
+},
+        "GithubCopilot": {
+  "readability_score": 85,
+  "understandability_score": 90,
+  "maintainability_score": 80,
+  "functional_classification": "Partially Correct",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "Clear and simple code; logic mostly correct but fails on differing lengths and ignores whitespace. Structure is straightforward. No security risks present."
+}
+,
         "Sonarqube": {
             "readability_score": 90.0,
             "understandability_score": 90.0,
@@ -9463,10 +10081,19 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 85_py from python to cpp"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": {"readability_score":72,"understandability_score":68,"maintainability_score":60,"functional_classification":"Partially Correct","security_classification":"Vulnerable","cwe_id":"CWE-190","reasoning":"The logic is simple but naming, comments, and the unused/unclear counter() dependency reduce clarity. Reversing positive integers generally works, but 0, negatives, and INT_MIN are mishandled; integer overflow can occur when computing powers of 10 or the reversed value. This can cause undefined behavior (CWE-190)."}
+,
+        "Claude": { "readability_score": 65, "understandability_score": 60, "maintainability_score": 55, "functional_classification": "Partially Correct", "security_classification": "Vulnerable", "cwe_id": "CWE-190", "reasoning": "Poor variable naming (newnam, ind), missing 'counter' function definition, no negative number handling, and integer overflow risk in Revers() on large inputs (CWE-190). Logic works for typical positive inputs." },
+        "Gemini": {
+"readability_score": 60,
+"understandability_score": 55,
+"maintainability_score": 50,
+"functional_classification": "Buggy",
+"security_classification": "Vulnerable",
+"cwe_id": "CWE-190",
+"reasoning": "Misspelled/misleading variable names and incorrect Javadoc. Fails on negative numbers and single digits depending on undefined 'counter()'. Vulnerable to integer overflow (CWE-190) when reversing large integers, which can break palindrome checks."
+},
+        "GithubCopilot": { "readability_score": 55, "understandability_score": 60, "maintainability_score": 50, "functional_classification": "Partially Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Non‑descriptive names and unclear comments reduce clarity. Logic mostly works but depends on an unseen counter() function and lacks edge‑case handling. Structure is basic and not modular. No security risks present." },
         "Sonarqube": {
             "readability_score": 80.0,
             "understandability_score": 80.0,
@@ -9484,10 +10111,28 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 85_py from python to java"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": {"readability_score":82,"understandability_score":78,"maintainability_score":68,"functional_classification":"Partially Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The logic is simple and readable, but naming and comments contain typos and are unclear. Revers() mishandles negative numbers and can overflow for sufficiently large integers. isPalindrome() is logically correct only for non-negative values within the safe integer range. No exploitable security vulnerability is evident."}
+,
+        "Claude": { "readability_score": 65, "understandability_score": 60, "maintainability_score": 45, "functional_classification": "Partially Correct", "security_classification": "Vulnerable", "cwe_id": "CWE-190", "reasoning": "Poor variable names (newnam, ind), relies on undefined external counter() function. Integer overflow risk (CWE-190) for large numbers during reversal. Fails for negative numbers and numbers with trailing zeros. Palindrome logic itself is otherwise correct for positive non-overflowing cases." },
+        "Gemini": {
+  "readability_score": 60,
+  "understandability_score": 55,
+  "maintainability_score": 45,
+  "functional_classification": "Partially Correct",
+  "security_classification": "Vulnerable",
+  "cwe_id": "CWE-190",
+  "reasoning": "Poor variable naming (newnam, ind) and redundant JSDoc comments hurt readability. Fails on negative numbers and zero due to condition checks (`number1 > 0`). Reversing an integer causes severe integer overflow risk for high values (CWE-190), resulting in undefined behavior or security bugs. Palindrome logic is overly complex and fragile."
+},
+        "GithubCopilot": {
+  "readability_score": 62,
+  "understandability_score": 58,
+  "maintainability_score": 55,
+  "functional_classification": "Partially Correct",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "Variable names are unclear, comments inaccurate, and logic depends on an external counter() function. Reverse works only for positive integers. No security risks present."
+}
+,
         "Sonarqube": {
             "readability_score": 80.0,
             "understandability_score": 80.0,
@@ -9558,10 +10203,28 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 86_py from python to cpp"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": {"readability_score":82,"understandability_score":86,"maintainability_score":78,"functional_classification":"Partially Correct","security_classification":"Vulnerable","cwe_id":"CWE-704","reasoning":"The logic is clear and correctly handles basic ASCII anagrams, but parameters are unnecessarily copied and the final if/else is redundant. Functional behavior is unreliable for non-ASCII/signed-char input: ::toupper can have undefined behavior when passed a negative char value, making the implementation unsafe outside basic ASCII."}
+,
+        "Claude": { "readability_score": 90, "understandability_score": 92, "maintainability_score": 85, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Clean, well-documented logic using case normalization and sorted-string comparison. Correctly handles length mismatch and case-insensitivity. No unsafe memory operations, injections, or overflow risks. Minor improvement: pass strings by const reference to avoid unnecessary copies." },
+        "Gemini": {
+  "readability_score": 85,
+  "understandability_score": 90,
+  "maintainability_score": 60,
+  "functional_classification": "Correct",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "Clear logic and comments, but inefficient. Passes arguments by value, making unnecessary deep copies. Double-transforms/sorts redundant strings, and uses verbose 'if (x) return true; else return false;'."
+},
+        "GithubCopilot": {
+  "readability_score": 92,
+  "understandability_score": 90,
+  "maintainability_score": 88,
+  "functional_classification": "Correct",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "Clear logic, simple flow, and standard library usage. Sorting-based anagram check is correct. No security risks since only local string operations occur. Minor improvements could reduce redundancy but overall strong quality."
+}
+,
         "Sonarqube": {
             "readability_score": 85.0,
             "understandability_score": 85.0,
@@ -9579,10 +10242,28 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 86_py from python to java"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": {"readability_score":88,"understandability_score":90,"maintainability_score":82,"functional_classification":"Partially Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The logic is simple and readable, but naming violates Java conventions and the Javadoc has typos. Uppercasing without Locale can cause locale-dependent behavior, and null inputs cause NullPointerException. Sorting makes the solution O(n log n); a frequency-count approach could be simpler and more efficient."}
+,
+        "Claude": { "readability_score": 88, "understandability_score": 92, "maintainability_score": 78, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Clear, simple anagram check via sorting; correct logic including length/case handling. Minor style issues: non-Java naming convention (is_anagram), redundant if/else returning boolean, no null checks. No security vulnerabilities present." },
+        "Gemini": {
+"readability_score": 85,
+"understandability_score": 90,
+"maintainability_score": 75,
+"functional_classification": "Buggy",
+"security_classification": "Vulnerable",
+"cwe_id": "CWE-476",
+"reasoning": "Code is clean but throws a NullPointerException if either input is null (CWE-476). Non-idiomatic Java naming (is_anagram) and redundant if-else branches lower quality slightly."
+},
+        "GithubCopilot": {
+  "readability_score": 92,
+  "understandability_score": 90,
+  "maintainability_score": 88,
+  "functional_classification": "Correct",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "Clear logic, simple structure, and correct anagram check via sorting. Minor docstring typos but no functional or security issues. Code is easy to read, understand, and maintain."
+}
+,
         "Sonarqube": {
             "readability_score": 85.0,
             "understandability_score": 85.0,
@@ -9653,10 +10334,28 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 87_py from python to cpp"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": {"readability_score":95,"understandability_score":95,"maintainability_score":90,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The code is concise, clear, and uses standard library functions. It correctly identifies palindromes for non-negative int inputs as documented. It creates a reversed copy, which is simple but uses extra O(n) memory and time. No apparent security vulnerabilities exist; integer input is bounded by int and safely converted to string."}
+,
+        "Claude": { "readability_score": 92, "understandability_score": 95, "maintainability_score": 88, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Simple, clear implementation using standard library functions. Logic correctly checks palindrome via string reversal. No unsafe memory operations, buffer handling, or injection risks. Well-documented with docstring; minor improvement could be avoiding extra copy for efficiency." },
+        "Gemini": {
+  "readability_score": 95,
+  "understandability_score": 95,
+  "maintainability_score": 85,
+  "functional_classification": "Partially Correct",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "The code is highly readable and clear. However, while docstrings note non-negative input, negative inputs are not handled safely (returns false due to the minus sign instead of explicitly failing input constraints). Converting to string incurs unnecessary spatial allocation compared to a purely mathematical reversal."
+},
+        "GithubCopilot": {
+  "readability_score": 95,
+  "understandability_score": 95,
+  "maintainability_score": 90,
+  "functional_classification": "Correct",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "Simple, clear logic using std::string and std::reverse. Easy to read, understand, and maintain. Functionally correct for non-negative ints. No security risks since no external input handling or unsafe operations."
+}
+,
         "Sonarqube": {
             "readability_score": 100.0,
             "understandability_score": 100.0,
@@ -9674,10 +10373,28 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 87_py from python to java"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": {"readability_score":95,"understandability_score":93,"maintainability_score":90,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The code is concise, readable, and easy to understand. It correctly checks whether a non-negative integer is a palindrome by reversing its string representation. The main tradeoff is unnecessary String allocation versus a numeric approach, but this is not a correctness or security issue. The comment uses Python-style syntax in Java, but is harmless."}
+,
+        "Claude": {"readability_score": 90, "understandability_score": 92, "maintainability_score": 80, "functional_classification": "Partially Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Clean, simple, idiomatic code. Logic is correct for non-negative ints but doesn't validate negative input or document behavior for negatives; docstring uses Python-style syntax in Java. No security vulnerabilities present."},
+        "Gemini": {
+  "readability_score": 95,
+  "understandability_score": 95,
+  "maintainability_score": 90,
+  "functional_classification": "Partially Correct",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "The code is highly readable and concise. However, while it works for non-negative integers as noted in the Javadoc, standard palindrome specifications usually consider negative numbers (which include a '-' sign) non-palindromic, making the missing guard clause for negative inputs a minor functional edge-case flaw."
+},
+        "GithubCopilot": {
+  "readability_score": 95,
+  "understandability_score": 95,
+  "maintainability_score": 90,
+  "functional_classification": "Correct",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "Simple, clear logic using String reversal. Easy to read and maintain. Fully correct for non-negative ints. No security risks since no external input handling or unsafe operations."
+}
+,
         "Sonarqube": {
             "readability_score": 100.0,
             "understandability_score": 100.0,
@@ -9748,10 +10465,28 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 88_py from python to cpp"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": {"readability_score":92,"understandability_score":93,"maintainability_score":88,"functional_classification":"Partially Correct","security_classification":"Vulnerable","cwe_id":"CWE-704","reasoning":"Clear and simple logic, but the Python-style docstring is inappropriate C++. The function works for basic ASCII input, ignoring spaces and case, but ::tolower on potentially signed char can cause undefined behavior for non-ASCII bytes. It also relies on locale-dependent character handling."}
+,
+        "Claude": { "readability_score": 90, "understandability_score": 92, "maintainability_score": 80, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Clear, well-commented, standard-library-based implementation. Logic correctly normalizes case/spaces then compares sorted strings. No buffer issues or unsafe operations; pass-by-value avoids aliasing concerns. Minor debt: no Unicode/locale handling for tolower." },
+        "Gemini": {
+  "readability_score": 95,
+  "understandability_score": 95,
+  "maintainability_score": 85,
+  "functional_classification": "Correct",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "Clear, readable C++ code using standard library algorithms (erase-remove, transform, sort). Logic correctly checks anagram status after removing spaces and converting to lowercase. Passing strings by value causes unnecessary copies instead of `std::string_view` or const references, slightly impacting efficiency/maintainability, but functionality and security are solid."
+},
+        "GithubCopilot": {
+  "readability_score": 92,
+  "understandability_score": 90,
+  "maintainability_score": 88,
+  "functional_classification": "Correct",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "Clear logic, minimal complexity, uses standard STL functions. Fully correct for typical anagram checks. No unsafe operations or external input handling risks. Structure is simple and maintainable."
+}
+,
         "Sonarqube": {
             "readability_score": 100.0,
             "understandability_score": 100.0,
@@ -9769,10 +10504,28 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 88_py from python to java"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": {"readability_score":91,"understandability_score":94,"maintainability_score":82,"functional_classification":"Partially Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The logic is simple and readable, but the Python-style docstring is inappropriate for Java. Functionally, it works for basic ASCII anagrams while ignoring spaces and case, but replace(" ") removes only literal spaces and lowercase behavior is locale-sensitive; null inputs also cause exceptions. No exploitable security vulnerability is evident."}
+,
+        "Claude": { "readability_score": 85, "understandability_score": 90, "maintainability_score": 75, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Clear, well-commented logic implementing anagram check via normalization and sorting. No security vulnerabilities present. Minor maintainability concerns: no null checks, no locale-aware case handling, and it's a static utility method without a broader class design context." },
+        "Gemini": {
+  "readability_score": 85,
+  "understandability_score": 90,
+  "maintainability_score": 75,
+  "functional_classification": "Buggy",
+  "security_classification": "Vulnerable",
+  "cwe_id": "CWE-476",
+  "reasoning": "Clear and readable code, but buggy and vulnerable to NullPointerException if inputs s1 or s2 are null (CWE-476). Violates Java naming conventions (snake_case method name) and creates unnecessary intermediary objects."
+},
+        "GithubCopilot": {
+  "readability_score": 92,
+  "understandability_score": 90,
+  "maintainability_score": 85,
+  "functional_classification": "Correct",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "Clear logic, simple flow, minimal complexity. Sorting-based anagram check is correct. No external input risks or unsafe operations. Maintainability is good though lacks null checks and could use minor refactoring."
+}
+,
         "Sonarqube": {
             "readability_score": 100.0,
             "understandability_score": 100.0,
@@ -9843,10 +10596,28 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 89_py from python to cpp"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": {"readability_score":88,"understandability_score":90,"maintainability_score":82,"functional_classification":"Partially Correct","security_classification":"Vulnerable","cwe_id":"CWE-704","reasoning":"The logic is simple and readable, but copying strings is unnecessary and the doc comment is Python-style. Functionality is limited by ::tolower: passing a negative signed char can cause undefined behavior unless cast to unsigned char. It also only removes ASCII spaces, not general whitespace."}
+,
+        "Claude": { "readability_score": 90, "understandability_score": 92, "maintainability_score": 80, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Clean, well-commented function using standard library algorithms. Logic correctly normalizes case/spaces and compares sorted strings. No memory issues, injection risks, or unsafe operations. Minor maintainability note: pass-by-value copies strings, but this is intentional and safe." },
+        "Gemini": {
+"readability_score": 95,
+"understandability_score": 95,
+"maintainability_score": 75,
+"functional_classification": "Buggy",
+"security_classification": "Vulnerable",
+"cwe_id": "CWE-138",
+"reasoning": "Clear, readable code using standard algorithms. However, passing non-unsigned char to ::tolower causes Undefined Behavior for non-ASCII/negative values. Passing strings by value causes unnecessary memory allocations."
+},
+        "GithubCopilot": {
+  "readability_score": 92,
+  "understandability_score": 90,
+  "maintainability_score": 88,
+  "functional_classification": "Correct",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "Clear logic, simple flow, and standard STL usage make the code easy to read, understand, and maintain. Functionality is correct for typical anagram checks. No user-controlled memory operations or unsafe patterns, so no evident vulnerabilities."
+}
+,
         "Sonarqube": {
             "readability_score": 100.0,
             "understandability_score": 100.0,
@@ -9864,10 +10635,28 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 89_py from python to java"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": {"readability_score":92,"understandability_score":90,"maintainability_score":86,"functional_classification":"Partially Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The code is clear and straightforward, with low cognitive complexity. However, it removes only literal spaces and lowercases using the default locale, so Unicode/locale-sensitive input may produce unexpected results. Sorting gives O(n log n) complexity. No evident exploitable security vulnerability is present."}
+,
+        "Claude": { "readability_score": 85, "understandability_score": 88, "maintainability_score": 75, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Clear, simple logic using normalization, sorting, and comparison. Correctly identifies anagrams while handling spaces and case. No security concerns—no user input handling risks like injection, file I/O, or unsafe deserialization. Minor maintainability issue: no null/input validation, and comment style is slightly unconventional (Python-style docstring in Java)." },
+        "Gemini": {
+"readability_score": 85,
+"understandability_score": 90,
+"maintainability_score": 65,
+"functional_classification": "Buggy",
+"security_classification": "Vulnerable",
+"cwe_id": "CWE-476",
+"reasoning": "Readable and easy to understand logic using array sorting. However, it violates Java conventions (snake_case method name) and is buggy: calling it with null s1 or s2 throws NullPointerException (CWE-476). Sorting array O(N log N) is also less optimal than a frequency array O(N)."
+},
+        "GithubCopilot": {
+  "readability_score": 92,
+  "understandability_score": 90,
+  "maintainability_score": 85,
+  "functional_classification": "Correct",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "Clear logic, simple structure, and correct anagram check using sorting. Minimal complexity and no evident vulnerabilities. Could improve maintainability with null checks and comments but overall strong."
+}
+,
         "Sonarqube": {
             "readability_score": 100.0,
             "understandability_score": 100.0,
@@ -9938,10 +10727,28 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 90_py from python to cpp"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": {"readability_score":82,"understandability_score":88,"maintainability_score":78,"functional_classification":"Partially Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The logic is simple and readable, but the misspelled function name and misleading 'polynomial' comment reduce clarity. It correctly detects most integer palindromes, but INT_MIN can cause undefined behavior from negation-like reversal overflow. Negative values are also treated as non-palindromes. No exploitable security vulnerability is evident."}
+,
+        "Claude": { "readability_score": 78, "understandability_score": 75, "maintainability_score": 65, "functional_classification": "Partially Correct", "security_classification": "Safe", "cwe_id": "CWE-190", "reasoning": "Logic works for typical positive palindromes but integer overflow on reversal is undefined behavior for large inputs, and negative numbers aren't handled explicitly. No exploitable security vulnerability, but naming ('isPolindrome') and misleading comment ('polynomial') hurt clarity; redundant if/else for boolean return." },
+        "Gemini": {
+"readability_score": 75,
+"understandability_score": 70,
+"maintainability_score": 60,
+"functional_classification": "Buggy",
+"security_classification": "Vulnerable",
+"cwe_id": "CWE-190",
+"reasoning": "Code contains typos ('isPolindrome', 'polynomial'). Fails for negative numbers and causes 32-bit signed integer overflow on large inputs during reversal, leading to undefined behavior or incorrect results."
+},
+        "GithubCopilot": {
+  "readability_score": 82,
+  "understandability_score": 85,
+  "maintainability_score": 78,
+  "functional_classification": "Correct",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "Clear logic and simple structure; minor naming issues (Polindrome). Function correctly checks palindrome. No security risks since no external input handling or memory misuse."
+}
+,
         "Sonarqube": {
             "readability_score": 85.0,
             "understandability_score": 85.0,
@@ -9959,10 +10766,28 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 90_py from python to java"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": {"readability_score":92,"understandability_score":90,"maintainability_score":88,"functional_classification":"Partially Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The logic is simple and readable, but the method name and comment contain a typo ('Polindrome'/'polynomial'). Functionally, it correctly reverses positive integers, but negative numbers are incorrectly handled as palindromes in some cases (e.g., -1 becomes -1). No exploitable security vulnerability is present."}
+,
+        "Claude": { "readability_score": 65, "understandability_score": 62, "maintainability_score": 58, "functional_classification": "Partially Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Misleading comment/typo ('polynomial') hurt clarity; redundant if/else for boolean. Logic fails edge cases: negative numbers can incorrectly return true, and large ints risk overflow during reversal, causing incorrect results. No security vulnerabilities present." },
+        "Gemini": {
+"readability_score": 70,
+"understandability_score": 75,
+"maintainability_score": 65,
+"functional_classification": "Buggy",
+"security_classification": "Vulnerable",
+"cwe_id": "CWE-190",
+"reasoning": "Misspelled method name and flawed logic. Negative numbers return false (e.g., -121 yields false due to truncated division), while large integers can cause integer overflow when reversed without bounds checking, leading to false positives or errors. Simplify with direct return statement."
+},
+        "GithubCopilot": {
+  "readability_score": 78,
+  "understandability_score": 80,
+  "maintainability_score": 75,
+  "functional_classification": "Correct",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "Clear logic and simple structure; minor naming issues (Polindrome). Function works correctly for integer palindrome check. No security risks since no external input or unsafe operations."
+}
+,
         "Sonarqube": {
             "readability_score": 85.0,
             "understandability_score": 85.0,
@@ -10033,10 +10858,19 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 91_py from python to cpp"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": { "readability_score": 82, "understandability_score": 85, "maintainability_score": 78, "functional_classification": "Partially Correct", "security_classification": "Vulnerable", "cwe_id": "CWE-704", "reasoning": "The logic is simple and readable, but ::toupper is unsafe with potentially negative char values, causing undefined behavior. It also performs locale-dependent case conversion and treats spaces/punctuation as significant. Passing strings by value is acceptable but unnecessary copying occurs." }
+,
+        "Claude": { "readability_score": 88, "understandability_score": 90, "maintainability_score": 80, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Clear, concise, well-commented function. Logic correctly determines anagrams via normalization and sorting. Pass-by-value avoids mutating caller data. No memory or input-handling vulnerabilities present; ::toupper on signed char could theoretically misbehave with non-ASCII input but not exploitable." },
+        "Gemini": {
+"readability_score": 95,
+"understandability_score": 95,
+"maintainability_score": 85,
+"functional_classification": "Buggy",
+"security_classification": "Vulnerable",
+"cwe_id": "CWE-128",
+"reasoning": "The code is clean and easy to read. However, passing a char to ::toupper without casting to unsigned char invokes undefined behavior for negative values on systems where char is signed. This can lead to crashes or out-of-bounds access. Sorting strings directly is also O(n log n) rather than O(n) frequency counting."
+},
+        "GithubCopilot": { "readability_score": 92, "understandability_score": 90, "maintainability_score": 85, "functional_classification": "Partially Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Clear and simple code; logic fails for phrases with spaces/punctuation; structure is solid; no security risks; overall easy to read and maintain." },
         "Sonarqube": {
             "readability_score": 100.0,
             "understandability_score": 100.0,
@@ -10054,10 +10888,28 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 91_py from python to java"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": {"readability_score":94,"understandability_score":96,"maintainability_score":91,"functional_classification":"Partially Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The code is simple, clear, and well-structured. However, toUpperCase() is locale-sensitive and can produce incorrect anagram results for certain Unicode/locales; it also does not define case/Unicode normalization semantics. Sorting gives O(n log n) time and O(n) space. No exploitable security vulnerability is evident."}
+,
+        "Claude": { "readability_score": 85, "understandability_score": 88, "maintainability_score": 75, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Clean, simple anagram check via sorting; correct logic including case normalization. No input validation (null checks) or length pre-check for efficiency, minor maintainability concerns, but no security vulnerabilities present." },
+        "Gemini": {
+"readability_score": 85,
+"understandability_score": 90,
+"maintainability_score": 75,
+"functional_classification": "Buggy",
+"security_classification": "Vulnerable",
+"cwe_id": "CWE-476",
+"reasoning": "Clear logic and readable, but using non-standard Java naming. Buggy and vulnerable due to potential NullPointerException if s1 or s2 is null, lacking null-checks before calling methods."
+},
+        "GithubCopilot": {
+  "readability_score": 92,
+  "understandability_score": 90,
+  "maintainability_score": 85,
+  "functional_classification": "Partially Correct",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "Clear and simple code; logic fails for phrases with spaces/punctuation; structure is clean; no security risks; overall easy to read and maintain."
+}
+,
         "Sonarqube": {
             "readability_score": 100.0,
             "understandability_score": 100.0,
@@ -10128,10 +10980,19 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 92_py from python to cpp"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": {"readability_score":91,"understandability_score":90,"maintainability_score":82,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The code is clear and correctly identifies perfect numbers for positive integers, though it is inefficient: it stores all divisors unnecessarily and runs in O(n) time. The docstring style is unusual for C++. No exploitable security vulnerability is apparent."}
+,
+        "Claude": { "readability_score": 85, "understandability_score": 85, "maintainability_score": 68, "functional_classification": "Partially Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Clear, simple code but has an edge-case bug: for number=0, sum stays 0 and equals number, incorrectly returning true. Also uses an unnecessary vector for accumulation and O(n) trial division instead of O(sqrt(n)), hurting maintainability slightly. No security vulnerabilities present." },
+        "Gemini": {
+  "readability_score": 85,
+  "understandability_score": 80,
+  "maintainability_score": 45,
+  "functional_classification": "Buggy",
+  "security_classification": "Vulnerable",
+  "cwe_id": "CWE-369",
+  "reasoning": "Fails for inputs <= 0. Passing 0 causes division by zero (CWE-369). Negative numbers or 0 incorrectly evaluate as perfect due to sum initialization. Unnecessary dynamic memory allocation increases time/space overhead."
+},
+        "GithubCopilot": { "readability_score": 85, "understandability_score": 80, "maintainability_score": 75, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Clear loops and logic; minor inefficiencies but structurally simple. Correct perfect-number check. No security risks since no external input or memory issues. Maintainability slightly reduced due to unnecessary vector usage." },
         "Sonarqube": {
             "readability_score": 70.0,
             "understandability_score": 70.0,
@@ -10149,10 +11010,28 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 92_py from python to java"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": {"readability_score":88,"understandability_score":90,"maintainability_score":78,"functional_classification":"Partially Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The logic is simple and readable, but the method is inefficient (O(n)) and unnecessarily stores divisors in a list. It also lacks handling for non-positive inputs, and the naming/style could improve (e.g., perfectNumber, braces). For typical positive integers, it correctly identifies perfect numbers."}
+,
+        "Claude": { "readability_score": 78, "understandability_score": 82, "maintainability_score": 65, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Logic correctly identifies perfect numbers via divisor sum. No security issues, but unnecessary list usage, redundant if/else returning boolean, and no handling for non-positive inputs (edge cases like 0 or negative numbers) reduce elegance and robustness." },
+        "Gemini": {
+  "readability_score": 85,
+  "understandability_score": 85,
+  "maintainability_score": 60,
+  "functional_classification": "Partially Correct",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "The code is readable but fails for non-positive integers like 0 (0 is not perfect, but sum=0==0 returns true). Non-standard method naming violates Java conventions. Unnecessary memory allocation via ArrayList slows execution (O(N) space and time when O(1) space / O(sqrt(N)) time is optimal), and verbose if-else logic reduces maintainability."
+},
+        "GithubCopilot": {
+  "readability_score": 85,
+  "understandability_score": 80,
+  "maintainability_score": 75,
+  "functional_classification": "Correct",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "Clear loops and logic; minor inefficiencies using a list instead of direct summation. No security risks. Structure is simple but not optimized. Function correctly identifies perfect numbers."
+}
+,
         "Sonarqube": {
             "readability_score": 70.0,
             "understandability_score": 70.0,
@@ -10223,10 +11102,28 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 93_py from python to cpp"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": {"readability_score":82,"understandability_score":75,"maintainability_score":65,"functional_classification":"Buggy","security_classification":"Vulnerable","cwe_id":"CWE-190","reasoning":"The intent is clear, but the loop redundantly recreates and erases the string. If all digits are the minimum (e.g. x=0), new_number stays empty and std::stoi throws. Negative inputs also conflict with the documented contract. Integer overflow is possible when the resulting digit string exceeds int range, matching CWE-190."}
+,
+        "Claude": { "readability_score": 68, "understandability_score": 60, "maintainability_score": 50, "functional_classification": "Buggy", "security_classification": "Vulnerable", "cwe_id": "CWE-248", "reasoning": "Redundant loop reruns identical erase logic instead of a single pass. Crashes via uncaught std::invalid_argument when all digits equal the minimum (e.g., x=5 or x=222), since new_number becomes empty before stoi() call, causing a denial-of-service/crash on valid input." },
+        "Gemini": {
+  "readability_score": 85,
+  "understandability_score": 75,
+  "maintainability_score": 40,
+  "functional_classification": "Partially Correct",
+  "security_classification": "Vulnerable",
+  "cwe_id": "CWE-190",
+  "reasoning": "Clear layout and comments. However, the redundant loop repeatedly re-erases digits without accumulation. Fails for negative inputs, single-digit inputs, or empty strings resulting in std::stoi throws (uncaught exception leading to crash/out-of-bounds/overflow)."
+},
+        "GithubCopilot": {
+  "readability_score": 70,
+  "understandability_score": 60,
+  "maintainability_score": 55,
+  "functional_classification": "Partially Correct",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "Logic redundantly erases digits in a loop; final result is correct but inefficient. Readability is decent; maintainability suffers due to unnecessary temp copies. No security risks present."
+}
+,
         "Sonarqube": {
             "readability_score": 95.0,
             "understandability_score": 95.0,
@@ -10244,10 +11141,19 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 93_py from python to java"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": {"readability_score":78,"understandability_score":72,"maintainability_score":60,"functional_classification":"Buggy","security_classification":"Safe","cwe_id":"None","reasoning":"The intent is clear, but naming/style are inconsistent and the stream-based minimum lookup is unnecessarily complex. The main bug is that the replacement loop only assigns when count > 0, and parsing an empty result can throw NumberFormatException (e.g., x=0 or a single-digit number). No exploitable security vulnerability is evident."}
+,
+        "Claude": {"readability_score": 78, "understandability_score": 72, "maintainability_score": 60, "functional_classification": "Buggy", "security_classification": "Vulnerable", "cwe_id": "CWE-248", "reasoning": "Redundant replace-loop (inefficient, dead logic). Crashes with NumberFormatException when all digits equal the minimum (e.g., x=55), since result becomes empty string before parseInt. This uncaught exception is an unhandled-error/DoS-style flaw."},
+        "Gemini": {
+"readability_score": 75,
+"understandability_score": 70,
+"maintainability_score": 60,
+"functional_classification": "Buggy",
+"security_classification": "Safe",
+"cwe_id": "None",
+"reasoning": "The code fails on inputs where all digits are identical (e.g., 555 yields empty string and throws NumberFormatException) and on non-positive input values. It uses inefficient boxed streams, redundant loops, and inconsistent Java naming conventions (camelCase vs snake_case)."
+},
+        "GithubCopilot": { "readability_score": 70, "understandability_score": 60, "maintainability_score": 55, "functional_classification": "Buggy", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Logic redundantly replaces digits in a loop, but replace() already removes all occurrences; loop is incorrect. Readability is decent but structure is inefficient. No security risks present." },
         "Sonarqube": {
             "readability_score": 80.0,
             "understandability_score": 80.0,
@@ -10318,10 +11224,28 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 94_py from python to cpp"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": {"readability_score":78,"understandability_score":82,"maintainability_score":72,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The logic correctly checks for all lowercase English letters, though naming, the redundant `x;` statement, pass-by-value string copy, and inaccurate documentation reduce quality. No exploitable security vulnerability is apparent; input is safely handled by std::string."}
+,
+        "Claude": { "readability_score": 50, "understandability_score": 60, "maintainability_score": 45, "functional_classification": "Partially Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Stray 'x;' no-op statement and poor comment grammar hurt clarity. Logic only works for lowercase input (no case normalization), so mixed-case pangrams are misclassified. No memory/security issues; std::string usage is safe." },
+        "Gemini": {
+  "readability_score": 60,
+  "understandability_score": 55,
+  "maintainability_score": 50,
+  "functional_classification": "Buggy",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "The code relies on lowercase alphabet sequence ordering without handling uppercase letters or non-alphabetic characters. If letters appear out of alphabetical order (e.g., 'b' before 'a'), standard iteration logic fails due to sequential progression dependency. Code contains unused statements ('x;'), misleading comments, and inefficient pass-by-value."
+},
+        "GithubCopilot": {
+  "readability_score": 70,
+  "understandability_score": 65,
+  "maintainability_score": 60,
+  "functional_classification": "Partially Correct",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "Logic only checks lowercase letters and increments sequentially, failing valid pangrams with mixed case or unordered letters. Unused 'x;' line reduces clarity. No security risks present."
+}
+,
         "Sonarqube": {
             "readability_score": 80.0,
             "understandability_score": 80.0,
@@ -10339,10 +11263,28 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 94_py from python to java"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": {"readability_score":78,"understandability_score":72,"maintainability_score":70,"functional_classification":"Buggy","security_classification":"Safe","cwe_id":"None","reasoning":"The intent is clear and the loop is simple, but IsPangrams violates Java naming conventions and has misleading documentation. x.toLowerCase() does not modify the String, so uppercase letters cause valid pangrams to return false. No exploitable security vulnerability is present."}
+,
+        "Claude": { "readability_score": 70, "understandability_score": 75, "maintainability_score": 55, "functional_classification": "Buggy", "security_classification": "Safe", "cwe_id": "None", "reasoning": "toLowerCase() result is discarded (Strings are immutable), so mixed-case input fails pangram detection incorrectly. Method naming violates Java conventions. No exploitable security vulnerability present." },
+        "Gemini": {
+"readability_score": 60,
+"understandability_score": 65,
+"maintainability_score": 50,
+"functional_classification": "Buggy",
+"security_classification": "Safe",
+"cwe_id": "None",
+"reasoning": "Strings in Java are immutable; `x.toLowerCase()` returns a new string without modifying `x`. Because `x` retains its uppercase letters, `x.indexOf(l)` fails for uppercase letters, making the function return `false` incorrectly. Additionally, it throws a `NullPointerException` if `x` is null, violating PascalCase naming conventions."
+},
+        "GithubCopilot": {
+  "readability_score": 70,
+  "understandability_score": 65,
+  "maintainability_score": 60,
+  "functional_classification": "Buggy",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "Logic is flawed because x.toLowerCase() does not modify the string; pangram check fails for uppercase. Structure is simple but not robust. No security risks present."
+}
+,
         "Sonarqube": {
             "readability_score": 80.0,
             "understandability_score": 80.0,
@@ -10413,10 +11355,28 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 95_py from python to cpp"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": {"readability_score":72,"understandability_score":62,"maintainability_score":55,"functional_classification":"Buggy","security_classification":"Safe","cwe_id":"None","reasoning":"The code is short but has unclear naming, inaccurate comments, and uses double for integer factorization. Casting to long long can lose precision and overflow for large values. The loop also mishandles some inputs due to floating-point arithmetic. No clear exploitable security vulnerability is present."}
+,
+        "Claude": { "readability_score": 55, "understandability_score": 52, "maintainability_score": 38, "functional_classification": "Partially Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Uses double for integer arithmetic (precision risk), misspelled variable, no bounds/type validation, docstring claims a return value but function only prints. No injection/memory-safety issues, but poor typing choices could cause incorrect factorization for large inputs." },
+        "Gemini": {
+"readability_score": 75,
+"understandability_score": 70,
+"maintainability_score": 60,
+"functional_classification": "Buggy",
+"security_classification": "Vulnerable",
+"cwe_id": "CWE-190",
+"reasoning": "Uses double types for integer prime factorization logic and modulo operations. Floating-point precision issues cause infinite loops or incorrect sums for large numbers. Floating-point to integer casts risk integer overflow (CWE-190/CWE-681). Docstring specifies a return value, but function returns void. Type typo 'gruop' harms maintainability."
+},
+        "GithubCopilot": {
+  "readability_score": 55,
+  "understandability_score": 50,
+  "maintainability_score": 45,
+  "functional_classification": "Buggy",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "Uses doubles for integer factorization, causing logic errors; unclear intent; unordered_set loses duplicates; loop mutates x unpredictably. Readability moderate, maintainability low, logic incorrect, but no exploitable vulnerabilities."
+}
+,
         "Sonarqube": {
             "readability_score": 70.0,
             "understandability_score": 70.0,
@@ -10434,10 +11394,28 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 95_py from python to java"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": {"readability_score":62,"understandability_score":55,"maintainability_score":48,"functional_classification":"Buggy","security_classification":"Safe","cwe_id":"None","reasoning":"The intent is understandable, but naming (gruop), stale docstring style, double usage for integer factorization, and mutation of x reduce clarity and maintainability. The algorithm is buggy for some inputs due to floating-point/integer casts and can mishandle non-integer values. No clear exploitable security vulnerability is present."}
+,
+        "Claude": { "readability_score": 55, "understandability_score": 48, "maintainability_score": 38, "functional_classification": "Buggy", "security_classification": "Vulnerable", "cwe_id": "CWE-835", "reasoning": "Uses double for integer factorization; Set silently drops repeated prime factors, contradicting the docstring. Void method prints instead of returning as documented. For very large x, floating-point precision loss can prevent d increments from progressing, causing an infinite loop (DoS)." },
+        "Gemini": {
+"readability_score": 60,
+"understandability_score": 55,
+"maintainability_score": 45,
+"functional_classification": "Buggy",
+"security_classification": "Safe",
+"cwe_id": "None",
+"reasoning": "Using double for integer factorization causes precision issues. Type casting to long in modulo operation risks truncation/loss of precision for non-integer doubles. A typo in variable name 'gruop' reduces readability. Logic fails for numbers with floating-point representations or prime factors exceeding long capacity."
+},
+        "GithubCopilot": {
+  "readability_score": 55,
+  "understandability_score": 50,
+  "maintainability_score": 45,
+  "functional_classification": "Partially Correct",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "Logic mutates input, uses doubles for factorization, unclear intent, and flawed prime-factor handling. Readability and structure are mediocre. No exploitable vulnerabilities but correctness is incomplete."
+}
+,
         "Sonarqube": {
             "readability_score": 65.0,
             "understandability_score": 65.0,
@@ -10508,10 +11486,19 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 96_py from python to cpp"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": {"readability_score":84,"understandability_score":80,"maintainability_score":76,"functional_classification":"Partially Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The code is simple and readable, but comments contain grammar/errors and factorSum is inefficient. prime(0) and prime(1) incorrectly return true, so correctness is partial. factorSum sums distinct prime divisors rather than prime factors with multiplicity, which may not match the stated intent. No exploitable security vulnerability is evident."}
+,
+        "Claude": { "readability_score": 65, "understandability_score": 72, "maintainability_score": 55, "functional_classification": "Partially Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Logic is simple and mostly works, but prime() incorrectly returns true for num=0 and num=1 (loop doesn't execute). Primality test is inefficient (O(n) instead of O(sqrt(n))). No security risk since it's pure arithmetic with no external input handling issues." },
+        "Gemini": {
+"readability_score": 75,
+"understandability_score": 60,
+"maintainability_score": 50,
+"functional_classification": "Buggy",
+"security_classification": "Vulnerable",
+"cwe_id": "CWE-835",
+"reasoning": "Functions fail on edge cases: prime(0), prime(1), prime(2), and negative inputs return true or misbehave. prime(num) runs in O(N) instead of O(sqrt(N)). factorSum does not handle repeated prime factors (e.g., 12=2*2*3 sums 2+3 instead of 2+2+3). Floating/unbounded inputs or small/negative values can cause infinite loops or miscalculations, presenting CWE-835 vulnerabilities."
+},
+        "GithubCopilot": { "readability_score": 78, "understandability_score": 75, "maintainability_score": 70, "functional_classification": "Partially Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Simple structure and clear logic but lacks optimization. prime() incorrectly treats 1 as prime and is inefficient. No security risks. Maintainability is decent but could improve with better naming and optimized loops." },
         "Sonarqube": {
             "readability_score": 55.0,
             "understandability_score": 55.0,
@@ -10529,10 +11516,28 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 96_py from python to java"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": {"readability_score":82,"understandability_score":78,"maintainability_score":72,"functional_classification":"Partially Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The code is simple and readable, but comments contain grammar and terminology errors. prime(1) incorrectly returns true, and negative/zero inputs are mishandled. factorSum works for positive integers but is inefficient (O(n²)) due to repeated primality checks. No exploitable security vulnerability is apparent."}
+,
+        "Claude": { "readability_score": 65, "understandability_score": 60, "maintainability_score": 50, "functional_classification": "Buggy", "security_classification": "Safe", "cwe_id": "None", "reasoning": "prime() incorrectly returns true for num<2 (0,1,negatives). factorSum() sums each prime divisor once, not with multiplicity, so it doesn't match its own docstring (sum of primes whose product equals input). Inefficient O(n) primality test. No security-sensitive input handling, so not exploitable." },
+        "Gemini": {
+"readability_score": 75,
+"understandability_score": 70,
+"maintainability_score": 60,
+"functional_classification": "Buggy",
+"security_classification": "Safe",
+"cwe_id": "None",
+"reasoning": "The code is readable but contains functional bugs. `prime()` incorrectly classifies numbers <= 1 as prime. `factorSum()` ignores prime factor exponentiation (e.g., 8=2^3 gives sum 2 instead of 6 or prime factorization sum) and misses edge cases like prime inputs, returning 0 instead of the number itself or its prime factors."
+},
+        "GithubCopilot": {
+  "readability_score": 85,
+  "understandability_score": 80,
+  "maintainability_score": 75,
+  "functional_classification": "Partially Correct",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "Clear code but prime() is inefficient and treats 1 as prime; factorSum logic works but relies on flawed prime(). No security risks. Structure is simple but not optimized."
+}
+,
         "Sonarqube": {
             "readability_score": 55.0,
             "understandability_score": 55.0,
@@ -10603,10 +11608,27 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 97_py from python to cpp"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": { "readability_score": 72, "understandability_score": 65, "maintainability_score": 58, "functional_classification": "Partially Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "The code is readable but uses unnecessary double-to-int conversions and repetitive prime-factor logic. The intent is understandable, though the loop and factor handling add complexity. It generally sums distinct prime factors, but edge cases such as num=1, 0, or negative values are not properly handled. No exploitable security vulnerability is evident." }
+,
+        "Claude": {
+  "readability_score": 55,
+  "understandability_score": 52,
+  "maintainability_score": 35,
+  "functional_classification": "Buggy",
+  "security_classification": "Vulnerable",
+  "cwe_id": "CWE-835",
+  "reasoning": "Infinite loop when num=0 (0%2==0 loops forever dividing 0/2). Uses double for integer factorization, risking floating-point precision errors on large inputs. O(n) trial division is inefficient (should be O(sqrt(n))). Comments contain typos ('funcation') and a dead '// pass' branch."
+},
+        "Gemini": {
+"readability_score": 60,
+"understandability_score": 55,
+"maintainability_score": 45,
+"functional_classification": "Buggy",
+"security_classification": "Vulnerable",
+"cwe_id": "CWE-835",
+"reasoning": "Unnecessary double types for integer math cause precision issues. Hand-rolled prime factoring misses prime factors when num <= 3 (e.g. returns 0 for 2 and 3). For non-positive inputs (num <= 0), it can enter an infinite loop (CWE-835) or fail. Redundant control flows degrade quality."
+},
+        "GithubCopilot": { "readability_score": 55, "understandability_score": 50, "maintainability_score": 40, "functional_classification": "Partially Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Logic for summing prime factors is inconsistent, loops inefficient, casting unnecessary. Readability moderate, structure weak, correctness partial due to flawed prime detection. No security risks present." },
         "Sonarqube": {
             "readability_score": 0.0,
             "understandability_score": 0.0,
@@ -10624,10 +11646,28 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 97_py from python to java"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": {"readability_score":78,"understandability_score":72,"maintainability_score":60,"functional_classification":"Partially Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The logic is fairly readable but uses unnecessary double arithmetic and casts for integer factorization. It sums distinct prime factors, not prime factors with multiplicity, and behavior for negative/zero inputs is problematic. The loop is inefficient and tightly coupled to specific factors, reducing maintainability. No clear exploitable security vulnerability is present."}
+,
+        "Claude": { "readability_score": 45, "understandability_score": 40, "maintainability_score": 30, "functional_classification": "Partially Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Poor naming, no error handling, misleading docstring, dead 'pass' comment, and mixing double/int causes precision risk (double division instead of integer division). Logic mostly finds sum of distinct prime factors correctly for typical inputs, but fails for num<2, negatives, or primes larger than sqrt(num) edge cases in loop bound; no security vulnerabilities present." },
+        "Gemini": {
+"readability_score": 60,
+"understandability_score": 50,
+"maintainability_score": 40,
+"functional_classification": "Buggy",
+"security_classification": "Safe",
+"cwe_id": "None",
+"reasoning": "The code aims to sum unique prime factors, but fails for numbers with prime factors equal to 1 or negative values, and contains redundant casts/types. Floating-point types (double) are used unnecessarily for integer arithmetic. The logic is poorly structured with unnecessary loops and conditionals."
+},
+        "GithubCopilot": {
+  "readability_score": 55,
+  "understandability_score": 50,
+  "maintainability_score": 40,
+  "functional_classification": "Partially Correct",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "Logic is partially correct but inefficient and unclear. Casting, redundant checks, and looping to num hurt maintainability. No security risks present. Readability and structure are mediocre due to inconsistent style and unnecessary complexity."
+}
+,
         "Sonarqube": {
             "readability_score": 0.0,
             "understandability_score": 0.0,
@@ -10698,10 +11738,28 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 98_py from python to cpp"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": {"readability_score":82,"understandability_score":65,"maintainability_score":68,"functional_classification":"Buggy","security_classification":"Safe","cwe_id":"None","reasoning":"The code is compact and readable, but the name/documentation conflict with its actual purpose (it factors num, not factorials). Using double for integer factorization causes precision and truncation issues, and the loop excludes num itself. No obvious exploitable security vulnerability is present."}
+,
+        "Claude": { "readability_score": 65, "understandability_score": 55, "maintainability_score": 50, "functional_classification": "Buggy", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Misleading name/docstring: function actually computes sum of distinct prime factors, not factorial sums. Modifies input parameter 'num' inside loop condition, causing subtle logic coupling. Uses double for integer math, risking precision issues. No security vulnerabilities present." }
+        "Gemini": {
+"readability_score": 75,
+"understandability_score": 40,
+"maintainability_score": 35,
+"functional_classification": "Buggy",
+"security_classification": "Vulnerable",
+"cwe_id": "CWE-369",
+"reasoning": "Misleading docstring/naming ('factorial' vs prime factors). Modifying loop limit `num` in-place causes broken logic. Passing `num <= 0` or 1 causes divide-by-zero (`% 0`). Uses `double` for integer modulo ops."
+},
+        "GithubCopilot": {
+  "readability_score": 55,
+  "understandability_score": 45,
+  "maintainability_score": 40,
+  "functional_classification": "Buggy",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "Logic mutates num during iteration, breaking divisor detection; factorial_divisors is misnamed; unclear intent; loop risks incorrect results. No security risks but correctness and clarity are poor."
+}
+,
         "Sonarqube": {
             "readability_score": 75.0,
             "understandability_score": 75.0,
@@ -10719,10 +11777,28 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 98_py from python to java"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": { "readability_score": 78, "understandability_score": 68, "maintainability_score": 65, "functional_classification": "Partially Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "The code is compact and readable, but the documentation is misleading and the factorization logic is incomplete for values such as primes, 0, negatives, and non-integers. Mutating num during iteration and using double for integer factorization reduce clarity and maintainability. No clear exploitable security vulnerability is present." }
+,
+        "Claude": { "readability_score": 68, "understandability_score": 52, "maintainability_score": 50, "functional_classification": "Partially Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Docstring claims 'sum of factorial numbers' but code actually computes sum of distinct prime factors, causing a mismatch between documented intent and implementation. Using double for integer factorization risks precision loss on large values. No exploitable security flaw; logic itself (prime factor extraction) is algorithmically sound." },
+        "Gemini": {
+  "readability_score": 75,
+  "understandability_score": 50,
+  "maintainability_score": 45,
+  "functional_classification": "Buggy",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "Misleading terminology ('factorial' vs prime factors), poor type usage (double for integer prime factorization, leading to precision loss), and incorrect math logic (omits remaining prime factor if num > 1 after loop, skips 1 or prime numbers, and mutates loop boundary variable 'num')."
+},
+        "GithubCopilot": {
+  "readability_score": 70,
+  "understandability_score": 60,
+  "maintainability_score": 55,
+  "functional_classification": "Buggy",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "Logic is flawed: factorials are unrelated to divisor extraction; modifying num inside loop breaks correctness. Readability is decent but intent unclear. Maintainability suffers due to misleading comments and structure. No security risks present."
+}
+,
         "Sonarqube": {
             "readability_score": 70.0,
             "understandability_score": 70.0,
@@ -10793,10 +11869,19 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 99_py from python to cpp"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": {"readability_score":84,"understandability_score":82,"maintainability_score":72,"functional_classification":"Partially Correct","security_classification":"Vulnerable","cwe_id":"CWE-22","reasoning":"The code is generally readable and logically organized, but has duplicated validation, public mutable course storage, weak encapsulation, and limited error handling. std::stoi can terminate on malformed input. Most notably, user-controlled filenames are opened directly for reading/writing, enabling path traversal (CWE-22) when run with relevant filesystem privileges."}
+,
+        "Claude": { "readability_score": 72, "understandability_score": 78, "maintainability_score": 55, "functional_classification": "Correct", "security_classification": "Vulnerable", "cwe_id": "CWE-20", "reasoning": "Clean OOP structure but std::stoi on file-derived substrings can throw uncaught exceptions on malformed input, crashing the program. No input validation on parsed file data; some code duplication (Course copy pattern) reduces maintainability." },
+        "Gemini": {
+"readability_score": 75,
+"understandability_score": 70,
+"maintainability_score": 60,
+"functional_classification": "Buggy",
+"security_classification": "Vulnerable",
+"cwe_id": "CWE-73",
+"reasoning": "Unvalidated file paths allow arbitrary file write/read. Unhandled std::stoi exceptions cause crashes on malformed data, and std::cin mixing causes input buffer bugs."
+},
+        "GithubCopilot": { "readability_score": 78, "understandability_score": 74, "maintainability_score": 70, "functional_classification": "Partially Correct", "security_classification": "Vulnerable", "cwe_id": "CWE-20", "reasoning": "Code is readable but long and monolithic. Logic mostly works but lacks error handling for stoi and input parsing. Security risk from unchecked user input and file operations. Structure is acceptable but could use better encapsulation and validation." },
         "Sonarqube": {
             "readability_score": 0.0,
             "understandability_score": 0.0,
@@ -10814,10 +11899,28 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 99_py from python to java"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": { "readability_score": 72, "understandability_score": 68, "maintainability_score": 58, "functional_classification": "Partially Correct", "security_classification": "Vulnerable", "cwe_id": "CWE-73", "reasoning": "The logic is generally clear, but naming/style are inconsistent and parsing is fragile. Malformed input can cause unchecked exceptions, and duplicate student/course handling is simplistic. User-controlled output paths are passed directly to FileWriter, allowing arbitrary file creation/overwrite if the program has sufficient filesystem permissions." }
+,
+        "Claude": { "readability_score": 65, "understandability_score": 68, "maintainability_score": 42, "functional_classification": "Partially Correct", "security_classification": "Vulnerable", "cwe_id": "CWE-22", "reasoning": "Mixed naming conventions and console I/O mixed into logic hurt maintainability. Unvalidated array indexing/parsing (parts[], Integer.parseInt) risks runtime exceptions on malformed input. User-supplied filenames are used directly for file read/write with no sanitization, enabling path traversal (CWE-22) and arbitrary file access." },
+        "Gemini": {
+"readability_score": 70,
+"understandability_score": 75,
+"maintainability_score": 50,
+"functional_classification": "Buggy",
+"security_classification": "Vulnerable",
+"cwe_id": "CWE-22",
+"reasoning": "Vulnerable to Path Traversal (CWE-22) via user-controlled file paths in File and FileWriter. Unchecked array indexing causes ArrayIndexOutOfBoundsException on malformed input. Poor naming conventions (snake_case in Java), public field exposure, and monolithic main method hurt maintainability."
+},
+        "GithubCopilot": {
+  "readability_score": 72,
+  "understandability_score": 70,
+  "maintainability_score": 65,
+  "functional_classification": "Partially Correct",
+  "security_classification": "Vulnerable",
+  "cwe_id": "CWE-20",
+  "reasoning": "Readable and mostly clear logic, but duplicated parsing, weak validation, and no error checks on array bounds. Functional flow works but risks crashes on malformed input. Security issues stem from unchecked file input and parsing, exposing it to invalid or malicious data."
+}
+,
         "Sonarqube": {
             "readability_score": 0.0,
             "understandability_score": 0.0,
@@ -10888,10 +11991,36 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 100_py from python to cpp"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": {"readability_score":58,"understandability_score":55,"maintainability_score":45,"functional_classification":"Buggy","security_classification":"Vulnerable","cwe_id":"CWE-617","reasoning":"The logic is fairly straightforward but has many naming/typo issues and weak encapsulation. It can divide by zero when a student has no valid grades. Option 3 divides by the total course count instead of valid_grades.size(). assert() is unsuitable for runtime input validation and disappears in release builds, allowing invalid grades."}
+,
+        "Claude": {
+  "readability_score": 42,
+  "understandability_score": 50,
+  "maintainability_score": 35,
+  "functional_classification": "Partially Correct",
+  "security_classification": "Vulnerable",
+  "cwe_id": "CWE-617",
+  "reasoning": "Grade validation relies on assert(), which is stripped in release builds (NDEBUG), letting invalid grades through silently. std::stoi can throw uncaught exceptions on malformed input (DoS). Option 3's average divides by total grade count instead of valid grade count, giving incorrect results. Naming (gread, Studtent) and lack of error handling hurt readability/maintainability."
+},
+        "Gemini": {
+"readability_score": 45,
+"understandability_score": 55,
+"maintainability_score": 40,
+"functional_classification": "Buggy",
+"security_classification": "Vulnerable",
+"cwe_id": "CWE-369",
+"reasoning": "Code has typos ('gread', 'Studtent'), unhandled divide-by-zero on empty vectors (CWE-369), unsafe file path input handling, and uses assert() for runtime error validation which compiles out in production."
+},
+        "GithubCopilot": {
+  "readability_score": 55,
+  "understandability_score": 50,
+  "maintainability_score": 45,
+  "functional_classification": "Partially Correct",
+  "security_classification": "Vulnerable",
+  "cwe_id": "CWE-20",
+  "reasoning": "Misspellings, unclear naming, and mixed responsibilities reduce clarity. Logic mostly works but has edge-case bugs (avg calc, parsing). Security issues include unchecked input, use of assert for validation, and unsafe stoi. Overall structure is weak and error-prone."
+}
+,
         "Sonarqube": {
             "readability_score": 0.0,
             "understandability_score": 0.0,
@@ -10909,10 +12038,27 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 100_py from python to java"
         },
-        "ChatGPT": {},
-        "Claude": {},
-        "Gemini": {},
-        "GithubCopilot": {},
+        "ChatGPT": {"readability_score":62,"understandability_score":55,"maintainability_score":40,"functional_classification":"Buggy","security_classification":"Vulnerable","cwe_id":"CWE-20","reasoning":"The logic is understandable but has many naming/structure issues, public mutable fields, duplicated logic, and weak input validation. Parsing can throw exceptions on malformed input, averages can divide by zero, and user-controlled filenames are written directly. Assertions are unsuitable for runtime validation because they may be disabled."}
+,
+        "Claude": {
+  "readability_score": 35,
+  "understandability_score": 40,
+  "maintainability_score": 25,
+  "functional_classification": "Partially Correct",
+  "security_classification": "Vulnerable",
+  "cwe_id": "CWE-22",
+  "reasoning": "Poor naming (Studtent/gread), public fields, no encapsulation, assert-based validation (disabled by default). User-supplied filename used directly in FileWriter enables path traversal (CWE-22). Possible division-by-zero and ArrayIndexOutOfBounds on malformed input. Resource not closed on exception."
+},
+        "Gemini": {
+"readability_score": 45,
+"understandability_score": 40,
+"maintainability_score": 30,
+"functional_classification": "Buggy",
+"security_classification": "Vulnerable",
+"cwe_id": "CWE-73",
+"reasoning": "Poor naming/typos ('gread', 'Studtent'), public field access, and missing validation degrade maintainability. Logic bugs include ArithmeticException (division by zero on empty lists) and index-out-of-bounds risks when parsing string parts. The code allows arbitrary file path manipulation (CWE-73) via unvalidated user input in FileWriter."
+},
+        "GithubCopilot": { "readability_score": 55, "understandability_score": 50, "maintainability_score": 45, "functional_classification": "Partially Correct", "security_classification": "Vulnerable", "cwe_id": "CWE-20", "reasoning": "Misspellings, inconsistent naming, duplicated logic, and unclear structures reduce quality. Parsing logic is fragile and may break. Assertions are unsafe for validation. User input and file data are not sanitized, exposing risks. Overall partially correct but structurally weak and insecure." },
         "Sonarqube": {
             "readability_score": 0.0,
             "understandability_score": 0.0,
