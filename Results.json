@@ -6,6 +6,16 @@
             "origin": "Cui_2024",
             "external_reference_url": "Figure 3(a)"
         },
+		"Human":
+		{
+			"readability_score": 85,
+            "understandability_score": 90,
+            "maintainability_score": 85,
+            "functional_classification": "Correct",
+            "security_classification": "Vulnerable",
+            "cwe_id": "",
+            "reasoning": ""
+		}
         "ChatGPT": {
             "readability_score": 78,
             "understandability_score": 80,
