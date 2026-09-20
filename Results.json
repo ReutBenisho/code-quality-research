@@ -6,7 +6,7 @@
             "origin": "Cui_2024",
             "external_reference_url": "Figure 3(a)"
         },
-		"Human":
+		"Human1":
 		{
 			"readability_score": 85,
             "understandability_score": 90,
@@ -69,7 +69,7 @@
             "origin": "transFromJava",
             "external_reference_url": "Translatetd file 1_java from java to cpp"
         },
-		"Human":
+		"Human1":
 		{
 			"readability_score": 85,
             "understandability_score": 90,
@@ -132,7 +132,7 @@
             "origin": "transFromJava",
             "external_reference_url": "Translatetd file 1_java from java to python"
         },
-		"Human":
+		"Human1":
 		{
 			"readability_score": 85,
             "understandability_score": 90,
@@ -195,7 +195,7 @@
             "origin": "Cui_2024",
             "external_reference_url": "Figure 3(b)"
         },
-		"Human":
+		"Human1":
 		{
 			"readability_score": 90,
             "understandability_score": 100,
@@ -258,7 +258,7 @@
             "origin": "transFromJava",
             "external_reference_url": "Translatetd file 2_java from java to cpp"
         },
-		"Human":
+		"Human1":
 		{
 			"readability_score": 90,
             "understandability_score": 100,
@@ -321,7 +321,7 @@
             "origin": "transFromJava",
             "external_reference_url": "Translatetd file 2_java from java to python"
         },
-		"Human":
+		"Human1":
 		{
 			"readability_score": 85,
             "understandability_score": 100,
@@ -384,7 +384,7 @@
             "origin": "Cui_2024",
             "external_reference_url": "Figure 3(c)"
         },
-		"Human":
+		"Human1":
 		{
 			"readability_score": 95,
             "understandability_score": 85,
@@ -447,7 +447,7 @@
             "origin": "transFromJava",
             "external_reference_url": "Translatetd file 3_java from java to cpp"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 95,
             "understandability_score": 85,
             "maintainability_score": 50,
@@ -509,7 +509,7 @@
             "origin": "transFromJava",
             "external_reference_url": "Translatetd file 3_java from java to python"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 95,
             "understandability_score": 85,
             "maintainability_score": 50,
@@ -571,7 +571,7 @@
             "origin": "Cui_2024",
             "external_reference_url": "Figure 3(d)"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 85,
             "understandability_score": 80,
             "maintainability_score": 50,
@@ -633,7 +633,7 @@
             "origin": "transFromJava",
             "external_reference_url": "Translatetd file 4_java from java to cpp"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 85,
             "understandability_score": 80,
             "maintainability_score": 50,
@@ -695,7 +695,7 @@
             "origin": "transFromJava",
             "external_reference_url": "Translatetd file 4_java from java to python"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 85,
             "understandability_score": 80,
             "maintainability_score": 50,
@@ -757,7 +757,7 @@
             "origin": "Cui_2024",
             "external_reference_url": "Figure 3(e)"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 85,
             "understandability_score": 80,
             "maintainability_score": 90,
@@ -819,7 +819,7 @@
             "origin": "transFromJava",
             "external_reference_url": "Translatetd file 5_java from java to cpp"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 85,
             "understandability_score": 80,
             "maintainability_score": 90,
@@ -881,7 +881,7 @@
             "origin": "transFromJava",
             "external_reference_url": "Translatetd file 5_java from java to python"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 85,
             "understandability_score": 80,
             "maintainability_score": 90,
@@ -943,7 +943,7 @@
             "origin": "Cui_2024",
             "external_reference_url": "Figure 3(f)"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 85,
             "understandability_score": 80,
             "maintainability_score": 80,
@@ -1005,7 +1005,7 @@
             "origin": "transFromJava",
             "external_reference_url": "Translatetd file 6_java from java to cpp"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 85,
             "understandability_score": 80,
             "maintainability_score": 80,
@@ -1067,7 +1067,7 @@
             "origin": "transFromJava",
             "external_reference_url": "Translatetd file 6_java from java to python"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 85,
             "understandability_score": 80,
             "maintainability_score": 80,
@@ -1129,7 +1129,7 @@
             "origin": "Cui_2024",
             "external_reference_url": "Figure 5(a)"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 90,
             "understandability_score": 80,
             "maintainability_score": 50,
@@ -1191,7 +1191,7 @@
             "origin": "transFromJava",
             "external_reference_url": "Translatetd file 7_java from java to cpp"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 95,
             "understandability_score": 95,
             "maintainability_score": 85,
@@ -1253,7 +1253,7 @@
             "origin": "transFromJava",
             "external_reference_url": "Translatetd file 7_java from java to python"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 95,
             "understandability_score": 95,
             "maintainability_score": 85,
@@ -1315,7 +1315,7 @@
             "origin": "Cui_2024",
             "external_reference_url": "Figure 5(b)"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 85,
             "understandability_score": 80,
             "maintainability_score": 70,
@@ -1377,7 +1377,7 @@
             "origin": "transFromJava",
             "external_reference_url": "Translatetd file 8_java from java to cpp"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 85,
             "understandability_score": 80,
             "maintainability_score": 70,
@@ -1440,7 +1440,7 @@
             "origin": "transFromJava",
             "external_reference_url": "Translatetd file 8_java from java to python"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 85,
             "understandability_score": 80,
             "maintainability_score": 70,
@@ -1503,7 +1503,7 @@
             "origin": "Cui_2024",
             "external_reference_url": "Figure 5(c)"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 85,
             "understandability_score": 90,
             "maintainability_score": 75,
@@ -1565,7 +1565,7 @@
             "origin": "transFromJava",
             "external_reference_url": "Translatetd file 9_java from java to cpp"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 85,
             "understandability_score": 90,
             "maintainability_score": 75,
@@ -1627,7 +1627,7 @@
             "origin": "transFromJava",
             "external_reference_url": "Translatetd file 9_java from java to python"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 85,
             "understandability_score": 90,
             "maintainability_score": 75,
@@ -1689,7 +1689,7 @@
             "origin": "Cui_2024",
             "external_reference_url": "Figure 5(d)"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 70,
             "understandability_score": 60,
             "maintainability_score": 30,
@@ -1751,7 +1751,7 @@
             "origin": "transFromJava",
             "external_reference_url": "Translatetd file 10_java from java to cpp"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 70,
             "understandability_score": 60,
             "maintainability_score": 30,
@@ -1813,7 +1813,7 @@
             "origin": "transFromJava",
             "external_reference_url": "Translatetd file 10_java from java to python"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 70,
             "understandability_score": 60,
             "maintainability_score": 30,
@@ -1875,7 +1875,7 @@
             "origin": "Cui_2024",
             "external_reference_url": "Figure 5(e)"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 90,
             "understandability_score": 85,
             "maintainability_score": 85,
@@ -1937,7 +1937,7 @@
             "origin": "transFromJava",
             "external_reference_url": "Translatetd file 11_java from java to cpp"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 90,
             "understandability_score": 85,
             "maintainability_score": 85,
@@ -1999,7 +1999,7 @@
             "origin": "transFromJava",
             "external_reference_url": "Translatetd file 11_java from java to python"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 90,
             "understandability_score": 85,
             "maintainability_score": 85,
@@ -2061,7 +2061,7 @@
             "origin": "Cui_2024",
             "external_reference_url": "Figure 5(f)"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 90,
             "understandability_score": 75,
             "maintainability_score": 60,
@@ -2123,7 +2123,7 @@
             "origin": "transFromJava",
             "external_reference_url": "Translatetd file 12_java from java to cpp"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 90,
             "understandability_score": 75,
             "maintainability_score": 60,
@@ -2185,7 +2185,7 @@
             "origin": "transFromJava",
             "external_reference_url": "Translatetd file 12_java from java to python"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 90,
             "understandability_score": 85,
             "maintainability_score": 60,
@@ -2247,7 +2247,7 @@
             "origin": "Cui_2024",
             "external_reference_url": "Figure 5(g)"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 80,
             "understandability_score": 80,
             "maintainability_score": 90,
@@ -2309,7 +2309,7 @@
             "origin": "transFromJava",
             "external_reference_url": "Translatetd file 13_java from java to cpp"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 80,
             "understandability_score": 80,
             "maintainability_score": 70,
@@ -2371,7 +2371,7 @@
             "origin": "transFromJava",
             "external_reference_url": "Translatetd file 13_java from java to python"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 80,
             "understandability_score": 80,
             "maintainability_score": 50,
@@ -2433,7 +2433,7 @@
             "origin": "Cui_2024",
             "external_reference_url": "Figure 5(h)"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 85,
             "understandability_score": 80,
             "maintainability_score": 50,
@@ -2495,7 +2495,7 @@
             "origin": "transFromJava",
             "external_reference_url": "Translatetd file 14_java from java to cpp"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 85,
             "understandability_score": 80,
             "maintainability_score": 50,
@@ -2557,7 +2557,7 @@
             "origin": "transFromJava",
             "external_reference_url": "Translatetd file 14_java from java to python"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 85,
             "understandability_score": 80,
             "maintainability_score": 50,
@@ -2619,7 +2619,7 @@
             "origin": "Cui_2024",
             "external_reference_url": "Table 3(a)"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 85,
             "understandability_score": 85,
             "maintainability_score": 70,
@@ -2681,7 +2681,7 @@
             "origin": "transFromJava",
             "external_reference_url": "Translatetd file 15_java from java to cpp"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 85,
             "understandability_score": 85,
             "maintainability_score": 70,
@@ -2743,7 +2743,7 @@
             "origin": "transFromJava",
             "external_reference_url": "Translatetd file 15_java from java to python"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 85,
             "understandability_score": 85,
             "maintainability_score": 70,
@@ -2805,7 +2805,7 @@
             "origin": "Cui_2024",
             "external_reference_url": "Table 3(b)"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 100,
             "understandability_score": 95,
             "maintainability_score": 90,
@@ -2867,7 +2867,7 @@
             "origin": "transFromJava",
             "external_reference_url": "Translatetd file 16_java from java to cpp"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 100,
             "understandability_score": 95,
             "maintainability_score": 90,
@@ -2929,7 +2929,7 @@
             "origin": "transFromJava",
             "external_reference_url": "Translatetd file 16_java from java to python"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 100,
             "understandability_score": 95,
             "maintainability_score": 90,
@@ -2991,7 +2991,7 @@
             "origin": "Cui_2024",
             "external_reference_url": "Table 3(c)"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 75,
             "understandability_score": 85,
             "maintainability_score": 60,
@@ -3053,7 +3053,7 @@
             "origin": "transFromJava",
             "external_reference_url": "Translatetd file 17_java from java to cpp"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 75,
             "understandability_score": 85,
             "maintainability_score": 60,
@@ -3115,7 +3115,7 @@
             "origin": "transFromJava",
             "external_reference_url": "Translatetd file 17_java from java to python"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 75,
             "understandability_score": 85,
             "maintainability_score": 60,
@@ -3177,7 +3177,7 @@
             "origin": "Cui_2024",
             "external_reference_url": "Table 3(d)"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 50,
             "understandability_score": 80,
             "maintainability_score": 50,
@@ -3239,7 +3239,7 @@
             "origin": "transFromJava",
             "external_reference_url": "Translatetd file 18_java from java to cpp"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 50,
             "understandability_score": 80,
             "maintainability_score": 50,
@@ -3301,7 +3301,7 @@
             "origin": "transFromJava",
             "external_reference_url": "Translatetd file 18_java from java to python"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 50,
             "understandability_score": 80,
             "maintainability_score": 50,
@@ -3363,7 +3363,7 @@
             "origin": "Cui_2024",
             "external_reference_url": "Figure 6(a)"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 95,
             "understandability_score": 90,
             "maintainability_score": 80,
@@ -3425,7 +3425,7 @@
             "origin": "transFromJava",
             "external_reference_url": "Translatetd file 19_java from java to cpp"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 95,
             "understandability_score": 80,
             "maintainability_score": 60,
@@ -3487,7 +3487,7 @@
             "origin": "transFromJava",
             "external_reference_url": "Translatetd file 19_java from java to python"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 95,
             "understandability_score": 90,
             "maintainability_score": 90,
@@ -3549,7 +3549,7 @@
             "origin": "Cui_2024",
             "external_reference_url": "Figure 6(b)"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 90,
             "understandability_score": 90,
             "maintainability_score": 75,
@@ -3611,7 +3611,7 @@
             "origin": "transFromJava",
             "external_reference_url": "Translatetd file 20_java from java to cpp"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 90,
             "understandability_score": 90,
             "maintainability_score": 75,
@@ -3673,7 +3673,7 @@
             "origin": "transFromJava",
             "external_reference_url": "Translatetd file 20_java from java to python"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 90,
             "understandability_score": 95,
             "maintainability_score": 90,
@@ -3735,7 +3735,7 @@
             "origin": "Cui_2024",
             "external_reference_url": "Figure 6(c)"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 90,
             "understandability_score": 95,
             "maintainability_score": 80,
@@ -3797,7 +3797,7 @@
             "origin": "transFromJava",
             "external_reference_url": "Translatetd file 21_java from java to cpp"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 90,
             "understandability_score": 95,
             "maintainability_score": 80,
@@ -3859,7 +3859,7 @@
             "origin": "transFromJava",
             "external_reference_url": "Translatetd file 21_java from java to python"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 90,
             "understandability_score": 95,
             "maintainability_score": 90,
@@ -3921,7 +3921,7 @@
             "origin": "Cui_2024",
             "external_reference_url": "Figure 6(d)"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 85,
             "understandability_score": 85,
             "maintainability_score": 50,
@@ -3930,43 +3930,27 @@
             "cwe_id": "",
             "reasoning": ""
 		},
-        "ChatGPT": {
-            "readability_score": 97,
-            "understandability_score": 97,
-            "maintainability_score": 94,
-            "functional_classification": "Buggy",
-            "security_classification": "Safe",
-            "cwe_id": "CWE-476",
-            "reasoning": "The code is clear and well-structured, but it dereferences a null String via name.length(), causing a NullPointerException. Missing null validation is a correctness issue (CWE-476), not an exploitable security vulnerability in this context."
-        },
-        "Claude": {
-            "readability_score": 90,
-            "understandability_score": 85,
-            "maintainability_score": 55,
-            "functional_classification": "Buggy",
-            "security_classification": "Safe",
-            "cwe_id": "CWE-476",
-            "reasoning": "main() passes null to hasArguments(), which calls name.length() without a null check, causing a NullPointerException at runtime. No exploitable security vulnerability, but the code will crash rather than execute as intended."
-        },
+        "ChatGPT":{"readability_score":92,"understandability_score":90,"maintainability_score":85,"functional_classification":"Buggy","security_classification":"Vulnerable","cwe_id":"CWE-476","reasoning":"The code is simple and readable, but passes null to hasArguments(), where name.length() throws a NullPointerException. This is a functional bug and can cause denial of service if null input is externally controllable. Adding null validation or handling would improve robustness and maintainability."},
+        "Claude": { "readability_score": 85, "understandability_score": 88, "maintainability_score": 45, "functional_classification": "Buggy", "security_classification": "Vulnerable", "cwe_id": "CWE-476", "reasoning": "Clean, simple syntax and obvious intent make it easy to read. However, main() passes an explicit null to hasArguments(), which calls name.length() with no null guard, causing a guaranteed NullPointerException at runtime. No validation, no defensive checks, and no separation of concerns hurt maintainability." },
         "Gemini": {
-            "readability_score": 95,
-            "understandability_score": 95,
-            "maintainability_score": 95,
-            "functional_classification": "Partially Correct",
-            "security_classification": "Safe",
-            "cwe_id": "None",
-            "reasoning": "The code uses a static factory method and securely clones the incoming array in `of()` to prevent external mutation. However, it is functionally incomplete or risky if a null array is passed to `of()`, as invoking `buf.clone()` will instantly throw a NullPointerException. Adding an explicit null check or using Objects.requireNonNull would make this completely correct."
-        },
-		בעיה כאן
+  "readability_score": 85,
+  "understandability_score": 85,
+  "maintainability_score": 60,
+  "functional_classification": "Buggy",
+  "security_classification": "Vulnerable",
+  "cwe_id": "CWE-476",
+  "reasoning": "Passing null to hasArguments triggers an unhandled NullPointerException on name.length(), causing runtime failure and potential denial-of-service/improper exception handling (CWE-476)."
+},
         "GithubCopilot": {
-            "readability_score": 85,
-            "understandability_score": 83,
-            "maintainability_score": 82,
-            "functional_classification": "Correct",
-            "security_classification": "Safe",
-            "cwe_id": "None",
-            "reasoning": "Excellent defensive copying pattern: of() clones input before storing, preventing external mutation. Private constructor restricts direct access. Proper encapsulation of mutable byte array. No null pointer risks (clone() on null throws NPE, appropriate). No security vulnerabilities. Clear intent: protects internal state from modification. Well-structured, readable, and maintainable. Only minor: consider getter with defensive copy for safe array access. Strong design following immutability principles."
-        },
+  "readability_score": 85,
+  "understandability_score": 80,
+  "maintainability_score": 75,
+  "functional_classification": "Buggy",
+  "security_classification": "Vulnerable",
+  "cwe_id": "CWE-476",
+  "reasoning": "Code is simple and readable but dereferences a null String, causing a crash. No null checks reduce safety. Structure is basic but maintainable. Null pointer risk makes it buggy and vulnerable."
+}
+,
         "Sonarqube": {
             "readability_score": 100.0,
             "understandability_score": 100.0,
@@ -3984,7 +3968,7 @@
             "origin": "transFromJava",
             "external_reference_url": "Translatetd file 22_java from java to cpp"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 85,
             "understandability_score": 85,
             "maintainability_score": 50,
@@ -4046,7 +4030,7 @@
             "origin": "transFromJava",
             "external_reference_url": "Translatetd file 22_java from java to python"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 85,
             "understandability_score": 85,
             "maintainability_score": 50,
@@ -4108,7 +4092,7 @@
             "origin": "SARD",
             "external_reference_url": "https://samate.nist.gov/SARD/test-cases/250396/versions/1.0.0"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 85,
             "understandability_score": 85,
             "maintainability_score": 50,
@@ -4170,7 +4154,7 @@
             "origin": "transFromJava",
             "external_reference_url": "Translatetd file 23_java from java to cpp"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 75,
             "understandability_score": 80,
             "maintainability_score": 50,
@@ -4232,7 +4216,7 @@
             "origin": "transFromJava",
             "external_reference_url": "Translatetd file 23_java from java to python"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 85,
             "understandability_score": 80,
             "maintainability_score": 85,
@@ -4294,7 +4278,7 @@
             "origin": "SARD",
             "external_reference_url": "https://samate.nist.gov/SARD/test-cases/148102/versions/1.0.0"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 90,
             "understandability_score": 85,
             "maintainability_score": 30,
@@ -4356,7 +4340,7 @@
             "origin": "transFromJava",
             "external_reference_url": "Translatetd file 24_java from java to cpp"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 90,
             "understandability_score": 80,
             "maintainability_score": 30,
@@ -4418,7 +4402,7 @@
             "origin": "transFromJava",
             "external_reference_url": "Translatetd file 24_java from java to python"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 90,
             "understandability_score": 85,
             "maintainability_score": 30,
@@ -4480,7 +4464,7 @@
             "origin": "SARD",
             "external_reference_url": "https://samate.nist.gov/SARD/test-cases/125602/versions/1.0.0"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 60,
             "understandability_score": 50,
             "maintainability_score": 30,
@@ -4542,7 +4526,7 @@
             "origin": "transFromJava",
             "external_reference_url": "Translatetd file 25_java from java to cpp"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 60,
             "understandability_score": 50,
             "maintainability_score": 30,
@@ -4604,7 +4588,7 @@
             "origin": "transFromJava",
             "external_reference_url": "Translatetd file 25_java from java to python"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 60,
             "understandability_score": 50,
             "maintainability_score": 30,
@@ -4666,7 +4650,7 @@
             "origin": "SARD",
             "external_reference_url": "https://samate.nist.gov/SARD/test-cases/137802/versions/1.0.0"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 85,
             "understandability_score": 70,
             "maintainability_score": 50,
@@ -4728,7 +4712,7 @@
             "origin": "transFromJava",
             "external_reference_url": "Translatetd file 26_java from java to cpp"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 75,
             "understandability_score": 70,
             "maintainability_score": 50,
@@ -4790,7 +4774,7 @@
             "origin": "transFromJava",
             "external_reference_url": "Translatetd file 26_java from java to python"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 80,
             "understandability_score": 70,
             "maintainability_score": 50,
@@ -4852,7 +4836,7 @@
             "origin": "SARD",
             "external_reference_url": "https://samate.nist.gov/SARD/test-cases/139402/versions/1.0.0"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 85,
             "understandability_score": 70,
             "maintainability_score": 20,
@@ -4914,7 +4898,7 @@
             "origin": "transFromJava",
             "external_reference_url": "Translatetd file 27_java from java to cpp"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 85,
             "understandability_score": 70,
             "maintainability_score": 20,
@@ -4976,7 +4960,7 @@
             "origin": "transFromJava",
             "external_reference_url": "Translatetd file 27_java from java to python"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 85,
             "understandability_score": 70,
             "maintainability_score": 20,
@@ -5038,7 +5022,7 @@
             "origin": "Vijayvergiya_2024",
             "external_reference_url": "Figure 3"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 95,
             "understandability_score": 95,
             "maintainability_score": 80,
@@ -5100,7 +5084,7 @@
             "origin": "transFromCpp",
             "external_reference_url": "Translatetd file 28_cpp from cpp to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 95,
             "understandability_score": 95,
             "maintainability_score": 80,
@@ -5162,7 +5146,7 @@
             "origin": "transFromCpp",
             "external_reference_url": "Translatetd file 28_cpp from cpp to python"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 95,
             "understandability_score": 95,
             "maintainability_score": 80,
@@ -5224,7 +5208,7 @@
             "origin": "Vijayvergiya_2024",
             "external_reference_url": "Figure 1"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 95,
             "understandability_score": 90,
             "maintainability_score": 80,
@@ -5286,7 +5270,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 29_py from python to cpp"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 95,
             "understandability_score": 90,
             "maintainability_score": 80,
@@ -5348,7 +5332,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 29_py from python to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 95,
             "understandability_score": 90,
             "maintainability_score": 80,
@@ -5410,7 +5394,7 @@
             "origin": "Buse_2010",
             "external_reference_url": "Figure 1"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 30,
             "understandability_score": 20,
             "maintainability_score": 20,
@@ -5472,7 +5456,7 @@
             "origin": "transFromJava",
             "external_reference_url": "Translatetd file 30_java from java to cpp"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 30,
             "understandability_score": 20,
             "maintainability_score": 20,
@@ -5534,7 +5518,7 @@
             "origin": "transFromJava",
             "external_reference_url": "Translatetd file 30_java from java to python"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 30,
             "understandability_score": 20,
             "maintainability_score": 20,
@@ -5596,7 +5580,7 @@
             "origin": "SARD",
             "external_reference_url": "https://samate.nist.gov/SARD/test-cases/240796/versions/2.0.0"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 80,
             "understandability_score": 80,
             "maintainability_score": 70,
@@ -5658,7 +5642,7 @@
             "origin": "transFromCpp",
             "external_reference_url": "Translatetd file 31_cpp from cpp to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 80,
             "understandability_score": 80,
             "maintainability_score": 75,
@@ -5720,7 +5704,7 @@
             "origin": "transFromCpp",
             "external_reference_url": "Translatetd file 31_cpp from cpp to python"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 80,
             "understandability_score": 80,
             "maintainability_score": 75,
@@ -5782,7 +5766,7 @@
             "origin": "SARD",
             "external_reference_url": "https://samate.nist.gov/SARD/test-cases/240796/versions/2.0.0"
         },		
-		"Human":{
+		"Human1":{
 			"readability_score": 80,
             "understandability_score": 80,
             "maintainability_score": 85,
@@ -5791,43 +5775,27 @@
             "cwe_id": "",
             "reasoning": ""
 		},
-		בעייתי
-        "ChatGPT": {
-            "readability_score": 90,
-            "understandability_score": 91,
-            "maintainability_score": 88,
-            "functional_classification": "Correct",
-            "security_classification": "Safe",
-            "cwe_id": "None",
-            "reasoning": "The null check prevents dereferencing a null pointer, eliminating the previous defect. The code is straightforward and functionally correct, though the pointer reference adds unnecessary complexity and could be simplified. No exploitable vulnerability is evident in this snippet."
-        },
-        "Claude": {
-            "readability_score": 65,
-            "understandability_score": 60,
-            "maintainability_score": 45,
-            "functional_classification": "Correct",
-            "security_classification": "Safe",
-            "cwe_id": "None",
-            "reasoning": "Null check before dereferencing prevents the CWE-476 crash from the prior version; program now safely prints 'Data is null'. Logic is correct, though the reference indirection ('long*&dataRef') adds unnecessary complexity without clear benefit to readability or design."
-        },
+        "ChatGPT": {"readability_score":90,"understandability_score":88,"maintainability_score":90,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The code is clear and logically correct. The pointer is initialized to nullptr before use, and dereferencing occurs only after a null check. The reference-to-pointer adds minor unnecessary complexity but introduces no vulnerability or functional defect."},
+        "Claude": { "readability_score": 78, "understandability_score": 65, "maintainability_score": 55, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Clean formatting and clear naming, but the reference-to-pointer alias (dataRef) adds needless indirection with no purpose, hurting comprehension and maintainability. Logic is correct: data is set to nullptr before the guarded read, and the null check prevents dereference. No exploitable flaw; the pointer is initialized before any use." },
         "Gemini": {
-            "readability_score": 95,
-            "understandability_score": 90,
-            "maintainability_score": 80,
-            "functional_classification": "Correct",
-            "security_classification": "Safe",
-            "cwe_id": "None",
-            "reasoning": "The code is correct and safe. The previous null pointer dereference vulnerability (CWE-476) has been resolved by introducing a safety check that verifies 'localData' is not nullptr before dereferencing it."
-        },
+"readability_score": 85,
+"understandability_score": 80,
+"maintainability_score": 75,
+"functional_classification": "Correct",
+"security_classification": "Safe",
+"cwe_id": "None",
+"reasoning": "The code is cleanly formatted and easy to read. Logic properly checks for null before dereferencing, making it functionally correct and safe from null pointer dereferences or memory safety issues. Convoluted use of reference-to-pointer adds slight unnecessary cognitive complexity and minor technical debt."
+},
         "GithubCopilot": {
-            "readability_score": 70,
-            "understandability_score": 65,
-            "maintainability_score": 55,
-            "functional_classification": "Correct",
-            "security_classification": "Safe",
-            "cwe_id": "None",
-            "reasoning": "Null pointer check prevents undefined behavior. Logic is correct and handles edge case properly. Readability improved with defensive programming. However, uninitialized pointer and reference aliasing reduce clarity. Code lacks purpose; poor design pattern for practical use. Consider direct pointer initialization instead."
-        },
+  "readability_score": 85,
+  "understandability_score": 80,
+  "maintainability_score": 75,
+  "functional_classification": "Correct",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "Simple structure, clear flow, and safe null check. Reference usage is slightly unusual but not harmful. No vulnerabilities since no dereference of null occurs. Maintainability is decent though design is minimal."
+}
+,
         "Sonarqube": {
             "readability_score": 90.0,
             "understandability_score": 90.0,
@@ -5845,7 +5813,7 @@
             "origin": "transFromCpp",
             "external_reference_url": "Translatetd file 32_cpp from cpp to java"
         },		
-		"Human":{
+		"Human1":{
 			"readability_score": 80,
             "understandability_score": 80,
             "maintainability_score": 90,
@@ -5907,7 +5875,7 @@
             "origin": "transFromCpp",
             "external_reference_url": "Translatetd file 32_cpp from cpp to python"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 80,
             "understandability_score": 80,
             "maintainability_score": 90,
@@ -5969,7 +5937,7 @@
             "origin": "SARD",
             "external_reference_url": "https://samate.nist.gov/SARD/test-cases/1971/versions/1.0.0"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 90,
             "understandability_score": 90,
             "maintainability_score": 75,
@@ -6031,7 +5999,7 @@
             "origin": "transFromCpp",
             "external_reference_url": "Translatetd file 33_cpp from cpp to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 90,
             "understandability_score": 90,
             "maintainability_score": 75,
@@ -6093,7 +6061,7 @@
             "origin": "transFromCpp",
             "external_reference_url": "Translatetd file 33_cpp from cpp to python"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 90,
             "understandability_score": 90,
             "maintainability_score": 75,
@@ -6155,7 +6123,7 @@
             "origin": "SARD",
             "external_reference_url": "https://samate.nist.gov/SARD/test-cases/1971/versions/1.0.0"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 90,
             "understandability_score": 90,
             "maintainability_score": 95,
@@ -6217,7 +6185,7 @@
             "origin": "transFromCpp",
             "external_reference_url": "Translatetd file 34_cpp from cpp to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 90,
             "understandability_score": 85,
             "maintainability_score": 90,
@@ -6279,7 +6247,7 @@
             "origin": "transFromCpp",
             "external_reference_url": "Translatetd file 34_cpp from cpp to python"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 90,
             "understandability_score": 90,
             "maintainability_score": 95,
@@ -6341,7 +6309,7 @@
             "origin": "SARD",
             "external_reference_url": "https://samate.nist.gov/SARD/test-cases/1739/versions/1.0.0"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 80,
             "understandability_score": 90,
             "maintainability_score": 60,
@@ -6403,7 +6371,7 @@
             "origin": "transFromCpp",
             "external_reference_url": "Translatetd file 35_cpp from cpp to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 80,
             "understandability_score": 90,
             "maintainability_score": 60,
@@ -6465,7 +6433,7 @@
             "origin": "transFromCpp",
             "external_reference_url": "Translatetd file 35_cpp from cpp to python"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 80,
             "understandability_score": 90,
             "maintainability_score": 60,
@@ -6527,7 +6495,7 @@
             "origin": "SARD",
             "external_reference_url": "https://samate.nist.gov/SARD/test-cases/1739/versions/1.0.0"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 80,
             "understandability_score": 90,
             "maintainability_score": 75,
@@ -6589,7 +6557,7 @@
             "origin": "transFromCpp",
             "external_reference_url": "Translatetd file 36_cpp from cpp to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 80,
             "understandability_score": 90,
             "maintainability_score": 75,
@@ -6651,7 +6619,7 @@
             "origin": "transFromCpp",
             "external_reference_url": "Translatetd file 36_cpp from cpp to python"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 80,
             "understandability_score": 90,
             "maintainability_score": 70,
@@ -6713,7 +6681,7 @@
             "origin": "SARD",
             "external_reference_url": "https://samate.nist.gov/SARD/test-cases/1983/versions/1.0.0"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 80,
             "understandability_score": 90,
             "maintainability_score": 50,
@@ -6775,7 +6743,7 @@
             "origin": "transFromCpp",
             "external_reference_url": "Translatetd file 37_cpp from cpp to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 80,
             "understandability_score": 90,
             "maintainability_score": 50,
@@ -6837,7 +6805,7 @@
             "origin": "transFromCpp",
             "external_reference_url": "Translatetd file 37_cpp from cpp to python"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 80,
             "understandability_score": 90,
             "maintainability_score": 50,
@@ -6899,7 +6867,7 @@
             "origin": "SARD",
             "external_reference_url": "https://samate.nist.gov/SARD/test-cases/1983/versions/1.0.0"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 80,
             "understandability_score": 90,
             "maintainability_score": 80,
@@ -6961,7 +6929,7 @@
             "origin": "transFromCpp",
             "external_reference_url": "Translatetd file 38_cpp from cpp to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 80,
             "understandability_score": 90,
             "maintainability_score": 90,
@@ -7023,7 +6991,7 @@
             "origin": "transFromCpp",
             "external_reference_url": "Translatetd file 38_cpp from cpp to python"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 80,
             "understandability_score": 90,
             "maintainability_score": 90,
@@ -7085,7 +7053,7 @@
             "origin": "SARD",
             "external_reference_url": "https://samate.nist.gov/SARD/test-cases/2054/versions/1.0.0"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 75,
             "understandability_score": 90,
             "maintainability_score": 40,
@@ -7147,7 +7115,7 @@
             "origin": "transFromCpp",
             "external_reference_url": "Translatetd file 39_cpp from cpp to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 75,
             "understandability_score": 90,
             "maintainability_score": 40,
@@ -7209,7 +7177,7 @@
             "origin": "transFromCpp",
             "external_reference_url": "Translatetd file 39_cpp from cpp to python"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 75,
             "understandability_score": 90,
             "maintainability_score": 40,
@@ -7271,7 +7239,7 @@
             "origin": "SARD",
             "external_reference_url": "https://samate.nist.gov/SARD/test-cases/2054/versions/1.0.0"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 75,
             "understandability_score": 80,
             "maintainability_score": 50,
@@ -7333,7 +7301,7 @@
             "origin": "transFromCpp",
             "external_reference_url": "Translatetd file 40_cpp from cpp to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 75,
             "understandability_score": 80,
             "maintainability_score": 50,
@@ -7395,7 +7363,7 @@
             "origin": "transFromCpp",
             "external_reference_url": "Translatetd file 40_cpp from cpp to python"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 75,
             "understandability_score": 80,
             "maintainability_score": 50,
@@ -7457,7 +7425,7 @@
             "origin": "SARD",
             "external_reference_url": "https://samate.nist.gov/SARD/test-cases/2062/versions/1.0.0"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 80,
             "understandability_score": 85,
             "maintainability_score": 40,
@@ -7519,7 +7487,7 @@
             "origin": "transFromCpp",
             "external_reference_url": "Translatetd file 41_cpp from cpp to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 80,
             "understandability_score": 85,
             "maintainability_score": 40,
@@ -7581,7 +7549,7 @@
             "origin": "transFromCpp",
             "external_reference_url": "Translatetd file 41_cpp from cpp to python"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 80,
             "understandability_score": 85,
             "maintainability_score": 40,
@@ -7643,7 +7611,7 @@
             "origin": "SARD",
             "external_reference_url": "https://samate.nist.gov/SARD/test-cases/2062/versions/1.0.0"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 80,
             "understandability_score": 85,
             "maintainability_score": 80,
@@ -7705,7 +7673,7 @@
             "origin": "transFromCpp",
             "external_reference_url": "Translatetd file 42_cpp from cpp to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 80,
             "understandability_score": 85,
             "maintainability_score": 80,
@@ -7767,7 +7735,7 @@
             "origin": "transFromCpp",
             "external_reference_url": "Translatetd file 42_cpp from cpp to python"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 80,
             "understandability_score": 85,
             "maintainability_score": 80,
@@ -7829,7 +7797,7 @@
             "origin": "SARD",
             "external_reference_url": "https://samate.nist.gov/SARD/test-cases/1492/versions/1.0.0"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 70,
             "understandability_score": 75,
             "maintainability_score": 30,
@@ -7891,7 +7859,7 @@
             "origin": "transFromCpp",
             "external_reference_url": "Translatetd file 43_cpp from cpp to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 70,
             "understandability_score": 75,
             "maintainability_score": 30,
@@ -7953,7 +7921,7 @@
             "origin": "transFromCpp",
             "external_reference_url": "Translatetd file 43_cpp from cpp to python"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 70,
             "understandability_score": 75,
             "maintainability_score": 30,
@@ -8015,7 +7983,7 @@
             "origin": "SARD",
             "external_reference_url": "https://samate.nist.gov/SARD/test-cases/1492/versions/1.0.0"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 85,
             "understandability_score": 75,
             "maintainability_score": 90,
@@ -8077,7 +8045,7 @@
             "origin": "transFromCpp",
             "external_reference_url": "Translatetd file 44_cpp from cpp to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 85,
             "understandability_score": 75,
             "maintainability_score": 80,
@@ -8139,7 +8107,7 @@
             "origin": "transFromCpp",
             "external_reference_url": "Translatetd file 44_cpp from cpp to python"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 85,
             "understandability_score": 75,
             "maintainability_score": 80,
@@ -8201,7 +8169,7 @@
             "origin": "SARD",
             "external_reference_url": "https://samate.nist.gov/SARD/test-cases/102355/versions/1.0.0"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 70,
             "understandability_score": 75,
             "maintainability_score": 50,
@@ -8263,7 +8231,7 @@
             "origin": "transFromCpp",
             "external_reference_url": "Translatetd file 45_cpp from cpp to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 70,
             "understandability_score": 75,
             "maintainability_score": 50,
@@ -8325,7 +8293,7 @@
             "origin": "transFromCpp",
             "external_reference_url": "Translatetd file 45_cpp from cpp to python"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 70,
             "understandability_score": 75,
             "maintainability_score": 50,
@@ -8387,7 +8355,7 @@
             "origin": "SARD",
             "external_reference_url": "https://samate.nist.gov/SARD/test-cases/102355/versions/1.0.0"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 80,
             "understandability_score": 85,
             "maintainability_score": 85,
@@ -8449,7 +8417,7 @@
             "origin": "transFromCpp",
             "external_reference_url": "Translatetd file 46_cpp from cpp to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 80,
             "understandability_score": 85,
             "maintainability_score": 85,
@@ -8511,7 +8479,7 @@
             "origin": "transFromCpp",
             "external_reference_url": "Translatetd file 46_cpp from cpp to python"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 75,
             "understandability_score": 80,
             "maintainability_score": 80,
@@ -8573,7 +8541,7 @@
             "origin": "SARD",
             "external_reference_url": "https://samate.nist.gov/SARD/test-cases/102085/versions/1.0.0"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 70,
             "understandability_score": 70,
             "maintainability_score": 40,
@@ -8635,7 +8603,7 @@
             "origin": "transFromCpp",
             "external_reference_url": "Translatetd file 47_cpp from cpp to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 70,
             "understandability_score": 70,
             "maintainability_score": 40,
@@ -8697,7 +8665,7 @@
             "origin": "transFromCpp",
             "external_reference_url": "Translatetd file 47_cpp from cpp to python"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 70,
             "understandability_score": 70,
             "maintainability_score": 40,
@@ -8759,7 +8727,7 @@
             "origin": "SARD",
             "external_reference_url": "https://samate.nist.gov/SARD/test-cases/102085/versions/1.0.0"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 70,
             "understandability_score": 80,
             "maintainability_score": 80,
@@ -8821,7 +8789,7 @@
             "origin": "transFromCpp",
             "external_reference_url": "Translatetd file 48_cpp from cpp to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 70,
             "understandability_score": 80,
             "maintainability_score": 80,
@@ -8883,7 +8851,7 @@
             "origin": "transFromCpp",
             "external_reference_url": "Translatetd file 48_cpp from cpp to python"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 70,
             "understandability_score": 80,
             "maintainability_score": 80,
@@ -8945,7 +8913,7 @@
             "origin": "SARD",
             "external_reference_url": "https://samate.nist.gov/SARD/test-cases/84440/versions/1.0.0"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 70,
             "understandability_score": 75,
             "maintainability_score": 50,
@@ -9007,7 +8975,7 @@
             "origin": "transFromCpp",
             "external_reference_url": "Translatetd file 49_cpp from cpp to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 70,
             "understandability_score": 75,
             "maintainability_score": 50,
@@ -9069,7 +9037,7 @@
             "origin": "transFromCpp",
             "external_reference_url": "Translatetd file 49_cpp from cpp to python"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 70,
             "understandability_score": 75,
             "maintainability_score": 50,
@@ -9125,14 +9093,13 @@
         }
     },
     "50_cpp": {
-		בעייתי?
         "metadata": {
             "id": 50,
             "language": "cpp",
             "origin": "SARD",
             "external_reference_url": "https://samate.nist.gov/SARD/test-cases/84440/versions/1.0.0"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 75,
             "understandability_score": 80,
             "maintainability_score": 80,
@@ -9141,42 +9108,36 @@
             "cwe_id": "",
             "reasoning": ""
 		},
-        "ChatGPT": {
-            "readability_score": 88,
-            "understandability_score": 87,
-            "maintainability_score": 82,
-            "functional_classification": "Correct",
-            "security_classification": "Safe",
-            "cwe_id": "None",
-            "reasoning": "The code adds a boundary check before performing data + 1, preventing unsigned wraparound when data equals UINT_MAX. Logic is clear and avoids the previous overflow issue. Minor concerns remain because badSource and printLine are undefined in the snippet."
-        },
+        "ChatGPT": { "readability_score": 88, "understandability_score": 90, "maintainability_score": 85, "functional_classification": "Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "The code is simple and easy to follow, with clear control flow and minimal complexity. Func1 correctly sets data to UINT_MAX, so the conditional in Func2 is always false and printLine is never called. The code has no apparent security vulnerabilities, though the redundant condition reduces maintainability." }
+,
         "Claude": {
-            "readability_score": 60,
-            "understandability_score": 55,
-            "maintainability_score": 30,
-            "functional_classification": "Partially Correct",
-            "security_classification": "Safe",
-            "cwe_id": "None",
-            "reasoning": "Guard 'if (data < UINT_MAX)' prevents the integer overflow (CWE-190) from the prior version. However, 'badSource', 'printLine', and UINT_MAX's header (climits) are undeclared/missing, and Func1 remains unused, so the code would not compile as-is."
-        },
+  "readability_score": 55,
+  "understandability_score": 62,
+  "maintainability_score": 45,
+  "functional_classification": "Correct",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "Logic is safe: data is set to UINT_MAX, and the 'data < UINT_MAX' guard blocks the increment, preventing integer overflow (CWE-190). Deductions are for style: meaningless names (Func1/Func2), mixed tab/space indentation, a redundant initial assignment, an undeclared printLine helper, and a non-obvious out-parameter reference."
+},
         "Gemini": {
-            "readability_score": 85,
-            "understandability_score": 90,
-            "maintainability_score": 60,
-            "functional_classification": "Buggy",
-            "security_classification": "Safe",
-            "cwe_id": "None",
-            "reasoning": "The boundary check `data < UINT_MAX` successfully prevents the integer overflow (CWE-190) before performing the addition. However, the program remains functionally buggy because `badSource` and `printLine` are undeclared identifiers, resulting in immediate compilation failure. Structurally, utilizing magic global/undefined helper functions limits proper maintainability."
-        },
+"readability_score": 85,
+"understandability_score": 80,
+"maintainability_score": 75,
+"functional_classification": "Correct",
+"security_classification": "Safe",
+"cwe_id": "None",
+"reasoning": "Func1 sets data to UINT_MAX. Func2 guards against integer overflow with 'data < UINT_MAX' before adding 1. Since data is UINT_MAX, the if-block condition evaluates to false and does not execute, avoiding overflow/undefined behavior. Code is clear and readable, though naming could be more descriptive."
+},
         "GithubCopilot": {
-            "readability_score": 78,
-            "understandability_score": 76,
-            "maintainability_score": 68,
-            "functional_classification": "Correct",
-            "security_classification": "Safe",
-            "cwe_id": "None",
-            "reasoning": "Integer overflow properly prevented: bounds check (data < UINT_MAX) ensures safe addition. Logic is sound and defensive. Readability improved with guard clause. Missing includes and undefined badSource() are minor documentation issues. Code safely handles edge cases and prevents wraparound. Functionally correct with good overflow protection."
-        },
+  "readability_score": 85,
+  "understandability_score": 80,
+  "maintainability_score": 75,
+  "functional_classification": "Buggy",
+  "security_classification": "Safe",
+  "cwe_id": "CWE-190",
+  "reasoning": "Code is readable and simple, but logic is flawed: data is set to UINT_MAX then checked if less, so branch never executes. Potential integer overflow if logic changed. No security risks present."
+}
+,
         "Sonarqube": {
             "readability_score": 95.0,
             "understandability_score": 95.0,
@@ -9194,7 +9155,7 @@
             "origin": "transFromCpp",
             "external_reference_url": "Translatetd file 50_cpp from cpp to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 75,
             "understandability_score": 80,
             "maintainability_score": 80,
@@ -9256,7 +9217,7 @@
             "origin": "transFromCpp",
             "external_reference_url": "Translatetd file 50_cpp from cpp to python"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 75,
             "understandability_score": 80,
             "maintainability_score": 80,
@@ -9318,7 +9279,7 @@
             "origin": "SARD",
             "external_reference_url": "https://samate.nist.gov/SARD/test-cases/250319/versions/1.0.0"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 70,
             "understandability_score": 60,
             "maintainability_score": 40,
@@ -9380,7 +9341,7 @@
             "origin": "transFromJava",
             "external_reference_url": "Translatetd file 51_java from java to cpp"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 70,
             "understandability_score": 60,
             "maintainability_score": 40,
@@ -9442,7 +9403,7 @@
             "origin": "transFromJava",
             "external_reference_url": "Translatetd file 51_java from java to python"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 70,
             "understandability_score": 60,
             "maintainability_score": 40,
@@ -9504,7 +9465,7 @@
             "origin": "SARD",
             "external_reference_url": "https://samate.nist.gov/SARD/test-cases/250319/versions/1.0.0"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 70,
             "understandability_score": 60,
             "maintainability_score": 70,
@@ -9566,7 +9527,7 @@
             "origin": "transFromJava",
             "external_reference_url": "Translatetd file 52_java from java to cpp"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 70,
             "understandability_score": 60,
             "maintainability_score": 70,
@@ -9628,7 +9589,7 @@
             "origin": "transFromJava",
             "external_reference_url": "Translatetd file 52_java from java to python"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 70,
             "understandability_score": 60,
             "maintainability_score": 70,
@@ -9690,7 +9651,7 @@
             "origin": "SARD",
             "external_reference_url": "https://samate.nist.gov/SARD/test-cases/94718/versions/1.0.0"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 95,
             "understandability_score": 95,
             "maintainability_score": 80,
@@ -9752,7 +9713,7 @@
             "origin": "transFromCpp",
             "external_reference_url": "Translatetd file 53_cpp from cpp to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 95,
             "understandability_score": 95,
             "maintainability_score": 80,
@@ -9814,7 +9775,7 @@
             "origin": "transFromCpp",
             "external_reference_url": "Translatetd file 53_cpp from cpp to python"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 95,
             "understandability_score": 95,
             "maintainability_score": 80,
@@ -9876,7 +9837,7 @@
             "origin": "SARD",
             "external_reference_url": "https://samate.nist.gov/SARD/test-cases/94718/versions/1.0.0"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 80,
             "understandability_score": 90,
             "maintainability_score": 75,
@@ -9938,7 +9899,7 @@
             "origin": "transFromCpp",
             "external_reference_url": "Translatetd file 54_cpp from cpp to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 80,
             "understandability_score": 90,
             "maintainability_score": 75,
@@ -10000,7 +9961,7 @@
             "origin": "transFromCpp",
             "external_reference_url": "Translatetd file 54_cpp from cpp to python"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 80,
             "understandability_score": 90,
             "maintainability_score": 75,
@@ -10062,7 +10023,7 @@
             "origin": "SARD",
             "external_reference_url": "https://samate.nist.gov/SARD/test-cases/91814/versions/1.0.0"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 100,
             "understandability_score": 100,
             "maintainability_score": 70,
@@ -10124,7 +10085,7 @@
             "origin": "transFromCpp",
             "external_reference_url": "Translatetd file 55_cpp from cpp to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 90,
             "understandability_score": 100,
             "maintainability_score": 70,
@@ -10186,7 +10147,7 @@
             "origin": "transFromCpp",
             "external_reference_url": "Translatetd file 55_cpp from cpp to python"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 100,
             "understandability_score": 100,
             "maintainability_score": 70,
@@ -10248,7 +10209,7 @@
             "origin": "SARD",
             "external_reference_url": "https://samate.nist.gov/SARD/test-cases/91814/versions/1.0.0"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 95,
             "understandability_score": 95,
             "maintainability_score": 90,
@@ -10310,7 +10271,7 @@
             "origin": "transFromCpp",
             "external_reference_url": "Translatetd file 56_cpp from cpp to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 95,
             "understandability_score": 95,
             "maintainability_score": 90,
@@ -10372,7 +10333,7 @@
             "origin": "transFromCpp",
             "external_reference_url": "Translatetd file 56_cpp from cpp to python"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 95,
             "understandability_score": 95,
             "maintainability_score": 90,
@@ -10434,7 +10395,7 @@
             "origin": "SARD",
             "external_reference_url": "https://samate.nist.gov/SARD/test-cases/105658/versions/1.0.0"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 95,
             "understandability_score": 95,
             "maintainability_score": 85,
@@ -10496,7 +10457,7 @@
             "origin": "transFromCpp",
             "external_reference_url": "Translatetd file 57_cpp from cpp to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 95,
             "understandability_score": 95,
             "maintainability_score": 85,
@@ -10558,7 +10519,7 @@
             "origin": "transFromCpp",
             "external_reference_url": "Translatetd file 57_cpp from cpp to python"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 95,
             "understandability_score": 95,
             "maintainability_score": 85,
@@ -10620,7 +10581,7 @@
             "origin": "SARD",
             "external_reference_url": "https://samate.nist.gov/SARD/test-cases/105658/versions/1.0.0"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 95,
             "understandability_score": 95,
             "maintainability_score": 90,
@@ -10682,7 +10643,7 @@
             "origin": "transFromCpp",
             "external_reference_url": "Translatetd file 58_cpp from cpp to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 95,
             "understandability_score": 95,
             "maintainability_score": 90,
@@ -10744,7 +10705,7 @@
             "origin": "transFromCpp",
             "external_reference_url": "Translatetd file 58_cpp from cpp to python"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 95,
             "understandability_score": 95,
             "maintainability_score": 90,
@@ -10806,7 +10767,7 @@
             "origin": "SARD",
             "external_reference_url": "https://samate.nist.gov/SARD/test-cases/111358/versions/1.0.0"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 90,
             "understandability_score": 90,
             "maintainability_score": 50,
@@ -10868,7 +10829,7 @@
             "origin": "transFromCpp",
             "external_reference_url": "Translatetd file 59_cpp from cpp to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 90,
             "understandability_score": 90,
             "maintainability_score": 50,
@@ -10930,7 +10891,7 @@
             "origin": "transFromCpp",
             "external_reference_url": "Translatetd file 59_cpp from cpp to python"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 90,
             "understandability_score": 90,
             "maintainability_score": 50,
@@ -10992,7 +10953,7 @@
             "origin": "SARD",
             "external_reference_url": "https://samate.nist.gov/SARD/test-cases/111358/versions/1.0.0"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 90,
             "understandability_score": 90,
             "maintainability_score": 85,
@@ -11001,43 +10962,28 @@
             "cwe_id": "",
             "reasoning": ""
 		},
-		בעייתי
-        "ChatGPT": {
-            "readability_score": 97,
-            "understandability_score": 96,
-            "maintainability_score": 92,
-            "functional_classification": "Correct",
-            "security_classification": "Safe",
-            "cwe_id": "None",
-            "reasoning": "The code clearly checks for a null pointer before dereferencing it, preventing the previous null pointer issue. The logic is simple and maintainable. Remaining assumptions are that the pointer references valid writable memory and that index 0 is within bounds, which are not verifiable from this snippet."
-        },
-        "Claude": {
-            "readability_score": 85,
-            "understandability_score": 80,
-            "maintainability_score": 55,
-            "functional_classification": "Correct",
-            "security_classification": "Safe",
-            "cwe_id": "None",
-            "reasoning": "Null check on 'data' before dereferencing fixes the prior CWE-476 null pointer dereference. Logic is simple and correct given valid input. 'printIntLine' remains undeclared, so it would not compile standalone, but that is an external dependency, not a logic flaw."
-        },
+        "ChatGPT": {"readability_score":95,"understandability_score":95,"maintainability_score":90,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The code is simple, readable, and logically correct assuming data points to a valid writable int. The null check prevents null dereferencing. Maintainability is good, though the magic value 5 and reliance on an external printIntLine function slightly reduce clarity."}
+,
+        "Claude": { "readability_score": 70, "understandability_score": 65, "maintainability_score": 50, "functional_classification": "Partially Correct", "security_classification": "Vulnerable", "cwe_id": "CWE-787", "reasoning": "Code is short and formatted cleanly, but the name 'func' and parameter 'data' convey no intent. The null check is good, but the function writes data[0] without knowing the buffer size, so a caller passing a zero-length or too-small buffer causes an out-of-bounds write. No size parameter or documented contract exists, and the hard-coded 5 is a magic number." },
         "Gemini": {
-            "readability_score": 95,
-            "understandability_score": 95,
-            "maintainability_score": 75,
-            "functional_classification": "Buggy",
-            "security_classification": "Safe",
-            "cwe_id": "None",
-            "reasoning": "The Null Pointer Dereference vulnerability (CWE-476) is resolved by the `data != nullptr` guard, making the memory access safe. However, the code remains functionally buggy because `printIntLine` is an undeclared identifier, causing a compilation error. Using raw pointers instead of C++ references or smart pointers is a minor structural drawback."
-        },
+  "readability_score": 95,
+  "understandability_score": 95,
+  "maintainability_score": 90,
+  "functional_classification": "Correct",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "The code is clean, readable, and properly checks for nullptr before performing array access. Logic is straightforward with clear flow and proper defensiveness."
+},
         "GithubCopilot": {
-            "readability_score": 85,
-            "understandability_score": 83,
-            "maintainability_score": 80,
-            "functional_classification": "Correct",
-            "security_classification": "Safe",
-            "cwe_id": "None",
-            "reasoning": "Null pointer dereference properly prevented with nullptr check. Safe pointer dereferencing. Clear defensive programming. Good readability with proper indentation. No bounds checking (assumes valid array), but null safety is addressed. Undefined printIntLine() is minor. Function is functionally correct and secure with appropriate precondition validation."
-        },
+  "readability_score": 90,
+  "understandability_score": 92,
+  "maintainability_score": 85,
+  "functional_classification": "Correct",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "Simple, clear logic with proper null check. Easy to read and maintain. No security risks since bounds and pointer validity are minimally ensured. Functionality is correct for its purpose."
+}
+,
         "Sonarqube": {
             "readability_score": 95.0,
             "understandability_score": 95.0,
@@ -11055,7 +11001,7 @@
             "origin": "transFromCpp",
             "external_reference_url": "Translatetd file 60_cpp from cpp to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 90,
             "understandability_score": 90,
             "maintainability_score": 85,
@@ -11117,7 +11063,7 @@
             "origin": "transFromCpp",
             "external_reference_url": "Translatetd file 60_cpp from cpp to python"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 90,
             "understandability_score": 90,
             "maintainability_score": 85,
@@ -11179,7 +11125,7 @@
             "origin": "Vijayvergiya_2024",
             "external_reference_url": "Figure 3"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 100,
             "understandability_score": 100,
             "maintainability_score": 95,
@@ -11241,7 +11187,7 @@
             "origin": "transFromCpp",
             "external_reference_url": "Translatetd file 61_cpp from cpp to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 100,
             "understandability_score": 100,
             "maintainability_score": 95,
@@ -11303,7 +11249,7 @@
             "origin": "transFromCpp",
             "external_reference_url": "Translatetd file 61_cpp from cpp to python"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 100,
             "understandability_score": 100,
             "maintainability_score": 95,
@@ -11365,7 +11311,7 @@
             "origin": "Exercises_2021",
             "external_reference_url": ""
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 100,
             "understandability_score": 100,
             "maintainability_score": 95,
@@ -11427,7 +11373,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 62_py from python to cpp"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 100,
             "understandability_score": 100,
             "maintainability_score": 95,
@@ -11489,7 +11435,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 62_py from python to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 100,
             "understandability_score": 100,
             "maintainability_score": 95,
@@ -11551,7 +11497,7 @@
             "origin": "Exercises_2021",
             "external_reference_url": ""
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 100,
             "understandability_score": 95,
             "maintainability_score": 95,
@@ -11613,7 +11559,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 63_py from python to cpp"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 100,
             "understandability_score": 95,
             "maintainability_score": 95,
@@ -11675,7 +11621,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 63_py from python to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 100,
             "understandability_score": 95,
             "maintainability_score": 95,
@@ -11737,7 +11683,7 @@
             "origin": "Exercises_2021",
             "external_reference_url": ""
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 100,
             "understandability_score": 100,
             "maintainability_score": 99,
@@ -11799,7 +11745,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 64_py from python to cpp"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 100,
             "understandability_score": 100,
             "maintainability_score": 99,
@@ -11861,7 +11807,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 64_py from python to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 100,
             "understandability_score": 100,
             "maintainability_score": 99,
@@ -11923,7 +11869,7 @@
             "origin": "Exercises_2021",
             "external_reference_url": ""
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 95,
             "understandability_score": 95,
             "maintainability_score": 95,
@@ -11932,43 +11878,28 @@
             "cwe_id": "",
             "reasoning": ""
 		},
-		בעייתי
-        "ChatGPT": {
-            "readability_score": 58,
-            "understandability_score": 68,
-            "maintainability_score": 65,
-            "functional_classification": "Buggy",
-            "security_classification": "Safe",
-            "cwe_id": "None",
-            "reasoning": "The intended XNOR logic is simple, but the snippet is syntactically invalid because the docstring is not indented within the function body. The documentation is inaccurate and inconsistent with parameter names. No exploitable security vulnerabilities are present."
-        },
-        "Claude": {
-            "readability_score": 55,
-            "understandability_score": 60,
-            "maintainability_score": 40,
-            "functional_classification": "Buggy",
-            "security_classification": "Safe",
-            "cwe_id": "None",
-            "reasoning": "Docstring is not indented under the function definition while the if-block is, causing an IndentationError at parse time — code will not run. Docstring params also mismatch actual parameter names (num1/num2 vs a/b). No security issues, but code is non-functional as written."
-        },
+        "ChatGPT": {"readability_score":78,"understandability_score":82,"maintainability_score":78,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The function is short and easy to follow, and it correctly implements XNOR equality for Python values. Naming and spacing could be improved, and the docstring is inaccurate/confusing (e.g., parameters named num1/num2). No exploitable security issue is present."}
+,
+        "Claude": { "readability_score": 55, "understandability_score": 50, "maintainability_score": 50, "functional_classification": "Partially Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "The code implements equality, which matches XNOR only for booleans; for arbitrary values (e.g., 1 and True, or 2 and 3) results differ from truthiness-based XNOR. The docstring is inaccurate: it says 'both true' and lists the wrong params (num1/num2). The if/return True/False pattern is redundant. No security issues." },
         "Gemini": {
-            "readability_score": 75,
-            "understandability_score": 80,
-            "maintainability_score": 75,
-            "functional_classification": "Correct",
-            "security_classification": "Safe",
-            "cwe_id": "None",
-            "reasoning": "The core logic correctly returns True when inputs match. However, readability suffers from inconsistent indentation in the docstring, poor phrasing in documentation, incorrect parameter names documented (num1/num2 vs a/b), whitespace before function parentheses, and an unnecessary redundant if-statement that could be simplified to `return a == b`."
-        },
+"readability_score": 60,
+"understandability_score": 50,
+"maintainability_score": 50,
+"functional_classification": "Partially Correct",
+"security_classification": "Safe",
+"cwe_id": "None",
+"reasoning": "The function claims to implement XNOR and returns True when a==b. While this works for boolean-like values, the docstring incorrectly describes AND logic ('if both are correct...') and references wrong param names (num1, num2). Functionally, it relies on strict equality (a==b) rather than boolean logic (not (a ^ b)), failing for non-equal truthy pairs like 1 and True or distinct truthy objects."
+},
         "GithubCopilot": {
-            "readability_score": 85,
-            "understandability_score": 80,
-            "maintainability_score": 75,
-            "functional_classification": "Partially Correct",
-            "security_classification": "Safe",
-            "cwe_id": "None",
-            "reasoning": "Docstring is inaccurate and misleading. Logic works for equality but description suggests boolean semantics. Readable but inconsistent naming and comments reduce clarity. No security risks."
-        },
+  "readability_score": 85,
+  "understandability_score": 90,
+  "maintainability_score": 80,
+  "functional_classification": "Correct",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "Simple boolean comparison, clear logic, minimal complexity. Docstring is inaccurate and poorly written. Structure is basic but maintainable. No security risks present."
+}
+,
         "Sonarqube": {
             "readability_score": 100.0,
             "understandability_score": 100.0,
@@ -11986,7 +11917,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 65_py from python to cpp"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 95,
             "understandability_score": 95,
             "maintainability_score": 95,
@@ -12048,7 +11979,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 65_py from python to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 95,
             "understandability_score": 95,
             "maintainability_score": 95,
@@ -12110,7 +12041,7 @@
             "origin": "Exercises_2021",
             "external_reference_url": ""
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 70,
             "understandability_score": 50,
             "maintainability_score": 30,
@@ -12172,7 +12103,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 66_py from python to cpp"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 70,
             "understandability_score": 50,
             "maintainability_score": 30,
@@ -12234,7 +12165,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 66_py from python to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 70,
             "understandability_score": 50,
             "maintainability_score": 30,
@@ -12296,7 +12227,7 @@
             "origin": "Exercises_2021",
             "external_reference_url": ""
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 60,
             "understandability_score": 50,
             "maintainability_score": 20,
@@ -12358,7 +12289,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 67_py from python to cpp"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 60,
             "understandability_score": 50,
             "maintainability_score": 20,
@@ -12420,7 +12351,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 67_py from python to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 60,
             "understandability_score": 50,
             "maintainability_score": 20,
@@ -12482,7 +12413,7 @@
             "origin": "Exercises_2021",
             "external_reference_url": ""
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 90,
             "understandability_score": 95,
             "maintainability_score": 85,
@@ -12544,7 +12475,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 68_py from python to cpp"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 90,
             "understandability_score": 95,
             "maintainability_score": 85,
@@ -12606,7 +12537,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 68_py from python to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 90,
             "understandability_score": 95,
             "maintainability_score": 85,
@@ -12668,7 +12599,7 @@
             "origin": "Exercises_2021",
             "external_reference_url": ""
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 85,
             "understandability_score": 90,
             "maintainability_score": 50,
@@ -12730,7 +12661,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 69_py from python to cpp"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 85,
             "understandability_score": 90,
             "maintainability_score": 50,
@@ -12792,7 +12723,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 69_py from python to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 85,
             "understandability_score": 90,
             "maintainability_score": 50,
@@ -12854,7 +12785,7 @@
             "origin": "Exercises_2021",
             "external_reference_url": ""
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 80,
             "understandability_score": 80,
             "maintainability_score": 50,
@@ -12916,7 +12847,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 70_py from python to cpp"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 80,
             "understandability_score": 80,
             "maintainability_score": 50,
@@ -12978,7 +12909,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 70_py from python to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 85,
             "understandability_score": 85,
             "maintainability_score": 80,
@@ -13040,7 +12971,7 @@
             "origin": "Exercises_2021",
             "external_reference_url": ""
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 90,
             "understandability_score": 85,
             "maintainability_score": 85,
@@ -13102,7 +13033,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 71_py from python to cpp"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 85,
             "understandability_score": 85,
             "maintainability_score": 80,
@@ -13164,7 +13095,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 71_py from python to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 85,
             "understandability_score": 85,
             "maintainability_score": 80,
@@ -13226,7 +13157,7 @@
             "origin": "Exercises_2021",
             "external_reference_url": ""
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 90,
             "understandability_score": 80,
             "maintainability_score": 80,
@@ -13288,7 +13219,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 72_py from python to cpp"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 90,
             "understandability_score": 80,
             "maintainability_score": 80,
@@ -13350,7 +13281,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 72_py from python to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 90,
             "understandability_score": 80,
             "maintainability_score": 80,
@@ -13412,7 +13343,7 @@
             "origin": "Exercises_2021",
             "external_reference_url": ""
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 90,
             "understandability_score": 80,
             "maintainability_score": 80,
@@ -13474,7 +13405,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 73_py from python to cpp"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 90,
             "understandability_score": 80,
             "maintainability_score": 80,
@@ -13536,7 +13467,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 73_py from python to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 90,
             "understandability_score": 80,
             "maintainability_score": 80,
@@ -13598,7 +13529,7 @@
             "origin": "Exercises_2021",
             "external_reference_url": ""
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 85,
             "understandability_score": 75,
             "maintainability_score": 70,
@@ -13660,7 +13591,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 74_py from python to cpp"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 85,
             "understandability_score": 75,
             "maintainability_score": 70,
@@ -13722,7 +13653,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 74_py from python to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 85,
             "understandability_score": 75,
             "maintainability_score": 70,
@@ -13784,7 +13715,7 @@
             "origin": "Exercises_2021",
             "external_reference_url": ""
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 80,
             "understandability_score": 70,
             "maintainability_score": 50,
@@ -13846,7 +13777,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 75_py from python to cpp"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 80,
             "understandability_score": 70,
             "maintainability_score": 50,
@@ -13908,7 +13839,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 75_py from python to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 80,
             "understandability_score": 70,
             "maintainability_score": 50,
@@ -13970,7 +13901,7 @@
             "origin": "Exercises_2021",
             "external_reference_url": ""
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 75,
             "understandability_score": 60,
             "maintainability_score": 50,
@@ -14032,7 +13963,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 76_py from python to cpp"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 75,
             "understandability_score": 60,
             "maintainability_score": 50,
@@ -14094,7 +14025,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 76_py from python to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 75,
             "understandability_score": 60,
             "maintainability_score": 50,
@@ -14156,7 +14087,7 @@
             "origin": "Exercises_2021",
             "external_reference_url": ""
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 70,
             "understandability_score": 75,
             "maintainability_score": 30,
@@ -14218,7 +14149,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 77_py from python to cpp"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 70,
             "understandability_score": 75,
             "maintainability_score": 30,
@@ -14280,7 +14211,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 77_py from python to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 70,
             "understandability_score": 75,
             "maintainability_score": 30,
@@ -14342,7 +14273,7 @@
             "origin": "Exercises_2021",
             "external_reference_url": ""
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 95,
             "understandability_score": 95,
             "maintainability_score": 95,
@@ -14404,7 +14335,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 78_py from python to cpp"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 95,
             "understandability_score": 95,
             "maintainability_score": 95,
@@ -14466,7 +14397,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 78_py from python to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 95,
             "understandability_score": 95,
             "maintainability_score": 95,
@@ -14528,7 +14459,7 @@
             "origin": "Exercises_2021",
             "external_reference_url": ""
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 90,
             "understandability_score": 85,
             "maintainability_score": 80,
@@ -14590,7 +14521,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 79_py from python to cpp"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 90,
             "understandability_score": 85,
             "maintainability_score": 80,
@@ -14652,7 +14583,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 79_py from python to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 90,
             "understandability_score": 85,
             "maintainability_score": 80,
@@ -14714,7 +14645,7 @@
             "origin": "Exercises_2021",
             "external_reference_url": ""
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 95,
             "understandability_score": 85,
             "maintainability_score": 75,
@@ -14776,7 +14707,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 80_py from python to cpp"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 95,
             "understandability_score": 85,
             "maintainability_score": 75,
@@ -14838,7 +14769,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 80_py from python to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 95,
             "understandability_score": 85,
             "maintainability_score": 75,
@@ -14900,7 +14831,7 @@
             "origin": "Exercises_2021",
             "external_reference_url": ""
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 90,
             "understandability_score": 90,
             "maintainability_score": 80,
@@ -14962,7 +14893,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 81_py from python to cpp"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 90,
             "understandability_score": 90,
             "maintainability_score": 80,
@@ -15024,7 +14955,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 81_py from python to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 90,
             "understandability_score": 90,
             "maintainability_score": 80,
@@ -15086,7 +15017,7 @@
             "origin": "Exercises_2021",
             "external_reference_url": ""
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 90,
             "understandability_score": 85,
             "maintainability_score": 50,
@@ -15148,7 +15079,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 82_py from python to cpp"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 90,
             "understandability_score": 85,
             "maintainability_score": 50,
@@ -15210,7 +15141,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 82_py from python to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 90,
             "understandability_score": 85,
             "maintainability_score": 50,
@@ -15272,7 +15203,7 @@
             "origin": "Exercises_2021",
             "external_reference_url": ""
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 80,
             "understandability_score": 85,
             "maintainability_score": 80,
@@ -15334,7 +15265,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 83_py from python to cpp"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 80,
             "understandability_score": 85,
             "maintainability_score": 80,
@@ -15396,7 +15327,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 83_py from python to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 80,
             "understandability_score": 85,
             "maintainability_score": 80,
@@ -15458,7 +15389,7 @@
             "origin": "Exercises_2021",
             "external_reference_url": ""
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 85,
             "understandability_score": 85,
             "maintainability_score": 85,
@@ -15520,7 +15451,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 84_py from python to cpp"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 85,
             "understandability_score": 85,
             "maintainability_score": 85,
@@ -15582,7 +15513,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 84_py from python to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 85,
             "understandability_score": 85,
             "maintainability_score": 85,
@@ -15644,7 +15575,7 @@
             "origin": "Exercises_2021",
             "external_reference_url": ""
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 70,
             "understandability_score": 60,
             "maintainability_score": 50,
@@ -15706,7 +15637,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 85_py from python to cpp"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 70,
             "understandability_score": 60,
             "maintainability_score": 50,
@@ -15768,7 +15699,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 85_py from python to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 70,
             "understandability_score": 60,
             "maintainability_score": 50,
@@ -15830,7 +15761,7 @@
             "origin": "Exercises_2021",
             "external_reference_url": ""
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 90,
             "understandability_score": 90,
             "maintainability_score": 85,
@@ -15892,7 +15823,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 86_py from python to cpp"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 90,
             "understandability_score": 90,
             "maintainability_score": 85,
@@ -15954,7 +15885,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 86_py from python to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 90,
             "understandability_score": 90,
             "maintainability_score": 85,
@@ -16016,7 +15947,7 @@
             "origin": "Exercises_2021",
             "external_reference_url": ""
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 100,
             "understandability_score": 100,
             "maintainability_score": 90,
@@ -16078,7 +16009,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 87_py from python to cpp"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 100,
             "understandability_score": 100,
             "maintainability_score": 90,
@@ -16140,7 +16071,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 87_py from python to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 100,
             "understandability_score": 100,
             "maintainability_score": 90,
@@ -16202,7 +16133,7 @@
             "origin": "Exercises_2021",
             "external_reference_url": ""
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 95,
             "understandability_score": 95,
             "maintainability_score": 95,
@@ -16264,7 +16195,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 88_py from python to cpp"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 95,
             "understandability_score": 95,
             "maintainability_score": 95,
@@ -16326,7 +16257,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 88_py from python to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 95,
             "understandability_score": 95,
             "maintainability_score": 95,
@@ -16388,43 +16319,28 @@
             "origin": "Exercises_2021",
             "external_reference_url": ""
         },
-		כפול ל88?
-        "ChatGPT": {
-            "readability_score": 98,
-            "understandability_score": 98,
-            "maintainability_score": 97,
-            "functional_classification": "Correct",
-            "security_classification": "Safe",
-            "cwe_id": "None",
-            "reasoning": "Clear and concise implementation that normalizes input by removing spaces, converting to lowercase, and comparing sorted characters. The logic correctly identifies anagrams according to the documented behavior. Minor style issue from overwriting parameters. No exploitable security vulnerabilities are present."
-        },
-        "Claude": {
-            "readability_score": 88,
-            "understandability_score": 88,
-            "maintainability_score": 70,
-            "functional_classification": "Correct",
-            "security_classification": "Safe",
-            "cwe_id": "None",
-            "reasoning": "Correctly checks anagram with case normalization and whitespace removal, handling phrase anagrams properly. Clear step-by-step comments aid readability. Minor typo 'al' instead of 'all' in comment. No security concerns; simple string processing with no external/untrusted input handling."
-        },
+        "ChatGPT": {"readability_score":90,"understandability_score":92,"maintainability_score":88,"functional_classification":"Correct","security_classification":"Safe","cwe_id":"None","reasoning":"The function is concise, clear, and correctly checks anagrams while ignoring spaces and letter case. Sorting makes the logic easy to follow, though O(n log n) complexity could be improved with character counting. No evident security vulnerabilities are present."}
+,
+        "Claude": { "readability_score": 82, "understandability_score": 88, "maintainability_score": 72, "functional_classification": "Partially Correct", "security_classification": "Safe", "cwe_id": "None", "reasoning": "Clear, short, and well-documented, with a minor typo ('al') and redundant comments. Logic is a correct sort-and-compare anagram check for basic input, but only strips ASCII spaces (not tabs/newlines), ignores punctuation, and lacks Unicode casefold/normalization or type validation. Sorting is O(n log n) versus O(n) counting. No security issues." },
         "Gemini": {
-            "readability_score": 90,
-            "understandability_score": 95,
-            "maintainability_score": 85,
-            "functional_classification": "Correct",
-            "security_classification": "Safe",
-            "cwe_id": "None",
-            "reasoning": "The code correctly identifies anagrams while handling whitespace and case insensitivity. The implementation is clean and easy to follow. Minor redundancy: `\"\".join(...)` is unnecessary because `sorted()` lists can be compared directly (`sorted(s1) == sorted(s2)`). Typos in docstring ('al' instead of 'all') are minor."
-        },
+"readability_score": 90,
+"understandability_score": 95,
+"maintainability_score": 85,
+"functional_classification": "Correct",
+"security_classification": "Safe",
+"cwe_id": "None",
+"reasoning": "The code is clear, concise, and logically sound for basic anagram checking after normalizing spaces and casing. Sorting yields O(N log N) time complexity, which is acceptable, though a frequency counter would be O(N). No security vulnerabilities or exploitable patterns are present."
+},
         "GithubCopilot": {
-            "readability_score": 98,
-            "understandability_score": 98,
-            "maintainability_score": 97,
-            "functional_classification": "Correct",
-            "security_classification": "Safe",
-            "cwe_id": "None",
-            "reasoning": "Clear normalization, space removal, lowercasing, and sorted comparison. Highly readable, easy to understand, and maintainable. Logic correctly identifies anagrams. No security risks."
-        },
+  "readability_score": 92,
+  "understandability_score": 90,
+  "maintainability_score": 85,
+  "functional_classification": "Correct",
+  "security_classification": "Safe",
+  "cwe_id": "None",
+  "reasoning": "Clear, concise, and logically simple. Uses built-in safe operations. Minor maintainability concerns due to inline transformations but overall correct and secure."
+}
+,
         "Sonarqube": {
             "readability_score": 100.0,
             "understandability_score": 100.0,
@@ -16548,7 +16464,7 @@
             "origin": "Exercises_2021",
             "external_reference_url": ""
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 80,
             "understandability_score": 90,
             "maintainability_score": 85,
@@ -16610,7 +16526,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 90_py from python to cpp"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 80,
             "understandability_score": 90,
             "maintainability_score": 85,
@@ -16672,7 +16588,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 90_py from python to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 80,
             "understandability_score": 90,
             "maintainability_score": 85,
@@ -16734,7 +16650,7 @@
             "origin": "Exercises_2021",
             "external_reference_url": ""
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 90,
             "understandability_score": 95,
             "maintainability_score": 85,
@@ -16796,7 +16712,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 91_py from python to cpp"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 90,
             "understandability_score": 95,
             "maintainability_score": 85,
@@ -16858,7 +16774,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 91_py from python to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 90,
             "understandability_score": 95,
             "maintainability_score": 85,
@@ -16920,7 +16836,7 @@
             "origin": "Exercises_2021",
             "external_reference_url": ""
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 90,
             "understandability_score": 85,
             "maintainability_score": 75,
@@ -16982,7 +16898,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 92_py from python to cpp"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 90,
             "understandability_score": 85,
             "maintainability_score": 75,
@@ -17044,7 +16960,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 92_py from python to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 90,
             "understandability_score": 85,
             "maintainability_score": 75,
@@ -17106,7 +17022,7 @@
             "origin": "Exercises_2021",
             "external_reference_url": ""
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 80,
             "understandability_score": 75,
             "maintainability_score": 40,
@@ -17168,7 +17084,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 93_py from python to cpp"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 80,
             "understandability_score": 75,
             "maintainability_score": 40,
@@ -17230,7 +17146,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 93_py from python to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 80,
             "understandability_score": 75,
             "maintainability_score": 40,
@@ -17292,7 +17208,7 @@
             "origin": "Exercises_2021",
             "external_reference_url": ""
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 80,
             "understandability_score": 85,
             "maintainability_score": 70,
@@ -17354,7 +17270,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 94_py from python to cpp"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 80,
             "understandability_score": 85,
             "maintainability_score": 70,
@@ -17416,7 +17332,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 94_py from python to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 80,
             "understandability_score": 85,
             "maintainability_score": 70,
@@ -17478,7 +17394,7 @@
             "origin": "Exercises_2022",
             "external_reference_url": ""
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 75,
             "understandability_score": 70,
             "maintainability_score": 50,
@@ -17540,7 +17456,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 95_py from python to cpp"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 75,
             "understandability_score": 70,
             "maintainability_score": 50,
@@ -17602,7 +17518,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 95_py from python to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 75,
             "understandability_score": 70,
             "maintainability_score": 50,
@@ -17664,7 +17580,7 @@
             "origin": "Exercises_2022",
             "external_reference_url": ""
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 90,
             "understandability_score": 85,
             "maintainability_score": 80,
@@ -17726,7 +17642,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 96_py from python to cpp"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 90,
             "understandability_score": 85,
             "maintainability_score": 80,
@@ -17788,7 +17704,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 96_py from python to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 90,
             "understandability_score": 85,
             "maintainability_score": 80,
@@ -17850,7 +17766,7 @@
             "origin": "Exercises_2022",
             "external_reference_url": ""
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 80,
             "understandability_score": 50,
             "maintainability_score": 50,
@@ -17912,7 +17828,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 97_py from python to cpp"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 80,
             "understandability_score": 50,
             "maintainability_score": 50,
@@ -17974,7 +17890,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 97_py from python to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 80,
             "understandability_score": 50,
             "maintainability_score": 50,
@@ -18036,7 +17952,7 @@
             "origin": "Exercises_2022",
             "external_reference_url": ""
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 80,
             "understandability_score": 80,
             "maintainability_score": 70,
@@ -18098,7 +18014,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 98_py from python to cpp"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 80,
             "understandability_score": 80,
             "maintainability_score": 70,
@@ -18160,7 +18076,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 98_py from python to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 80,
             "understandability_score": 80,
             "maintainability_score": 70,
@@ -18222,7 +18138,7 @@
             "origin": "Exercises_2022",
             "external_reference_url": ""
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 50,
             "understandability_score": 50,
             "maintainability_score": 30,
@@ -18284,7 +18200,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 99_py from python to cpp"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 50,
             "understandability_score": 50,
             "maintainability_score": 30,
@@ -18346,7 +18262,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 99_py from python to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 50,
             "understandability_score": 50,
             "maintainability_score": 30,
@@ -18408,7 +18324,7 @@
             "origin": "Exercises_2022",
             "external_reference_url": ""
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 50,
             "understandability_score": 50,
             "maintainability_score": 30,
@@ -18470,7 +18386,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 100_py from python to cpp"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 50,
             "understandability_score": 50,
             "maintainability_score": 30,
@@ -18532,7 +18448,7 @@
             "origin": "transFromPython",
             "external_reference_url": "Translatetd file 100_py from python to java"
         },
-		"Human":{
+		"Human1":{
 			"readability_score": 50,
             "understandability_score": 50,
             "maintainability_score": 30,
