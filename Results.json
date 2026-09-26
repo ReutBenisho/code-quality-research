@@ -4,34 +4,26 @@
             "id": 1,
             "language": "java",
             "origin": "Cui_2024",
-            "external_reference_url": "Figure 3(a)"
+            "external_reference_url": "Figure 3(a)",
+            "functional_classification": "Correct",
+            "security_classification": "Vulnerable",
+            "cwe_id": "CWE-495,CWE-375",
+            "reasoning": "Members have unclear names, identical function names, the getArr functions are breaking encapsulation principle"
         },
         "Human1": {
             "readability_score": 85,
             "understandability_score": 90,
-            "maintainability_score": 50,
-            "functional_classification": "Correct",
-            "security_classification": "Vulnerable",
-            "cwe_id": "CWE-495,CWE-496,CWE-374,CWE-375",
-            "reasoning": "Members have unclear names, identical function names, the getArr functions are breaking encapsulation principle"
+            "maintainability_score": 50
         },
         "Human2": {
             "readability_score": 80,
             "understandability_score": 90,
-            "maintainability_score": 70,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 70
         },
         "Human3": {
             "readability_score": 85,
             "understandability_score": 90,
-            "maintainability_score": 55,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 55
         },
         "ChatGPT": {
             "readability_score": 78,
@@ -84,34 +76,26 @@
             "id": 1,
             "language": "cpp",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 1_java from java to cpp"
+            "external_reference_url": "Translatetd file 1_java from java to cpp",
+            "functional_classification": "Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "Members have unclear names, identical function names"
         },
         "Human1": {
             "readability_score": 85,
             "understandability_score": 90,
-            "maintainability_score": 50,
-            "functional_classification": "Correct",
-            "security_classification": "Vulnerable",
-            "cwe_id": "CWE-495,CWE-496,CWE-374,CWE-375",
-            "reasoning": "Members have unclear names, identical function names, the getArr functions are breaking encapsulation principle"
+            "maintainability_score": 50
         },
         "Human2": {
             "readability_score": 80,
             "understandability_score": 90,
-            "maintainability_score": 70,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 70
         },
         "Human3": {
             "readability_score": 85,
             "understandability_score": 90,
-            "maintainability_score": 55,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 55
         },
         "ChatGPT": {
             "readability_score": 90,
@@ -164,34 +148,26 @@
             "id": 1,
             "language": "python",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 1_java from java to python"
+            "external_reference_url": "Translatetd file 1_java from java to python",
+            "functional_classification": "Correct",
+            "security_classification": "Vulnerable",
+            "cwe_id": "CWE-495,CWE-375",
+            "reasoning": "Members have unclear names, identical function names, the getArr functions are breaking encapsulation principle"
         },
         "Human1": {
             "readability_score": 85,
             "understandability_score": 90,
-            "maintainability_score": 50,
-            "functional_classification": "Correct",
-            "security_classification": "Vulnerable",
-            "cwe_id": "CWE-495,CWE-496,CWE-374,CWE-375",
-            "reasoning": "Members have unclear names, identical function names, the getArr functions are breaking encapsulation principle"
+            "maintainability_score": 50
         },
         "Human2": {
             "readability_score": 80,
             "understandability_score": 90,
-            "maintainability_score": 70,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 70
         },
         "Human3": {
             "readability_score": 85,
             "understandability_score": 90,
-            "maintainability_score": 55,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 55
         },
         "ChatGPT": {
             "readability_score": 92,
@@ -244,34 +220,26 @@
             "id": 2,
             "language": "java",
             "origin": "Cui_2024",
-            "external_reference_url": "Figure 3(b)"
-        },
-        "Human1": {
-            "readability_score": 90,
-            "understandability_score": 100,
-            "maintainability_score": 95,
+            "external_reference_url": "Figure 3(b)",
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
             "reasoning": "Variables have unclear names"
         },
+        "Human1": {
+            "readability_score": 90,
+            "understandability_score": 100,
+            "maintainability_score": 95
+        },
         "Human2": {
             "readability_score": 90,
             "understandability_score": 95,
-            "maintainability_score": 90,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 90
         },
         "Human3": {
             "readability_score": 90,
             "understandability_score": 95,
-            "maintainability_score": 95,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 95
         },
         "ChatGPT": {
             "readability_score": 82,
@@ -324,34 +292,26 @@
             "id": 2,
             "language": "cpp",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 2_java from java to cpp"
-        },
-        "Human1": {
-            "readability_score": 90,
-            "understandability_score": 100,
-            "maintainability_score": 95,
+            "external_reference_url": "Translatetd file 2_java from java to cpp",
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
             "reasoning": "Variables have unclear names"
         },
+        "Human1": {
+            "readability_score": 90,
+            "understandability_score": 100,
+            "maintainability_score": 95
+        },
         "Human2": {
             "readability_score": 90,
             "understandability_score": 95,
-            "maintainability_score": 90,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 90
         },
         "Human3": {
             "readability_score": 90,
             "understandability_score": 95,
-            "maintainability_score": 95,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 95
         },
         "ChatGPT": {
             "readability_score": 88,
@@ -404,34 +364,26 @@
             "id": 2,
             "language": "python",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 2_java from java to python"
-        },
-        "Human1": {
-            "readability_score": 85,
-            "understandability_score": 100,
-            "maintainability_score": 90,
+            "external_reference_url": "Translatetd file 2_java from java to python",
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
             "reasoning": "Variables have unclear names"
         },
+        "Human1": {
+            "readability_score": 85,
+            "understandability_score": 100,
+            "maintainability_score": 90
+        },
         "Human2": {
             "readability_score": 85,
             "understandability_score": 90,
-            "maintainability_score": 80,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 80
         },
         "Human3": {
             "readability_score": 90,
             "understandability_score": 95,
-            "maintainability_score": 95,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 95
         },
         "ChatGPT": {
             "readability_score": 88,
@@ -484,34 +436,26 @@
             "id": 3,
             "language": "java",
             "origin": "Cui_2024",
-            "external_reference_url": "Figure 3(c)"
+            "external_reference_url": "Figure 3(c)",
+            "functional_classification": "Partially Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "Good structure and variable names, but contains dead code and unused variables."
         },
         "Human1": {
             "readability_score": 95,
             "understandability_score": 85,
-            "maintainability_score": 50,
-            "functional_classification": "Correct",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 50
         },
         "Human2": {
             "readability_score": 90,
             "understandability_score": 85,
-            "maintainability_score": 50,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 50
         },
         "Human3": {
             "readability_score": 90,
             "understandability_score": 85,
-            "maintainability_score": 50,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 50
         },
         "ChatGPT": {
             "readability_score": 88,
@@ -564,34 +508,26 @@
             "id": 3,
             "language": "cpp",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 3_java from java to cpp"
+            "external_reference_url": "Translatetd file 3_java from java to cpp",
+            "functional_classification": "Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "Good structure and variable names, but contains dead code and unused variables."
         },
         "Human1": {
             "readability_score": 95,
             "understandability_score": 85,
-            "maintainability_score": 50,
-            "functional_classification": "Correct",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 50
         },
         "Human2": {
             "readability_score": 90,
             "understandability_score": 80,
-            "maintainability_score": 50,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 50
         },
         "Human3": {
             "readability_score": 90,
             "understandability_score": 85,
-            "maintainability_score": 50,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 50
         },
         "ChatGPT": {
             "readability_score": 88,
@@ -644,7 +580,11 @@
             "id": 3,
             "language": "python",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 3_java from java to python"
+            "external_reference_url": "Translatetd file 3_java from java to python",
+            "functional_classification": "Partially Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "Good structure and variable names, but contains dead code and unused variables."
         },
         "Human1": {
             "readability_score": 95,
@@ -724,34 +664,26 @@
             "id": 4,
             "language": "java",
             "origin": "Cui_2024",
-            "external_reference_url": "Figure 3(d)"
+            "external_reference_url": "Figure 3(d)",
+            "functional_classification": "Partially Correct",
+            "security_classification": "Vulnerable",
+            "cwe_id": "CWE-374",
+            "reasoning": "Logic unclear, returns a1 without processing a2, lacks null checks, and has potential for unintended modification."
         },
         "Human1": {
             "readability_score": 85,
             "understandability_score": 80,
-            "maintainability_score": 50,
-            "functional_classification": "Correct",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 50
         },
         "Human2": {
             "readability_score": 90,
             "understandability_score": 90,
-            "maintainability_score": 90,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 90
         },
         "Human3": {
             "readability_score": 85,
             "understandability_score": 80,
-            "maintainability_score": 60,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 60
         },
         "ChatGPT": {
             "readability_score": 72,
@@ -804,7 +736,11 @@
             "id": 4,
             "language": "cpp",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 4_java from java to cpp"
+            "external_reference_url": "Translatetd file 4_java from java to cpp",
+            "functional_classification": "Partially Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "Logic unclear, returns a1 without processing a2"
         },
         "Human1": {
             "readability_score": 85,
@@ -884,7 +820,11 @@
             "id": 4,
             "language": "python",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 4_java from java to python"
+            "external_reference_url": "Translatetd file 4_java from java to python",
+            "functional_classification": "Partially Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "Logic unclear, returns a1 without processing a2, lacks null checks."
         },
         "Human1": {
             "readability_score": 85,
@@ -964,34 +904,26 @@
             "id": 5,
             "language": "java",
             "origin": "Cui_2024",
-            "external_reference_url": "Figure 3(e)"
+            "external_reference_url": "Figure 3(e)",
+            "functional_classification": "Partially Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "Unclear naming, function is purposeless"
         },
         "Human1": {
             "readability_score": 85,
             "understandability_score": 80,
-            "maintainability_score": 90,
-            "functional_classification": "Correct",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 90
         },
         "Human2": {
             "readability_score": 95,
             "understandability_score": 95,
-            "maintainability_score": 95,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 95
         },
         "Human3": {
             "readability_score": 80,
             "understandability_score": 80,
-            "maintainability_score": 90,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 90
         },
         "ChatGPT": {
             "readability_score": 95,
@@ -1044,34 +976,26 @@
             "id": 5,
             "language": "cpp",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 5_java from java to cpp"
+            "external_reference_url": "Translatetd file 5_java from java to cpp",
+            "functional_classification": "Partially Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "Unclear naming, function is purposeless"
         },
         "Human1": {
             "readability_score": 85,
             "understandability_score": 80,
-            "maintainability_score": 90,
-            "functional_classification": "Correct",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 90
         },
         "Human2": {
             "readability_score": 95,
             "understandability_score": 95,
-            "maintainability_score": 95,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 95
         },
         "Human3": {
             "readability_score": 80,
             "understandability_score": 80,
-            "maintainability_score": 90,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 90
         },
         "ChatGPT": {
             "readability_score": 98,
@@ -1124,34 +1048,26 @@
             "id": 5,
             "language": "python",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 5_java from java to python"
+            "external_reference_url": "Translatetd file 5_java from java to python",
+            "functional_classification": "Partially Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "Unclear naming, function is purposeless"
         },
         "Human1": {
             "readability_score": 85,
             "understandability_score": 80,
-            "maintainability_score": 90,
-            "functional_classification": "Correct",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 90
         },
         "Human2": {
             "readability_score": 95,
             "understandability_score": 95,
-            "maintainability_score": 95,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 95
         },
         "Human3": {
             "readability_score": 80,
             "understandability_score": 80,
-            "maintainability_score": 90,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 90
         },
         "ChatGPT": {
             "readability_score": 98,
