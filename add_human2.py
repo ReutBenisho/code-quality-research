@@ -2,13 +2,15 @@ import csv
 import json
 
 def update_json_with_human2(json_path, csv_path, output_path):
-    with open(json_path, 'r', encoding='utf-8') as f:
+    with open(json_path, 'r', encoding="utf-8-sig") as f:
         data = json.load(f)
 
-    with open(csv_path, 'r', encoding='utf-8') as f:
+    with open(csv_path, 'r', encoding="utf-8-sig") as f:
         reader = csv.DictReader(f)
         for row in reader:
-            raw_name = row['Name'].strip()
+            if row['Evaluator'] != 'Human3':
+                continue
+            raw_name = row['Record'].strip()
             
             key = raw_name
             for ext in ['.cpp', '.java', '.py']:
@@ -26,7 +28,7 @@ def update_json_with_human2(json_path, csv_path, output_path):
                     understandability = float(row['Understandability'])
                     maintainability = float(row['Maintainability'])
 
-                human2_obj = {
+                human3_obj = {
                     "readability_score": readability,
                     "understandability_score": understandability,
                     "maintainability_score": maintainability,
@@ -39,11 +41,11 @@ def update_json_with_human2(json_path, csv_path, output_path):
                 new_item = {}
                 for k, v in data[key].items():
                     new_item[k] = v
-                    if k == "Human1":
-                        new_item["Human2"] = human2_obj
+                    if k == "Human2":
+                        new_item["Human3"] = human3_obj
 
-                if "Human2" not in new_item:
-                    new_item["Human2"] = human2_obj
+                if "Human3" not in new_item:
+                    new_item["Human3"] = human3_obj
 
                 data[key] = new_item
 
@@ -56,7 +58,7 @@ def update_json_with_human2(json_path, csv_path, output_path):
     print(f"Updated JSON file saved to: {output_path}")
 
 json_file = 'Results.json'
-csv_file = 'Grades_for_Human2.csv'
+csv_file = 'human_scores.csv'
 output_file = 'Results.json'
 
 update_json_with_human2(json_file, csv_file, output_file)
