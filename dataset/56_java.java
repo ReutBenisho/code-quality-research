@@ -1,12 +1,12 @@
-public boolean openFile(String pathStr, FileInputStream fileToOpen) {
+public FileInputStream openFile(String pathStr, FileInputStream fileToOpen) {
     Path filePath = Paths.get(pathStr);
 
     if (!Files.exists(filePath)) {
-        return false;
+        return null;
     }
 
     if (!Files.isRegularFile(filePath)) {
-        return false;
+        return null;
     }
 
     if (fileToOpen != null) {
@@ -19,8 +19,8 @@ public boolean openFile(String pathStr, FileInputStream fileToOpen) {
     try {
         fileToOpen = new FileInputStream(filePath.toFile());
     } catch (FileNotFoundException e) {
-        return false;
+        return null;
     }
 
-    return fileToOpen.getChannel().isOpen();
+    return fileToOpen;
 }

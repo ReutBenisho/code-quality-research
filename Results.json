@@ -76,7 +76,7 @@
             "id": 1,
             "language": "cpp",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 1_java from java to cpp",
+            "external_reference_url": "Translated file 1_java from java to cpp",
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
@@ -148,7 +148,7 @@
             "id": 1,
             "language": "python",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 1_java from java to python",
+            "external_reference_url": "Translated file 1_java from java to python",
             "functional_classification": "Correct",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-495,CWE-375",
@@ -292,7 +292,7 @@
             "id": 2,
             "language": "cpp",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 2_java from java to cpp",
+            "external_reference_url": "Translated file 2_java from java to cpp",
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
@@ -364,7 +364,7 @@
             "id": 2,
             "language": "python",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 2_java from java to python",
+            "external_reference_url": "Translated file 2_java from java to python",
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
@@ -508,7 +508,7 @@
             "id": 3,
             "language": "cpp",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 3_java from java to cpp",
+            "external_reference_url": "Translated file 3_java from java to cpp",
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
@@ -580,7 +580,7 @@
             "id": 3,
             "language": "python",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 3_java from java to python",
+            "external_reference_url": "Translated file 3_java from java to python",
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
@@ -736,7 +736,7 @@
             "id": 4,
             "language": "cpp",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 4_java from java to cpp",
+            "external_reference_url": "Translated file 4_java from java to cpp",
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
@@ -820,7 +820,7 @@
             "id": 4,
             "language": "python",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 4_java from java to python",
+            "external_reference_url": "Translated file 4_java from java to python",
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
@@ -976,7 +976,7 @@
             "id": 5,
             "language": "cpp",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 5_java from java to cpp",
+            "external_reference_url": "Translated file 5_java from java to cpp",
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
@@ -1048,7 +1048,7 @@
             "id": 5,
             "language": "python",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 5_java from java to python",
+            "external_reference_url": "Translated file 5_java from java to python",
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
@@ -1192,7 +1192,7 @@
             "id": 6,
             "language": "cpp",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 6_java from java to cpp",
+            "external_reference_url": "Translated file 6_java from java to cpp",
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
@@ -1264,7 +1264,7 @@
             "id": 6,
             "language": "python",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 6_java from java to python",
+            "external_reference_url": "Translated file 6_java from java to python",
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
@@ -1408,7 +1408,7 @@
             "id": 7,
             "language": "cpp",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 7_java from java to cpp",
+            "external_reference_url": "Translated file 7_java from java to cpp",
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
@@ -1697,7 +1697,7 @@
             "id": 8,
             "language": "python",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 8_java from java to python",
+            "external_reference_url": "Translated file 8_java from java to python",
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
@@ -1842,7 +1842,7 @@
             "id": 9,
             "language": "cpp",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 9_java from java to cpp",
+            "external_reference_url": "Translated file 9_java from java to cpp",
             "functional_classification": "Buggy",
             "security_classification": "Safe",
             "cwe_id": "None",
@@ -1914,7 +1914,7 @@
             "id": 9,
             "language": "python",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 9_java from java to python"
+            "external_reference_url": "Translated file 9_java from java to python"
         },
         "Human1": {
             "readability_score": 85,
@@ -2066,7 +2066,7 @@
             "id": 10,
             "language": "cpp",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 10_java from java to cpp",
+            "external_reference_url": "Translated file 10_java from java to cpp",
             "functional_classification": "Buggy",
             "security_classification": "Safe",
             "cwe_id": "None",
@@ -2138,7 +2138,7 @@
             "id": 10,
             "language": "python",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 10_java from java to python",
+            "external_reference_url": "Translated file 10_java from java to python",
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
@@ -2282,7 +2282,7 @@
             "id": 11,
             "language": "cpp",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 11_java from java to cpp",
+            "external_reference_url": "Translated file 11_java from java to cpp",
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
@@ -2354,7 +2354,7 @@
             "id": 11,
             "language": "python",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 11_java from java to python",
+            "external_reference_url": "Translated file 11_java from java to python",
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
@@ -2498,7 +2498,7 @@
             "id": 12,
             "language": "cpp",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 12_java from java to cpp",
+            "external_reference_url": "Translated file 12_java from java to cpp",
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
@@ -2570,7 +2570,7 @@
             "id": 12,
             "language": "python",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 12_java from java to python",
+            "external_reference_url": "Translated file 12_java from java to python",
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
@@ -2714,7 +2714,7 @@
             "id": 13,
             "language": "cpp",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 13_java from java to cpp",
+            "external_reference_url": "Translated file 13_java from java to cpp",
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
@@ -2786,7 +2786,7 @@
             "id": 13,
             "language": "python",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 13_java from java to python",
+            "external_reference_url": "Translated file 13_java from java to python",
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
@@ -2930,7 +2930,7 @@
             "id": 14,
             "language": "cpp",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 14_java from java to cpp",
+            "external_reference_url": "Translated file 14_java from java to cpp",
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-595, CWE-597",
@@ -3002,7 +3002,7 @@
             "id": 14,
             "language": "python",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 14_java from java to python",
+            "external_reference_url": "Translated file 14_java from java to python",
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-595, CWE-597",
@@ -3146,7 +3146,7 @@
             "id": 15,
             "language": "cpp",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 15_java from java to cpp",
+            "external_reference_url": "Translated file 15_java from java to cpp",
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
@@ -3218,7 +3218,7 @@
             "id": 15,
             "language": "python",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 15_java from java to python",
+            "external_reference_url": "Translated file 15_java from java to python",
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
@@ -3362,7 +3362,7 @@
             "id": 16,
             "language": "cpp",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 16_java from java to cpp",
+            "external_reference_url": "Translated file 16_java from java to cpp",
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
@@ -3434,7 +3434,7 @@
             "id": 16,
             "language": "python",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 16_java from java to python",
+            "external_reference_url": "Translated file 16_java from java to python",
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
@@ -3578,7 +3578,7 @@
             "id": 17,
             "language": "cpp",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 17_java from java to cpp",
+            "external_reference_url": "Translated file 17_java from java to cpp",
             "functional_classification": "Buggy",
             "security_classification": "Safe",
             "cwe_id": "None",
@@ -3650,7 +3650,7 @@
             "id": 17,
             "language": "python",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 17_java from java to python",
+            "external_reference_url": "Translated file 17_java from java to python",
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
@@ -3794,7 +3794,7 @@
             "id": 18,
             "language": "cpp",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 18_java from java to cpp",
+            "external_reference_url": "Translated file 18_java from java to cpp",
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
@@ -3866,7 +3866,7 @@
             "id": 18,
             "language": "python",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 18_java from java to python",
+            "external_reference_url": "Translated file 18_java from java to python",
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
@@ -4010,7 +4010,7 @@
             "id": 19,
             "language": "cpp",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 19_java from java to cpp",
+            "external_reference_url": "Translated file 19_java from java to cpp",
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-404",
@@ -4082,7 +4082,7 @@
             "id": 19,
             "language": "python",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 19_java from java to python",
+            "external_reference_url": "Translated file 19_java from java to python",
             "functional_classification": "Partially Correct",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-404",
@@ -4226,7 +4226,7 @@
             "id": 20,
             "language": "cpp",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 20_java from java to cpp",
+            "external_reference_url": "Translated file 20_java from java to cpp",
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
@@ -4298,7 +4298,7 @@
             "id": 20,
             "language": "python",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 20_java from java to python",
+            "external_reference_url": "Translated file 20_java from java to python",
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
@@ -4442,7 +4442,7 @@
             "id": 21,
             "language": "cpp",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 21_java from java to cpp",
+            "external_reference_url": "Translated file 21_java from java to cpp",
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
@@ -4514,7 +4514,7 @@
             "id": 21,
             "language": "python",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 21_java from java to python",
+            "external_reference_url": "Translated file 21_java from java to python",
             "functional_classification": "Correct",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-476",
@@ -4658,7 +4658,7 @@
             "id": 22,
             "language": "cpp",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 22_java from java to cpp",
+            "external_reference_url": "Translated file 22_java from java to cpp",
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-476",
@@ -4730,7 +4730,7 @@
             "id": 22,
             "language": "python",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 22_java from java to python",
+            "external_reference_url": "Translated file 22_java from java to python",
             "functional_classification": "Buggy",
             "security_classification": "Safe",
             "cwe_id": "None",
@@ -4874,7 +4874,7 @@
             "id": 23,
             "language": "cpp",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 23_java from java to cpp",
+            "external_reference_url": "Translated file 23_java from java to cpp",
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-190",
@@ -4946,7 +4946,7 @@
             "id": 23,
             "language": "python",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 23_java from java to python",
+            "external_reference_url": "Translated file 23_java from java to python",
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
@@ -5090,7 +5090,7 @@
             "id": 24,
             "language": "cpp",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 24_java from java to cpp",
+            "external_reference_url": "Translated file 24_java from java to cpp",
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-89",
@@ -5162,7 +5162,7 @@
             "id": 24,
             "language": "python",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 24_java from java to python",
+            "external_reference_url": "Translated file 24_java from java to python",
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-89",
@@ -5306,7 +5306,7 @@
             "id": 25,
             "language": "cpp",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 25_java from java to cpp",
+            "external_reference_url": "Translated file 25_java from java to cpp",
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-129",
@@ -5378,7 +5378,7 @@
             "id": 25,
             "language": "python",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 25_java from java to python",
+            "external_reference_url": "Translated file 25_java from java to python",
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-129",
@@ -5522,7 +5522,7 @@
             "id": 26,
             "language": "cpp",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 26_java from java to cpp",
+            "external_reference_url": "Translated file 26_java from java to cpp",
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
@@ -5594,7 +5594,7 @@
             "id": 26,
             "language": "python",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 26_java from java to python",
+            "external_reference_url": "Translated file 26_java from java to python",
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
@@ -5738,7 +5738,7 @@
             "id": 27,
             "language": "cpp",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 27_java from java to cpp",
+            "external_reference_url": "Translated file 27_java from java to cpp",
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-94,CWE-470",
@@ -5822,7 +5822,7 @@
             "id": 27,
             "language": "python",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 27_java from java to python",
+            "external_reference_url": "Translated file 27_java from java to python",
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-94,CWE-470",
@@ -5966,7 +5966,7 @@
             "id": 28,
             "language": "java",
             "origin": "transFromCpp",
-            "external_reference_url": "Translatetd file 28_cpp from cpp to java",
+            "external_reference_url": "Translated file 28_cpp from cpp to java",
             "functional_classification": "",
             "security_classification": "Safe",
             "cwe_id": "None",
@@ -6038,7 +6038,7 @@
             "id": 28,
             "language": "python",
             "origin": "transFromCpp",
-            "external_reference_url": "Translatetd file 28_cpp from cpp to python",
+            "external_reference_url": "Translated file 28_cpp from cpp to python",
             "functional_classification": "Buggy",
             "security_classification": "Safe",
             "cwe_id": "None",
@@ -6182,7 +6182,7 @@
             "id": 29,
             "language": "cpp",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 29_py from python to cpp",
+            "external_reference_url": "Translated file 29_py from python to cpp",
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-20,CWE-22, CWE-183",
@@ -6254,7 +6254,7 @@
             "id": 29,
             "language": "java",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 29_py from python to java",
+            "external_reference_url": "Translated file 29_py from python to java",
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-20,CWE-22, CWE-183",
@@ -6398,7 +6398,7 @@
             "id": 30,
             "language": "cpp",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 30_java from java to cpp",
+            "external_reference_url": "Translated file 30_java from java to cpp",
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
@@ -6470,7 +6470,7 @@
             "id": 30,
             "language": "python",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 30_java from java to python",
+            "external_reference_url": "Translated file 30_java from java to python",
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
@@ -6614,7 +6614,7 @@
             "id": 31,
             "language": "java",
             "origin": "transFromCpp",
-            "external_reference_url": "Translatetd file 31_cpp from cpp to java",
+            "external_reference_url": "Translated file 31_cpp from cpp to java",
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-476",
@@ -6686,7 +6686,7 @@
             "id": 31,
             "language": "python",
             "origin": "transFromCpp",
-            "external_reference_url": "Translatetd file 31_cpp from cpp to python",
+            "external_reference_url": "Translated file 31_cpp from cpp to python",
             "functional_classification": "Buggy",
             "security_classification": "Safe",
             "cwe_id": "None",
@@ -6830,7 +6830,7 @@
             "id": 32,
             "language": "java",
             "origin": "transFromCpp",
-            "external_reference_url": "Translatetd file 32_cpp from cpp to java",
+            "external_reference_url": "Translated file 32_cpp from cpp to java",
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
@@ -6902,7 +6902,7 @@
             "id": 32,
             "language": "python",
             "origin": "transFromCpp",
-            "external_reference_url": "Translatetd file 32_cpp from cpp to python",
+            "external_reference_url": "Translated file 32_cpp from cpp to python",
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
@@ -7046,7 +7046,7 @@
             "id": 33,
             "language": "java",
             "origin": "transFromCpp",
-            "external_reference_url": "Translatetd file 33_cpp from cpp to java",
+            "external_reference_url": "Translated file 33_cpp from cpp to java",
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-119,CWE-120,CWE-787",
@@ -7118,7 +7118,7 @@
             "id": 33,
             "language": "python",
             "origin": "transFromCpp",
-            "external_reference_url": "Translatetd file 33_cpp from cpp to python",
+            "external_reference_url": "Translated file 33_cpp from cpp to python",
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-119,CWE-120,CWE-787",
@@ -7262,7 +7262,7 @@
             "id": 34,
             "language": "java",
             "origin": "transFromCpp",
-            "external_reference_url": "Translatetd file 34_cpp from cpp to java",
+            "external_reference_url": "Translated file 34_cpp from cpp to java",
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
@@ -7334,7 +7334,7 @@
             "id": 34,
             "language": "python",
             "origin": "transFromCpp",
-            "external_reference_url": "Translatetd file 34_cpp from cpp to python",
+            "external_reference_url": "Translated file 34_cpp from cpp to python",
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
@@ -7490,7 +7490,7 @@
             "id": 35,
             "language": "java",
             "origin": "transFromCpp",
-            "external_reference_url": "Translatetd file 35_cpp from cpp to java",
+            "external_reference_url": "Translated file 35_cpp from cpp to java",
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-20,CWE-190,CWE-400, CWE-789",
@@ -7562,7 +7562,7 @@
             "id": 35,
             "language": "python",
             "origin": "transFromCpp",
-            "external_reference_url": "Translatetd file 35_cpp from cpp to python",
+            "external_reference_url": "Translated file 35_cpp from cpp to python",
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-20,CWE-400, CWE-789",
@@ -7718,7 +7718,7 @@
             "id": 36,
             "language": "java",
             "origin": "transFromCpp",
-            "external_reference_url": "Translatetd file 36_cpp from cpp to java",
+            "external_reference_url": "Translated file 36_cpp from cpp to java",
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-20,CWE-190,CWE-824,CWE-703",
@@ -7934,7 +7934,7 @@
             "id": 37,
             "language": "java",
             "origin": "transFromCpp",
-            "external_reference_url": "Translatetd file 37_cpp from cpp to java",
+            "external_reference_url": "Translated file 37_cpp from cpp to java",
             "functional_classification": "Partially Correct",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-89",
@@ -8006,7 +8006,7 @@
             "id": 37,
             "language": "python",
             "origin": "transFromCpp",
-            "external_reference_url": "Translatetd file 37_cpp from cpp to python",
+            "external_reference_url": "Translated file 37_cpp from cpp to python",
             "functional_classification": "Partially Correct",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-89",
@@ -8150,7 +8150,7 @@
             "id": 38,
             "language": "java",
             "origin": "transFromCpp",
-            "external_reference_url": "Translatetd file 38_cpp from cpp to java",
+            "external_reference_url": "Translated file 38_cpp from cpp to java",
             "functional_classification": "Correct",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-200,CWE-798",
@@ -8222,7 +8222,7 @@
             "id": 38,
             "language": "python",
             "origin": "transFromCpp",
-            "external_reference_url": "Translatetd file 38_cpp from cpp to python",
+            "external_reference_url": "Translated file 38_cpp from cpp to python",
             "functional_classification": "Correct",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-200,CWE-798",
@@ -8366,7 +8366,7 @@
             "id": 39,
             "language": "java",
             "origin": "transFromCpp",
-            "external_reference_url": "Translatetd file 39_cpp from cpp to java",
+            "external_reference_url": "Translated file 39_cpp from cpp to java",
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-401,CWE-476,CWE-835",
@@ -8438,7 +8438,7 @@
             "id": 39,
             "language": "python",
             "origin": "transFromCpp",
-            "external_reference_url": "Translatetd file 39_cpp from cpp to python",
+            "external_reference_url": "Translated file 39_cpp from cpp to python",
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-401,CWE-476",
@@ -8582,7 +8582,7 @@
             "id": 40,
             "language": "java",
             "origin": "transFromCpp",
-            "external_reference_url": "Translatetd file 40_cpp from cpp to java",
+            "external_reference_url": "Translated file 40_cpp from cpp to java",
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
@@ -8798,7 +8798,7 @@
             "id": 41,
             "language": "java",
             "origin": "transFromCpp",
-            "external_reference_url": "Translatetd file 41_cpp from cpp to java",
+            "external_reference_url": "Translated file 41_cpp from cpp to java",
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-787,CWE-119,CWE-129",
@@ -8870,7 +8870,7 @@
             "id": 41,
             "language": "python",
             "origin": "transFromCpp",
-            "external_reference_url": "Translatetd file 41_cpp from cpp to python",
+            "external_reference_url": "Translated file 41_cpp from cpp to python",
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-787,CWE-119",
@@ -9014,7 +9014,7 @@
             "id": 42,
             "language": "java",
             "origin": "transFromCpp",
-            "external_reference_url": "Translatetd file 42_cpp from cpp to java",
+            "external_reference_url": "Translated file 42_cpp from cpp to java",
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
@@ -9086,7 +9086,7 @@
             "id": 42,
             "language": "python",
             "origin": "transFromCpp",
-            "external_reference_url": "Translatetd file 42_cpp from cpp to python",
+            "external_reference_url": "Translated file 42_cpp from cpp to python",
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
@@ -9230,7 +9230,7 @@
             "id": 43,
             "language": "java",
             "origin": "transFromCpp",
-            "external_reference_url": "Translatetd file 43_cpp from cpp to java",
+            "external_reference_url": "Translated file 43_cpp from cpp to java",
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-119, CWE-120, CWE-121, CWE-476, CWE-787",
@@ -9302,7 +9302,7 @@
             "id": 43,
             "language": "python",
             "origin": "transFromCpp",
-            "external_reference_url": "Translatetd file 43_cpp from cpp to python",
+            "external_reference_url": "Translated file 43_cpp from cpp to python",
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-119, CWE-120, CWE-121, CWE-476, CWE-787",
@@ -9446,7 +9446,7 @@
             "id": 44,
             "language": "java",
             "origin": "transFromCpp",
-            "external_reference_url": "Translatetd file 44_cpp from cpp to java",
+            "external_reference_url": "Translated file 44_cpp from cpp to java",
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
@@ -9518,7 +9518,7 @@
             "id": 44,
             "language": "python",
             "origin": "transFromCpp",
-            "external_reference_url": "Translatetd file 44_cpp from cpp to python",
+            "external_reference_url": "Translated file 44_cpp from cpp to python",
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
@@ -9662,7 +9662,7 @@
             "id": 45,
             "language": "java",
             "origin": "transFromCpp",
-            "external_reference_url": "Translatetd file 45_cpp from cpp to java",
+            "external_reference_url": "Translated file 45_cpp from cpp to java",
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-416, CWE-476,CWE-672",
@@ -9734,7 +9734,7 @@
             "id": 45,
             "language": "python",
             "origin": "transFromCpp",
-            "external_reference_url": "Translatetd file 45_cpp from cpp to python",
+            "external_reference_url": "Translated file 45_cpp from cpp to python",
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-416, CWE-672",
@@ -9878,7 +9878,7 @@
             "id": 46,
             "language": "java",
             "origin": "transFromCpp",
-            "external_reference_url": "Translatetd file 46_cpp from cpp to java",
+            "external_reference_url": "Translated file 46_cpp from cpp to java",
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
@@ -9950,7 +9950,7 @@
             "id": 46,
             "language": "python",
             "origin": "transFromCpp",
-            "external_reference_url": "Translatetd file 46_cpp from cpp to python",
+            "external_reference_url": "Translated file 46_cpp from cpp to python",
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
@@ -10022,34 +10022,26 @@
             "id": 47,
             "language": "cpp",
             "origin": "SARD",
-            "external_reference_url": "https://samate.nist.gov/SARD/test-cases/102085/versions/1.0.0"
+            "external_reference_url": "https://samate.nist.gov/SARD/test-cases/102085/versions/1.0.0",
+            "functional_classification": "Buggy",
+            "security_classification": "Vulnerable",
+            "cwe_id": "CWE-415, CWE-672",
+            "reasoning": "The code allocates and deletes data inside Function1, then Function2 deletes the same pointer again, causing a double-free vulnerability."
         },
         "Human1": {
             "readability_score": 70,
             "understandability_score": 70,
-            "maintainability_score": 40,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 40
         },
         "Human2": {
             "readability_score": 70,
             "understandability_score": 70,
-            "maintainability_score": 70,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 70
         },
         "Human3": {
             "readability_score": 70,
             "understandability_score": 70,
-            "maintainability_score": 40,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 40
         },
         "ChatGPT": {
             "readability_score": 78,
@@ -10102,34 +10094,26 @@
             "id": 47,
             "language": "java",
             "origin": "transFromCpp",
-            "external_reference_url": "Translatetd file 47_cpp from cpp to java"
+            "external_reference_url": "Translated file 47_cpp from cpp to java",
+            "functional_classification": "Buggy",
+            "security_classification": "Vulnerable",
+            "cwe_id": "CWE-415, CWE-672",
+            "reasoning": "The code allocates and deletes data inside Function1, then Function2 deletes the same pointer again, causing a double-free vulnerability."
         },
         "Human1": {
             "readability_score": 70,
             "understandability_score": 70,
-            "maintainability_score": 40,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 40
         },
         "Human2": {
             "readability_score": 70,
             "understandability_score": 70,
-            "maintainability_score": 70,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 70
         },
         "Human3": {
             "readability_score": 70,
             "understandability_score": 70,
-            "maintainability_score": 40,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 40
         },
         "ChatGPT": {
             "readability_score": 92,
@@ -10182,34 +10166,26 @@
             "id": 47,
             "language": "python",
             "origin": "transFromCpp",
-            "external_reference_url": "Translatetd file 47_cpp from cpp to python"
+            "external_reference_url": "Translated file 47_cpp from cpp to python",
+            "functional_classification": "Buggy",
+            "security_classification": "Vulnerable",
+            "cwe_id": "CWE-415, CWE-672",
+            "reasoning": "The code allocates and deletes data inside Function1, then Function2 deletes the same pointer again, causing a double-free vulnerability."
         },
         "Human1": {
             "readability_score": 70,
             "understandability_score": 70,
-            "maintainability_score": 40,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 40
         },
         "Human2": {
             "readability_score": 75,
             "understandability_score": 70,
-            "maintainability_score": 75,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 75
         },
         "Human3": {
             "readability_score": 70,
             "understandability_score": 70,
-            "maintainability_score": 40,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 40
         },
         "ChatGPT": {
             "readability_score": 45,
@@ -10262,34 +10238,26 @@
             "id": 48,
             "language": "cpp",
             "origin": "SARD",
-            "external_reference_url": "https://samate.nist.gov/SARD/test-cases/102085/versions/1.0.0"
+            "external_reference_url": "https://samate.nist.gov/SARD/test-cases/102085/versions/1.0.0",
+            "functional_classification": "Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "The code is functionally correct and safe."
         },
         "Human1": {
             "readability_score": 70,
             "understandability_score": 80,
-            "maintainability_score": 80,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 80
         },
         "Human2": {
             "readability_score": 70,
             "understandability_score": 70,
-            "maintainability_score": 70,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 70
         },
         "Human3": {
             "readability_score": 70,
             "understandability_score": 75,
-            "maintainability_score": 75,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 75
         },
         "ChatGPT": {
             "readability_score": 88,
@@ -10342,34 +10310,26 @@
             "id": 48,
             "language": "java",
             "origin": "transFromCpp",
-            "external_reference_url": "Translatetd file 48_cpp from cpp to java"
+            "external_reference_url": "Translated file 48_cpp from cpp to java",
+            "functional_classification": "Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "The code is functionally correct and safe."
         },
         "Human1": {
             "readability_score": 70,
             "understandability_score": 80,
-            "maintainability_score": 80,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 80
         },
         "Human2": {
             "readability_score": 70,
             "understandability_score": 70,
-            "maintainability_score": 70,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 70
         },
         "Human3": {
             "readability_score": 70,
             "understandability_score": 75,
-            "maintainability_score": 75,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 75
         },
         "ChatGPT": {
             "readability_score": 86,
@@ -10422,70 +10382,62 @@
             "id": 48,
             "language": "python",
             "origin": "transFromCpp",
-            "external_reference_url": "Translatetd file 48_cpp from cpp to python"
+            "external_reference_url": "Translated file 48_cpp from cpp to python",
+            "functional_classification": "Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "The code is functionally correct and safe."
         },
         "Human1": {
             "readability_score": 70,
             "understandability_score": 80,
-            "maintainability_score": 80,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 80
         },
         "Human2": {
             "readability_score": 75,
             "understandability_score": 70,
-            "maintainability_score": 75,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 75
         },
         "Human3": {
             "readability_score": 70,
             "understandability_score": 75,
-            "maintainability_score": 75,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 75
         },
-        "ChatGPT": {
-            "readability_score": 78,
-            "understandability_score": 72,
-            "maintainability_score": 62,
-            "functional_classification": "Buggy",
-            "security_classification": "Vulnerable",
-            "cwe_id": "CWE-762",
-            "reasoning": "The code is short and readable, but ctypes memory ownership is incorrect: create_string_buffer allocates Python-managed memory, which is later passed to libc.free. This can cause invalid free/heap corruption. The magic size 100 and mutable list workaround also reduce maintainability."
+        "ChatGPT": {  
+            "readability_score": 85,
+            "understandability_score": 88,
+            "maintainability_score": 78,
+            "functional_classification": "Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "The code is readable and logically straightforward. It allocates 100 bytes, initializes 99 bytes, adds a null terminator, and frees the allocation. However, malloc failure is not checked before memory access, potentially causing a crash. The allocation is freed in the current execution path, and no directly exploitable vulnerability is evident."
         },
         "Claude": {
             "readability_score": 72,
-            "understandability_score": 60,
+            "understandability_score": 70,
+            "maintainability_score": 45,
+            "functional_classification": "Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "Allocates 100 bytes, fills 99 with 'A', null-terminates at index 99, then frees and clears the pointer; no overflow, leak, or double free. Weaknesses: vague names (function1, function2), magic numbers, list-as-out-parameter, no malloc NULL check, and needless ctypes malloc/free instead of Python buffers."
+        },
+        "Gemini": {
+            "readability_score": 75,
+            "understandability_score": 75,
+            "maintainability_score": 45,
+            "functional_classification": "Buggy",
+            "security_classification": "Vulnerable",
+            "cwe_id": "CWE-476",
+            "reasoning": "The code lacks a NULL check on the malloc return value, risking a null pointer dereference (CWE-476) upon allocation failure. Manual memory management via ctypes in Python is also a severe anti-pattern."
+        },
+        "GithubCopilot": {
+            "readability_score": 45,
+            "understandability_score": 40,
             "maintainability_score": 35,
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
-            "cwe_id": "CWE-415",
-            "reasoning": "Buffer created via ctypes.create_string_buffer is Python-managed, not libc-malloc'd. Explicitly calling libc.free() on it is a mismatched allocator free causing undefined behavior/heap corruption. Setting the reference to None afterward then lets Python's GC free the same underlying memory again, causing a double-free."
-        },
-        "Gemini": {
-            "readability_score": 60,
-            "understandability_score": 45,
-            "maintainability_score": 30,
-            "functional_classification": "Buggy",
-            "security_classification": "Vulnerable",
-            "cwe_id": "CWE-763",
-            "reasoning": "The code uses Python list wrapping to emulate pass-by-reference pointers and manually calls libc free() on a buffer created by ctypes.create_string_buffer(). Buffers created by ctypes are managed by Python's garbage collector/allocator, not standard malloc. Calling free() on PyObject memory causes undefined behavior, heap corruption, or crashes."
-        },
-        "GithubCopilot": {
-            "readability_score": 55,
-            "understandability_score": 50,
-            "maintainability_score": 40,
-            "functional_classification": "Buggy",
-            "security_classification": "Vulnerable",
-            "cwe_id": "CWE-590",
-            "reasoning": "Code misuses ctypes by freeing memory not allocated via malloc, causing undefined behavior. Logic is simple but unsafe. Structure is minimal and not maintainable. Freeing create_string_buffer triggers invalid free vulnerability."
+            "cwe_id": "CWE-476, CWE-119",
+            "reasoning": "Code uses unsafe direct ctypes memory management with improper type conversions (b'\\x00' assigned to char). Missing error handling for malloc; no guarantee pointer validity. Type mismatch in memset call (char_ptr vs c_char) causes undefined behavior. Use-after-free risk if malloc fails. Poor structure; should use Python's memory management. CWE-119 (buffer overflow) and CWE-476 (null pointer) risks present."
         },
         "Sonarqube": {
             "readability_score": 90.0,
@@ -10502,70 +10454,62 @@
             "id": 49,
             "language": "cpp",
             "origin": "SARD",
-            "external_reference_url": "https://samate.nist.gov/SARD/test-cases/84440/versions/1.0.0"
+            "external_reference_url": "https://samate.nist.gov/SARD/test-cases/84440/versions/1.0.0",
+            "functional_classification": "Buggy",
+            "security_classification": "Vulnerable",
+            "cwe_id": "CWE-190",
+            "reasoning": "Integer wraparound."
         },
         "Human1": {
             "readability_score": 70,
             "understandability_score": 75,
-            "maintainability_score": 50,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 50
         },
         "Human2": {
             "readability_score": 80,
             "understandability_score": 80,
-            "maintainability_score": 75,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 75
         },
         "Human3": {
             "readability_score": 70,
             "understandability_score": 70,
-            "maintainability_score": 45,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 45
         },
-        "ChatGPT": {
-            "readability_score": 86,
-            "understandability_score": 82,
-            "maintainability_score": 78,
+        "ChatGPT": {   
+            "readability_score": 95,
+            "understandability_score": 95,
+            "maintainability_score": 90,
+            "functional_classification": "Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "The code is clear, simple, and well-structured. Func1 sets data to UINT_MAX, and adding 1 to an unsigned int wraps modulo its range, producing 0 by defined C++ behavior. No exploitable vulnerability is evident. The generic function names slightly reduce maintainability."
+        },
+        "Claude": { 
+            "readability_score": 85,
+            "understandability_score": 88,
+            "maintainability_score": 40,
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-190",
-            "reasoning": "The code is simple to read, but it assigns UINT_MAX to an unsigned integer and then performs data + 1, causing unsigned integer wraparound. This may lead to incorrect calculations and security issues if used in size or boundary checks. Also, badSource is undefined in the snippet."
-        },
-        "Claude": {
-            "readability_score": 55,
-            "understandability_score": 45,
-            "maintainability_score": 25,
-            "functional_classification": "Buggy",
-            "security_classification": "Vulnerable",
-            "cwe_id": "CWE-190",
-            "reasoning": "Func1 is defined but never called (Func2 calls undeclared 'badSource' instead); if data becomes UINT_MAX, 'data + 1' wraps around to 0, an integer overflow (CWE-190). Missing includes/declarations for climits, badSource, printLine mean it also wouldn't compile."
+            "reasoning": "Code is short and clearly formatted, but Func1 sets data to UINT_MAX and Func2 then adds 1 with no bounds check, causing unsigned integer wraparound to 0. The overflow is unchecked and unintended, so it is both a logic bug and an integer overflow weakness (CWE-190). Poor naming and a trivial indirection hurt maintainability."
         },
         "Gemini": {
-            "readability_score": 85,
-            "understandability_score": 85,
-            "maintainability_score": 60,
-            "functional_classification": "Buggy",
-            "security_classification": "Vulnerable",
-            "cwe_id": "CWE-190",
-            "reasoning": "The code contains an integer overflow vulnerability (CWE-190). The function `badSource` (or potential inputs mimicking `Func1` assigning `UINT_MAX`) can set `data` to its maximum value. Adding 1 to `UINT_MAX` results in an undefined or wrapped value of 0. Additionally, the code is functionally buggy because `badSource` and `printLine` are undefined, causing a compiler error."
+            "readability_score": 90,
+            "understandability_score": 90,
+            "maintainability_score": 85,
+            "functional_classification": "Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "The code is clean, well-structured, and easy to read. Unsigned integer overflow in C++ is well-defined (modulo arithmetic), wrapping UINT_MAX + 1 to 0 safely without undefined behavior or memory corruption."
         },
         "GithubCopilot": {
-            "readability_score": 72,
-            "understandability_score": 68,
-            "maintainability_score": 55,
-            "functional_classification": "Buggy",
+            "readability_score": 78,
+            "understandability_score": 74,
+            "maintainability_score": 62,
+            "functional_classification": "Correct",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-190",
-            "reasoning": "Integer overflow vulnerability: if badSource() sets data to UINT_MAX, adding 1 causes wraparound to 0. No bounds checking or validation on data before arithmetic. Undefined function badSource() called without definition/documentation. No overflow detection or handling. Missing includes (climits, iostream). Result is unpredictable. High risk of logic errors and exploits."
+            "reasoning": "Code is short and readable, but the reference mutation and UINT_MAX + 1 wraparound are non-obvious. Structurally simple but fragile; it compiles and executes as defined in C++ (unsigned wraparound), yet the overflow is a classic integer-overflow vulnerability pattern."
         },
         "Sonarqube": {
             "readability_score": 100.0,
@@ -10582,34 +10526,26 @@
             "id": 49,
             "language": "java",
             "origin": "transFromCpp",
-            "external_reference_url": "Translatetd file 49_cpp from cpp to java"
+            "external_reference_url": "Translated file 49_cpp from cpp to java",
+            "functional_classification": "Buggy",
+            "security_classification": "Vulnerable",
+            "cwe_id": "CWE-190",
+            "reasoning": "Integer wraparound."
         },
         "Human1": {
             "readability_score": 70,
             "understandability_score": 75,
-            "maintainability_score": 50,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 50
         },
         "Human2": {
             "readability_score": 80,
             "understandability_score": 80,
-            "maintainability_score": 75,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 75
         },
         "Human3": {
             "readability_score": 70,
             "understandability_score": 70,
-            "maintainability_score": 45,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 45
         },
         "ChatGPT": {
             "readability_score": 90,
@@ -10662,34 +10598,26 @@
             "id": 49,
             "language": "python",
             "origin": "transFromCpp",
-            "external_reference_url": "Translatetd file 49_cpp from cpp to python"
+            "external_reference_url": "Translated file 49_cpp from cpp to python",
+            "functional_classification": "Buggy",
+            "security_classification": "Vulnerable",
+            "cwe_id": "CWE-190",
+            "reasoning": "Integer wraparound."
         },
         "Human1": {
             "readability_score": 70,
             "understandability_score": 75,
-            "maintainability_score": 50,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 50
         },
         "Human2": {
             "readability_score": 80,
             "understandability_score": 80,
-            "maintainability_score": 75,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 75
         },
         "Human3": {
             "readability_score": 70,
             "understandability_score": 70,
-            "maintainability_score": 45,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 45
         },
         "ChatGPT": {
             "readability_score": 92,
@@ -10742,34 +10670,26 @@
             "id": 50,
             "language": "cpp",
             "origin": "SARD",
-            "external_reference_url": "https://samate.nist.gov/SARD/test-cases/84440/versions/1.0.0"
+            "external_reference_url": "https://samate.nist.gov/SARD/test-cases/84440/versions/1.0.0",
+            "functional_classification": "Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "The code is functionally correct and safe."
         },
         "Human1": {
             "readability_score": 75,
             "understandability_score": 80,
-            "maintainability_score": 80,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 80
         },
         "Human2": {
             "readability_score": 85,
             "understandability_score": 85,
-            "maintainability_score": 75,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 75
         },
         "Human3": {
             "readability_score": 75,
             "understandability_score": 75,
-            "maintainability_score": 75,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 75
         },
         "ChatGPT": {
             "readability_score": 88,
@@ -10822,34 +10742,26 @@
             "id": 50,
             "language": "java",
             "origin": "transFromCpp",
-            "external_reference_url": "Translatetd file 50_cpp from cpp to java"
+            "external_reference_url": "Translated file 50_cpp from cpp to java",
+            "functional_classification": "Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "The code is functionally correct and safe."
         },
         "Human1": {
             "readability_score": 75,
             "understandability_score": 80,
-            "maintainability_score": 80,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 80
         },
         "Human2": {
             "readability_score": 80,
             "understandability_score": 85,
-            "maintainability_score": 75,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 75
         },
         "Human3": {
             "readability_score": 75,
             "understandability_score": 75,
-            "maintainability_score": 75,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 75
         },
         "ChatGPT": {
             "readability_score": 92,
@@ -10902,34 +10814,26 @@
             "id": 50,
             "language": "python",
             "origin": "transFromCpp",
-            "external_reference_url": "Translatetd file 50_cpp from cpp to python"
+            "external_reference_url": "Translated file 50_cpp from cpp to python",
+            "functional_classification": "Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "The code is functionally correct and safe."
         },
         "Human1": {
             "readability_score": 75,
             "understandability_score": 80,
-            "maintainability_score": 80,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 80
         },
         "Human2": {
             "readability_score": 80,
             "understandability_score": 85,
-            "maintainability_score": 75,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 75
         },
         "Human3": {
             "readability_score": 75,
             "understandability_score": 75,
-            "maintainability_score": 75,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 75
         },
         "ChatGPT": {
             "readability_score": 88,
@@ -10982,34 +10886,26 @@
             "id": 51,
             "language": "java",
             "origin": "SARD",
-            "external_reference_url": "https://samate.nist.gov/SARD/test-cases/250319/versions/1.0.0"
+            "external_reference_url": "https://samate.nist.gov/SARD/test-cases/250319/versions/1.0.0",
+            "functional_classification": "Buggy",
+            "security_classification": "Vulnerable",
+            "cwe_id": "CWE-190",
+            "reasoning": "Integer wraparound."
         },
         "Human1": {
             "readability_score": 70,
             "understandability_score": 60,
-            "maintainability_score": 40,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 40
         },
         "Human2": {
             "readability_score": 85,
             "understandability_score": 90,
-            "maintainability_score": 75,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 75
         },
         "Human3": {
             "readability_score": 80,
             "understandability_score": 85,
-            "maintainability_score": 50,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 50
         },
         "ChatGPT": {
             "readability_score": 93,
@@ -11062,34 +10958,26 @@
             "id": 51,
             "language": "cpp",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 51_java from java to cpp"
+            "external_reference_url": "Translated file 51_java from java to cpp",
+            "functional_classification": "Buggy",
+            "security_classification": "Vulnerable",
+            "cwe_id": "CWE-190",
+            "reasoning": "Integer wraparound."
         },
         "Human1": {
             "readability_score": 70,
             "understandability_score": 60,
-            "maintainability_score": 40,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 40
         },
         "Human2": {
             "readability_score": 85,
             "understandability_score": 90,
-            "maintainability_score": 75,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 75
         },
         "Human3": {
             "readability_score": 80,
             "understandability_score": 85,
-            "maintainability_score": 50,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 50
         },
         "ChatGPT": {
             "readability_score": 78,
@@ -11142,34 +11030,26 @@
             "id": 51,
             "language": "python",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 51_java from java to python"
+            "external_reference_url": "Translated file 51_java from java to python",
+            "functional_classification": "Buggy",
+            "security_classification": "Vulnerable",
+            "cwe_id": "CWE-190",
+            "reasoning": "Integer wraparound."
         },
         "Human1": {
             "readability_score": 70,
             "understandability_score": 60,
-            "maintainability_score": 40,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 40
         },
         "Human2": {
             "readability_score": 85,
             "understandability_score": 90,
-            "maintainability_score": 75,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 75
         },
         "Human3": {
             "readability_score": 80,
             "understandability_score": 85,
-            "maintainability_score": 50,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 50
         },
         "ChatGPT": {
             "readability_score": 82,
@@ -11222,34 +11102,26 @@
             "id": 52,
             "language": "java",
             "origin": "SARD",
-            "external_reference_url": "https://samate.nist.gov/SARD/test-cases/250319/versions/1.0.0"
+            "external_reference_url": "https://samate.nist.gov/SARD/test-cases/250319/versions/1.0.0",
+            "functional_classification": "Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "The code is functionally correct and safe."
         },
         "Human1": {
             "readability_score": 70,
             "understandability_score": 60,
-            "maintainability_score": 70,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 70
         },
         "Human2": {
             "readability_score": 85,
             "understandability_score": 90,
-            "maintainability_score": 75,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 75
         },
         "Human3": {
             "readability_score": 70,
             "understandability_score": 70,
-            "maintainability_score": 70,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 70
         },
         "ChatGPT": {
             "readability_score": 95,
@@ -11302,70 +11174,62 @@
             "id": 52,
             "language": "cpp",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 52_java from java to cpp"
+            "external_reference_url": "Translated file 52_java from java to cpp",
+            "functional_classification": "Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "The code is functionally correct and safe."
         },
         "Human1": {
             "readability_score": 70,
             "understandability_score": 60,
-            "maintainability_score": 70,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 70
         },
         "Human2": {
             "readability_score": 85,
             "understandability_score": 90,
-            "maintainability_score": 75,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 75
         },
         "Human3": {
             "readability_score": 70,
             "understandability_score": 70,
-            "maintainability_score": 70,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 70
         },
         "ChatGPT": {
-            "readability_score": 90,
-            "understandability_score": 88,
-            "maintainability_score": 82,
-            "functional_classification": "Partially Correct",
-            "security_classification": "Safe",
-            "cwe_id": "None",
-            "reasoning": "The code is simple and readable, but the constant makes both branches effectively dead code and the static main is not a valid C++ entry point. Incrementing short max stored in int is safe because data is already int. No exploitable security issue is present."
-        },
-        "Claude": {
-            "readability_score": 65,
-            "understandability_score": 55,
-            "maintainability_score": 40,
+            "readability_score": 85,
+            "understandability_score": 90,
+            "maintainability_score": 75,
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Code compiles and runs correctly; 'data' is int, so incrementing past SHRT_MAX causes no overflow. Redundant always-true conditionals and unused main hurt clarity/maintainability, but no exploitable vulnerability exists despite superficially resembling an integer overflow test case."
+            "reasoning": "The code is readable and straightforward, but redundant constant conditions and an unnecessary else branch reduce maintainability. Incrementing the maximum short value after conversion to int is safe and does not cause overflow. The function prints 32768 as intended by the implemented logic. No exploitable security vulnerabilities are evident."
+        },
+        "Claude": {
+            "readability_score": 70,
+            "understandability_score": 60,
+            "maintainability_score": 40,
+            "functional_classification": "Partially Correct",
+            "security_classification": "Vulnerable",
+            "cwe_id": "CWE-190",
+            "reasoning": "The code is short and cleanly formatted, but the constant-condition branches are redundant and dead code. It sets data to SHRT_MAX, then increments it. Because data is an int, there is no overflow in practice, so the increment is harmless, but the pattern mirrors an integer overflow test case (CWE-190). The branching logic hurts maintainability."
         },
         "Gemini": {
-            "readability_score": 85,
-            "understandability_score": 60,
-            "maintainability_score": 45,
+            "readability_score": 80,
+            "understandability_score": 75,
+            "maintainability_score": 70,
+            "functional_classification": "Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "The code is functionally correct and safe, but features dead conditional branches due to a constant expression and places the main function inside a class, which is non-standard for C++ entry points."
+        },
+        "GithubCopilot": {
+            "readability_score": 75,
+            "understandability_score": 70,
+            "maintainability_score": 65,
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-190",
-            "reasoning": "The code suffers from integer overflow (CWE-190). 'data' is assigned SHRT_MAX (32767) but pre-incremented into an int. Although int holds 32768, assigning SHRT_MAX in dead-code-controlled blocks (if 5==5) creates confusing, brittle logic. Modifying 'data' without bound checking risks undefined behavior if types shift. Unnecessary static checks add cognitive complexity."
-        },
-        "GithubCopilot": {
-            "readability_score": 85,
-            "understandability_score": 80,
-            "maintainability_score": 70,
-            "functional_classification": "Buggy",
-            "security_classification": "Safe",
-            "cwe_id": "CWE-190",
-            "reasoning": "Code is readable and simple but increments max short value causing overflow. Structure is basic and maintainable. No security risks, but integer overflow makes logic buggy."
+            "reasoning": "Code is clear but contains logic flaw: redundant condition check and potential integer overflow when incrementing short::max(). The ++data operation causes undefined behavior due to signed integer overflow (CWE-190). Redundant if-conditions reduce maintainability. Static main() is non-standard C++ practice."
         },
         "Sonarqube": {
             "readability_score": 85.0,
@@ -11382,34 +11246,26 @@
             "id": 52,
             "language": "python",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 52_java from java to python"
+            "external_reference_url": "Translated file 52_java from java to python",
+            "functional_classification": "Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "The code is functionally correct and safe."
         },
         "Human1": {
             "readability_score": 70,
             "understandability_score": 60,
-            "maintainability_score": 70,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 70
         },
         "Human2": {
             "readability_score": 85,
             "understandability_score": 90,
-            "maintainability_score": 75,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 75
         },
         "Human3": {
             "readability_score": 70,
             "understandability_score": 70,
-            "maintainability_score": 70,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 70
         },
         "ChatGPT": {
             "readability_score": 90,
@@ -11462,34 +11318,26 @@
             "id": 53,
             "language": "cpp",
             "origin": "SARD",
-            "external_reference_url": "https://samate.nist.gov/SARD/test-cases/94718/versions/1.0.0"
+            "external_reference_url": "https://samate.nist.gov/SARD/test-cases/94718/versions/1.0.0",
+            "functional_classification": "Buggy",
+            "security_classification": "Vulnerable",
+            "cwe_id": "CWE-369",
+            "reasoning": "Dividing by zero."
         },
         "Human1": {
             "readability_score": 95,
             "understandability_score": 95,
-            "maintainability_score": 80,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 80
         },
         "Human2": {
             "readability_score": 90,
             "understandability_score": 100,
-            "maintainability_score": 60,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 60
         },
         "Human3": {
             "readability_score": 95,
             "understandability_score": 95,
-            "maintainability_score": 80,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 80
         },
         "ChatGPT": {
             "readability_score": 92,
@@ -11542,34 +11390,26 @@
             "id": 53,
             "language": "java",
             "origin": "transFromCpp",
-            "external_reference_url": "Translatetd file 53_cpp from cpp to java"
+            "external_reference_url": "Translated file 53_cpp from cpp to java",
+            "functional_classification": "Buggy",
+            "security_classification": "Vulnerable",
+            "cwe_id": "CWE-369",
+            "reasoning": "Dividing by zero."
         },
         "Human1": {
             "readability_score": 95,
             "understandability_score": 95,
-            "maintainability_score": 80,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 80
         },
         "Human2": {
             "readability_score": 90,
             "understandability_score": 100,
-            "maintainability_score": 60,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 60
         },
         "Human3": {
             "readability_score": 95,
             "understandability_score": 95,
-            "maintainability_score": 80,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 80
         },
         "ChatGPT": {
             "readability_score": 85,
@@ -11622,34 +11462,26 @@
             "id": 53,
             "language": "python",
             "origin": "transFromCpp",
-            "external_reference_url": "Translatetd file 53_cpp from cpp to python"
+            "external_reference_url": "Translated file 53_cpp from cpp to python",
+            "functional_classification": "Buggy",
+            "security_classification": "Vulnerable",
+            "cwe_id": "CWE-369",
+            "reasoning": "Dividing by zero."
         },
         "Human1": {
             "readability_score": 95,
             "understandability_score": 95,
-            "maintainability_score": 80,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 80
         },
         "Human2": {
             "readability_score": 90,
             "understandability_score": 100,
-            "maintainability_score": 60,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 60
         },
         "Human3": {
             "readability_score": 95,
             "understandability_score": 95,
-            "maintainability_score": 80,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 80
         },
         "ChatGPT": {
             "readability_score": 90,
@@ -11702,16 +11534,16 @@
             "id": 54,
             "language": "cpp",
             "origin": "SARD",
-            "external_reference_url": "https://samate.nist.gov/SARD/test-cases/94718/versions/1.0.0"
+            "external_reference_url": "https://samate.nist.gov/SARD/test-cases/94718/versions/1.0.0",
+            "functional_classification": "Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "The code is functionally correct and safe."
         },
         "Human1": {
             "readability_score": 80,
             "understandability_score": 90,
-            "maintainability_score": 75,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 75
         },
         "Human2": {
             "readability_score": 90,
@@ -11782,34 +11614,26 @@
             "id": 54,
             "language": "java",
             "origin": "transFromCpp",
-            "external_reference_url": "Translatetd file 54_cpp from cpp to java"
+            "external_reference_url": "Translated file 54_cpp from cpp to java",
+            "functional_classification": "Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "The code is functionally correct and safe."
         },
         "Human1": {
             "readability_score": 80,
             "understandability_score": 90,
-            "maintainability_score": 75,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 75
         },
         "Human2": {
             "readability_score": 90,
             "understandability_score": 95,
-            "maintainability_score": 100,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 100
         },
         "Human3": {
             "readability_score": 80,
             "understandability_score": 90,
-            "maintainability_score": 80,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 80
         },
         "ChatGPT": {
             "readability_score": 92,
@@ -11862,34 +11686,26 @@
             "id": 54,
             "language": "python",
             "origin": "transFromCpp",
-            "external_reference_url": "Translatetd file 54_cpp from cpp to python"
+            "external_reference_url": "Translated file 54_cpp from cpp to python",
+            "functional_classification": "Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "The code is functionally correct and safe."
         },
         "Human1": {
             "readability_score": 80,
             "understandability_score": 90,
-            "maintainability_score": 75,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 75
         },
         "Human2": {
             "readability_score": 90,
             "understandability_score": 95,
-            "maintainability_score": 100,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 100
         },
         "Human3": {
             "readability_score": 80,
             "understandability_score": 90,
-            "maintainability_score": 80,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 80
         },
         "ChatGPT": {
             "readability_score": 92,
@@ -11942,34 +11758,26 @@
             "id": 55,
             "language": "cpp",
             "origin": "SARD",
-            "external_reference_url": "https://samate.nist.gov/SARD/test-cases/91814/versions/1.0.0"
+            "external_reference_url": "https://samate.nist.gov/SARD/test-cases/91814/versions/1.0.0",
+            "functional_classification": "Partially Correct",
+            "security_classification": "Vulnerable",
+            "cwe_id": "CWE-22, CWE-73",
+            "reasoning": "No input path validation."
         },
         "Human1": {
             "readability_score": 100,
             "understandability_score": 100,
-            "maintainability_score": 70,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 70
         },
         "Human2": {
             "readability_score": 100,
             "understandability_score": 95,
-            "maintainability_score": 65,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 65
         },
         "Human3": {
             "readability_score": 100,
             "understandability_score": 100,
-            "maintainability_score": 65,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 65
         },
         "ChatGPT": {
             "readability_score": 95,
@@ -12022,34 +11830,26 @@
             "id": 55,
             "language": "java",
             "origin": "transFromCpp",
-            "external_reference_url": "Translatetd file 55_cpp from cpp to java"
+            "external_reference_url": "Translated file 55_cpp from cpp to java",
+            "functional_classification": "Partially Correct",
+            "security_classification": "Vulnerable",
+            "cwe_id": "CWE-22, CWE-73",
+            "reasoning": "No input path validation."
         },
         "Human1": {
             "readability_score": 90,
             "understandability_score": 100,
-            "maintainability_score": 70,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 70
         },
         "Human2": {
             "readability_score": 100,
             "understandability_score": 95,
-            "maintainability_score": 65,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 65
         },
         "Human3": {
             "readability_score": 90,
             "understandability_score": 100,
-            "maintainability_score": 65,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 65
         },
         "ChatGPT": {
             "readability_score": 82,
@@ -12102,34 +11902,26 @@
             "id": 55,
             "language": "python",
             "origin": "transFromCpp",
-            "external_reference_url": "Translatetd file 55_cpp from cpp to python"
+            "external_reference_url": "Translated file 55_cpp from cpp to python",
+            "functional_classification": "Partially Correct",
+            "security_classification": "Vulnerable",
+            "cwe_id": "CWE-22, CWE-73",
+            "reasoning": "No input path validation."
         },
         "Human1": {
             "readability_score": 100,
             "understandability_score": 100,
-            "maintainability_score": 70,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 70
         },
         "Human2": {
             "readability_score": 100,
             "understandability_score": 95,
-            "maintainability_score": 60,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 60
         },
         "Human3": {
             "readability_score": 100,
             "understandability_score": 100,
-            "maintainability_score": 65,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 65
         },
         "ChatGPT": {
             "readability_score": 82,
@@ -12182,7 +11974,11 @@
             "id": 56,
             "language": "cpp",
             "origin": "SARD",
-            "external_reference_url": "https://samate.nist.gov/SARD/test-cases/91814/versions/1.0.0"
+            "external_reference_url": "https://samate.nist.gov/SARD/test-cases/91814/versions/1.0.0",
+            "functional_classification": "Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "The code is functionally correct and safe."
         },
         "Human1": {
             "readability_score": 95,
@@ -12262,70 +12058,62 @@
             "id": 56,
             "language": "java",
             "origin": "transFromCpp",
-            "external_reference_url": "Translatetd file 56_cpp from cpp to java"
+            "external_reference_url": "Translated file 56_cpp from cpp to java",
+            "functional_classification": "Partially Correct",
+            "security_classification": "Vulnerable",
+            "cwe_id": "CWE-22, CWE-367",
+            "reasoning": "The code introduces both path traversal (CWE-22) and Time-of-Check to Time-of-Use (TOCTOU) race conditions (CWE-367)."
         },
         "Human1": {
             "readability_score": 95,
             "understandability_score": 95,
-            "maintainability_score": 90,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 90
         },
         "Human2": {
             "readability_score": 100,
             "understandability_score": 95,
-            "maintainability_score": 95,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 95
         },
         "Human3": {
             "readability_score": 95,
             "understandability_score": 95,
-            "maintainability_score": 95,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 95
         },
         "ChatGPT": {
             "readability_score": 85,
-            "understandability_score": 78,
-            "maintainability_score": 68,
-            "functional_classification": "Buggy",
-            "security_classification": "Vulnerable",
-            "cwe_id": "CWE-476",
-            "reasoning": "The flow is readable, but reassigning fileToOpen only changes the local parameter, so the caller never receives the opened stream. The old stream is also closed before opening the new one, risking state loss. The empty catch hides close failures. Null can later cause issues if opening succeeds unexpectedly."
+            "understandability_score": 85,
+            "maintainability_score": 70,
+            "functional_classification": "Partially Correct",
+            "security_classification": "Safe",
+            "cwe_id": "CWE-703",
+            "reasoning": "The logic is straightforward, but the empty IOException catch silently ignores close failures. Returning null obscures error causes, and reassigning fileToOpen only locally may mislead callers. Files.exists/isRegularFile checks are subject to TOCTOU races, though no direct exploitable vulnerability is evident."
         },
         "Claude": {
-            "readability_score": 78,
-            "understandability_score": 65,
-            "maintainability_score": 55,
-            "functional_classification": "Buggy",
-            "security_classification": "Vulnerable",
-            "cwe_id": "CWE-22",
-            "reasoning": "Reassigning the fileToOpen parameter has no effect on caller's reference (Java pass-by-value), so callers never receive the opened stream, causing a file handle leak. No path sanitization/whitelisting allows path traversal via pathStr."
-        },
-        "Gemini": {
-            "readability_score": 75,
-            "understandability_score": 40,
-            "maintainability_score": 30,
-            "functional_classification": "Buggy",
+            "readability_score": 72,
+            "understandability_score": 62,
+            "maintainability_score": 48,
+            "functional_classification": "Partially Correct",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-367",
-            "reasoning": "Reassigning the fileToOpen parameter locally does not update the caller's reference (Java passes references by value), leaving it null/unchanged. It also swallows IOException on close and creates a Time-of-check to Time-of-use (TOCTOU) race condition via Files.exists checks."
+            "reasoning": "Exists/isRegularFile checks followed by open create a TOCTOU race (symlink swap). Input stream is closed before the new open succeeds, so a failed open loses the caller's stream. Empty catch swallows errors, null returns hide causes, and path is not validated or confined (traversal)."
+        },
+        "Gemini": {
+            "readability_score": 85,
+            "understandability_score": 80,
+            "maintainability_score": 65,
+            "functional_classification": "Correct",
+            "security_classification": "Vulnerable",
+            "cwe_id": "CWE-22",
+            "reasoning": "Code performs file checks correctly, but accepts unvalidated paths leading to path traversal (CWE-22). Passing and mutating stream parameters introduces design smells and side-effects."
         },
         "GithubCopilot": {
-            "readability_score": 70,
-            "understandability_score": 65,
-            "maintainability_score": 40,
-            "functional_classification": "Buggy",
+            "readability_score": 65,
+            "understandability_score": 58,
+            "maintainability_score": 45,
+            "functional_classification": "Partially Correct",
             "security_classification": "Vulnerable",
-            "cwe_id": "CWE-773",
-            "reasoning": "Code is readable but reassigns FileInputStream without returning it, causing logic bugs. Closing external stream is unsafe. No validation of path beyond existence. Potential resource leak and misuse of caller-owned object."
+            "cwe_id": "CWE-22",
+            "reasoning": "Simple but terse and inconsistent: it validates existence/regularity, closes an existing stream, then opens the new one. However, it fails on null path and has surprising null-return semantics, no exception handling for path parsing, and untrusted paths can expose arbitrary readable files (path traversal / unrestricted file access)."
         },
         "Sonarqube": {
             "readability_score": 100.0,
@@ -12342,34 +12130,26 @@
             "id": 56,
             "language": "python",
             "origin": "transFromCpp",
-            "external_reference_url": "Translatetd file 56_cpp from cpp to python"
+            "external_reference_url": "Translated file 56_cpp from cpp to python",
+            "functional_classification": "Buggy",
+            "security_classification": "Vulnerable",
+            "cwe_id": "CWE-22, CWE-367",
+            "reasoning": "The code introduces both path traversal (CWE-22) and Time-of-Check to Time-of-Use (TOCTOU) race conditions (CWE-367)."
         },
         "Human1": {
             "readability_score": 95,
             "understandability_score": 95,
-            "maintainability_score": 90,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 90
         },
         "Human2": {
             "readability_score": 100,
             "understandability_score": 95,
-            "maintainability_score": 90,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 90
         },
         "Human3": {
             "readability_score": 95,
             "understandability_score": 95,
-            "maintainability_score": 95,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 95
         },
         "ChatGPT": {
             "readability_score": 85,
@@ -12422,34 +12202,26 @@
             "id": 57,
             "language": "cpp",
             "origin": "SARD",
-            "external_reference_url": "https://samate.nist.gov/SARD/test-cases/105658/versions/1.0.0"
+            "external_reference_url": "https://samate.nist.gov/SARD/test-cases/105658/versions/1.0.0",
+            "functional_classification": "Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "The code is functionally correct and safe."
         },
         "Human1": {
             "readability_score": 95,
             "understandability_score": 95,
-            "maintainability_score": 85,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 85
         },
         "Human2": {
             "readability_score": 80,
             "understandability_score": 100,
-            "maintainability_score": 80,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 80
         },
         "Human3": {
             "readability_score": 95,
             "understandability_score": 95,
-            "maintainability_score": 85,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 85
         },
         "ChatGPT": {
             "readability_score": 96,
@@ -12502,34 +12274,26 @@
             "id": 57,
             "language": "java",
             "origin": "transFromCpp",
-            "external_reference_url": "Translatetd file 57_cpp from cpp to java"
+            "external_reference_url": "Translated file 57_cpp from cpp to java",
+            "functional_classification": "Buggy",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "Data is only assigned locally."
         },
         "Human1": {
             "readability_score": 95,
             "understandability_score": 95,
-            "maintainability_score": 85,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 85
         },
         "Human2": {
             "readability_score": 80,
             "understandability_score": 100,
-            "maintainability_score": 80,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 80
         },
         "Human3": {
             "readability_score": 95,
             "understandability_score": 95,
-            "maintainability_score": 85,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 85
         },
         "ChatGPT": {
             "readability_score": 80,
@@ -12582,34 +12346,26 @@
             "id": 57,
             "language": "python",
             "origin": "transFromCpp",
-            "external_reference_url": "Translatetd file 57_cpp from cpp to python"
+            "external_reference_url": "Translated file 57_cpp from cpp to python",
+            "functional_classification": "Buggy",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "The data is only assigned locally."
         },
         "Human1": {
             "readability_score": 95,
             "understandability_score": 95,
-            "maintainability_score": 85,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 85
         },
         "Human2": {
             "readability_score": 80,
             "understandability_score": 100,
-            "maintainability_score": 80,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 80
         },
         "Human3": {
             "readability_score": 95,
             "understandability_score": 95,
-            "maintainability_score": 85,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 85
         },
         "ChatGPT": {
             "readability_score": 85,
@@ -12662,16 +12418,16 @@
             "id": 58,
             "language": "cpp",
             "origin": "SARD",
-            "external_reference_url": "https://samate.nist.gov/SARD/test-cases/105658/versions/1.0.0"
+            "external_reference_url": "https://samate.nist.gov/SARD/test-cases/105658/versions/1.0.0",
+            "functional_classification": "Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "The code is functionally correct and safe."
         },
         "Human1": {
             "readability_score": 95,
             "understandability_score": 95,
-            "maintainability_score": 90,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 90
         },
         "Human2": {
             "readability_score": 80,
@@ -12742,34 +12498,26 @@
             "id": 58,
             "language": "java",
             "origin": "transFromCpp",
-            "external_reference_url": "Translatetd file 58_cpp from cpp to java"
+            "external_reference_url": "Translated file 58_cpp from cpp to java",
+            "functional_classification": "Buggy",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "The data is only assigned locally."
         },
         "Human1": {
             "readability_score": 95,
             "understandability_score": 95,
-            "maintainability_score": 90,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 90
         },
         "Human2": {
             "readability_score": 80,
             "understandability_score": 100,
-            "maintainability_score": 95,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 95
         },
         "Human3": {
             "readability_score": 95,
             "understandability_score": 95,
-            "maintainability_score": 95,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 95
         },
         "ChatGPT": {
             "readability_score": 82,
@@ -12822,34 +12570,26 @@
             "id": 58,
             "language": "python",
             "origin": "transFromCpp",
-            "external_reference_url": "Translatetd file 58_cpp from cpp to python"
+            "external_reference_url": "Translated file 58_cpp from cpp to python",
+            "functional_classification": "Buggy",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "The data is only assigned locally."
         },
         "Human1": {
             "readability_score": 95,
             "understandability_score": 95,
-            "maintainability_score": 90,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 90
         },
         "Human2": {
             "readability_score": 80,
             "understandability_score": 100,
-            "maintainability_score": 95,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 95
         },
         "Human3": {
             "readability_score": 95,
             "understandability_score": 95,
-            "maintainability_score": 95,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 95
         },
         "ChatGPT": {
             "readability_score": 90,
@@ -12902,16 +12642,16 @@
             "id": 59,
             "language": "cpp",
             "origin": "SARD",
-            "external_reference_url": "https://samate.nist.gov/SARD/test-cases/111358/versions/1.0.0"
+            "external_reference_url": "https://samate.nist.gov/SARD/test-cases/111358/versions/1.0.0",
+            "functional_classification": "Buggy",
+            "security_classification": "Vulnerable",
+            "cwe_id": "CWE-476",
+            "reasoning": "NullPointerDereference."
         },
         "Human1": {
             "readability_score": 90,
             "understandability_score": 90,
-            "maintainability_score": 50,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 50
         },
         "Human2": {
             "readability_score": 90,
@@ -12982,34 +12722,26 @@
             "id": 59,
             "language": "java",
             "origin": "transFromCpp",
-            "external_reference_url": "Translatetd file 59_cpp from cpp to java"
+            "external_reference_url": "Translated file 59_cpp from cpp to java",
+            "functional_classification": "Buggy",
+            "security_classification": "Vulnerable",
+            "cwe_id": "CWE-119, CWE-129",
+            "reasoning": "Index might be out of bounds."
         },
         "Human1": {
             "readability_score": 90,
             "understandability_score": 90,
-            "maintainability_score": 50,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 50
         },
         "Human2": {
             "readability_score": 90,
             "understandability_score": 100,
-            "maintainability_score": 90,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 90
         },
         "Human3": {
             "readability_score": 95,
             "understandability_score": 95,
-            "maintainability_score": 60,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 60
         },
         "ChatGPT": {
             "readability_score": 92,
@@ -13062,34 +12794,26 @@
             "id": 59,
             "language": "python",
             "origin": "transFromCpp",
-            "external_reference_url": "Translatetd file 59_cpp from cpp to python"
+            "external_reference_url": "Translated file 59_cpp from cpp to python",
+            "functional_classification": "Buggy",
+            "security_classification": "Vulnerable",
+            "cwe_id": "CWE-119, CWE-129",
+            "reasoning": "Index might be out of bounds."
         },
         "Human1": {
             "readability_score": 90,
             "understandability_score": 90,
-            "maintainability_score": 50,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 50
         },
         "Human2": {
             "readability_score": 90,
             "understandability_score": 100,
-            "maintainability_score": 90,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 90
         },
         "Human3": {
             "readability_score": 95,
             "understandability_score": 95,
-            "maintainability_score": 60,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 60
         },
         "ChatGPT": {
             "readability_score": 75,
@@ -13142,34 +12866,26 @@
             "id": 60,
             "language": "cpp",
             "origin": "SARD",
-            "external_reference_url": "https://samate.nist.gov/SARD/test-cases/111358/versions/1.0.0"
+            "external_reference_url": "https://samate.nist.gov/SARD/test-cases/111358/versions/1.0.0",
+            "functional_classification": "Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "The code is functionally correct and safe."
         },
         "Human1": {
             "readability_score": 90,
             "understandability_score": 90,
-            "maintainability_score": 85,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 85
         },
         "Human2": {
             "readability_score": 90,
             "understandability_score": 100,
-            "maintainability_score": 95,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 95
         },
         "Human3": {
             "readability_score": 90,
             "understandability_score": 90,
-            "maintainability_score": 90,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 90
         },
         "ChatGPT": {
             "readability_score": 95,
@@ -13222,34 +12938,26 @@
             "id": 60,
             "language": "java",
             "origin": "transFromCpp",
-            "external_reference_url": "Translatetd file 60_cpp from cpp to java"
+            "external_reference_url": "Translated file 60_cpp from cpp to java",
+            "functional_classification": "Partially Correct",
+            "security_classification": "Vulnerable",
+            "cwe_id": "CWE-119, CWE-125",
+            "reasoning": "Might access buffer out of bounds."
         },
         "Human1": {
             "readability_score": 90,
             "understandability_score": 90,
-            "maintainability_score": 85,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 85
         },
         "Human2": {
             "readability_score": 90,
             "understandability_score": 100,
-            "maintainability_score": 95,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 95
         },
         "Human3": {
             "readability_score": 90,
             "understandability_score": 90,
-            "maintainability_score": 90,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 90
         },
         "ChatGPT": {
             "readability_score": 85,
@@ -13302,34 +13010,26 @@
             "id": 60,
             "language": "python",
             "origin": "transFromCpp",
-            "external_reference_url": "Translatetd file 60_cpp from cpp to python"
+            "external_reference_url": "Translated file 60_cpp from cpp to python",
+            "functional_classification": "Partially Correct",
+            "security_classification": "Vulnerable",
+            "cwe_id": "CWE-119, CWE-125",
+            "reasoning": "Might access buffer out of bounds."
         },
         "Human1": {
             "readability_score": 90,
             "understandability_score": 90,
-            "maintainability_score": 85,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 85
         },
         "Human2": {
             "readability_score": 90,
             "understandability_score": 100,
-            "maintainability_score": 95,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 95
         },
         "Human3": {
             "readability_score": 90,
             "understandability_score": 90,
-            "maintainability_score": 90,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 90
         },
         "ChatGPT": {
             "readability_score": 92,
@@ -13382,16 +13082,16 @@
             "id": 61,
             "language": "cpp",
             "origin": "Vijayvergiya_2024",
-            "external_reference_url": "Figure 3"
+            "external_reference_url": "Figure 3",
+            "functional_classification": "Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "The code is functionally correct and safe."
         },
         "Human1": {
             "readability_score": 100,
             "understandability_score": 100,
-            "maintainability_score": 95,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 95
         },
         "Human2": {
             "readability_score": 95,
@@ -13462,34 +13162,26 @@
             "id": 61,
             "language": "java",
             "origin": "transFromCpp",
-            "external_reference_url": "Translatetd file 61_cpp from cpp to java"
+            "external_reference_url": "Translated file 61_cpp from cpp to java",
+            "functional_classification": "Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "The code is functionally correct and safe."
         },
         "Human1": {
             "readability_score": 100,
             "understandability_score": 100,
-            "maintainability_score": 95,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 95
         },
         "Human2": {
             "readability_score": 95,
             "understandability_score": 90,
-            "maintainability_score": 75,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 75
         },
         "Human3": {
             "readability_score": 100,
             "understandability_score": 100,
-            "maintainability_score": 90,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 90
         },
         "ChatGPT": {
             "readability_score": 91,
@@ -13542,34 +13234,26 @@
             "id": 61,
             "language": "python",
             "origin": "transFromCpp",
-            "external_reference_url": "Translatetd file 61_cpp from cpp to python"
+            "external_reference_url": "Translated file 61_cpp from cpp to python",
+            "functional_classification": "Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "The code is functionally correct and safe."
         },
         "Human1": {
             "readability_score": 100,
             "understandability_score": 100,
-            "maintainability_score": 95,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 95
         },
         "Human2": {
             "readability_score": 95,
             "understandability_score": 90,
-            "maintainability_score": 75,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 75
         },
         "Human3": {
             "readability_score": 100,
             "understandability_score": 100,
-            "maintainability_score": 90,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 90
         },
         "ChatGPT": {
             "readability_score": 90,
@@ -13702,7 +13386,7 @@
             "id": 62,
             "language": "cpp",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 62_py from python to cpp"
+            "external_reference_url": "Translated file 62_py from python to cpp"
         },
         "Human1": {
             "readability_score": 100,
@@ -13782,7 +13466,7 @@
             "id": 62,
             "language": "java",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 62_py from python to java"
+            "external_reference_url": "Translated file 62_py from python to java"
         },
         "Human1": {
             "readability_score": 100,
@@ -13942,7 +13626,7 @@
             "id": 63,
             "language": "cpp",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 63_py from python to cpp"
+            "external_reference_url": "Translated file 63_py from python to cpp"
         },
         "Human1": {
             "readability_score": 100,
@@ -14022,7 +13706,7 @@
             "id": 63,
             "language": "java",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 63_py from python to java"
+            "external_reference_url": "Translated file 63_py from python to java"
         },
         "Human1": {
             "readability_score": 100,
@@ -14182,7 +13866,7 @@
             "id": 64,
             "language": "cpp",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 64_py from python to cpp"
+            "external_reference_url": "Translated file 64_py from python to cpp"
         },
         "Human1": {
             "readability_score": 100,
@@ -14262,7 +13946,7 @@
             "id": 64,
             "language": "java",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 64_py from python to java"
+            "external_reference_url": "Translated file 64_py from python to java"
         },
         "Human1": {
             "readability_score": 100,
@@ -14422,7 +14106,7 @@
             "id": 65,
             "language": "cpp",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 65_py from python to cpp"
+            "external_reference_url": "Translated file 65_py from python to cpp"
         },
         "Human1": {
             "readability_score": 95,
@@ -14502,7 +14186,7 @@
             "id": 65,
             "language": "java",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 65_py from python to java"
+            "external_reference_url": "Translated file 65_py from python to java"
         },
         "Human1": {
             "readability_score": 95,
@@ -14662,7 +14346,7 @@
             "id": 66,
             "language": "cpp",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 66_py from python to cpp"
+            "external_reference_url": "Translated file 66_py from python to cpp"
         },
         "Human1": {
             "readability_score": 70,
@@ -14742,7 +14426,7 @@
             "id": 66,
             "language": "java",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 66_py from python to java"
+            "external_reference_url": "Translated file 66_py from python to java"
         },
         "Human1": {
             "readability_score": 70,
@@ -14902,7 +14586,7 @@
             "id": 67,
             "language": "cpp",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 67_py from python to cpp"
+            "external_reference_url": "Translated file 67_py from python to cpp"
         },
         "Human1": {
             "readability_score": 60,
@@ -14982,7 +14666,7 @@
             "id": 67,
             "language": "java",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 67_py from python to java"
+            "external_reference_url": "Translated file 67_py from python to java"
         },
         "Human1": {
             "readability_score": 60,
@@ -15142,7 +14826,7 @@
             "id": 68,
             "language": "cpp",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 68_py from python to cpp"
+            "external_reference_url": "Translated file 68_py from python to cpp"
         },
         "Human1": {
             "readability_score": 90,
@@ -15222,7 +14906,7 @@
             "id": 68,
             "language": "java",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 68_py from python to java"
+            "external_reference_url": "Translated file 68_py from python to java"
         },
         "Human1": {
             "readability_score": 90,
@@ -15382,7 +15066,7 @@
             "id": 69,
             "language": "cpp",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 69_py from python to cpp"
+            "external_reference_url": "Translated file 69_py from python to cpp"
         },
         "Human1": {
             "readability_score": 85,
@@ -15462,7 +15146,7 @@
             "id": 69,
             "language": "java",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 69_py from python to java"
+            "external_reference_url": "Translated file 69_py from python to java"
         },
         "Human1": {
             "readability_score": 85,
@@ -15622,7 +15306,7 @@
             "id": 70,
             "language": "cpp",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 70_py from python to cpp"
+            "external_reference_url": "Translated file 70_py from python to cpp"
         },
         "Human1": {
             "readability_score": 80,
@@ -15702,7 +15386,7 @@
             "id": 70,
             "language": "java",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 70_py from python to java"
+            "external_reference_url": "Translated file 70_py from python to java"
         },
         "Human1": {
             "readability_score": 85,
@@ -15862,7 +15546,7 @@
             "id": 71,
             "language": "cpp",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 71_py from python to cpp"
+            "external_reference_url": "Translated file 71_py from python to cpp"
         },
         "Human1": {
             "readability_score": 85,
@@ -15942,7 +15626,7 @@
             "id": 71,
             "language": "java",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 71_py from python to java"
+            "external_reference_url": "Translated file 71_py from python to java"
         },
         "Human1": {
             "readability_score": 85,
@@ -16102,7 +15786,7 @@
             "id": 72,
             "language": "cpp",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 72_py from python to cpp"
+            "external_reference_url": "Translated file 72_py from python to cpp"
         },
         "Human1": {
             "readability_score": 90,
@@ -16182,7 +15866,7 @@
             "id": 72,
             "language": "java",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 72_py from python to java"
+            "external_reference_url": "Translated file 72_py from python to java"
         },
         "Human1": {
             "readability_score": 90,
@@ -16342,7 +16026,7 @@
             "id": 73,
             "language": "cpp",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 73_py from python to cpp"
+            "external_reference_url": "Translated file 73_py from python to cpp"
         },
         "Human1": {
             "readability_score": 90,
@@ -16422,7 +16106,7 @@
             "id": 70,
             "language": "java",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 73_py from python to java"
+            "external_reference_url": "Translated file 73_py from python to java"
         },
         "Human1": {
             "readability_score": 90,
@@ -16582,7 +16266,7 @@
             "id": 74,
             "language": "cpp",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 74_py from python to cpp"
+            "external_reference_url": "Translated file 74_py from python to cpp"
         },
         "Human1": {
             "readability_score": 85,
@@ -16662,7 +16346,7 @@
             "id": 74,
             "language": "java",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 74_py from python to java"
+            "external_reference_url": "Translated file 74_py from python to java"
         },
         "Human1": {
             "readability_score": 85,
@@ -16822,7 +16506,7 @@
             "id": 75,
             "language": "cpp",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 75_py from python to cpp"
+            "external_reference_url": "Translated file 75_py from python to cpp"
         },
         "Human1": {
             "readability_score": 80,
@@ -16902,7 +16586,7 @@
             "id": 75,
             "language": "java",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 75_py from python to java"
+            "external_reference_url": "Translated file 75_py from python to java"
         },
         "Human1": {
             "readability_score": 80,
@@ -17062,7 +16746,7 @@
             "id": 76,
             "language": "cpp",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 76_py from python to cpp"
+            "external_reference_url": "Translated file 76_py from python to cpp"
         },
         "Human1": {
             "readability_score": 75,
@@ -17142,7 +16826,7 @@
             "id": 76,
             "language": "java",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 76_py from python to java"
+            "external_reference_url": "Translated file 76_py from python to java"
         },
         "Human1": {
             "readability_score": 75,
@@ -17302,7 +16986,7 @@
             "id": 77,
             "language": "cpp",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 77_py from python to cpp"
+            "external_reference_url": "Translated file 77_py from python to cpp"
         },
         "Human1": {
             "readability_score": 70,
@@ -17382,7 +17066,7 @@
             "id": 77,
             "language": "java",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 77_py from python to java"
+            "external_reference_url": "Translated file 77_py from python to java"
         },
         "Human1": {
             "readability_score": 70,
@@ -17542,7 +17226,7 @@
             "id": 78,
             "language": "cpp",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 78_py from python to cpp"
+            "external_reference_url": "Translated file 78_py from python to cpp"
         },
         "Human1": {
             "readability_score": 95,
@@ -17622,7 +17306,7 @@
             "id": 78,
             "language": "java",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 78_py from python to java"
+            "external_reference_url": "Translated file 78_py from python to java"
         },
         "Human1": {
             "readability_score": 95,
@@ -17782,7 +17466,7 @@
             "id": 79,
             "language": "cpp",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 79_py from python to cpp"
+            "external_reference_url": "Translated file 79_py from python to cpp"
         },
         "Human1": {
             "readability_score": 90,
@@ -17862,7 +17546,7 @@
             "id": 79,
             "language": "java",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 79_py from python to java"
+            "external_reference_url": "Translated file 79_py from python to java"
         },
         "Human1": {
             "readability_score": 90,
@@ -18022,7 +17706,7 @@
             "id": 80,
             "language": "cpp",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 80_py from python to cpp"
+            "external_reference_url": "Translated file 80_py from python to cpp"
         },
         "Human1": {
             "readability_score": 95,
@@ -18102,7 +17786,7 @@
             "id": 80,
             "language": "java",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 80_py from python to java"
+            "external_reference_url": "Translated file 80_py from python to java"
         },
         "Human1": {
             "readability_score": 95,
@@ -18262,7 +17946,7 @@
             "id": 81,
             "language": "cpp",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 81_py from python to cpp"
+            "external_reference_url": "Translated file 81_py from python to cpp"
         },
         "Human1": {
             "readability_score": 90,
@@ -18342,7 +18026,7 @@
             "id": 81,
             "language": "java",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 81_py from python to java"
+            "external_reference_url": "Translated file 81_py from python to java"
         },
         "Human1": {
             "readability_score": 90,
@@ -18502,7 +18186,7 @@
             "id": 82,
             "language": "cpp",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 82_py from python to cpp"
+            "external_reference_url": "Translated file 82_py from python to cpp"
         },
         "Human1": {
             "readability_score": 90,
@@ -18582,7 +18266,7 @@
             "id": 82,
             "language": "java",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 82_py from python to java"
+            "external_reference_url": "Translated file 82_py from python to java"
         },
         "Human1": {
             "readability_score": 90,
@@ -18742,7 +18426,7 @@
             "id": 83,
             "language": "cpp",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 83_py from python to cpp"
+            "external_reference_url": "Translated file 83_py from python to cpp"
         },
         "Human1": {
             "readability_score": 80,
@@ -18822,7 +18506,7 @@
             "id": 83,
             "language": "java",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 83_py from python to java"
+            "external_reference_url": "Translated file 83_py from python to java"
         },
         "Human1": {
             "readability_score": 80,
@@ -18982,7 +18666,7 @@
             "id": 84,
             "language": "cpp",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 84_py from python to cpp"
+            "external_reference_url": "Translated file 84_py from python to cpp"
         },
         "Human1": {
             "readability_score": 85,
@@ -19062,7 +18746,7 @@
             "id": 84,
             "language": "java",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 84_py from python to java"
+            "external_reference_url": "Translated file 84_py from python to java"
         },
         "Human1": {
             "readability_score": 85,
@@ -19222,7 +18906,7 @@
             "id": 85,
             "language": "cpp",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 85_py from python to cpp"
+            "external_reference_url": "Translated file 85_py from python to cpp"
         },
         "Human1": {
             "readability_score": 70,
@@ -19302,7 +18986,7 @@
             "id": 85,
             "language": "java",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 85_py from python to java"
+            "external_reference_url": "Translated file 85_py from python to java"
         },
         "Human1": {
             "readability_score": 70,
@@ -19462,7 +19146,7 @@
             "id": 86,
             "language": "cpp",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 86_py from python to cpp"
+            "external_reference_url": "Translated file 86_py from python to cpp"
         },
         "Human1": {
             "readability_score": 90,
@@ -19542,7 +19226,7 @@
             "id": 86,
             "language": "java",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 86_py from python to java"
+            "external_reference_url": "Translated file 86_py from python to java"
         },
         "Human1": {
             "readability_score": 90,
@@ -19702,7 +19386,7 @@
             "id": 87,
             "language": "cpp",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 87_py from python to cpp"
+            "external_reference_url": "Translated file 87_py from python to cpp"
         },
         "Human1": {
             "readability_score": 100,
@@ -19782,7 +19466,7 @@
             "id": 87,
             "language": "java",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 87_py from python to java"
+            "external_reference_url": "Translated file 87_py from python to java"
         },
         "Human1": {
             "readability_score": 100,
@@ -19942,7 +19626,7 @@
             "id": 88,
             "language": "cpp",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 88_py from python to cpp"
+            "external_reference_url": "Translated file 88_py from python to cpp"
         },
         "Human1": {
             "readability_score": 95,
@@ -20022,7 +19706,7 @@
             "id": 88,
             "language": "java",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 88_py from python to java"
+            "external_reference_url": "Translated file 88_py from python to java"
         },
         "Human1": {
             "readability_score": 95,
@@ -20182,7 +19866,7 @@
             "id": 89,
             "language": "cpp",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 89_py from python to cpp"
+            "external_reference_url": "Translated file 89_py from python to cpp"
         },
         "Human1": {
             "readability_score": 90,
@@ -20262,7 +19946,7 @@
             "id": 89,
             "language": "java",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 89_py from python to java"
+            "external_reference_url": "Translated file 89_py from python to java"
         },
         "Human1": {
             "readability_score": 90,
@@ -20422,7 +20106,7 @@
             "id": 90,
             "language": "cpp",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 90_py from python to cpp"
+            "external_reference_url": "Translated file 90_py from python to cpp"
         },
         "Human1": {
             "readability_score": 80,
@@ -20502,7 +20186,7 @@
             "id": 90,
             "language": "java",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 90_py from python to java"
+            "external_reference_url": "Translated file 90_py from python to java"
         },
         "Human1": {
             "readability_score": 80,
@@ -20662,7 +20346,7 @@
             "id": 91,
             "language": "cpp",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 91_py from python to cpp"
+            "external_reference_url": "Translated file 91_py from python to cpp"
         },
         "Human1": {
             "readability_score": 90,
@@ -20742,7 +20426,7 @@
             "id": 91,
             "language": "java",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 91_py from python to java"
+            "external_reference_url": "Translated file 91_py from python to java"
         },
         "Human1": {
             "readability_score": 90,
@@ -20902,7 +20586,7 @@
             "id": 92,
             "language": "cpp",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 92_py from python to cpp"
+            "external_reference_url": "Translated file 92_py from python to cpp"
         },
         "Human1": {
             "readability_score": 90,
@@ -20982,7 +20666,7 @@
             "id": 92,
             "language": "java",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 92_py from python to java"
+            "external_reference_url": "Translated file 92_py from python to java"
         },
         "Human1": {
             "readability_score": 90,
@@ -21142,7 +20826,7 @@
             "id": 93,
             "language": "cpp",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 93_py from python to cpp"
+            "external_reference_url": "Translated file 93_py from python to cpp"
         },
         "Human1": {
             "readability_score": 80,
@@ -21222,7 +20906,7 @@
             "id": 93,
             "language": "java",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 93_py from python to java"
+            "external_reference_url": "Translated file 93_py from python to java"
         },
         "Human1": {
             "readability_score": 80,
@@ -21382,7 +21066,7 @@
             "id": 94,
             "language": "cpp",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 94_py from python to cpp"
+            "external_reference_url": "Translated file 94_py from python to cpp"
         },
         "Human1": {
             "readability_score": 80,
@@ -21462,7 +21146,7 @@
             "id": 94,
             "language": "java",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 94_py from python to java"
+            "external_reference_url": "Translated file 94_py from python to java"
         },
         "Human1": {
             "readability_score": 80,
@@ -21622,7 +21306,7 @@
             "id": 95,
             "language": "cpp",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 95_py from python to cpp"
+            "external_reference_url": "Translated file 95_py from python to cpp"
         },
         "Human1": {
             "readability_score": 75,
@@ -21702,7 +21386,7 @@
             "id": 95,
             "language": "java",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 95_py from python to java"
+            "external_reference_url": "Translated file 95_py from python to java"
         },
         "Human1": {
             "readability_score": 75,
@@ -21862,7 +21546,7 @@
             "id": 96,
             "language": "cpp",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 96_py from python to cpp"
+            "external_reference_url": "Translated file 96_py from python to cpp"
         },
         "Human1": {
             "readability_score": 90,
@@ -21942,7 +21626,7 @@
             "id": 96,
             "language": "java",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 96_py from python to java"
+            "external_reference_url": "Translated file 96_py from python to java"
         },
         "Human1": {
             "readability_score": 90,
@@ -22102,7 +21786,7 @@
             "id": 97,
             "language": "cpp",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 97_py from python to cpp"
+            "external_reference_url": "Translated file 97_py from python to cpp"
         },
         "Human1": {
             "readability_score": 80,
@@ -22182,7 +21866,7 @@
             "id": 97,
             "language": "java",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 97_py from python to java"
+            "external_reference_url": "Translated file 97_py from python to java"
         },
         "Human1": {
             "readability_score": 80,
@@ -22342,7 +22026,7 @@
             "id": 98,
             "language": "cpp",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 98_py from python to cpp"
+            "external_reference_url": "Translated file 98_py from python to cpp"
         },
         "Human1": {
             "readability_score": 80,
@@ -22422,7 +22106,7 @@
             "id": 98,
             "language": "java",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 98_py from python to java"
+            "external_reference_url": "Translated file 98_py from python to java"
         },
         "Human1": {
             "readability_score": 80,
@@ -22582,7 +22266,7 @@
             "id": 99,
             "language": "cpp",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 99_py from python to cpp"
+            "external_reference_url": "Translated file 99_py from python to cpp"
         },
         "Human1": {
             "readability_score": 50,
@@ -22662,7 +22346,7 @@
             "id": 99,
             "language": "java",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 99_py from python to java"
+            "external_reference_url": "Translated file 99_py from python to java"
         },
         "Human1": {
             "readability_score": 50,
@@ -22822,7 +22506,7 @@
             "id": 100,
             "language": "cpp",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 100_py from python to cpp"
+            "external_reference_url": "Translated file 100_py from python to cpp"
         },
         "Human1": {
             "readability_score": 50,
@@ -22902,7 +22586,7 @@
             "id": 100,
             "language": "java",
             "origin": "transFromPython",
-            "external_reference_url": "Translatetd file 100_py from python to java"
+            "external_reference_url": "Translated file 100_py from python to java"
         },
         "Human1": {
             "readability_score": 50,

@@ -1,3 +1,5 @@
+#include <iostream>
+#include <climits>
 
 static void Func1(unsigned int &data)
 {
@@ -10,10 +12,11 @@ void Func2()
     data = 0;
     Func1(data);
     unsigned int result = data + 1;
-    printLine(result);
+    std::cout << result << std::endl;
 }
 
 int main()
 {
-	Func2();
+    Func2();
+    return 0;
 }
