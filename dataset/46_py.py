@@ -1,22 +1,28 @@
 import ctypes
+import sys
 
-def print_line(data_ptr):
-    print(ctypes.string_at(data_ptr).decode('utf-8'))
+if sys.platform == "win32":
+    libc = ctypes.CDLL("msvcrt.dll")
+else:
+    libc = ctypes.CDLL(None)
+
+libc.malloc.restype = ctypes.c_void_p
+libc.malloc.argtypes = [ctypes.c_size_t]
+libc.free.argtypes = [ctypes.c_void_p]
 
 def function1(data_ref):
-    data_ref[0] = ctypes.create_string_buffer(100)
-    ctypes.memset(data_ref[0], ord('A'), 100 - 1)
-    data_ref[0][100 - 1] = 0
+    ptr = libc.malloc(100)
+    data_ref[0] = ptr
+    char_ptr = ctypes.cast(ptr, ctypes.POINTER(ctypes.c_char))
+    ctypes.memset(char_ptr, ord('A'), 100 - 1)
+    char_ptr[100 - 1] = b'\x00'
 
 def function2():
     data_ref = [None]
     function1(data_ref)
-
     if data_ref[0] is not None:
-        print_line(data_ref[0])
-
-        libc = ctypes.CDLL(None)
-        libc.free(ctypes.cast(data_ref[0], ctypes.c_void_p))
+        print(ctypes.string_at(data_ref[0]).decode('utf-8'))
+        libc.free(data_ref[0])
         data_ref[0] = None
 
 if __name__ == "__main__":
