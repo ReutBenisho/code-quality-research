@@ -17622,7 +17622,11 @@
             "id": 82,
             "language": "python",
             "origin": "Exercises_2021",
-            "external_reference_url": ""
+            "external_reference_url": "",
+            "functional_classification": "Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "The code is functionally correct and safe."
         },
         "Human1": {
             "readability_score": 90,
@@ -17690,34 +17694,26 @@
             "id": 82,
             "language": "cpp",
             "origin": "transFromPython",
-            "external_reference_url": "Translated file 82_py from python to cpp"
+            "external_reference_url": "Translated file 82_py from python to cpp",
+            "functional_classification": "Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "The code is functionally correct and safe."
         },
         "Human1": {
             "readability_score": 90,
             "understandability_score": 85,
-            "maintainability_score": 50,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 50
         },
         "Human2": {
             "readability_score": 85,
             "understandability_score": 70,
-            "maintainability_score": 75,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 75
         },
         "Human3": {
             "readability_score": 85,
             "understandability_score": 70,
-            "maintainability_score": 75,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 75
         },
         "ChatGPT": {
             "readability_score": 82,
@@ -17770,34 +17766,26 @@
             "id": 82,
             "language": "java",
             "origin": "transFromPython",
-            "external_reference_url": "Translated file 82_py from python to java"
+            "external_reference_url": "Translated file 82_py from python to java",
+            "functional_classification": "Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "The code is functionally correct and safe."
         },
         "Human1": {
             "readability_score": 90,
             "understandability_score": 85,
-            "maintainability_score": 50,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 50
         },
         "Human2": {
             "readability_score": 90,
             "understandability_score": 80,
-            "maintainability_score": 75,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 75
         },
         "Human3": {
             "readability_score": 90,
             "understandability_score": 80,
-            "maintainability_score": 75,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 75
         },
         "ChatGPT": {
             "readability_score": 78,
@@ -17850,34 +17838,26 @@
             "id": 83,
             "language": "python",
             "origin": "Exercises_2021",
-            "external_reference_url": ""
+            "external_reference_url": "",
+            "functional_classification": "Partially Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "Incorrect handling for negative numbers."
         },
         "Human1": {
             "readability_score": 80,
             "understandability_score": 85,
-            "maintainability_score": 80,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 80
         },
         "Human2": {
             "readability_score": 90,
             "understandability_score": 80,
-            "maintainability_score": 60,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 60
         },
         "Human3": {
             "readability_score": 80,
             "understandability_score": 80,
-            "maintainability_score": 75,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 75
         },
         "ChatGPT": {
             "readability_score": 96,
@@ -17930,34 +17910,26 @@
             "id": 83,
             "language": "cpp",
             "origin": "transFromPython",
-            "external_reference_url": "Translated file 83_py from python to cpp"
+            "external_reference_url": "Translated file 83_py from python to cpp",
+            "functional_classification": "Partially Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "Incorrect handling for negative numbers."
         },
         "Human1": {
             "readability_score": 80,
             "understandability_score": 85,
-            "maintainability_score": 80,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 80
         },
         "Human2": {
             "readability_score": 90,
             "understandability_score": 80,
-            "maintainability_score": 60,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 60
         },
         "Human3": {
             "readability_score": 80,
             "understandability_score": 80,
-            "maintainability_score": 75,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 75
         },
         "ChatGPT": {
             "readability_score": 92,
@@ -18010,34 +17982,26 @@
             "id": 83,
             "language": "java",
             "origin": "transFromPython",
-            "external_reference_url": "Translated file 83_py from python to java"
+            "external_reference_url": "Translated file 83_py from python to java",
+            "functional_classification": "Partially Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "Incorrect handling for negative numbers."
         },
         "Human1": {
             "readability_score": 80,
             "understandability_score": 85,
-            "maintainability_score": 80,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 80
         },
         "Human2": {
             "readability_score": 90,
             "understandability_score": 80,
-            "maintainability_score": 60,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 60
         },
         "Human3": {
             "readability_score": 80,
             "understandability_score": 80,
-            "maintainability_score": 75,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 75
         },
         "ChatGPT": {
             "readability_score": 92,
@@ -18090,34 +18054,26 @@
             "id": 84,
             "language": "python",
             "origin": "Exercises_2021",
-            "external_reference_url": ""
+            "external_reference_url": "",
+            "functional_classification": "Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "The code is functionally correct and safe."
         },
         "Human1": {
             "readability_score": 85,
             "understandability_score": 85,
-            "maintainability_score": 85,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 85
         },
         "Human2": {
             "readability_score": 85,
             "understandability_score": 100,
-            "maintainability_score": 90,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 90
         },
         "Human3": {
             "readability_score": 80,
             "understandability_score": 80,
-            "maintainability_score": 80,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 80
         },
         "ChatGPT": {
             "readability_score": 98,
@@ -18170,34 +18126,26 @@
             "id": 84,
             "language": "cpp",
             "origin": "transFromPython",
-            "external_reference_url": "Translated file 84_py from python to cpp"
+            "external_reference_url": "Translated file 84_py from python to cpp",
+            "functional_classification": "Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "The code is functionally correct and safe."
         },
         "Human1": {
             "readability_score": 85,
             "understandability_score": 85,
-            "maintainability_score": 85,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 85
         },
         "Human2": {
             "readability_score": 80,
             "understandability_score": 85,
-            "maintainability_score": 90,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 90
         },
         "Human3": {
             "readability_score": 80,
             "understandability_score": 80,
-            "maintainability_score": 80,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 80
         },
         "ChatGPT": {
             "readability_score": 85,
@@ -18250,34 +18198,26 @@
             "id": 84,
             "language": "java",
             "origin": "transFromPython",
-            "external_reference_url": "Translated file 84_py from python to java"
+            "external_reference_url": "Translated file 84_py from python to java",
+            "functional_classification": "Partially Correct",
+            "security_classification": "Vulnerable",
+            "cwe_id": "CWE-476",
+            "reasoning": "No null ptr validation."
         },
         "Human1": {
             "readability_score": 85,
             "understandability_score": 85,
-            "maintainability_score": 85,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 85
         },
         "Human2": {
             "readability_score": 80,
             "understandability_score": 90,
-            "maintainability_score": 90,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 90
         },
         "Human3": {
             "readability_score": 80,
             "understandability_score": 80,
-            "maintainability_score": 80,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 80
         },
         "ChatGPT": {
             "readability_score": 90,
@@ -18330,34 +18270,26 @@
             "id": 85,
             "language": "python",
             "origin": "Exercises_2021",
-            "external_reference_url": ""
+            "external_reference_url": "",
+            "functional_classification": "Buggy",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "Missing function \"counter\" definition."
         },
         "Human1": {
             "readability_score": 70,
             "understandability_score": 60,
-            "maintainability_score": 50,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 50
         },
         "Human2": {
             "readability_score": 80,
             "understandability_score": 80,
-            "maintainability_score": 40,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 40
         },
         "Human3": {
             "readability_score": 70,
             "understandability_score": 70,
-            "maintainability_score": 40,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 40
         },
         "ChatGPT": {
             "readability_score": 82,
@@ -18410,34 +18342,26 @@
             "id": 85,
             "language": "cpp",
             "origin": "transFromPython",
-            "external_reference_url": "Translated file 85_py from python to cpp"
+            "external_reference_url": "Translated file 85_py from python to cpp",
+            "functional_classification": "Buggy",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "Missing function \"counter\" definition."
         },
         "Human1": {
             "readability_score": 70,
             "understandability_score": 60,
-            "maintainability_score": 50,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 50
         },
         "Human2": {
             "readability_score": 80,
             "understandability_score": 80,
-            "maintainability_score": 40,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 40
         },
         "Human3": {
             "readability_score": 70,
             "understandability_score": 70,
-            "maintainability_score": 40,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 40
         },
         "ChatGPT": {
             "readability_score": 72,
@@ -18490,34 +18414,26 @@
             "id": 85,
             "language": "java",
             "origin": "transFromPython",
-            "external_reference_url": "Translated file 85_py from python to java"
+            "external_reference_url": "Translated file 85_py from python to java",
+            "functional_classification": "Buggy",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "Missing function \"counter\" definition."
         },
         "Human1": {
             "readability_score": 70,
             "understandability_score": 60,
-            "maintainability_score": 50,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 50
         },
         "Human2": {
             "readability_score": 80,
             "understandability_score": 80,
-            "maintainability_score": 40,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 40
         },
         "Human3": {
             "readability_score": 70,
             "understandability_score": 70,
-            "maintainability_score": 40,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 40
         },
         "ChatGPT": {
             "readability_score": 82,
@@ -18570,34 +18486,26 @@
             "id": 86,
             "language": "python",
             "origin": "Exercises_2021",
-            "external_reference_url": ""
+            "external_reference_url": "",
+            "functional_classification": "Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "The code is functionally correct and safe."
         },
         "Human1": {
             "readability_score": 90,
             "understandability_score": 90,
-            "maintainability_score": 85,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 85
         },
         "Human2": {
             "readability_score": 80,
             "understandability_score": 100,
-            "maintainability_score": 80,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 80
         },
         "Human3": {
             "readability_score": 90,
             "understandability_score": 90,
-            "maintainability_score": 90,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 90
         },
         "ChatGPT": {
             "readability_score": 95,
@@ -18650,34 +18558,26 @@
             "id": 86,
             "language": "cpp",
             "origin": "transFromPython",
-            "external_reference_url": "Translated file 86_py from python to cpp"
+            "external_reference_url": "Translated file 86_py from python to cpp",
+            "functional_classification": "Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "The code is functionally correct and safe."
         },
         "Human1": {
             "readability_score": 90,
             "understandability_score": 90,
-            "maintainability_score": 85,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 85
         },
         "Human2": {
             "readability_score": 80,
             "understandability_score": 80,
-            "maintainability_score": 80,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 80
         },
         "Human3": {
             "readability_score": 90,
             "understandability_score": 90,
-            "maintainability_score": 90,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 90
         },
         "ChatGPT": {
             "readability_score": 82,
@@ -18730,34 +18630,26 @@
             "id": 86,
             "language": "java",
             "origin": "transFromPython",
-            "external_reference_url": "Translated file 86_py from python to java"
+            "external_reference_url": "Translated file 86_py from python to java",
+            "functional_classification": "Partially Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "No null ptr validation."
         },
         "Human1": {
             "readability_score": 90,
             "understandability_score": 90,
-            "maintainability_score": 85,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 85
         },
         "Human2": {
             "readability_score": 80,
             "understandability_score": 80,
-            "maintainability_score": 80,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 80
         },
         "Human3": {
             "readability_score": 90,
             "understandability_score": 90,
-            "maintainability_score": 90,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 90
         },
         "ChatGPT": {
             "readability_score": 88,
@@ -18810,34 +18702,26 @@
             "id": 87,
             "language": "python",
             "origin": "Exercises_2021",
-            "external_reference_url": ""
+            "external_reference_url": "",
+            "functional_classification": "Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "The code is functionally correct and safe."
         },
         "Human1": {
             "readability_score": 100,
             "understandability_score": 100,
-            "maintainability_score": 90,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 90
         },
         "Human2": {
             "readability_score": 80,
             "understandability_score": 100,
-            "maintainability_score": 90,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 90
         },
         "Human3": {
             "readability_score": 100,
             "understandability_score": 100,
-            "maintainability_score": 100,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 100
         },
         "ChatGPT": {
             "readability_score": 99,
@@ -18890,34 +18774,26 @@
             "id": 87,
             "language": "cpp",
             "origin": "transFromPython",
-            "external_reference_url": "Translated file 87_py from python to cpp"
+            "external_reference_url": "Translated file 87_py from python to cpp",
+            "functional_classification": "Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "The code is functionally correct and safe."
         },
         "Human1": {
             "readability_score": 100,
             "understandability_score": 100,
-            "maintainability_score": 90,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 90
         },
         "Human2": {
             "readability_score": 80,
             "understandability_score": 90,
-            "maintainability_score": 60,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 60
         },
         "Human3": {
             "readability_score": 100,
             "understandability_score": 100,
-            "maintainability_score": 100,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 100
         },
         "ChatGPT": {
             "readability_score": 95,
@@ -18970,34 +18846,26 @@
             "id": 87,
             "language": "java",
             "origin": "transFromPython",
-            "external_reference_url": "Translated file 87_py from python to java"
+            "external_reference_url": "Translated file 87_py from python to java",
+            "functional_classification": "Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "The code is functionally correct and safe."
         },
         "Human1": {
             "readability_score": 100,
             "understandability_score": 100,
-            "maintainability_score": 90,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 90
         },
         "Human2": {
             "readability_score": 80,
             "understandability_score": 90,
-            "maintainability_score": 90,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 90
         },
         "Human3": {
             "readability_score": 100,
             "understandability_score": 100,
-            "maintainability_score": 100,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 100
         },
         "ChatGPT": {
             "readability_score": 95,
@@ -19050,34 +18918,26 @@
             "id": 88,
             "language": "python",
             "origin": "Exercises_2021",
-            "external_reference_url": ""
+            "external_reference_url": "",
+            "functional_classification": "Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "The code is functionally correct and safe."
         },
         "Human1": {
             "readability_score": 95,
             "understandability_score": 95,
-            "maintainability_score": 95,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 95
         },
         "Human2": {
             "readability_score": 80,
             "understandability_score": 80,
-            "maintainability_score": 80,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 80
         },
         "Human3": {
             "readability_score": 80,
             "understandability_score": 80,
-            "maintainability_score": 70,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 70
         },
         "ChatGPT": {
             "readability_score": 98,
@@ -19130,34 +18990,26 @@
             "id": 88,
             "language": "cpp",
             "origin": "transFromPython",
-            "external_reference_url": "Translated file 88_py from python to cpp"
+            "external_reference_url": "Translated file 88_py from python to cpp",
+            "functional_classification": "Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "The code is functionally correct and safe."
         },
         "Human1": {
             "readability_score": 95,
             "understandability_score": 95,
-            "maintainability_score": 95,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 95
         },
         "Human2": {
             "readability_score": 80,
             "understandability_score": 80,
-            "maintainability_score": 60,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 60
         },
         "Human3": {
             "readability_score": 80,
             "understandability_score": 80,
-            "maintainability_score": 70,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 70
         },
         "ChatGPT": {
             "readability_score": 92,
@@ -19210,34 +19062,26 @@
             "id": 88,
             "language": "java",
             "origin": "transFromPython",
-            "external_reference_url": "Translated file 88_py from python to java"
+            "external_reference_url": "Translated file 88_py from python to java",
+            "functional_classification": "Partially Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "No null ptr validation."
         },
         "Human1": {
             "readability_score": 95,
             "understandability_score": 95,
-            "maintainability_score": 95,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 95
         },
         "Human2": {
             "readability_score": 80,
             "understandability_score": 80,
-            "maintainability_score": 85,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 85
         },
         "Human3": {
             "readability_score": 80,
             "understandability_score": 80,
-            "maintainability_score": 70,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 70
         },
         "ChatGPT": {
             "readability_score": 91,
@@ -19290,34 +19134,26 @@
             "id": 89,
             "language": "python",
             "origin": "Exercises_2021",
-            "external_reference_url": ""
+            "external_reference_url": "",
+            "functional_classification": "Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "The code is functionally correct and safe."
         },
         "Human1": {
             "readability_score": 90,
             "understandability_score": 90,
-            "maintainability_score": 85,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 85
         },
         "Human2": {
             "readability_score": 80,
             "understandability_score": 80,
-            "maintainability_score": 80,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 80
         },
         "Human3": {
             "readability_score": 80,
             "understandability_score": 80,
-            "maintainability_score": 70,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 70
         },
         "ChatGPT": {
             "readability_score": 90,
@@ -19370,34 +19206,26 @@
             "id": 89,
             "language": "cpp",
             "origin": "transFromPython",
-            "external_reference_url": "Translated file 89_py from python to cpp"
+            "external_reference_url": "Translated file 89_py from python to cpp",
+            "functional_classification": "Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "The code is functionally correct and safe."
         },
         "Human1": {
             "readability_score": 90,
             "understandability_score": 90,
-            "maintainability_score": 85,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 85
         },
         "Human2": {
             "readability_score": 80,
             "understandability_score": 80,
-            "maintainability_score": 60,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 60
         },
         "Human3": {
             "readability_score": 80,
             "understandability_score": 80,
-            "maintainability_score": 70,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 70
         },
         "ChatGPT": {
             "readability_score": 88,
@@ -19450,34 +19278,26 @@
             "id": 89,
             "language": "java",
             "origin": "transFromPython",
-            "external_reference_url": "Translated file 89_py from python to java"
+            "external_reference_url": "Translated file 89_py from python to java",
+            "functional_classification": "Partially Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "No null ptr validation."
         },
         "Human1": {
             "readability_score": 90,
             "understandability_score": 90,
-            "maintainability_score": 85,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 85
         },
         "Human2": {
             "readability_score": 80,
             "understandability_score": 80,
-            "maintainability_score": 85,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 85
         },
         "Human3": {
             "readability_score": 80,
             "understandability_score": 80,
-            "maintainability_score": 70,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 70
         },
         "ChatGPT": {
             "readability_score": 92,
@@ -19530,34 +19350,26 @@
             "id": 90,
             "language": "python",
             "origin": "Exercises_2021",
-            "external_reference_url": ""
+            "external_reference_url": "",
+            "functional_classification": "Partially Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "Incorrect for negative numbers."
         },
         "Human1": {
             "readability_score": 80,
             "understandability_score": 90,
-            "maintainability_score": 85,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 85
         },
         "Human2": {
             "readability_score": 80,
             "understandability_score": 85,
-            "maintainability_score": 75,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 75
         },
         "Human3": {
             "readability_score": 75,
             "understandability_score": 75,
-            "maintainability_score": 70,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 70
         },
         "ChatGPT": {
             "readability_score": 88,
@@ -19610,34 +19422,26 @@
             "id": 90,
             "language": "cpp",
             "origin": "transFromPython",
-            "external_reference_url": "Translated file 90_py from python to cpp"
+            "external_reference_url": "Translated file 90_py from python to cpp",
+            "functional_classification": "Partially Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "Incorrect for negative numbers."
         },
         "Human1": {
             "readability_score": 80,
             "understandability_score": 90,
-            "maintainability_score": 85,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 85
         },
         "Human2": {
             "readability_score": 80,
             "understandability_score": 85,
-            "maintainability_score": 75,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 75
         },
         "Human3": {
             "readability_score": 75,
             "understandability_score": 75,
-            "maintainability_score": 70,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 70
         },
         "ChatGPT": {
             "readability_score": 82,
@@ -19690,34 +19494,26 @@
             "id": 90,
             "language": "java",
             "origin": "transFromPython",
-            "external_reference_url": "Translated file 90_py from python to java"
+            "external_reference_url": "Translated file 90_py from python to java",
+            "functional_classification": "Partially Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "Incorrect for negative numbers."
         },
         "Human1": {
             "readability_score": 80,
             "understandability_score": 90,
-            "maintainability_score": 85,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 85
         },
         "Human2": {
             "readability_score": 80,
             "understandability_score": 85,
-            "maintainability_score": 75,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 75
         },
         "Human3": {
             "readability_score": 75,
             "understandability_score": 75,
-            "maintainability_score": 70,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 70
         },
         "ChatGPT": {
             "readability_score": 92,
@@ -19770,34 +19566,26 @@
             "id": 91,
             "language": "python",
             "origin": "Exercises_2021",
-            "external_reference_url": ""
+            "external_reference_url": "",
+            "functional_classification": "Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "The code is functionally correct and safe."
         },
         "Human1": {
             "readability_score": 90,
             "understandability_score": 95,
-            "maintainability_score": 85,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 85
         },
         "Human2": {
             "readability_score": 80,
             "understandability_score": 100,
-            "maintainability_score": 80,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 80
         },
         "Human3": {
             "readability_score": 90,
             "understandability_score": 90,
-            "maintainability_score": 90,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 90
         },
         "ChatGPT": {
             "readability_score": 96,
@@ -19850,34 +19638,26 @@
             "id": 91,
             "language": "cpp",
             "origin": "transFromPython",
-            "external_reference_url": "Translated file 91_py from python to cpp"
+            "external_reference_url": "Translated file 91_py from python to cpp",
+            "functional_classification": "Partially Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "No input validation."
         },
         "Human1": {
             "readability_score": 90,
             "understandability_score": 95,
-            "maintainability_score": 85,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 85
         },
         "Human2": {
             "readability_score": 80,
             "understandability_score": 100,
-            "maintainability_score": 60,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 60
         },
         "Human3": {
             "readability_score": 90,
             "understandability_score": 90,
-            "maintainability_score": 90,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 90
         },
         "ChatGPT": {
             "readability_score": 82,
@@ -19930,34 +19710,26 @@
             "id": 91,
             "language": "java",
             "origin": "transFromPython",
-            "external_reference_url": "Translated file 91_py from python to java"
+            "external_reference_url": "Translated file 91_py from python to java",
+            "functional_classification": "Buggy",
+            "security_classification": "Vulnerable",
+            "cwe_id": "CWE-476",
+            "reasoning": "No null ptr validation."
         },
         "Human1": {
             "readability_score": 90,
             "understandability_score": 95,
-            "maintainability_score": 85,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 85
         },
         "Human2": {
             "readability_score": 80,
             "understandability_score": 100,
-            "maintainability_score": 90,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 90
         },
         "Human3": {
             "readability_score": 90,
             "understandability_score": 90,
-            "maintainability_score": 90,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 90
         },
         "ChatGPT": {
             "readability_score": 94,
@@ -20010,34 +19782,26 @@
             "id": 92,
             "language": "python",
             "origin": "Exercises_2021",
-            "external_reference_url": ""
+            "external_reference_url": "",
+            "functional_classification": "Partially Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "Incorrect handling for negative numbers."
         },
         "Human1": {
             "readability_score": 90,
             "understandability_score": 85,
-            "maintainability_score": 75,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 75
         },
         "Human2": {
             "readability_score": 80,
             "understandability_score": 80,
-            "maintainability_score": 80,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 80
         },
         "Human3": {
             "readability_score": 80,
             "understandability_score": 80,
-            "maintainability_score": 70,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 70
         },
         "ChatGPT": {
             "readability_score": 92,
@@ -20090,34 +19854,26 @@
             "id": 92,
             "language": "cpp",
             "origin": "transFromPython",
-            "external_reference_url": "Translated file 92_py from python to cpp"
+            "external_reference_url": "Translated file 92_py from python to cpp",
+            "functional_classification": "Partially Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "Incorrect handling for negative numbers."
         },
         "Human1": {
             "readability_score": 90,
             "understandability_score": 85,
-            "maintainability_score": 75,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 75
         },
         "Human2": {
             "readability_score": 80,
             "understandability_score": 80,
-            "maintainability_score": 80,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 80
         },
         "Human3": {
             "readability_score": 80,
             "understandability_score": 80,
-            "maintainability_score": 70,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 70
         },
         "ChatGPT": {
             "readability_score": 91,
@@ -20170,34 +19926,26 @@
             "id": 92,
             "language": "java",
             "origin": "transFromPython",
-            "external_reference_url": "Translated file 92_py from python to java"
+            "external_reference_url": "Translated file 92_py from python to java",
+            "functional_classification": "Partially Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "Incorrect handling for negative numbers."
         },
         "Human1": {
             "readability_score": 90,
             "understandability_score": 85,
-            "maintainability_score": 75,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 75
         },
         "Human2": {
             "readability_score": 80,
             "understandability_score": 80,
-            "maintainability_score": 80,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 80
         },
         "Human3": {
             "readability_score": 80,
             "understandability_score": 80,
-            "maintainability_score": 70,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 70
         },
         "ChatGPT": {
             "readability_score": 88,
@@ -20250,34 +19998,26 @@
             "id": 93,
             "language": "python",
             "origin": "Exercises_2021",
-            "external_reference_url": ""
+            "external_reference_url": "",
+            "functional_classification": "Partially Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "Incorrect handling numbers containing only the same digit."
         },
         "Human1": {
             "readability_score": 80,
             "understandability_score": 75,
-            "maintainability_score": 40,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 40
         },
         "Human2": {
             "readability_score": 80,
             "understandability_score": 75,
-            "maintainability_score": 80,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 80
         },
         "Human3": {
             "readability_score": 80,
             "understandability_score": 80,
-            "maintainability_score": 50,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 50
         },
         "ChatGPT": {
             "readability_score": 78,
@@ -20330,34 +20070,26 @@
             "id": 93,
             "language": "cpp",
             "origin": "transFromPython",
-            "external_reference_url": "Translated file 93_py from python to cpp"
+            "external_reference_url": "Translated file 93_py from python to cpp",
+            "functional_classification": "Partially Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "Incorrect handling numbers containing only the same digit."
         },
         "Human1": {
             "readability_score": 80,
             "understandability_score": 75,
-            "maintainability_score": 40,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 40
         },
         "Human2": {
             "readability_score": 75,
             "understandability_score": 75,
-            "maintainability_score": 80,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 80
         },
         "Human3": {
             "readability_score": 75,
             "understandability_score": 75,
-            "maintainability_score": 40,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 40
         },
         "ChatGPT": {
             "readability_score": 82,
@@ -20410,34 +20142,26 @@
             "id": 93,
             "language": "java",
             "origin": "transFromPython",
-            "external_reference_url": "Translated file 93_py from python to java"
+            "external_reference_url": "Translated file 93_py from python to java",
+            "functional_classification": "Partially Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "Incorrect handling numbers containing only the same digit."
         },
         "Human1": {
             "readability_score": 80,
             "understandability_score": 75,
-            "maintainability_score": 40,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 40
         },
         "Human2": {
             "readability_score": 75,
             "understandability_score": 75,
-            "maintainability_score": 80,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 80
         },
         "Human3": {
             "readability_score": 75,
             "understandability_score": 80,
-            "maintainability_score": 40,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 40
         },
         "ChatGPT": {
             "readability_score": 78,
@@ -20490,34 +20214,26 @@
             "id": 94,
             "language": "python",
             "origin": "Exercises_2021",
-            "external_reference_url": ""
+            "external_reference_url": "",
+            "functional_classification": "Partially Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "Incorrect handling of uppercase input."
         },
         "Human1": {
             "readability_score": 80,
             "understandability_score": 85,
-            "maintainability_score": 70,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 70
         },
         "Human2": {
             "readability_score": 80,
             "understandability_score": 80,
-            "maintainability_score": 70,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 70
         },
         "Human3": {
             "readability_score": 80,
             "understandability_score": 80,
-            "maintainability_score": 70,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 70
         },
         "ChatGPT": {
             "readability_score": 85,
@@ -20570,34 +20286,28 @@
             "id": 94,
             "language": "cpp",
             "origin": "transFromPython",
-            "external_reference_url": "Translated file 94_py from python to cpp"
+            "external_reference_url": "Translated file 94_py from python to cpp",
+            "functional_classification": "Partially Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "Incorrect handling of uppercase input."
         },
         "Human1": {
             "readability_score": 80,
             "understandability_score": 85,
-            "maintainability_score": 70,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 70
         },
         "Human2": {
             "readability_score": 80,
             "understandability_score": 80,
-            "maintainability_score": 70,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 70
         },
         "Human3": {
             "readability_score": 80,
             "understandability_score": 80,
-            "maintainability_score": 70,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 70
+
+
         },
         "ChatGPT": {
             "readability_score": 78,
@@ -20650,34 +20360,26 @@
             "id": 94,
             "language": "java",
             "origin": "transFromPython",
-            "external_reference_url": "Translated file 94_py from python to java"
+            "external_reference_url": "Translated file 94_py from python to java",
+            "functional_classification": "Partially Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "Incorrect handling of uppercase input."
         },
         "Human1": {
             "readability_score": 80,
             "understandability_score": 85,
-            "maintainability_score": 70,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 70
         },
         "Human2": {
             "readability_score": 80,
             "understandability_score": 80,
-            "maintainability_score": 70,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 70
         },
         "Human3": {
             "readability_score": 80,
             "understandability_score": 80,
-            "maintainability_score": 70,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 70
         },
         "ChatGPT": {
             "readability_score": 78,
@@ -20730,34 +20432,26 @@
             "id": 95,
             "language": "python",
             "origin": "Exercises_2022",
-            "external_reference_url": ""
+            "external_reference_url": "",
+            "functional_classification": "Buggy",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "Using floating point devision instead of integer."
         },
         "Human1": {
             "readability_score": 75,
             "understandability_score": 70,
-            "maintainability_score": 50,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 50
         },
         "Human2": {
             "readability_score": 80,
             "understandability_score": 80,
-            "maintainability_score": 70,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 70
         },
         "Human3": {
             "readability_score": 70,
             "understandability_score": 70,
-            "maintainability_score": 40,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 40
         },
         "ChatGPT": {
             "readability_score": 78,
@@ -20810,34 +20504,26 @@
             "id": 95,
             "language": "cpp",
             "origin": "transFromPython",
-            "external_reference_url": "Translated file 95_py from python to cpp"
+            "external_reference_url": "Translated file 95_py from python to cpp",
+            "functional_classification": "Buggy",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "Using floating point devision instead of integer."
         },
         "Human1": {
             "readability_score": 75,
             "understandability_score": 70,
-            "maintainability_score": 50,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 50
         },
         "Human2": {
             "readability_score": 80,
             "understandability_score": 70,
-            "maintainability_score": 70,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 70
         },
         "Human3": {
             "readability_score": 70,
             "understandability_score": 70,
-            "maintainability_score": 40,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 40
         },
         "ChatGPT": {
             "readability_score": 72,
@@ -20890,34 +20576,26 @@
             "id": 95,
             "language": "java",
             "origin": "transFromPython",
-            "external_reference_url": "Translated file 95_py from python to java"
+            "external_reference_url": "Translated file 95_py from python to java",
+            "functional_classification": "Buggy",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "Using floating point devision instead of integer."
         },
         "Human1": {
             "readability_score": 75,
             "understandability_score": 70,
-            "maintainability_score": 50,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 50
         },
         "Human2": {
             "readability_score": 80,
             "understandability_score": 70,
-            "maintainability_score": 70,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 70
         },
         "Human3": {
             "readability_score": 70,
             "understandability_score": 70,
-            "maintainability_score": 40,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 40
         },
         "ChatGPT": {
             "readability_score": 62,
@@ -20970,34 +20648,26 @@
             "id": 96,
             "language": "python",
             "origin": "Exercises_2022",
-            "external_reference_url": ""
+            "external_reference_url": "",
+            "functional_classification": "Partially Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "Incorrect for negative numbers."
         },
         "Human1": {
             "readability_score": 90,
             "understandability_score": 85,
-            "maintainability_score": 80,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 80
         },
         "Human2": {
             "readability_score": 90,
             "understandability_score": 75,
-            "maintainability_score": 60,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 60
         },
         "Human3": {
             "readability_score": 70,
             "understandability_score": 70,
-            "maintainability_score": 40,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 40
         },
         "ChatGPT": {
             "readability_score": 90,
@@ -21050,34 +20720,26 @@
             "id": 96,
             "language": "cpp",
             "origin": "transFromPython",
-            "external_reference_url": "Translated file 96_py from python to cpp"
+            "external_reference_url": "Translated file 96_py from python to cpp",
+            "functional_classification": "Partially Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "Incorrect for negative numbers."
         },
         "Human1": {
             "readability_score": 90,
             "understandability_score": 85,
-            "maintainability_score": 80,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 80
         },
         "Human2": {
             "readability_score": 90,
             "understandability_score": 75,
-            "maintainability_score": 60,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 60
         },
         "Human3": {
             "readability_score": 70,
             "understandability_score": 70,
-            "maintainability_score": 40,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 40
         },
         "ChatGPT": {
             "readability_score": 84,
@@ -21130,34 +20792,26 @@
             "id": 96,
             "language": "java",
             "origin": "transFromPython",
-            "external_reference_url": "Translated file 96_py from python to java"
+            "external_reference_url": "Translated file 96_py from python to java",
+            "functional_classification": "Partially Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "Incorrect for negative numbers."
         },
         "Human1": {
             "readability_score": 90,
             "understandability_score": 85,
-            "maintainability_score": 80,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 80
         },
         "Human2": {
             "readability_score": 90,
             "understandability_score": 75,
-            "maintainability_score": 60,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 60
         },
         "Human3": {
             "readability_score": 70,
             "understandability_score": 70,
-            "maintainability_score": 40,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 40
         },
         "ChatGPT": {
             "readability_score": 82,
@@ -21210,34 +20864,26 @@
             "id": 97,
             "language": "python",
             "origin": "Exercises_2022",
-            "external_reference_url": ""
+            "external_reference_url": "",
+            "functional_classification": "Buggy",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "Using floating point devision instead of integer."
         },
         "Human1": {
             "readability_score": 80,
             "understandability_score": 50,
-            "maintainability_score": 50,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 50
         },
         "Human2": {
             "readability_score": 80,
             "understandability_score": 75,
-            "maintainability_score": 70,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 70
         },
         "Human3": {
             "readability_score": 80,
             "understandability_score": 80,
-            "maintainability_score": 70,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 70
         },
         "ChatGPT": {
             "readability_score": 78,
@@ -21290,34 +20936,26 @@
             "id": 97,
             "language": "cpp",
             "origin": "transFromPython",
-            "external_reference_url": "Translated file 97_py from python to cpp"
+            "external_reference_url": "Translated file 97_py from python to cpp",
+            "functional_classification": "Buggy",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "Using floating point devision instead of integer."
         },
         "Human1": {
             "readability_score": 80,
             "understandability_score": 50,
-            "maintainability_score": 50,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 50
         },
         "Human2": {
             "readability_score": 80,
             "understandability_score": 70,
-            "maintainability_score": 70,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 70
         },
         "Human3": {
             "readability_score": 80,
             "understandability_score": 80,
-            "maintainability_score": 70,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 70
         },
         "ChatGPT": {
             "readability_score": 72,
@@ -21370,34 +21008,26 @@
             "id": 97,
             "language": "java",
             "origin": "transFromPython",
-            "external_reference_url": "Translated file 97_py from python to java"
+            "external_reference_url": "Translated file 97_py from python to java",
+            "functional_classification": "Buggy",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "Using floating point devision instead of integer."
         },
         "Human1": {
             "readability_score": 80,
             "understandability_score": 50,
-            "maintainability_score": 50,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 50
         },
         "Human2": {
             "readability_score": 80,
             "understandability_score": 70,
-            "maintainability_score": 70,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 70
         },
         "Human3": {
             "readability_score": 80,
             "understandability_score": 80,
-            "maintainability_score": 70,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 70
         },
         "ChatGPT": {
             "readability_score": 78,
@@ -21450,34 +21080,26 @@
             "id": 98,
             "language": "python",
             "origin": "Exercises_2022",
-            "external_reference_url": ""
+            "external_reference_url": "",
+            "functional_classification": "Buggy",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "Using floating point devision instead of integer."
         },
         "Human1": {
             "readability_score": 80,
             "understandability_score": 80,
-            "maintainability_score": 70,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 70
         },
         "Human2": {
             "readability_score": 90,
             "understandability_score": 90,
-            "maintainability_score": 80,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 80
         },
         "Human3": {
             "readability_score": 80,
             "understandability_score": 80,
-            "maintainability_score": 80,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 80
         },
         "ChatGPT": {
             "readability_score": 82,
@@ -21530,34 +21152,26 @@
             "id": 98,
             "language": "cpp",
             "origin": "transFromPython",
-            "external_reference_url": "Translated file 98_py from python to cpp"
+            "external_reference_url": "Translated file 98_py from python to cpp",
+            "functional_classification": "Buggy",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "Using floating point devision instead of integer."
         },
         "Human1": {
             "readability_score": 80,
             "understandability_score": 80,
-            "maintainability_score": 70,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 70
         },
         "Human2": {
             "readability_score": 90,
             "understandability_score": 85,
-            "maintainability_score": 80,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 80
         },
         "Human3": {
             "readability_score": 80,
             "understandability_score": 80,
-            "maintainability_score": 80,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 80
         },
         "ChatGPT": {
             "readability_score": 82,
@@ -21610,34 +21224,26 @@
             "id": 98,
             "language": "java",
             "origin": "transFromPython",
-            "external_reference_url": "Translated file 98_py from python to java"
+            "external_reference_url": "Translated file 98_py from python to java",
+            "functional_classification": "Buggy",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "Using floating point devision instead of integer."
         },
         "Human1": {
             "readability_score": 80,
             "understandability_score": 80,
-            "maintainability_score": 70,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 70
         },
         "Human2": {
             "readability_score": 90,
             "understandability_score": 85,
-            "maintainability_score": 80,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 80
         },
         "Human3": {
             "readability_score": 80,
             "understandability_score": 80,
-            "maintainability_score": 80,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 80
         },
         "ChatGPT": {
             "readability_score": 78,
@@ -21690,34 +21296,26 @@
             "id": 99,
             "language": "python",
             "origin": "Exercises_2022",
-            "external_reference_url": ""
+            "external_reference_url": "",
+            "functional_classification": "Partially Correct",
+            "security_classification": "Vulnerable",
+            "cwe_id": "CWE-20, CWE-22, CWE-73",
+            "reasoning": "No input path validation."
         },
         "Human1": {
             "readability_score": 50,
             "understandability_score": 50,
-            "maintainability_score": 30,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 30
         },
         "Human2": {
             "readability_score": 70,
             "understandability_score": 70,
-            "maintainability_score": 70,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 70
         },
         "Human3": {
             "readability_score": 40,
             "understandability_score": 40,
-            "maintainability_score": 40,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 40
         },
         "ChatGPT": {
             "readability_score": 68,
@@ -21770,34 +21368,26 @@
             "id": 99,
             "language": "cpp",
             "origin": "transFromPython",
-            "external_reference_url": "Translated file 99_py from python to cpp"
+            "external_reference_url": "Translated file 99_py from python to cpp",
+            "functional_classification": "Partially Correct",
+            "security_classification": "Vulnerable",
+            "cwe_id": "CWE-20, CWE-22, CWE-73",
+            "reasoning": "No input path validation."
         },
         "Human1": {
             "readability_score": 50,
             "understandability_score": 50,
-            "maintainability_score": 30,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 30
         },
         "Human2": {
             "readability_score": 65,
             "understandability_score": 60,
-            "maintainability_score": 70,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 70
         },
         "Human3": {
             "readability_score": 40,
             "understandability_score": 40,
-            "maintainability_score": 40,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 40
         },
         "ChatGPT": {
             "readability_score": 84,
@@ -21850,34 +21440,26 @@
             "id": 99,
             "language": "java",
             "origin": "transFromPython",
-            "external_reference_url": "Translated file 99_py from python to java"
+            "external_reference_url": "Translated file 99_py from python to java",
+            "functional_classification": "Partially Correct",
+            "security_classification": "Vulnerable",
+            "cwe_id": "CWE-20, CWE-22, CWE-73",
+            "reasoning": "No input path validation."
         },
         "Human1": {
             "readability_score": 50,
             "understandability_score": 50,
-            "maintainability_score": 30,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 30
         },
         "Human2": {
             "readability_score": 70,
             "understandability_score": 60,
-            "maintainability_score": 70,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 70
         },
         "Human3": {
             "readability_score": 40,
             "understandability_score": 40,
-            "maintainability_score": 40,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 40
         },
         "ChatGPT": {
             "readability_score": 72,
@@ -21930,34 +21512,26 @@
             "id": 100,
             "language": "python",
             "origin": "Exercises_2022",
-            "external_reference_url": ""
+            "external_reference_url": "",
+            "functional_classification": "Buggy",
+            "security_classification": "Vulnerable",
+            "cwe_id": "CWE-20, CWE-22, CWE-73",
+            "reasoning": "No input path validation."
         },
         "Human1": {
             "readability_score": 50,
             "understandability_score": 50,
-            "maintainability_score": 30,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 30
         },
         "Human2": {
             "readability_score": 70,
             "understandability_score": 70,
-            "maintainability_score": 50,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 50
         },
         "Human3": {
             "readability_score": 40,
             "understandability_score": 40,
-            "maintainability_score": 40,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 40
         },
         "ChatGPT": {
             "readability_score": 45,
@@ -22010,34 +21584,26 @@
             "id": 100,
             "language": "cpp",
             "origin": "transFromPython",
-            "external_reference_url": "Translated file 100_py from python to cpp"
+            "external_reference_url": "Translated file 100_py from python to cpp",
+            "functional_classification": "Buggy",
+            "security_classification": "Vulnerable",
+            "cwe_id": "CWE-20, CWE-22, CWE-73, CWE-369, CWE-617",
+            "reasoning": "Multiple issues."
         },
         "Human1": {
             "readability_score": 50,
             "understandability_score": 50,
-            "maintainability_score": 30,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 30
         },
         "Human2": {
             "readability_score": 65,
             "understandability_score": 60,
-            "maintainability_score": 50,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 50
         },
         "Human3": {
             "readability_score": 40,
             "understandability_score": 40,
-            "maintainability_score": 40,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 40
         },
         "ChatGPT": {
             "readability_score": 58,
@@ -22090,34 +21656,26 @@
             "id": 100,
             "language": "java",
             "origin": "transFromPython",
-            "external_reference_url": "Translated file 100_py from python to java"
+            "external_reference_url": "Translated file 100_py from python to java",
+            "functional_classification": "Buggy",
+            "security_classification": "Vulnerable",
+            "cwe_id": "CWE-20, CWE-22, CWE-73, CWE-369, CWE-617",
+            "reasoning": "Multiple issues."
         },
         "Human1": {
             "readability_score": 50,
             "understandability_score": 50,
-            "maintainability_score": 30,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 30
         },
         "Human2": {
             "readability_score": 70,
             "understandability_score": 60,
-            "maintainability_score": 50,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 50
         },
         "Human3": {
             "readability_score": 40,
             "understandability_score": 40,
-            "maintainability_score": 40,
-            "functional_classification": "",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
+            "maintainability_score": 40
         },
         "ChatGPT": {
             "readability_score": 62,
