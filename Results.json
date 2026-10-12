@@ -1995,7 +1995,11 @@
             "external_reference_url": "Translated file 9_java from java to python",
             "readability_score": 90,
             "understandability_score": 92,
-            "maintainability_score": 85
+            "maintainability_score": 85,
+            "functional_classification": "Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "The code is functionally correct and safe."
         },
         "Human1": {
             "readability_score": 85,
@@ -15358,7 +15362,11 @@
             "external_reference_url": "Translated file 68_py from python to java",
             "readability_score": 90,
             "understandability_score": 97,
-            "maintainability_score": 87
+            "maintainability_score": 87,
+            "functional_classification": "Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "The code is functionally correct and safe."
         },
         "Human1": {
             "readability_score": 90,
