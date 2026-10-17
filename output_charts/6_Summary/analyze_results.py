@@ -200,14 +200,41 @@ def generate_all_visualizations(df, output_dir='./output_charts'):
     plt.savefig(os.path.join(output_dir, '03_sonarqube_false_negatives.png'), dpi=CHART_DPI, bbox_inches='tight')
     plt.close()
 
-    # ----------------------------------------------------
+   # ----------------------------------------------------
     # Chart 4: Language Error Sensitivity (MAE per Language)
     # ----------------------------------------------------
     plt.figure(figsize=(10, 6))
-    ax = sns.barplot(data=df, x='language', y='overall_err', hue='model', errorbar=None, palette='Set2')
+    
+    # פלטת צבעים מותאמת אישית לכל מודל
+    model_colors = {
+        'Claude': '#D97757',        # כתום Anthropic
+        'ChatGPT': '#10A37F',       # ירוק OpenAI
+        'Gemini': '#1A73E8',        # כחול Google
+        'GithubCopilot': '#24292E', # אפור כהה / שחור GitHub
+        'Sonarqube': '#4E9BCD'     # תכלת SonarQube
+    }
+
+    ax = sns.barplot(
+        data=df, 
+        x='language', 
+        y='overall_err', 
+        hue='model', 
+        errorbar=None, 
+        palette=model_colors
+    )
+    
     ax.set_title("Language Sensitivity: Overall MAE vs GT Across Programming Languages", fontsize=13, fontweight='bold', pad=15)
     ax.set_xlabel("Programming Language", fontweight='bold')
     ax.set_ylabel("Mean Absolute Error vs GT (Points)", fontweight='bold')
+    
+    # הגדלת גבול הציר האנכי כדי שהערכים מעל העמודות הגבוהות לא ייחתכו
+    max_val = df.groupby(['language', 'model'])['overall_err'].mean().max()
+    ax.set_ylim(0, max_val * 1.15)
+    
+    # הוספת ערך מספרי מעל כל עמודה
+    for c in ax.containers:
+        ax.bar_label(c, fmt='%.1f', fontsize=8, fontweight='bold', padding=3)
+
     sns.despine()
     plt.tight_layout()
     plt.savefig(os.path.join(output_dir, '04_language_error_sensitivity.png'), dpi=CHART_DPI, bbox_inches='tight')
