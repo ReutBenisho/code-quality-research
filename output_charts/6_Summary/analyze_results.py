@@ -240,18 +240,48 @@ def generate_all_visualizations(df, output_dir='./output_charts'):
     plt.savefig(os.path.join(output_dir, '04_language_error_sensitivity.png'), dpi=CHART_DPI, bbox_inches='tight')
     plt.close()
 
+
     # ----------------------------------------------------
-    # Chart 5: Spearman Correlation Matrix (Inter-AI Consistency)
+    # Chart 5: Spearman Correlation Matrix (Maintainability: Metadata GT & Tools)
     # ----------------------------------------------------
-    plt.figure(figsize=(8, 7))
-    piv_corr = ai_df.pivot(index='snippet_id', columns='model', values='overall_quality')
-    corr_matrix = piv_corr.corr(method='spearman')
-    ax = sns.heatmap(corr_matrix, annot=True, fmt='.3f', cmap='Blues', vmin=0.0, vmax=1.0,
-                square=True, linewidths=1, cbar_kws={"shrink": .8})
-    ax.set_title("Spearman Correlation Matrix: AI Overall Quality Scores", fontsize=13, fontweight='bold', pad=15)
+    plt.figure(figsize=(9, 8))
+    
+    # 1. יצירת Pivot Table של תחזוקתיות עבור כל הכלים כולל SonarQube
+    piv_all = df.pivot(index='snippet_id', columns='model', values='maintainability')
+    
+    # 2. הוספת עמודת ה-Ground Truth של תחזוקתיות מתוך ה-Metadata
+    gt_scores = df.groupby('snippet_id')['gt_maint'].first()
+    piv_all['GT'] = gt_scores
+    
+    # 3. הגדרת הסדר הרצוי: Metadata_GT ראשון בהחלט!
+    desired_order = ['GT', 'ChatGPT', 'Claude', 'Gemini', 'GithubCopilot', 'Sonarqube']
+    actual_cols = [c for c in desired_order if c in piv_all.columns]
+    piv_ordered = piv_all[actual_cols]
+    
+    # 4. חישוב קורלציית ספירמן
+    corr_matrix = piv_ordered.corr(method='spearman')
+    
+    # 5. יצירת Heatmap 
+    # אם תרצי שכחול יהיה לשלילי ואדום לחיובי: השתמשי ב-'RdBu' (ללא _r)
+    # אם תרצי להיפך (אדום לשלילי וכחול לחיובי): השתמשי ב-'RdBu_r'
+    ax = sns.heatmap(
+        corr_matrix, 
+        annot=True, 
+        fmt='.3f', 
+        cmap='RdBu',     # כחול לשלילי, אדום לחיובי (או הפוך ע"י הוספת _r)
+        center=0,       # מרכז את הצבעים בדיוק ב-0
+        vmin=-1.0,      
+        vmax=1.0,
+        square=True, 
+        linewidths=1, 
+        cbar_kws={"shrink": .8}
+    )
+    
+    ax.set_title("Spearman Correlation Matrix: Maintainability (GT vs. AI Models & SonarQube)", fontsize=13, fontweight='bold', pad=15)
     plt.tight_layout()
     plt.savefig(os.path.join(output_dir, '05_inter_ai_correlation.png'), dpi=CHART_DPI, bbox_inches='tight')
     plt.close()
+
 
     # ----------------------------------------------------
     # Chart 6: Disagreement Range Spread Across Languages
