@@ -8,7 +8,8 @@ SONAR_TOKEN = os.environ.get("SONAR_TOKEN")
 if not SONAR_TOKEN:
     raise RuntimeError("Set the SONAR_TOKEN environment variable before running this script.")
 
-AUTH = (SONAR_TOKEN, "")PROJECT_KEY = "code-quality-research"
+AUTH = (SONAR_TOKEN, "")
+PROJECT_KEY = "code-quality-research"
 TARGET_DIRECTORIES = [
     {"path": r"dataset\Python", "ext": ".py"},
     {"path": r"dataset\Java", "ext": ".java"}
