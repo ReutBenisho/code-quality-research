@@ -1,6 +1,6 @@
 # Evaluating Source Code Quality and Security with Large Language Models vs. Static Analysis
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![License: MIT (original materials only)](https://img.shields.io/badge/License-MIT%20(original%20materials%20only)-yellow.svg)](LICENSE)
 ![Software Engineering](https://img.shields.io/badge/Domain-Software%20Engineering-blue)
 ![Code Quality](https://img.shields.io/badge/Topic-Code%20Quality-brightgreen)
 ![LLM Evaluation](https://img.shields.io/badge/Topic-LLM%20Evaluation-purple)
@@ -74,8 +74,8 @@ The repository does not currently define a pinned Python dependency file. Create
 
 ```bash
 # Clone the repository and enter it
- git clone https://github.com/ReutBenisho/code-quality-research.git
- cd code-quality-research
+git clone https://github.com/ReutBenisho/code-quality-research.git
+cd code-quality-research
 
 # Create and activate a virtual environment
 python -m venv .venv
@@ -138,9 +138,9 @@ Please cite the study and this replication package when using these materials. R
 }
 ```
 
-## License
+## License and reuse
 
-This project is distributed under the **MIT License**. See [`LICENSE`](LICENSE) for the license text.
+The MIT license in [`LICENSE`](LICENSE) applies **only to original project materials owned by the copyright holder**, such as original scripts, documentation, and original analysis code or presentation artifacts. It does not license the repository as a whole. In particular, third-party code snippets and article excerpts, externally sourced datasets, and outputs governed by third-party service terms are excluded unless their respective rights holders have separately granted permission. Check source notices and provenance before reusing those materials. If an item has its own license or notice, that item-specific license or notice governs.
 
 ## Acknowledgments and provenance
 
