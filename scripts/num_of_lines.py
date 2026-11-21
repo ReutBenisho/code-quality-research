@@ -1,6 +1,6 @@
 import os
 
-folder_path = r".\\dataset"
+folder_path = r"..\\dataset"
 locs = []
 
 for root, _, files in os.walk(folder_path):
