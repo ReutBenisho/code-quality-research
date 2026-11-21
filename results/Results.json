@@ -6220,7 +6220,7 @@
             "readability_score": 93,
             "understandability_score": 93,
             "maintainability_score": 85,
-            "functional_classification": "",
+            "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
             "reasoning": "The code isn't initalizing the variables to the correct values."
@@ -18138,8 +18138,8 @@
             "readability_score": 85,
             "understandability_score": 95,
             "maintainability_score": 72,
-            "functional_classification": "Partially Correct",
-            "security_classification": "Buggy",
+            "functional_classification": "Buggy",
+            "security_classification": "Safe",
             "cwe_id": "None",
             "reasoning": "Function upper is written incorrectly."
         },
