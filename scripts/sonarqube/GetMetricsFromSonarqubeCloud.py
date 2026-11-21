@@ -4,13 +4,16 @@ import requests
 from urllib.parse import quote
 
 SONAR_URL = "https://sonarcloud.io"
-SONARCLOUD_TOKEN = "69bdd4896cbf768edf05e78f3917bb581ad71a52"
+SONAR_TOKEN = os.environ.get("SONAR_TOKEN")
+if not SONAR_TOKEN:
+    raise RuntimeError("Set the SONAR_TOKEN environment variable before running this script.")
+
 ORGANIZATION = "ReutBenisho"
 PROJECT_KEY = "ReutBenisho_code-quality-research"
 TARGET_DIRECTORIES = [
     {"path": r"dataset"}
 ]
-AUTH = (SONARCLOUD_TOKEN, "")
+AUTH = (SONAR_TOKEN, "")
 
 RESULTS_FILE = "Results.json"
 
