@@ -1,0 +1,6 @@
+Model,N_Snippets,Sec_TP,Sec_FP,Sec_TN,Sec_FN,Sec_Acc_pct,Sec_Prec_pct,Sec_Rec_pct,Sec_F1_pct,FuncBug_TP,FuncBug_FP,FuncBug_TN,FuncBug_FN,FuncBug_Acc_pct,FuncBug_Prec_pct,FuncBug_Rec_pct,FuncBug_F1_pct,MacroRec_Sec_FuncBug_pct,PooledRec_Sec_FuncBug_pct,FuncAny_TP,FuncAny_FP,FuncAny_TN,FuncAny_FN,FuncAny_Acc_pct,FuncAny_Prec_pct,FuncAny_Rec_pct,FuncAny_F1_pct
+ChatGPT,300,54,14,199,33,84.33,79.41,62.07,69.68,60,23,177,40,79.0,72.29,60.0,65.57,61.03,60.96,150,24,88,38,79.33,86.21,79.79,82.87
+Claude,300,64,20,193,23,85.67,76.19,73.56,74.85,73,38,162,27,78.33,65.77,73.0,69.19,73.28,73.26,143,29,83,45,75.33,83.14,76.06,79.44
+Gemini,300,64,27,186,23,83.33,70.33,73.56,71.91,86,60,140,14,75.33,58.9,86.0,69.92,79.78,80.21,168,34,78,20,82.0,83.17,89.36,86.15
+GithubCopilot,300,64,55,158,23,74.0,53.78,73.56,62.14,74,44,156,26,76.67,62.71,74.0,67.89,73.78,73.8,162,35,77,26,79.67,82.23,86.17,84.16
+Sonarqube,300,4,1,212,83,72.0,80.0,4.6,8.7,13,13,187,87,66.67,50.0,13.0,20.63,8.8,9.09,22,4,108,166,43.33,84.62,11.7,20.56

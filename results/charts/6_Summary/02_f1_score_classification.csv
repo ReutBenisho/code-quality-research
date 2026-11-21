@@ -1,0 +1,6 @@
+model,Functional (Bugs),Security (Vulnerabilities)
+ChatGPT,82.87,69.68
+Claude,79.44,74.85
+Gemini,86.15,71.91
+GithubCopilot,84.16,62.14
+Sonarqube,20.56,8.7

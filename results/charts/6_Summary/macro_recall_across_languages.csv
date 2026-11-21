@@ -1,0 +1,6 @@
+Model,MacroLang_Sec_Rec_pct,MacroLang_FuncBug_Rec_pct,MacroLang_FuncAny_Rec_pct
+ChatGPT,62.4,60.21,79.67
+Claude,73.85,73.28,76.18
+Gemini,73.4,85.67,89.09
+GithubCopilot,74.07,74.44,86.34
+Sonarqube,4.94,13.2,11.76

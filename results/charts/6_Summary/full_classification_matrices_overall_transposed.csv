@@ -1,0 +1,28 @@
+Metric,ChatGPT,Claude,Gemini,GithubCopilot,Sonarqube
+Number of Snippets,300.0,300.0,300.0,300.0,300.0
+Security - True Positives,54.0,64.0,64.0,64.0,4.0
+Security - False Positives,14.0,20.0,27.0,55.0,1.0
+Security - True Negatives,199.0,193.0,186.0,158.0,212.0
+Security - False Negatives,33.0,23.0,23.0,23.0,83.0
+Security - Accuracy (%),84.33,85.67,83.33,74.0,72.0
+Security - Precision (%),79.41,76.19,70.33,53.78,80.0
+Security - Recall (%),62.07,73.56,73.56,73.56,4.6
+Security - F1 Score (%),69.68,74.85,71.91,62.14,8.7
+Functional (Buggy Only) - True Positives,60.0,73.0,86.0,74.0,13.0
+Functional (Buggy Only) - False Positives,23.0,38.0,60.0,44.0,13.0
+Functional (Buggy Only) - True Negatives,177.0,162.0,140.0,156.0,187.0
+Functional (Buggy Only) - False Negatives,40.0,27.0,14.0,26.0,87.0
+Functional (Buggy Only) - Accuracy (%),79.0,78.33,75.33,76.67,66.67
+Functional (Buggy Only) - Precision (%),72.29,65.77,58.9,62.71,50.0
+Functional (Buggy Only) - Recall (%),60.0,73.0,86.0,74.0,13.0
+Functional (Buggy Only) - F1 Score (%),65.57,69.19,69.92,67.89,20.63
+Macro Average Recall (Security & Buggy Only) (%),61.03,73.28,79.78,73.78,8.8
+Pooled Recall (Security & Buggy Only) (%),60.96,73.26,80.21,73.8,9.09
+Functional (Buggy + Partially Correct) - True Positives,150.0,143.0,168.0,162.0,22.0
+Functional (Buggy + Partially Correct) - False Positives,24.0,29.0,34.0,35.0,4.0
+Functional (Buggy + Partially Correct) - True Negatives,88.0,83.0,78.0,77.0,108.0
+Functional (Buggy + Partially Correct) - False Negatives,38.0,45.0,20.0,26.0,166.0
+Functional (Buggy + Partially Correct) - Accuracy (%),79.33,75.33,82.0,79.67,43.33
+Functional (Buggy + Partially Correct) - Precision (%),86.21,83.14,83.17,82.23,84.62
+Functional (Buggy + Partially Correct) - Recall (%),79.79,76.06,89.36,86.17,11.7
+Functional (Buggy + Partially Correct) - F1 Score (%),82.87,79.44,86.15,84.16,20.56

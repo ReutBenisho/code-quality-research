@@ -1,0 +1,6 @@
+model,False_Negative_Rate
+Sonarqube,95.4
+ChatGPT,37.93
+Claude,26.44
+Gemini,26.44
+GithubCopilot,26.44

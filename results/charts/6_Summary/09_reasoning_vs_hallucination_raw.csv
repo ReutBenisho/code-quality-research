@@ -1,0 +1,1201 @@
+snippet_id,model,Evaluation_Result,reasoning_len,reasoning_words
+1_java,ChatGPT,Correct Evaluation,284,39
+1_java,Claude,Error / Hallucination,302,39
+1_java,Gemini,Correct Evaluation,378,52
+1_java,GithubCopilot,Error / Hallucination,314,44
+1_cpp,ChatGPT,Correct Evaluation,270,37
+1_cpp,Claude,Correct Evaluation,340,47
+1_cpp,Gemini,Correct Evaluation,309,43
+1_cpp,GithubCopilot,Correct Evaluation,325,47
+1_py,ChatGPT,Error / Hallucination,308,44
+1_py,Claude,Error / Hallucination,321,42
+1_py,Gemini,Error / Hallucination,299,37
+1_py,GithubCopilot,Error / Hallucination,310,44
+2_java,ChatGPT,Correct Evaluation,290,39
+2_java,Claude,Error / Hallucination,346,43
+2_java,Gemini,Correct Evaluation,376,53
+2_java,GithubCopilot,Correct Evaluation,282,40
+2_cpp,ChatGPT,Correct Evaluation,363,50
+2_cpp,Claude,Error / Hallucination,301,42
+2_cpp,Gemini,Correct Evaluation,259,35
+2_cpp,GithubCopilot,Correct Evaluation,325,52
+2_py,ChatGPT,Error / Hallucination,307,43
+2_py,Claude,Error / Hallucination,332,44
+2_py,Gemini,Correct Evaluation,214,28
+2_py,GithubCopilot,Error / Hallucination,382,48
+3_java,ChatGPT,Correct Evaluation,240,36
+3_java,Claude,Correct Evaluation,248,33
+3_java,Gemini,Correct Evaluation,345,56
+3_java,GithubCopilot,Error / Hallucination,301,44
+3_cpp,ChatGPT,Error / Hallucination,312,46
+3_cpp,Claude,Error / Hallucination,316,40
+3_cpp,Gemini,Error / Hallucination,304,45
+3_cpp,GithubCopilot,Error / Hallucination,409,61
+3_py,ChatGPT,Correct Evaluation,295,48
+3_py,Claude,Correct Evaluation,294,39
+3_py,Gemini,Correct Evaluation,303,48
+3_py,GithubCopilot,Error / Hallucination,368,46
+4_java,ChatGPT,Correct Evaluation,303,42
+4_java,Claude,Correct Evaluation,337,47
+4_java,Gemini,Error / Hallucination,370,53
+4_java,GithubCopilot,Correct Evaluation,328,55
+4_cpp,ChatGPT,Error / Hallucination,295,43
+4_cpp,Claude,Error / Hallucination,273,39
+4_cpp,Gemini,Correct Evaluation,332,47
+4_cpp,GithubCopilot,Correct Evaluation,350,42
+4_py,ChatGPT,Error / Hallucination,309,49
+4_py,Claude,Error / Hallucination,256,38
+4_py,Gemini,Correct Evaluation,261,38
+4_py,GithubCopilot,Correct Evaluation,276,43
+5_java,ChatGPT,Correct Evaluation,253,38
+5_java,Claude,Error / Hallucination,296,48
+5_java,Gemini,Error / Hallucination,353,57
+5_java,GithubCopilot,Correct Evaluation,250,40
+5_cpp,ChatGPT,Correct Evaluation,285,48
+5_cpp,Claude,Correct Evaluation,264,39
+5_cpp,Gemini,Correct Evaluation,176,27
+5_cpp,GithubCopilot,Correct Evaluation,273,45
+5_py,ChatGPT,Correct Evaluation,266,47
+5_py,Claude,Correct Evaluation,247,35
+5_py,Gemini,Correct Evaluation,170,27
+5_py,GithubCopilot,Correct Evaluation,286,44
+6_java,ChatGPT,Error / Hallucination,272,36
+6_java,Claude,Correct Evaluation,282,45
+6_java,Gemini,Correct Evaluation,345,49
+6_java,GithubCopilot,Correct Evaluation,294,46
+6_cpp,ChatGPT,Correct Evaluation,247,36
+6_cpp,Claude,Correct Evaluation,282,36
+6_cpp,Gemini,Correct Evaluation,221,34
+6_cpp,GithubCopilot,Correct Evaluation,311,45
+6_py,ChatGPT,Error / Hallucination,241,41
+6_py,Claude,Correct Evaluation,312,48
+6_py,Gemini,Error / Hallucination,237,38
+6_py,GithubCopilot,Error / Hallucination,330,43
+7_java,ChatGPT,Correct Evaluation,293,41
+7_java,Claude,Correct Evaluation,339,42
+7_java,Gemini,Correct Evaluation,404,53
+7_java,GithubCopilot,Error / Hallucination,277,36
+7_cpp,ChatGPT,Error / Hallucination,321,51
+7_cpp,Claude,Error / Hallucination,298,39
+7_cpp,Gemini,Correct Evaluation,335,47
+7_cpp,GithubCopilot,Correct Evaluation,287,48
+7_py,ChatGPT,Error / Hallucination,334,48
+7_py,Claude,Error / Hallucination,296,37
+7_py,Gemini,Correct Evaluation,345,46
+7_py,GithubCopilot,Error / Hallucination,328,41
+8_java,ChatGPT,Correct Evaluation,302,40
+8_java,Claude,Error / Hallucination,316,42
+8_java,Gemini,Error / Hallucination,373,51
+8_java,GithubCopilot,Correct Evaluation,193,28
+8_cpp,ChatGPT,Error / Hallucination,304,50
+8_cpp,Claude,Error / Hallucination,283,40
+8_cpp,Gemini,Error / Hallucination,303,45
+8_cpp,GithubCopilot,Error / Hallucination,392,60
+8_py,ChatGPT,Correct Evaluation,309,45
+8_py,Claude,Error / Hallucination,267,37
+8_py,Gemini,Correct Evaluation,232,34
+8_py,GithubCopilot,Error / Hallucination,272,39
+9_java,ChatGPT,Correct Evaluation,289,40
+9_java,Claude,Correct Evaluation,326,50
+9_java,Gemini,Correct Evaluation,363,55
+9_java,GithubCopilot,Correct Evaluation,340,55
+9_cpp,ChatGPT,Error / Hallucination,280,41
+9_cpp,Claude,Correct Evaluation,299,40
+9_cpp,Gemini,Correct Evaluation,306,45
+9_cpp,GithubCopilot,Correct Evaluation,295,51
+9_py,ChatGPT,Correct Evaluation,281,43
+9_py,Claude,Correct Evaluation,290,40
+9_py,Gemini,Correct Evaluation,283,40
+9_py,GithubCopilot,Correct Evaluation,266,42
+10_java,ChatGPT,Correct Evaluation,289,45
+10_java,Claude,Correct Evaluation,323,44
+10_java,Gemini,Correct Evaluation,367,54
+10_java,GithubCopilot,Error / Hallucination,298,47
+10_cpp,ChatGPT,Correct Evaluation,285,45
+10_cpp,Claude,Correct Evaluation,285,39
+10_cpp,Gemini,Correct Evaluation,335,44
+10_cpp,GithubCopilot,Correct Evaluation,291,48
+10_py,ChatGPT,Error / Hallucination,291,44
+10_py,Claude,Correct Evaluation,299,42
+10_py,Gemini,Error / Hallucination,287,39
+10_py,GithubCopilot,Correct Evaluation,267,36
+11_java,ChatGPT,Correct Evaluation,249,37
+11_java,Claude,Correct Evaluation,272,39
+11_java,Gemini,Correct Evaluation,365,57
+11_java,GithubCopilot,Correct Evaluation,234,38
+11_cpp,ChatGPT,Correct Evaluation,273,39
+11_cpp,Claude,Correct Evaluation,209,35
+11_cpp,Gemini,Correct Evaluation,233,35
+11_cpp,GithubCopilot,Correct Evaluation,256,35
+11_py,ChatGPT,Correct Evaluation,268,39
+11_py,Claude,Correct Evaluation,263,39
+11_py,Gemini,Correct Evaluation,328,52
+11_py,GithubCopilot,Correct Evaluation,298,50
+12_java,ChatGPT,Correct Evaluation,259,37
+12_java,Claude,Correct Evaluation,258,39
+12_java,Gemini,Correct Evaluation,380,57
+12_java,GithubCopilot,Correct Evaluation,254,41
+12_cpp,ChatGPT,Correct Evaluation,243,31
+12_cpp,Claude,Correct Evaluation,217,29
+12_cpp,Gemini,Correct Evaluation,207,28
+12_cpp,GithubCopilot,Correct Evaluation,265,41
+12_py,ChatGPT,Correct Evaluation,237,33
+12_py,Claude,Correct Evaluation,202,30
+12_py,Gemini,Error / Hallucination,206,28
+12_py,GithubCopilot,Correct Evaluation,292,39
+13_java,ChatGPT,Correct Evaluation,286,45
+13_java,Claude,Correct Evaluation,237,34
+13_java,Gemini,Correct Evaluation,337,53
+13_java,GithubCopilot,Correct Evaluation,349,53
+13_cpp,ChatGPT,Correct Evaluation,289,41
+13_cpp,Claude,Error / Hallucination,325,47
+13_cpp,Gemini,Correct Evaluation,269,37
+13_cpp,GithubCopilot,Error / Hallucination,286,47
+13_py,ChatGPT,Correct Evaluation,314,44
+13_py,Claude,Correct Evaluation,298,46
+13_py,Gemini,Correct Evaluation,272,38
+13_py,GithubCopilot,Correct Evaluation,384,50
+14_java,ChatGPT,Error / Hallucination,248,38
+14_java,Claude,Error / Hallucination,256,34
+14_java,Gemini,Error / Hallucination,372,53
+14_java,GithubCopilot,Error / Hallucination,305,52
+14_cpp,ChatGPT,Error / Hallucination,294,42
+14_cpp,Claude,Error / Hallucination,299,40
+14_cpp,Gemini,Error / Hallucination,175,27
+14_cpp,GithubCopilot,Error / Hallucination,333,43
+14_py,ChatGPT,Error / Hallucination,253,36
+14_py,Claude,Error / Hallucination,275,40
+14_py,Gemini,Correct Evaluation,260,40
+14_py,GithubCopilot,Error / Hallucination,287,39
+15_java,ChatGPT,Correct Evaluation,287,45
+15_java,Claude,Correct Evaluation,188,31
+15_java,Gemini,Correct Evaluation,314,49
+15_java,GithubCopilot,Correct Evaluation,423,64
+15_cpp,ChatGPT,Correct Evaluation,328,45
+15_cpp,Claude,Correct Evaluation,261,35
+15_cpp,Gemini,Correct Evaluation,175,21
+15_cpp,GithubCopilot,Correct Evaluation,258,39
+15_py,ChatGPT,Correct Evaluation,321,49
+15_py,Claude,Correct Evaluation,231,34
+15_py,Gemini,Correct Evaluation,215,26
+15_py,GithubCopilot,Correct Evaluation,326,43
+16_java,ChatGPT,Correct Evaluation,276,39
+16_java,Claude,Correct Evaluation,136,19
+16_java,Gemini,Correct Evaluation,341,46
+16_java,GithubCopilot,Correct Evaluation,311,46
+16_cpp,ChatGPT,Correct Evaluation,283,40
+16_cpp,Claude,Correct Evaluation,289,37
+16_cpp,Gemini,Correct Evaluation,225,34
+16_cpp,GithubCopilot,Correct Evaluation,329,39
+16_py,ChatGPT,Correct Evaluation,283,38
+16_py,Claude,Correct Evaluation,263,42
+16_py,Gemini,Correct Evaluation,180,27
+16_py,GithubCopilot,Correct Evaluation,299,40
+17_java,ChatGPT,Correct Evaluation,269,39
+17_java,Claude,Correct Evaluation,191,28
+17_java,Gemini,Correct Evaluation,378,55
+17_java,GithubCopilot,Correct Evaluation,239,37
+17_cpp,ChatGPT,Correct Evaluation,267,45
+17_cpp,Claude,Correct Evaluation,261,39
+17_cpp,Gemini,Correct Evaluation,299,46
+17_cpp,GithubCopilot,Error / Hallucination,304,47
+17_py,ChatGPT,Correct Evaluation,292,44
+17_py,Claude,Correct Evaluation,250,39
+17_py,Gemini,Correct Evaluation,205,28
+17_py,GithubCopilot,Correct Evaluation,282,41
+18_java,ChatGPT,Error / Hallucination,265,33
+18_java,Claude,Error / Hallucination,235,36
+18_java,Gemini,Correct Evaluation,356,60
+18_java,GithubCopilot,Error / Hallucination,289,43
+18_cpp,ChatGPT,Correct Evaluation,260,38
+18_cpp,Claude,Error / Hallucination,227,36
+18_cpp,Gemini,Correct Evaluation,167,24
+18_cpp,GithubCopilot,Error / Hallucination,376,50
+18_py,ChatGPT,Correct Evaluation,311,52
+18_py,Claude,Correct Evaluation,308,47
+18_py,Gemini,Error / Hallucination,339,49
+18_py,GithubCopilot,Correct Evaluation,268,38
+19_java,ChatGPT,Error / Hallucination,265,37
+19_java,Claude,Error / Hallucination,241,32
+19_java,Gemini,Error / Hallucination,380,51
+19_java,GithubCopilot,Error / Hallucination,277,44
+19_cpp,ChatGPT,Error / Hallucination,334,45
+19_cpp,Claude,Correct Evaluation,268,38
+19_cpp,Gemini,Correct Evaluation,338,50
+19_cpp,GithubCopilot,Error / Hallucination,351,47
+19_py,ChatGPT,Error / Hallucination,270,33
+19_py,Claude,Error / Hallucination,259,32
+19_py,Gemini,Error / Hallucination,221,30
+19_py,GithubCopilot,Correct Evaluation,312,37
+20_java,ChatGPT,Error / Hallucination,238,41
+20_java,Claude,Error / Hallucination,250,41
+20_java,Gemini,Error / Hallucination,374,58
+20_java,GithubCopilot,Error / Hallucination,271,42
+20_cpp,ChatGPT,Error / Hallucination,315,47
+20_cpp,Claude,Error / Hallucination,295,43
+20_cpp,Gemini,Error / Hallucination,191,32
+20_cpp,GithubCopilot,Correct Evaluation,273,42
+20_py,ChatGPT,Error / Hallucination,279,42
+20_py,Claude,Error / Hallucination,297,45
+20_py,Gemini,Error / Hallucination,315,43
+20_py,GithubCopilot,Error / Hallucination,310,43
+21_java,ChatGPT,Error / Hallucination,265,39
+21_java,Claude,Error / Hallucination,242,37
+21_java,Gemini,Error / Hallucination,370,55
+21_java,GithubCopilot,Error / Hallucination,340,52
+21_cpp,ChatGPT,Correct Evaluation,330,47
+21_cpp,Claude,Correct Evaluation,323,43
+21_cpp,Gemini,Correct Evaluation,243,38
+21_cpp,GithubCopilot,Correct Evaluation,289,45
+21_py,ChatGPT,Error / Hallucination,332,51
+21_py,Claude,Error / Hallucination,262,36
+21_py,Gemini,Error / Hallucination,354,47
+21_py,GithubCopilot,Error / Hallucination,289,40
+22_java,ChatGPT,Correct Evaluation,298,43
+22_java,Claude,Correct Evaluation,308,44
+22_java,Gemini,Correct Evaluation,184,19
+22_java,GithubCopilot,Correct Evaluation,289,42
+22_cpp,ChatGPT,Correct Evaluation,273,38
+22_cpp,Claude,Correct Evaluation,295,41
+22_cpp,Gemini,Correct Evaluation,244,35
+22_cpp,GithubCopilot,Correct Evaluation,359,58
+22_py,ChatGPT,Correct Evaluation,272,40
+22_py,Claude,Correct Evaluation,230,33
+22_py,Gemini,Correct Evaluation,269,40
+22_py,GithubCopilot,Error / Hallucination,328,44
+23_java,ChatGPT,Error / Hallucination,282,40
+23_java,Claude,Error / Hallucination,296,35
+23_java,Gemini,Correct Evaluation,249,32
+23_java,GithubCopilot,Error / Hallucination,256,41
+23_cpp,ChatGPT,Error / Hallucination,315,40
+23_cpp,Claude,Error / Hallucination,276,32
+23_cpp,Gemini,Correct Evaluation,184,25
+23_cpp,GithubCopilot,Correct Evaluation,337,42
+23_py,ChatGPT,Error / Hallucination,305,44
+23_py,Claude,Error / Hallucination,326,42
+23_py,Gemini,Error / Hallucination,266,28
+23_py,GithubCopilot,Error / Hallucination,357,45
+24_java,ChatGPT,Correct Evaluation,331,43
+24_java,Claude,Correct Evaluation,266,36
+24_java,Gemini,Correct Evaluation,352,50
+24_java,GithubCopilot,Correct Evaluation,376,48
+24_cpp,ChatGPT,Correct Evaluation,338,48
+24_cpp,Claude,Correct Evaluation,296,39
+24_cpp,Gemini,Correct Evaluation,329,42
+24_cpp,GithubCopilot,Correct Evaluation,375,50
+24_py,ChatGPT,Correct Evaluation,291,42
+24_py,Claude,Correct Evaluation,252,38
+24_py,Gemini,Correct Evaluation,331,44
+24_py,GithubCopilot,Correct Evaluation,401,53
+25_java,ChatGPT,Correct Evaluation,299,38
+25_java,Claude,Correct Evaluation,231,30
+25_java,Gemini,Correct Evaluation,329,46
+25_java,GithubCopilot,Correct Evaluation,314,40
+25_cpp,ChatGPT,Correct Evaluation,310,47
+25_cpp,Claude,Correct Evaluation,247,35
+25_cpp,Gemini,Correct Evaluation,294,44
+25_cpp,GithubCopilot,Correct Evaluation,358,48
+25_py,ChatGPT,Correct Evaluation,284,43
+25_py,Claude,Correct Evaluation,245,35
+25_py,Gemini,Correct Evaluation,330,53
+25_py,GithubCopilot,Correct Evaluation,461,62
+26_java,ChatGPT,Error / Hallucination,293,43
+26_java,Claude,Correct Evaluation,353,45
+26_java,Gemini,Error / Hallucination,161,22
+26_java,GithubCopilot,Correct Evaluation,291,43
+26_cpp,ChatGPT,Error / Hallucination,312,46
+26_cpp,Claude,Error / Hallucination,250,35
+26_cpp,Gemini,Error / Hallucination,156,19
+26_cpp,GithubCopilot,Error / Hallucination,279,43
+26_py,ChatGPT,Correct Evaluation,325,48
+26_py,Claude,Error / Hallucination,225,31
+26_py,Gemini,Error / Hallucination,378,58
+26_py,GithubCopilot,Error / Hallucination,291,37
+27_java,ChatGPT,Correct Evaluation,305,46
+27_java,Claude,Correct Evaluation,328,42
+27_java,Gemini,Correct Evaluation,305,39
+27_java,GithubCopilot,Correct Evaluation,265,40
+27_cpp,ChatGPT,Correct Evaluation,331,49
+27_cpp,Claude,Correct Evaluation,296,37
+27_cpp,Gemini,Correct Evaluation,359,51
+27_cpp,GithubCopilot,Correct Evaluation,256,37
+27_py,ChatGPT,Correct Evaluation,321,40
+27_py,Claude,Correct Evaluation,241,32
+27_py,Gemini,Correct Evaluation,233,31
+27_py,GithubCopilot,Correct Evaluation,360,49
+28_cpp,ChatGPT,Error / Hallucination,288,38
+28_cpp,Claude,Error / Hallucination,223,34
+28_cpp,Gemini,Correct Evaluation,331,51
+28_cpp,GithubCopilot,Error / Hallucination,368,57
+28_java,ChatGPT,Error / Hallucination,269,38
+28_java,Claude,Error / Hallucination,277,37
+28_java,Gemini,Error / Hallucination,239,29
+28_java,GithubCopilot,Error / Hallucination,380,56
+28_py,ChatGPT,Error / Hallucination,307,44
+28_py,Claude,Correct Evaluation,271,41
+28_py,Gemini,Correct Evaluation,141,23
+28_py,GithubCopilot,Correct Evaluation,303,35
+29_py,ChatGPT,Error / Hallucination,241,33
+29_py,Claude,Error / Hallucination,228,30
+29_py,Gemini,Error / Hallucination,369,49
+29_py,GithubCopilot,Error / Hallucination,324,43
+29_cpp,ChatGPT,Error / Hallucination,332,48
+29_cpp,Claude,Error / Hallucination,250,37
+29_cpp,Gemini,Error / Hallucination,229,32
+29_cpp,GithubCopilot,Error / Hallucination,335,44
+29_java,ChatGPT,Error / Hallucination,307,45
+29_java,Claude,Error / Hallucination,246,29
+29_java,Gemini,Correct Evaluation,179,22
+29_java,GithubCopilot,Correct Evaluation,356,47
+30_java,ChatGPT,Error / Hallucination,284,36
+30_java,Claude,Correct Evaluation,287,44
+30_java,Gemini,Correct Evaluation,395,54
+30_java,GithubCopilot,Correct Evaluation,283,42
+30_cpp,ChatGPT,Error / Hallucination,282,36
+30_cpp,Claude,Correct Evaluation,323,41
+30_cpp,Gemini,Correct Evaluation,344,44
+30_cpp,GithubCopilot,Error / Hallucination,287,39
+30_py,ChatGPT,Correct Evaluation,317,48
+30_py,Claude,Correct Evaluation,311,46
+30_py,Gemini,Error / Hallucination,195,27
+30_py,GithubCopilot,Error / Hallucination,314,41
+31_cpp,ChatGPT,Correct Evaluation,271,39
+31_cpp,Claude,Correct Evaluation,258,36
+31_cpp,Gemini,Correct Evaluation,209,31
+31_cpp,GithubCopilot,Correct Evaluation,251,28
+31_java,ChatGPT,Correct Evaluation,345,50
+31_java,Claude,Correct Evaluation,232,31
+31_java,Gemini,Correct Evaluation,231,30
+31_java,GithubCopilot,Correct Evaluation,272,39
+31_py,ChatGPT,Correct Evaluation,267,39
+31_py,Claude,Error / Hallucination,246,33
+31_py,Gemini,Correct Evaluation,382,52
+31_py,GithubCopilot,Correct Evaluation,333,41
+32_cpp,ChatGPT,Correct Evaluation,253,36
+32_cpp,Claude,Correct Evaluation,336,48
+32_cpp,Gemini,Correct Evaluation,306,43
+32_cpp,GithubCopilot,Correct Evaluation,293,35
+32_java,ChatGPT,Correct Evaluation,316,47
+32_java,Claude,Correct Evaluation,323,42
+32_java,Gemini,Correct Evaluation,214,29
+32_java,GithubCopilot,Correct Evaluation,256,41
+32_py,ChatGPT,Correct Evaluation,306,46
+32_py,Claude,Correct Evaluation,307,38
+32_py,Gemini,Correct Evaluation,231,30
+32_py,GithubCopilot,Correct Evaluation,336,45
+33_cpp,ChatGPT,Correct Evaluation,251,40
+33_cpp,Claude,Correct Evaluation,253,37
+33_cpp,Gemini,Correct Evaluation,202,31
+33_cpp,GithubCopilot,Correct Evaluation,318,51
+33_java,ChatGPT,Correct Evaluation,294,42
+33_java,Claude,Error / Hallucination,386,52
+33_java,Gemini,Error / Hallucination,348,50
+33_java,GithubCopilot,Error / Hallucination,264,42
+33_py,ChatGPT,Correct Evaluation,289,42
+33_py,Claude,Correct Evaluation,240,37
+33_py,Gemini,Correct Evaluation,263,41
+33_py,GithubCopilot,Correct Evaluation,357,47
+34_cpp,ChatGPT,Correct Evaluation,267,38
+34_cpp,Claude,Correct Evaluation,248,34
+34_cpp,Gemini,Correct Evaluation,201,30
+34_cpp,GithubCopilot,Correct Evaluation,329,47
+34_java,ChatGPT,Error / Hallucination,324,45
+34_java,Claude,Correct Evaluation,258,32
+34_java,Gemini,Correct Evaluation,212,28
+34_java,GithubCopilot,Correct Evaluation,326,44
+34_py,ChatGPT,Correct Evaluation,268,35
+34_py,Claude,Correct Evaluation,292,42
+34_py,Gemini,Error / Hallucination,179,28
+34_py,GithubCopilot,Error / Hallucination,325,43
+35_cpp,ChatGPT,Correct Evaluation,298,46
+35_cpp,Claude,Correct Evaluation,277,36
+35_cpp,Gemini,Correct Evaluation,328,47
+35_cpp,GithubCopilot,Correct Evaluation,327,47
+35_java,ChatGPT,Correct Evaluation,336,46
+35_java,Claude,Correct Evaluation,238,30
+35_java,Gemini,Correct Evaluation,239,26
+35_java,GithubCopilot,Correct Evaluation,377,54
+35_py,ChatGPT,Correct Evaluation,303,48
+35_py,Claude,Correct Evaluation,244,33
+35_py,Gemini,Correct Evaluation,234,29
+35_py,GithubCopilot,Correct Evaluation,375,49
+36_cpp,ChatGPT,Correct Evaluation,312,42
+36_cpp,Claude,Correct Evaluation,255,36
+36_cpp,Gemini,Correct Evaluation,363,54
+36_cpp,GithubCopilot,Correct Evaluation,350,44
+36_java,ChatGPT,Correct Evaluation,374,49
+36_java,Claude,Correct Evaluation,235,29
+36_java,Gemini,Correct Evaluation,245,26
+36_java,GithubCopilot,Correct Evaluation,313,37
+36_py,ChatGPT,Correct Evaluation,345,42
+36_py,Claude,Correct Evaluation,250,36
+36_py,Gemini,Correct Evaluation,260,35
+36_py,GithubCopilot,Correct Evaluation,370,48
+37_cpp,ChatGPT,Correct Evaluation,265,39
+37_cpp,Claude,Correct Evaluation,285,36
+37_cpp,Gemini,Error / Hallucination,376,50
+37_cpp,GithubCopilot,Correct Evaluation,313,40
+37_java,ChatGPT,Correct Evaluation,306,46
+37_java,Claude,Correct Evaluation,218,26
+37_java,Gemini,Correct Evaluation,308,37
+37_java,GithubCopilot,Correct Evaluation,336,42
+37_py,ChatGPT,Correct Evaluation,318,44
+37_py,Claude,Error / Hallucination,235,31
+37_py,Gemini,Error / Hallucination,235,31
+37_py,GithubCopilot,Correct Evaluation,384,51
+38_cpp,ChatGPT,Error / Hallucination,260,37
+38_cpp,Claude,Error / Hallucination,265,37
+38_cpp,Gemini,Error / Hallucination,378,48
+38_cpp,GithubCopilot,Correct Evaluation,370,47
+38_java,ChatGPT,Error / Hallucination,331,44
+38_java,Claude,Error / Hallucination,246,28
+38_java,Gemini,Error / Hallucination,246,28
+38_java,GithubCopilot,Error / Hallucination,277,34
+38_py,ChatGPT,Correct Evaluation,293,36
+38_py,Claude,Error / Hallucination,283,36
+38_py,Gemini,Error / Hallucination,249,31
+38_py,GithubCopilot,Error / Hallucination,371,46
+39_cpp,ChatGPT,Correct Evaluation,245,37
+39_cpp,Claude,Correct Evaluation,241,37
+39_cpp,Gemini,Correct Evaluation,367,55
+39_cpp,GithubCopilot,Correct Evaluation,290,38
+39_java,ChatGPT,Correct Evaluation,286,42
+39_java,Claude,Correct Evaluation,248,31
+39_java,Gemini,Error / Hallucination,329,44
+39_java,GithubCopilot,Correct Evaluation,320,42
+39_py,ChatGPT,Correct Evaluation,274,43
+39_py,Claude,Correct Evaluation,233,33
+39_py,Gemini,Error / Hallucination,253,39
+39_py,GithubCopilot,Correct Evaluation,317,45
+40_cpp,ChatGPT,Correct Evaluation,270,39
+40_cpp,Claude,Error / Hallucination,221,35
+40_cpp,Gemini,Error / Hallucination,371,57
+40_cpp,GithubCopilot,Error / Hallucination,366,49
+40_java,ChatGPT,Error / Hallucination,297,43
+40_java,Claude,Error / Hallucination,285,40
+40_java,Gemini,Error / Hallucination,358,51
+40_java,GithubCopilot,Error / Hallucination,325,45
+40_py,ChatGPT,Error / Hallucination,291,46
+40_py,Claude,Error / Hallucination,334,46
+40_py,Gemini,Error / Hallucination,294,44
+40_py,GithubCopilot,Error / Hallucination,308,46
+41_cpp,ChatGPT,Correct Evaluation,208,30
+41_cpp,Claude,Correct Evaluation,208,31
+41_cpp,Gemini,Correct Evaluation,281,42
+41_cpp,GithubCopilot,Correct Evaluation,346,40
+41_java,ChatGPT,Error / Hallucination,279,39
+41_java,Claude,Correct Evaluation,276,38
+41_java,Gemini,Correct Evaluation,223,34
+41_java,GithubCopilot,Error / Hallucination,392,65
+41_py,ChatGPT,Error / Hallucination,312,47
+41_py,Claude,Correct Evaluation,266,36
+41_py,Gemini,Correct Evaluation,300,48
+41_py,GithubCopilot,Error / Hallucination,289,40
+42_cpp,ChatGPT,Correct Evaluation,226,34
+42_cpp,Claude,Correct Evaluation,228,34
+42_cpp,Gemini,Correct Evaluation,295,40
+42_cpp,GithubCopilot,Error / Hallucination,321,47
+42_java,ChatGPT,Correct Evaluation,285,37
+42_java,Claude,Correct Evaluation,255,37
+42_java,Gemini,Correct Evaluation,257,36
+42_java,GithubCopilot,Correct Evaluation,330,50
+42_py,ChatGPT,Correct Evaluation,313,45
+42_py,Claude,Correct Evaluation,261,41
+42_py,Gemini,Correct Evaluation,253,37
+42_py,GithubCopilot,Correct Evaluation,356,50
+43_cpp,ChatGPT,Correct Evaluation,237,38
+43_cpp,Claude,Correct Evaluation,228,36
+43_cpp,Gemini,Correct Evaluation,367,52
+43_cpp,GithubCopilot,Correct Evaluation,289,47
+43_java,ChatGPT,Correct Evaluation,274,37
+43_java,Claude,Correct Evaluation,225,27
+43_java,Gemini,Correct Evaluation,267,37
+43_java,GithubCopilot,Correct Evaluation,352,43
+43_py,ChatGPT,Correct Evaluation,296,41
+43_py,Claude,Correct Evaluation,216,33
+43_py,Gemini,Correct Evaluation,306,42
+43_py,GithubCopilot,Correct Evaluation,209,30
+44_cpp,ChatGPT,Correct Evaluation,242,35
+44_cpp,Claude,Correct Evaluation,226,38
+44_cpp,Gemini,Correct Evaluation,342,51
+44_cpp,GithubCopilot,Correct Evaluation,303,41
+44_java,ChatGPT,Correct Evaluation,328,50
+44_java,Claude,Correct Evaluation,270,38
+44_java,Gemini,Correct Evaluation,225,32
+44_java,GithubCopilot,Correct Evaluation,316,49
+44_py,ChatGPT,Error / Hallucination,368,58
+44_py,Claude,Correct Evaluation,272,37
+44_py,Gemini,Error / Hallucination,394,50
+44_py,GithubCopilot,Error / Hallucination,488,61
+45_cpp,ChatGPT,Correct Evaluation,262,34
+45_cpp,Claude,Correct Evaluation,228,29
+45_cpp,Gemini,Correct Evaluation,373,50
+45_cpp,GithubCopilot,Correct Evaluation,375,52
+45_java,ChatGPT,Error / Hallucination,296,43
+45_java,Claude,Correct Evaluation,306,37
+45_java,Gemini,Correct Evaluation,305,42
+45_java,GithubCopilot,Correct Evaluation,383,50
+45_py,ChatGPT,Correct Evaluation,341,49
+45_py,Claude,Correct Evaluation,252,33
+45_py,Gemini,Correct Evaluation,240,36
+45_py,GithubCopilot,Correct Evaluation,303,36
+46_cpp,ChatGPT,Correct Evaluation,363,47
+46_cpp,Claude,Correct Evaluation,320,45
+46_cpp,Gemini,Correct Evaluation,212,28
+46_cpp,GithubCopilot,Error / Hallucination,451,59
+46_java,ChatGPT,Correct Evaluation,279,45
+46_java,Claude,Error / Hallucination,315,40
+46_java,Gemini,Correct Evaluation,315,40
+46_java,GithubCopilot,Error / Hallucination,376,49
+46_py,ChatGPT,Correct Evaluation,362,50
+46_py,Claude,Correct Evaluation,338,44
+46_py,Gemini,Correct Evaluation,259,34
+46_py,GithubCopilot,Error / Hallucination,392,53
+47_cpp,ChatGPT,Correct Evaluation,255,37
+47_cpp,Claude,Correct Evaluation,227,35
+47_cpp,Gemini,Correct Evaluation,381,56
+47_cpp,GithubCopilot,Correct Evaluation,352,46
+47_java,ChatGPT,Error / Hallucination,316,44
+47_java,Claude,Error / Hallucination,296,40
+47_java,Gemini,Correct Evaluation,255,33
+47_java,GithubCopilot,Correct Evaluation,360,46
+47_py,ChatGPT,Correct Evaluation,306,37
+47_py,Claude,Correct Evaluation,274,37
+47_py,Gemini,Correct Evaluation,378,50
+47_py,GithubCopilot,Correct Evaluation,326,41
+48_cpp,ChatGPT,Correct Evaluation,317,44
+48_cpp,Claude,Error / Hallucination,272,39
+48_cpp,Gemini,Correct Evaluation,354,49
+48_cpp,GithubCopilot,Error / Hallucination,319,43
+48_java,ChatGPT,Correct Evaluation,326,41
+48_java,Claude,Correct Evaluation,273,38
+48_java,Gemini,Correct Evaluation,352,46
+48_java,GithubCopilot,Error / Hallucination,409,52
+48_py,ChatGPT,Correct Evaluation,346,51
+48_py,Claude,Correct Evaluation,305,43
+48_py,Gemini,Error / Hallucination,202,32
+48_py,GithubCopilot,Error / Hallucination,409,52
+49_cpp,ChatGPT,Error / Hallucination,270,41
+49_cpp,Claude,Correct Evaluation,326,54
+49_cpp,Gemini,Error / Hallucination,206,31
+49_cpp,GithubCopilot,Error / Hallucination,283,50
+49_java,ChatGPT,Error / Hallucination,305,46
+49_java,Claude,Correct Evaluation,255,36
+49_java,Gemini,Correct Evaluation,367,47
+49_java,GithubCopilot,Error / Hallucination,376,57
+49_py,ChatGPT,Error / Hallucination,279,38
+49_py,Claude,Error / Hallucination,279,33
+49_py,Gemini,Error / Hallucination,293,41
+49_py,GithubCopilot,Error / Hallucination,319,43
+50_cpp,ChatGPT,Correct Evaluation,307,47
+50_cpp,Claude,Correct Evaluation,327,44
+50_cpp,Gemini,Correct Evaluation,301,45
+50_cpp,GithubCopilot,Correct Evaluation,281,46
+50_java,ChatGPT,Correct Evaluation,322,43
+50_java,Claude,Correct Evaluation,223,34
+50_java,Gemini,Error / Hallucination,327,48
+50_java,GithubCopilot,Correct Evaluation,419,59
+50_py,ChatGPT,Correct Evaluation,299,46
+50_py,Claude,Error / Hallucination,286,44
+50_py,Gemini,Error / Hallucination,338,51
+50_py,GithubCopilot,Error / Hallucination,388,53
+51_java,ChatGPT,Error / Hallucination,255,35
+51_java,Claude,Error / Hallucination,254,32
+51_java,Gemini,Error / Hallucination,358,43
+51_java,GithubCopilot,Error / Hallucination,268,43
+51_cpp,ChatGPT,Error / Hallucination,243,35
+51_cpp,Claude,Correct Evaluation,277,35
+51_cpp,Gemini,Correct Evaluation,220,25
+51_cpp,GithubCopilot,Correct Evaluation,383,47
+51_py,ChatGPT,Error / Hallucination,309,46
+51_py,Claude,Error / Hallucination,338,42
+51_py,Gemini,Error / Hallucination,242,33
+51_py,GithubCopilot,Error / Hallucination,377,49
+52_java,ChatGPT,Correct Evaluation,224,33
+52_java,Claude,Correct Evaluation,252,32
+52_java,Gemini,Correct Evaluation,383,53
+52_java,GithubCopilot,Correct Evaluation,312,46
+52_cpp,ChatGPT,Correct Evaluation,345,49
+52_cpp,Claude,Error / Hallucination,347,55
+52_cpp,Gemini,Correct Evaluation,199,32
+52_cpp,GithubCopilot,Error / Hallucination,379,52
+52_py,ChatGPT,Error / Hallucination,295,40
+52_py,Claude,Correct Evaluation,243,36
+52_py,Gemini,Correct Evaluation,234,32
+52_py,GithubCopilot,Correct Evaluation,298,39
+53_cpp,ChatGPT,Correct Evaluation,274,43
+53_cpp,Claude,Correct Evaluation,261,44
+53_cpp,Gemini,Correct Evaluation,398,63
+53_cpp,GithubCopilot,Correct Evaluation,305,49
+53_java,ChatGPT,Error / Hallucination,275,41
+53_java,Claude,Correct Evaluation,223,35
+53_java,Gemini,Correct Evaluation,219,33
+53_java,GithubCopilot,Correct Evaluation,280,48
+53_py,ChatGPT,Error / Hallucination,283,42
+53_py,Claude,Correct Evaluation,237,34
+53_py,Gemini,Correct Evaluation,175,22
+53_py,GithubCopilot,Correct Evaluation,273,36
+54_cpp,ChatGPT,Correct Evaluation,288,38
+54_cpp,Claude,Correct Evaluation,256,34
+54_cpp,Gemini,Correct Evaluation,389,53
+54_cpp,GithubCopilot,Error / Hallucination,411,58
+54_java,ChatGPT,Error / Hallucination,339,51
+54_java,Claude,Correct Evaluation,286,39
+54_java,Gemini,Error / Hallucination,330,40
+54_java,GithubCopilot,Error / Hallucination,318,46
+54_py,ChatGPT,Correct Evaluation,325,45
+54_py,Claude,Correct Evaluation,242,32
+54_py,Gemini,Correct Evaluation,278,41
+54_py,GithubCopilot,Error / Hallucination,339,47
+55_cpp,ChatGPT,Error / Hallucination,292,41
+55_cpp,Claude,Error / Hallucination,271,39
+55_cpp,Gemini,Error / Hallucination,370,56
+55_cpp,GithubCopilot,Error / Hallucination,286,45
+55_java,ChatGPT,Correct Evaluation,325,44
+55_java,Claude,Correct Evaluation,276,39
+55_java,Gemini,Correct Evaluation,258,34
+55_java,GithubCopilot,Correct Evaluation,251,41
+55_py,ChatGPT,Correct Evaluation,293,43
+55_py,Claude,Correct Evaluation,315,42
+55_py,Gemini,Correct Evaluation,263,34
+55_py,GithubCopilot,Correct Evaluation,243,40
+56_cpp,ChatGPT,Correct Evaluation,293,46
+56_cpp,Claude,Correct Evaluation,305,40
+56_cpp,Gemini,Error / Hallucination,357,56
+56_cpp,GithubCopilot,Correct Evaluation,292,40
+56_java,ChatGPT,Error / Hallucination,311,40
+56_java,Claude,Correct Evaluation,284,44
+56_java,Gemini,Error / Hallucination,184,24
+56_java,GithubCopilot,Correct Evaluation,363,54
+56_py,ChatGPT,Correct Evaluation,267,41
+56_py,Claude,Correct Evaluation,248,35
+56_py,Gemini,Correct Evaluation,321,44
+56_py,GithubCopilot,Correct Evaluation,375,54
+57_cpp,ChatGPT,Correct Evaluation,275,43
+57_cpp,Claude,Error / Hallucination,267,38
+57_cpp,Gemini,Error / Hallucination,391,58
+57_cpp,GithubCopilot,Correct Evaluation,325,53
+57_java,ChatGPT,Correct Evaluation,328,47
+57_java,Claude,Correct Evaluation,294,40
+57_java,Gemini,Correct Evaluation,236,35
+57_java,GithubCopilot,Correct Evaluation,315,51
+57_py,ChatGPT,Correct Evaluation,271,43
+57_py,Claude,Correct Evaluation,407,57
+57_py,Gemini,Correct Evaluation,258,39
+57_py,GithubCopilot,Error / Hallucination,336,44
+58_cpp,ChatGPT,Correct Evaluation,265,35
+58_cpp,Claude,Correct Evaluation,244,36
+58_cpp,Gemini,Correct Evaluation,363,50
+58_cpp,GithubCopilot,Correct Evaluation,328,49
+58_java,ChatGPT,Correct Evaluation,259,42
+58_java,Claude,Correct Evaluation,281,39
+58_java,Gemini,Correct Evaluation,186,25
+58_java,GithubCopilot,Correct Evaluation,287,46
+58_py,ChatGPT,Correct Evaluation,230,34
+58_py,Claude,Correct Evaluation,332,45
+58_py,Gemini,Correct Evaluation,266,41
+58_py,GithubCopilot,Correct Evaluation,310,39
+59_cpp,ChatGPT,Correct Evaluation,258,41
+59_cpp,Claude,Correct Evaluation,232,35
+59_cpp,Gemini,Correct Evaluation,336,48
+59_cpp,GithubCopilot,Correct Evaluation,278,45
+59_java,ChatGPT,Correct Evaluation,257,36
+59_java,Claude,Error / Hallucination,237,33
+59_java,Gemini,Correct Evaluation,247,35
+59_java,GithubCopilot,Error / Hallucination,311,36
+59_py,ChatGPT,Error / Hallucination,243,39
+59_py,Claude,Error / Hallucination,289,34
+59_py,Gemini,Correct Evaluation,149,20
+59_py,GithubCopilot,Correct Evaluation,279,35
+60_cpp,ChatGPT,Correct Evaluation,266,40
+60_cpp,Claude,Error / Hallucination,358,59
+60_cpp,Gemini,Correct Evaluation,159,23
+60_cpp,GithubCopilot,Error / Hallucination,315,41
+60_java,ChatGPT,Correct Evaluation,271,41
+60_java,Claude,Correct Evaluation,183,25
+60_java,Gemini,Correct Evaluation,194,30
+60_java,GithubCopilot,Error / Hallucination,318,40
+60_py,ChatGPT,Correct Evaluation,297,47
+60_py,Claude,Correct Evaluation,223,34
+60_py,Gemini,Correct Evaluation,180,23
+60_py,GithubCopilot,Correct Evaluation,262,36
+61_cpp,ChatGPT,Correct Evaluation,298,46
+61_cpp,Claude,Correct Evaluation,237,31
+61_cpp,Gemini,Error / Hallucination,346,55
+61_cpp,GithubCopilot,Error / Hallucination,300,38
+61_java,ChatGPT,Error / Hallucination,297,43
+61_java,Claude,Error / Hallucination,277,42
+61_java,Gemini,Error / Hallucination,229,32
+61_java,GithubCopilot,Error / Hallucination,287,44
+61_py,ChatGPT,Correct Evaluation,333,42
+61_py,Claude,Error / Hallucination,248,38
+61_py,Gemini,Error / Hallucination,181,28
+61_py,GithubCopilot,Error / Hallucination,328,47
+62_py,ChatGPT,Correct Evaluation,241,29
+62_py,Claude,Correct Evaluation,265,35
+62_py,Gemini,Correct Evaluation,279,37
+62_py,GithubCopilot,Correct Evaluation,309,45
+62_cpp,ChatGPT,Correct Evaluation,262,36
+62_cpp,Claude,Correct Evaluation,180,25
+62_cpp,Gemini,Correct Evaluation,322,52
+62_cpp,GithubCopilot,Correct Evaluation,271,42
+62_java,ChatGPT,Correct Evaluation,280,45
+62_java,Claude,Correct Evaluation,254,37
+62_java,Gemini,Correct Evaluation,249,36
+62_java,GithubCopilot,Correct Evaluation,346,54
+63_py,ChatGPT,Correct Evaluation,251,33
+63_py,Claude,Correct Evaluation,232,33
+63_py,Gemini,Correct Evaluation,271,39
+63_py,GithubCopilot,Correct Evaluation,297,44
+63_cpp,ChatGPT,Correct Evaluation,261,40
+63_cpp,Claude,Correct Evaluation,277,43
+63_cpp,Gemini,Correct Evaluation,328,48
+63_cpp,GithubCopilot,Correct Evaluation,305,42
+63_java,ChatGPT,Correct Evaluation,271,44
+63_java,Claude,Correct Evaluation,243,36
+63_java,Gemini,Correct Evaluation,247,35
+63_java,GithubCopilot,Correct Evaluation,274,41
+64_py,ChatGPT,Correct Evaluation,242,32
+64_py,Claude,Correct Evaluation,261,38
+64_py,Gemini,Correct Evaluation,291,38
+64_py,GithubCopilot,Correct Evaluation,303,38
+64_cpp,ChatGPT,Correct Evaluation,250,32
+64_cpp,Claude,Correct Evaluation,191,24
+64_cpp,Gemini,Correct Evaluation,298,42
+64_cpp,GithubCopilot,Correct Evaluation,335,51
+64_java,ChatGPT,Correct Evaluation,276,41
+64_java,Claude,Correct Evaluation,225,28
+64_java,Gemini,Correct Evaluation,247,35
+64_java,GithubCopilot,Correct Evaluation,305,46
+65_py,ChatGPT,Correct Evaluation,260,38
+65_py,Claude,Error / Hallucination,318,49
+65_py,Gemini,Error / Hallucination,397,62
+65_py,GithubCopilot,Correct Evaluation,327,41
+65_cpp,ChatGPT,Correct Evaluation,246,34
+65_cpp,Claude,Correct Evaluation,310,44
+65_cpp,Gemini,Correct Evaluation,265,40
+65_cpp,GithubCopilot,Correct Evaluation,291,40
+65_java,ChatGPT,Correct Evaluation,283,44
+65_java,Claude,Correct Evaluation,225,29
+65_java,Gemini,Correct Evaluation,225,33
+65_java,GithubCopilot,Correct Evaluation,321,50
+66_py,ChatGPT,Correct Evaluation,252,33
+66_py,Claude,Error / Hallucination,278,41
+66_py,Gemini,Correct Evaluation,289,39
+66_py,GithubCopilot,Correct Evaluation,310,46
+66_cpp,ChatGPT,Error / Hallucination,276,42
+66_cpp,Claude,Error / Hallucination,369,51
+66_cpp,Gemini,Correct Evaluation,315,46
+66_cpp,GithubCopilot,Correct Evaluation,305,41
+66_java,ChatGPT,Correct Evaluation,284,45
+66_java,Claude,Correct Evaluation,248,37
+66_java,Gemini,Correct Evaluation,215,34
+66_java,GithubCopilot,Error / Hallucination,276,39
+67_py,ChatGPT,Correct Evaluation,300,45
+67_py,Claude,Correct Evaluation,253,39
+67_py,Gemini,Correct Evaluation,396,60
+67_py,GithubCopilot,Correct Evaluation,342,46
+67_cpp,ChatGPT,Correct Evaluation,289,41
+67_cpp,Claude,Error / Hallucination,239,36
+67_cpp,Gemini,Correct Evaluation,261,44
+67_cpp,GithubCopilot,Correct Evaluation,282,42
+67_java,ChatGPT,Correct Evaluation,302,47
+67_java,Claude,Correct Evaluation,256,41
+67_java,Gemini,Correct Evaluation,208,38
+67_java,GithubCopilot,Correct Evaluation,334,48
+68_py,ChatGPT,Correct Evaluation,234,32
+68_py,Claude,Correct Evaluation,282,40
+68_py,Gemini,Correct Evaluation,375,60
+68_py,GithubCopilot,Correct Evaluation,339,44
+68_cpp,ChatGPT,Correct Evaluation,275,37
+68_cpp,Claude,Correct Evaluation,229,37
+68_cpp,Gemini,Correct Evaluation,192,25
+68_cpp,GithubCopilot,Correct Evaluation,336,42
+68_java,ChatGPT,Correct Evaluation,251,38
+68_java,Claude,Correct Evaluation,217,33
+68_java,Gemini,Correct Evaluation,209,31
+68_java,GithubCopilot,Correct Evaluation,310,47
+69_py,ChatGPT,Error / Hallucination,301,43
+69_py,Claude,Error / Hallucination,298,45
+69_py,Gemini,Error / Hallucination,361,49
+69_py,GithubCopilot,Correct Evaluation,294,42
+69_cpp,ChatGPT,Error / Hallucination,310,48
+69_cpp,Claude,Error / Hallucination,247,34
+69_cpp,Gemini,Correct Evaluation,385,54
+69_cpp,GithubCopilot,Correct Evaluation,329,44
+69_java,ChatGPT,Error / Hallucination,282,43
+69_java,Claude,Correct Evaluation,286,37
+69_java,Gemini,Error / Hallucination,267,36
+69_java,GithubCopilot,Error / Hallucination,370,47
+70_py,ChatGPT,Correct Evaluation,285,46
+70_py,Claude,Correct Evaluation,302,45
+70_py,Gemini,Correct Evaluation,349,55
+70_py,GithubCopilot,Error / Hallucination,303,39
+70_cpp,ChatGPT,Error / Hallucination,302,43
+70_cpp,Claude,Correct Evaluation,295,40
+70_cpp,Gemini,Error / Hallucination,241,31
+70_cpp,GithubCopilot,Error / Hallucination,384,46
+70_java,ChatGPT,Correct Evaluation,355,49
+70_java,Claude,Error / Hallucination,302,39
+70_java,Gemini,Correct Evaluation,374,50
+70_java,GithubCopilot,Correct Evaluation,291,46
+71_py,ChatGPT,Error / Hallucination,258,34
+71_py,Claude,Error / Hallucination,330,44
+71_py,Gemini,Correct Evaluation,392,61
+71_py,GithubCopilot,Correct Evaluation,348,49
+71_cpp,ChatGPT,Error / Hallucination,326,42
+71_cpp,Claude,Error / Hallucination,268,40
+71_cpp,Gemini,Correct Evaluation,255,41
+71_cpp,GithubCopilot,Error / Hallucination,318,45
+71_java,ChatGPT,Correct Evaluation,333,46
+71_java,Claude,Error / Hallucination,290,40
+71_java,Gemini,Correct Evaluation,301,42
+71_java,GithubCopilot,Correct Evaluation,382,47
+72_py,ChatGPT,Correct Evaluation,311,44
+72_py,Claude,Error / Hallucination,333,47
+72_py,Gemini,Correct Evaluation,362,54
+72_py,GithubCopilot,Correct Evaluation,393,52
+72_cpp,ChatGPT,Correct Evaluation,368,49
+72_cpp,Claude,Error / Hallucination,272,37
+72_cpp,Gemini,Correct Evaluation,293,41
+72_cpp,GithubCopilot,Error / Hallucination,337,47
+72_java,ChatGPT,Correct Evaluation,387,56
+72_java,Claude,Error / Hallucination,238,31
+72_java,Gemini,Correct Evaluation,163,25
+72_java,GithubCopilot,Error / Hallucination,319,46
+73_py,ChatGPT,Correct Evaluation,274,40
+73_py,Claude,Correct Evaluation,271,39
+73_py,Gemini,Correct Evaluation,328,50
+73_py,GithubCopilot,Error / Hallucination,345,49
+73_cpp,ChatGPT,Error / Hallucination,285,42
+73_cpp,Claude,Error / Hallucination,222,34
+73_cpp,Gemini,Error / Hallucination,243,32
+73_cpp,GithubCopilot,Error / Hallucination,330,48
+73_java,ChatGPT,Correct Evaluation,295,42
+73_java,Claude,Correct Evaluation,304,40
+73_java,Gemini,Correct Evaluation,271,41
+73_java,GithubCopilot,Error / Hallucination,309,46
+74_py,ChatGPT,Correct Evaluation,285,45
+74_py,Claude,Correct Evaluation,280,43
+74_py,Gemini,Correct Evaluation,347,45
+74_py,GithubCopilot,Error / Hallucination,404,57
+74_cpp,ChatGPT,Correct Evaluation,280,43
+74_cpp,Claude,Error / Hallucination,217,34
+74_cpp,Gemini,Error / Hallucination,172,20
+74_cpp,GithubCopilot,Error / Hallucination,310,45
+74_java,ChatGPT,Correct Evaluation,317,48
+74_java,Claude,Correct Evaluation,340,45
+74_java,Gemini,Correct Evaluation,338,46
+74_java,GithubCopilot,Error / Hallucination,347,48
+75_py,ChatGPT,Error / Hallucination,272,34
+75_py,Claude,Correct Evaluation,303,42
+75_py,Gemini,Correct Evaluation,359,53
+75_py,GithubCopilot,Correct Evaluation,346,43
+75_cpp,ChatGPT,Correct Evaluation,300,42
+75_cpp,Claude,Correct Evaluation,251,34
+75_cpp,Gemini,Correct Evaluation,259,38
+75_cpp,GithubCopilot,Correct Evaluation,414,60
+75_java,ChatGPT,Error / Hallucination,300,42
+75_java,Claude,Error / Hallucination,317,38
+75_java,Gemini,Correct Evaluation,200,25
+75_java,GithubCopilot,Correct Evaluation,427,56
+76_py,ChatGPT,Correct Evaluation,312,45
+76_py,Claude,Error / Hallucination,287,37
+76_py,Gemini,Correct Evaluation,367,55
+76_py,GithubCopilot,Correct Evaluation,380,49
+76_cpp,ChatGPT,Correct Evaluation,342,50
+76_cpp,Claude,Correct Evaluation,292,38
+76_cpp,Gemini,Correct Evaluation,222,33
+76_cpp,GithubCopilot,Correct Evaluation,362,43
+76_java,ChatGPT,Correct Evaluation,365,51
+76_java,Claude,Correct Evaluation,354,48
+76_java,Gemini,Correct Evaluation,257,39
+76_java,GithubCopilot,Correct Evaluation,347,44
+77_py,ChatGPT,Correct Evaluation,292,42
+77_py,Claude,Correct Evaluation,291,39
+77_py,Gemini,Correct Evaluation,377,54
+77_py,GithubCopilot,Correct Evaluation,313,38
+77_cpp,ChatGPT,Correct Evaluation,285,44
+77_cpp,Claude,Correct Evaluation,286,44
+77_cpp,Gemini,Correct Evaluation,289,42
+77_cpp,GithubCopilot,Correct Evaluation,380,48
+77_java,ChatGPT,Correct Evaluation,244,37
+77_java,Claude,Correct Evaluation,328,48
+77_java,Gemini,Correct Evaluation,263,40
+77_java,GithubCopilot,Correct Evaluation,375,52
+78_py,ChatGPT,Correct Evaluation,262,31
+78_py,Claude,Correct Evaluation,273,33
+78_py,Gemini,Correct Evaluation,348,47
+78_py,GithubCopilot,Correct Evaluation,357,44
+78_cpp,ChatGPT,Error / Hallucination,289,45
+78_cpp,Claude,Correct Evaluation,219,29
+78_cpp,Gemini,Error / Hallucination,322,45
+78_cpp,GithubCopilot,Correct Evaluation,294,39
+78_java,ChatGPT,Error / Hallucination,290,39
+78_java,Claude,Error / Hallucination,300,34
+78_java,Gemini,Correct Evaluation,369,52
+78_java,GithubCopilot,Error / Hallucination,409,54
+79_py,ChatGPT,Error / Hallucination,263,35
+79_py,Claude,Error / Hallucination,289,41
+79_py,Gemini,Correct Evaluation,361,53
+79_py,GithubCopilot,Error / Hallucination,324,42
+79_cpp,ChatGPT,Correct Evaluation,340,47
+79_cpp,Claude,Error / Hallucination,315,39
+79_cpp,Gemini,Error / Hallucination,159,28
+79_cpp,GithubCopilot,Correct Evaluation,309,48
+79_java,ChatGPT,Correct Evaluation,273,43
+79_java,Claude,Correct Evaluation,228,30
+79_java,Gemini,Correct Evaluation,240,33
+79_java,GithubCopilot,Correct Evaluation,243,36
+80_py,ChatGPT,Error / Hallucination,262,31
+80_py,Claude,Error / Hallucination,302,43
+80_py,Gemini,Correct Evaluation,347,55
+80_py,GithubCopilot,Error / Hallucination,289,36
+80_cpp,ChatGPT,Correct Evaluation,269,45
+80_cpp,Claude,Correct Evaluation,212,29
+80_cpp,Gemini,Error / Hallucination,396,67
+80_cpp,GithubCopilot,Error / Hallucination,397,58
+80_java,ChatGPT,Error / Hallucination,369,54
+80_java,Claude,Correct Evaluation,251,31
+80_java,Gemini,Error / Hallucination,268,39
+80_java,GithubCopilot,Error / Hallucination,301,46
+81_py,ChatGPT,Correct Evaluation,266,38
+81_py,Claude,Correct Evaluation,336,53
+81_py,Gemini,Correct Evaluation,328,48
+81_py,GithubCopilot,Correct Evaluation,343,47
+81_cpp,ChatGPT,Error / Hallucination,289,43
+81_cpp,Claude,Error / Hallucination,307,39
+81_cpp,Gemini,Correct Evaluation,274,40
+81_cpp,GithubCopilot,Error / Hallucination,428,55
+81_java,ChatGPT,Correct Evaluation,318,39
+81_java,Claude,Correct Evaluation,224,35
+81_java,Gemini,Correct Evaluation,308,45
+81_java,GithubCopilot,Correct Evaluation,298,40
+82_py,ChatGPT,Correct Evaluation,301,42
+82_py,Claude,Correct Evaluation,362,49
+82_py,Gemini,Error / Hallucination,399,61
+82_py,GithubCopilot,Error / Hallucination,365,47
+82_cpp,ChatGPT,Error / Hallucination,314,42
+82_cpp,Claude,Correct Evaluation,305,43
+82_cpp,Gemini,Error / Hallucination,364,55
+82_cpp,GithubCopilot,Error / Hallucination,352,46
+82_java,ChatGPT,Error / Hallucination,363,54
+82_java,Claude,Correct Evaluation,241,31
+82_java,Gemini,Error / Hallucination,279,37
+82_java,GithubCopilot,Error / Hallucination,361,47
+83_py,ChatGPT,Correct Evaluation,255,36
+83_py,Claude,Correct Evaluation,325,50
+83_py,Gemini,Correct Evaluation,373,54
+83_py,GithubCopilot,Correct Evaluation,317,39
+83_cpp,ChatGPT,Correct Evaluation,300,41
+83_cpp,Claude,Error / Hallucination,276,39
+83_cpp,Gemini,Error / Hallucination,317,45
+83_cpp,GithubCopilot,Error / Hallucination,305,43
+83_java,ChatGPT,Correct Evaluation,315,45
+83_java,Claude,Error / Hallucination,255,38
+83_java,Gemini,Correct Evaluation,364,51
+83_java,GithubCopilot,Error / Hallucination,351,48
+84_py,ChatGPT,Correct Evaluation,291,38
+84_py,Claude,Correct Evaluation,327,44
+84_py,Gemini,Correct Evaluation,313,42
+84_py,GithubCopilot,Correct Evaluation,322,46
+84_cpp,ChatGPT,Error / Hallucination,348,50
+84_cpp,Claude,Correct Evaluation,272,38
+84_cpp,Gemini,Error / Hallucination,209,31
+84_cpp,GithubCopilot,Correct Evaluation,270,35
+84_java,ChatGPT,Error / Hallucination,286,36
+84_java,Claude,Error / Hallucination,363,46
+84_java,Gemini,Correct Evaluation,254,40
+84_java,GithubCopilot,Error / Hallucination,294,38
+85_py,ChatGPT,Correct Evaluation,303,36
+85_py,Claude,Correct Evaluation,309,39
+85_py,Gemini,Correct Evaluation,357,47
+85_py,GithubCopilot,Correct Evaluation,302,37
+85_cpp,ChatGPT,Error / Hallucination,315,45
+85_cpp,Claude,Error / Hallucination,209,29
+85_cpp,Gemini,Error / Hallucination,246,31
+85_cpp,GithubCopilot,Error / Hallucination,378,48
+85_java,ChatGPT,Correct Evaluation,321,45
+85_java,Claude,Error / Hallucination,291,39
+85_java,Gemini,Error / Hallucination,339,50
+85_java,GithubCopilot,Correct Evaluation,238,37
+86_py,ChatGPT,Correct Evaluation,306,36
+86_py,Claude,Correct Evaluation,301,39
+86_py,Gemini,Correct Evaluation,352,42
+86_py,GithubCopilot,Error / Hallucination,350,44
+86_cpp,ChatGPT,Error / Hallucination,332,46
+86_cpp,Claude,Correct Evaluation,281,34
+86_cpp,Gemini,Correct Evaluation,203,27
+86_cpp,GithubCopilot,Error / Hallucination,298,41
+86_java,ChatGPT,Correct Evaluation,308,44
+86_java,Claude,Error / Hallucination,237,29
+86_java,Gemini,Error / Hallucination,176,24
+86_java,GithubCopilot,Correct Evaluation,290,38
+87_py,ChatGPT,Correct Evaluation,246,31
+87_py,Claude,Correct Evaluation,286,35
+87_py,Gemini,Correct Evaluation,390,54
+87_py,GithubCopilot,Correct Evaluation,248,30
+87_cpp,ChatGPT,Correct Evaluation,332,51
+87_cpp,Claude,Correct Evaluation,278,35
+87_cpp,Gemini,Error / Hallucination,318,45
+87_cpp,GithubCopilot,Error / Hallucination,315,45
+87_java,ChatGPT,Correct Evaluation,351,54
+87_java,Claude,Error / Hallucination,222,30
+87_java,Gemini,Error / Hallucination,315,45
+87_java,GithubCopilot,Correct Evaluation,311,45
+88_py,ChatGPT,Correct Evaluation,301,39
+88_py,Claude,Correct Evaluation,299,41
+88_py,Gemini,Correct Evaluation,366,48
+88_py,GithubCopilot,Error / Hallucination,277,38
+88_cpp,ChatGPT,Error / Hallucination,290,42
+88_cpp,Claude,Correct Evaluation,261,29
+88_cpp,Gemini,Correct Evaluation,371,45
+88_cpp,GithubCopilot,Error / Hallucination,335,48
+88_java,ChatGPT,Correct Evaluation,345,49
+88_java,Claude,Error / Hallucination,274,36
+88_java,Gemini,Error / Hallucination,216,30
+88_java,GithubCopilot,Error / Hallucination,299,41
+89_py,ChatGPT,Correct Evaluation,261,39
+89_py,Claude,Error / Hallucination,346,49
+89_py,Gemini,Correct Evaluation,282,42
+89_py,GithubCopilot,Error / Hallucination,381,51
+89_cpp,ChatGPT,Error / Hallucination,293,45
+89_cpp,Claude,Correct Evaluation,282,35
+89_cpp,Gemini,Error / Hallucination,216,26
+89_cpp,GithubCopilot,Error / Hallucination,318,44
+89_java,ChatGPT,Correct Evaluation,311,42
+89_java,Claude,Error / Hallucination,364,46
+89_java,Gemini,Error / Hallucination,279,44
+89_java,GithubCopilot,Error / Hallucination,346,48
+90_py,ChatGPT,Correct Evaluation,309,42
+90_py,Claude,Correct Evaluation,309,42
+90_py,Gemini,Correct Evaluation,348,57
+90_py,GithubCopilot,Error / Hallucination,283,36
+90_cpp,ChatGPT,Correct Evaluation,347,46
+90_cpp,Claude,Correct Evaluation,322,41
+90_cpp,Gemini,Error / Hallucination,205,27
+90_cpp,GithubCopilot,Error / Hallucination,302,44
+90_java,ChatGPT,Correct Evaluation,311,43
+90_java,Claude,Correct Evaluation,263,33
+90_java,Gemini,Error / Hallucination,287,41
+90_java,GithubCopilot,Correct Evaluation,293,42
+91_py,ChatGPT,Correct Evaluation,314,41
+91_py,Claude,Correct Evaluation,287,38
+91_py,Gemini,Correct Evaluation,396,50
+91_py,GithubCopilot,Error / Hallucination,276,34
+91_cpp,ChatGPT,Error / Hallucination,291,39
+91_cpp,Claude,Error / Hallucination,300,36
+91_cpp,Gemini,Error / Hallucination,316,52
+91_cpp,GithubCopilot,Error / Hallucination,277,39
+91_java,ChatGPT,Error / Hallucination,319,43
+91_java,Claude,Error / Hallucination,227,29
+91_java,Gemini,Correct Evaluation,185,27
+91_java,GithubCopilot,Error / Hallucination,316,41
+92_py,ChatGPT,Error / Hallucination,276,38
+92_py,Claude,Error / Hallucination,326,45
+92_py,Gemini,Correct Evaluation,343,50
+92_py,GithubCopilot,Correct Evaluation,252,31
+92_cpp,ChatGPT,Error / Hallucination,258,39
+92_cpp,Claude,Correct Evaluation,284,40
+92_cpp,Gemini,Error / Hallucination,217,31
+92_cpp,GithubCopilot,Correct Evaluation,318,44
+92_java,ChatGPT,Correct Evaluation,301,43
+92_java,Claude,Error / Hallucination,256,36
+92_java,Gemini,Correct Evaluation,343,50
+92_java,GithubCopilot,Correct Evaluation,327,47
+93_py,ChatGPT,Correct Evaluation,306,46
+93_py,Claude,Error / Hallucination,318,45
+93_py,Gemini,Correct Evaluation,375,54
+93_py,GithubCopilot,Correct Evaluation,268,41
+93_cpp,ChatGPT,Error / Hallucination,323,49
+93_cpp,Claude,Error / Hallucination,269,38
+93_cpp,Gemini,Error / Hallucination,261,31
+93_cpp,GithubCopilot,Error / Hallucination,246,38
+93_java,ChatGPT,Correct Evaluation,335,50
+93_java,Claude,Error / Hallucination,245,30
+93_java,Gemini,Correct Evaluation,274,38
+93_java,GithubCopilot,Error / Hallucination,328,45
+94_py,ChatGPT,Correct Evaluation,293,45
+94_py,Claude,Correct Evaluation,278,43
+94_py,Gemini,Correct Evaluation,361,55
+94_py,GithubCopilot,Correct Evaluation,279,34
+94_cpp,ChatGPT,Error / Hallucination,269,35
+94_cpp,Claude,Correct Evaluation,223,31
+94_cpp,Gemini,Correct Evaluation,353,45
+94_cpp,GithubCopilot,Correct Evaluation,243,37
+94_java,ChatGPT,Correct Evaluation,278,40
+94_java,Claude,Correct Evaluation,203,24
+94_java,Gemini,Correct Evaluation,333,43
+94_java,GithubCopilot,Error / Hallucination,289,50
+95_py,ChatGPT,Correct Evaluation,314,47
+95_py,Claude,Correct Evaluation,315,48
+95_py,Gemini,Correct Evaluation,377,57
+95_py,GithubCopilot,Correct Evaluation,334,48
+95_cpp,ChatGPT,Correct Evaluation,303,45
+95_cpp,Claude,Correct Evaluation,271,35
+95_cpp,Gemini,Error / Hallucination,345,45
+95_cpp,GithubCopilot,Error / Hallucination,292,42
+95_java,ChatGPT,Correct Evaluation,335,46
+95_java,Claude,Error / Hallucination,288,40
+95_java,Gemini,Correct Evaluation,319,43
+95_java,GithubCopilot,Correct Evaluation,301,39
+96_py,ChatGPT,Correct Evaluation,316,47
+96_py,Claude,Correct Evaluation,295,42
+96_py,Gemini,Correct Evaluation,356,50
+96_py,GithubCopilot,Correct Evaluation,304,40
+96_cpp,ChatGPT,Correct Evaluation,345,48
+96_cpp,Claude,Correct Evaluation,258,39
+96_cpp,Gemini,Error / Hallucination,377,50
+96_cpp,GithubCopilot,Correct Evaluation,298,46
+96_java,ChatGPT,Correct Evaluation,311,42
+96_java,Claude,Correct Evaluation,297,41
+96_java,Gemini,Correct Evaluation,326,51
+96_java,GithubCopilot,Correct Evaluation,267,39
+97_py,ChatGPT,Correct Evaluation,308,44
+97_py,Claude,Correct Evaluation,315,46
+97_py,Gemini,Correct Evaluation,353,57
+97_py,GithubCopilot,Correct Evaluation,278,41
+97_cpp,ChatGPT,Correct Evaluation,354,51
+97_cpp,Claude,Error / Hallucination,282,39
+97_cpp,Gemini,Error / Hallucination,284,46
+97_cpp,GithubCopilot,Correct Evaluation,270,40
+97_java,ChatGPT,Correct Evaluation,374,51
+97_java,Claude,Correct Evaluation,371,53
+97_java,Gemini,Correct Evaluation,299,44
+97_java,GithubCopilot,Error / Hallucination,264,37
+98_py,ChatGPT,Correct Evaluation,351,56
+98_py,Claude,Correct Evaluation,347,50
+98_py,Gemini,Correct Evaluation,314,45
+98_py,GithubCopilot,Correct Evaluation,297,41
+98_cpp,ChatGPT,Correct Evaluation,298,42
+98_cpp,Claude,Correct Evaluation,282,36
+98_cpp,Gemini,Error / Hallucination,209,30
+98_cpp,GithubCopilot,Error / Hallucination,299,41
+98_java,ChatGPT,Correct Evaluation,335,47
+98_java,Claude,Correct Evaluation,338,46
+98_java,Gemini,Correct Evaluation,286,43
+98_java,GithubCopilot,Error / Hallucination,289,43
+99_py,ChatGPT,Correct Evaluation,323,48
+99_py,Claude,Correct Evaluation,432,60
+99_py,Gemini,Error / Hallucination,385,56
+99_py,GithubCopilot,Correct Evaluation,355,42
+99_cpp,ChatGPT,Correct Evaluation,369,47
+99_cpp,Claude,Error / Hallucination,242,33
+99_cpp,Gemini,Correct Evaluation,165,22
+99_cpp,GithubCopilot,Correct Evaluation,342,48
+99_java,ChatGPT,Correct Evaluation,349,44
+99_java,Claude,Correct Evaluation,331,41
+99_java,Gemini,Correct Evaluation,293,36
+99_java,GithubCopilot,Correct Evaluation,425,57
+100_py,ChatGPT,Correct Evaluation,332,49
+100_py,Claude,Correct Evaluation,342,43
+100_py,Gemini,Error / Hallucination,382,45
+100_py,GithubCopilot,Correct Evaluation,340,39
+100_cpp,ChatGPT,Correct Evaluation,335,51
+100_cpp,Claude,Correct Evaluation,379,52
+100_cpp,Gemini,Correct Evaluation,204,28
+100_cpp,GithubCopilot,Correct Evaluation,328,39
+100_java,ChatGPT,Correct Evaluation,342,47
+100_java,Claude,Correct Evaluation,299,34
+100_java,Gemini,Correct Evaluation,339,43
+100_java,GithubCopilot,Correct Evaluation,361,42

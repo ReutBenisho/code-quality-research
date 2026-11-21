@@ -1,0 +1,16 @@
+language,model,read_err_mean,read_err_count,und_err_mean,und_err_count,maint_err_mean,maint_err_count,overall_err_mean,overall_err_count
+cpp,ChatGPT,7.98,100,8.38,100,11.28,100,8.5,100
+cpp,Claude,11.01,100,13.38,100,17.83,100,13.133,100
+cpp,Gemini,8.72,100,9.36,100,12.16,100,8.48,100
+cpp,GithubCopilot,12.64,100,16.02,100,15.38,100,13.907,100
+cpp,Sonarqube,13.46,100,12.46,100,27.91,100,14.323,100
+java,ChatGPT,7.45,100,8.23,100,11.49,100,8.13,100
+java,Claude,11.23,100,14.09,100,17.52,100,13.387,100
+java,Gemini,8.72,100,10.07,100,14.94,100,10.003,100
+java,GithubCopilot,13.57,100,16.41,100,15.62,100,14.587,100
+java,Sonarqube,13.06,100,12.32,100,22.43,100,12.13,100
+python,ChatGPT,8.59,100,8.94,100,12.96,100,9.637,100
+python,Claude,12.39,100,14.89,100,21.02,100,15.447,100
+python,Gemini,8.52,100,11.61,100,15.3,100,10.37,100
+python,GithubCopilot,16.51,100,19.09,100,18.51,100,17.543,100
+python,Sonarqube,11.84,100,11.34,100,27.1,100,13.86,100

@@ -1,0 +1,5 @@
+Scope,N_Snippets,Sec_TP,Sec_FP,Sec_TN,Sec_FN,Sec_Acc_pct,Sec_Prec_pct,Sec_Rec_pct,Sec_F1_pct
+Overall,300,54,14,199,33,84.33,79.41,62.07,69.68
+Language=cpp,100,18,13,60,9,78.0,58.06,66.67,62.07
+Language=java,100,19,1,66,14,85.0,95.0,57.58,71.7
+Language=python,100,17,0,73,10,90.0,100.0,62.96,77.27

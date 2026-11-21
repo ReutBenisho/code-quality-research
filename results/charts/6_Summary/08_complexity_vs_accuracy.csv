@@ -1,0 +1,4 @@
+complexity_bucket,ChatGPT,Claude,Gemini,GithubCopilot,Sonarqube
+Low (0-3),,,,,
+Medium (4-8),69.67,65.67,70.33,60.67,37.67
+High (9+),,,,,

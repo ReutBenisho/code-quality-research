@@ -1,0 +1,6 @@
+model,overall_err
+ChatGPT,8.756
+Gemini,9.618
+Sonarqube,13.438
+Claude,13.989
+GithubCopilot,15.346

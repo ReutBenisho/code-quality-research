@@ -1,0 +1,5 @@
+Model,Accurate_Count,Erroneous_Count,Accurate_Mean_Chars,Erroneous_Mean_Chars,Delta_Chars
+ChatGPT,209,91,295.48,294.18,-1.3
+Claude,197,103,273.65,281.81,8.15
+Gemini,211,89,291.08,291.54,0.46
+GithubCopilot,182,118,315.28,329.03,13.75
