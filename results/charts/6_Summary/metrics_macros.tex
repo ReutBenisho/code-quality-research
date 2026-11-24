@@ -718,6 +718,31 @@
 \newcommand{\githubCopilotReasoningAccurateChars}{315.28}
 \newcommand{\githubCopilotReasoningErroneousChars}{329.03}
 \newcommand{\githubCopilotReasoningDeltaChars}{+13.75}
+% === ChatGPT vs. GitHub Copilot Comparison Macros ===
+\newcommand{\cgCopilotPearsonR}{0.66}
+\newcommand{\copilotPredAtEightyFive}{65.94}
+\newcommand{\cgCopilotReadMaeDeltaRelPct}{-43.75\%}
+\newcommand{\cgCopilotUndMaeDeltaRelPct}{-50.38\%}
+\newcommand{\cgCopilotMaintMaeDeltaRelPct}{-27.82\%}
+\newcommand{\cgCopilotSecAccDeltaPp}{+10.33~\text{pp}}
+\newcommand{\cgCopilotSecPrecDeltaPp}{+25.63~\text{pp}}
+\newcommand{\cgCopilotSecRecDeltaPp}{-11.49~\text{pp}}
+\newcommand{\cgCompReadMae}{8.01}
+\newcommand{\cgCompUndMae}{8.52}
+\newcommand{\cgCompMaintMae}{11.91}
+\newcommand{\cgCompOverallMae}{8.76}
+\newcommand{\cgCompSecAccPct}{84.33}
+\newcommand{\cgCompSecPrecPct}{79.41}
+\newcommand{\cgCompSecRecPct}{62.07}
+\newcommand{\cgCompSecFp}{14}
+\newcommand{\copilotCompReadMae}{14.24}
+\newcommand{\copilotCompUndMae}{17.17}
+\newcommand{\copilotCompMaintMae}{16.50}
+\newcommand{\copilotCompOverallMae}{15.35}
+\newcommand{\copilotCompSecAccPct}{74.00}
+\newcommand{\copilotCompSecPrecPct}{53.78}
+\newcommand{\copilotCompSecRecPct}{73.56}
+\newcommand{\copilotCompSecFp}{55}
 % === Per-Language Per-Engine Overall Quality MAE Macros ===
 \newcommand{\chatGPTCppOverallMae}{8.50}
 \newcommand{\chatGPTJavaOverallMae}{8.13}
@@ -734,3 +759,90 @@
 \newcommand{\sonarqubeCppOverallMae}{14.32}
 \newcommand{\sonarqubeJavaOverallMae}{12.13}
 \newcommand{\sonarqubePythonOverallMae}{13.86}
+% === Conclusion Summary Macros ===
+\newcommand{\aiMinMaintSpearman}{0.554}
+\newcommand{\aiMaxMaintSpearman}{0.626}
+\newcommand{\chatGPTOverallMae}{8.76}
+\newcommand{\chatGPTMaintSpearman}{0.554}
+\newcommand{\claudeOverallMae}{13.99}
+\newcommand{\claudeMaintSpearman}{0.570}
+\newcommand{\geminiOverallMae}{9.62}
+\newcommand{\geminiMaintSpearman}{0.568}
+\newcommand{\githubCopilotOverallMae}{15.35}
+\newcommand{\githubCopilotMaintSpearman}{0.626}
+\newcommand{\sonarqubeOverallMae}{13.44}
+\newcommand{\sonarqubeMaintSpearman}{-0.062}
+% === Human Inter-Rater Reliability & Leave-One-Out Ceiling Macros ===
+\newcommand{\humanReadabilityAlpha}{0.857}
+\newcommand{\humanReadabilityIcc}{0.666}
+\newcommand{\humanReadabilityRho}{0.668}
+\newcommand{\humanReadabilityLooMae}{5.14}
+\newcommand{\humanUnderstandabilityAlpha}{0.816}
+\newcommand{\humanUnderstandabilityIcc}{0.597}
+\newcommand{\humanUnderstandabilityRho}{0.637}
+\newcommand{\humanUnderstandabilityLooMae}{6.64}
+\newcommand{\humanMaintainabilityAlpha}{0.781}
+\newcommand{\humanMaintainabilityIcc}{0.544}
+\newcommand{\humanMaintainabilityRho}{0.559}
+\newcommand{\humanMaintainabilityLooMae}{12.01}
+\newcommand{\humanOverallQualityAlpha}{0.841}
+\newcommand{\humanOverallQualityIcc}{0.639}
+\newcommand{\humanOverallQualityRho}{0.661}
+\newcommand{\humanOverallQualityLooMae}{6.61}
+% === Baseline Comparisons, Calibration & Significance Macros ===
+\newcommand{\datasetOverallQualityMean}{78.84}
+\newcommand{\majoritySecurityBaselinePct}{71.00\%}
+\newcommand{\naiveMeanBaselineMae}{8.64}
+\newcommand{\naiveMeanBaselineCiLow}{7.91}
+\newcommand{\naiveMeanBaselineCiHigh}{9.39}
+\newcommand{\humanRefBaselineMae}{6.61}
+\newcommand{\humanRefBaselineCiLow}{5.97}
+\newcommand{\humanRefBaselineCiHigh}{7.34}
+\newcommand{\humanRefBaselineRho}{0.661}
+\newcommand{\chatGPTCalRawMae}{8.76}
+\newcommand{\chatGPTCalCiLow}{7.93}
+\newcommand{\chatGPTCalCiHigh}{9.61}
+\newcommand{\chatGPTCalMeanBias}{+4.01}
+\newcommand{\chatGPTCalBiasLabel}{Optimistic}
+\newcommand{\chatGPTCalAdjustedMae}{7.73}
+\newcommand{\chatGPTCalSpearmanRho}{0.579}
+\newcommand{\claudeCalRawMae}{13.99}
+\newcommand{\claudeCalCiLow}{12.84}
+\newcommand{\claudeCalCiHigh}{15.13}
+\newcommand{\claudeCalMeanBias}{-12.66}
+\newcommand{\claudeCalBiasLabel}{Strong Pessimistic}
+\newcommand{\claudeCalAdjustedMae}{9.83}
+\newcommand{\claudeCalSpearmanRho}{0.563}
+\newcommand{\geminiCalRawMae}{9.62}
+\newcommand{\geminiCalCiLow}{8.58}
+\newcommand{\geminiCalCiHigh}{10.62}
+\newcommand{\geminiCalMeanBias}{-5.78}
+\newcommand{\geminiCalBiasLabel}{Pessimistic}
+\newcommand{\geminiCalAdjustedMae}{9.07}
+\newcommand{\geminiCalSpearmanRho}{0.573}
+\newcommand{\githubCopilotCalRawMae}{15.35}
+\newcommand{\githubCopilotCalCiLow}{14.05}
+\newcommand{\githubCopilotCalCiHigh}{16.70}
+\newcommand{\githubCopilotCalMeanBias}{-14.69}
+\newcommand{\githubCopilotCalBiasLabel}{Strong Pessimistic}
+\newcommand{\githubCopilotCalAdjustedMae}{9.38}
+\newcommand{\githubCopilotCalSpearmanRho}{0.622}
+\newcommand{\sonarqubeCalRawMae}{13.44}
+\newcommand{\sonarqubeCalCiLow}{12.40}
+\newcommand{\sonarqubeCalCiHigh}{14.61}
+\newcommand{\sonarqubeCalMeanBias}{+9.76}
+\newcommand{\sonarqubeCalBiasLabel}{High Optimistic}
+\newcommand{\sonarqubeCalAdjustedMae}{9.66}
+\newcommand{\sonarqubeCalSpearmanRho}{0.333}
+\newcommand{\cgVsClaudeWilcoxonW}{12409.0}
+\newcommand{\cgVsClaudeWilcoxonP}{< 10^{-10}}
+\newcommand{\cgVsClaudeEffectD}{0.580}
+\newcommand{\cgVsGithubCopilotWilcoxonW}{11505.5}
+\newcommand{\cgVsGithubCopilotWilcoxonP}{< 10^{-12}}
+\newcommand{\cgVsGithubCopilotEffectD}{0.676}
+\newcommand{\cgVsSonarqubeWilcoxonW}{9492.5}
+\newcommand{\cgVsSonarqubeWilcoxonP}{< 10^{-15}}
+\newcommand{\cgVsSonarqubeEffectD}{0.555}
+\newcommand{\cgVsGeminiWilcoxonW}{20487.5}
+\newcommand{\cgVsGeminiWilcoxonP}{= 0.599}
+\newcommand{\cgVsGeminiEffectD}{0.108}

@@ -1,0 +1,5 @@
+Dimension,N_Snippets,Cronbach_Alpha,ICC_3_1,Mean_Pairwise_Spearman_Rho,LOO_MAE
+Readability,300,0.857,0.666,0.668,5.14
+Understandability,300,0.816,0.597,0.637,6.64
+Maintainability,300,0.781,0.544,0.559,12.01
+Overall Quality Score,300,0.841,0.639,0.661,6.61

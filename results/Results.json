@@ -11,7 +11,8 @@
             "functional_classification": "Correct",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-495,CWE-375",
-            "reasoning": "Members have unclear names, identical function names, the getArr functions are breaking encapsulation principle"
+            "reasoning": "Members have unclear names, identical function names, the getArr functions are breaking encapsulation principle",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 85,
@@ -86,7 +87,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Members have unclear names, identical function names"
+            "reasoning": "Members have unclear names, identical function names",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 85,
@@ -161,7 +163,8 @@
             "functional_classification": "Correct",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-495,CWE-375",
-            "reasoning": "Members have unclear names, identical function names, the getArr functions are breaking encapsulation principle"
+            "reasoning": "Members have unclear names, identical function names, the getArr functions are breaking encapsulation principle",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 85,
@@ -236,7 +239,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Variables have unclear names"
+            "reasoning": "Variables have unclear names",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 90,
@@ -311,7 +315,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Variables have unclear names"
+            "reasoning": "Variables have unclear names",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 90,
@@ -386,7 +391,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Variables have unclear names"
+            "reasoning": "Variables have unclear names",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 85,
@@ -461,7 +467,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Good structure and variable names, but contains dead code and unused variables."
+            "reasoning": "Good structure and variable names, but contains dead code and unused variables.",
+            "cognitive_complexity": 2
         },
         "Human1": {
             "readability_score": 95,
@@ -536,7 +543,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Good structure and variable names, but contains dead code and unused variables."
+            "reasoning": "Good structure and variable names, but contains dead code and unused variables.",
+            "cognitive_complexity": 2
         },
         "Human1": {
             "readability_score": 95,
@@ -611,7 +619,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Good structure and variable names, but contains dead code and unused variables."
+            "reasoning": "Good structure and variable names, but contains dead code and unused variables.",
+            "cognitive_complexity": 2
         },
         "Human1": {
             "readability_score": 95,
@@ -698,7 +707,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-374",
-            "reasoning": "Logic unclear, returns a1 without processing a2, lacks null checks, and has potential for unintended modification."
+            "reasoning": "Logic unclear, returns a1 without processing a2, lacks null checks, and has potential for unintended modification.",
+            "cognitive_complexity": 1
         },
         "Human1": {
             "readability_score": 85,
@@ -773,7 +783,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Logic unclear, returns a1 without processing a2"
+            "reasoning": "Logic unclear, returns a1 without processing a2",
+            "cognitive_complexity": 1
         },
         "Human1": {
             "readability_score": 85,
@@ -860,7 +871,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Logic unclear, returns a1 without processing a2, lacks null checks."
+            "reasoning": "Logic unclear, returns a1 without processing a2, lacks null checks.",
+            "cognitive_complexity": 1
         },
         "Human1": {
             "readability_score": 85,
@@ -947,7 +959,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Unclear naming, function is purposeless"
+            "reasoning": "Unclear naming, function is purposeless",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 85,
@@ -1022,7 +1035,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Unclear naming, function is purposeless"
+            "reasoning": "Unclear naming, function is purposeless",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 85,
@@ -1097,7 +1111,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Unclear naming, function is purposeless"
+            "reasoning": "Unclear naming, function is purposeless",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 85,
@@ -1172,7 +1187,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Unclear function name, wrong Boolean comparison."
+            "reasoning": "Unclear function name, wrong Boolean comparison.",
+            "cognitive_complexity": 2
         },
         "Human1": {
             "readability_score": 85,
@@ -1247,7 +1263,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Unclear function name, unecessarily verbose."
+            "reasoning": "Unclear function name, unecessarily verbose.",
+            "cognitive_complexity": 2
         },
         "Human1": {
             "readability_score": 85,
@@ -1322,7 +1339,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Unclear function name, unecessarily verbose, no type check."
+            "reasoning": "Unclear function name, unecessarily verbose, no type check.",
+            "cognitive_complexity": 2
         },
         "Human1": {
             "readability_score": 85,
@@ -1397,7 +1415,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Missing message and cause initialization in Exception subclass, @Value generates all-args constructor that doesn't call super(), breaking standard exception behavior."
+            "reasoning": "Missing message and cause initialization in Exception subclass, @Value generates all-args constructor that doesn't call super(), breaking standard exception behavior.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 90,
@@ -1472,7 +1491,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The custom exception class does not override the what() method, resulting in a generic error message."
+            "reasoning": "The custom exception class does not override the what() method, resulting in a generic error message.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 95,
@@ -1547,7 +1567,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The custom exception does not override the __str__ method, which may result in a generic error message."
+            "reasoning": "The custom exception does not override the __str__ method, which may result in a generic error message.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 95,
@@ -1622,7 +1643,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Could be improved, but does not contain any functional or security issues."
+            "reasoning": "Could be improved, but does not contain any functional or security issues.",
+            "cognitive_complexity": 1
         },
         "Human1": {
             "readability_score": 85,
@@ -1697,7 +1719,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct, could be improved for better maintainability."
+            "reasoning": "The code is functionally correct, could be improved for better maintainability.",
+            "cognitive_complexity": 1
         },
         "Human1": {
             "readability_score": 85,
@@ -1773,7 +1796,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code if functionally correct."
+            "reasoning": "The code if functionally correct.",
+            "cognitive_complexity": 1
         },
         "Human1": {
             "readability_score": 85,
@@ -1849,7 +1873,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 85,
@@ -1924,7 +1949,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code contains a functional bug where the nested class's private static method is not accessible from the enclosing class in C++, preventing compilation."
+            "reasoning": "The code contains a functional bug where the nested class's private static method is not accessible from the enclosing class in C++, preventing compilation.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 85,
@@ -1999,7 +2025,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 85,
@@ -2086,7 +2113,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code contains a compilation error, because of the parameter\"energy\"."
+            "reasoning": "The code contains a compilation error, because of the parameter\"energy\".",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 70,
@@ -2161,7 +2189,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code contains a compilation error, because of the parameter\"energy\"."
+            "reasoning": "The code contains a compilation error, because of the parameter\"energy\".",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 70,
@@ -2236,7 +2265,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The energy parameter is overridden by the call to self.energy(1), which has no effect on the caller."
+            "reasoning": "The energy parameter is overridden by the call to self.energy(1), which has no effect on the caller.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 70,
@@ -2311,7 +2341,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 1
         },
         "Human1": {
             "readability_score": 90,
@@ -2386,7 +2417,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 1
         },
         "Human1": {
             "readability_score": 90,
@@ -2461,7 +2493,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 1
         },
         "Human1": {
             "readability_score": 90,
@@ -2536,7 +2569,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 2
         },
         "Human1": {
             "readability_score": 90,
@@ -2611,7 +2645,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 2
         },
         "Human1": {
             "readability_score": 90,
@@ -2686,7 +2721,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 2
         },
         "Human1": {
             "readability_score": 90,
@@ -2761,7 +2797,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 80,
@@ -2836,7 +2873,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The reserve funtion doesn't resize the vector, so the loop would not execute."
+            "reasoning": "The reserve funtion doesn't resize the vector, so the loop would not execute.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 80,
@@ -2911,7 +2949,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 80,
@@ -2986,7 +3025,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-595, CWE-597",
-            "reasoning": "The string comparison uses incorrect comparison operator, resulting in reference comparison rather than content comparison."
+            "reasoning": "The string comparison uses incorrect comparison operator, resulting in reference comparison rather than content comparison.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 85,
@@ -3061,7 +3101,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-595, CWE-597",
-            "reasoning": "The string comparison uses incorrect comparison operator, resulting in reference comparison rather than content comparison."
+            "reasoning": "The string comparison uses incorrect comparison operator, resulting in reference comparison rather than content comparison.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 85,
@@ -3136,7 +3177,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-595, CWE-597",
-            "reasoning": "The string comparison uses incorrect comparison operator, resulting in reference comparison rather than content comparison."
+            "reasoning": "The string comparison uses incorrect comparison operator, resulting in reference comparison rather than content comparison.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 85,
@@ -3211,7 +3253,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 85,
@@ -3286,7 +3329,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 85,
@@ -3361,7 +3405,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 85,
@@ -3436,7 +3481,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 100,
@@ -3511,7 +3557,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 100,
@@ -3586,7 +3633,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 100,
@@ -3661,7 +3709,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 75,
@@ -3736,7 +3785,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Won't compile because the data member 'b' and member function 'b()' cannot share the same name within the class scope."
+            "reasoning": "Won't compile because the data member 'b' and member function 'b()' cannot share the same name within the class scope.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 75,
@@ -3811,7 +3861,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 75,
@@ -3886,7 +3937,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Dead code paths and redundant operations."
+            "reasoning": "Dead code paths and redundant operations.",
+            "cognitive_complexity": 2
         },
         "Human1": {
             "readability_score": 50,
@@ -3961,7 +4013,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Dead code paths and redundant operations."
+            "reasoning": "Dead code paths and redundant operations.",
+            "cognitive_complexity": 2
         },
         "Human1": {
             "readability_score": 50,
@@ -4036,7 +4089,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Dead code paths and redundant operations."
+            "reasoning": "Dead code paths and redundant operations.",
+            "cognitive_complexity": 2
         },
         "Human1": {
             "readability_score": 50,
@@ -4111,7 +4165,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-404",
-            "reasoning": "No checks for null pointer reference, potential for resource leak."
+            "reasoning": "No checks for null pointer reference, potential for resource leak.",
+            "cognitive_complexity": 1
         },
         "Human1": {
             "readability_score": 95,
@@ -4186,7 +4241,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-404",
-            "reasoning": "Won't compile due to incorrect interface decleration order, no checks for null pointer reference, potential for resource leak."
+            "reasoning": "Won't compile due to incorrect interface decleration order, no checks for null pointer reference, potential for resource leak.",
+            "cognitive_complexity": 2
         },
         "Human1": {
             "readability_score": 95,
@@ -4261,7 +4317,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-404",
-            "reasoning": "No checks for null pointer reference, potential for resource leak."
+            "reasoning": "No checks for null pointer reference, potential for resource leak.",
+            "cognitive_complexity": 1
         },
         "Human1": {
             "readability_score": 95,
@@ -4336,7 +4393,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Dead code path, resulting in redundant function."
+            "reasoning": "Dead code path, resulting in redundant function.",
+            "cognitive_complexity": 1
         },
         "Human1": {
             "readability_score": 90,
@@ -4411,7 +4469,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Dead code path, resulting in redundant function."
+            "reasoning": "Dead code path, resulting in redundant function.",
+            "cognitive_complexity": 1
         },
         "Human1": {
             "readability_score": 90,
@@ -4486,7 +4545,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Dead code path, resulting in redundant function."
+            "reasoning": "Dead code path, resulting in redundant function.",
+            "cognitive_complexity": 1
         },
         "Human1": {
             "readability_score": 90,
@@ -4561,7 +4621,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-476",
-            "reasoning": "No checking for NullPointerExeption."
+            "reasoning": "No checking for NullPointerExeption.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 90,
@@ -4636,7 +4697,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 90,
@@ -4711,7 +4773,8 @@
             "functional_classification": "Correct",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-476",
-            "reasoning": "No checking for NullPointerExeption."
+            "reasoning": "No checking for NullPointerExeption.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 90,
@@ -4786,7 +4849,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-476",
-            "reasoning": "Calling the \"length\" function on a null object reference will throw a NullPointerException."
+            "reasoning": "Calling the \"length\" function on a null object reference will throw a NullPointerException.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 85,
@@ -4861,7 +4925,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-476",
-            "reasoning": "Calling the \"length\" function on a null object reference will throw a NullPointerException."
+            "reasoning": "Calling the \"length\" function on a null object reference will throw a NullPointerException.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 85,
@@ -4936,7 +5001,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Calling the \"length\" function on a null object reference will cause a TypeError."
+            "reasoning": "Calling the \"length\" function on a null object reference will cause a TypeError.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 85,
@@ -5011,7 +5077,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-190",
-            "reasoning": "The code might overflow when incrementing a random short value without bounds checking, leading to potential integer overflow."
+            "reasoning": "The code might overflow when incrementing a random short value without bounds checking, leading to potential integer overflow.",
+            "cognitive_complexity": 3
         },
         "Human1": {
             "readability_score": 85,
@@ -5086,7 +5153,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-190",
-            "reasoning": "The code might overflow when incrementing a random short value without bounds checking, leading to potential integer overflowa, also - the lines of \"IO::STATIC_FINAL_TRUE\" won't compile."
+            "reasoning": "The code might overflow when incrementing a random short value without bounds checking, leading to potential integer overflowa, also - the lines of \"IO::STATIC_FINAL_TRUE\" won't compile.",
+            "cognitive_complexity": 3
         },
         "Human1": {
             "readability_score": 75,
@@ -5161,7 +5229,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe, but depends on undefined IO and STATIC_FINAL_TRUE. The signed 16-bit wraparound is implemented correctly."
+            "reasoning": "The code is functionally correct and safe, but depends on undefined IO and STATIC_FINAL_TRUE. The signed 16-bit wraparound is implemented correctly.",
+            "cognitive_complexity": 3
         },
         "Human1": {
             "readability_score": 85,
@@ -5236,7 +5305,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-89",
-            "reasoning": "SQL injection vulnerability and incorrect SQL syntax."
+            "reasoning": "SQL injection vulnerability and incorrect SQL syntax.",
+            "cognitive_complexity": 16
         },
         "Human1": {
             "readability_score": 90,
@@ -5311,7 +5381,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-89",
-            "reasoning": "SQL injection vulnerability and incorrect SQL syntax."
+            "reasoning": "SQL injection vulnerability and incorrect SQL syntax.",
+            "cognitive_complexity": 32
         },
         "Human1": {
             "readability_score": 90,
@@ -5386,7 +5457,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-89",
-            "reasoning": "SQL injection vulnerability and incorrect SQL syntax."
+            "reasoning": "SQL injection vulnerability and incorrect SQL syntax.",
+            "cognitive_complexity": 16
         },
         "Human1": {
             "readability_score": 90,
@@ -5461,7 +5533,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-129",
-            "reasoning": "Unchecked ArrayIndexOutOfBoundsException possibility."
+            "reasoning": "Unchecked ArrayIndexOutOfBoundsException possibility.",
+            "cognitive_complexity": 5
         },
         "Human1": {
             "readability_score": 60,
@@ -5536,7 +5609,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-129",
-            "reasoning": "Unchecked ArrayIndexOutOfBoundsException possibility."
+            "reasoning": "Unchecked ArrayIndexOutOfBoundsException possibility.",
+            "cognitive_complexity": 7
         },
         "Human1": {
             "readability_score": 60,
@@ -5611,7 +5685,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-129",
-            "reasoning": "Unchecked index for accessing array (out of bounds possibility)."
+            "reasoning": "Unchecked index for accessing array (out of bounds possibility).",
+            "cognitive_complexity": 5
         },
         "Human1": {
             "readability_score": 60,
@@ -5686,7 +5761,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Functional (even if has dead code)."
+            "reasoning": "Functional (even if has dead code).",
+            "cognitive_complexity": 4
         },
         "Human1": {
             "readability_score": 85,
@@ -5761,7 +5837,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Functional (even if has dead code)."
+            "reasoning": "Functional (even if has dead code).",
+            "cognitive_complexity": 4
         },
         "Human1": {
             "readability_score": 75,
@@ -5836,7 +5913,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Functional (even if has dead code)."
+            "reasoning": "Functional (even if has dead code).",
+            "cognitive_complexity": 3
         },
         "Human1": {
             "readability_score": 80,
@@ -5911,7 +5989,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-94,CWE-470",
-            "reasoning": "Used environment variable value directly in Class.forName() and newInstance(), without validation."
+            "reasoning": "Used environment variable value directly in Class.forName() and newInstance(), without validation.",
+            "cognitive_complexity": 2
         },
         "Human1": {
             "readability_score": 85,
@@ -5986,7 +6065,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-94,CWE-470",
-            "reasoning": "Used environment variable value directly without validation."
+            "reasoning": "Used environment variable value directly without validation.",
+            "cognitive_complexity": 6
         },
         "Human1": {
             "readability_score": 85,
@@ -6073,7 +6153,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-94,CWE-470",
-            "reasoning": "Used environment variable value directly without validation."
+            "reasoning": "Used environment variable value directly without validation.",
+            "cognitive_complexity": 2
         },
         "Human1": {
             "readability_score": 85,
@@ -6148,7 +6229,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code isn't initalizing the variables to the correct values."
+            "reasoning": "The code isn't initalizing the variables to the correct values.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 95,
@@ -6223,7 +6305,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code isn't initalizing the variables to the correct values."
+            "reasoning": "The code isn't initalizing the variables to the correct values.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 95,
@@ -6298,7 +6381,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code isn't initalizing the variables to the correct values."
+            "reasoning": "The code isn't initalizing the variables to the correct values.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 95,
@@ -6373,7 +6457,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-20,CWE-22, CWE-183",
-            "reasoning": "The code isn't returning the file content, nor validating the input."
+            "reasoning": "The code isn't returning the file content, nor validating the input.",
+            "cognitive_complexity": 2
         },
         "Human1": {
             "readability_score": 95,
@@ -6448,7 +6533,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-20,CWE-22, CWE-183",
-            "reasoning": "The code isn't returning the file content, nor validating the input."
+            "reasoning": "The code isn't returning the file content, nor validating the input.",
+            "cognitive_complexity": 3
         },
         "Human1": {
             "readability_score": 95,
@@ -6523,7 +6609,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-20,CWE-22, CWE-183",
-            "reasoning": "The code isn't returning the file content, nor validating the input."
+            "reasoning": "The code isn't returning the file content, nor validating the input.",
+            "cognitive_complexity": 2
         },
         "Human1": {
             "readability_score": 95,
@@ -6598,7 +6685,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Extra curly bracket prevent compilation, math operations done after the return are unreachable."
+            "reasoning": "Extra curly bracket prevent compilation, math operations done after the return are unreachable.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 30,
@@ -6673,7 +6761,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Math operations done after the return are unreachable."
+            "reasoning": "Math operations done after the return are unreachable.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 30,
@@ -6748,7 +6837,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Math operations done after the return are unreachable."
+            "reasoning": "Math operations done after the return are unreachable.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 30,
@@ -6823,7 +6913,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-476",
-            "reasoning": "Dereference of null pointer."
+            "reasoning": "Dereference of null pointer.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 80,
@@ -6898,7 +6989,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-476",
-            "reasoning": "Dereference of null pointer."
+            "reasoning": "Dereference of null pointer.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 80,
@@ -6973,7 +7065,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Dereference of null pointer (AttributeError)."
+            "reasoning": "Dereference of null pointer (AttributeError).",
+            "cognitive_complexity": 1
         },
         "Human1": {
             "readability_score": 80,
@@ -7048,7 +7141,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 2
         },
         "Human1": {
             "readability_score": 80,
@@ -7123,7 +7217,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 2
         },
         "Human1": {
             "readability_score": 80,
@@ -7198,7 +7293,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 3
         },
         "Human1": {
             "readability_score": 80,
@@ -7273,7 +7369,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-119,CWE-120,CWE-787",
-            "reasoning": "Possible unbounded input overwrite stack memory"
+            "reasoning": "Possible unbounded input overwrite stack memory",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 90,
@@ -7348,7 +7445,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-119,CWE-120,CWE-787",
-            "reasoning": "Possible unbounded input overwrite stack memory"
+            "reasoning": "Possible unbounded input overwrite stack memory",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 90,
@@ -7423,7 +7521,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-119,CWE-120,CWE-787",
-            "reasoning": "Possible unbounded input overwrite stack memory"
+            "reasoning": "Possible unbounded input overwrite stack memory",
+            "cognitive_complexity": 1
         },
         "Human1": {
             "readability_score": 90,
@@ -7498,7 +7597,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 90,
@@ -7573,7 +7673,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 1
         },
         "Human1": {
             "readability_score": 90,
@@ -7648,7 +7749,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Might truncate UTF-8 sequences."
+            "reasoning": "Might truncate UTF-8 sequences.",
+            "cognitive_complexity": 1
         },
         "Human1": {
             "readability_score": 90,
@@ -7735,7 +7837,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-20,CWE-190,CWE-400, CWE-789",
-            "reasoning": "No input validation."
+            "reasoning": "No input validation.",
+            "cognitive_complexity": 3
         },
         "Human1": {
             "readability_score": 80,
@@ -7810,7 +7913,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-20,CWE-190,CWE-400, CWE-789",
-            "reasoning": "No input validation."
+            "reasoning": "No input validation.",
+            "cognitive_complexity": 3
         },
         "Human1": {
             "readability_score": 80,
@@ -7885,7 +7989,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-20,CWE-400, CWE-789",
-            "reasoning": "No input validation."
+            "reasoning": "No input validation.",
+            "cognitive_complexity": 4
         },
         "Human1": {
             "readability_score": 80,
@@ -7972,7 +8077,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-20,CWE-190,CWE-824,CWE-703",
-            "reasoning": "No input validation."
+            "reasoning": "No input validation.",
+            "cognitive_complexity": 4
         },
         "Human1": {
             "readability_score": 80,
@@ -8047,7 +8153,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-20,CWE-190,CWE-824,CWE-703",
-            "reasoning": "No input validation."
+            "reasoning": "No input validation.",
+            "cognitive_complexity": 4
         },
         "Human1": {
             "readability_score": 80,
@@ -8122,7 +8229,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-20,CWE-190,CWE-824,CWE-703",
-            "reasoning": "No input validation."
+            "reasoning": "No input validation.",
+            "cognitive_complexity": 5
         },
         "Human1": {
             "readability_score": 80,
@@ -8197,7 +8305,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-89",
-            "reasoning": "SQL injection could be used."
+            "reasoning": "SQL injection could be used.",
+            "cognitive_complexity": 4
         },
         "Human1": {
             "readability_score": 80,
@@ -8272,7 +8381,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-89",
-            "reasoning": "SQL injection could be used."
+            "reasoning": "SQL injection could be used.",
+            "cognitive_complexity": 5
         },
         "Human1": {
             "readability_score": 80,
@@ -8347,7 +8457,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-89",
-            "reasoning": "SQL injection could be used."
+            "reasoning": "SQL injection could be used.",
+            "cognitive_complexity": 5
         },
         "Human1": {
             "readability_score": 80,
@@ -8422,7 +8533,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-200,CWE-798",
-            "reasoning": "Exposing credentials, and might cause out-of-range access issues."
+            "reasoning": "Exposing credentials, and might cause out-of-range access issues.",
+            "cognitive_complexity": 4
         },
         "Human1": {
             "readability_score": 80,
@@ -8497,7 +8609,8 @@
             "functional_classification": "Correct",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-200,CWE-798",
-            "reasoning": "Exposing credentials."
+            "reasoning": "Exposing credentials.",
+            "cognitive_complexity": 5
         },
         "Human1": {
             "readability_score": 80,
@@ -8572,7 +8685,8 @@
             "functional_classification": "Correct",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-200,CWE-798",
-            "reasoning": "Exposing credentials."
+            "reasoning": "Exposing credentials.",
+            "cognitive_complexity": 5
         },
         "Human1": {
             "readability_score": 80,
@@ -8647,7 +8761,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-401,CWE-476,CWE-835",
-            "reasoning": "Leaks memory by never deleting the allocated array, also - might be null pointer reference."
+            "reasoning": "Leaks memory by never deleting the allocated array, also - might be null pointer reference.",
+            "cognitive_complexity": 2
         },
         "Human1": {
             "readability_score": 75,
@@ -8722,7 +8837,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-401,CWE-476,CWE-835",
-            "reasoning": "Leaks memory by never deleting the allocated array, also - might be null pointer reference."
+            "reasoning": "Leaks memory by never deleting the allocated array, also - might be null pointer reference.",
+            "cognitive_complexity": 2
         },
         "Human1": {
             "readability_score": 75,
@@ -8797,7 +8913,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-401,CWE-476",
-            "reasoning": "Leaks memory by never deleting the allocated array, also - might be null pointer reference."
+            "reasoning": "Leaks memory by never deleting the allocated array, also - might be null pointer reference.",
+            "cognitive_complexity": 4
         },
         "Human1": {
             "readability_score": 75,
@@ -8872,7 +8989,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 3
         },
         "Human1": {
             "readability_score": 75,
@@ -8947,7 +9065,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 3
         },
         "Human1": {
             "readability_score": 75,
@@ -9022,7 +9141,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 6
         },
         "Human1": {
             "readability_score": 75,
@@ -9097,7 +9217,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-787,CWE-119,CWE-129",
-            "reasoning": "Writing to buffer out of bounds."
+            "reasoning": "Writing to buffer out of bounds.",
+            "cognitive_complexity": 1
         },
         "Human1": {
             "readability_score": 80,
@@ -9172,7 +9293,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-787,CWE-119,CWE-129",
-            "reasoning": "Writing to buffer out of bounds."
+            "reasoning": "Writing to buffer out of bounds.",
+            "cognitive_complexity": 1
         },
         "Human1": {
             "readability_score": 80,
@@ -9247,7 +9369,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-787,CWE-119",
-            "reasoning": "Writing to buffer out of bounds."
+            "reasoning": "Writing to buffer out of bounds.",
+            "cognitive_complexity": 2
         },
         "Human1": {
             "readability_score": 80,
@@ -9322,7 +9445,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 1
         },
         "Human1": {
             "readability_score": 80,
@@ -9397,7 +9521,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 1
         },
         "Human1": {
             "readability_score": 80,
@@ -9472,7 +9597,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 2
         },
         "Human1": {
             "readability_score": 80,
@@ -9547,7 +9673,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-119, CWE-120, CWE-121, CWE-476, CWE-787",
-            "reasoning": "Writing to buffer out of bounds."
+            "reasoning": "Writing to buffer out of bounds.",
+            "cognitive_complexity": 1
         },
         "Human1": {
             "readability_score": 70,
@@ -9622,7 +9749,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-119, CWE-120, CWE-121, CWE-476, CWE-787",
-            "reasoning": "Writing to buffer out of bounds."
+            "reasoning": "Writing to buffer out of bounds.",
+            "cognitive_complexity": 1
         },
         "Human1": {
             "readability_score": 70,
@@ -9697,7 +9825,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-119, CWE-120, CWE-121, CWE-476, CWE-787",
-            "reasoning": "Writing to buffer out of bounds."
+            "reasoning": "Writing to buffer out of bounds.",
+            "cognitive_complexity": 2
         },
         "Human1": {
             "readability_score": 70,
@@ -9772,7 +9901,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 3
         },
         "Human1": {
             "readability_score": 85,
@@ -9847,7 +9977,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 3
         },
         "Human1": {
             "readability_score": 85,
@@ -9922,7 +10053,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 4
         },
         "Human1": {
             "readability_score": 85,
@@ -9997,7 +10129,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-416, CWE-672",
-            "reasoning": "The code accesses memory after it has been freed."
+            "reasoning": "The code accesses memory after it has been freed.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 70,
@@ -10072,7 +10205,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-416, CWE-476,CWE-672",
-            "reasoning": "The code accesses memory after it has been freed."
+            "reasoning": "The code accesses memory after it has been freed.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 70,
@@ -10147,7 +10281,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-416, CWE-672",
-            "reasoning": "The code accesses memory after it has been freed."
+            "reasoning": "The code accesses memory after it has been freed.",
+            "cognitive_complexity": 1
         },
         "Human1": {
             "readability_score": 70,
@@ -10222,7 +10357,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 1
         },
         "Human1": {
             "readability_score": 80,
@@ -10297,7 +10433,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code prints the NULL value as part of the string."
+            "reasoning": "The code prints the NULL value as part of the string.",
+            "cognitive_complexity": 1
         },
         "Human1": {
             "readability_score": 80,
@@ -10372,7 +10509,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 4
         },
         "Human1": {
             "readability_score": 75,
@@ -10447,7 +10585,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-415, CWE-672",
-            "reasoning": "The code allocates and deletes data inside Function1, then Function2 deletes the same pointer again, causing a double-free vulnerability."
+            "reasoning": "The code allocates and deletes data inside Function1, then Function2 deletes the same pointer again, causing a double-free vulnerability.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 70,
@@ -10522,7 +10661,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-415, CWE-672",
-            "reasoning": "The code allocates and deletes data inside Function1, then Function2 deletes the same pointer again, causing a double-free vulnerability."
+            "reasoning": "The code allocates and deletes data inside Function1, then Function2 deletes the same pointer again, causing a double-free vulnerability.",
+            "cognitive_complexity": 1
         },
         "Human1": {
             "readability_score": 70,
@@ -10597,7 +10737,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-415, CWE-672",
-            "reasoning": "The code allocates and deletes data inside Function1, then Function2 deletes the same pointer again, causing a double-free vulnerability."
+            "reasoning": "The code allocates and deletes data inside Function1, then Function2 deletes the same pointer again, causing a double-free vulnerability.",
+            "cognitive_complexity": 1
         },
         "Human1": {
             "readability_score": 70,
@@ -10672,7 +10813,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 1
         },
         "Human1": {
             "readability_score": 70,
@@ -10747,7 +10889,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 2
         },
         "Human1": {
             "readability_score": 70,
@@ -10822,7 +10965,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 4
         },
         "Human1": {
             "readability_score": 70,
@@ -10897,7 +11041,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-190",
-            "reasoning": "Integer wraparound."
+            "reasoning": "Integer wraparound.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 70,
@@ -10972,7 +11117,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-190",
-            "reasoning": "Integer wraparound."
+            "reasoning": "Integer wraparound.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 70,
@@ -11047,7 +11193,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-190",
-            "reasoning": "Integer wraparound."
+            "reasoning": "Integer wraparound.",
+            "cognitive_complexity": 2
         },
         "Human1": {
             "readability_score": 70,
@@ -11122,7 +11269,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 1
         },
         "Human1": {
             "readability_score": 75,
@@ -11197,7 +11345,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 1
         },
         "Human1": {
             "readability_score": 75,
@@ -11272,7 +11421,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 2
         },
         "Human1": {
             "readability_score": 75,
@@ -11347,7 +11497,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-190",
-            "reasoning": "Integer wraparound."
+            "reasoning": "Integer wraparound.",
+            "cognitive_complexity": 3
         },
         "Human1": {
             "readability_score": 70,
@@ -11422,7 +11573,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-190",
-            "reasoning": "Integer wraparound."
+            "reasoning": "Integer wraparound.",
+            "cognitive_complexity": 3
         },
         "Human1": {
             "readability_score": 70,
@@ -11497,7 +11649,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-190",
-            "reasoning": "Integer wraparound."
+            "reasoning": "Integer wraparound.",
+            "cognitive_complexity": 3
         },
         "Human1": {
             "readability_score": 70,
@@ -11572,7 +11725,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 3
         },
         "Human1": {
             "readability_score": 70,
@@ -11647,7 +11801,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 3
         },
         "Human1": {
             "readability_score": 70,
@@ -11722,7 +11877,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 3
         },
         "Human1": {
             "readability_score": 70,
@@ -11797,7 +11953,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-369",
-            "reasoning": "Dividing by zero."
+            "reasoning": "Dividing by zero.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 95,
@@ -11872,7 +12029,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-369",
-            "reasoning": "Dividing by zero."
+            "reasoning": "Dividing by zero.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 95,
@@ -11947,7 +12105,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-369",
-            "reasoning": "Dividing by zero."
+            "reasoning": "Dividing by zero.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 95,
@@ -12022,7 +12181,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 3
         },
         "Human1": {
             "readability_score": 80,
@@ -12105,7 +12265,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 3
         },
         "Human1": {
             "readability_score": 80,
@@ -12180,7 +12341,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 3
         },
         "Human1": {
             "readability_score": 80,
@@ -12255,7 +12417,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-22, CWE-73",
-            "reasoning": "No input path validation."
+            "reasoning": "No input path validation.",
+            "cognitive_complexity": 1
         },
         "Human1": {
             "readability_score": 100,
@@ -12330,7 +12493,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-22, CWE-73",
-            "reasoning": "No input path validation."
+            "reasoning": "No input path validation.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 90,
@@ -12405,7 +12569,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-22, CWE-73",
-            "reasoning": "No input path validation."
+            "reasoning": "No input path validation.",
+            "cognitive_complexity": 1
         },
         "Human1": {
             "readability_score": 100,
@@ -12480,7 +12645,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 3
         },
         "Human1": {
             "readability_score": 95,
@@ -12567,7 +12733,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-22, CWE-367",
-            "reasoning": "The code introduces both path traversal (CWE-22) and Time-of-Check to Time-of-Use (TOCTOU) race conditions (CWE-367)."
+            "reasoning": "The code introduces both path traversal (CWE-22) and Time-of-Check to Time-of-Use (TOCTOU) race conditions (CWE-367).",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 95,
@@ -12642,7 +12809,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-22, CWE-367",
-            "reasoning": "The code introduces both path traversal (CWE-22) and Time-of-Check to Time-of-Use (TOCTOU) race conditions (CWE-367)."
+            "reasoning": "The code introduces both path traversal (CWE-22) and Time-of-Check to Time-of-Use (TOCTOU) race conditions (CWE-367).",
+            "cognitive_complexity": 3
         },
         "Human1": {
             "readability_score": 95,
@@ -12717,7 +12885,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 95,
@@ -12792,7 +12961,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Data is only assigned locally."
+            "reasoning": "Data is only assigned locally.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 95,
@@ -12867,7 +13037,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The data is only assigned locally."
+            "reasoning": "The data is only assigned locally.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 95,
@@ -12942,7 +13113,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 95,
@@ -13025,7 +13197,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The data is only assigned locally."
+            "reasoning": "The data is only assigned locally.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 95,
@@ -13100,7 +13273,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The data is only assigned locally."
+            "reasoning": "The data is only assigned locally.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 95,
@@ -13175,7 +13349,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-476",
-            "reasoning": "NullPointerDereference."
+            "reasoning": "NullPointerDereference.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 90,
@@ -13258,7 +13433,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-119, CWE-129",
-            "reasoning": "Index might be out of bounds."
+            "reasoning": "Index might be out of bounds.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 90,
@@ -13333,7 +13509,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-119, CWE-129",
-            "reasoning": "Index might be out of bounds."
+            "reasoning": "Index might be out of bounds.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 90,
@@ -13408,7 +13585,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 1
         },
         "Human1": {
             "readability_score": 90,
@@ -13483,7 +13661,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-119, CWE-125",
-            "reasoning": "Might access buffer out of bounds."
+            "reasoning": "Might access buffer out of bounds.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 90,
@@ -13558,7 +13737,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-119, CWE-125",
-            "reasoning": "Might access buffer out of bounds."
+            "reasoning": "Might access buffer out of bounds.",
+            "cognitive_complexity": 1
         },
         "Human1": {
             "readability_score": 90,
@@ -13633,7 +13813,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 100,
@@ -13716,7 +13897,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 100,
@@ -13791,7 +13973,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 100,
@@ -13866,7 +14049,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 100,
@@ -13941,7 +14125,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 100,
@@ -14016,7 +14201,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 100,
@@ -14091,7 +14277,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 2
         },
         "Human1": {
             "readability_score": 100,
@@ -14166,7 +14353,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 2
         },
         "Human1": {
             "readability_score": 100,
@@ -14241,7 +14429,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 100,
@@ -14316,7 +14505,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 100,
@@ -14391,7 +14581,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 100,
@@ -14466,7 +14657,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 100,
@@ -14541,7 +14733,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 1
         },
         "Human1": {
             "readability_score": 95,
@@ -14616,7 +14809,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 1
         },
         "Human1": {
             "readability_score": 95,
@@ -14691,7 +14885,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 95,
@@ -14766,7 +14961,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 8
         },
         "Human1": {
             "readability_score": 70,
@@ -14841,7 +15037,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 8
         },
         "Human1": {
             "readability_score": 70,
@@ -14916,7 +15113,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is won't compile due to a missing return statement."
+            "reasoning": "The code is won't compile due to a missing return statement.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 70,
@@ -14991,7 +15189,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Some input combinations are not handled correctly."
+            "reasoning": "Some input combinations are not handled correctly.",
+            "cognitive_complexity": 7
         },
         "Human1": {
             "readability_score": 60,
@@ -15066,7 +15265,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Some input combinations are not handled correctly."
+            "reasoning": "Some input combinations are not handled correctly.",
+            "cognitive_complexity": 7
         },
         "Human1": {
             "readability_score": 60,
@@ -15141,7 +15341,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Won't compile due to missing return paths."
+            "reasoning": "Won't compile due to missing return paths.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 60,
@@ -15216,7 +15417,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 5
         },
         "Human1": {
             "readability_score": 90,
@@ -15291,7 +15493,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 5
         },
         "Human1": {
             "readability_score": 90,
@@ -15366,7 +15569,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 90,
@@ -15441,7 +15645,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 2
         },
         "Human1": {
             "readability_score": 85,
@@ -15516,7 +15721,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-704",
-            "reasoning": "Incorrect type conversion during runtime."
+            "reasoning": "Incorrect type conversion during runtime.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 85,
@@ -15591,7 +15797,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 85,
@@ -15666,7 +15873,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Incorrect for negative numbers."
+            "reasoning": "Incorrect for negative numbers.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 80,
@@ -15741,7 +15949,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Incorrect for negative numbers."
+            "reasoning": "Incorrect for negative numbers.",
+            "cognitive_complexity": 3
         },
         "Human1": {
             "readability_score": 80,
@@ -15816,7 +16025,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Incorrect for negative numbers."
+            "reasoning": "Incorrect for negative numbers.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 85,
@@ -15891,7 +16101,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Incorrect for negative numbers."
+            "reasoning": "Incorrect for negative numbers.",
+            "cognitive_complexity": 6
         },
         "Human1": {
             "readability_score": 90,
@@ -15966,7 +16177,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Incorrect for negative numbers."
+            "reasoning": "Incorrect for negative numbers.",
+            "cognitive_complexity": 6
         },
         "Human1": {
             "readability_score": 85,
@@ -16041,7 +16253,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Incorrect for negative numbers."
+            "reasoning": "Incorrect for negative numbers.",
+            "cognitive_complexity": 6
         },
         "Human1": {
             "readability_score": 85,
@@ -16116,7 +16329,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Incorrect for negative numbers."
+            "reasoning": "Incorrect for negative numbers.",
+            "cognitive_complexity": 2
         },
         "Human1": {
             "readability_score": 90,
@@ -16191,7 +16405,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Incorrect for negative numbers."
+            "reasoning": "Incorrect for negative numbers.",
+            "cognitive_complexity": 7
         },
         "Human1": {
             "readability_score": 90,
@@ -16266,7 +16481,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Incorrect for negative numbers."
+            "reasoning": "Incorrect for negative numbers.",
+            "cognitive_complexity": 2
         },
         "Human1": {
             "readability_score": 90,
@@ -16341,7 +16557,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Incorrect for numbers that contain only the same digit."
+            "reasoning": "Incorrect for numbers that contain only the same digit.",
+            "cognitive_complexity": 2
         },
         "Human1": {
             "readability_score": 90,
@@ -16416,7 +16633,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Incorrect for numbers that contain only the same digit."
+            "reasoning": "Incorrect for numbers that contain only the same digit.",
+            "cognitive_complexity": 5
         },
         "Human1": {
             "readability_score": 90,
@@ -16491,7 +16709,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Incorrect for numbers that contain only the same digit."
+            "reasoning": "Incorrect for numbers that contain only the same digit.",
+            "cognitive_complexity": 2
         },
         "Human1": {
             "readability_score": 90,
@@ -16566,7 +16785,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Incorrect for numbers that contain only the same digit."
+            "reasoning": "Incorrect for numbers that contain only the same digit.",
+            "cognitive_complexity": 3
         },
         "Human1": {
             "readability_score": 85,
@@ -16641,7 +16861,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Incorrect for numbers that contain only the same digit."
+            "reasoning": "Incorrect for numbers that contain only the same digit.",
+            "cognitive_complexity": 8
         },
         "Human1": {
             "readability_score": 85,
@@ -16716,7 +16937,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Incorrect for numbers that contain only the same digit."
+            "reasoning": "Incorrect for numbers that contain only the same digit.",
+            "cognitive_complexity": 3
         },
         "Human1": {
             "readability_score": 85,
@@ -16791,7 +17013,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Sorting the digits before checking the arithmetic series is incorrect."
+            "reasoning": "Sorting the digits before checking the arithmetic series is incorrect.",
+            "cognitive_complexity": 4
         },
         "Human1": {
             "readability_score": 80,
@@ -16866,7 +17089,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Sorting the digits before checking the arithmetic series is incorrect."
+            "reasoning": "Sorting the digits before checking the arithmetic series is incorrect.",
+            "cognitive_complexity": 5
         },
         "Human1": {
             "readability_score": 80,
@@ -16941,7 +17165,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Sorting the digits before checking the arithmetic series is incorrect."
+            "reasoning": "Sorting the digits before checking the arithmetic series is incorrect.",
+            "cognitive_complexity": 4
         },
         "Human1": {
             "readability_score": 80,
@@ -17016,7 +17241,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Not handling the number 100 correctly."
+            "reasoning": "Not handling the number 100 correctly.",
+            "cognitive_complexity": 4
         },
         "Human1": {
             "readability_score": 75,
@@ -17091,7 +17317,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Not handling the number 100 correctly."
+            "reasoning": "Not handling the number 100 correctly.",
+            "cognitive_complexity": 4
         },
         "Human1": {
             "readability_score": 75,
@@ -17166,7 +17393,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Not handling the number 100 correctly."
+            "reasoning": "Not handling the number 100 correctly.",
+            "cognitive_complexity": 4
         },
         "Human1": {
             "readability_score": 75,
@@ -17241,7 +17469,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Incorrect comparison operators."
+            "reasoning": "Incorrect comparison operators.",
+            "cognitive_complexity": 4
         },
         "Human1": {
             "readability_score": 70,
@@ -17316,7 +17545,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Incorrect comparison operators."
+            "reasoning": "Incorrect comparison operators.",
+            "cognitive_complexity": 4
         },
         "Human1": {
             "readability_score": 70,
@@ -17391,7 +17621,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Incorrect comparison operators."
+            "reasoning": "Incorrect comparison operators.",
+            "cognitive_complexity": 4
         },
         "Human1": {
             "readability_score": 70,
@@ -17466,7 +17697,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 4
         },
         "Human1": {
             "readability_score": 95,
@@ -17541,7 +17773,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 4
         },
         "Human1": {
             "readability_score": 95,
@@ -17616,7 +17849,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "No input validation."
+            "reasoning": "No input validation.",
+            "cognitive_complexity": 4
         },
         "Human1": {
             "readability_score": 95,
@@ -17691,7 +17925,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Incorrect for negative numbers."
+            "reasoning": "Incorrect for negative numbers.",
+            "cognitive_complexity": 3
         },
         "Human1": {
             "readability_score": 90,
@@ -17766,7 +18001,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Incorrect for negative numbers."
+            "reasoning": "Incorrect for negative numbers.",
+            "cognitive_complexity": 3
         },
         "Human1": {
             "readability_score": 90,
@@ -17841,7 +18077,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Incorrect for negative numbers."
+            "reasoning": "Incorrect for negative numbers.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 90,
@@ -17916,7 +18153,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Incorrect for negative numbers."
+            "reasoning": "Incorrect for negative numbers.",
+            "cognitive_complexity": 5
         },
         "Human1": {
             "readability_score": 95,
@@ -17991,7 +18229,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Incorrect for negative numbers."
+            "reasoning": "Incorrect for negative numbers.",
+            "cognitive_complexity": 5
         },
         "Human1": {
             "readability_score": 95,
@@ -18066,7 +18305,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Incorrect for negative numbers."
+            "reasoning": "Incorrect for negative numbers.",
+            "cognitive_complexity": 5
         },
         "Human1": {
             "readability_score": 95,
@@ -18141,7 +18381,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Function upper is written incorrectly."
+            "reasoning": "Function upper is written incorrectly.",
+            "cognitive_complexity": 4
         },
         "Human1": {
             "readability_score": 90,
@@ -18216,7 +18457,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Written function upper incorrectly."
+            "reasoning": "Written function upper incorrectly.",
+            "cognitive_complexity": 4
         },
         "Human1": {
             "readability_score": 90,
@@ -18291,7 +18533,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Written function upper incorrectly."
+            "reasoning": "Written function upper incorrectly.",
+            "cognitive_complexity": 4
         },
         "Human1": {
             "readability_score": 90,
@@ -18366,7 +18609,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 4
         },
         "Human1": {
             "readability_score": 90,
@@ -18441,7 +18685,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 4
         },
         "Human1": {
             "readability_score": 90,
@@ -18516,7 +18761,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 4
         },
         "Human1": {
             "readability_score": 90,
@@ -18591,7 +18837,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Incorrect handling for negative numbers."
+            "reasoning": "Incorrect handling for negative numbers.",
+            "cognitive_complexity": 3
         },
         "Human1": {
             "readability_score": 80,
@@ -18666,7 +18913,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Incorrect handling for negative numbers."
+            "reasoning": "Incorrect handling for negative numbers.",
+            "cognitive_complexity": 3
         },
         "Human1": {
             "readability_score": 80,
@@ -18741,7 +18989,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Incorrect handling for negative numbers."
+            "reasoning": "Incorrect handling for negative numbers.",
+            "cognitive_complexity": 3
         },
         "Human1": {
             "readability_score": 80,
@@ -18816,7 +19065,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 2
         },
         "Human1": {
             "readability_score": 85,
@@ -18891,7 +19141,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 2
         },
         "Human1": {
             "readability_score": 85,
@@ -18966,7 +19217,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-476",
-            "reasoning": "No null ptr validation."
+            "reasoning": "No null ptr validation.",
+            "cognitive_complexity": 2
         },
         "Human1": {
             "readability_score": 85,
@@ -19041,7 +19293,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Missing function \"counter\" definition."
+            "reasoning": "Missing function \"counter\" definition.",
+            "cognitive_complexity": 4
         },
         "Human1": {
             "readability_score": 70,
@@ -19116,7 +19369,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Missing function \"counter\" definition."
+            "reasoning": "Missing function \"counter\" definition.",
+            "cognitive_complexity": 4
         },
         "Human1": {
             "readability_score": 70,
@@ -19191,7 +19445,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Missing function \"counter\" definition."
+            "reasoning": "Missing function \"counter\" definition.",
+            "cognitive_complexity": 4
         },
         "Human1": {
             "readability_score": 70,
@@ -19266,7 +19521,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 3
         },
         "Human1": {
             "readability_score": 90,
@@ -19341,7 +19597,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 3
         },
         "Human1": {
             "readability_score": 90,
@@ -19416,7 +19673,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "No null ptr validation."
+            "reasoning": "No null ptr validation.",
+            "cognitive_complexity": 3
         },
         "Human1": {
             "readability_score": 90,
@@ -19491,7 +19749,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 100,
@@ -19566,7 +19825,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 100,
@@ -19641,7 +19901,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 100,
@@ -19716,7 +19977,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 95,
@@ -19791,7 +20053,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 95,
@@ -19866,7 +20129,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "No null ptr validation."
+            "reasoning": "No null ptr validation.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 95,
@@ -19941,7 +20205,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 90,
@@ -20016,7 +20281,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 90,
@@ -20091,7 +20357,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "No null ptr validation."
+            "reasoning": "No null ptr validation.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 90,
@@ -20166,7 +20433,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Incorrect for negative numbers."
+            "reasoning": "Incorrect for negative numbers.",
+            "cognitive_complexity": 3
         },
         "Human1": {
             "readability_score": 80,
@@ -20241,7 +20509,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Incorrect for negative numbers."
+            "reasoning": "Incorrect for negative numbers.",
+            "cognitive_complexity": 3
         },
         "Human1": {
             "readability_score": 80,
@@ -20316,7 +20585,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Incorrect for negative numbers."
+            "reasoning": "Incorrect for negative numbers.",
+            "cognitive_complexity": 3
         },
         "Human1": {
             "readability_score": 80,
@@ -20391,7 +20661,8 @@
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "The code is functionally correct and safe."
+            "reasoning": "The code is functionally correct and safe.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 90,
@@ -20466,7 +20737,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "No input validation."
+            "reasoning": "No input validation.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 90,
@@ -20541,7 +20813,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-476",
-            "reasoning": "No null ptr validation."
+            "reasoning": "No null ptr validation.",
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 90,
@@ -20616,7 +20889,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Incorrect handling for negative numbers."
+            "reasoning": "Incorrect handling for negative numbers.",
+            "cognitive_complexity": 6
         },
         "Human1": {
             "readability_score": 90,
@@ -20691,7 +20965,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Incorrect handling for negative numbers."
+            "reasoning": "Incorrect handling for negative numbers.",
+            "cognitive_complexity": 6
         },
         "Human1": {
             "readability_score": 90,
@@ -20766,7 +21041,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Incorrect handling for negative numbers."
+            "reasoning": "Incorrect handling for negative numbers.",
+            "cognitive_complexity": 6
         },
         "Human1": {
             "readability_score": 90,
@@ -20841,7 +21117,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Incorrect handling numbers containing only the same digit."
+            "reasoning": "Incorrect handling numbers containing only the same digit.",
+            "cognitive_complexity": 1
         },
         "Human1": {
             "readability_score": 80,
@@ -20916,7 +21193,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Incorrect handling numbers containing only the same digit."
+            "reasoning": "Incorrect handling numbers containing only the same digit.",
+            "cognitive_complexity": 1
         },
         "Human1": {
             "readability_score": 80,
@@ -20991,7 +21269,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Incorrect handling numbers containing only the same digit."
+            "reasoning": "Incorrect handling numbers containing only the same digit.",
+            "cognitive_complexity": 4
         },
         "Human1": {
             "readability_score": 80,
@@ -21066,7 +21345,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Incorrect handling of uppercase input."
+            "reasoning": "Incorrect handling of uppercase input.",
+            "cognitive_complexity": 4
         },
         "Human1": {
             "readability_score": 80,
@@ -21141,7 +21421,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Incorrect handling of uppercase input."
+            "reasoning": "Incorrect handling of uppercase input.",
+            "cognitive_complexity": 4
         },
         "Human1": {
             "readability_score": 80,
@@ -21216,7 +21497,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Incorrect handling of uppercase input."
+            "reasoning": "Incorrect handling of uppercase input.",
+            "cognitive_complexity": 4
         },
         "Human1": {
             "readability_score": 80,
@@ -21291,7 +21573,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Using floating point devision instead of integer."
+            "reasoning": "Using floating point devision instead of integer.",
+            "cognitive_complexity": 6
         },
         "Human1": {
             "readability_score": 75,
@@ -21366,7 +21649,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Using floating point devision instead of integer."
+            "reasoning": "Using floating point devision instead of integer.",
+            "cognitive_complexity": 6
         },
         "Human1": {
             "readability_score": 75,
@@ -21441,7 +21725,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Using floating point devision instead of integer."
+            "reasoning": "Using floating point devision instead of integer.",
+            "cognitive_complexity": 7
         },
         "Human1": {
             "readability_score": 75,
@@ -21516,7 +21801,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Incorrect for negative numbers."
+            "reasoning": "Incorrect for negative numbers.",
+            "cognitive_complexity": 9
         },
         "Human1": {
             "readability_score": 90,
@@ -21591,7 +21877,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Incorrect for negative numbers."
+            "reasoning": "Incorrect for negative numbers.",
+            "cognitive_complexity": 9
         },
         "Human1": {
             "readability_score": 90,
@@ -21666,7 +21953,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Incorrect for negative numbers."
+            "reasoning": "Incorrect for negative numbers.",
+            "cognitive_complexity": 9
         },
         "Human1": {
             "readability_score": 90,
@@ -21741,7 +22029,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Using floating point devision instead of integer."
+            "reasoning": "Using floating point devision instead of integer.",
+            "cognitive_complexity": 31
         },
         "Human1": {
             "readability_score": 80,
@@ -21816,7 +22105,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Using floating point devision instead of integer."
+            "reasoning": "Using floating point devision instead of integer.",
+            "cognitive_complexity": 31
         },
         "Human1": {
             "readability_score": 80,
@@ -21891,7 +22181,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Using floating point devision instead of integer."
+            "reasoning": "Using floating point devision instead of integer.",
+            "cognitive_complexity": 31
         },
         "Human1": {
             "readability_score": 80,
@@ -21966,7 +22257,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Using floating point devision instead of integer."
+            "reasoning": "Using floating point devision instead of integer.",
+            "cognitive_complexity": 5
         },
         "Human1": {
             "readability_score": 80,
@@ -22041,7 +22333,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Using floating point devision instead of integer."
+            "reasoning": "Using floating point devision instead of integer.",
+            "cognitive_complexity": 5
         },
         "Human1": {
             "readability_score": 80,
@@ -22116,7 +22409,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Using floating point devision instead of integer."
+            "reasoning": "Using floating point devision instead of integer.",
+            "cognitive_complexity": 6
         },
         "Human1": {
             "readability_score": 80,
@@ -22191,7 +22485,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-20, CWE-22, CWE-73",
-            "reasoning": "No input path validation."
+            "reasoning": "No input path validation.",
+            "cognitive_complexity": 33
         },
         "Human1": {
             "readability_score": 50,
@@ -22266,7 +22561,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-20, CWE-22, CWE-73",
-            "reasoning": "No input path validation."
+            "reasoning": "No input path validation.",
+            "cognitive_complexity": 67
         },
         "Human1": {
             "readability_score": 50,
@@ -22341,7 +22637,8 @@
             "functional_classification": "Partially Correct",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-20, CWE-22, CWE-73",
-            "reasoning": "No input path validation."
+            "reasoning": "No input path validation.",
+            "cognitive_complexity": 71
         },
         "Human1": {
             "readability_score": 50,
@@ -22416,7 +22713,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-20, CWE-22, CWE-73",
-            "reasoning": "No input path validation."
+            "reasoning": "No input path validation.",
+            "cognitive_complexity": 37
         },
         "Human1": {
             "readability_score": 50,
@@ -22491,7 +22789,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-20, CWE-22, CWE-73, CWE-369, CWE-617",
-            "reasoning": "Multiple issues."
+            "reasoning": "Multiple issues.",
+            "cognitive_complexity": 79
         },
         "Human1": {
             "readability_score": 50,
@@ -22566,7 +22865,8 @@
             "functional_classification": "Buggy",
             "security_classification": "Vulnerable",
             "cwe_id": "CWE-20, CWE-22, CWE-73, CWE-369, CWE-617",
-            "reasoning": "Multiple issues."
+            "reasoning": "Multiple issues.",
+            "cognitive_complexity": 82
         },
         "Human1": {
             "readability_score": 50,

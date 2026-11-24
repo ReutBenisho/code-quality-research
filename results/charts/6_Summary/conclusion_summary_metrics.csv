@@ -1,0 +1,6 @@
+Model,Overall_MAE,Maint_Spearman_vs_GT
+ChatGPT,8.76,0.554
+Claude,13.99,0.57
+Gemini,9.62,0.568
+GithubCopilot,15.35,0.626
+Sonarqube,13.44,-0.062

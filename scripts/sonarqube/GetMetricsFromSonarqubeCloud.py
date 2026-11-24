@@ -2,20 +2,21 @@ import os
 import json
 import requests
 from urllib.parse import quote
+from pathlib import Path
 
 SONAR_URL = "https://sonarcloud.io"
-SONAR_TOKEN = os.environ.get("SONAR_TOKEN")
+SONAR_TOKEN = 'f570449633c89a9bc447bb944355ce55ffaf551c' #os.environ.get("SONAR_TOKEN")
 if not SONAR_TOKEN:
     raise RuntimeError("Set the SONAR_TOKEN environment variable before running this script.")
 
 ORGANIZATION = "ReutBenisho"
 PROJECT_KEY = "ReutBenisho_code-quality-research"
 TARGET_DIRECTORIES = [
-    {"path": r"dataset"}
+    {"path": ".\\dataset"}
 ]
 AUTH = (SONAR_TOKEN, "")
 
-RESULTS_FILE = "Results.json"
+RESULTS_FILE = ".\\results\\Results.json"
 
 def rating_to_score_100(rating_val):
     mapping = {
@@ -58,8 +59,9 @@ def discover_files():
         for root, _, files in os.walk(base_dir):
             for file in files:
                 full_local_path = os.path.join(root, file)
-                normalized_path = full_local_path.replace("\\", "/")
+                normalized_path = 'dataset/' + Path(full_local_path).name
                 found_files.append(normalized_path)
+
 
     return found_files
 
@@ -106,7 +108,13 @@ def get_file_metrics(file_path):
     
     bugs_count = int(measures.get("bugs", 0))
     vulnerabilities_count = int(measures.get("vulnerabilities", 0))
-    
+
+    raw_cog = measures.get("cognitive_complexity")
+    try:
+        cognitive_complexity = int(float(raw_cog)) if raw_cog is not None else None
+    except (ValueError, TypeError):
+        cognitive_complexity = None
+
     return {
         "readability_score": readability,
         "understandability_score": readability,  
@@ -117,7 +125,8 @@ def get_file_metrics(file_path):
         "reasoning": (
             f"SonarQube Cloud detected Cognitive Complexity={measures.get('cognitive_complexity', 0)}, "
             f"Bugs={bugs_count}, Vulnerabilities={vulnerabilities_count}."
-        )[:400]  
+        )[:400],
+        "cognitive_complexity": cognitive_complexity
     }
 
 
@@ -147,8 +156,10 @@ if __name__ == "__main__":
 
         metrics = get_file_metrics(path)
         if metrics:
+            cog_val = metrics.pop("cognitive_complexity", None)
+            results_data[entry_key]["metadata"]["cognitive_complexity"] = cog_val
             results_data[entry_key]["Sonarqube"] = metrics
-            print(f"Updated SonarQube results for: {entry_key}")
+            print(f"Updated metadata & SonarQube results for: {entry_key} (cog={cog_val})")
             updated_count += 1
 
     with open(RESULTS_FILE, "w", encoding="utf-8") as f:

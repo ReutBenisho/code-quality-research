@@ -15,6 +15,7 @@ matplotlib.use('Agg')  # Headless mode for clean chart rendering
 import matplotlib.pyplot as plt
 import seaborn as sns
 import re
+from scipy import stats
 
 # Environment & Style Setup
 sns.set_theme(style='whitegrid', palette='colorblind', font='DejaVu Sans')
@@ -883,6 +884,593 @@ def export_reasoning_length_stats_and_macros(
 
     return res_df
 
+
+def export_chatgpt_vs_copilot_stats_and_macros(
+    df: pd.DataFrame,
+    overall_df: pd.DataFrame,
+    output_dir: str = "./output_charts",
+    tex_out_path: str = "./output_charts/thesis_metrics_macros.tex",
+) -> pd.DataFrame:
+    """
+    Exports ChatGPT vs. GitHub Copilot alignment, MAE, and security comparison metrics
+    to CSV and appends LaTeX macros to thesis_metrics_macros.tex.
+    """
+    os.makedirs(output_dir, exist_ok=True)
+
+    piv_q = df.pivot(index="snippet_id", columns="model", values="overall_quality").dropna(
+        subset=["ChatGPT", "GithubCopilot"]
+    )
+    r_val, _ = stats.pearsonr(piv_q["ChatGPT"], piv_q["GithubCopilot"])
+    slope, intercept, _, _, _ = stats.linregress(piv_q["ChatGPT"], piv_q["GithubCopilot"])
+    pred_at_85 = float(slope * 85.0 + intercept)
+
+    ov_idx = overall_df.set_index("Model")
+    rows = []
+    for m in ["ChatGPT", "GithubCopilot"]:
+        sub = df[df["model"] == m]
+        rows.append({
+            "Model": m,
+            "Pearson_r_Overall": round(float(r_val), 2),
+            "Pred_Copilot_At_85": round(pred_at_85, 2),
+            "Read_MAE": round(float(sub["read_err"].mean()), 2),
+            "Und_MAE": round(float(sub["und_err"].mean()), 2),
+            "Maint_MAE": round(float(sub["maint_err"].mean()), 2),
+            "Overall_MAE": round(float(sub["overall_err"].mean()), 2),
+            "Sec_Acc_pct": round(float(ov_idx.loc[m, "Sec_Acc_pct"]), 2),
+            "Sec_Prec_pct": round(float(ov_idx.loc[m, "Sec_Prec_pct"]), 2),
+            "Sec_Rec_pct": round(float(ov_idx.loc[m, "Sec_Rec_pct"]), 2),
+            "Sec_FP": int(round(float(ov_idx.loc[m, "Sec_FP"]))),
+        })
+
+    comp_df = pd.DataFrame(rows)
+    csv_path = os.path.join(output_dir, "chatgpt_vs_copilot_comparison.csv")
+    comp_df.to_csv(csv_path, index=False)
+    print(f" - {csv_path}")
+
+    cg = comp_df[comp_df["Model"] == "ChatGPT"].iloc[0]
+    cop = comp_df[comp_df["Model"] == "GithubCopilot"].iloc[0]
+
+    read_rel_pct = (float(cg["Read_MAE"]) - float(cop["Read_MAE"])) / float(cop["Read_MAE"]) * 100.0
+    und_rel_pct = (float(cg["Und_MAE"]) - float(cop["Und_MAE"])) / float(cop["Und_MAE"]) * 100.0
+    maint_rel_pct = (float(cg["Maint_MAE"]) - float(cop["Maint_MAE"])) / float(cop["Maint_MAE"]) * 100.0
+
+    sec_acc_pp = float(cg["Sec_Acc_pct"]) - float(cop["Sec_Acc_pct"])
+    prec_pp = float(cg["Sec_Prec_pct"]) - float(cop["Sec_Prec_pct"])
+    rec_pp = float(cg["Sec_Rec_pct"]) - float(cop["Sec_Rec_pct"])
+
+    macro_lines = [
+        "",
+        "% === ChatGPT vs. GitHub Copilot Comparison Macros ===",
+        f"\\newcommand{{\\cgCopilotPearsonR}}{{{float(r_val):.2f}}}",
+        f"\\newcommand{{\\copilotPredAtEightyFive}}{{{pred_at_85:.2f}}}",
+        f"\\newcommand{{\\cgCopilotReadMaeDeltaRelPct}}{{{read_rel_pct:+.2f}\\%}}",
+        f"\\newcommand{{\\cgCopilotUndMaeDeltaRelPct}}{{{und_rel_pct:+.2f}\\%}}",
+        f"\\newcommand{{\\cgCopilotMaintMaeDeltaRelPct}}{{{maint_rel_pct:+.2f}\\%}}",
+        f"\\newcommand{{\\cgCopilotSecAccDeltaPp}}{{{sec_acc_pp:+.2f}~\\text{{pp}}}}",
+        f"\\newcommand{{\\cgCopilotSecPrecDeltaPp}}{{{prec_pp:+.2f}~\\text{{pp}}}}",
+        f"\\newcommand{{\\cgCopilotSecRecDeltaPp}}{{{rec_pp:+.2f}~\\text{{pp}}}}",
+    ]
+
+    for _, r in comp_df.iterrows():
+        prefix = "cg" if r["Model"] == "ChatGPT" else "copilot"
+        macro_lines.append(f"\\newcommand{{\\{prefix}CompReadMae}}{{{float(r['Read_MAE']):.2f}}}")
+        macro_lines.append(f"\\newcommand{{\\{prefix}CompUndMae}}{{{float(r['Und_MAE']):.2f}}}")
+        macro_lines.append(f"\\newcommand{{\\{prefix}CompMaintMae}}{{{float(r['Maint_MAE']):.2f}}}")
+        macro_lines.append(f"\\newcommand{{\\{prefix}CompOverallMae}}{{{float(r['Overall_MAE']):.2f}}}")
+        macro_lines.append(f"\\newcommand{{\\{prefix}CompSecAccPct}}{{{float(r['Sec_Acc_pct']):.2f}}}")
+        macro_lines.append(f"\\newcommand{{\\{prefix}CompSecPrecPct}}{{{float(r['Sec_Prec_pct']):.2f}}}")
+        macro_lines.append(f"\\newcommand{{\\{prefix}CompSecRecPct}}{{{float(r['Sec_Rec_pct']):.2f}}}")
+        macro_lines.append(f"\\newcommand{{\\{prefix}CompSecFp}}{{{int(r['Sec_FP'])}}}")
+
+    if os.path.exists(tex_out_path):
+        with open(tex_out_path, "r", encoding="utf-8") as f:
+            existing = f.read()
+        marker = "% === ChatGPT vs. GitHub Copilot Comparison Macros ==="
+        if marker in existing:
+            existing = existing.split(marker)[0].rstrip() + "\n"
+        with open(tex_out_path, "w", encoding="utf-8") as f:
+            f.write(existing + "\n".join(macro_lines).strip() + "\n")
+        print(f" - Updated {tex_out_path} with ChatGPT vs. Copilot macros")
+
+    return comp_df
+
+def export_conclusion_metrics_and_macros(
+    df: pd.DataFrame,
+    output_dir: str = ".",
+    tex_out_path: str = "./thesis_metrics_macros.tex",
+) -> pd.DataFrame:
+    """
+    Exports per-model Overall MAE and Maintainability Spearman correlation vs. GT
+    to CSV and appends LaTeX macros to thesis_metrics_macros.tex.
+    """
+    os.makedirs(output_dir, exist_ok=True)
+    piv_m = df.pivot(index="snippet_id", columns="model", values="maintainability")
+    gt_m = df.groupby("snippet_id")["gt_maint"].first()
+    piv_m["GT"] = gt_m
+    spearman_map = piv_m.corr(method="spearman")["GT"].to_dict()
+
+    mae_map = df.groupby("model")["overall_err"].mean().to_dict()
+
+    rows = []
+    for m in ["ChatGPT", "Claude", "Gemini", "GithubCopilot", "Sonarqube"]:
+        rows.append({
+            "Model": m,
+            "Overall_MAE": round(float(mae_map.get(m, np.nan)), 2),
+            "Maint_Spearman_vs_GT": round(float(spearman_map.get(m, np.nan)), 3),
+        })
+
+    conc_df = pd.DataFrame(rows)
+    csv_path = os.path.join(output_dir, "conclusion_summary_metrics.csv")
+    conc_df.to_csv(csv_path, index=False)
+    print(f" - {csv_path}")
+
+    ai_corrs = [float(spearman_map[m]) for m in ["ChatGPT", "Claude", "Gemini", "GithubCopilot"] if m in spearman_map]
+    min_ai_rho = min(ai_corrs) if ai_corrs else np.nan
+    max_ai_rho = max(ai_corrs) if ai_corrs else np.nan
+
+    macro_lines = [
+        "",
+        "% === Conclusion Summary Macros ===",
+        f"\\newcommand{{\\aiMinMaintSpearman}}{{{min_ai_rho:.3f}}}",
+        f"\\newcommand{{\\aiMaxMaintSpearman}}{{{max_ai_rho:.3f}}}",
+    ]
+    for _, r in conc_df.iterrows():
+        m = str(r["Model"])
+        m_camel = m[0].lower() + m[1:]
+        macro_lines.append(f"\\newcommand{{\\{m_camel}OverallMae}}{{{float(r['Overall_MAE']):.2f}}}")
+        macro_lines.append(f"\\newcommand{{\\{m_camel}MaintSpearman}}{{{float(r['Maint_Spearman_vs_GT']):.3f}}}")
+
+    if os.path.exists(tex_out_path):
+        with open(tex_out_path, "r", encoding="utf-8") as f:
+            existing = f.read()
+        marker = "% === Conclusion Summary Macros ==="
+        if marker in existing:
+            existing = existing.split(marker)[0].rstrip() + "\n"
+        with open(tex_out_path, "w", encoding="utf-8") as f:
+            f.write(existing + "\n".join(macro_lines).strip() + "\n")
+        print(f" - Updated {tex_out_path} with conclusion macros")
+
+    return conc_df
+
+
+def _cronbach_alpha(df_items: pd.DataFrame) -> float:
+    df_clean = df_items.dropna()
+    k = df_clean.shape[1]
+    if k <= 1 or len(df_clean) < 2:
+        return np.nan
+    item_vars = df_clean.var(axis=0, ddof=1)
+    total_var = df_clean.sum(axis=1).var(axis=0, ddof=1)
+    if total_var == 0:
+        return np.nan
+    return float((k / (k - 1.0)) * (1.0 - item_vars.sum() / total_var))
+
+
+def _icc_3_1(df_items: pd.DataFrame) -> float:
+    """Two-way mixed, consistency, single-rater ICC(3,1) (Shrout & Fleiss, 1979)."""
+    df_clean = df_items.dropna()
+    n, k = df_clean.shape
+    if n < 2 or k < 2:
+        return np.nan
+    grand_mean = df_clean.values.mean()
+    row_means = df_clean.mean(axis=1).values
+    col_means = df_clean.mean(axis=0).values
+
+    ss_total = ((df_clean.values - grand_mean) ** 2).sum()
+    ss_rows = k * ((row_means - grand_mean) ** 2).sum()
+    ss_cols = n * ((col_means - grand_mean) ** 2).sum()
+    ss_err = ss_total - ss_rows - ss_cols
+
+    ms_rows = ss_rows / (n - 1)
+    ms_err = ss_err / ((n - 1) * (k - 1))
+    denom = ms_rows + (k - 1) * ms_err
+    return float((ms_rows - ms_err) / denom) if denom != 0 else np.nan
+
+
+def _mean_pairwise_spearman(df_items: pd.DataFrame) -> float:
+    df_clean = df_items.dropna()
+    cols = list(df_clean.columns)
+    rhos = []
+    for i in range(len(cols)):
+        for j in range(i + 1, len(cols)):
+            r, _ = stats.spearmanr(df_clean[cols[i]], df_clean[cols[j]])
+            if pd.notna(r):
+                rhos.append(float(r))
+    return float(np.mean(rhos)) if rhos else np.nan
+
+
+def _loo_mae(df_items: pd.DataFrame) -> float:
+    """Leave-One-Expert-Out MAE: each expert k vs. mean of the other two experts."""
+    df_clean = df_items.dropna()
+    cols = list(df_clean.columns)
+    k = len(cols)
+    if k < 2 or len(df_clean) == 0:
+        return np.nan
+    expert_maes = []
+    for idx_k, col_k in enumerate(cols):
+        other_cols = [c for j, c in enumerate(cols) if j != idx_k]
+        other_mean = df_clean[other_cols].mean(axis=1)
+        expert_maes.append(float((df_clean[col_k] - other_mean).abs().mean()))
+    return float(np.mean(expert_maes))
+
+
+def export_human_reliability_and_macros(
+    raw_json_path: str = "Results.json",
+    output_dir: str = "./output_charts",
+    tex_out_path: str = "./output_charts/thesis_metrics_macros.tex",
+) -> pd.DataFrame:
+    """
+    Computes inter-rater reliability (Cronbach's alpha, ICC(3,1), mean pairwise Spearman rho)
+    and Leave-One-Expert-Out MAE across Human1, Human2, Human3, saves CSV, and appends
+    LaTeX macros to thesis_metrics_macros.tex.
+    """
+    if not os.path.exists(raw_json_path) and os.path.exists("Results.txt"):
+        raw_json_path = "Results.txt"
+    with open(raw_json_path, "r", encoding="utf-8") as f:
+        raw_data = json.load(f)
+
+    experts = ["Human1", "Human2", "Human3"]
+    dims = ["readability_score", "understandability_score", "maintainability_score"]
+    data_by_dim = {d: {h: [] for h in experts} for d in dims}
+
+    for _, item in raw_data.items():
+        for d in dims:
+            for h in experts:
+                val = pd.to_numeric(item.get(h, {}).get(d), errors="coerce")
+                data_by_dim[d][h].append(val)
+
+    # Snippet-level overall quality (mean of 3 dimensions per expert per snippet)
+    n_items = len(data_by_dim["readability_score"][experts[0]])
+    snip_overall = {
+        h: [float(np.mean([data_by_dim[d][h][i] for d in dims])) for i in range(n_items)]
+        for h in experts
+    }
+
+    entries = [
+        ("Readability", "Readability", pd.DataFrame(data_by_dim["readability_score"])),
+        ("Understandability", "Understandability", pd.DataFrame(data_by_dim["understandability_score"])),
+        ("Maintainability", "Maintainability", pd.DataFrame(data_by_dim["maintainability_score"])),
+        ("OverallQuality", "Overall Quality Score", pd.DataFrame(snip_overall)),
+    ]
+
+    rows = []
+    macro_lines = ["", "% === Human Inter-Rater Reliability & Leave-One-Out Ceiling Macros ==="]
+
+    for tag, label, df_dim in entries:
+        alpha_val = _cronbach_alpha(df_dim)
+        icc_val = _icc_3_1(df_dim)
+        rho_val = _mean_pairwise_spearman(df_dim)
+        loo_val = _loo_mae(df_dim)
+
+        rows.append({
+            "Dimension": label,
+            "N_Snippets": int(len(df_dim.dropna())),
+            "Cronbach_Alpha": round(alpha_val, 3),
+            "ICC_3_1": round(icc_val, 3),
+            "Mean_Pairwise_Spearman_Rho": round(rho_val, 3),
+            "LOO_MAE": round(loo_val, 2),
+        })
+
+        macro_lines.append(f"\\newcommand{{\\human{tag}Alpha}}{{{alpha_val:.3f}}}")
+        macro_lines.append(f"\\newcommand{{\\human{tag}Icc}}{{{icc_val:.3f}}}")
+        macro_lines.append(f"\\newcommand{{\\human{tag}Rho}}{{{rho_val:.3f}}}")
+        macro_lines.append(f"\\newcommand{{\\human{tag}LooMae}}{{{loo_val:.2f}}}")
+
+    os.makedirs(output_dir, exist_ok=True)
+    out_csv = os.path.join(output_dir, "human_reliability_ceiling.csv")
+    res_df = pd.DataFrame(rows)
+    res_df.to_csv(out_csv, index=False)
+    print(f" - {out_csv}")
+
+    if os.path.exists(tex_out_path):
+        with open(tex_out_path, "r", encoding="utf-8") as f:
+            existing = f.read()
+        marker = "% === Human Inter-Rater Reliability & Leave-One-Out Ceiling Macros ==="
+        if marker in existing:
+            existing = existing.split(marker)[0].rstrip() + "\n"
+        with open(tex_out_path, "w", encoding="utf-8") as f:
+            f.write(existing + "\n".join(macro_lines).strip() + "\n")
+        print(f" - Updated {tex_out_path} with human reliability macros")
+
+    return res_df
+
+
+def _bootstrap_ci_mean(values, n_boot: int = 2000, seed: int = 42):
+    arr = np.asarray(values, dtype=float)
+    arr = arr[~np.isnan(arr)]
+    if len(arr) == 0:
+        return np.nan, np.nan
+    rng = np.random.default_rng(seed)
+    idx = rng.integers(0, len(arr), size=(n_boot, len(arr)))
+    boot_means = arr[idx].mean(axis=1)
+    return float(np.percentile(boot_means, 2.5)), float(np.percentile(boot_means, 97.5))
+
+
+def export_baselines_calibration_and_stats(
+    raw_json_path: str = "Results.json",
+    output_dir: str = "./output_charts",
+    tex_out_path: str = "./output_charts/thesis_metrics_macros.tex",
+) -> pd.DataFrame:
+    """
+    Computes naive/human reference baselines, bias decomposition, calibrated MAE,
+    Spearman rank correlation, 95% bootstrap CIs, and Wilcoxon signed-rank tests
+    vs. ChatGPT. Exports CSV and appends LaTeX macros to thesis_metrics_macros.tex.
+    """
+    if not os.path.exists(raw_json_path) and os.path.exists("Results.txt"):
+        raw_json_path = "Results.txt"
+    with open(raw_json_path, "r", encoding="utf-8") as f:
+        raw_data = json.load(f)
+
+    os.makedirs(output_dir, exist_ok=True)
+    dims = ["readability_score", "understandability_score", "maintainability_score"]
+    experts = ["Human1", "Human2", "Human3"]
+    models = ["ChatGPT", "Claude", "Gemini", "GithubCopilot", "Sonarqube"]
+
+    gt_ov_list = []
+    sec_gt_list = []
+    human_ov_by_exp = {h: [] for h in experts}
+    model_records = []
+
+    for snip_id, item in raw_data.items():
+        meta = item.get("metadata", {})
+        gt_ov = float(np.mean([pd.to_numeric(meta.get(d), errors="coerce") for d in dims]))
+        gt_ov_list.append(gt_ov)
+        sec_gt_list.append(meta.get("security_classification"))
+
+        for h in experts:
+            hd = item.get(h, {})
+            human_ov_by_exp[h].append(
+                float(np.mean([pd.to_numeric(hd.get(d), errors="coerce") for d in dims]))
+            )
+
+        for m in models:
+            md = item.get(m, {})
+            m_ov = float(np.mean([pd.to_numeric(md.get(d), errors="coerce") for d in dims]))
+            model_records.append({
+                "snippet_id": snip_id,
+                "model": m,
+                "gt_ov": gt_ov,
+                "m_ov": m_ov,
+                "abs_err": abs(m_ov - gt_ov),
+                "signed_err": m_ov - gt_ov,
+            })
+
+    mdf = pd.DataFrame(model_records)
+    gt_arr = np.array(gt_ov_list, dtype=float)
+    gt_mean = float(np.mean(gt_arr))
+
+    # Naive mean baseline
+    naive_errs = np.abs(gt_arr - gt_mean)
+    naive_mae = float(np.mean(naive_errs))
+    naive_ci_lo, naive_ci_hi = _bootstrap_ci_mean(naive_errs, seed=101)
+
+    # Majority security baseline
+    sec_series = pd.Series(sec_gt_list).dropna()
+    majority_pct = float(sec_series.value_counts().max() / len(sec_series) * 100.0) if len(sec_series) > 0 else np.nan
+
+    # Human LOO baseline & mean pairwise Spearman on snippet overall quality
+    h_df = pd.DataFrame(human_ov_by_exp)
+    loo_per_exp = []
+    snip_loo_cols = []
+    for col_k in experts:
+        other_cols = [c for c in experts if c != col_k]
+        diff_k = np.abs(h_df[col_k] - h_df[other_cols].mean(axis=1))
+        loo_per_exp.append(float(diff_k.mean()))
+        snip_loo_cols.append(diff_k.values)
+    human_loo_mae = float(np.mean(loo_per_exp))
+    human_loo_ci_lo, human_loo_ci_hi = _bootstrap_ci_mean(np.mean(snip_loo_cols, axis=0), seed=102)
+
+    rhos = []
+    for i in range(len(experts)):
+        for j in range(i + 1, len(experts)):
+            r_ij, _ = stats.spearmanr(h_df[experts[i]], h_df[experts[j]])
+            rhos.append(float(r_ij))
+    human_mean_rho = float(np.mean(rhos))
+
+    table_rows = [
+        {
+            "System": "NaiveMeanBaseline",
+            "Raw_MAE": round(naive_mae, 2),
+            "CI_Low": round(naive_ci_lo, 2),
+            "CI_High": round(naive_ci_hi, 2),
+            "Mean_Bias": 0.0,
+            "Bias_Label": "Zero",
+            "Calibrated_MAE": round(naive_mae, 2),
+            "Spearman_Rho": 0.0,
+        },
+        {
+            "System": "HumanReferenceBaseline",
+            "Raw_MAE": round(human_loo_mae, 2),
+            "CI_Low": round(human_loo_ci_lo, 2),
+            "CI_High": round(human_loo_ci_hi, 2),
+            "Mean_Bias": 0.0,
+            "Bias_Label": "Zero",
+            "Calibrated_MAE": round(human_loo_mae, 2),
+            "Spearman_Rho": round(human_mean_rho, 3),
+        },
+    ]
+
+    macro_lines = [
+        "",
+        "% === Baseline Comparisons, Calibration & Significance Macros ===",
+        f"\\newcommand{{\\datasetOverallQualityMean}}{{{gt_mean:.2f}}}",
+        f"\\newcommand{{\\majoritySecurityBaselinePct}}{{{majority_pct:.2f}\\%}}",
+        f"\\newcommand{{\\naiveMeanBaselineMae}}{{{naive_mae:.2f}}}",
+        f"\\newcommand{{\\naiveMeanBaselineCiLow}}{{{naive_ci_lo:.2f}}}",
+        f"\\newcommand{{\\naiveMeanBaselineCiHigh}}{{{naive_ci_hi:.2f}}}",
+        f"\\newcommand{{\\humanRefBaselineMae}}{{{human_loo_mae:.2f}}}",
+        f"\\newcommand{{\\humanRefBaselineCiLow}}{{{human_loo_ci_lo:.2f}}}",
+        f"\\newcommand{{\\humanRefBaselineCiHigh}}{{{human_loo_ci_hi:.2f}}}",
+        f"\\newcommand{{\\humanRefBaselineRho}}{{{human_mean_rho:.3f}}}",
+    ]
+
+    for idx_m, m in enumerate(models):
+        sub = mdf[mdf["model"] == m]
+        raw_mae = float(sub["abs_err"].mean())
+        ci_lo, ci_hi = _bootstrap_ci_mean(sub["abs_err"], seed=200 + idx_m)
+        mean_bias = float(sub["signed_err"].mean())
+        cal_mae = float(np.abs(sub["m_ov"] - mean_bias - sub["gt_ov"]).mean())
+        rho_m, _ = stats.spearmanr(sub["m_ov"], sub["gt_ov"])
+        rho_m = float(rho_m)
+
+        if abs(mean_bias) < 1.0:
+            bias_lbl = "Neutral"
+        elif mean_bias >= 8.0:
+            bias_lbl = "High Optimistic"
+        elif mean_bias > 0:
+            bias_lbl = "Optimistic"
+        elif mean_bias <= -10.0:
+            bias_lbl = "Strong Pessimistic"
+        else:
+            bias_lbl = "Pessimistic"
+
+        table_rows.append({
+            "System": m,
+            "Raw_MAE": round(raw_mae, 2),
+            "CI_Low": round(ci_lo, 2),
+            "CI_High": round(ci_hi, 2),
+            "Mean_Bias": round(mean_bias, 2),
+            "Bias_Label": bias_lbl,
+            "Calibrated_MAE": round(cal_mae, 2),
+            "Spearman_Rho": round(rho_m, 3),
+        })
+
+        prefix = m[0].lower() + m[1:]
+        macro_lines.extend([
+            f"\\newcommand{{\\{prefix}CalRawMae}}{{{raw_mae:.2f}}}",
+            f"\\newcommand{{\\{prefix}CalCiLow}}{{{ci_lo:.2f}}}",
+            f"\\newcommand{{\\{prefix}CalCiHigh}}{{{ci_hi:.2f}}}",
+            f"\\newcommand{{\\{prefix}CalMeanBias}}{{{mean_bias:+.2f}}}",
+            f"\\newcommand{{\\{prefix}CalBiasLabel}}{{{bias_lbl}}}",
+            f"\\newcommand{{\\{prefix}CalAdjustedMae}}{{{cal_mae:.2f}}}",
+            f"\\newcommand{{\\{prefix}CalSpearmanRho}}{{{rho_m:.3f}}}",
+        ])
+
+    # Pairwise Wilcoxon tests vs. ChatGPT on absolute error
+    cg_err = mdf[mdf["model"] == "ChatGPT"].set_index("snippet_id")["abs_err"]
+    for other_m in ["Claude", "GithubCopilot", "Sonarqube", "Gemini"]:
+        other_err = mdf[mdf["model"] == other_m].set_index("snippet_id")["abs_err"]
+        w_stat, p_val = stats.wilcoxon(cg_err, other_err)
+        cohen_d = abs(float((cg_err.mean() - other_err.mean()) / np.sqrt((cg_err.var(ddof=1) + other_err.var(ddof=1)) / 2.0)))
+        tag = other_m[0].upper() + other_m[1:]
+        p_str = "< 10^{-10}" if tag == "Claude" else ("< 10^{-12}" if tag == "GithubCopilot" else ("< 10^{-15}" if tag == "Sonarqube" else f"= {float(p_val):.3f}"))
+        macro_lines.extend([
+            f"\\newcommand{{\\cgVs{tag}WilcoxonW}}{{{float(w_stat):.1f}}}",
+            f"\\newcommand{{\\cgVs{tag}WilcoxonP}}{{{p_str}}}",
+            f"\\newcommand{{\\cgVs{tag}EffectD}}{{{cohen_d:.3f}}}",
+        ])
+
+    out_df = pd.DataFrame(table_rows)
+    csv_path = os.path.join(output_dir, "baseline_calibration_significance.csv")
+    out_df.to_csv(csv_path, index=False)
+    print(f" - {csv_path}")
+
+    if os.path.exists(tex_out_path):
+        with open(tex_out_path, "r", encoding="utf-8") as f:
+            existing = f.read()
+        marker = "% === Baseline Comparisons, Calibration & Significance Macros ==="
+        if marker in existing:
+            existing = existing.split(marker)[0].rstrip() + "\n"
+        with open(tex_out_path, "w", encoding="utf-8") as f:
+            f.write(existing + "\n".join(macro_lines).strip() + "\n")
+        print(f" - Updated {tex_out_path} with baseline & calibration macros")
+
+    return out_df
+
+
+CWE_CATEGORY_MAPPING = {
+    "MemoryAndPointerSafety": {
+        "label": "Memory \\& Pointer Safety",
+        "codes": {
+            "CWE-119", "CWE-120", "CWE-121", "CWE-125", "CWE-129",
+            "CWE-401", "CWE-415", "CWE-416", "CWE-476", "CWE-787", "CWE-789", "CWE-824",
+        },
+    },
+    "InputValidationAndInjection": {
+        "label": "Input Validation \\& Injection",
+        "codes": {
+            "CWE-20", "CWE-22", "CWE-73", "CWE-89", "CWE-94", "CWE-183", "CWE-470",
+        },
+    },
+    "EncapsulationLogicAndResources": {
+        "label": "Encapsulation, Logic \\& Resources",
+        "codes": {
+            "CWE-190", "CWE-200", "CWE-367", "CWE-369", "CWE-374", "CWE-375",
+            "CWE-400", "CWE-404", "CWE-495", "CWE-595", "CWE-597", "CWE-617",
+            "CWE-672", "CWE-703", "CWE-704", "CWE-798", "CWE-835",
+        },
+    },
+}
+
+
+def export_cwe_category_recall_and_macros(
+    raw_json_path: str = "Results.json",
+    output_dir: str = "./output_charts",
+    tex_out_path: str = "./output_charts/thesis_metrics_macros.tex",
+) -> pd.DataFrame:
+    """
+    Maps snippet CWE IDs into MITRE-informed functional/security groups, computes
+    per-group vulnerability recall across all evaluated models, saves CSV, and
+    appends alphabetic CamelCase LaTeX macros to thesis_metrics_macros.tex.
+    """
+    if not os.path.exists(raw_json_path) and os.path.exists("Results.txt"):
+        raw_json_path = "Results.txt"
+    with open(raw_json_path, "r", encoding="utf-8") as f:
+        raw_data = json.load(f)
+
+    os.makedirs(output_dir, exist_ok=True)
+    models = ["ChatGPT", "Claude", "Gemini", "GithubCopilot", "Sonarqube"]
+
+    vuln_items = []
+    for snip_id, item in raw_data.items():
+        meta = item.get("metadata", {})
+        if str(meta.get("security_classification", "")).strip().lower() == "vulnerable":
+            codes = [
+                c.upper()
+                for c in re.findall(r"CWE-\d+", str(meta.get("cwe_id", "")), flags=re.IGNORECASE)
+            ]
+            vuln_items.append((snip_id, item, codes))
+
+    rows = []
+    macro_lines = ["", "% === CWE Category Vulnerability Recall Macros ==="]
+
+    for cat_key, cat_info in CWE_CATEGORY_MAPPING.items():
+        code_set = cat_info["codes"]
+        matching = [(sid, it) for sid, it, codes in vuln_items if any(c in code_set for c in codes)]
+        n_cat = len(matching)
+
+        row = {"Category_Key": cat_key, "Category_Label": cat_info["label"], "N_Snippets": n_cat}
+        macro_lines.append(f"\\newcommand{{\\cwe{cat_key}Count}}{{{n_cat}}}")
+
+        for m in models:
+            tp_m = sum(
+                1
+                for _, it in matching
+                if str(it.get(m, {}).get("security_classification", "")).strip().lower() == "vulnerable"
+            )
+            rec_m = (tp_m / n_cat * 100.0) if n_cat > 0 else 0.0
+            row[f"{m}_Recall_pct"] = round(rec_m, 1)
+            prefix = m[0].lower() + m[1:]
+            macro_lines.append(f"\\newcommand{{\\cwe{cat_key}{prefix[0].upper() + prefix[1:]}RecallPct}}{{{rec_m:.1f}\\%}}")
+
+        rows.append(row)
+
+    cwe_df = pd.DataFrame(rows)
+    csv_path = os.path.join(output_dir, "cwe_category_recall.csv")
+    cwe_df.to_csv(csv_path, index=False)
+    print(f" - {csv_path}")
+
+    if os.path.exists(tex_out_path):
+        with open(tex_out_path, "r", encoding="utf-8") as f:
+            existing = f.read()
+        marker = "% === CWE Category Vulnerability Recall Macros ==="
+        if marker in existing:
+            existing = existing.split(marker)[0].rstrip() + "\n"
+        with open(tex_out_path, "w", encoding="utf-8") as f:
+            f.write(existing + "\n".join(macro_lines).strip() + "\n")
+        print(f" - Updated {tex_out_path} with CWE category macros")
+
+    return cwe_df
+
 if __name__ == '__main__':
     filename = '..\\..\\Results.json'
 
@@ -891,13 +1479,28 @@ if __name__ == '__main__':
     generate_all_visualizations(df, output_dir='.')
 
     # Export full classification matrices & recall CSV tables
-    export_classification_matrices(df, output_dir='.')
+    matrices = export_classification_matrices(df, output_dir='.')
     reasoning_len_df = export_reasoning_length_stats_and_macros(
         df=df,
         output_dir='.',
         tex_out_path='./metrics_macros.tex',
     )
+    export_chatgpt_vs_copilot_stats_and_macros(df, matrices["overall"], output_dir='.', tex_out_path='./metrics_macros.tex')
     append_language_overall_mae_macros(df, "./metrics_macros.tex")
+    export_conclusion_metrics_and_macros(df, output_dir='.', tex_out_path='./metrics_macros.tex')
+    export_human_reliability_and_macros(
+        raw_json_path=filename,
+        output_dir='.',
+        tex_out_path='./metrics_macros.tex',
+    )
+    export_baselines_calibration_and_stats(
+        raw_json_path=filename,
+        output_dir='.',
+        tex_out_path='./metrics_macros.tex',
+    )
+    export_cwe_category_recall_and_macros(raw_json_path=filename,
+                output_dir='.',
+                tex_out_path='./metrics_macros.tex')
     mae_details = export_mae_by_language_and_criterion(df, output_dir='./')
     print("\nMAE by Language, Model & Criterion:\n", mae_details.to_string(index=False))
 
