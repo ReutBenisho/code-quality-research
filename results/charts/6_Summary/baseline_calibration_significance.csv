@@ -1,0 +1,8 @@
+System,Raw_MAE,CI_Low,CI_High,Mean_Bias,Bias_Label,Calibrated_MAE,Spearman_Rho
+NaiveMeanBaseline,8.64,7.91,9.39,0.0,Zero,8.64,0.0
+HumanReferenceBaseline,6.61,5.97,7.34,0.0,Zero,6.61,0.661
+ChatGPT,8.76,7.93,9.61,4.01,Optimistic,7.73,0.579
+Claude,13.99,12.84,15.13,-12.66,Strong Pessimistic,9.83,0.563
+Gemini,9.62,8.58,10.62,-5.78,Pessimistic,9.07,0.573
+GithubCopilot,15.35,14.05,16.7,-14.69,Strong Pessimistic,9.38,0.622
+Sonarqube,13.44,12.4,14.61,9.76,High Optimistic,9.66,0.333
