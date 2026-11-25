@@ -4,18 +4,31 @@
             "id": 1,
             "language": "java",
             "origin": "Cui_2024",
-            "external_reference_url": "Figure 3(a)"
-        },
-		"Human1":
-		{
-			"readability_score": 85,
+            "external_reference_url": "Figure 3(a)",
+            "readability_score": 83,
             "understandability_score": 90,
-            "maintainability_score": 50,
+            "maintainability_score": 58,
             "functional_classification": "Correct",
             "security_classification": "Vulnerable",
-            "cwe_id": "CWE-495,CWE-496,CWE-374,CWE-375",
-            "reasoning": "Members have unclear names, identical function names, the getArr functions are breaking encapsulation principle"
-		},
+            "cwe_id": "CWE-495,CWE-375",
+            "reasoning": "Members have unclear names, identical function names, the getArr functions are breaking encapsulation principle",
+            "cognitive_complexity": 0
+        },
+        "Human1": {
+            "readability_score": 85,
+            "understandability_score": 90,
+            "maintainability_score": 50
+        },
+        "Human2": {
+            "readability_score": 80,
+            "understandability_score": 90,
+            "maintainability_score": 70
+        },
+        "Human3": {
+            "readability_score": 85,
+            "understandability_score": 90,
+            "maintainability_score": 55
+        },
         "ChatGPT": {
             "readability_score": 78,
             "understandability_score": 80,
@@ -44,13 +57,13 @@
             "reasoning": "The code is vulnerable to CWE-495 (Private Data Structure Returned From A Public Method). By returning direct references to private mutable arrays ('arr' and 'arr2'), the class breaks encapsulation. External callers can modify internal state without the class's knowledge. While syntactically correct and readable, this design creates significant security and maintenance risks."
         },
         "GithubCopilot": {
-            "readability_score": 78,
-            "understandability_score": 75,
-            "maintainability_score": 70,
+            "readability_score": 72,
+            "understandability_score": 68,
+            "maintainability_score": 60,
             "functional_classification": "Correct",
-            "security_classification": "Vulnerable",
-            "cwe_id": "CWE-375",
-            "reasoning": "Encapsulation vulnerability: getArr() returns mutable array references directly, allowing caller to modify internal state. Both outer and inner classes expose this flaw. No defensive copying. Clear structure and naming, but security oversight. Functional logic is correct. Methods should return defensive copies (clone() or Arrays.copyOf()). Common Java pitfall compromising object integrity and predictability."
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "The code is straightforward and functionally valid: two simple classes with returning getters. However, naming is poor (Outerclass/Innerclass, arr/arr2), and the nested class adds unnecessary complexity. It is safe because there are no inputs, side effects, or unsafe operations; security risk is effectively none."
         },
         "Sonarqube": {
             "readability_score": 100.0,
@@ -67,18 +80,31 @@
             "id": 1,
             "language": "cpp",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 1_java from java to cpp"
-        },
-		"Human1":
-		{
-			"readability_score": 85,
+            "external_reference_url": "Translated file 1_java from java to cpp",
+            "readability_score": 83,
             "understandability_score": 90,
-            "maintainability_score": 50,
+            "maintainability_score": 58,
             "functional_classification": "Correct",
-            "security_classification": "Vulnerable",
-            "cwe_id": "CWE-495,CWE-496,CWE-374,CWE-375",
-            "reasoning": "Members have unclear names, identical function names, the getArr functions are breaking encapsulation principle"
-		},
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "Members have unclear names, identical function names",
+            "cognitive_complexity": 0
+        },
+        "Human1": {
+            "readability_score": 85,
+            "understandability_score": 90,
+            "maintainability_score": 50
+        },
+        "Human2": {
+            "readability_score": 80,
+            "understandability_score": 90,
+            "maintainability_score": 70
+        },
+        "Human3": {
+            "readability_score": 85,
+            "understandability_score": 90,
+            "maintainability_score": 55
+        },
         "ChatGPT": {
             "readability_score": 90,
             "understandability_score": 95,
@@ -107,13 +133,13 @@
             "reasoning": "The code is readable and syntactically correct C++. It creates standard encapsulated vectors inside nested classes. Minor issues include returning vectors by value instead of const reference (causing unnecessary copies) and unused private members, but there are no functional bugs or security vulnerabilities."
         },
         "GithubCopilot": {
-            "readability_score": 85,
-            "understandability_score": 80,
-            "maintainability_score": 70,
+            "readability_score": 82,
+            "understandability_score": 79,
+            "maintainability_score": 74,
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Simple structure and clear getters; nested class is straightforward. Returning vectors by value is safe but may impact performance. No security risks present. Overall readable and correct but not highly optimized for maintainability."
+            "reasoning": "The code is small, readable, and logically correct: both classes expose vectors via simple getters. However, the nested class and duplicated member names reduce clarity, and the API design encourages copies rather than references, which is less maintainable. No unsafe operations or data exposure vulnerabilities are present."
         },
         "Sonarqube": {
             "readability_score": 100.0,
@@ -130,18 +156,31 @@
             "id": 1,
             "language": "python",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 1_java from java to python"
-        },
-		"Human1":
-		{
-			"readability_score": 85,
+            "external_reference_url": "Translated file 1_java from java to python",
+            "readability_score": 83,
             "understandability_score": 90,
-            "maintainability_score": 50,
+            "maintainability_score": 58,
             "functional_classification": "Correct",
             "security_classification": "Vulnerable",
-            "cwe_id": "CWE-495,CWE-496,CWE-374,CWE-375",
-            "reasoning": "Members have unclear names, identical function names, the getArr functions are breaking encapsulation principle"
-		},
+            "cwe_id": "CWE-495,CWE-375",
+            "reasoning": "Members have unclear names, identical function names, the getArr functions are breaking encapsulation principle",
+            "cognitive_complexity": 0
+        },
+        "Human1": {
+            "readability_score": 85,
+            "understandability_score": 90,
+            "maintainability_score": 50
+        },
+        "Human2": {
+            "readability_score": 80,
+            "understandability_score": 90,
+            "maintainability_score": 70
+        },
+        "Human3": {
+            "readability_score": 85,
+            "understandability_score": 90,
+            "maintainability_score": 55
+        },
         "ChatGPT": {
             "readability_score": 92,
             "understandability_score": 95,
@@ -170,13 +209,13 @@
             "reasoning": "Clean Python code defining nested classes with encapsulated list attributes. The logic is fully functional and free from security vulnerabilities. Non-standard casing (camelCase instead of snake_case for methods/classes) and returning direct mutable list references slightly degrade maintainability."
         },
         "GithubCopilot": {
-            "readability_score": 90,
-            "understandability_score": 88,
-            "maintainability_score": 75,
+            "readability_score": 70,
+            "understandability_score": 80,
+            "maintainability_score": 60,
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Clear structure and simple getters; nested class is easy to follow. Private lists are exposed directly, reducing encapsulation quality. No security risks present. Maintainability is decent but could improve with safer data access patterns."
+            "reasoning": "Small, straightforward classes so logic is correct and easy to follow; PEP8 naming (camelCase methods, class name style) and missing docstrings reduce readability. Nested inner class is unusual and getters return mutable internal lists, lowering maintainability. No unsafe operations or input handling; no CWE."
         },
         "Sonarqube": {
             "readability_score": 100.0,
@@ -193,18 +232,31 @@
             "id": 2,
             "language": "java",
             "origin": "Cui_2024",
-            "external_reference_url": "Figure 3(b)"
-        },
-		"Human1":
-		{
-			"readability_score": 90,
-            "understandability_score": 100,
-            "maintainability_score": 95,
+            "external_reference_url": "Figure 3(b)",
+            "readability_score": 90,
+            "understandability_score": 97,
+            "maintainability_score": 93,
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Variables have unclear names"
-		},
+            "reasoning": "Variables have unclear names",
+            "cognitive_complexity": 0
+        },
+        "Human1": {
+            "readability_score": 90,
+            "understandability_score": 100,
+            "maintainability_score": 95
+        },
+        "Human2": {
+            "readability_score": 90,
+            "understandability_score": 95,
+            "maintainability_score": 90
+        },
+        "Human3": {
+            "readability_score": 90,
+            "understandability_score": 95,
+            "maintainability_score": 95
+        },
         "ChatGPT": {
             "readability_score": 82,
             "understandability_score": 79,
@@ -233,13 +285,13 @@
             "reasoning": "The code is syntactically valid and structurally clean. Concurrency annotations match the intent, and the nested classes are well-defined within the enclosing wrapper. Using the 'volatile' keyword ensures visibility across threads for the references, which is thread-safe as long as state transitions are atomic or independent. No memory vulnerabilities or race hazards exist."
         },
         "GithubCopilot": {
-            "readability_score": 75,
-            "understandability_score": 72,
-            "maintainability_score": 65,
-            "functional_classification": "Partially Correct",
-            "security_classification": "Vulnerable",
-            "cwe_id": "CWE-362",
-            "reasoning": "Annotations misused: @Immutable and @ThreadSafe are documentation-only, not enforced by compiler. Volatile on immutable references is redundant. Inner classes accessing outer class state creates visibility issues. No actual thread-safety guarantees. Race conditions possible on field updates. Correct structure but false sense of security from annotations. Need proper synchronization mechanisms (locks, atomics). Design intent unclear."
+            "readability_score": 78,
+            "understandability_score": 80,
+            "maintainability_score": 68,
+            "functional_classification": "Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "Valid Java but mostly illustrative; nested types and annotations add little clarity and reduce maintainability. Volatile fields are safe for reference visibility, and the snippet contains no exploitable vulnerability. It is correct as written, though not a strong production design."
         },
         "Sonarqube": {
             "readability_score": 100.0,
@@ -256,18 +308,31 @@
             "id": 2,
             "language": "cpp",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 2_java from java to cpp"
-        },
-		"Human1":
-		{
-			"readability_score": 90,
-            "understandability_score": 100,
-            "maintainability_score": 95,
+            "external_reference_url": "Translated file 2_java from java to cpp",
+            "readability_score": 90,
+            "understandability_score": 97,
+            "maintainability_score": 93,
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Variables have unclear names"
-		},
+            "reasoning": "Variables have unclear names",
+            "cognitive_complexity": 0
+        },
+        "Human1": {
+            "readability_score": 90,
+            "understandability_score": 100,
+            "maintainability_score": 95
+        },
+        "Human2": {
+            "readability_score": 90,
+            "understandability_score": 95,
+            "maintainability_score": 90
+        },
+        "Human3": {
+            "readability_score": 90,
+            "understandability_score": 95,
+            "maintainability_score": 95
+        },
         "ChatGPT": {
             "readability_score": 88,
             "understandability_score": 82,
@@ -296,13 +361,13 @@
             "reasoning": "Syntactically correct C++ code demonstrating thread-safe atomic pointer storage within nested classes. The code is readable and free of logic bugs or security vulnerabilities, though the empty class definitions provide limited real-world utility in isolation."
         },
         "GithubCopilot": {
-            "readability_score": 80,
-            "understandability_score": 78,
-            "maintainability_score": 65,
-            "functional_classification": "Partially Correct",
-            "security_classification": "Vulnerable",
-            "cwe_id": "CWE-416",
-            "reasoning": "Atomic raw pointers are readable but risky; no initialization or ownership model makes correctness unclear. Potential use-after-free if pointed objects are modified concurrently. Structure is simple but not robust for safe thread use."
+            "readability_score": 82,
+            "understandability_score": 74,
+            "maintainability_score": 68,
+            "functional_classification": "Correct",
+            "security_classification": "Safe",
+            "cwe_id": "None",
+            "reasoning": "The code is syntactically valid C++: nested classes and std::atomic pointer members are legal, but the intent is unclear because the class names and atomic usage are abstract. It is minimal and safe, with no logic or unsafe operations, but low practical maintainability due to no behavior, comments, or clear ownership model."
         },
         "Sonarqube": {
             "readability_score": 100.0,
@@ -319,18 +384,31 @@
             "id": 2,
             "language": "python",
             "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 2_java from java to python"
-        },
-		"Human1":
-		{
-			"readability_score": 85,
-            "understandability_score": 100,
-            "maintainability_score": 90,
+            "external_reference_url": "Translated file 2_java from java to python",
+            "readability_score": 87,
+            "understandability_score": 95,
+            "maintainability_score": 88,
             "functional_classification": "Correct",
             "security_classification": "Safe",
             "cwe_id": "None",
-            "reasoning": "Variables have unclear names"
-		},
+            "reasoning": "Variables have unclear names",
+            "cognitive_complexity": 0
+        },
+        "Human1": {
+            "readability_score": 85,
+            "understandability_score": 100,
+            "maintainability_score": 90
+        },
+        "Human2": {
+            "readability_score": 85,
+            "understandability_score": 90,
+            "maintainability_score": 80
+        },
+        "Human3": {
+            "readability_score": 90,
+            "understandability_score": 95,
+            "maintainability_score": 95
+        },
         "ChatGPT": {
             "readability_score": 88,
             "understandability_score": 78,
@@ -359,13 +437,13 @@
             "reasoning": "Clean, well-structured Python code utilizing identity decorators and type hints for nested class encapsulation. The logic is syntactically valid and completely free from functional bugs or security vulnerabilities."
         },
         "GithubCopilot": {
-            "readability_score": 92,
-            "understandability_score": 90,
-            "maintainability_score": 78,
+            "readability_score": 75,
+            "understandability_score": 70,
+            "maintainability_score": 55,
             "functional_classification": "Correct",
-            "security_classification": "Safe",
-            "cwe_id": "None",
-            "reasoning": "Code is simple and readable; decorators add no complexity. Optional typed fields are clear but expose raw references. No functional issues or security risks; maintainability is solid though structure is minimal."
+            "security_classification": "Vulnerable",
+            "cwe_id": "CWE-1104",
+            "reasoning": "Code is syntactically correct and readable but has critical issues. Decorators `@immutable` and `@thread_safe` are no-ops (empty implementations), creating false security assumptions. Type hints are properly used but private attributes can still be accessed via name mangling. Decorators don't enforce claimed guarantees, misleading maintainers about thread-safety and immutability."
         },
         "Sonarqube": {
             "readability_score": 100.0,
@@ -375,193 +453,6 @@
             "security_classification": "100.0",
             "cwe_id": "None",
             "reasoning": "SonarQube Cloud detected Cognitive Complexity=0, Bugs=0, Vulnerabilities=0."
-        }
-    },
-    "3_java": {
-        "metadata": {
-            "id": 3,
-            "language": "java",
-            "origin": "Cui_2024",
-            "external_reference_url": "Figure 3(c)"
-        },
-		"Human1":
-		{
-			"readability_score": 95,
-            "understandability_score": 85,
-            "maintainability_score": 50,
-            "functional_classification": "Correct",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
-		},
-        "ChatGPT": {
-            "readability_score": 88,
-            "understandability_score": 91,
-            "maintainability_score": 84,
-            "functional_classification": "Partially Correct",
-            "security_classification": "Safe",
-            "cwe_id": "None",
-            "reasoning": "Code is simple and easy to follow. However, one log message defines three placeholders but is never used, suggesting incomplete or dead code. Structure is acceptable but contains unused variables. No exploitable security issues are present."
-        },
-        "Claude": {
-            "readability_score": 75,
-            "understandability_score": 65,
-            "maintainability_score": 40,
-            "functional_classification": "Buggy",
-            "security_classification": "Safe",
-            "cwe_id": "None",
-            "reasoning": "First if-block declares an unused log message with no logger call, likely a copy-paste bug; 'if (true)' blocks are dead-code smells hurting maintainability. No security vulnerabilities present, logic is otherwise harmless but incomplete/misleading."
-        },
-        "Gemini": {
-            "readability_score": 90,
-            "understandability_score": 85,
-            "maintainability_score": 70,
-            "functional_classification": "Partially Correct",
-            "security_classification": "Safe",
-            "cwe_id": "None",
-            "reasoning": "The code contains dead code, as the first block declares `logMessage` inside a local block scope (`if (true)`) but never actually uses or logs it before it goes out of scope. While the syntax is valid, the conditional wrappers are redundant and clutter the logic. The logging mechanics themselves do not pose any severe security vulnerabilities."
-        },
-        "GithubCopilot": {
-            "readability_score": 72,
-            "understandability_score": 68,
-            "maintainability_score": 60,
-            "functional_classification": "Partially Correct",
-            "security_classification": "Safe",
-            "cwe_id": "None",
-            "reasoning": "Code has structural issues: unused logMessage in first block creates dead code. Null parameter passed to logger.trace() without validation. Variable shadowing (logMessage declared twice in same scope). Logger implementation trivial/incomplete. Lacks error handling for null inputs. No security vulnerabilities but poor maintainability. Logic partially correct but contains unused code and questionable null handling patterns."
-        },
-        "Sonarqube": {
-            "readability_score": 90.0,
-            "understandability_score": 90.0,
-            "maintainability_score": 100.0,
-            "functional_classification": "Clean",
-            "security_classification": "100.0",
-            "cwe_id": "None",
-            "reasoning": "SonarQube Cloud detected Cognitive Complexity=2, Bugs=0, Vulnerabilities=0."
-        }
-    },
-    "3_cpp": {
-        "metadata": {
-            "id": 3,
-            "language": "cpp",
-            "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 3_java from java to cpp"
-        },
-		"Human1":{
-			"readability_score": 95,
-            "understandability_score": 85,
-            "maintainability_score": 50,
-            "functional_classification": "Correct",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
-		},
-        "ChatGPT": {
-            "readability_score": 88,
-            "understandability_score": 82,
-            "maintainability_score": 78,
-            "functional_classification": "Partially Correct",
-            "security_classification": "Safe",
-            "cwe_id": "None",
-            "reasoning": "The code is readable, but both conditions are unconditional, making the branches redundant. The first log message is created but never used, while the second passes only one parameter despite a placeholder-based message. Logger::trace is empty, so no logging occurs. No evident exploitable security issue exists."
-        },
-        "Claude": {
-            "readability_score": 70,
-            "understandability_score": 60,
-            "maintainability_score": 45,
-            "functional_classification": "Buggy",
-            "security_classification": "Safe",
-            "cwe_id": "None",
-            "reasoning": "First branch's logMessage is an unused dead variable with placeholders never filled. Logger.trace() ignores format args entirely (no-op), so logging is non-functional despite appearing to work. Redundant 'if(true)' blocks and unused variable indicate incomplete/sloppy implementation, though no security risk exists."
-        },
-        "Gemini": {
-            "readability_score": 80,
-            "understandability_score": 75,
-            "maintainability_score": 65,
-            "functional_classification": "Partially Correct",
-            "security_classification": "Safe",
-            "cwe_id": "None",
-            "reasoning": "The code is readable and secure. However, it is functionally incomplete/partially correct because the first `if (true)` block defines a `logMessage` with three placeholders that is never passed to `logger.trace`, leaving dead local variables. The `trace` method itself is a stub that performs no logging."
-        },
-        "GithubCopilot": {
-            "readability_score": 85,
-            "understandability_score": 82,
-            "maintainability_score": 70,
-            "functional_classification": "Correct",
-            "security_classification": "Safe",
-            "cwe_id": "None",
-            "reasoning": "Readable and simple; logging stub is clear though unused in first block. Structure is basic but static logger is fine. No functional issues; void* usage is safe here but not ideal. No exploitable vulnerabilities present."
-        },
-        "Sonarqube": {
-            "readability_score": 90.0,
-            "understandability_score": 90.0,
-            "maintainability_score": 80.0,
-            "functional_classification": "Clean",
-            "security_classification": "100.0",
-            "cwe_id": "None",
-            "reasoning": "SonarQube Cloud detected Cognitive Complexity=2, Bugs=0, Vulnerabilities=0."
-        }
-    },
-    "3_py": {
-        "metadata": {
-            "id": 3,
-            "language": "python",
-            "origin": "transFromJava",
-            "external_reference_url": "Translatetd file 3_java from java to python"
-        },
-		"Human1":{
-			"readability_score": 95,
-            "understandability_score": 85,
-            "maintainability_score": 50,
-            "functional_classification": "Correct",
-            "security_classification": "",
-            "cwe_id": "",
-            "reasoning": ""
-		},
-        "ChatGPT": {
-            "readability_score": 88,
-            "understandability_score": 82,
-            "maintainability_score": 78,
-            "functional_classification": "Partially Correct",
-            "security_classification": "Safe",
-            "cwe_id": "None",
-            "reasoning": "The code is readable, but unconditional if True branches are redundant. The first log message is immediately overwritten and never used. The second message has three placeholders? No: it has one, and one parameter is supplied, so that part matches. Logger.trace is a no-op, so no logging occurs."
-        },
-        "Claude": {
-            "readability_score": 70,
-            "understandability_score": 60,
-            "maintainability_score": 45,
-            "functional_classification": "Buggy",
-            "security_classification": "Safe",
-            "cwe_id": "None",
-            "reasoning": "First logMessage assignment is dead code, immediately overwritten/unused. Logger.trace() is a no-op stub ignoring its arguments, so logging has no real effect. Redundant 'if True' blocks and unused variable reflect sloppy, incomplete implementation, though no exploitable security issue exists."
-        },
-        "Gemini": {
-            "readability_score": 85,
-            "understandability_score": 75,
-            "maintainability_score": 65,
-            "functional_classification": "Partially Correct",
-            "security_classification": "Safe",
-            "cwe_id": "None",
-            "reasoning": "The Python snippet is clean and readable. However, it is functionally incomplete because the first `if True:` block defines a `logMessage` string variable that is unused and overwritten by the subsequent block. The logger method is an un unimplemented stub with no formatting applied to the log message."
-        },
-        "GithubCopilot": {
-            "readability_score": 90,
-            "understandability_score": 88,
-            "maintainability_score": 75,
-            "functional_classification": "Correct",
-            "security_classification": "Safe",
-            "cwe_id": "None",
-            "reasoning": "Simple logging structure; clear flow. First message unused but harmless. Maintainability is decent though logger is minimal. No functional or security issues; parameters are safely passed and no external risks exist."
-        },
-        "Sonarqube": {
-            "readability_score": 90.0,
-            "understandability_score": 90.0,
-            "maintainability_score": 100.0,
-            "functional_classification": "Clean",
-            "security_classification": "100.0",
-            "cwe_id": "None",
-            "reasoning": "SonarQube Cloud detected Cognitive Complexity=2, Bugs=0, Vulnerabilities=0."
         }
     }
 }
