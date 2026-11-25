@@ -1352,7 +1352,7 @@ def export_baselines_calibration_and_stats(
         w_stat, p_val = stats.wilcoxon(cg_err, other_err)
         cohen_d = abs(float((cg_err.mean() - other_err.mean()) / np.sqrt((cg_err.var(ddof=1) + other_err.var(ddof=1)) / 2.0)))
         tag = other_m[0].upper() + other_m[1:]
-        p_str = "< 10^{-10}" if tag == "Claude" else ("< 10^{-12}" if tag == "GithubCopilot" else ("< 10^{-15}" if tag == "Sonarqube" else f"= {float(p_val):.3f}"))
+        p_str = "< 0.001" if p_val < 0.001 else f"= {float(p_val):.3f}"
         macro_lines.extend([
             f"\\newcommand{{\\cgVs{tag}WilcoxonW}}{{{float(w_stat):.1f}}}",
             f"\\newcommand{{\\cgVs{tag}WilcoxonP}}{{{p_str}}}",
@@ -1401,6 +1401,14 @@ CWE_CATEGORY_MAPPING = {
     },
 }
 
+def _pred_is_vulnerable(model, item_model):
+    sc = str(item_model.get("security_classification", "")).strip().lower()
+    if model.lower() == "sonarqube":
+        try:
+            return float(sc) < 100.0
+        except ValueError:
+            return sc == "vulnerable"
+    return sc == "vulnerable"
 
 def export_cwe_category_recall_and_macros(
     raw_json_path: str = "Results.json",
@@ -1442,11 +1450,7 @@ def export_cwe_category_recall_and_macros(
         macro_lines.append(f"\\newcommand{{\\cwe{cat_key}Count}}{{{n_cat}}}")
 
         for m in models:
-            tp_m = sum(
-                1
-                for _, it in matching
-                if str(it.get(m, {}).get("security_classification", "")).strip().lower() == "vulnerable"
-            )
+            tp_m = sum(1 for _, it in matching if _pred_is_vulnerable(m, it.get(m, {})))
             rec_m = (tp_m / n_cat * 100.0) if n_cat > 0 else 0.0
             row[f"{m}_Recall_pct"] = round(rec_m, 1)
             prefix = m[0].lower() + m[1:]
@@ -1471,6 +1475,297 @@ def export_cwe_category_recall_and_macros(
 
     return cwe_df
 
+def generate_latex_macros(
+    df: pd.DataFrame,
+    overall_df: pd.DataFrame,
+    by_lang_df: pd.DataFrame,
+    macro_lang_df: pd.DataFrame,
+    cwe_table_counts: dict[str, int] | None = None,
+    cwe_table_recalls: dict[str, dict[str, float]] | None = None,
+    output_path: str = "./output_charts/thesis_macros.tex",
+) -> str:
+    """
+    Generates a LaTeX macro file directly from computed DataFrames and Results.json data.
+    Uses \\providecommand so re-running safely overwrites or updates definitions cleanly.
+    """
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
+    macros: list[str] = ["% Auto-generated LaTeX macros from evaluation results. Do not edit manually."]
+
+    def add_macro(name: str, val: str) -> None:
+        macros.append(f"\\providecommand{{\\{name}}}{{}}\\renewcommand{{\\{name}}}{{{val}}}")
+
+    # Dataset & class distribution
+    n_total = int(df["snippet_id"].nunique())
+    gt_sec_per_snip = df.groupby("snippet_id")["gt_is_vulnerable"].first()
+    n_vuln = int(gt_sec_per_snip.sum())
+    n_safe = int(n_total - n_vuln)
+    safe_pct = n_safe / n_total * 100.0
+    vuln_pct = n_vuln / n_total * 100.0
+
+    add_macro("TotalSnippets", f"{n_total}")
+    add_macro("SafeCount", f"{n_safe}")
+    add_macro("VulnCount", f"{n_vuln}")
+    add_macro("SafePct", f"{safe_pct:.2f}")
+    add_macro("VulnPct", f"{vuln_pct:.2f}")
+
+    # Per-language MAE & classification metrics
+    lang_map = {"java": "Java", "cpp": "Cpp", "python": "Python"}
+    model_map = {
+        "ChatGPT": "ChatGPT",
+        "Claude": "Claude",
+        "Gemini": "Gemini",
+        "GithubCopilot": "Copilot",
+        "Sonarqube": "Sonar",
+    }
+
+    mae_by_lang_model = df.groupby(["language", "model"])["overall_err"].mean()
+    for lang_key, lang_tag in lang_map.items():
+        n_lang = int(df[df["language"] == lang_key]["snippet_id"].nunique())
+        add_macro(f"LangCount{lang_tag}", f"{n_lang}")
+
+        for m_key, m_tag in model_map.items():
+            mae_val = mae_by_lang_model.loc[(lang_key, m_key)]
+            add_macro(f"Mae{lang_tag}{m_tag}", f"{mae_val:.2f}")
+
+            sub_l = by_lang_df[(by_lang_df["Language"] == lang_key) & (by_lang_df["Model"] == m_key)]
+            if not sub_l.empty:
+                r = sub_l.iloc[0]
+                acc_v = 0.0 if pd.isna(r["Sec_Acc_pct"]) else float(r["Sec_Acc_pct"])
+                prec_v = 0.0 if pd.isna(r["Sec_Prec_pct"]) else float(r["Sec_Prec_pct"])
+                rec_v = 0.0 if pd.isna(r["Sec_Rec_pct"]) else float(r["Sec_Rec_pct"])
+                f1_v = 0.0 if pd.isna(r["Sec_F1_pct"]) else float(r["Sec_F1_pct"])
+
+                add_macro(f"SecAcc{lang_tag}{m_tag}", f"{acc_v:.1f}")
+                add_macro(f"SecPrec{lang_tag}{m_tag}", f"{prec_v:.1f}")
+                add_macro(f"SecRec{lang_tag}{m_tag}", f"{rec_v:.1f}")
+                add_macro(f"SecFOne{lang_tag}{m_tag}", f"{f1_v:.1f}")
+
+    # Macro recall across languages
+    macro_indexed = macro_lang_df.set_index("Model")
+    for m_key, m_tag in model_map.items():
+        if m_key in macro_indexed.index:
+            m_sec_rec = float(macro_indexed.loc[m_key, "MacroLang_Sec_Rec_pct"])
+            add_macro(f"MacroLangSecRec{m_tag}", f"{m_sec_rec:.1f}")
+
+    # Overall classification, confusion matrices & functional/combined recall
+    ov_indexed = overall_df.set_index("Model")
+    for m_key, m_tag in model_map.items():
+        if m_key in ov_indexed.index:
+            row = ov_indexed.loc[m_key]
+            add_macro(f"SecTP{m_tag}", f"{int(row['Sec_TP'])}")
+            add_macro(f"SecFP{m_tag}", f"{int(row['Sec_FP'])}")
+            add_macro(f"SecTN{m_tag}", f"{int(row['Sec_TN'])}")
+            add_macro(f"SecFN{m_tag}", f"{int(row['Sec_FN'])}")
+            add_macro(f"SecAccOverall{m_tag}", f"{float(row['Sec_Acc_pct']):.1f}")
+            add_macro(f"FuncBugFOne{m_tag}", f"{float(row['FuncBug_F1_pct']):.1f}")
+            add_macro(f"FuncAnyAcc{m_tag}", f"{float(row['FuncAny_Acc_pct']):.1f}")
+            add_macro(f"FuncAnyPrec{m_tag}", f"{float(row['FuncAny_Prec_pct']):.1f}")
+            add_macro(f"FuncAnyRec{m_tag}", f"{float(row['FuncAny_Rec_pct']):.1f}")
+            add_macro(f"FuncAnyFOne{m_tag}", f"{float(row['FuncAny_F1_pct']):.1f}")
+            add_macro(f"MacroRecSecBug{m_tag}", f"{float(row['MacroRec_Sec_FuncBug_pct']):.1f}")
+            add_macro(f"PooledRecSecBug{m_tag}", f"{float(row['PooledRec_Sec_FuncBug_pct']):.1f}")
+
+    # Cognitive complexity strata (Low 0-3, Medium 4-8, High 9+)
+    comp_series = pd.cut(
+        df["cognitive_complexity"],
+        bins=[-1, 3, 8, 100],
+        labels=["Low", "Medium", "High"],
+    )
+    df_comp = df.assign(comp_bucket=comp_series)
+    bucket_counts = df_comp[df_comp["model"] == "ChatGPT"]["comp_bucket"].value_counts()
+    mae_bucket = df_comp.groupby(["comp_bucket", "model"], observed=False)["overall_err"].mean()
+    sec_acc_bucket = df_comp.groupby(["comp_bucket", "model"], observed=False)["sec_correct"].mean() * 100.0
+
+    for b_name in ["Low", "Medium", "High"]:
+        add_macro(f"CompCount{b_name}", f"{int(bucket_counts.get(b_name, 0))}")
+        for m_key, m_tag in model_map.items():
+            add_macro(f"CompMae{b_name}{m_tag}", f"{float(mae_bucket.loc[(b_name, m_key)]):.2f}")
+            add_macro(f"CompSecAcc{b_name}{m_tag}", f"{float(sec_acc_bucket.loc[(b_name, m_key)]):.1f}")
+
+    # Optional CWE table counts & recalls if passed from your CWE grouping logic
+    if cwe_table_counts:
+        for cat_tag, cnt in cwe_table_counts.items():
+            add_macro(f"CweCount{cat_tag}", f"{int(cnt)}")
+    if cwe_table_recalls:
+        for cat_tag, m_dict in cwe_table_recalls.items():
+            for m_key, m_tag in model_map.items():
+                if m_key in m_dict:
+                    add_macro(f"CweRec{cat_tag}{m_tag}", f"{float(m_dict[m_key]):.1f}")
+
+    marker = macros[0]
+    existing = ""
+    if os.path.exists(output_path):
+        with open(output_path, "r", encoding="utf-8") as f:
+            existing = f.read()
+        if marker in existing:
+            existing = existing.split(marker)[0].rstrip() + "\n"
+    with open(output_path, "w", encoding="utf-8") as f:
+        f.write(existing + "\n".join(macros) + "\n")
+
+    print(f"LaTeX macros written to: {output_path}")
+    return output_path
+
+def append_advanced_security_macros(
+    overall_df: pd.DataFrame,
+    output_path: str = "./thesis_macros.tex",
+) -> None:
+    """
+    Computes Balanced Accuracy, MCC and Cohen's kappa from the overall security
+    confusion counts and appends \\SecBalAccX, \\SecMCCX, \\SecKappaX macros.
+    Must run AFTER generate_latex_macros (which rewrites the file from scratch).
+    """
+    model_map = {
+        "ChatGPT": "ChatGPT",
+        "Claude": "Claude",
+        "Gemini": "Gemini",
+        "GithubCopilot": "Copilot",
+        "Sonarqube": "Sonar",
+    }
+    lines = ["", "% === Advanced Security Metrics (Balanced Acc., MCC, Cohen's kappa) ==="]
+
+    def add(name, val):
+        lines.append(f"\\providecommand{{\\{name}}}{{}}\\renewcommand{{\\{name}}}{{{val}}}")
+
+    for _, r in overall_df.iterrows():
+        tag = model_map.get(r["Model"])
+        if tag is None:
+            continue
+        tp, fp, tn, fn = (float(r[c]) for c in ("Sec_TP", "Sec_FP", "Sec_TN", "Sec_FN"))
+        n = tp + fp + tn + fn
+
+        tpr = tp / (tp + fn) if (tp + fn) > 0 else np.nan
+        tnr = tn / (tn + fp) if (tn + fp) > 0 else np.nan
+        bal_acc = (tpr + tnr) / 2.0 * 100.0
+
+        denom = np.sqrt((tp + fp) * (tp + fn) * (tn + fp) * (tn + fn))
+        mcc = (tp * tn - fp * fn) / denom if denom > 0 else 0.0
+
+        p_o = (tp + tn) / n
+        p_e = ((tp + fp) * (tp + fn) + (fn + tn) * (fp + tn)) / (n ** 2)
+        kappa = (p_o - p_e) / (1.0 - p_e) if p_e < 1.0 else np.nan
+
+        add(f"SecBalAcc{tag}", f"{bal_acc:.1f}")
+        add(f"SecMCC{tag}", f"{mcc:.3f}")
+        add(f"SecKappa{tag}", f"{kappa:.3f}")
+
+    with open(output_path, "a", encoding="utf-8") as f:
+        f.write("\n".join(lines) + "\n")
+    print(f"Advanced security macros appended to: {output_path}")
+
+
+def export_extra_macros(raw_json_path="Results.json",
+                        tex_out_path="./metrics_macros.tex",
+                        csv_out_path="./extra_metrics_summary.csv"):
+    with open(raw_json_path, "r", encoding="utf-8") as f:
+        raw = json.load(f)
+    models = ["ChatGPT", "Claude", "Gemini", "GithubCopilot", "Sonarqube"]
+    llms = models[:4]
+    dims = {"Read": "readability_score", "Und": "understandability_score", "Maint": "maintainability_score"}
+    langs = {"cpp": "Cpp", "java": "Java", "python": "Python"}
+    func_map = {"correct": "Correct", "partially correct": "Partial", "buggy": "Buggy"}
+    tag = lambda m: m[0].lower() + m[1:]
+    cwes = lambda x: set(c.upper() for c in re.findall(r"CWE-\d+", str(x), flags=re.IGNORECASE))
+
+    rows = []
+    for sid, item in raw.items():
+        meta = item.get("metadata", {})
+        r = {"sid": sid, "lang": str(meta.get("language", "")).strip().lower(),
+             "gt_func": str(meta.get("functional_classification", "")).strip().lower(),
+             "gt_vuln": str(meta.get("security_classification", "")).strip().lower() == "vulnerable",
+             "gt_cwe": cwes(meta.get("cwe_id", ""))}
+        for d, key in dims.items():
+            r[f"gt_{d}"] = pd.to_numeric(meta.get(key), errors="coerce")
+        r["gt_Overall"] = float(np.mean([r[f"gt_{d}"] for d in dims]))
+        for m in models:
+            md = item.get(m, {})
+            for d, key in dims.items():
+                r[f"{m}_{d}"] = pd.to_numeric(md.get(key), errors="coerce")
+            r[f"{m}_Overall"] = float(np.mean([r[f"{m}_{d}"] for d in dims]))
+            r[f"{m}_func"] = str(md.get("functional_classification", "")).strip().lower()
+            r[f"{m}_cwe"] = cwes(md.get("cwe_id", ""))
+        rows.append(r)
+    d = pd.DataFrame(rows)
+    unknown = set(d["lang"]) - set(langs)
+    if unknown:
+        print(f"WARNING: unmapped language values {unknown}")
+
+    out = {}
+    for D in list(dims) + ["Overall"]:                       # 1. ground truth stats
+        out[f"gtMean{D}"] = f"{d[f'gt_{D}'].mean():.2f}"
+        out[f"gtSd{D}"] = f"{d[f'gt_{D}'].std(ddof=1):.2f}"
+
+    for m in models:                                          # 2. MAE, signed bias, means, delta
+        t = tag(m)
+        for D in dims:
+            err = d[f"{m}_{D}"] - d[f"gt_{D}"]
+            out[f"{t}Mae{D}"] = f"{err.abs().mean():.2f}"
+            out[f"{t}Bias{D}"] = f"{err.mean():+.2f}"
+            out[f"{t}Mean{D}"] = f"{d[f'{m}_{D}'].mean():.2f}"
+        per_lang = {D: [] for D in list(dims) + ["Overall"]}
+        for lk, L in langs.items():
+            sub = d[d["lang"] == lk]
+            for D in list(dims) + ["Overall"]:
+                mae = (sub[f"{m}_{D}"] - sub[f"gt_{D}"]).abs().mean()
+                per_lang[D].append(mae)
+                if D != "Overall":
+                    out[f"{t}{L}Mae{D}"] = f"{mae:.2f}"
+        for D, vals in per_lang.items():
+            out[f"{t}DeltaMaeLang{D}"] = f"{max(vals) - min(vals):.2f}"
+
+    for lab, name in func_map.items():                        # 3. functional, 3 classes
+        n = int((d["gt_func"] == lab).sum())
+        out[f"gtFunc{name}Count"] = str(n)
+        out[f"gtFunc{name}Pct"] = f"{n / len(d) * 100:.1f}\\%"
+    bad_gt = set(d["gt_func"]) - set(func_map)
+    if bad_gt:
+        print(f"WARNING: unexpected ground-truth functional labels {bad_gt}")
+    for m in llms:
+        t = tag(m)
+        bad = set(d[f"{m}_func"]) - set(func_map)
+        if bad:
+            print(f"WARNING: {m} has unexpected functional labels {bad} (counted as wrong)")
+        ok = d[f"{m}_func"] == d["gt_func"]
+        out[f"{t}FuncAccPct"] = f"{ok.mean() * 100:.2f}\\%"
+        for lab, name in func_map.items():
+            out[f"{t}FuncRec{name}Pct"] = f"{ok[d['gt_func'] == lab].mean() * 100:.1f}\\%"
+        for lk, L in langs.items():
+            out[f"{t}{L}FuncAccPct"] = f"{ok[d['lang'] == lk].mean() * 100:.1f}\\%"
+
+    vuln = d[d["gt_vuln"]]                                    # 4. CWE alignment
+    n_no_cwe = int((vuln["gt_cwe"].apply(len) == 0).sum())
+    if n_no_cwe:
+        print(f"WARNING: {n_no_cwe} ground-truth Vulnerable snippets have no CWE id")
+    for m in models:
+        hit = vuln.apply(lambda r: len(r[f"{m}_cwe"] & r["gt_cwe"]) > 0, axis=1)
+        out[f"{tag(m)}CweAlignCount"] = str(int(hit.sum()))
+        out[f"{tag(m)}CweAlignPct"] = f"{hit.mean() * 100:.1f}\\%"
+
+    names = ["GT"] + models                                   # 5. Spearman matrices
+    for D in dims:
+        mat = pd.DataFrame({"GT": d[f"gt_{D}"], **{m: d[f"{m}_{D}"] for m in models}})
+        corr = mat.corr(method="spearman")
+        for a in names:
+            for b in names:
+                if a != b and pd.notna(corr.loc[a, b]):
+                    out[f"sp{D}{a}{b}"] = f"{corr.loc[a, b]:.3f}"
+
+    marker = "% === Extra Macros (export_extra_macros) ==="
+    lines = ["", marker]
+    for k, v in out.items():
+        lines.append(f"\\providecommand{{\\{k}}}{{}}\\renewcommand{{\\{k}}}{{{v}}}")
+    existing = ""
+    if os.path.exists(tex_out_path):
+        with open(tex_out_path, "r", encoding="utf-8") as f:
+            existing = f.read()
+        if marker in existing:
+            existing = existing.split(marker)[0].rstrip() + "\n"
+    with open(tex_out_path, "w", encoding="utf-8") as f:
+        f.write(existing + "\n".join(lines).strip() + "\n")
+    summary = pd.DataFrame({"macro": list(out.keys()), "value": list(out.values())})
+    summary.to_csv(csv_out_path, index=False)
+    print(f" - {tex_out_path} ({len(out)} macros)\n - {csv_out_path}")
+    return summary
+
 if __name__ == '__main__':
     filename = '..\\..\\Results.json'
 
@@ -1480,6 +1775,9 @@ if __name__ == '__main__':
 
     # Export full classification matrices & recall CSV tables
     matrices = export_classification_matrices(df, output_dir='.')
+    generate_latex_macros(df, matrices["overall"], matrices["by_language"],
+                      matrices["macro_by_language"], output_path="./metrics_macros.tex")
+    append_advanced_security_macros(matrices["overall"], "./metrics_macros.tex")
     reasoning_len_df = export_reasoning_length_stats_and_macros(
         df=df,
         output_dir='.',
@@ -1501,6 +1799,8 @@ if __name__ == '__main__':
     export_cwe_category_recall_and_macros(raw_json_path=filename,
                 output_dir='.',
                 tex_out_path='./metrics_macros.tex')
+    export_extra_macros(raw_json_path=filename)
+
     mae_details = export_mae_by_language_and_criterion(df, output_dir='./')
     print("\nMAE by Language, Model & Criterion:\n", mae_details.to_string(index=False))
 
