@@ -299,7 +299,7 @@ sonarqubeFuncBinRecPct,11.7\%
 sonarqubeFuncBinFnrPct,88.3\%
 sonarqubeFuncBinFPct,20.6\%
 funcAlwaysDefectiveFPct,77.0\%
-lowMaintQ1,57
+lowMaintQ,57
 lowMaintCount,76
 sonarqubeLowMaintTopPct,76.3\%
 chatGPTLowMaintMean,67.1
@@ -307,3 +307,9 @@ claudeLowMaintMean,40.3
 geminiLowMaintMean,48.6
 githubCopilotLowMaintMean,43.1
 sonarqubeLowMaintMean,93.7
+gtLowMaintMean,49.7
+chatGPTLowMaintDrop,+10.9
+claudeLowMaintDrop,+13.0
+geminiLowMaintDrop,+12.7
+githubCopilotLowMaintDrop,+12.9
+sonarqubeLowMaintDrop,-0.4

@@ -1846,6 +1846,10 @@ def export_extra_macros(raw_json_path="Results.json",
     for m in models:
         out[f"{tag(m)}LowMaintMean"] = f"{d.loc[low, f'{m}_Maint'].mean():.1f}"
 
+    out["gtLowMaintMean"] = f"{d.loc[low, 'gt_Maint'].mean():.1f}"
+    for m in models:
+        out[f"{tag(m)}LowMaintDrop"] = f"{d[f'{m}_Maint'].mean() - d.loc[low, f'{m}_Maint'].mean():+.1f}"
+
     marker = "% === Extra Macros (export_extra_macros) ==="
     lines = ["", marker]
     for k, v in out.items():
