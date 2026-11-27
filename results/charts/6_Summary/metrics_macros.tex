@@ -1035,16 +1035,16 @@
 \newcommand{\sonarqubeCalSpearmanRho}{0.333}
 \newcommand{\cgVsClaudeWilcoxonW}{12409.0}
 \newcommand{\cgVsClaudeWilcoxonP}{< 0.001}
-\newcommand{\cgVsClaudeEffectD}{0.580}
+\newcommand{\cgVsClaudeEffectR}{0.44}
 \newcommand{\cgVsGithubCopilotWilcoxonW}{11505.5}
 \newcommand{\cgVsGithubCopilotWilcoxonP}{< 0.001}
-\newcommand{\cgVsGithubCopilotEffectD}{0.676}
+\newcommand{\cgVsGithubCopilotEffectR}{0.49}
 \newcommand{\cgVsSonarqubeWilcoxonW}{9492.5}
 \newcommand{\cgVsSonarqubeWilcoxonP}{< 0.001}
-\newcommand{\cgVsSonarqubeEffectD}{0.555}
+\newcommand{\cgVsSonarqubeEffectR}{0.56}
 \newcommand{\cgVsGeminiWilcoxonW}{20487.5}
 \newcommand{\cgVsGeminiWilcoxonP}{= 0.599}
-\newcommand{\cgVsGeminiEffectD}{0.108}
+\newcommand{\cgVsGeminiEffectR}{0.04}
 % === CWE Category Vulnerability Recall Macros ===
 \newcommand{\cweMemoryAndPointerSafetyCount}{40}
 \newcommand{\cweMemoryAndPointerSafetyChatGPTRecallPct}{77.5\%}
@@ -1183,6 +1183,8 @@
 \providecommand{\sonarqubeDeltaMaeLangUnd}{}\renewcommand{\sonarqubeDeltaMaeLangUnd}{1.12}
 \providecommand{\sonarqubeDeltaMaeLangMaint}{}\renewcommand{\sonarqubeDeltaMaeLangMaint}{5.48}
 \providecommand{\sonarqubeDeltaMaeLangOverall}{}\renewcommand{\sonarqubeDeltaMaeLangOverall}{2.19}
+\providecommand{\sonarqubeMaintTopCount}{}\renewcommand{\sonarqubeMaintTopCount}{219}
+\providecommand{\sonarqubeMaintTopPct}{}\renewcommand{\sonarqubeMaintTopPct}{73.0\%}
 \providecommand{\gtFuncCorrectCount}{}\renewcommand{\gtFuncCorrectCount}{112}
 \providecommand{\gtFuncCorrectPct}{}\renewcommand{\gtFuncCorrectPct}{37.3\%}
 \providecommand{\gtFuncPartialCount}{}\renewcommand{\gtFuncPartialCount}{88}
@@ -1317,6 +1319,12 @@
 \providecommand{\spMaintSonarqubeClaude}{}\renewcommand{\spMaintSonarqubeClaude}{0.033}
 \providecommand{\spMaintSonarqubeGemini}{}\renewcommand{\spMaintSonarqubeGemini}{-0.028}
 \providecommand{\spMaintSonarqubeGithubCopilot}{}\renewcommand{\spMaintSonarqubeGithubCopilot}{-0.005}
+\providecommand{\spReadMinLLM}{}\renewcommand{\spReadMinLLM}{0.451}
+\providecommand{\spReadMaxLLM}{}\renewcommand{\spReadMaxLLM}{0.490}
+\providecommand{\spUndMinLLM}{}\renewcommand{\spUndMinLLM}{0.501}
+\providecommand{\spUndMaxLLM}{}\renewcommand{\spUndMaxLLM}{0.526}
+\providecommand{\spMaintMinLLM}{}\renewcommand{\spMaintMinLLM}{0.554}
+\providecommand{\spMaintMaxLLM}{}\renewcommand{\spMaintMaxLLM}{0.626}
 \providecommand{\funcDefectiveCount}{}\renewcommand{\funcDefectiveCount}{188}
 \providecommand{\funcDefectivePct}{}\renewcommand{\funcDefectivePct}{62.7\%}
 \providecommand{\chatGPTFuncBinTP}{}\renewcommand{\chatGPTFuncBinTP}{150}
@@ -1379,3 +1387,5 @@
 \providecommand{\geminiLowMaintDrop}{}\renewcommand{\geminiLowMaintDrop}{+12.7}
 \providecommand{\githubCopilotLowMaintDrop}{}\renewcommand{\githubCopilotLowMaintDrop}{+12.9}
 \providecommand{\sonarqubeLowMaintDrop}{}\renewcommand{\sonarqubeLowMaintDrop}{-0.4}
+\providecommand{\cgCopilotSpearmanOverall}{}\renewcommand{\cgCopilotSpearmanOverall}{0.68}
+\providecommand{\cgCopilotMeanDiffOverall}{}\renewcommand{\cgCopilotMeanDiffOverall}{18.7}

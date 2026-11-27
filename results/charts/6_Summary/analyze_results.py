@@ -1401,16 +1401,25 @@ def export_baselines_calibration_and_stats(
     cg_err = mdf[mdf["model"] == "ChatGPT"].set_index("snippet_id")["abs_err"]
     for other_m in ["Claude", "GithubCopilot", "Sonarqube", "Gemini"]:
         other_err = mdf[mdf["model"] == other_m].set_index("snippet_id")["abs_err"]
-        w_stat, p_val = stats.wilcoxon(cg_err, other_err)
-        cohen_d = abs(float((cg_err.mean() - other_err.mean()) / np.sqrt((cg_err.var(ddof=1) + other_err.var(ddof=1)) / 2.0)))
+        pair = pd.concat([cg_err, other_err], axis=1, keys=["cg", "other"]).dropna()
+        w_stat, p_val = stats.wilcoxon(pair["cg"], pair["other"])
+
+        # Matched-pairs rank-biserial correlation (effect size for the Wilcoxon test).
+        # Positive = ChatGPT had the smaller absolute error.
+        diff = (pair["other"] - pair["cg"]).to_numpy()
+        diff = diff[diff != 0]                      # zero differences dropped, as in scipy's default
+        ranks = stats.rankdata(np.abs(diff))
+        w_plus, w_minus = ranks[diff > 0].sum(), ranks[diff < 0].sum()
+        r_rb = (w_plus - w_minus) / (w_plus + w_minus)
+
         tag = other_m[0].upper() + other_m[1:]
         p_str = "< 0.001" if p_val < 0.001 else f"= {float(p_val):.3f}"
         macro_lines.extend([
             f"\\newcommand{{\\cgVs{tag}WilcoxonW}}{{{float(w_stat):.1f}}}",
             f"\\newcommand{{\\cgVs{tag}WilcoxonP}}{{{p_str}}}",
-            f"\\newcommand{{\\cgVs{tag}EffectD}}{{{cohen_d:.3f}}}",
+            f"\\newcommand{{\\cgVs{tag}EffectR}}{{{r_rb:.2f}}}",
         ])
-
+    
     out_df = pd.DataFrame(table_rows)
     csv_path = os.path.join(output_dir, "baseline_calibration_significance.csv")
     out_df.to_csv(csv_path, index=False)
@@ -1764,6 +1773,11 @@ def export_extra_macros(raw_json_path="Results.json",
         for D, vals in per_lang.items():
             out[f"{t}DeltaMaeLang{D}"] = f"{max(vals) - min(vals):.2f}"
 
+    # 2b. Share of snippets SonarQube rated at the top maintainability level (100)
+    top = d["Sonarqube_Maint"] >= 100
+    out["sonarqubeMaintTopCount"] = str(int(top.sum()))
+    out["sonarqubeMaintTopPct"] = f"{top.mean() * 100:.1f}\\%"
+
     for lab, name in func_map.items():                        # 3. functional, 3 classes
         n = int((d["gt_func"] == lab).sum())
         out[f"gtFunc{name}Count"] = str(n)
@@ -1801,8 +1815,13 @@ def export_extra_macros(raw_json_path="Results.json",
                 if a != b and pd.notna(corr.loc[a, b]):
                     out[f"sp{D}{a}{b}"] = f"{corr.loc[a, b]:.3f}"
 
+    # 5b. Range of LLM-vs-GT Spearman per dimension
+    for D in dims:
+        vals = [float(out[f"sp{D}GT{m}"]) for m in llms]
+        out[f"sp{D}MinLLM"] = f"{min(vals):.3f}"
+        out[f"sp{D}MaxLLM"] = f"{max(vals):.3f}"
 
-        # 6. Binary functional defect detection: positive = defective = Partially Correct or Buggy
+    # 6. Binary functional defect detection: positive = defective = Partially Correct or Buggy
     defect_labels = {"buggy", "partially correct"}
     gt_def = d["gt_func"].isin(defect_labels)
     n_def = int(gt_def.sum())
@@ -1849,6 +1868,11 @@ def export_extra_macros(raw_json_path="Results.json",
     out["gtLowMaintMean"] = f"{d.loc[low, 'gt_Maint'].mean():.1f}"
     for m in models:
         out[f"{tag(m)}LowMaintDrop"] = f"{d[f'{m}_Maint'].mean() - d.loc[low, f'{m}_Maint'].mean():+.1f}"
+
+    # 8. ChatGPT vs. GitHub Copilot: Spearman of overall scores and mean score difference
+    cg, cp = d["ChatGPT_Overall"], d["GithubCopilot_Overall"]
+    out["cgCopilotSpearmanOverall"] = f"{cg.corr(cp, method='spearman'):.2f}"
+    out["cgCopilotMeanDiffOverall"] = f"{(cg - cp).mean():.1f}"
 
     marker = "% === Extra Macros (export_extra_macros) ==="
     lines = ["", marker]

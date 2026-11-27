@@ -117,6 +117,8 @@ sonarqubeDeltaMaeLangRead,1.62
 sonarqubeDeltaMaeLangUnd,1.12
 sonarqubeDeltaMaeLangMaint,5.48
 sonarqubeDeltaMaeLangOverall,2.19
+sonarqubeMaintTopCount,219
+sonarqubeMaintTopPct,73.0\%
 gtFuncCorrectCount,112
 gtFuncCorrectPct,37.3\%
 gtFuncPartialCount,88
@@ -251,6 +253,12 @@ spMaintSonarqubeChatGPT,-0.063
 spMaintSonarqubeClaude,0.033
 spMaintSonarqubeGemini,-0.028
 spMaintSonarqubeGithubCopilot,-0.005
+spReadMinLLM,0.451
+spReadMaxLLM,0.490
+spUndMinLLM,0.501
+spUndMaxLLM,0.526
+spMaintMinLLM,0.554
+spMaintMaxLLM,0.626
 funcDefectiveCount,188
 funcDefectivePct,62.7\%
 chatGPTFuncBinTP,150
@@ -313,3 +321,5 @@ claudeLowMaintDrop,+13.0
 geminiLowMaintDrop,+12.7
 githubCopilotLowMaintDrop,+12.9
 sonarqubeLowMaintDrop,-0.4
+cgCopilotSpearmanOverall,0.68
+cgCopilotMeanDiffOverall,18.7
