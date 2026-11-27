@@ -125,6 +125,47 @@ def load_and_prepare_data(file_path='Results.json'):
 
     return pd.DataFrame(records)
 
+def plot_maintainability_mae_by_language(df, output_dir='./output_charts'):
+    """Figure for the Maintainability MAE by model and language (book file: 01_mae_by_model.png)."""
+    os.makedirs(output_dir, exist_ok=True)
+
+    model_order = ['ChatGPT', 'Gemini', 'Claude', 'GithubCopilot', 'Sonarqube']
+    display_names = {'ChatGPT': 'ChatGPT', 'Gemini': 'Gemini', 'Claude': 'Claude',
+                     'GithubCopilot': 'GitHub Copilot', 'Sonarqube': 'SonarQube Cloud'}
+    lang_order = ['cpp', 'java', 'python']
+    lang_labels = {'cpp': 'C++', 'java': 'Java', 'python': 'Python'}
+    lang_colors = {'cpp': '#0072B2', 'java': '#E69F00', 'python': '#009E73'}
+
+    plot_df = df[df['model'].isin(model_order)]
+
+    plt.figure(figsize=(10, 6))
+    ax = sns.barplot(
+        data=plot_df, x='model', y='maint_err', hue='language',
+        order=model_order, hue_order=lang_order,
+        palette=lang_colors, errorbar=None
+    )
+    ax.set_xticks(range(len(model_order)))
+    ax.set_xticklabels([display_names[m] for m in model_order])
+    ax.set_title("Maintainability MAE by Model and Programming Language",
+                 fontsize=13, fontweight='bold', pad=15)
+    ax.set_xlabel("Analysis Tool / AI Engine", fontweight='bold')
+    ax.set_ylabel("Maintainability MAE vs GT (Points)", fontweight='bold')
+
+    max_val = plot_df.groupby(['model', 'language'])['maint_err'].mean().max()
+    ax.set_ylim(0, max_val * 1.15)
+
+    for c in ax.containers:
+        ax.bar_label(c, fmt='%.1f', fontsize=8, fontweight='bold', padding=3)
+
+    handles, labels = ax.get_legend_handles_labels()
+    ax.legend(handles, [lang_labels[l] for l in labels], title='Language',
+              loc='upper center', bbox_to_anchor=(0.5, -0.12), ncol=3, frameon=False)
+
+    sns.despine()
+    plt.tight_layout()
+    plt.savefig(os.path.join(output_dir, '01_mae_by_model.png'),
+                dpi=CHART_DPI, bbox_inches='tight')
+    plt.close()
 
 def generate_all_visualizations(df, output_dir='./output_charts'):
     os.makedirs(output_dir, exist_ok=True)
@@ -132,6 +173,8 @@ def generate_all_visualizations(df, output_dir='./output_charts'):
 
     ai_df = df[df['model'].str.lower() != 'sonarqube']
 
+    plot_maintainability_mae_by_language(df, output_dir)
+    
     # ----------------------------------------------------
     # Chart 1: Mean Absolute Error (MAE) vs Metadata GT
     # ----------------------------------------------------
@@ -217,14 +260,23 @@ def generate_all_visualizations(df, output_dir='./output_charts'):
         'Sonarqube': '#4E9BCD'
     }
 
+    lang_order  = ['cpp', 'java', 'python']
+    model_order = ['ChatGPT', 'Gemini', 'Claude', 'GithubCopilot', 'Sonarqube']
+    display_names = {'ChatGPT': 'ChatGPT', 'Gemini': 'Gemini', 'Claude': 'Claude',
+                    'GithubCopilot': 'GitHub Copilot', 'Sonarqube': 'SonarQube Cloud'}
+
     ax = sns.barplot(
-        data=df,
-        x='language',
-        y='overall_err',
-        hue='model',
-        errorbar=None,
-        palette=model_colors
+        data=df, x='language', y='overall_err', hue='model',
+        order=lang_order, hue_order=model_order,
+        errorbar=None, palette=model_colors
     )
+    ax.set_xticks(range(len(lang_order)))
+    ax.set_xticklabels(['C++', 'Java', 'Python'])
+
+    handles, labels = ax.get_legend_handles_labels()
+    ax.legend(handles, [display_names[l] for l in labels], title='Model',
+            loc='upper center', bbox_to_anchor=(0.5, -0.12), ncol=5, frameon=False)
+
     ax.set_title("Language Sensitivity: Overall MAE vs GT Across Programming Languages", fontsize=13, fontweight='bold', pad=15)
     ax.set_xlabel("Programming Language", fontweight='bold')
     ax.set_ylabel("Mean Absolute Error vs GT (Points)", fontweight='bold')
