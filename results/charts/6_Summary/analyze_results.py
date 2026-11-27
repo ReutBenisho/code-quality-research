@@ -1801,6 +1801,51 @@ def export_extra_macros(raw_json_path="Results.json",
                 if a != b and pd.notna(corr.loc[a, b]):
                     out[f"sp{D}{a}{b}"] = f"{corr.loc[a, b]:.3f}"
 
+
+        # 6. Binary functional defect detection: positive = defective = Partially Correct or Buggy
+    defect_labels = {"buggy", "partially correct"}
+    gt_def = d["gt_func"].isin(defect_labels)
+    n_def = int(gt_def.sum())
+    out["funcDefectiveCount"] = str(n_def)
+    out["funcDefectivePct"] = f"{n_def / len(d) * 100:.1f}\\%"
+
+    sonar_labels = set(d["Sonarqube_func"])
+    if not sonar_labels <= {"clean", "code smell/bug"}:
+        print(f"WARNING: unexpected SonarQube functional labels {sonar_labels}")
+
+    def pct(x):
+        return "N/A" if pd.isna(x) else f"{x * 100:.1f}\\%"
+
+    for m in models:
+        t = tag(m)
+        pred = (d[f"{m}_func"] != "clean") if m == "Sonarqube" else d[f"{m}_func"].isin(defect_labels)
+        tp = int((pred & gt_def).sum()); fp = int((pred & ~gt_def).sum())
+        fn = int((~pred & gt_def).sum()); tn = int((~pred & ~gt_def).sum())
+        prec = tp / (tp + fp) if (tp + fp) else float("nan")
+        rec = tp / (tp + fn) if (tp + fn) else float("nan")
+        f1 = 2 * prec * rec / (prec + rec) if (prec + rec) > 0 else float("nan")
+        out[f"{t}FuncBinTP"] = str(tp)
+        out[f"{t}FuncBinFP"] = str(fp)
+        out[f"{t}FuncBinFN"] = str(fn)
+        out[f"{t}FuncBinTN"] = str(tn)
+        out[f"{t}FuncBinAccPct"] = pct((tp + tn) / len(d))
+        out[f"{t}FuncBinPrecPct"] = pct(prec)
+        out[f"{t}FuncBinRecPct"] = pct(rec)
+        out[f"{t}FuncBinFnrPct"] = pct(1 - rec) if not pd.isna(rec) else "N/A"
+        out[f"{t}FuncBinFPct"] = pct(f1)
+
+    base_prec = n_def / len(d)
+    out["funcAlwaysDefectiveFPct"] = pct(2 * base_prec / (1 + base_prec))
+
+    # 7. Low-maintainability stratum: bottom quartile of expert maintainability
+    q1 = d["gt_Maint"].quantile(0.25)
+    low = d["gt_Maint"] <= q1
+    out["lowMaintQ"] = f"{q1:.0f}"
+    out["lowMaintCount"] = str(int(low.sum()))
+    out["sonarqubeLowMaintTopPct"] = f"{(d.loc[low, 'Sonarqube_Maint'] >= 100).mean() * 100:.1f}\\%"
+    for m in models:
+        out[f"{tag(m)}LowMaintMean"] = f"{d.loc[low, f'{m}_Maint'].mean():.1f}"
+
     marker = "% === Extra Macros (export_extra_macros) ==="
     lines = ["", marker]
     for k, v in out.items():
