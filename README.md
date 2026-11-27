@@ -96,7 +96,7 @@ cp results/Results.json Results.json
 python results/charts/1_Summary/analyze_results.py
 ```
 
-The script writes multiple PNG charts and `summary_statistics.csv` under `output_charts/` relative to the current working directory. On Windows, use `copy results\Results.json Results.json` instead of `cp`. The generated `Results.json` copy and `output_charts/` are local working artifacts; the checked-in source data remains under `results/`.
+The script writes multiple PNG charts and statistics CSV files in the current working directory.
 
 ### Run the results notebook
 
