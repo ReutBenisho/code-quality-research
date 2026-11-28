@@ -10426,7 +10426,7 @@
             "security_classification": "Safe",
             "cwe_id": "None",
             "reasoning": "The code is functionally correct and safe.",
-            "cognitive_complexity": 4
+            "cognitive_complexity": 2
         },
         "Human1": {
             "readability_score": 75,
@@ -10882,7 +10882,7 @@
             "security_classification": "Safe",
             "cwe_id": "None",
             "reasoning": "The code is functionally correct and safe.",
-            "cognitive_complexity": 4
+            "cognitive_complexity": 2
         },
         "Human1": {
             "readability_score": 70,
@@ -14606,7 +14606,7 @@
             "security_classification": "Safe",
             "cwe_id": "None",
             "reasoning": "The code is functionally correct and safe.",
-            "cognitive_complexity": 1
+            "cognitive_complexity": 0
         },
         "Human1": {
             "readability_score": 95,
