@@ -1891,6 +1891,76 @@ def export_extra_macros(raw_json_path="Results.json",
     print(f" - {tex_out_path} ({len(out)} macros)\n - {csv_out_path}")
     return summary
 
+LLMS = ["ChatGPT", "Claude", "Gemini", "GithubCopilot"]
+ERR_MARKER = "% === Error Analysis Macros (export_error_analysis_macros) ==="
+
+
+def _cwes(x):
+    return set(c.upper() for c in re.findall(r"CWE-\d+", str(x), flags=re.IGNORECASE))
+
+
+def _is_vuln_label(x):
+    return str(x).strip().lower() == "vulnerable"
+
+
+def export_error_analysis_macros(raw_json_path="Results.json", tex_out_path="./metrics_macros.tex"):
+    """
+    Error-analysis counts for the LLMs (Section 4.6.2). Counts that already exist
+    elsewhere (security FP/FN, binary functional FP/FN) are not repeated here.
+      \\mErrWrongCweCount      vulnerable snippet flagged Vulnerable, but CWE not in the expert set
+      \\mErrSafeCweCount       output labeled Safe that still reports a CWE (all 300 snippets)
+      \\mErrSafeCweOnVulnCount the same, restricted to snippets the experts labeled Vulnerable
+      \\mCweAlignFromSafeCount CWE alignment hits that come from outputs labeled Safe
+      \\mErrVulnNoCweCount     output labeled Vulnerable without any CWE
+    Appends its own block to tex_out_path and replaces it on re-run.
+    """
+    with open(raw_json_path, "r", encoding="utf-8") as f:
+        raw = json.load(f)
+
+    out = {}
+    for m in LLMS:
+        wrong_cwe = safe_cwe = safe_cwe_vuln = align_from_safe = vuln_no_cwe = 0
+        for item in raw.values():
+            meta, md = item.get("metadata", {}), item.get(m, {})
+            gt_vuln = _is_vuln_label(meta.get("security_classification"))
+            pred_vuln = _is_vuln_label(md.get("security_classification"))
+            gt_cwe, pred_cwe = _cwes(meta.get("cwe_id")), _cwes(md.get("cwe_id"))
+            hit = len(gt_cwe & pred_cwe) > 0
+
+            if gt_vuln and pred_vuln and not hit:
+                wrong_cwe += 1
+            if not pred_vuln and pred_cwe:
+                safe_cwe += 1
+                if gt_vuln:
+                    safe_cwe_vuln += 1
+                    if hit:
+                        align_from_safe += 1
+            if pred_vuln and not pred_cwe:
+                vuln_no_cwe += 1
+
+        t = m[0].lower() + m[1:]
+        out[f"{t}ErrWrongCweCount"] = str(wrong_cwe)
+        out[f"{t}ErrSafeCweCount"] = str(safe_cwe)
+        out[f"{t}ErrSafeCweOnVulnCount"] = str(safe_cwe_vuln)
+        out[f"{t}CweAlignFromSafeCount"] = str(align_from_safe)
+        out[f"{t}ErrVulnNoCweCount"] = str(vuln_no_cwe)
+
+    lines = ["", ERR_MARKER]
+    for k, v in out.items():
+        lines.append(f"\\providecommand{{\\{k}}}{{}}\\renewcommand{{\\{k}}}{{{v}}}")
+
+    existing = ""
+    if os.path.exists(tex_out_path):
+        with open(tex_out_path, "r", encoding="utf-8") as f:
+            existing = f.read()
+        if ERR_MARKER in existing:
+            existing = existing.split(ERR_MARKER)[0].rstrip() + "\n"
+    with open(tex_out_path, "w", encoding="utf-8") as f:
+        f.write(existing + "\n".join(lines).strip() + "\n")
+    print(f" - Updated {tex_out_path} with error-analysis macros ({len(out)})")
+    return out
+
+
 if __name__ == '__main__':
     filename = '..\\..\\Results.json'
 
@@ -1928,6 +1998,8 @@ if __name__ == '__main__':
 
     mae_details = export_mae_by_language_and_criterion(df, output_dir='./')
     print("\nMAE by Language, Model & Criterion:\n", mae_details.to_string(index=False))
+    
+    export_error_analysis_macros(raw_json_path=filename, tex_out_path='./metrics_macros.tex')
 
     # Save comprehensive summary statistics table
     summary = df.groupby('model')[['overall_err', 'maint_err', 'sec_correct', 'is_overall_correct', 'reasoning_len']].mean()
